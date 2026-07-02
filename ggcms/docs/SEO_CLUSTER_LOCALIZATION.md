@@ -42,11 +42,12 @@ Typical local layout:
 ### Phase 2 — Target locales
 
 1. Translate **from the finished canonical** — same HTML skeleton, same `src`, same tag order.
-2. **Literary quality** — not raw machine output: natural grammar, syntax, and vocabulary for native readers.
-3. Translate **block by block** (heading, paragraph, table cell, list item, `alt`, FAQ pair).
-4. Keep UI terms in Latin where established: **Easy**, **Medium**, **Hard**, **Hardcore**, **Play**, **Cash Out**, **Chicken Road**, **Provably Fair**, game names.
-5. Update `name`, `title`, `description` per locale; fix wrong legacy slugs/names (e.g. old Aviatrix rows on a Chicken Road page).
-6. **Do not break JSON** — valid UTF-8, escaped quotes in `content`, `indent=4` export format.
+2. **Full parity — no shortening.** Every target locale must carry the **same editorial volume** as EN: every `<h1>`–`<h3>`, paragraph, list item, table row/cell, FAQ pair, and image `alt`. **Do not** summarise, compress, skip sections, or leave locales on EN fallback. A locale is incomplete if any block is missing or visibly shorter than the canonical.
+3. **Literary quality** — not raw machine output: natural grammar, syntax, and vocabulary for native readers. Rephrase freely for fluency, but **never** drop facts, examples, or list entries to save space.
+4. Translate **block by block** (heading, paragraph, table cell, list item, `alt`, FAQ pair).
+5. Keep UI terms in Latin where established: **Easy**, **Medium**, **Hard**, **Hardcore**, **Play**, **Cash Out**, **Chicken Road**, **Provably Fair**, game names.
+6. Update `name`, `title`, `description` per locale; fix wrong legacy slugs/names (e.g. old Aviatrix rows on a Chicken Road page).
+7. **Do not break JSON** — valid UTF-8, escaped quotes in `content`, `indent=4` export format.
 
 ## HTML hygiene checklist
 
@@ -86,11 +87,44 @@ Or Admin → SEO Monitor → Import → **Full**.
 ## Quality gates before handoff
 
 - [ ] EN (canonical) passes all issues in `*-report.json` after re-export
-- [ ] Every locale: same number of sections/tables/images as EN
+- [ ] Every locale: **identical structure** to EN — same number of sections, tables, images, list items, FAQ entries, and paragraphs (no EN fallback rows, no omitted blocks)
+- [ ] Every locale: `content` byte length within **±15%** of EN (shorter usually means accidental shortening — expand before handoff)
 - [ ] No Aviatrix / wrong-game copy left in sibling locales
 - [ ] All `alt` translated; `src` unchanged
 - [ ] Title/description within SEO limits per locale
 - [ ] Read-aloud test: no obvious MT calques or broken HTML entities
+
+### Parity check (recommended)
+
+```bash
+python3 - <<'PY'
+import json, re, sys
+from pathlib import Path
+p = Path(sys.argv[1])
+d = json.load(p.open())
+en = next(x for x in d["locales"] if x["lang_id"] == 1)
+def stats(html):
+    return {
+        "bytes": len(html),
+        "h2": len(re.findall(r"<h2", html, re.I)),
+        "h3": len(re.findall(r"<h3", html, re.I)),
+        "p": len(re.findall(r"<p[> ]", html, re.I)),
+        "li": len(re.findall(r"<li", html, re.I)),
+        "img": len(re.findall(r"<img", html, re.I)),
+    }
+base = stats(en["content"])
+for loc in d["locales"]:
+    s = stats(loc.get("content") or "")
+    if not loc.get("content"):
+        print(f"FAIL lang_id={loc['lang_id']}: empty content")
+        continue
+    bad = [k for k in base if s[k] != base[k]]
+    ratio = s["bytes"] / base["bytes"] if base["bytes"] else 0
+    flag = "OK" if not bad and 0.85 <= ratio <= 1.15 else "CHECK"
+    print(f"{flag} lang_id={loc['lang_id']} bytes={ratio:.0%} tags={bad or 'match'}")
+PY
+/path/to/seo-*-full.json
+```
 
 ## Related
 
