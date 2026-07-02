@@ -49,13 +49,13 @@ test.describe('Burger menu', () => {
     await expect(nav).not.toHaveClass(/active/);
   });
 
-  test('touchend path opens menu (aviatorBurgerTap)', async ({ page }) => {
+  test('touchend path opens menu (siteBurgerTap)', async ({ page }) => {
     const nav = page.locator('#navbarNav');
     await expect(nav).not.toHaveClass(/active/);
     await page.evaluate(() => {
-      if (window.aviatorBurgerTap) {
+      if (window.siteBurgerTap) {
         var e = new Event('touchend', { bubbles: true, cancelable: true });
-        window.aviatorBurgerTap(e);
+        window.siteBurgerTap(e);
       }
     });
     await expect(nav).toHaveClass(/active/);

@@ -738,7 +738,11 @@ $(document).ready(function(){
 				'hr'
 			],
 			browser_spellcheck: true,
-			extended_valid_elements: 'div[itemtype|itemscope|itemprop|style|class|id],span[itemtype|itemscope|itemprop|style|class],@[itemtype|itemscope|itemprop|id|class|style|title|dir<ltr?rtl|lang|xml::lang|onclick|ondblclick|onmousedown|onmouseup|onmouseover|onmousemove|onmouseout|onkeypress|onkeydown|onkeyup],hr[id|title|alt|class|width|size|noshade|style],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|style],a[id|class|name|href|target|title|onclick|rel|style],script[type|src]',
+			// noads (inline) / noinc (block): content-exclusion wrappers must survive the editor.
+			// See functions/content_exclude_tags.php, advertising_api.php, cta_inject.php.
+			custom_elements: '~noads,noinc',
+			valid_children: '+p[noads],+body[noinc],+noads[a|span|strong|em|b|i|u|#text],+noinc[p|div|ul|ol|li|a|span|strong|em|h2|h3|h4|br|#text]',
+			extended_valid_elements: 'div[itemtype|itemscope|itemprop|style|class|id],span[itemtype|itemscope|itemprop|style|class],@[itemtype|itemscope|itemprop|id|class|style|title|dir<ltr?rtl|lang|xml::lang|onclick|ondblclick|onmousedown|onmouseup|onmouseover|onmousemove|onmouseout|onkeypress|onkeydown|onkeyup],hr[id|title|alt|class|width|size|noshade|style],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|style],a[id|class|name|href|target|title|onclick|rel|style],script[type|src],noads[id|class|style|title],noinc[id|class|style|title]',
 			toolbar1: 'bold italic underline strikethrough | forecolor backcolor | alignleft aligncenter alignright alignjustify | styleselect fontselect fontsizeselect | bullist numlist ',
 			toolbar2: 'undo redo | hr | style-h2 style-h3 | link unlink anchor medialibrary editimage media code | table | removeformat | subscript superscript | charmap emoticons | visualchars visualblocks nonbreaking | outdent indent blockquote',
 			menubar: false,

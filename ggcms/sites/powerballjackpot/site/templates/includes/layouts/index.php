@@ -12,7 +12,7 @@ if (isset($abc['page']['heading']) && trim((string) $abc['page']['heading']) !==
 
 $pbj_hero_desc = isset($abc['page']['description']) ? trim((string) $abc['page']['description']) : '';
 $pbj_cta_url = site_home_lottery_cta_url($abc);
-$pbj_lang_base = isset($_aviator_lang_base) ? (string) $_aviator_lang_base : '/';
+$pbj_lang_base = isset($_site_lang_base) ? (string) $_site_lang_base : '/';
 
 if (!empty($abc['debug'])) {
 	$abc['debug_info']['index_layout'] = 'home_lottery';

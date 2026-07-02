@@ -274,7 +274,6 @@ $config['sources']['admin_bottom'] = array(
 	'/plugins/jquery/jquery.uploader.js',
 	'/plugins/tinymce_4.3.11/tinymce.min.js',
 	'/'.$config['style'].'/js/media.js?v=20260527_17',
-	'/'.$config['style'].'/js/admin-editor.js?v=20260531_10',
-	'/'.$config['style'].'/js/script.js?v=20260531_14',
+	'/'.$config['style'].'/js/script.js?v=20260702_15',
 	'/'.$config['style'].'/js/file.js?v=20260527_15'
 );
