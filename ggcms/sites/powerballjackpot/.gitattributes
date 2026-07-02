@@ -1,0 +1,2 @@
+# Force LF for shell scripts (avoid "command not found" from CRLF)
+*.sh text eol=lf

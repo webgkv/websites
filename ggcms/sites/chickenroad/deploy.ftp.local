@@ -1,0 +1,9 @@
+# SFTP deploy (SSH key). gitignored — do not commit.
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=dikodo
+SSH_KEY=/home/lenovo/.ssh/webgkv
+
+LOCAL_PATH=/home/lenovo/bin/websites/ggcms/build/chickenroad/site
+REMOTE_PATH=/home/dikodo/web/chickenroad.run/public_html

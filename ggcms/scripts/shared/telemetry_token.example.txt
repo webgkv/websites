@@ -1,0 +1,11 @@
+# Telemetry token (Admin → Telemetry; same as ?token= in snapshot/control URLs).
+#
+# Like deploy.ftp.local:
+#   cp scripts/telemetry_token.example.txt scripts/telemetry_token.local.txt
+#   echo 'YOUR_TOKEN_HERE' > scripts/telemetry_token.local.txt
+#   chmod 600 scripts/telemetry_token.local.txt
+#
+# Or open telemetry_token.local.txt in an editor and write a single line: the token only.
+# Lines starting with # are ignored; first non-comment line is used.
+#
+# scripts/telemetry_token.local.txt is in .gitignore — never commit it.

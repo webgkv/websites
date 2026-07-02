@@ -1,0 +1,12 @@
+{
+  "name": "powerballjackpot",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:burger": "playwright test tests/burger.spec.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "serve": "^14.2.4"
+  }
+}

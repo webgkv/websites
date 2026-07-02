@@ -1,0 +1,12 @@
+# SFTP deploy for powerballjackpot.run (GGCMS).
+# Copy to deploy.ftp.local and configure.
+
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=
+PASS=
+# SSH_KEY=/home/you/.ssh/webgkv
+
+LOCAL_PATH=/home/lenovo/bin/websites/ggcms/build/powerballjackpot/site
+REMOTE_PATH=/home/dikodo/web/powerballjackpot.run/public_html

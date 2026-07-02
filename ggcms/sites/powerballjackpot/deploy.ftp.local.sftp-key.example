@@ -1,0 +1,17 @@
+# SFTP deploy with SSH key (no password). Copy to deploy.ftp.local.
+# deploy.ftp.local is in .gitignore — do not commit.
+# Run: ./deploy_ftp_powerballjackpot.sh
+
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=dikodo
+# PASS not used when SSH_KEY is set
+SSH_KEY=/home/lenovo/.ssh/webgkv
+
+LOCAL_PATH=/home/lenovo/bin/powerballjackpot/site/
+REMOTE_PATH=/home/dikodo/web/powerballjackpot.run/public_html
+
+# Optional: override cleanup behavior.
+# Default deploy keeps remote-only files.
+# Set USE_MIRROR_DELETE=1 to delete files missing locally.

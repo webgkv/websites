@@ -1,0 +1,18 @@
+{
+  "1": {"url": "en", "name": "english", "localization": "en", "rank": 100},
+  "3": {"url": "fr", "name": "french", "localization": "fr", "rank": 90},
+  "4": {"url": "de", "name": "german", "localization": "de", "rank": 80},
+  "6": {"url": "es", "name": "spanish", "localization": "es", "rank": 70},
+  "7": {"url": "hi", "name": "hindi", "localization": "hi", "rank": 60},
+  "8": {"url": "pt", "name": "portuguese", "localization": "pt", "rank": 50},
+  "9": {"url": "ru", "name": "russian", "localization": "ru", "rank": 40},
+  "11": {"url": "ar", "name": "arabic", "localization": "ar", "rank": 30},
+  "12": {"url": "az", "name": "azerbaijani", "localization": "az", "rank": 20},
+  "13": {"url": "bn", "name": "bengali", "localization": "bn", "rank": 10},
+  "14": {"url": "it", "name": "italian", "localization": "it", "rank": 5},
+  "15": {"url": "nl", "name": "dutch", "localization": "nl", "rank": 4},
+  "16": {"url": "pl", "name": "polish", "localization": "pl", "rank": 3},
+  "17": {"url": "vi", "name": "vietnamese", "localization": "vi", "rank": 2},
+  "18": {"url": "ua", "name": "ukrainian", "localization": "uk", "rank": 1},
+  "19": {"url": "ro", "name": "romanian", "localization": "ro", "rank": 0}
+}

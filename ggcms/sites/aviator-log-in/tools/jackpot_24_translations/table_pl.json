@@ -1,0 +1,13 @@
+{
+  "header": ["Zalety", "Wady"],
+  "rows": [
+    ["Szeroka oferta dostawców gier", "Możliwe drobne błędy lokalizacji"],
+    ["Gry podzielone na kategorie", "Branding wciąż nie wygląda na bardzo mocny"],
+    ["Kasyno, live casino, sport i eSport w jednym koncie", "Brak wyraźnie zdefiniowanej unikalnej oferty"],
+    ["Elastyczny ekosystem płatności", "W niektórych miejscach widać produkt typu white label"],
+    ["Prosty i czytelny UX/UI", "Reputacja i zaufanie dopiero się budują"],
+    ["Frontend jest stale rozwijany", "Projekt potrzebuje więcej czasu na rynku"],
+    ["Obsługa odpowiada dość szybko", "Nie wszystkie sekcje są równie dobrze dopasowane do każdego regionu"],
+    ["Wypłaty — według serwisu — są przetwarzane szybko", "Przed depozytem i tak warto uważnie czytać warunki"]
+  ]
+}

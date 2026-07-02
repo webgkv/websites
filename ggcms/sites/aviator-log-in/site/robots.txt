@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aviator-log-in.com/api/sitemap/index_hub.xml

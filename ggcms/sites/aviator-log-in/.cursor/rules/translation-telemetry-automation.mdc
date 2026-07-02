@@ -1,0 +1,36 @@
+---
+description: How to run translation/telemetry pipelines safely (secrets, API, checks)
+alwaysApply: true
+---
+
+# Translation pipeline & automation for agents
+
+**Telemetry:** field map and workflow are in **`backlog.md`** (раздел «Телеметрия для агентов и разработчиков»); the live `GET /api/telemetry_snapshot` response is the source of truth. This rule file focuses on secrets and safe operations.
+
+## Secrets (never commit or paste in chat)
+
+- **Telemetry token** = same as `telemetry_snapshot` / `telemetry_control`. Store **only** on the machine:
+  - `export TELEMETRY_TOKEN='…'` in the shell before asking the agent to call prod, or
+  - **Repo-local (same idea as `deploy.ftp.local`)**: `scripts/telemetry_token.local.txt` (gitignored) — copy from `scripts/telemetry_token.example.txt`, one token line; or
+  - `~/.config/aviator-telemetry/token` (chmod 600), or
+  - `TELEMETRY_TOKEN_FILE=/path/to/file` — `scripts/telemetry_cluster_push.sh` reads it.
+- After any token leak in chat or logs: **regenerate** in Admin → Telemetry.
+
+## Prod API (read-only vs control)
+
+- **Snapshot** (monitoring): `GET /api/telemetry_snapshot?token=…`
+- **Control** (enqueue/run jobs): `POST /api/telemetry_control?token=…` with JSON `action`. Requires **control enabled** in Telemetry settings.
+
+## Safe operational sequence for a cluster
+
+1. `cluster_snapshot` for `entity` + `entity_id` — note `cluster_status`, `pending_jobs`, `running_jobs`, and `scheduled_at` on pending jobs.
+2. If pending `validate_cluster` / others have **`scheduled_at` in the future**, the worker will **not** pick them until then — use `run_job` with `job_id` to execute now, or fix scheduling in admin/DB.
+3. **`translate_pipeline`**: prefer **`process_jobs: 1`** per request to reduce **504** (nginx/proxy timeout). Repeat calls or rely on cron.
+4. If **`blocked`**: inspect `locales_compact[].blockers` — often needs **repair** iterations or **manual** HTML/meta fixes when LLM cannot match structure signatures.
+5. After PHP edits: run **`php -l`** on changed files; avoid unrelated refactors.
+
+## Deploy / “full automation” for humans
+
+- **CI or post-deploy**: run `scripts/telemetry_cluster_push.sh` with env vars set in CI secrets (not in repo). Keep batches small (`PROCESS_JOBS_PER_ROUND=1`).
+- **Cursor**: put `TELEMETRY_TOKEN` in a **local** env file the **user** sources (e.g. `source ~/.aviator-env.local`) before the session; do not commit that file.
+- **Cron on server** (`cron_translation_autopilot.php`) already processes the queue — HTTP control is optional for **pushing** a stuck cluster.

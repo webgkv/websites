@@ -1,0 +1,41 @@
+---
+description: When the user says "добивай" (finish the cluster / meta), use Telemetry Control API to simulate autopilot-style runs without requiring Autopilot enabled in settings.
+alwaysApply: false
+---
+
+## Telemetry token
+
+Prefer **`scripts/telemetry_token.local.txt`** in the repo (first non-`#` line) — same token as Admin → Telemetry. Same value as `?token=` in snapshot/control URLs.
+
+Requests go to **`/api/telemetry_control`** with JSON body or query: `action`, `token`, and params. Header `X-Telemetry-Token` is also supported.
+
+When the user says «добивай» / cluster / meta: **read the token from that file** and run curl (or equivalent) — do not claim the token is unavailable if the file exists.
+
+## Meta-fix (autopilot off)
+
+- **`action`: `meta_fix_tick`** — runs `translation_autopilot_meta_fix_enqueue_tick()` (same scan as autopilot meta-fix: SEO length, published rows, etc.). Does **not** require `autopilot_enabled`.
+- Optional: **`process_jobs`** (0–20) — after enqueue, drain that many translation jobs (like cron).
+- Optional: **`meta_cap`**, **`max_jobs`** — override caps for this call.
+
+## Full autopilot tick (enqueue + reap + jobs)
+
+- **`action`: `autopilot_tick`** — `translation_autopilot_run()` + `process_jobs`. If autopilot is disabled, enqueue is skipped but reap still runs inside `translation_autopilot_run`.
+
+## Cluster entity (e.g. blog)
+
+- **`action`: `cluster_drive`** — `enqueue_translation_job` + optional **`process_jobs`**. Params: **`entity`**, **`entity_id`**, **`job_action`** (`cluster_pipeline` | `validate_cluster`), **`src_lang`**, **`dst_langs`**.
+- **`action`: `cluster_simulate`** — runs pending jobs for that cluster until idle / deadline; optional **`stop_on_ready`**.
+
+## Targeted translate with meta normalize
+
+- **`action`: `enqueue_translation_job`** with **`job_action`: `translate`**, **`metadata_normalize`**: 1, **`fields`**: `["name","title","description"]` (or subset), **`dst_lang`**, **`entity`**, **`entity_id`**.
+
+## Example (curl)
+
+```bash
+curl -sS -X POST 'https://YOUR_HOST/api/telemetry_control' \
+  -H 'Content-Type: application/json' \
+  -d '{"action":"meta_fix_tick","token":"TOKEN","process_jobs":5}'
+```
+
+Replace `YOUR_HOST` and `TOKEN`. For a specific blog cluster after code changes, chain `meta_fix_tick` + `cluster_drive` with `job_action=validate_cluster` or `cluster_pipeline`.

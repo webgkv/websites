@@ -1,0 +1,12 @@
+# SFTP deploy for aviator-log-in.com (GGCMS).
+# Copy to deploy.ftp.local and configure.
+
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=
+PASS=
+# SSH_KEY=/home/you/.ssh/webgkv
+
+LOCAL_PATH=/home/lenovo/bin/websites/ggcms/build/aviator-log-in/site
+REMOTE_PATH=/home/dikodo/web/aviator-log-in.com/public_html

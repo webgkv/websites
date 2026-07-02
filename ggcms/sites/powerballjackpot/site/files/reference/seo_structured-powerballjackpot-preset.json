@@ -1,0 +1,30 @@
+{
+  "canonical_base": "https://powerballjackpot.run",
+  "site_name": "PowerBall Jackpot",
+  "breadcrumbs": {
+    "home_label": "PowerBall Jackpot",
+    "use_site_tree": 0
+  },
+  "faq": [
+    {
+      "q": "What is PowerBall Jackpot?",
+      "a": "PowerBall Jackpot is your guide to major lottery jackpots, draw schedules, and how to play responsibly. On this site you can read guides, check results-oriented content, and learn how lotteries work before buying tickets through licensed operators."
+    },
+    {
+      "q": "Can I play lottery games for free?",
+      "a": "Some operators offer free-to-play or demo experiences. Our guides explain how draws work and what to expect. Always use licensed retailers or official platforms in your region."
+    },
+    {
+      "q": "Is PowerBall Jackpot available on mobile?",
+      "a": "Yes. You can browse guides and resources on any mobile browser. Where applicable, operators linked from our site support mobile play and official apps in supported regions."
+    },
+    {
+      "q": "How do deposits and bonuses work?",
+      "a": "Deposits and bonuses are handled by the licensed operator you choose through our links. Amounts in our articles may be shown in USD for clarity; always check the operator’s cashier for methods available in your region."
+    },
+    {
+      "q": "What is responsible play?",
+      "a": "Set limits on time and money, take breaks, and never chase losses. If gambling stops being fun, use self-exclusion tools from your operator and seek help from professional support services."
+    }
+  ]
+}

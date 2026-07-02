@@ -1,0 +1,23 @@
+# Route all non-existing files and directories to index.php (front controller)
+# Server must allow .htaccess (AllowOverride FileInfo or All). For PHP-CGI/mod_fcgid, mod_rewrite is still applied by Apache.
+DirectoryIndex index.php
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+# Prefer WebP hero (legacy PNG / Aviator export filenames may still exist on disk).
+RewriteRule ^assets/images/chickenroad-hero\.png$ /assets/images/chickenroad-hero.webp [R=301,L]
+RewriteRule ^assets/images/aviator-app-and-mobile-version\.(png|webp)$ /assets/images/chickenroad-hero.webp [R=301,L]
+
+# PWA Web App Manifest (install prompt / store metadata)
+AddType application/manifest+json .webmanifest
+
+# If the requested path is an existing file or directory, serve it as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise route everything to index.php
+RewriteRule ^ index.php [L]
+

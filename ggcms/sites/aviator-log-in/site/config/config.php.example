@@ -1,0 +1,53 @@
+<?php
+$config['sender_name']='none';
+$config['sender']='none@gmail.com';
+$config['receiver']='none@gmail.com,none2@gmail.com';
+$config['html_minify']='0';
+$config['open_graph']='0';
+$config['redirects']='0';
+$config['redirect_uppercase']='1';
+$config['https']='1';
+$config['dummy']='0';
+$config['uploader']='1';
+$config['brevo']='';
+
+// Brand (Aviator Log In)
+$config['site_id'] = 'aviator-log-in';
+$config['site_brand_name'] = 'Aviator Log In';
+$config['site_title_suffix'] = ' | Aviator Log In';
+$config['site_apk_filename'] = 'aviator.apk';
+$config['site_hero_image'] = '/assets/images/aviator-main.webp';
+$config['site_default_og_image'] = '/assets/images/aviator-main.webp';
+$config['popup_after']=10;
+
+$config['cms_version'] = '1.4.28';
+$config['blog_google_deindex'] = false;
+
+$config['multilingual'] = true;
+$config['multilingual_u0'] = true;
+$config['debug_route_key'] = '';
+$config['games_landing_page_id'] = 0;
+
+$config['http'] = @$config['https']==1 ? 'https':'http';
+$config['domain'] = @$config['domain_main'] ? $config['domain_main'] : $_SERVER['HTTP_HOST'];
+$config['.main_domain'] = false;
+$config['http_domain'] = $config['http'].'://'.$config['domain'];
+
+$config['map_lat'] = '55.755826';
+$config['map_lng'] = '37.617299';
+$config['google_map_key'] = '';
+$config['yandex_map_key'] = '';
+$config['firebase_key'] = '';
+$config['firebase_project'] = '';
+$config['firebase_sender'] = '';
+$config['amp'] = 0;
+
+$server_addr = isset($_SERVER['SERVER_ADDR']) ? $_SERVER['SERVER_ADDR'] : '';
+$config['local'] = (
+	(isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'] === '127.0.0.1' && $server_addr === '127.0.0.1')
+	|| (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost')
+) ? true : false;
+
+$config['smartoptimizer'] = false;
+
+// Copy remaining keys from chickenroad/site/config/config.php.example as needed for local dev.

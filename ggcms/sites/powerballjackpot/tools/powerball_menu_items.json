@@ -1,0 +1,162 @@
+{
+  "1": [
+    {"page_id": 1, "name": "Home", "url": ""},
+    {"page_id": 2, "name": "ARTICLES", "url": "articles"},
+    {"page_id": 3, "name": "Lotteries", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Download", "url": "download"},
+    {"page_id": 6, "name": "RULES", "url": "rules"},
+    {"page_id": 7, "name": "RESULTS", "url": "results"},
+    {"page_id": 8, "name": "WINNING NUMBERS", "url": "winning-numbers"}
+  ],
+  "3": [
+    {"page_id": 1, "name": "Accueil", "url": ""},
+    {"page_id": 2, "name": "ARTICLES", "url": "articles"},
+    {"page_id": 3, "name": "Loteries", "url": "lotteries"},
+    {"page_id": 4, "name": "Démo", "url": "demo"},
+    {"page_id": 5, "name": "Télécharger", "url": "download"},
+    {"page_id": 6, "name": "RÈGLES", "url": "rules"},
+    {"page_id": 7, "name": "RÉSULTATS", "url": "results"},
+    {"page_id": 8, "name": "NUMÉROS GAGNANTS", "url": "winning-numbers"}
+  ],
+  "4": [
+    {"page_id": 1, "name": "Startseite", "url": ""},
+    {"page_id": 2, "name": "ARTIKEL", "url": "articles"},
+    {"page_id": 3, "name": "Lotterien", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Download", "url": "download"},
+    {"page_id": 6, "name": "REGELN", "url": "rules"},
+    {"page_id": 7, "name": "ERGEBNISSE", "url": "results"},
+    {"page_id": 8, "name": "GEWINNZAHLEN", "url": "winning-numbers"}
+  ],
+  "6": [
+    {"page_id": 1, "name": "Inicio", "url": ""},
+    {"page_id": 2, "name": "ARTÍCULOS", "url": "articles"},
+    {"page_id": 3, "name": "Loterías", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Descarga", "url": "download"},
+    {"page_id": 6, "name": "REGLAS", "url": "rules"},
+    {"page_id": 7, "name": "RESULTADOS", "url": "results"},
+    {"page_id": 8, "name": "NÚMEROS GANADORES", "url": "winning-numbers"}
+  ],
+  "7": [
+    {"page_id": 1, "name": "होम", "url": ""},
+    {"page_id": 2, "name": "लेख", "url": "articles"},
+    {"page_id": 3, "name": "लॉटरी", "url": "lotteries"},
+    {"page_id": 4, "name": "डेमो", "url": "demo"},
+    {"page_id": 5, "name": "डाउनलोड", "url": "download"},
+    {"page_id": 6, "name": "नियम", "url": "rules"},
+    {"page_id": 7, "name": "परिणाम", "url": "results"},
+    {"page_id": 8, "name": "जीतने वाले नंबर", "url": "winning-numbers"}
+  ],
+  "8": [
+    {"page_id": 1, "name": "Início", "url": ""},
+    {"page_id": 2, "name": "ARTIGOS", "url": "articles"},
+    {"page_id": 3, "name": "Loterias", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Download", "url": "download"},
+    {"page_id": 6, "name": "REGRAS", "url": "rules"},
+    {"page_id": 7, "name": "RESULTADOS", "url": "results"},
+    {"page_id": 8, "name": "NÚMEROS VENCEDORES", "url": "winning-numbers"}
+  ],
+  "9": [
+    {"page_id": 1, "name": "Главная", "url": ""},
+    {"page_id": 2, "name": "СТАТЬИ", "url": "articles"},
+    {"page_id": 3, "name": "Лотереи", "url": "lotteries"},
+    {"page_id": 4, "name": "Демо", "url": "demo"},
+    {"page_id": 5, "name": "Скачать", "url": "download"},
+    {"page_id": 6, "name": "ПРАВИЛА", "url": "rules"},
+    {"page_id": 7, "name": "РЕЗУЛЬТАТЫ", "url": "results"},
+    {"page_id": 8, "name": "ВЫИГРЫШНЫЕ НОМЕРА", "url": "winning-numbers"}
+  ],
+  "11": [
+    {"page_id": 1, "name": "الرئيسية", "url": ""},
+    {"page_id": 2, "name": "المقالات", "url": "articles"},
+    {"page_id": 3, "name": "اليانصيب", "url": "lotteries"},
+    {"page_id": 4, "name": "تجريبي", "url": "demo"},
+    {"page_id": 5, "name": "تنزيل", "url": "download"},
+    {"page_id": 6, "name": "القواعد", "url": "rules"},
+    {"page_id": 7, "name": "النتائج", "url": "results"},
+    {"page_id": 8, "name": "الأرقام الفائزة", "url": "winning-numbers"}
+  ],
+  "12": [
+    {"page_id": 1, "name": "Ana səhifə", "url": ""},
+    {"page_id": 2, "name": "MƏQALƏLƏR", "url": "articles"},
+    {"page_id": 3, "name": "Lotereyalar", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Yüklə", "url": "download"},
+    {"page_id": 6, "name": "QAYDALAR", "url": "rules"},
+    {"page_id": 7, "name": "NƏTİCƏLƏR", "url": "results"},
+    {"page_id": 8, "name": "QAZANAN NÖMRƏLƏR", "url": "winning-numbers"}
+  ],
+  "13": [
+    {"page_id": 1, "name": "হোম", "url": ""},
+    {"page_id": 2, "name": "নিবন্ধ", "url": "articles"},
+    {"page_id": 3, "name": "লটারি", "url": "lotteries"},
+    {"page_id": 4, "name": "ডেমো", "url": "demo"},
+    {"page_id": 5, "name": "ডাউনলোড", "url": "download"},
+    {"page_id": 6, "name": "নিয়ম", "url": "rules"},
+    {"page_id": 7, "name": "ফলাফল", "url": "results"},
+    {"page_id": 8, "name": "জয়ী নম্বর", "url": "winning-numbers"}
+  ],
+  "14": [
+    {"page_id": 1, "name": "Inizio", "url": ""},
+    {"page_id": 2, "name": "ARTICOLI", "url": "articles"},
+    {"page_id": 3, "name": "Lotterie", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Download", "url": "download"},
+    {"page_id": 6, "name": "REGOLE", "url": "rules"},
+    {"page_id": 7, "name": "RISULTATI", "url": "results"},
+    {"page_id": 8, "name": "NUMERI VINCENTI", "url": "winning-numbers"}
+  ],
+  "15": [
+    {"page_id": 1, "name": "Startpagina", "url": ""},
+    {"page_id": 2, "name": "ARTIKELEN", "url": "articles"},
+    {"page_id": 3, "name": "Loterijen", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Download", "url": "download"},
+    {"page_id": 6, "name": "REGELS", "url": "rules"},
+    {"page_id": 7, "name": "RESULTATEN", "url": "results"},
+    {"page_id": 8, "name": "WINNENDE NUMMERS", "url": "winning-numbers"}
+  ],
+  "16": [
+    {"page_id": 1, "name": "Strona główna", "url": ""},
+    {"page_id": 2, "name": "ARTYKUŁY", "url": "articles"},
+    {"page_id": 3, "name": "Loterie", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Pobierz", "url": "download"},
+    {"page_id": 6, "name": "ZASADY", "url": "rules"},
+    {"page_id": 7, "name": "WYNIKI", "url": "results"},
+    {"page_id": 8, "name": "ZWYCIĘSKIE NUMERY", "url": "winning-numbers"}
+  ],
+  "17": [
+    {"page_id": 1, "name": "Trang chủ", "url": ""},
+    {"page_id": 2, "name": "BÀI VIẾT", "url": "articles"},
+    {"page_id": 3, "name": "Xổ số", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Tải xuống", "url": "download"},
+    {"page_id": 6, "name": "QUY TẮC", "url": "rules"},
+    {"page_id": 7, "name": "KẾT QUẢ", "url": "results"},
+    {"page_id": 8, "name": "SỐ TRÚNG THƯỞNG", "url": "winning-numbers"}
+  ],
+  "18": [
+    {"page_id": 1, "name": "Головна", "url": ""},
+    {"page_id": 2, "name": "СТАТТІ", "url": "articles"},
+    {"page_id": 3, "name": "Лотереї", "url": "lotteries"},
+    {"page_id": 4, "name": "Демо", "url": "demo"},
+    {"page_id": 5, "name": "Завантажити", "url": "download"},
+    {"page_id": 6, "name": "ПРАВИЛА", "url": "rules"},
+    {"page_id": 7, "name": "РЕЗУЛЬТАТИ", "url": "results"},
+    {"page_id": 8, "name": "ВИГРАШНІ НОМЕРИ", "url": "winning-numbers"}
+  ],
+  "19": [
+    {"page_id": 1, "name": "Acasă", "url": ""},
+    {"page_id": 2, "name": "ARTICOLE", "url": "articles"},
+    {"page_id": 3, "name": "Loterie", "url": "lotteries"},
+    {"page_id": 4, "name": "Demo", "url": "demo"},
+    {"page_id": 5, "name": "Descărcare", "url": "download"},
+    {"page_id": 6, "name": "REGULI", "url": "rules"},
+    {"page_id": 7, "name": "REZULTATE", "url": "results"},
+    {"page_id": 8, "name": "NUMERE CÂȘTIGĂTOARE", "url": "winning-numbers"}
+  ]
+}

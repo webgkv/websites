@@ -1,0 +1,23 @@
+# Monorepo-wide ignores. Per-project .gitignore files still apply within each subfolder.
+
+**/__pycache__/
+**/*.pyc
+
+# GGCMS build artifacts
+ggcms/build/
+
+# Deploy secrets — optional local overrides (deploy.ftp.local is tracked in private repo)
+**/deploy.ftp.local.sftp-key
+
+# Python
+**/__pycache__/
+**/.venv/
+**/venv/
+**/*.pyc
+
+# Node
+**/node_modules/
+
+# OS / editor
+.DS_Store
+*.swp

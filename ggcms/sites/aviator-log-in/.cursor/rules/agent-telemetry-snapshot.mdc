@@ -1,0 +1,15 @@
+---
+description: Mandatory: where production translation/cluster telemetry lives (snapshot API + JSON paths)
+alwaysApply: true
+---
+
+## Telemetry — always use this before guessing prod state
+
+1. **Field map and workflow:** see **`backlog.md`** (раздел **«Телеметрия для агентов и разработчиков»**) and the live **`GET /api/telemetry_snapshot`** response.
+2. **Primary data source:** `GET /api/telemetry_snapshot?token=…&limit=25&translation_limit=150` (prod host: `aviator-log-in.com` unless the task says otherwise). Header `X-Telemetry-Token` works instead of `?token=`.
+3. **Token file (local, gitignored):** `scripts/telemetry_token.local.txt` — same token as Admin → Telemetry.
+4. **Do not** infer DB/cluster state from code alone when the issue is runtime: fetch the snapshot, or use a user-provided paste / `telemetry_snapshot-*.md` file.
+5. **Inspect first:** `translations.cluster_state` (and root `translation_clusters`), `translations.jobs` including `queue_health`, then `logs_translations` / `system_logs`.
+6. **Control / enqueue:** `POST /api/telemetry_control` — see `telemetry-dobivay.mdc` and `translation-telemetry-automation.mdc` (not the snapshot).
+7. **Per-page SEO (DB vs live HTML):** `GET /api/telemetry_page_seo?token=…` — same token and endpoint gate as the snapshot; params `url=` or `entity`+`entity_id`, optional `lang_id`, `fetch=0`, `normalize=1` (see `backlog.md`).
+8. **Meta writes:** `POST /api/telemetry_control` with `action=seo_page_meta_patch` and JSON `entity`, `entity_id`, `lang_id`, `fields` — requires **control** enabled (not snapshot-only); see `backlog.md`.
