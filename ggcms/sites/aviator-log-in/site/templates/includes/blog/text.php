@@ -48,8 +48,11 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
             <div class='text'>
               <?php
               require_once(ROOT_DIR . 'functions/cta_inject.php');
+              require_once(ROOT_DIR . 'functions/blog_promo_guard.php');
               $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
               $full_text = (string)($q['text1'] ?? '') . (string)($q['text2'] ?? '');
+
+              if (blog_promo_should_autoinsert($q)):
               // Blog promo: show multiple times inside one post, with at least 2 different random images.
               require_once(ROOT_DIR . 'functions/blog_promo.php');
               
@@ -106,6 +109,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo1_html, array(1));
               $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo2_html, array(2));
               $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo3_html, array(5));
+              endif;
 
               echo function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($full_text) : $full_text;
               ?>

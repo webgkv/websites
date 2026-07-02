@@ -416,16 +416,22 @@ if ($_preload_hero !== '') {
         <meta name="apple-mobile-web-app-title" content="Aviator">
         <!-- PWA icons + manifest after $getV below (cache-bust; iOS needs 180 + /apple-touch-icon.png) -->
         <!-- Place favicon.ico in the root directory -->
+        <?php
+        if (!function_exists('site_template_preconnect_hints')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
+        }
+        echo site_template_preconnect_hints();
+        ?>
         <!-- boostrap css links -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- font awesome cdn links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <!-- font awesome cdn links (subset: solid + brands) -->
+<?= site_template_fontawesome_stylesheets() ?>
         <!-- goggle font -->
 <?php /*
         <!--link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
         <!--link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
 */ ?>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -654,7 +660,7 @@ if ($_preload_hero !== '') {
 <?php endif; ?>
 <?php } ?>
         <?php if (!empty($abc['ad_partner'])): ?>
-        <link rel="stylesheet" href="/assets/css/ad-banner.css?v=<?= isset($getV) && isset($r) ? $getV($r.'assets/css/ad-banner.css') : time() ?>">
+<?= site_template_deferred_stylesheet('/assets/css/ad-banner.css?v=' . (isset($getV) && isset($r) ? $getV($r.'assets/css/ad-banner.css') : time())) ?>
         <?php endif; ?>
     </head>
     <body class="layout-<?= htmlspecialchars($abc['layout'] ?? 'default') ?>">
@@ -803,7 +809,6 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
         </footer>
         <!-- footer section end -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><i class="fa-solid fa-jet-fighter-up"></i></button>
         <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>"></script>
 <?php

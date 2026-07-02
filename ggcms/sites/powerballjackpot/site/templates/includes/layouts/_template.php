@@ -407,16 +407,22 @@ if ($_seo_robots !== '') {
         <meta name="apple-mobile-web-app-title" content="<?= htmlspecialchars(site_brand_name(), ENT_QUOTES, 'UTF-8') ?>">
         <!-- PWA icons + manifest after $getV below (cache-bust; iOS needs 180 + /apple-touch-icon.png) -->
         <!-- Place favicon.ico in the root directory -->
+        <?php
+        if (!function_exists('site_template_preconnect_hints')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
+        }
+        echo site_template_preconnect_hints();
+        ?>
         <!-- boostrap css links -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- font awesome cdn links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <!-- font awesome cdn links (subset: solid + brands) -->
+<?= site_template_fontawesome_stylesheets() ?>
         <!-- goggle font -->
 <?php /*
         <!--link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
         <!--link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
 */ ?>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -448,11 +454,11 @@ if ($_seo_robots !== '') {
         <link rel="stylesheet" href="/assets/css/lottery-buttons.css?v=<?= $getV($r.'assets/css/lottery-buttons.css') ?>">
         <link rel="stylesheet" href="/assets/css/responsive.css?v=<?= $getV($r.'assets/css/responsive.css') ?>">
 <?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" href="/assets/css/home-lottery.css?v=<?= $getV($r.'assets/css/home-lottery.css') ?>">
 <?php elseif (!empty($abc['layout']) && (string) $abc['layout'] !== 'demo_app'): ?>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/assets/css/inner-lottery.css?v=<?= $getV($r.'assets/css/inner-lottery.css') ?>">
 <?php endif; ?>
         <script>
@@ -675,7 +681,7 @@ if ($_seo_robots !== '') {
 <?php endif; ?>
 <?php } ?>
         <?php if (!empty($abc['ad_partner'])): ?>
-        <link rel="stylesheet" href="/assets/css/ad-banner.css?v=<?= isset($getV) && isset($r) ? $getV($r.'assets/css/ad-banner.css') : time() ?>">
+<?= site_template_deferred_stylesheet('/assets/css/ad-banner.css?v=' . (isset($getV) && isset($r) ? $getV($r.'assets/css/ad-banner.css') : time())) ?>
         <?php endif; ?>
     </head>
     <body class="layout-<?= htmlspecialchars($abc['layout'] ?? 'default') ?>">

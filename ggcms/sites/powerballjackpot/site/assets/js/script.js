@@ -33,6 +33,15 @@ try {
     return toggle;
   }
 
+  function loadDeferredFlags(root) {
+    if (!root) return;
+    root.querySelectorAll('img.aviator-lang-flag--deferred[data-src]').forEach(function (img) {
+      if (!img.getAttribute('src')) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+      }
+    });
+  }
+
   function openClose(e) {
     // Avoid double-handling (inline + addEventListener)
     if (e && e._aviatorHandled) return;
@@ -50,6 +59,7 @@ try {
     }
     n.classList.toggle('active');
     var isOpen = n.classList.contains('active');
+    if (isOpen) loadDeferredFlags(n);
     var tgl = getToggle();
     if (tgl) tgl.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     document.body.classList.toggle('menu-open', isOpen);
@@ -102,16 +112,6 @@ if (mybutton) {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
-
-if (typeof $ !== 'undefined') {
-  $(document).ready(function(){
-    // Language switcher
-    $('#change_language').on('change',function(){
-       $(location).attr('href',$(this).val());
-       return false;
-    });
-  });
 }
 
   // Mobile Responsive end

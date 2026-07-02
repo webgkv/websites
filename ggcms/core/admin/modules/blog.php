@@ -9,6 +9,7 @@ $category = mysql_select("SELECT id,name from blog_category", 'array');
 
 // List sort uses `position` only when the column exists (migration may not be applied yet).
 $blog_has_position = @mysql_select("SHOW COLUMNS FROM `blog` LIKE 'position'", 'num_rows') > 0;
+$blog_has_skip_random_images = @mysql_select("SHOW COLUMNS FROM `blog` LIKE 'skip_random_images'", 'num_rows') > 0;
 
 $filter[] = array('search');
 $where = '';
@@ -63,6 +64,12 @@ if ($blog_has_position) {
 }
 $form[1][] = array('checkbox td1', 'top');
 $form[1][] = array('checkbox td1', 'display');
+if ($blog_has_skip_random_images) {
+	$form[1][] = array('checkbox td6', 'skip_random_images', array(
+		'name' => a18n('skip_random_images'),
+		'help' => a18n('help_skip_random_images'),
+	));
+}
 
 $form[1][] = array('input td6', 'name_2');
 $form[1][] = array('select td3', 'category', array('value' => array(true, $category, '')));

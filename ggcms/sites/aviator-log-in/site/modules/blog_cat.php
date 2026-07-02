@@ -174,8 +174,11 @@ if ($u[4]) {
 					$abc['page']['text1'] = $text;
 					$abc['page']['text2'] = '';
 				}
-				require_once(ROOT_DIR . 'functions/blog_promo.php');
-				$abc['page']['blog_promo'] = blog_promo_random();
+				require_once ROOT_DIR . 'functions/blog_promo_guard.php';
+				if (blog_promo_should_autoinsert($abc['page'])) {
+					require_once(ROOT_DIR . 'functions/blog_promo.php');
+					$abc['page']['blog_promo'] = blog_promo_random();
+				}
 				require_once ROOT_DIR . 'functions/blog_internal_nav.php';
 				blog_internal_links_apply($abc['page'], $blog_base, $cur_lang_id, $langid);
 
@@ -312,8 +315,11 @@ if ($u[4]) {
 				$abc['page']['text1'] = $text;
 				$abc['page']['text2'] = '';
 			}
-			require_once(ROOT_DIR . 'functions/blog_promo.php');
-			$abc['page']['blog_promo'] = blog_promo_random();
+			require_once ROOT_DIR . 'functions/blog_promo_guard.php';
+			if (blog_promo_should_autoinsert($abc['page'])) {
+				require_once(ROOT_DIR . 'functions/blog_promo.php');
+				$abc['page']['blog_promo'] = blog_promo_random();
+			}
 			require_once ROOT_DIR . 'functions/blog_internal_nav.php';
 			blog_internal_links_apply($abc['page'], $blog_base, $cur_lang_id, $langid);
 		} else {

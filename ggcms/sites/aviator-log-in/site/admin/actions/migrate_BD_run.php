@@ -374,6 +374,10 @@ if (mysql_select("SHOW TABLES LIKE 'blog'", 'num_rows') > 0) {
 		mysql_fn('query', "ALTER TABLE `blog` ADD COLUMN `gimg` VARCHAR(255) NOT NULL DEFAULT ''");
 		$done[] = "blog.gimg";
 	}
+	if (!in_array('skip_random_images', $col_names)) {
+		mysql_fn('query', "ALTER TABLE `blog` ADD COLUMN `skip_random_images` TINYINT(1) NOT NULL DEFAULT 0");
+		$done[] = "blog.skip_random_images";
+	}
 }
 
 // --- Fix missing columns in ads table ---
