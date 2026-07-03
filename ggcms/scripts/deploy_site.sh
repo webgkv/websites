@@ -11,17 +11,23 @@ GGCMS_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 # shellcheck disable=SC1091
 source "$GGCMS_ROOT/scripts/deploy_lib.sh"
 
-declare -A DOMAINS=(
-	[chickenroad]=chickenroad.run
-	[aviator-log-in]=aviator-log-in.com
-	[powerballjackpot]=powerballjackpot.run
-)
+# Brand -> domain map via case (portable: no bash 4 associative arrays, so this
+# runs on macOS's stock bash 3.2 as well as Linux bash 4+).
+brand_domain() {
+	case "$1" in
+		chickenroad) echo "chickenroad.run" ;;
+		aviator-log-in) echo "aviator-log-in.com" ;;
+		powerballjackpot) echo "powerballjackpot.run" ;;
+		*) echo "" ;;
+	esac
+}
 
 BRAND="${1:-}"
-if [ -z "$BRAND" ] || [ -z "${DOMAINS[$BRAND]:-}" ]; then
+DOMAIN="$(brand_domain "$BRAND")"
+if [ -z "$BRAND" ] || [ -z "$DOMAIN" ]; then
 	echo "Usage: $0 <chickenroad|aviator-log-in|powerballjackpot> [deploy flags]"
 	exit 1
 fi
 shift
 
-run_ggcms_deploy "$BRAND" "${DOMAINS[$BRAND]}" "$@"
+run_ggcms_deploy "$BRAND" "$DOMAIN" "$@"

@@ -2,7 +2,7 @@ HOST=38.133.213.49
 PROTO=sftp
 PORT=20203
 USER=dikodo
-SSH_KEY=/home/lenovo/.ssh/webgkv
+SSH_KEY=~/.ssh/webgkv
 
-LOCAL_PATH=/home/lenovo/bin/websites/ggcms/build/aviator-log-in/site
+# LOCAL_PATH defaults to ggcms/build/<brand>/site (set only to override).
 REMOTE_PATH=/home/dikodo/web/aviator-log-in.com/public_html

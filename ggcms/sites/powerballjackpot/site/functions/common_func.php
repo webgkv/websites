@@ -618,10 +618,12 @@ function array_transpose(array $inputArray){
 /**
  * SEO content cleaning: downgrade H1 to H2 to ensure only one H1 per page.
  */
-function aviator_seo_clean_content($html) {
+function aviator_seo_clean_content($html, $demote_h1 = true) {
 	if (empty($html)) return '';
-	// Replace <h1> with <h2>
-	$html = preg_replace('/<h1\b([^>]*)>(.*?)<\/h1>/is', '<h2$1>$2</h2>', $html);
+	// Replace <h1> with <h2> unless the layout keeps its single H1 in the body (e.g. home hero is H2).
+	if ($demote_h1) {
+		$html = preg_replace('/<h1\b([^>]*)>(.*?)<\/h1>/is', '<h2$1>$2</h2>', $html);
+	}
 	if (function_exists('site_brand_rebrand_text')) {
 		$html = site_brand_rebrand_text($html);
 	}

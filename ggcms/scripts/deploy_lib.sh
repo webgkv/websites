@@ -42,6 +42,11 @@ run_ggcms_deploy() {
 	# shellcheck disable=SC1091
 	source deploy.ftp.local
 
+	# Expand a leading ~ so the same deploy.ftp.local works on macOS and Linux
+	# (e.g. SSH_KEY=~/.ssh/webgkv resolves per-machine).
+	case "${SSH_KEY:-}" in "~/"*) SSH_KEY="$HOME/${SSH_KEY#\~/}" ;; esac
+	case "${LOCAL_PATH:-}" in "~/"*) LOCAL_PATH="$HOME/${LOCAL_PATH#\~/}" ;; esac
+
 	# Default LOCAL_PATH to build output if not set.
 	if [ -z "${LOCAL_PATH:-}" ]; then
 		LOCAL_PATH="$BUILD_DIR"

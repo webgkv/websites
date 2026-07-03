@@ -103,7 +103,7 @@ for brand in "${SELECTED[@]}"; do
 	echo "########################################################"
 	echo "# Deploy: $brand"
 	echo "########################################################"
-	if bash "$DEPLOY_SITE" "$brand" "${PASS_ARGS[@]}"; then
+	if bash "$DEPLOY_SITE" "$brand" ${PASS_ARGS[@]+"${PASS_ARGS[@]}"}; then
 		echo "OK: $brand"
 	else
 		echo "FAILED: $brand"
