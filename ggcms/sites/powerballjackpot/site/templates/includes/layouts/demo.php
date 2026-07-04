@@ -15,7 +15,6 @@ $demo_content = aviator_insert_cta_after_paragraphs(
 	$buttons_html,
 	[1, 5, 10]
 );
-$demo_content = site_demo_render_with_quick_access($demo_content, $abc, $lang);
 $demo_content_has_h1 = preg_match('/<h1\b/i', $demo_content) === 1;
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>

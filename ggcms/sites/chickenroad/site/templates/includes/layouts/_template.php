@@ -411,12 +411,8 @@ if ($_preload_hero !== '') {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- font awesome cdn links (subset: solid + brands) -->
 <?= site_template_fontawesome_stylesheets() ?>
-        <!-- goggle font -->
-<?php /*
-        <!--link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
-        <!--link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
-*/ ?>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&amp;display=swap" rel="stylesheet">
+        <!-- google font (non-blocking: system font renders first, swaps on load) -->
+<?= site_template_google_font('Roboto:wght@400;700;900') ?>
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -498,7 +494,7 @@ if ($_preload_hero !== '') {
           });
         })();
         </script>
-        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n        "; } } ?>
+        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo site_template_async_counter($_counter) . "\n        "; } } ?>
         <?php
         if (!function_exists('site_onesignal_web_ios_prompt_script')) {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
@@ -814,10 +810,10 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
             </div>
         </footer>
         <!-- footer section end -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
         <?php $_eggIcon = $r . 'assets/images/egg-scroll-white.svg'; ?>
         <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><img src="/assets/images/egg-scroll-white.svg?v=<?= htmlspecialchars($getV($_eggIcon), ENT_QUOTES, 'UTF-8') ?>" alt="" width="18" height="23" class="myBtn__egg"></button>
-        <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>"></script>
+        <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>" defer></script>
 <?php
 // Show popup when we have partner and something to show (banner and/or offer link)
 $ad_has_popup = !empty($abc['advertising_api']['popup_enabled']) && !empty($abc['ad_partner']) && (!empty($abc['ad_offer_path']) || !empty($abc['ad_partner']['banner1_url']) || !empty($abc['ad_partner']['html']));

@@ -417,12 +417,8 @@ if ($_seo_robots !== '') {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- font awesome cdn links (subset: solid + brands) -->
 <?= site_template_fontawesome_stylesheets() ?>
-        <!-- goggle font -->
-<?php /*
-        <!--link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
-        <!--link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"-->
-*/ ?>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+        <!-- google font (non-blocking: system font renders first, swaps on load) -->
+<?= site_template_google_font('Inter:wght@400;600;700;800') ?>
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -454,11 +450,11 @@ if ($_seo_robots !== '') {
         <link rel="stylesheet" href="/assets/css/lottery-buttons.css?v=<?= $getV($r.'assets/css/lottery-buttons.css') ?>">
         <link rel="stylesheet" href="/assets/css/responsive.css?v=<?= $getV($r.'assets/css/responsive.css') ?>">
 <?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<?= site_template_google_font('Lato:wght@400;700') ?>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" href="/assets/css/home-lottery.css?v=<?= $getV($r.'assets/css/home-lottery.css') ?>">
 <?php elseif (!empty($abc['layout']) && (string) $abc['layout'] !== 'demo_app'): ?>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+<?= site_template_google_font('Lato:wght@400;700') ?>
         <link rel="stylesheet" href="/assets/css/inner-lottery.css?v=<?= $getV($r.'assets/css/inner-lottery.css') ?>">
 <?php endif; ?>
         <script>
@@ -513,7 +509,7 @@ if ($_seo_robots !== '') {
           });
         })();
         </script>
-        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n        "; } } ?>
+        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo site_template_async_counter($_counter) . "\n        "; } } ?>
         <?php
         if (!function_exists('site_onesignal_web_ios_prompt_script')) {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
@@ -839,15 +835,15 @@ if ($_pbj_inner_layout): ?>
             </div>
         </footer>
         <!-- footer section end -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
         <button type="button" onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>" aria-label="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
-        <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>"></script>
+        <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>" defer></script>
 <?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="/assets/js/home-lottery.js?v=<?= $getV($r.'assets/js/home-lottery.js') ?>"></script>
-        <script src="/assets/js/home-lucky-picker.js?v=<?= $getV($r.'assets/js/home-lucky-picker.js') ?>"></script>
-        <script src="/assets/js/home-ticket-checker.js?v=<?= $getV($r.'assets/js/home-ticket-checker.js') ?>"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+        <script src="/assets/js/home-lottery.js?v=<?= $getV($r.'assets/js/home-lottery.js') ?>" defer></script>
+        <script src="/assets/js/home-lucky-picker.js?v=<?= $getV($r.'assets/js/home-lucky-picker.js') ?>" defer></script>
+        <script src="/assets/js/home-ticket-checker.js?v=<?= $getV($r.'assets/js/home-ticket-checker.js') ?>" defer></script>
 <?php endif; ?>
 <?php
 // Show popup when we have partner and something to show (banner and/or offer link)
