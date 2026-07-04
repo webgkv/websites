@@ -15,34 +15,15 @@ set -u
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEPLOY_SITE="$REPO_ROOT/ggcms/scripts/deploy_site.sh"
+DEPLOY_LIB="$REPO_ROOT/ggcms/scripts/deploy_lib.sh"
 
 BRANDS=(chickenroad aviator-log-in powerballjackpot)
 
+# shellcheck disable=SC1091
+source "$DEPLOY_LIB"
+
 usage() {
-	cat <<'EOF'
-GGCMS deploy — build a standalone site and upload it.
-
-Usage:
-  ./deploy.sh --<brand> [flags]     Deploy a single site
-  ./deploy.sh --all [flags]         Deploy every site, one by one
-
-Brands:
-  --chickenroad
-  --aviator-log-in
-  --powerballjackpot
-  --all
-
-Deploy flags (passed through to the per-site deploy):
-  --reset             Re-sync by size diff (no --only-newer)
-  --transfer-all      Full re-upload (use with --reset)
-  --delete-remote     Mirror-delete remote files not present locally
-  --no-delete-remote  Keep remote-only files
-
-Examples:
-  ./deploy.sh --aviator-log-in
-  ./deploy.sh --chickenroad --reset
-  ./deploy.sh --all --reset --transfer-all
-EOF
+	deploy_print_usage
 }
 
 is_known_brand() {
@@ -52,6 +33,11 @@ is_known_brand() {
 	done
 	return 1
 }
+
+if [ $# -eq 0 ]; then
+	usage
+	exit 0
+fi
 
 SELECTED=()
 PASS_ARGS=()
@@ -86,7 +72,7 @@ if [ "$DEPLOY_ALL" -eq 1 ]; then
 fi
 
 if [ "${#SELECTED[@]}" -eq 0 ]; then
-	echo "Error: no brand selected. Use --<brand> or --all."
+	echo "Error: no brand selected. Use --<brand> or --all (see --help)."
 	echo ""
 	usage
 	exit 1

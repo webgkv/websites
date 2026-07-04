@@ -1,18 +1,12 @@
 <?php
-/**
- * Canonical (default) language — keys used by this project only.
- * Legacy sportsbook/RO bundle removed; add keys here when i18n('common|…') is introduced.
- */
 $lang['common'] = array(
 	'sitename' => 'Aviator Log-in',
-
 	'index_page' => 'Home',
 	'txt_no_page_text' => '404 PAGE NOT FOUND',
 	'back_to_home' => 'Back to Home',
 	'no_content' => 'No content',
 	'msg_no_results' => 'No content',
 	'make_selection' => 'Please select',
-
 	'footer_about_us' => 'About Us',
 	'footer_terms' => 'Terms and Conditions',
 	'footer_privacy' => 'Privacy Policy',
@@ -21,19 +15,16 @@ $lang['common'] = array(
 	'footer_play_label' => 'PLAY RESPONSIBLY',
 	'footer_play_responsibly' => 'This site is an independent platform and is not affiliated with the operators we mention. Before you gamble or place bets, make sure you meet age and legal requirements in your jurisdiction. Our aim is to provide informative and entertaining content. Links on this site may lead to external operators.',
 	'footer_copyright' => 'Aviator Game © {year} Copyrighted Verification',
-
 	'hero_subtitle' => 'Aviator Crash Game',
 	'hero_cta' => 'Play Aviator Now',
 	'cta_play_aviator_now' => 'Play Aviator Now',
 	'cta_try_bonus' => 'Try Bonus',
-
 	'popup_join' => 'Join our',
 	'popup_partner' => 'PARTNER',
 	'popup_special_offer' => 'Take your special offer',
 	'aria_close' => 'Close',
 	'demo_app_fullscreen' => 'Fullscreen',
 	'go_to_top' => 'Go to top',
-
 	'quick_access_eyebrow' => 'Quick Access',
 	'quick_access_title' => 'Open the Aviator demo in your browser or use the mobile options',
 	'quick_access_open_demo' => 'Open Demo Page',
@@ -48,15 +39,12 @@ $lang['common'] = array(
 	'quick_access_demo_alt1' => 'Aviator demo interface preview',
 	'quick_access_demo_alt2' => 'Aviator multiplier round preview',
 	'quick_access_demo_alt3' => 'Aviator cash-out result preview',
-
 	'predictor_menu' => 'Predictor',
-
 	'games_title' => 'Games',
 	'games_cat_all' => 'All',
 	'games_cat_crash' => 'Crash',
 	'games_cat_crash-p2e' => 'Crash P2E',
 	'games_cat_other' => 'Other',
-
 	'guides_title' => 'Guides',
 	'guides_cat_all' => 'All',
 	'guides_cat_analysis' => 'Analysis',
@@ -66,14 +54,12 @@ $lang['common'] = array(
 	'guides_cat_crash-gambling' => 'Crash Gambling',
 	'read_guide' => 'Read guide',
 	'read_more' => 'Read more',
-
 	'breadcrumb_index' => 'Home',
 	'breadcrumb_separator' => '/',
-
 	'share' => 'Share',
 	'search' => 'Search',
-
 	'related_articles' => 'Related articles',
 	'blog_prev_post' => 'Previous article',
 	'blog_next_post' => 'Next article',
-);
+	'authors_title' => 'Authors',
+);?>

@@ -192,4 +192,5 @@ $lang['common'] = array(
 	'sim_col_match' => 'Khớp',
 	'sim_col_prize' => 'Giải',
 	'sim_col_hits' => 'Lần',
+	'authors_title' => 'Tác giả',
 );?>

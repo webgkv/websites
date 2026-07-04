@@ -3,6 +3,60 @@
 #
 # Called from deploy_site.sh with: run_ggcms_deploy <brand> <domain_title> "$@"
 
+deploy_print_usage() {
+	cat <<'EOF'
+GGCMS deploy — build a standalone site and upload it to the server.
+
+Entry points:
+  ./deploy.sh --<brand> [flags]              Deploy one site (recommended)
+  ./deploy.sh --all [flags]                  Deploy every site, one by one
+  ./ggcms/scripts/deploy_site.sh <brand> [flags]   Low-level worker (same flags)
+
+Brands:
+  --chickenroad         chickenroad.run
+  --aviator-log-in      aviator-log-in.com
+  --powerballjackpot    powerballjackpot.run
+  --all                 all of the above, in order
+
+Deploy flags (pass after the brand; forwarded to the per-site upload step):
+  --reset               Re-sync by file size (rsync without --only-newer).
+                        Use after deploy glitches or when timestamps are wrong.
+  --transfer-all        With --reset: force re-upload of every file
+                        (rsync --ignore-times). Slow; use for a full refresh.
+  --delete-remote       Remove remote files that no longer exist locally
+                        (rsync --delete / lftp mirror -e).
+  --no-delete-remote    Keep remote-only files even if USE_MIRROR_DELETE=1
+                        in deploy.ftp.local.
+
+Default upload mode (no flags):
+  Incremental — only new or changed files (--only-newer). Remote-only files
+  are kept unless --delete-remote or USE_MIRROR_DELETE is enabled.
+
+Per-site config (ggcms/sites/<brand>/deploy.ftp.local):
+  HOST                  Server hostname (required)
+  USER                  SSH/FTP user (required)
+  REMOTE_PATH           Document root on server (required)
+  SSH_KEY               Path to SSH private key (recommended; PROTO=sftp)
+  PORT                  SSH/FTP port (default 22)
+  PROTO                 sftp or ftp (default sftp when SSH_KEY is set)
+  PASS                  FTP password (only if SSH_KEY is not used)
+  LOCAL_PATH            Local upload dir (default: ggcms/build/<brand>/site)
+  USE_MIRROR_DELETE     1/true to mirror-delete by default (overridable)
+
+Build step (always runs before upload):
+  ggcms/scripts/build_site.sh <brand>  →  ggcms/build/<brand>/site/
+
+Examples:
+  ./deploy.sh --chickenroad
+  ./deploy.sh --aviator-log-in --reset
+  ./deploy.sh --powerballjackpot --reset --transfer-all
+  ./deploy.sh --all --reset --transfer-all --delete-remote
+  ./deploy.sh --help
+  ./ggcms/scripts/deploy_site.sh chickenroad --reset
+
+EOF
+}
+
 run_ggcms_deploy() {
 	local BRAND="$1"
 	local TITLE="$2"

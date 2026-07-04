@@ -636,6 +636,14 @@ footer .container {
     padding: 2.5rem 15px 2rem;
 }
 
+footer .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
 footer .footer-nav a {
     color: var(--cr-text-light);
     text-decoration: none;

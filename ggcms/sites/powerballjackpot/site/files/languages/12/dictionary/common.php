@@ -192,4 +192,5 @@ $lang['common'] = array(
 	'sim_col_match' => 'Uyğunluq',
 	'sim_col_prize' => 'Mükafat',
 	'sim_col_hits' => 'Dəfə',
+	'authors_title' => 'Müəlliflər',
 );?>

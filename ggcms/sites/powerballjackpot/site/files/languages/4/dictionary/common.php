@@ -192,4 +192,5 @@ $lang['common'] = array(
 	'sim_col_match' => 'Treffer',
 	'sim_col_prize' => 'Preis',
 	'sim_col_hits' => 'Anzahl',
+	'authors_title' => 'Autoren',
 );?>

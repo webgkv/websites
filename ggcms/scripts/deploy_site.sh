@@ -23,9 +23,15 @@ brand_domain() {
 }
 
 BRAND="${1:-}"
+if [ -z "$BRAND" ] || [ "$BRAND" = "-h" ] || [ "$BRAND" = "--help" ]; then
+	deploy_print_usage
+	exit 0
+fi
 DOMAIN="$(brand_domain "$BRAND")"
-if [ -z "$BRAND" ] || [ -z "$DOMAIN" ]; then
-	echo "Usage: $0 <chickenroad|aviator-log-in|powerballjackpot> [deploy flags]"
+if [ -z "$DOMAIN" ]; then
+	echo "Error: unknown brand: $BRAND"
+	echo ""
+	deploy_print_usage
 	exit 1
 fi
 shift

@@ -192,4 +192,5 @@ $lang['common'] = array(
 	'sim_col_match' => 'التطابق',
 	'sim_col_prize' => 'الجائزة',
 	'sim_col_hits' => 'مرات',
+	'authors_title' => 'المؤلفون',
 );?>

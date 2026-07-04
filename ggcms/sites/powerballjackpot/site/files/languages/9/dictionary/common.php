@@ -192,4 +192,5 @@ $lang['common'] = array(
 	'sim_col_match' => 'Совпадение',
 	'sim_col_prize' => 'Приз',
 	'sim_col_hits' => 'Раз',
+	'authors_title' => 'Авторы',
 );?>

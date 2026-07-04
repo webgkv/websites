@@ -210,4 +210,5 @@ $lang['common'] = array(
 	'quick_access_demo_alt2'=>'Aperçu d’une manche avec multiplicateur Aviator',
 	'quick_access_demo_alt3'=>'Aperçu d’un cash-out Aviator réussi',
 	'msg_no_results'=>'Aucun contenu',
+	'authors_title'=>'Auteurs',
 );?>
