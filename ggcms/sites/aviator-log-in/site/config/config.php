@@ -16,10 +16,10 @@ $config['popup_after']=10; //seconds
 // After deploying new CSS/JS: uncomment and bump the number so browsers pick up the new files
 // $config['assets_version'] = 2;
 
-// Spribe Aviator demo iframe: omit or leave empty to use https://demo.spribe.io/launch/aviator?currency=…&lang=…&return_url=… (built in aviator_demo_embed.php).
-// $config['aviator_demo_iframe_url'] = 'https://demo.spribe.io/launch/aviator?currency=USD&lang=EN&return_url=https://aviator-log-in.com/en/demo/';
-// $config['aviator_demo_return_url'] = 'https://aviator-log-in.com/en/demo/';
-$config['aviator_demo_currency'] = 'USD';
+// Game demo: Spribe mirror for /demo/app/; static iframe URL for /demo/ content page.
+$config['game_demo_provider'] = 'spribe_mirror';
+$config['game_demo_currency'] = 'USD';
+$config['game_demo_iframe_url'] = 'https://idev.games/embed/aviator';
 
 $config['cms_version'] = '1.4.28';
 
@@ -119,8 +119,8 @@ $config['style'] = 'templates';
 // After uploading new CSS/JS set the number (e.g. 2) and save — browsers will pick up new files
 $config['assets_version'] = 2;
 
-// Demo page: iframe URL for interactive Aviator game. Leave empty to hide the block. Uses iDev.Games free embed.
-$config['aviator_demo_iframe_url'] = 'https://idev.games/embed/aviator';
+// Demo page: iframe URL for interactive game block. Leave empty to hide the block.
+$config['game_demo_iframe_url'] = 'https://idev.games/embed/aviator';
 
 //charset
 $config['charset']			= 'UTF-8';

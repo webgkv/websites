@@ -1,0 +1,302 @@
+{
+    "schema": "seo_cluster_v1",
+    "exported_at": "2026-05-28T12:43:23+00:00",
+    "entity": "games",
+    "entity_id": 7,
+    "mode": "report",
+    "note": "Report only — not for import. Use mode=meta or full for round-trip JSON.",
+    "locales": [
+        {
+            "lang_id": 1,
+            "lang_url": "en",
+            "url": "inout-games",
+            "status": "published",
+            "source": "main",
+            "metrics": {
+                "title_display_len": 11,
+                "description_plain_len": 11,
+                "content_bytes": 25283,
+                "h1_count": 0,
+                "images_missing_alt": 10
+            },
+            "issue_count": 2,
+            "issues": [
+                {
+                    "code": "h1_not_single",
+                    "detail": 0
+                },
+                {
+                    "code": "img_missing_alt",
+                    "detail": 10
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "h1_not_single",
+                    "label": "H1 count ≠ 1",
+                    "detail": 0
+                },
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 10
+                }
+            ]
+        },
+        {
+            "lang_id": 3,
+            "lang_url": "fr",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 4,
+            "lang_url": "de",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 6,
+            "lang_url": "es",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 7,
+            "lang_url": "hi",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 8,
+            "lang_url": "pt",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 9,
+            "lang_url": "ru",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 11,
+            "lang_url": "ar",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 12,
+            "lang_url": "az",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 13,
+            "lang_url": "bn",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 14,
+            "lang_url": "it",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 15,
+            "lang_url": "nl",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 16,
+            "lang_url": "pl",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 17,
+            "lang_url": "vi",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 18,
+            "lang_url": "ua",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        },
+        {
+            "lang_id": 19,
+            "lang_url": "ro",
+            "url": "inout-games",
+            "status": "missing",
+            "source": "missing",
+            "metrics": {
+                "title_display_len": 0,
+                "description_plain_len": 0,
+                "content_bytes": 0,
+                "h1_count": null,
+                "images_missing_alt": null
+            },
+            "issue_count": 0,
+            "issues": [],
+            "issue_summaries": []
+        }
+    ]
+}

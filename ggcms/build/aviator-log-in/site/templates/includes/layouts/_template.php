@@ -364,8 +364,9 @@ if (!empty($abc['layout']) && $abc['layout'] === 'demo_app') {
 		&& (string) $_GET['debug_ip_check'] === '1';
 	if ($__demo_app_debug) {
 		$__r = defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../';
-		require_once $__r . 'functions/aviator_demo_embed.php';
-		$abc['debug_demo_app'] = aviator_demo_app_build_debug_payload($abc, $config);
+		require_once $__r . 'functions/game_demo_embed.php';
+		game_demo_ensure_spribe_provider();
+		$abc['debug_demo_app'] = game_demo_app_build_debug_payload($abc, $config);
 		require __DIR__ . '/_debug_demo_app_full.php';
 		return;
 	}

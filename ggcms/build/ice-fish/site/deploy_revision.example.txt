@@ -1,0 +1,2 @@
+# Copy to deploy_revision.txt (one line, no #). Shown in GET /api/telemetry_snapshot → code.deploy_revision
+# Example: git-abc1234 or 2026-04-15-prod-1

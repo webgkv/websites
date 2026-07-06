@@ -1,0 +1,126 @@
+# -*- coding: utf-8 -*-
+"""Overrides for casino_articles#25 — AR, AZ."""
+
+AR = {
+    "h1": "Jack-Pot — Ice Fish",
+    "h2_about": "عن Jack-Pot",
+    "img_hero_alt": "لوبي كازينو Jack-Pot عبر الإنترنت ونظرة عامة على Ice Fish",
+    "about_paras": [
+        "Jack-Pot منصة إلكترونية تجمع ألعاب الكازينو والمراهنات الرياضية في حساب واحد. الموقع مقسّم إلى أقسام واضحة: casino وlive وsport وpromos وpayments وtournaments وcashback. من السهل على المستخدم اختيار الوجهة. المنصة تبدو بسيطة بما يكفي. الكازينو مقسّم إلى فئات. يمكنك أيضاً استخدام الأقسام الرئيسية إذا كنت تعرف ما تريد لعبه.",
+        "Ice Fish يناسب Jack-Pot لأنه بالضبط نوع اللعبة التي تحتاج وصولاً سريعاً. لا أحد يريد البحث في لوبي ضخم عن لعبة أركيد سريعة. تفتحها، تضبط الرهان، تختار مستوى المخاطرة وتبدأ الجولة. بالنسبة لـ Ice Fish، الميزة الأساسية في Jack-Pot هي المسار الواضح إلى اللعبة: لوبي سريع، شريط بحث، وصول عبر الجوال وتخطيط لا يعيقك. هذا يكفي للعبة مبنية على جولات قصيرة وقرارات سريعة.",
+        "يوجد في Jack-Pot أيضاً مكافآت وعروض، لذا يستحق الأمر مراجعة قسم العروض قبل اللعب. لا تفعّل أي شيء دون قراءة الشروط. قد تكون المكافآت محدودة بالوقت أو بالقواعد.",
+    ],
+    "h2_where": "أين تجد Ice Fish على Jack-Pot",
+    "where_paras": [
+        "من السهل إيجاد Ice Fish على Jack-Pot إذا عرفت أين تبحث. افتح قسم casino واذهب إلى Slots أو Crash Games. معظم ألعاب الأركيد السريعة توجد عادة في هذه الفئات.",
+        "أسرع طريقة هي البحث. اكتب Ice Fish في شريط البحث، انتظر ظهور لافتة اللعبة وافتحها. يفترض أن تُشغَّل اللعبة في نافذة منفصلة.",
+        "يمكنك أيضاً البحث حسب المزوّد. أدخل InOut وسيعرض Jack-Pot ألعاب هذا الاستوديو. هذا مفيد إذا أردت إيجاد Ice Fish وألعاب InOut الأخرى.",
+        "أحياناً تظهر اللعبة أيضاً في Crash Games، حيث تضع المنصات غالباً instant games وcrash games وألعاباً لا تناسب فئات السلوتس الكلاسيكية.",
+    ],
+    "short_path_title": "المسار القصير بسيط:",
+    "short_path_item": "Casino → Crash Games / Slots → Ice Fish → Play Now",
+    "short_path_outro": ["إذا لم تظهر اللعبة بالاسم، جرّب البحث عن InOut."],
+    "h2_play": "كيف تلعب Ice Fish على Jack-Pot",
+    "play_paras": [
+        "Ice Fish على Jack-Pot سهل البدء. إذا كنت جديداً، ابدأ بـ Easy. يمنحك مساحة أكبر لفهم اللعبة. Medium يبدو أسرع بالفعل. Hard وHardcore أفضل للاعبين الذين يعرفون سرعة اختفاء الرصيد في هذا النوع من الألعاب. قبل الضغط على Play، راجع الرهان مرة أخرى. خاصة على الهاتف. نقرة متسرعة قد تبدأ الجولة بمبلغ خاطئ.",
+        "الزر الرئيسي هو Cash Out. اضغطه عندما يكفي المضاعف الحالي وتريد التوقف. إذا انتظرت طويلاً وسوءت الجولة، يضيع الرهان.",
+        "إذا كانت هذه Ice Fish الأصلية من InOut Games، تبقى القواعد الأساسية على Jack-Pot كما في المنصات الأخرى: تقدّم للأمام، زِد المضاعف، Cash Out قبل خسارة الجولة.",
+    ],
+    "h2_demo": "العب التجريبي والمال الحقيقي على Jack-Pot",
+    "demo_paras": [
+        "النسخة التجريبية من Ice Fish متاحة على Jack-Pot، وهناك أبدأ. ليس لأن التجريبي يعلّمك الفوز — لا يفعل. لكنه يتيح لك رؤية اللعبة دون ضغط.",
+        "في الوضع التجريبي تلعب برصيد افتراضي. يمكنك تغيير الصعوبة، تجربة رهانات مختلفة، تحريك الدجاجة على الطريق وتجربة Cash Out في نقاط مختلفة. إذا ساءت الجولة، لا يتأثر مالك الحقيقي. وضع المال الحقيقي يشعرك باختلاف. قد تبدو اللعبة نفسها، والأزرار نفسها، والمضاعف ينمو بنفس الطريقة. لكن بمجرد دخول رصيدك، يصبح كل خطوة أثقل.",
+        "في التجريبي يلعب الناس عادة بمرونة أكبر. الرصيد افتراضي، فلا ألم حقيقي في تجربة أوضاع أصعب أو الذهاب أبعد قليلاً.",
+        "بالمال الحقيقي، نفس الحركة تشعرك باختلاف. نفس الزر، نفس المضاعف، نفس الطريق — لكن الرهان ملكك. بعضهم يعمل Cash Out مبكراً خوفاً من الخسارة. آخرون يذهبون بعيداً لاسترداد الجولة السابقة. هنا يبدأ الضغط. استخدم التجريبي على Jack-Pot أولاً. تعلّم اللعبة هناك. اللعب بمال حقيقي منطقي فقط عندما تفهم الآلية وتقبل المخاطرة.",
+    ],
+    "h2_mobile": "Ice Fish على الجوال عبر Jack-Pot",
+    "mobile_paras": [
+        "Ice Fish يعمل جيداً على الهاتف. افتح Jack-Pot، اعثر على اللعبة، اضبط الرهان وابدأ الجولة دون واجهة ثقيلة. على الجوال يصبح التخطيط أضيق. حقل الرهان وPlay وCash Out ما زالوا سهلي الوصول، وهذا مهم في هذه اللعبة. لا تريد البحث عن زر الخروج بينما المضاعف يتحرك.",
+        "الجولات قصيرة، لذا يناسب اللعب عبر الجوال. جلسة عادية تحتاج بضع نقرات فقط. افتح الجولة، حرّك الدجاجة، راقب المضاعف واخرج عندما يبدو الخطوة التالية خطرة جداً.",
+        "السرعة تعتمد أساساً على جهازك واتصالك. هاتف حديث بإنترنت مستقر سيكون أنعم. متصفح قديم أو إشارة ضعيفة قد يبطئ الشاشة. ولأن الشاشة صغيرة، تحقق دائماً من الرهان قبل Play — نقرة غير منتبهة تكفي لبدء الجولة بمبلغ خاطئ. العب عبر المتصفح. تجنّب ملفات APK عشوائية من مواقع مجهولة، خاصة ما يعد بـ predictors أو hacks أو نسخة «خاصة» من Ice Fish.",
+    ],
+    "h2_final": "الخلاصة",
+    "final_paras": [
+        "Ice Fish يناسب Jack-Pot لأن اللعبة لا تحتاج إعداداً معقداً. افتح casino، اعثر على العنوان، اختر الوضع، اضبط الرهان وتبدأ الجولة. لهذا النوع من الألعاب السريعة، هذا بالضبط ما تريده.",
+        "الجاذبية الأساسية بسيطة: جولات قصيرة، أزرار واضحة، مضاعف متزايد وخيار دائم — أخذ النتيجة الحالية أو المخاطرة بخطوة إضافية. سهل الفهم، لكن اللعبة قد تجذبك بسرعة.",
+        "يمنح Jack-Pot Ice Fish مكاناً نظيفاً للعب، خاصة من الجوال. البحث يعمل، اللوبي ليس ثقيلاً والوضع التجريبي مفيد لاختبار الآلية أولاً.",
+        "Ice Fish ليس أداة لكسب المال. إنها لعبة كازينو بمخاطرة حقيقية. استخدم التجريبي قبل المال الحقيقي، ضع حدوداً، لا تطارد الخسائر واعتبر كل جولة ترفيهاً وليس دخلاً.",
+    ],
+    "h2_faq": "FAQ",
+    "faq": [
+        ["ما هو Jack-Pot؟", "Jack-Pot منصة كازينو إلكتروني ومراهنات رياضية. يمكنك لعب slots وlive casino وinstant games وcrash games والمراهنة على الرياضة."],
+        ["هل Jack-Pot للكازينو فقط؟", "لا. الكازينو جزء واحد فقط من المنصة."],
+        ["ما سرعة التسجيل؟", "التسجيل يستغرق أقل من دقيقة. بعد ذلك قد يعرض الموقع اختيار مكافأة أو يفتح نافذة الإيداع."],
+        ["هل يقدم Jack-Pot مكافآت؟", "نعم، لكن راجع الموقع الرسمي لمعرفة المكافآت المتاحة حالياً."],
+        ["هل أجد Ice Fish على Jack-Pot؟", "نعم، إذا كانت Ice Fish متاحة في لوبي Jack-Pot. ابحث أولاً باسم اللعبة. إن لم يظهر شيء، جرّب المزوّد InOut."],
+        ["هل يعمل Jack-Pot على الجوال؟", "نعم، يفتح Jack-Pot على الجوال عبر المتصفح. لوبي الكازينو والرياضة والصندوق والحساب قابلة للاستخدام من الهاتف. السرعة تعتمد على الجهاز والاتصال. إشارة ضعيفة أو متصفح قديم قد يبطئ تحميل بعض الألعاب."],
+        ["هل Jack-Pot آمن؟", "نعم، لكن تأكد أنك على النطاق الحقيقي لـ Jack-Pot. نسخ الكازينو المزيفة قد تبدو قريبة جداً من الموقع الأصلي."],
+        ["ما الترخيص الذي يملكه Jack-Pot؟", "وفق المعلومات التي راجعناها سابقاً، يعمل Jack-Pot بترخيص offshore من Anjouan. إنه ترخيص قانوني، يُستخدم غالباً لعلامات كازينو أحدث. مع ذلك لا يوفر نفس مستوى حماية اللاعب كالجهات التنظيمية الأشد. لذا السمعة وسجل المدفوعات وجودة الدعم مهمة جداً."],
+        ["هل سيطلب Jack-Pot مستندات؟", "على الأرجح نعم قبل السحب. ارفع المستندات فقط عبر الموقع الرسمي لـ Jack-Pot."],
+        ["هل السحوبات فورية؟", "ليس دائماً. السحوبات الصغيرة قد تكون أسرع. المدفوعات الكبيرة قد تستغرق وقتاً أطول بسبب التحقق أو حدود مزوّد الدفع أو المراجعات اليدوية."],
+        ["هل اللعب على Jack-Pot محفوف بالمخاطر؟", "نعم. slots وcrash games وlive casino والمراهنات الرياضية كلها تنطوي على مخاطرة. يمكنك خسارة المال. استخدم حدوداً، لا تطارد الخسائر ولا تعتبر Jack-Pot وسيلة للربح. إنه ترفيه قمار وليس دخلاً."],
+    ],
+}
+
+AZ = {
+    "h1": "Jack-Pot — Ice Fish",
+    "h2_about": "Jack-Pot haqqında",
+    "img_hero_alt": "Jack-Pot onlayn kazino lobisi və Ice Fish icmalı",
+    "about_paras": [
+        "Jack-Pot kazino oyunları və idman mərclərinin bir hesabdan əlçatan olduğu onlayn platformadır. Saytda aydın bölmələr var: casino, live, sport, promos, payments, tournaments və cashback. İstifadəçi üçün hara getmək asandır. Platforma kifayət qədər sadə görünür. Kazino kateqoriyalara bölünüb. Nə oynamaq istədiyinizi bilirsinizsə, əsas bölmələrdən də istifadə edə bilərsiniz.",
+        "Ice Fish Jack-Pot-a yaxşı uyğun gəlir, çünki bu məhz sürətli giriş tələb edən oyun növüdür. Heç kim sürətli arkad oyunu tapmaq üçün nəhəng lobidə axtarmaq istəmir. Açırsınız, mərci təyin edirsiniz, risk səviyyəsini seçirsiniz və raund başlayır. Ice Fish üçün Jack-Pot-un əsas üstünlüyü oyuna aydın yoldur: sürətli lobi, axtarış paneli, mobil giriş və maneə törətməyən layout. Qısa raundlar və sürətli qərarlar üçün bu kifayətdir.",
+        "Jack-Pot-da bonuslar və promolar da var, ona görə oynamazdan əvvəl promosyon bölməsinə baxmaq lazımdır. Kor-koranə heç nə aktivləşdirməyin. Bonuslar vaxt və ya qaydalarla məhdud ola bilər.",
+    ],
+    "h2_where": "Jack-Pot-da Ice Fish harada tapılır",
+    "where_paras": [
+        "Haraya baxacağınızı bilirsinizsə, Jack-Pot-da Ice Fish tapmaq asandır. Casino bölməsini açın və Slots və ya Crash Games-ə keçin. Əksər sürətli arkad oyunları adətən bu kateqoriyalarda olur.",
+        "Ən sürətli yol axtarışdır. Axtarış panelinə Ice Fish yazın, oyun banneri görünəndə açın. Oyun ayrıca pəncərədə işə düşməlidir.",
+        "Provayder üzrə də axtara bilərsiniz. InOut daxil edin və Jack-Pot bu studiyanın oyunlarını göstərməlidir. Yalnız Ice Fish deyil, digər InOut titulları tapmaq istəyirsinizsə, faydalıdır.",
+        "Bəzən oyun Crash Games-də də görünür — platformalar tez-tez instant games, crash games və klassik slot kateqoriyalarına sığmayan titulları ora qoyur.",
+    ],
+    "short_path_title": "Qısa yol sadədir:",
+    "short_path_item": "Casino → Crash Games / Slots → Ice Fish → Play Now",
+    "short_path_outro": ["Oyun adla görünmürsə, InOut axtarın."],
+    "h2_play": "Jack-Pot-da Ice Fish necə oynanılır",
+    "play_paras": [
+        "Jack-Pot-da Ice Fish başlatmaq asandır. Yenisinizsə, Easy ilə başlayın. Oyunu başa düşmək üçün daha çox yer verir. Medium artıq daha kəskin hiss olunur. Hard və Hardcore bu tip oyunda balansın nə qədər tez yox ola biləcəyini bilən oyunçular üçündür. Play basmazdan əvvəl mərci yenidən yoxlayın. Xüsusilə telefonda. Bir tələsik toxunuş səhv məbləğlə raund başlada bilər.",
+        "Əsas düymə Cash Out-dur. Cari multiplikator kifayət edəndə və dayanmaq istəyəndə basın. Çox gözləyib raund pis getsə, mərc itir.",
+        "Bu InOut Games-in orijinal Ice Fish-u idisə, Jack-Pot-da əsas qaydalar digər platformalarda olduğu kimidir: irəli get, multiplikatoru artır, raundu itirməzdən əvvəl Cash Out et.",
+    ],
+    "h2_demo": "Jack-Pot-da demo və real pul oyunu",
+    "demo_paras": [
+        "Jack-Pot-da Ice Fish demo mövcuddur və mən oradan başlayardım. Demo qazanmağı öyrədir deyə yox — öyrətmir. Amma oyuna təzyiq olmadan baxmağa imkan verir.",
+        "Demo rejimində virtual balansla oynayırsınız. Çətinliyi dəyişə, müxtəlif mərclər sınaya, toyuğu yolda hərəkət etdirə və müxtəlif nöqtələrdə Cash Out sınaya bilərsiniz. Raund pis getsə, real pulunuza toxunulmur. Real pul rejimi fərqli hiss olunur. Oyun eyni görünə bilər, düymələr eyni, multiplikator eyni qaydada artır. Amma öz balansınız oyuna girəndə hər addım daha ağır olur.",
+        "Demo rejimində adətən daha sərbəst oynanılır. Balans virtualdır, ona görə çətin rejimləri və ya bir az daha irəli getməyi sınamaq ağrıtmır.",
+        "Real pulla eyni hərəkət fərqli hiss olunur. Eyni düymə, eyni multiplikator, eyni yol — amma mərc sizindir. Bəziləri itirmək istəmədikləri üçün çox tez Cash Out edir. Digərləri əvvəlki raundu geri qazanmaq üçün çox irəli gedir. Təzyiq orada başlayır. Əvvəlcə Jack-Pot-da demodan istifadə edin. Oyunu orada öyrənin. Real pul yalnız mexanikanı başa düşüb riski qəbul etdikdə məntiqlidir.",
+    ],
+    "h2_mobile": "Jack-Pot vasitəsilə mobil Ice Fish",
+    "mobile_paras": [
+        "Ice Fish telefonda yaxşı işləyir. Jack-Pot-u açın, oyunu tapın, mərci təyin edin və ağır interfeys olmadan raunda başlayın. Mobildə layout daha sıx olur. Mərc sahəsi, Play və Cash Out hələ də asan çatılır — bu oyunda vacibdir. Multiplikator artanda çıxış düyməsini axtarmaq istəmirsiniz.",
+        "Raundlar qısadır, ona görə mobil oyun uyğundur. Adi sessiya bir neçə toxunuşdur. Raundu açın, toyuğu hərəkət etdirin, multiplikatora nəzarət edin və növbəti addım çox riskli görünəndə çıxın.",
+        "Sürət əsasən cihaz və bağlantıdan asılıdır. Sabit internetli yeni telefon daha hamar olacaq. Köhnə brauzer və ya zəif siqnal ekranı yavaşlada bilər. Ekran kiçik olduğu üçün Play-dən əvvəl həmişə mərci yoxlayın — bir diqqətsiz toxunuş səhv məbləğlə başlamaq üçün kifayətdir. Brauzerdən oynayın. Naməlum saytlardan təsadüfi APK-lardan çəkinin, xüsusilə predictor, hack və ya «xüsusi» Ice Fish versiyası vəd edənlərdən.",
+    ],
+    "h2_final": "Yekun",
+    "final_paras": [
+        "Ice Fish Jack-Pot-a yaxşı uyğun gəlir, çünki oyun mürəkkəb qurulum tələb etmir. Casino açın, titulu tapın, rejimi seçin, mərci təyin edin — raund başlayır. Bu sürətli oyun növü üçün tam istədiyiniz budur.",
+        "Əsas cazibə sadədir: qısa raundlar, aydın düymələr, artan multiplikator və daimi seçim — cari nəticəni götürmək və ya bir addım daha risk etmək. Başa düşmək asandır, amma oyun sizi tez cəlb edə bilər.",
+        "Jack-Pot Ice Fish-a təmiz oyun yeri verir, xüsusilə mobildən. Axtarış işləyir, lobi çox ağır deyil və mexanikanı əvvəlcə sınamaq üçün demo faydalıdır.",
+        "Ice Fish pul qazanma aləti deyil. Bu real riskli kazino oyunudur. Real puldan əvvəl demodan istifadə edin, limit qoyun, itkilərin arxasınca getməyin və hər raundu gəlir deyil, əyləncə kimi qəbul edin.",
+    ],
+    "h2_faq": "FAQ",
+    "faq": [
+        ["Jack-Pot nədir?", "Jack-Pot onlayn kazino və idman mərcləri platformasıdır. Slots, live casino, instant games, crash games və idman mərcləri oynaya bilərsiniz."],
+        ["Jack-Pot yalnız kazino üçündürmü?", "Xeyr. Kazino platformanın yalnız bir hissəsidir."],
+        ["Qeydiyyat nə qədər sürətlidir?", "Qeydiyyat bir dəqiqədən az çəkir. Sonra sayt bonus seçimi göstərə və ya depozit pəncərəsini aça bilər."],
+        ["Jack-Pot bonus təklif edirmi?", "Bəli, amma cari bonuslar üçün rəsmi sayta baxın."],
+        ["Jack-Pot-da Ice Fish tapa bilərəmmi?", "Bəli, əgər Ice Fish Jack-Pot lobisində mövcuddursa. Əvvəlcə oyun adı ilə axtarın. Heç nə görünmürsə, provayder InOut sınayın."],
+        ["Jack-Pot mobil işləyirmi?", "Bəli, Jack-Pot brauzer vasitəsilə mobil açılır. Kazino lobisi, idman, kassa və hesab telefondan istifadə oluna bilər. Sürət cihaz və bağlantıdan asılıdır. Zəif siqnal və ya köhnə brauzer bəzi oyunları yavaş yükləyə bilər."],
+        ["Jack-Pot təhlükəsizdirmi?", "Bəli, amma real Jack-Pot domenində olduğunuza əmin olun. Saxta kazino surətləri orijinal sayta çox bənzəyə bilər."],
+        ["Jack-Pot-un hansı lisenziyası var?", "Əvvəllər baxdığımız məlumata görə, Jack-Pot Anjouan offshore lisenziyası ilə fəaliyyət göstərir. Bu qanuni lisenziyadır, tez-tez yeni kazino brendləri istifadə edir. Yenə də daha sərt tənzimləyicilər qədər oyunçu mühafizəsi vermir. Ona görə reputasiya, ödəniş tarixçəsi və dəstək keyfiyyəti çox vacibdir."],
+        ["Jack-Pot sənəd istəyəcəkmi?", "Çıxarışdan əvvəl çox güman ki, bəli. Sənədləri yalnız rəsmi Jack-Pot saytı vasitəsilə yükləyin."],
+        ["Çıxarışlar ani olurmu?", "Həmişə yox. Kiçik çıxarışlar daha sürətli ola bilər. Böyük ödənişlər yoxlama, ödəniş provayder limitləri və ya manual yoxlamalar səbəbindən daha uzun çəkə bilər."],
+        ["Jack-Pot-da oynamaq risklidirmi?", "Bəli. Slots, crash games, live casino və idman mərcləri risk daşıyır. Pul itirə bilərsiniz. Limit istifadə edin, itkilərin arxasınca getməyin və Jack-Pot-u qazanc yolu kimi görməyin. Bu qumar əyləncəsidir, gəlir deyil."],
+    ],
+}
+
+EXPORT = {"ar": AR, "az": AZ}

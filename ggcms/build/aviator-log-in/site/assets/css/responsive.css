@@ -14,7 +14,8 @@
         padding: 14px 20px !important;
     }
 
-    .hero_content h1 {
+    .hero_content h1,
+    .hero_content h2 {
         font-size: 45px;
     }
 }
@@ -29,7 +30,8 @@
         padding: 14px 20px !important;
     }
 
-    .hero_content h1 {
+    .hero_content h1,
+    .hero_content h2 {
         font-size: 45px;
     }
 }
@@ -54,7 +56,8 @@
         font-size: 17px;
     }
 
-    .hero_content h1 {
+    .hero_content h1,
+    .hero_content h2 {
         font-size: 35px;
     }
     .hero_section {
@@ -293,7 +296,8 @@
         text-align: center;
     }
 
-    .hero_content h1 {
+    .hero_content h1,
+    .hero_content h2 {
         font-size: 45px;
     }
 
@@ -446,7 +450,8 @@
         text-align: center;
     }
 
-    .hero_content h1 {
+    .hero_content h1,
+    .hero_content h2 {
         font-size: 34px;
     }
 

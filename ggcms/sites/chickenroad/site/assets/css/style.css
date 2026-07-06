@@ -1397,7 +1397,7 @@ h1 {
     margin: 1.5rem 0;
 }
 
-/* Spribe official Aviator demo (16:9 box; DB embed uses .main__frame-ratio, /demo/app/ uses inner div) */
+/* Game demo embed (16:9 box; DB embed uses .main__frame-ratio, /demo/app/ uses inner div) */
 .main__frame {
     width: 100%;
 }

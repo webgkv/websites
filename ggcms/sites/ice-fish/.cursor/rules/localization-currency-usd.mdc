@@ -1,0 +1,35 @@
+---
+description: Localization, USD in copy, factual licence/region data, editorial quality
+alwaysApply: true
+---
+
+# Localization and casino-article content
+
+## Regulatory and jurisdictional facts
+
+- **Do not replace or “normalize” licence, operator, or operating-region facts** from the source export for a given casino (e.g. keep Curaçao eGaming where stated, or WCGRB / South Africa where stated).
+- Preserve **licence names and numbers, regulator wording, and operator company names** as in the source unless the user explicitly requests a factual correction.
+- Rewriting **prose** for clarity and fluency is fine; swapping one jurisdiction’s facts for another’s for template convenience is not.
+
+## Offers and codes
+
+- Remove promo-code UI (`promocode-container`, hardcoded codes, copy buttons) and steer users to **href="#"** (or the site offer flow) instead.
+- **Bonus amounts in body copy, tables, and FAQ** should use **`USD`** per the rules below.
+
+## Editorial and SEO
+
+- Aim for **natural, reader-first wording** in each locale—not stiff or obviously machine-translated lines.
+- Keep **titles and meta descriptions** within usual SEO limits (e.g. title about ≤70 characters, meta description about ≤160) and aligned with the page topic.
+
+## Currency rule (amounts in copy)
+
+- For all localization, SEO, and content editing tasks in this project, normalize currency mentions to `USD`.
+- Do not preserve or introduce region-specific currencies such as `INR`, `BDT`, `EUR`, or `RUB` in rewritten localized content unless the user explicitly asks for an exception.
+- When source content contains multiple local currencies, rewrite the amounts and surrounding wording so the final localized text reads naturally with `USD`.
+- Keep the copy idiomatic after conversion: update nearby phrasing like `deposit`, `withdrawal`, `bonus`, `cashback`, and table labels so the text still sounds native.
+- Apply this rule to titles, descriptions, headings, tables, FAQ entries, and body content.
+
+Example:
+
+- Instead of `Minimum deposit: ₹300`, write `Minimum deposit: $300`.
+- Instead of mixed currencies in one page, use a consistent `USD` presentation throughout the localized version.

@@ -71,7 +71,7 @@ if [ $# -lt 1 ]; then
 fi
 
 if [ "$1" = "all" ]; then
-	for b in chickenroad aviator-log-in powerballjackpot; do
+	for b in chickenroad ice-fish aviator-log-in powerballjackpot; do
 		build_one "$b"
 	done
 else

@@ -1,0 +1,19 @@
+# SFTP deploy for ice-fish.run (GGCMS).
+# Copy to deploy.ftp.local and configure. deploy.ftp.local is gitignored.
+#
+# Deploy flow: build (ggcms/build/ice-fish/site) → rsync to REMOTE_PATH
+# Run from repo root: ./ggcms/scripts/deploy_site.sh ice-fish
+
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=
+PASS=
+# SSH_KEY=/home/you/.ssh/webgkv
+
+# Built standalone site (default; deploy_site.sh builds automatically)
+LOCAL_PATH=/home/lenovo/bin/websites/ggcms/build/ice-fish/site
+
+REMOTE_PATH=/home/dikodo/web/ice-fish.run/public_html
+
+# USE_MIRROR_DELETE=1

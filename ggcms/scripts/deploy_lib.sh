@@ -14,6 +14,7 @@ Entry points:
 
 Brands:
   --chickenroad         chickenroad.run
+  --ice-fish           ice-fish.run
   --aviator-log-in      aviator-log-in.com
   --powerballjackpot    powerballjackpot.run
   --all                 all of the above, in order

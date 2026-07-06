@@ -3,15 +3,16 @@
 global $lang;
 $page_name = isset($abc['page_i18n']['name']) && $abc['page_i18n']['name'] !== '' ? $abc['page_i18n']['name'] : (isset($abc['page']['name' . (isset($abc['langid']) ? $abc['langid'] : '')]) ? $abc['page']['name' . (isset($abc['langid']) ? $abc['langid'] : '')] : $abc['page']['name']);
 $demo_content = (isset($abc['page_i18n']['content']) && (string)$abc['page_i18n']['content'] !== '') ? $abc['page_i18n']['content'] : (isset($abc['content']) ? $abc['content'] : '');
-$demo_iframe_url = isset($config['aviator_demo_iframe_url']) ? trim((string) $config['aviator_demo_iframe_url']) : '';
+$demo_iframe_url = function_exists('site_game_demo_iframe_url') ? site_game_demo_iframe_url($config) : '';
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 require_once(ROOT_DIR . 'functions/aviator_quick_access.php');
-require_once(ROOT_DIR . 'functions/aviator_demo_embed.php');
+require_once(ROOT_DIR . 'functions/game_demo_embed.php');
+game_demo_ensure_spribe_provider();
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
 $buttons_html = aviator_cta_buttons_html($offer_path);
 $demo_content = aviator_demo_apply_quick_access($demo_content, $abc, $lang);
-$demo_content = aviator_filter_demo_content_iframe($demo_content, $abc, $config);
+$demo_content = game_demo_filter_content_iframe($demo_content, $abc, $config);
 $demo_content = aviator_insert_cta_evenly_in_content(
 	$demo_content,
 	$buttons_html,

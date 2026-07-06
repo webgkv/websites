@@ -1,0 +1,28 @@
+# Route all non-existing files and directories to index.php (front controller)
+# Server must allow .htaccess (AllowOverride FileInfo or All). For PHP-CGI/mod_fcgid, mod_rewrite is still applied by Apache.
+DirectoryIndex index.php
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+# Prefer WebP hero (legacy PNG / Aviator export filenames may still exist on disk).
+RewriteRule ^assets/images/ice-fish-hero\.png$ /assets/images/ice-fish-hero.webp [R=301,L]
+RewriteRule ^assets/images/aviator-app-and-mobile-version\.(png|webp)$ /assets/images/ice-fish-hero.webp [R=301,L]
+
+# PWA Web App Manifest (install prompt / store metadata)
+AddType application/manifest+json .webmanifest
+
+# Legacy blog slugs that included a year segment (301 → evergreen URLs).
+RewriteRule ^([a-z]{2})/blog/is-ice-fish-legit-or-a-scam-2026-honest-verdict/?$ /$1/blog/is-ice-fish-legit-or-a-scam-honest-verdict/ [R=301,L]
+RewriteRule ^([a-z]{2})/blog/games-that-pay-real-money-what-actually-pays-in-2026/?$ /$1/blog/games-that-pay-real-money-what-actually-pays/ [R=301,L]
+RewriteRule ^([a-z]{2})/blog/games-that-pay-real-money-instantly-2026/?$ /$1/blog/games-that-pay-real-money-instantly/ [R=301,L]
+
+# If the requested path is an existing file or directory, serve it as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise route everything to index.php
+RewriteRule ^ index.php [L]
+

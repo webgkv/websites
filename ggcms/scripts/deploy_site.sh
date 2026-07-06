@@ -16,6 +16,7 @@ source "$GGCMS_ROOT/scripts/deploy_lib.sh"
 brand_domain() {
 	case "$1" in
 		chickenroad) echo "chickenroad.run" ;;
+		ice-fish) echo "ice-fish.run" ;;
 		aviator-log-in) echo "aviator-log-in.com" ;;
 		powerballjackpot) echo "powerballjackpot.run" ;;
 		*) echo "" ;;

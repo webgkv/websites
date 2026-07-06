@@ -1,0 +1,53 @@
+---
+description: Clean HTML in SEO cluster JSON exports (guides, pages, games) — strip Docs cruft, match homepage tables/figures
+globs:
+  - "**/seo-*-full.json"
+  - "**/apply_*translations*.py"
+  - "scripts/normalize_seo_cluster_html.py"
+  - "scripts/import_seo_cluster_cli.php"
+---
+
+# SEO cluster HTML hygiene
+
+Full workflow (canonical prep + literary translations): **`docs/SEO_CLUSTER_LOCALIZATION.md`**.
+
+When editing or generating `content` in `seo_cluster_v1` JSON (guides, pages, games — not plain-text `authors`):
+
+## Reference (canonical layout)
+
+**`pages` entity_id `1`** — homepage cluster export (`seo-pages-1-full.json`):
+
+- Tables: `<div class="table-responsive"><table class="table table-bordered">` with `<thead>` / `<tbody>`.
+- Images: `<figure class="section-media__figure"><img src="…" border="0" alt="…" /></figure>` (guides may add `loading="lazy" decoding="async"`).
+- Body copy: plain `<p>`, `<h1>`–`<h3>`, lists — **no** Google Docs `<span style="font-size: …">`, `c17` tables, `img-fluid` / `my-4` figures.
+
+## Do not preserve
+
+- Inline `style="…"` from Google Docs / Word paste.
+- Classes `c17`, `docs-internal-*`, `MsoNormal`, `img-fluid`, `my-4` on figures.
+- Spacer `<p>&nbsp;</p>` and empty `<span>` / `<i></i>` in lists.
+- Pseudo-headings (`<p><strong>…</strong></p>`) where a single `<h1>` is required — use `<h1>` once per guide/page body.
+
+## Guides (`entity: guides`)
+
+- One `<h1>`, then hero `section-media__figure`, then `<p>` paragraphs.
+- Mini “table” as `<p><strong>col · col · col</strong></p>` + `<ul><li>…</li></ul>` OR real Bootstrap table if tabular data.
+- UI terms in Latin where established: Easy, Medium, Hard, Hardcore, Play, Cash Out, Ice Fish.
+
+## Automation
+
+After manual edits or `apply_*_translations.py` runs:
+
+```bash
+python3 scripts/normalize_seo_cluster_html.py /path/to/seo-guides-*-full.json /path/to/seo-pages-1-full.json
+```
+
+`authors` clusters are skipped (plain text bios). `pages` get a light pass (styles/spacers only); guides/games get full table/figure normalization.
+
+## Import
+
+Re-import only **`…-full.json`**, not `*-report.json`:
+
+```bash
+php site/scripts/import_seo_cluster_cli.php <path> <entity> <id> full
+```

@@ -4,6 +4,7 @@
 # Usage:
 #   ./deploy.sh --aviator-log-in          # build + deploy Aviator
 #   ./deploy.sh --chickenroad
+#   ./deploy.sh --ice-fish
 #   ./deploy.sh --powerballjackpot
 #   ./deploy.sh --all                     # build + deploy every site, one by one
 #
@@ -17,7 +18,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEPLOY_SITE="$REPO_ROOT/ggcms/scripts/deploy_site.sh"
 DEPLOY_LIB="$REPO_ROOT/ggcms/scripts/deploy_lib.sh"
 
-BRANDS=(chickenroad aviator-log-in powerballjackpot)
+BRANDS=(chickenroad ice-fish aviator-log-in powerballjackpot)
 
 # shellcheck disable=SC1091
 source "$DEPLOY_LIB"

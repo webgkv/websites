@@ -1,0 +1,11 @@
+# SFTP deploy with SSH key (no password). Copy to deploy.ftp.local.
+# deploy.ftp.local is in .gitignore — do not commit.
+
+HOST=38.133.213.49
+PROTO=sftp
+PORT=20203
+USER=dikodo
+SSH_KEY=/home/lenovo/.ssh/webgkv
+
+LOCAL_PATH=/home/lenovo/bin/ice-fish/site/
+REMOTE_PATH=/home/dikodo/web/ice-fish.run/public_html

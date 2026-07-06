@@ -1,0 +1,641 @@
+@media(max-width:1399px) and (min-width:1200px){
+    header .navbar-collapse .nav-item a {
+        padding: 14px 26px !important;
+    }
+}
+
+
+@media(max-width:1199px) and (min-width:1024px){
+    header .navbar-collapse .nav-item a {
+        padding: 14px 12px !important;
+    }
+
+    header .navbar-collapse .nav-item:last-child a {
+        padding: 14px 20px !important;
+    }
+
+    .hero_content h1,
+    .hero_content .hero_content__title {
+        font-size: 45px;
+    }
+}
+
+
+@media(max-width:1023px) and (min-width:992px){
+    header .navbar-collapse .nav-item a {
+        padding: 14px 12px !important;
+    }
+
+    header .navbar-collapse .nav-item:last-child a {
+        padding: 14px 20px !important;
+    }
+
+    .hero_content h1,
+    .hero_content .hero_content__title {
+        font-size: 45px;
+    }
+}
+
+
+@media(max-width:991px) and (min-width:768px){
+    header {
+        overflow-x: hidden;
+        z-index: 9990;
+    }
+    main {
+        position: relative;
+        z-index: 0;
+    }
+    .container{
+        max-width: 900px;
+    }
+
+ 
+    .main_btn a {
+        padding: 14px 30px;
+        font-size: 17px;
+    }
+
+    .hero_content h1,
+    .hero_content .hero_content__title {
+        font-size: 35px;
+    }
+    .hero_section {
+        overflow-x: hidden;
+    }
+    .ice-fish-hero-backdrop {
+        max-width: 100%;
+        padding: 0.65rem 0.65rem 0.8rem;
+        margin-top: 1.25rem;
+    }
+    .page-content-from-db img:not(.demo-quick-access__store-icon):not(.demo-preview-card__img):not(.section-media img),
+    .page-content-from-db .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .casino-article-content img {
+        max-width: 100% !important;
+        max-height: 33vh !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .menu-toggle {
+        display: block;
+        z-index: 9999;
+        position: relative;
+      }
+      header .navbarNav {
+        position: fixed;
+        width: 35%;
+        z-index: 9998;
+        height: calc(100vh - 50px);
+        background: var(--cr-bg-dark);
+        top: 72px;
+        left: -100%;
+        transition: left 0.5s ease;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+        overflow-y: auto;
+      }
+      header .navbarNav.active,
+      header .navbarNav.show {
+        left: 0;
+      }
+      body.menu-open main {
+        position: relative;
+        z-index: -1;
+      }
+      body.menu-open header {
+        overflow: visible;
+      }
+      header .navbarNav > ul {
+        display: block;
+      }
+      header .navbarNav .dropdown-menu {
+        display: none;
+      }
+      header .navbarNav .dropdown.show .dropdown-menu {
+        display: block;
+      }
+      header .navbarNav ul li a {
+        border-bottom: 1px solid #a9a9a933;
+      }
+
+      header .navbar-collapse .nav-item:last-child{
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .aviator-lang-switcher.desktop-only {
+        display: none !important;
+      }
+      .aviator-lang-switcher-mobile {
+        display: block;
+        margin-top: 12px;
+        padding: 0 12px 12px;
+        border-top: 1px solid #a9a9a933;
+      }
+      .aviator-lang-mobile-title {
+        color: #cfcfcf;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin: 10px 0 8px;
+      }
+      .aviator-lang-mobile-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .aviator-lang-mobile-link {
+        display: block;
+        padding: 8px 10px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 4px;
+      }
+      .aviator-lang-mobile-link.active {
+        border-color: var(--cr-accent);
+        color: var(--cr-accent);
+      }
+
+    .main_heading h3 {
+        font-size: 30px;
+        margin-top: -20px;
+    }
+
+    .main_heading h5 {
+        font-size: 17px;
+    }
+
+    .about_content ul li {
+        font-size: 15px;
+    }
+
+    .steps_box {
+        margin-top: 15px;
+    }
+}
+
+
+@media(max-width:767px) and (min-width:500px){
+    header {
+        overflow-x: hidden;
+        z-index: 9990;
+    }
+    main {
+        position: relative;
+        z-index: 0;
+    }
+    .hero_section {
+        padding-top: 100px;
+        overflow-x: hidden;
+    }
+    /* Mobile: images max 1/3 viewport height, centered */
+    .page-content-from-db img:not(.demo-quick-access__store-icon):not(.demo-preview-card__img):not(.section-media img),
+    .page-content-from-db .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .casino-article-content img {
+        max-width: 100% !important;
+        max-height: 33vh !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .menu-toggle {
+        display: block;
+        z-index: 9999;
+        position: relative;
+      }
+      header .navbarNav {
+        position: fixed;
+        width: 40%;
+        z-index: 9998;
+        height: calc(100vh - 50px);
+        background: var(--cr-bg-dark);
+        top: 72px;
+        left: -100%;
+        transition: left 0.5s ease;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+        overflow-y: auto;
+      }
+      header .navbarNav.active,
+      header .navbarNav.show {
+        left: 0;
+      }
+      body.menu-open main {
+        position: relative;
+        z-index: -1;
+      }
+      body.menu-open header {
+        overflow: visible;
+      }
+      header .navbarNav > ul {
+        display: block;
+      }
+      header .navbarNav .dropdown-menu {
+        display: none;
+      }
+      header .navbarNav .dropdown.show .dropdown-menu {
+        display: block;
+      }
+      header .navbarNav ul li a {
+        border-bottom: 1px solid #a9a9a933;
+      }
+
+      header .navbar-collapse .nav-item:last-child{
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .aviator-lang-switcher.desktop-only {
+        display: none !important;
+      }
+      .aviator-lang-switcher-mobile {
+        display: block;
+        margin-top: 12px;
+        padding: 0 12px 12px;
+        border-top: 1px solid #a9a9a933;
+      }
+      .aviator-lang-mobile-title {
+        color: #cfcfcf;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin: 10px 0 8px;
+      }
+      .aviator-lang-mobile-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .aviator-lang-mobile-link {
+        display: block;
+        padding: 8px 10px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 4px;
+      }
+      .aviator-lang-mobile-link.active {
+        border-color: var(--cr-accent);
+        color: var(--cr-accent);
+      }
+
+    #testimonial .row {
+        padding: 0px 15px;
+    }
+
+    .hero_content {
+        text-align: center;
+    }
+
+    .hero_content h1,
+    .hero_content .hero_content__title {
+        font-size: 45px;
+    }
+
+    .hero_content .main_btn {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .main_heading h5 {
+        font-size: 15px;
+    }
+
+    .about_content ul li {
+        font-size: 17px;
+    }
+
+    .main_heading h3 {
+        font-size: 30px;
+    }
+
+    .about_content img:not(.demo-quick-access__store-icon):not(.demo-preview-card__img) {
+        margin-top: 20px;
+    }
+
+    .steps_box {
+        margin-top: 20px;
+    }
+
+    .about_content .main_btn {
+        margin: auto;
+    }
+}
+
+
+@media(max-width:499px) and (min-width:320px){
+    header {
+        overflow-x: hidden;
+        z-index: 9990;
+    }
+    main {
+        position: relative;
+        z-index: 0;
+    }
+    header .navbar-brand img {
+        height: 40px;
+        max-width: 160px;
+        width: auto;
+    }
+    .hero_section {
+        padding-top: 65px;
+        overflow-x: hidden;
+    }
+    /* Mobile: images max 1/3 viewport height */
+    .page-content-from-db img:not(.demo-quick-access__store-icon):not(.demo-preview-card__img):not(.section-media img),
+    .page-content-from-db .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .about_content img:not(.demo-quick-access__store-icon):not(.section-media img):not(.demo-preview-card__img),
+    .casino-article-content img {
+        max-width: 100% !important;
+        max-height: 33vh !important;
+        width: auto !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .menu-toggle {
+        display: block;
+        z-index: 9999;
+        position: relative;
+      }
+      header .navbarNav {
+        position: fixed;
+        width: 60%;
+        z-index: 9998;
+        height: calc(100vh - 50px);
+        background: var(--cr-bg-dark);
+        top: 72px;
+        left: -100%;
+        transition: left 0.5s ease;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+        overflow-y: auto;
+      }
+      header .navbarNav.active,
+      header .navbarNav.show {
+        left: 0;
+      }
+      body.menu-open main {
+        position: relative;
+        z-index: -1;
+      }
+      body.menu-open header {
+        overflow: visible;
+      }
+      header .navbarNav > ul {
+        display: block;
+      }
+      header .navbarNav .dropdown-menu {
+        display: none;
+      }
+      header .navbarNav .dropdown.show .dropdown-menu {
+        display: block;
+      }
+      header .navbarNav ul li a {
+        border-bottom: 1px solid #a9a9a933;
+      }
+
+      header .navbar-collapse .nav-item:last-child{
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .aviator-lang-switcher.desktop-only {
+        display: none !important;
+      }
+      .aviator-lang-switcher-mobile {
+        display: block;
+        margin-top: 12px;
+        padding: 0 12px 12px;
+        border-top: 1px solid #a9a9a933;
+      }
+      .aviator-lang-mobile-title {
+        color: #cfcfcf;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin: 10px 0 8px;
+      }
+      .aviator-lang-mobile-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .aviator-lang-mobile-link {
+        display: block;
+        padding: 8px 10px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 4px;
+      }
+      .aviator-lang-mobile-link.active {
+        border-color: var(--cr-accent);
+        color: var(--cr-accent);
+      }
+
+    .hero_content {
+        text-align: center;
+    }
+
+    .hero_content h1,
+    .hero_content .hero_content__title {
+        font-size: 34px;
+    }
+
+    .hero_content .main_btn {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 25px !important;
+    }
+
+    .main_heading h5 {
+        font-size: 15px;
+    }
+
+    .about_content ul li {
+        font-size: 17px;
+    }
+
+    .main_heading h3 {
+        font-size: 30px;
+    }
+
+    .about_content img:not(.demo-quick-access__store-icon):not(.demo-preview-card__img) {
+        margin-top: 20px;
+    }
+
+    .steps_box {
+        margin-top: 20px;
+    }
+
+    .about_content .main_btn {
+        margin: auto;
+    }
+
+    .main_heading h5 svg {
+        height: 30px;
+        margin: 0px 5px;
+    }
+
+    .steps_box:before {
+        left: 0px;
+        width: 99%;
+        height: 99%;
+    }
+    #testimonial .row {
+        padding: 0px 15px;
+    }
+
+    .main_btn a {
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+}
+
+/* Testimonials — avatars must stay circular; block-wide .page-content-from-db img rules break layout */
+@media (max-width: 991px) {
+    /* Internal pages were wasting the first viewport on mobile:
+       breadcrumb padding + layout py-5 + inner CMS mt-5/pt-5 stacked together. */
+    .breadcrumbs .row {
+        padding: 0.75rem 0;
+    }
+    main > section.py-5 {
+        padding-top: 1rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .text.page-content-from-db,
+    .text.page-content-from-db.about_content,
+    .casino-article-content,
+    .page-content-from-db.about_content {
+        margin-top: 0.75rem;
+    }
+    .page-content-from-db > section:first-child,
+    .page-content-from-db > section.mt-5:first-child,
+    .page-content-from-db > section.pt-5:first-child,
+    .page-content-from-db > section.mt-5.pt-5:first-child {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .page-content-from-db > section:first-child > h1:first-child,
+    .page-content-from-db > section:first-child > h2:first-child {
+        margin-top: 0;
+    }
+    #testimonial .review_img img {
+        max-height: none !important;
+        max-width: 75px !important;
+        width: 75px !important;
+        height: 75px !important;
+        min-width: 75px !important;
+        min-height: 75px !important;
+        object-fit: cover !important;
+        flex-shrink: 0 !important;
+    }
+    #testimonial .review_img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    #testimonial .swiper.swiper-slider {
+        padding-top: 3rem;
+    }
+    .demo-quick-access {
+        margin: 1.5rem auto;
+        padding: 1.35rem 1rem 1.45rem;
+        border-radius: 24px;
+    }
+    .demo-quick-access__title {
+        font-size: clamp(1.45rem, 7vw, 2rem);
+    }
+    .demo-quick-access__lead,
+    .demo-quick-access__note {
+        font-size: 0.98rem;
+    }
+    .demo-quick-access__primary,
+    .demo-quick-access__store {
+        width: 100%;
+        min-width: 0;
+        padding: 0.75rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .demo-quick-access__stores {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.8rem;
+    }
+    .demo-quick-access__store {
+        flex: none;
+        max-width: none;
+        gap: 0;
+        min-height: 0;
+        height: auto;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    .demo-quick-access__store-label {
+        gap: 0.55rem;
+    }
+    .demo-preview-strip__grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+    .demo-preview-card {
+        padding: 0.8rem;
+    }
+    .demo-preview-card__label {
+        font-size: 1.45rem;
+    }
+    .page-content-from-db .demo-preview-card__img {
+        max-height: 9.5rem !important;
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        margin: 0 auto !important;
+    }
+    .page-content-from-db .demo-quick-access__store-icon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        max-width: none !important;
+        max-height: none !important;
+        min-width: 1.5rem !important;
+        margin: 0 !important;
+        flex-shrink: 0;
+    }
+    .page-content-from-db .demo-quick-access__store-icon--google {
+        width: 1.6rem !important;
+        height: 1.6rem !important;
+        min-width: 1.6rem !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .demo-quick-access__stores {
+        grid-template-columns: 1fr;
+    }
+    .demo-quick-access__store {
+        text-align: center;
+        justify-content: center;
+    }
+    .demo-quick-access__store-label {
+        justify-content: center;
+    }
+}

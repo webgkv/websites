@@ -23,9 +23,15 @@ $config['popup_after']=10; //seconds
 // After deploying new CSS/JS/images: bump so browsers and CDN pick up new static files.
 $config['assets_version'] = 14;
 
-// Game demo iframe (optional). Leave empty to hide the demo block on /demo/ pages.
+// Game demo (neutral keys — InOut Chicken Road 2)
+$config['game_demo_provider'] = 'inout';
+$config['inout_demo_game_mode'] = 'chicken-road-two';
+$config['inout_demo_operator_id'] = 'ee2013ed-e1f0-4d6e-97d2-f36619e2eb52';
+$config['inout_demo_auth_token'] = '247d3637-c5dc-a67b-50a1-89df27733343';
+$config['inout_demo_currency'] = 'USD';
+$config['inout_demo_use_launch_api'] = true;
+// Optional: $config['inout_demo_host'] = 'https://chicken-road-two.inout.games';
 // $config['game_demo_iframe_url'] = 'https://example.com/embed/chicken-road';
-// $config['aviator_demo_currency'] = 'USD'; // legacy key name; 3-letter fiat for Spribe-style embeds
 
 $config['cms_version'] = '1.4.28';
 

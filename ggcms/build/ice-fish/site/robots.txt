@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ice-fish.run/api/sitemap/index_hub.xml

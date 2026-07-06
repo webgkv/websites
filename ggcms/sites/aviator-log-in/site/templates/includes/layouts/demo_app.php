@@ -57,8 +57,12 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 	</header>
 	<div class="demo-app-frame-host" id="demoAppFrameHost">
 		<?php
-		require_once ROOT_DIR . 'functions/aviator_demo_embed.php';
-		require ROOT_DIR . 'templates/includes/common/spribe_aviator_demo.php';
+		require_once ROOT_DIR . 'functions/game_demo_embed.php';
+		if (function_exists('game_demo_is_mirror_shell') && game_demo_is_mirror_shell($config)) {
+			require ROOT_DIR . 'templates/includes/common/app_demo_mirror.php';
+		} else {
+			require ROOT_DIR . 'templates/includes/common/app_demo.php';
+		}
 		?>
 	</div>
 </div>

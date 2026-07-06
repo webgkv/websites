@@ -27,13 +27,14 @@ $config['popup_after']=10; //seconds
 // Game demo iframe (optional). Leave empty to hide the demo block on /demo/ pages.
 // $config['game_demo_iframe_url'] = 'https://example.com/embed/chicken-road';
 // InOut demo defaults (Chicken Road 2 — same as chickenrd2.com iframe):
-// $config['chickenroad_inout_demo_host'] = 'https://chicken-road-two.inout.games';
-// $config['chickenroad_inout_game_mode'] = 'chicken-road-two';
-// $config['chickenroad_inout_operator_id'] = 'ee2013ed-e1f0-4d6e-97d2-f36619e2eb52';
-// $config['chickenroad_inout_auth_token'] = '247d3637-c5dc-a67b-50a1-89df27733343';
-// $config['chickenroad_inout_demo_currency'] = 'USD'; // required for demo; geo RON/EUR can hang the client
-// $config['chickenroad_inout_use_launch_api'] = true; // api.inout.games/api/launch → game host (default)
-// $config['aviator_demo_currency'] = 'USD'; // legacy key name; 3-letter fiat for Spribe-style embeds
+// Game demo (neutral keys; see core/functions/game_demo_embed.php)
+// $config['game_demo_provider'] = 'inout';
+// $config['inout_demo_game_mode'] = 'chicken-road-two';
+// $config['inout_demo_operator_id'] = '…';
+// $config['inout_demo_auth_token'] = '…';
+// $config['inout_demo_currency'] = 'USD';
+// $config['inout_demo_use_launch_api'] = true;
+// $config['game_demo_iframe_url'] = '';
 
 $config['cms_version'] = '1.4.28';
 

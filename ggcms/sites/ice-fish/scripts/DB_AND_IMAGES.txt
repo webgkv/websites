@@ -1,0 +1,75 @@
+Ice Fish — database import and image storage
+================================================
+
+DATABASE
+--------
+Source:  tmp/db/dikodo_aviator_2026-05-18_14-51-15.sql.gz (Aviator SXD dump)
+Prepared: tmp/db/icefish_prepared.sql.gz
+
+Regenerate prepared dump:
+  python3 scripts/prepare_icefish_db.py \
+    tmp/db/dikodo_aviator_2026-05-18_14-51-15.sql.gz \
+    tmp/db/icefish_prepared.sql.gz
+
+Import (on server):
+  mysql -u USER -p -e "CREATE DATABASE IF NOT EXISTS ice-fish CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+  gunzip -c tmp/db/icefish_prepared.sql.gz | mysql -u USER -p ice-fish
+  php site/scripts/seed_icefish_pages_cli.php
+
+What the prepared dump keeps (same as Aviator, rebranded text):
+  pages (menu + all page copy), guides, games, casinos, casino_articles,
+  content_i18n for pages/guides/games/casinos (NOT blog posts),
+  languages, users, variables, partners, ads, telemetry, …
+
+What is removed (blog only):
+  blog, blog_category, blog_tags — no article rows
+  content_i18n / translation_cluster_state / admin_jobs rows where entity=blog
+  (menu item "Blog" under pages is kept — that is the /blog/ section URL, not posts)
+
+After import:
+  site/config/config.php → mysql_database=dikodo_icefish
+  Admin → SEO Structured Data → site_name: Ice Fish
+  seed_icefish_pages_cli.php is NOT required if pages imported from dump.
+
+IMAGE STORAGE (where files live)
+--------------------------------
+1) site/assets/images/
+   Static theme: logo.png, favicon.png, pwa-icon-*.png, ice-fish-hero.webp,
+   apk-install-android/step-*.png, UI SVG (chevrons, store badges).
+   Referenced in templates as: /assets/images/...
+
+2) site/files/{entity}/{id}/{field}/{filename}
+   Uploaded via admin (pages, guides, casino articles, etc.).
+   URL in HTML/DB: /files/pages/12/text/photo.jpg
+   Helper: get_img('pages', $row, 'text')
+
+3) site/images/{module}/{id}/{subdir}/{size}-{ext}-{name}.webp
+   Resized derivatives; generated on first request by site/images/index.php.
+   URL helper: imgstr('casinos', $id, $filename, '800x512')
+   Pattern: /images/casinos/5/img/800x512-jpg-logo.webp
+
+4) site/images/{module}/  (flat, no id subfolder)
+   games:     /images/games/Game-Header.webp  (filename only in DB)
+   download:  /images/download/*.webp  (static, served directly)
+   predictor: /images/predictor/*.png
+   casinos:   /images/casinos/*.webp
+
+5) site/files/languages/{lang_id}/dictionary/common.php
+   i18n strings (not images).
+
+6) site/files/reference/*.json
+   SEO import/export snapshots (optional).
+
+RECOMMENDATION for new Ice Fish content
+--------------------------------------------
+- Brand assets → always site/assets/images/ (version via config assets_version).
+- New casino/game/guide images from admin upload → site/files/ (automatic paths).
+- Large static sets for a landing (download/predictor) → site/images/download|predictor/
+  with exact filename referenced in page HTML.
+- Do not copy Aviator site/files/ or site/images/casinos from old server; upload fresh
+  assets with ice-fish naming.
+
+HTML in page content should use:
+  <img src="/assets/images/ice-fish-hero.webp" ...>  — theme
+  <img src="/files/pages/ID/text/name.jpg" ...>         — CMS upload
+  <?= imgstr('casinos', $q, $q['img'], '400x400') ?>    — listing thumbnails
