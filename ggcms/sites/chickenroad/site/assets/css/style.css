@@ -1309,6 +1309,24 @@ h1 {
     border-radius: 8px;
 }
 
+/* Demo page cluster (pages#4) — steps grid only; all other images single-column */
+.page-content-from-db #how-to-start .row [class*="col-"] {
+    min-width: 0;
+}
+.page-content-from-db #how-to-start .steps_box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.page-content-from-db #how-to-start .steps_box img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 190px !important;
+    object-fit: cover !important;
+    object-position: left center !important;
+    margin-bottom: 1rem !important;
+    border-radius: 0 !important;
+}
+
 /* Games / long-form DB lists: figures must be block-level, not inside inline spans */
 .page-content-from-db .about_content li .section-media__figure,
 .page-content-from-db .about_content ul .section-media__figure {

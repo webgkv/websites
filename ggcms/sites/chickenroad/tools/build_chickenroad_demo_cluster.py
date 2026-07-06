@@ -29,6 +29,30 @@ IMAGES = {
     "step3": "/assets/images/chickenroad-step-3.webp",
 }
 
+# Match homepage cluster inline media (home_cluster_sections_i18n.py)
+FIG = (
+    'class="section-media__figure" style="width: 100%; margin: 0 0 1.2em 0; '
+    'overflow: hidden; border-radius: 10px;"'
+)
+IMG = (
+    'style="width: 100%; max-width: 100%; height: 340px; object-fit: cover; '
+    'object-position: center 35%; display: block;"'
+)
+IMG_PORTRAIT = (
+    'style="width: 100%; max-width: 100%; height: 420px; object-fit: contain; '
+    'object-position: center top; display: block;"'
+)
+STEP_BOX = 'style="overflow: hidden; border-radius: 10px;"'
+STEP_IMG = (
+    'style="width: 100%; max-width: 100%; height: 190px; object-fit: cover; '
+    'object-position: left center; display: block;"'
+)
+P = 'style="font-size: 20px; line-height: 1.6;"'
+OLI = (
+    'style="font-size: 20px; line-height: 1.6; display: list-item; '
+    'list-style-type: decimal; list-style-position: outside; margin-bottom: .4em;"'
+)
+
 LOCALE_META = {
     1: {
         "code": "en",
@@ -135,30 +159,31 @@ def e(text: str) -> str:
     return html.escape(text, quote=True)
 
 
-def img_tag(key: str, alt: str) -> str:
-    return f'<img src="{IMAGES[key]}" border="0" alt="{e(alt)}" />'
+def img_tag(key: str, alt: str, *, variant: str = "cover") -> str:
+    style = IMG_PORTRAIT if variant == "portrait" else (STEP_IMG if variant == "step" else IMG)
+    return f'<img {style} src="{IMAGES[key]}" border="0" alt="{e(alt)}" />'
 
 
-def inline_figure(key: str, alt: str) -> str:
-    return f'<figure class="section-media__figure">{img_tag(key, alt)}</figure>'
+def inline_figure(key: str, alt: str, *, variant: str = "cover") -> str:
+    return f"<figure {FIG}>{img_tag(key, alt, variant=variant)}</figure>"
 
 
 def paras_block(items: list[str]) -> str:
-    return "".join(f"<p>{e(p)}</p>" for p in items if p)
+    return "".join(f"<p {P}>{e(p)}</p>" for p in items if p)
 
 
-def paras_with_figure(items: list[str], after_index: int, key: str, alt: str) -> str:
+def paras_with_figure(items: list[str], after_index: int, key: str, alt: str, *, variant: str = "cover") -> str:
     out: list[str] = []
     for i, p in enumerate(items):
         if p:
-            out.append(f"<p>{e(p)}</p>")
+            out.append(f"<p {P}>{e(p)}</p>")
         if i == after_index:
-            out.append(inline_figure(key, alt))
+            out.append(inline_figure(key, alt, variant=variant))
     return "".join(out)
 
 
 def ol_block(items: list[str]) -> str:
-    lis = "".join(f"<li>{e(item)}</li>" for item in items if item)
+    lis = "".join(f"<li {OLI}>{e(item)}</li>" for item in items if item)
     return f"<ol>{lis}</ol>"
 
 
@@ -179,17 +204,19 @@ def steps_row(body: dict) -> str:
     for img_key, h_key, p_key, alt_key in steps:
         cols.append(
             f"""<div class="col-xl-4 col-lg-4 col-md-6">
-<div class="steps_box">{img_tag(img_key, a[alt_key])}
+<div {STEP_BOX} class="steps_box">{img_tag(img_key, a[alt_key], variant="step")}
 <div class="steps_content">
 <h3>{e(t[h_key])}</h3>
-<p>{e(t[p_key])}</p>
+<p {P}>{e(t[p_key])}</p>
 </div>
 </div>
 </div>"""
         )
-    return f"""<div class="col-xl-9 col-lg-9 mx-auto">
-<div class="row mt-4 align-items-center g-4">
+    return f"""<div class="row mt-4">
+<div class="col-xl-9 col-lg-9 mx-auto">
+<div class="row align-items-stretch g-4">
 {"".join(cols)}
+</div>
 </div>
 </div>"""
 
@@ -235,7 +262,7 @@ def build_content(body: dict, page_title: str) -> str:
 <div class="row mt-4 align-items-start g-4">
 <div class="col-xl-7 col-lg-7 col-md-12">
 <div class="about_content">
-{paras_with_figure(body["what_paras"], 2, "app", a["app"])}
+{paras_block(body["what_paras"])}
 </div>
 </div>
 <div class="col-xl-5 col-lg-5 col-md-12">
@@ -251,7 +278,7 @@ def build_content(body: dict, page_title: str) -> str:
 <div class="col-12">
 <div class="main_heading">
 <h2>{e(body["start_h2"])}</h2>
-<p>{e(body["start_summary"])}</p>
+<p {P}>{e(body["start_summary"])}</p>
 </div>
 </div>
 <div class="row mt-4">
@@ -316,7 +343,7 @@ def build_content(body: dict, page_title: str) -> str:
 </div>
 <div class="col-xl-6 col-lg-6 col-md-12">
 <div class="about_content section-media">
-{inline_figure("mobile", a["mobile"])}
+{inline_figure("mobile", a["mobile"], variant="portrait")}
 </div>
 </div>
 </div>

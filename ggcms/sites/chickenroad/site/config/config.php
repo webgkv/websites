@@ -21,7 +21,7 @@ $config['site_hero_image'] = '/assets/images/chickenroad-hero.webp';
 $config['site_default_og_image'] = '/assets/images/chickenroad-hero.webp';
 $config['popup_after']=10; //seconds
 // After deploying new CSS/JS/images: bump so browsers and CDN pick up new static files.
-$config['assets_version'] = 14;
+$config['assets_version'] = 17;
 
 // Game demo (neutral keys — InOut Chicken Road 2)
 $config['game_demo_provider'] = 'inout';
