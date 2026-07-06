@@ -436,3 +436,13 @@ if (mysql_select("SHOW TABLES LIKE 'ads'", 'num_rows') > 0) {
 		$done[] = "ads.img_2";
 	}
 }
+
+// --- seo_index_rules (SEO → Index rules) ---
+if (is_file(ROOT_DIR . 'functions/seo_index_rules.php')) {
+	require_once ROOT_DIR . 'functions/seo_index_rules.php';
+	if (function_exists('seo_index_rules_ensure_table') && seo_index_rules_ensure_table()) {
+		if (@mysql_select("SHOW TABLES LIKE 'seo_index_rules'", 'num_rows') > 0) {
+			$done[] = 'seo_index_rules table';
+		}
+	}
+}

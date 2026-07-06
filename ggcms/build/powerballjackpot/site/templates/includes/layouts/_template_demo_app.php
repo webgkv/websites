@@ -23,13 +23,7 @@ if (function_exists('aviator_seo_public_origin')) {
 	<?php if ($_canon !== ''): ?>
 	<link rel="canonical" href="<?= htmlspecialchars($_canon, ENT_QUOTES, 'UTF-8') ?>">
 	<?php endif; ?>
-<?php
-$_seo_robots = function_exists('site_seo_robots_meta_content') ? site_seo_robots_meta_content() : '';
-if ($_seo_robots !== '') {
-?>
-	<meta name="robots" content="<?= htmlspecialchars($_seo_robots, ENT_QUOTES, 'UTF-8') ?>">
-	<meta name="googlebot" content="<?= htmlspecialchars($_seo_robots, ENT_QUOTES, 'UTF-8') ?>">
-<?php } ?>
+<?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
 	<meta name="theme-color" content="#2c2a33">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">

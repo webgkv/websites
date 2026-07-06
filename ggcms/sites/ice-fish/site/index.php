@@ -1604,6 +1604,10 @@ if ($route_debug_request && $route_debug_ok && $abc['route_debug'] !== null) {
 	exit;
 }
 
+if (function_exists('site_seo_apply_robots_header')) {
+	site_seo_apply_robots_header();
+}
+
 //404
 if ($error>0) {
 

@@ -49,15 +49,7 @@ $config['section_admin_labels'] = array(
 
 $config['cms_version'] = '1.4.28';
 
-// Temporary: noindex blog in Google (googlebot meta) and omit blog URLs from sitemaps. Set false to restore.
-$config['blog_google_deindex'] = true;
-
-// Restrict search indexing to homepage + listed demo/app locales only (meta robots, X-Robots-Tag, sitemap).
-$config['seo_index_whitelist'] = true;
-$config['seo_index_demo_app_langs'] = array('en');
-// Admin reminder when indexing is restricted (banner re-shows after N pages or M minutes).
-$config['seo_index_admin_remind_pages'] = 30;
-$config['seo_index_admin_remind_minutes'] = 30;
+// Search indexing: configure in admin → SEO → Index rules (not here).
 
 $config['multilingual'] = true; // multilingual site on/off
 $config['multilingual_u0'] = true; // use or not for primary language in URL u[0]

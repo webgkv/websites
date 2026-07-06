@@ -62,6 +62,8 @@
 
 				<?=html_array('layouts/feedback_header')?>
 
+				<?php require ROOT_DIR . $config['style'] . '/includes/layouts/admin_indexing_guard.php'; ?>
+
 				<?=html_array('layouts/notifications')?>
 
 				<li class="nav-item dropdown">
@@ -144,6 +146,7 @@
 				<?php
 				unset($_SESSION['admin_flash_info']);
 			}
+			require ROOT_DIR . $config['style'] . '/includes/layouts/admin_indexing_guard_banner.php';
 			?>
 
 			<?=$content?>

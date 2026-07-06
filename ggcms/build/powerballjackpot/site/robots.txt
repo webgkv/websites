@@ -1,24 +1,4 @@
 User-agent: *
-Disallow: /
-
-# Indexable: language homepages + EN lottery simulator demo only
-Allow: /$
-Allow: /en/$
-Allow: /fr/$
-Allow: /de/$
-Allow: /es/$
-Allow: /hi/$
-Allow: /pt/$
-Allow: /ru/$
-Allow: /ar/$
-Allow: /az/$
-Allow: /bn/$
-Allow: /it/$
-Allow: /nl/$
-Allow: /pl/$
-Allow: /uk/$
-Allow: /ro/$
-Allow: /vi/$
-Allow: /en/demo/app/
+Allow: /
 
 Sitemap: https://powerballjackpot.run/api/sitemap/index_hub.xml

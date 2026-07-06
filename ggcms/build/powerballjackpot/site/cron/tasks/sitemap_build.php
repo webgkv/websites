@@ -63,9 +63,9 @@ if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
 		}
 	}
 }
-// After admin toggles: temporary Google deindex must still drop blog from all sitemaps.
-if (!empty($config['blog_google_deindex'])) {
-	$include['blog'] = 0;
+// SEO → Index rules: drop blocked sections from sitemap.
+if (function_exists('site_seo_sitemap_apply_index_rules_to_include')) {
+	$include = site_seo_sitemap_apply_index_rules_to_include($include);
 }
 
 $languages = mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
@@ -227,7 +227,7 @@ $report = array(); // per-lang summary for CLI/HTML
 $blog_total_in_db = null;
 $has_content_i18n = @mysql_select("SHOW TABLES LIKE 'content_i18n'", 'num_rows') > 0;
 $blog_date_cap = date('Y-m-d H:i:s');
-$seo_index_whitelist = function_exists('site_seo_index_whitelist_enabled') && site_seo_index_whitelist_enabled();
+$seo_index_whitelist = function_exists('site_seo_sitemap_whitelist_mode') && site_seo_sitemap_whitelist_mode();
 
 foreach ($languages as $lang) {
 	$langId = (int)$lang['id'];
@@ -239,7 +239,7 @@ foreach ($languages as $lang) {
 	$blog_rows_empty_slug = 0;
 	$blog_rows_same_as_source = 0;
 
-	// 1) Pages — or whitelist-only URLs when seo_index_whitelist is enabled
+	// 1) Pages — or whitelist-only URLs when site-wide block is active (SEO → Index rules)
 	if ($seo_index_whitelist) {
 		$whitelist_entries = site_seo_sitemap_whitelist_entries($base, $lang);
 		foreach ($whitelist_entries as $we) {
@@ -248,7 +248,7 @@ foreach ($languages as $lang) {
 		}
 	} elseif (!empty($include['pages']) && $pages) {
 		foreach ($pages as $p) {
-			if (!empty($config['blog_google_deindex']) && isset($p['module']) && (string)$p['module'] === 'blog') {
+			if (function_exists('site_seo_sitemap_entity_allowed') && !site_seo_sitemap_entity_allowed('blog') && isset($p['module']) && (string)$p['module'] === 'blog') {
 				continue;
 			}
 			$slug = '';

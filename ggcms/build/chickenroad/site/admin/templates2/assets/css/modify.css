@@ -125,6 +125,31 @@ body.small-navigation:not(.hidden-navigation) .navigation .navigation-menu-body 
 body.small-navigation:not(.hidden-navigation) .navigation .navigation-menu-body ul li a+ul li a {
 	padding: 5px 20px;}
 
+/* Admin sidebar: collapsible top-level groups (all brands) */
+.navigation .navigation-menu-body > ul > li.nav-group:not(.open) > ul {
+	display: none;
+}
+.navigation .navigation-menu-body > ul > li.nav-group > a {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.navigation .navigation-menu-body > ul > li.nav-group > a > span {
+	flex: 1 1 auto;
+}
+.navigation .navigation-menu-body > ul > li.nav-group > a .sub-menu-arrow {
+	margin-left: auto;
+	font-size: 11px;
+	opacity: 0.75;
+	transition: transform 0.2s ease;
+}
+.navigation .navigation-menu-body > ul > li.nav-group:not(.open) > a .sub-menu-arrow {
+	transform: rotate(180deg);
+}
+.navigation .navigation-menu-body > ul > li.nav-group.open > a .sub-menu-arrow.rotate-in {
+	transform: rotate(0deg);
+}
+
 /* Popup success / error z-index */
 .mfp-bg {z-index: 2042!important;}
 .mfp-wrap {z-index: 2043!important;}

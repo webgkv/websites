@@ -10,6 +10,7 @@ if (function_exists('ini_set')) {
 	@ini_set('memory_limit', '512M');
 }
 require_once ROOT_DIR . 'functions/lang_func.php';
+require_once ROOT_DIR . 'functions/site_seo.php';
 if (php_sapi_name() !== 'cli') {
 	header('Content-Type: text/plain; charset=utf-8');
 }
@@ -62,9 +63,9 @@ if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
 		}
 	}
 }
-// After admin toggles: temporary Google deindex must still drop blog from all sitemaps.
-if (!empty($config['blog_google_deindex'])) {
-	$include['blog'] = 0;
+// SEO → Index rules: drop blocked sections from sitemap.
+if (function_exists('site_seo_sitemap_apply_index_rules_to_include')) {
+	$include = site_seo_sitemap_apply_index_rules_to_include($include);
 }
 
 $languages = mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
@@ -217,6 +218,7 @@ $report = array(); // per-lang summary for CLI/HTML
 $blog_total_in_db = null;
 $has_content_i18n = @mysql_select("SHOW TABLES LIKE 'content_i18n'", 'num_rows') > 0;
 $blog_date_cap = date('Y-m-d H:i:s');
+$seo_index_whitelist = function_exists('site_seo_sitemap_whitelist_mode') && site_seo_sitemap_whitelist_mode();
 
 foreach ($languages as $lang) {
 	$langId = (int)$lang['id'];
@@ -228,10 +230,16 @@ foreach ($languages as $lang) {
 	$blog_rows_empty_slug = 0;
 	$blog_rows_same_as_source = 0;
 
-	// 1) Pages
-	if (!empty($include['pages']) && $pages) {
+	// 1) Pages — or whitelist-only URLs when site-wide block is active (SEO → Index rules)
+	if ($seo_index_whitelist) {
+		$whitelist_entries = site_seo_sitemap_whitelist_entries($base, $lang);
+		foreach ($whitelist_entries as $we) {
+			$entries[] = $we;
+			$cnt_pages++;
+		}
+	} elseif (!empty($include['pages']) && $pages) {
 		foreach ($pages as $p) {
-			if (!empty($config['blog_google_deindex']) && isset($p['module']) && (string)$p['module'] === 'blog') {
+			if (function_exists('site_seo_sitemap_entity_allowed') && !site_seo_sitemap_entity_allowed('blog') && isset($p['module']) && (string)$p['module'] === 'blog') {
 				continue;
 			}
 			$slug = '';
@@ -266,7 +274,7 @@ foreach ($languages as $lang) {
 	}
 
 	// 2) Blog
-	if (!empty($include['blog']) && @mysql_select("SHOW TABLES LIKE 'blog'", 'num_rows') > 0) {
+	if (!$seo_index_whitelist && !empty($include['blog']) && @mysql_select("SHOW TABLES LIKE 'blog'", 'num_rows') > 0) {
 		$blog_total_in_db = (int)@mysql_select("SELECT COUNT(*) FROM blog WHERE display=1", 'string');
 		$gcats = mysql_select("SELECT * FROM blog_category", 'rows_id');
 		if (!$gcats) {
@@ -355,7 +363,7 @@ foreach ($languages as $lang) {
 	}
 
 	// 3) Guides
-	if (!empty($include['guides']) && @mysql_select("SHOW TABLES LIKE 'guides'", 'num_rows') > 0) {
+	if (!$seo_index_whitelist && !empty($include['guides']) && @mysql_select("SHOW TABLES LIKE 'guides'", 'num_rows') > 0) {
 		$guide_categories = array('analysis', 'bonus', 'how-to-win', 'signals', 'crash-gambling');
 		$guide_cats_from_db = @mysql_select("SELECT DISTINCT category FROM guides WHERE display=1 AND category IS NOT NULL AND category != ''", 'rows');
 		if ($guide_cats_from_db) {
@@ -403,7 +411,7 @@ foreach ($languages as $lang) {
 	}
 
 	// 4) Games
-	if (!empty($include['games']) && @mysql_select("SHOW TABLES LIKE 'games'", 'num_rows') > 0) {
+	if (!$seo_index_whitelist && !empty($include['games']) && @mysql_select("SHOW TABLES LIKE 'games'", 'num_rows') > 0) {
 		$games_slug = $games_page ? sm_slug($games_page, $langId, $default_lang_id) : '';
 		if ($games_slug === '') {
 			$games_slug = 'games';
@@ -437,7 +445,7 @@ foreach ($languages as $lang) {
 	}
 
 	// 5) Casinos
-	if (!empty($include['casinos']) && @mysql_select("SHOW TABLES LIKE 'casino_articles'", 'num_rows') > 0) {
+	if (!$seo_index_whitelist && !empty($include['casinos']) && @mysql_select("SHOW TABLES LIKE 'casino_articles'", 'num_rows') > 0) {
 		$casinos_slug = $casinos_page ? sm_slug($casinos_page, $langId, $default_lang_id) : '';
 		if ($casinos_slug === '') {
 			$casinos_slug = 'casinos';
@@ -471,7 +479,7 @@ foreach ($languages as $lang) {
 	}
 
 	// 6) Authors
-	if (!empty($include['authors']) && @mysql_select("SHOW TABLES LIKE 'site_authors'", 'num_rows') > 0) {
+	if (!$seo_index_whitelist && !empty($include['authors']) && @mysql_select("SHOW TABLES LIKE 'site_authors'", 'num_rows') > 0) {
 		require_once ROOT_DIR . 'functions/author_profiles.php';
 		$authors_slug = $authors_page ? sm_slug($authors_page, $langId, $default_lang_id) : '';
 		if ($authors_slug === '') {

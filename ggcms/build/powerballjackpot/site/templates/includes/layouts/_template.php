@@ -391,15 +391,7 @@ if ($_preload_hero !== '') {
 ?>
         <title><?=$_aviator_doc_title_esc?><?=$_aviator_doc_suffix_esc?></title>
         <meta name="description" content="<?=$_aviator_meta_desc_esc?>">
-<?php
-$_seo_robots = function_exists('site_seo_robots_meta_content') ? site_seo_robots_meta_content() : '';
-if ($_seo_robots !== '') {
-?>
-        <meta name="robots" content="<?= htmlspecialchars($_seo_robots, ENT_QUOTES, 'UTF-8') ?>">
-        <meta name="googlebot" content="<?= htmlspecialchars($_seo_robots, ENT_QUOTES, 'UTF-8') ?>">
-<?php } elseif (!empty($config['blog_google_deindex']) && !empty($abc['module']) && (string)$abc['module'] === 'blog') { ?>
-        <meta name="googlebot" content="noindex, follow">
-<?php } ?>
+<?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
         <meta name="theme-color" content="#051423">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">

@@ -109,16 +109,30 @@
     /*------------- page loader -------------*/
 
     /*------------- side menu (sub menü arrow) -------------*/
+    function initAdminNavGroups() {
+        $('.navigation .navigation-menu-body > ul > li').each(function () {
+            var $li = $(this);
+            var $ul = $li.children('ul');
+            if (!$ul.length) {
+                return;
+            }
+            $li.addClass('nav-group');
+            var $a = $li.children('a').first();
+            if (!$a.find('.sub-menu-arrow').length) {
+                $a.append('<i class="sub-menu-arrow ti-angle-up"></i>');
+            }
+            if ($a.attr('href') && $a.attr('href').indexOf('admin.php') === 0) {
+                $a.attr('href', '#');
+            }
+            if (!$li.hasClass('open')) {
+                $ul.hide();
+            }
+        });
+    }
+
+    initAdminNavGroups();
     wind_.on('load', function () {
-        setTimeout(function () {
-            $('.navigation .navigation-menu-body ul li a').each(function () {
-                var $this = $(this);
-                if ($this.next('ul').length) {
-                    $this.append('<i class="sub-menu-arrow ti-angle-up"></i>');
-                }
-            });
-            $('.navigation .navigation-menu-body ul li.open>a>.sub-menu-arrow').removeClass('ti-plus').addClass('ti-minus').addClass('rotate-in');
-        }, 200);
+        setTimeout(initAdminNavGroups, 100);
     });
     /*------------- side menu (sub menü arrow) -------------*/
 
@@ -251,6 +265,9 @@
         var $this = $(this);
         if ($this.next('ul').length) {
             var sub_menu_arrow = $this.find('.sub-menu-arrow');
+            var $li = $this.parent('li');
+            $li.toggleClass('open');
+            $li.siblings('.nav-group').removeClass('open');
             sub_menu_arrow.toggleClass('rotate-in');
             $this.next('ul').toggle(200);
             $this.parent('li').siblings().find('ul').not($this.parent('li').find('ul')).slideUp(200);

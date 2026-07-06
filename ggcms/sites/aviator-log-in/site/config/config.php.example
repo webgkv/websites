@@ -21,7 +21,7 @@ $config['site_default_og_image'] = '/assets/images/aviator-main.webp';
 $config['popup_after']=10;
 
 $config['cms_version'] = '1.4.28';
-$config['blog_google_deindex'] = false;
+// Search indexing: configure in admin → SEO → Index rules (not here).
 
 $config['multilingual'] = true;
 $config['multilingual_u0'] = true;

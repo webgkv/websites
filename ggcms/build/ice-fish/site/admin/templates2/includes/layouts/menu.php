@@ -42,12 +42,12 @@ foreach ($modules2 as $key => $value) {
 		}
 		// if at least one sub-section exists
 		if ($first_url) {
-			//$content.='<a href="/admin.php?m='.$first_url.'" >'.a18n($value['name']).'</a>';
 			$content.='
-				<li '.($parent_active?'class="open"':'').'>
-					<a href="/admin.php?m='.$first_url.'">
+				<li class="nav-group'.($parent_active?' open':'').'">
+					<a href="#" class="nav-parent-link" data-nav-toggle="1">
 						<i class="nav-link-icon" data-feather="'.$value['icon'].'"></i>
 						<span>'.a18n($value['name']).'</span>
+						<i class="sub-menu-arrow ti-angle-up" aria-hidden="true"></i>
 					</a>
 					<ul>'.$bottom2.'</ul>
 				</li>';

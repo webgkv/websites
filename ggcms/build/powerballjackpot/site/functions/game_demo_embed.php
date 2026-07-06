@@ -194,6 +194,22 @@ function game_demo_provider(array $config = array()) {
 	return 'inout';
 }
 
+/**
+ * Load optional Spribe/mirror provider overlay (aviator-log-in only).
+ */
+function game_demo_ensure_spribe_provider() {
+	if (function_exists('game_demo_spribe_official_url')) {
+		return;
+	}
+	if (!defined('ROOT_DIR')) {
+		return;
+	}
+	$path = ROOT_DIR . 'functions/game_demo_embed_spribe.php';
+	if (is_file($path)) {
+		require_once $path;
+	}
+}
+
 function game_demo_is_mirror_shell(array $config = array()) {
 	$p = game_demo_provider($config);
 	return $p === 'spribe_mirror' || $p === 'spribe';
@@ -253,8 +269,11 @@ function game_demo_official_url(array $abc, array $config = array()) {
 	if ($url !== '') {
 		return $url;
 	}
-	if (game_demo_is_mirror_shell($config) && function_exists('game_demo_spribe_official_url')) {
-		return game_demo_spribe_official_url($abc, $config);
+	if (game_demo_is_mirror_shell($config)) {
+		game_demo_ensure_spribe_provider();
+		if (function_exists('game_demo_spribe_official_url')) {
+			return game_demo_spribe_official_url($abc, $config);
+		}
 	}
 	return game_demo_inout_official_url($abc, $config);
 }

@@ -36,8 +36,7 @@ $config['popup_after']=10; //seconds
 
 $config['cms_version'] = '1.4.28';
 
-// Temporary: noindex blog in Google (googlebot meta) and omit blog URLs from sitemaps. Set false to restore.
-$config['blog_google_deindex'] = true;
+// Search indexing: SEO → Index rules in admin (not config.php).
 
 $config['multilingual'] = true; // multilingual site on/off
 $config['multilingual_u0'] = true; // use or not for primary language in URL u[0]

@@ -10,6 +10,7 @@ if (function_exists('ini_set')) {
 	@ini_set('memory_limit', '512M');
 }
 require_once ROOT_DIR . 'functions/lang_func.php';
+require_once ROOT_DIR . 'functions/site_seo.php';
 if (php_sapi_name() !== 'cli') {
 	header('Content-Type: text/plain; charset=utf-8');
 }
@@ -62,9 +63,9 @@ if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
 		}
 	}
 }
-// After admin toggles: temporary Google deindex must still drop blog from all sitemaps.
-if (!empty($config['blog_google_deindex'])) {
-	$include['blog'] = 0;
+// SEO → Index rules: drop blocked sections from sitemap.
+if (function_exists('site_seo_sitemap_apply_index_rules_to_include')) {
+	$include = site_seo_sitemap_apply_index_rules_to_include($include);
 }
 
 $languages = mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
@@ -231,7 +232,7 @@ foreach ($languages as $lang) {
 	// 1) Pages
 	if (!empty($include['pages']) && $pages) {
 		foreach ($pages as $p) {
-			if (!empty($config['blog_google_deindex']) && isset($p['module']) && (string)$p['module'] === 'blog') {
+			if (function_exists('site_seo_sitemap_entity_allowed') && !site_seo_sitemap_entity_allowed('blog') && isset($p['module']) && (string)$p['module'] === 'blog') {
 				continue;
 			}
 			$slug = '';

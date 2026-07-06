@@ -157,6 +157,10 @@ $modules_admin = array(
 				'name'=>'SEO Monitor'
 			),
 			array(
+				'module'=>'seo_index_rules',
+				'name'=>'Index rules'
+			),
+			array(
 				'module'=>'seo_sitemap',
 				'name'=>'Sitemap.xml'
 			),
