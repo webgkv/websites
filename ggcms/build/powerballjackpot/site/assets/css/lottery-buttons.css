@@ -1,0 +1,176 @@
+/* Lottery CTA buttons — same as homepage .cmn-btn (site-wide) */
+.cmn-btn,
+.main_btn > a,
+a.guide-cta-btn,
+.demo-quick-access__primary {
+  --cmn-btn-bg: var(--cr-primary, #448c74);
+  --cmn-btn-alt-bg: var(--cr-secondary, #ed5050);
+  background: var(--cmn-btn-bg);
+  padding: 10px 25px;
+  color: #fff;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.3s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.4;
+  box-shadow: none;
+}
+
+button.cmn-btn {
+  font-size: inherit;
+}
+
+.cmn-btn::before,
+.cmn-btn::after,
+.main_btn > a::before,
+.main_btn > a::after,
+a.guide-cta-btn::before,
+a.guide-cta-btn::after,
+.demo-quick-access__primary::before,
+.demo-quick-access__primary::after {
+  content: "";
+  background: var(--cmn-btn-alt-bg);
+  height: 51%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -1;
+}
+
+.cmn-btn::before,
+.main_btn > a::before,
+a.guide-cta-btn::before,
+.demo-quick-access__primary::before {
+  top: 0;
+  left: 0;
+  right: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cmn-btn::after,
+.main_btn > a::after,
+a.guide-cta-btn::after,
+.demo-quick-access__primary::after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cmn-btn i,
+.cmn-btn img,
+.main_btn > a i,
+.main_btn > a img {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.cmn-btn:hover,
+.main_btn > a:hover,
+a.guide-cta-btn:hover,
+.demo-quick-access__primary:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transform: none;
+  background: var(--cmn-btn-bg);
+  box-shadow: none;
+}
+
+.cmn-btn:hover::before,
+.main_btn > a:hover::before,
+a.guide-cta-btn:hover::before,
+.demo-quick-access__primary:hover::before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.cmn-btn:hover::after,
+.main_btn > a:hover::after,
+a.guide-cta-btn:hover::after,
+.demo-quick-access__primary:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.cmn-btn.alt,
+.main_btn.alt > a {
+  --cmn-btn-bg: var(--cmn-btn-alt-bg);
+}
+
+.cmn-btn.alt::before,
+.cmn-btn.alt::after,
+.main_btn.alt > a::before,
+.main_btn.alt > a::after {
+  background: var(--cr-primary, #448c74);
+}
+
+.main_btn {
+  display: inline-block;
+  width: fit-content;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.main_btn > a {
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 700;
+  width: auto;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.blog-promo-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.blog-promo-btns .main_btn {
+  margin: 0;
+}
+
+.btn-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Header: Download / last menu CTA */
+header .navbar-collapse .nav-item .nav-link.cmn-btn {
+  padding: 10px 22px !important;
+  margin-left: 6px;
+  color: #fff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+header .navbar-collapse .nav-item .nav-link.cmn-btn:hover,
+header .navbar-collapse .nav-item .nav-link.cmn-btn.active {
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  header .navbar-collapse .nav-item .nav-link.cmn-btn {
+    display: inline-flex;
+    margin: 12px auto 0;
+  }
+}

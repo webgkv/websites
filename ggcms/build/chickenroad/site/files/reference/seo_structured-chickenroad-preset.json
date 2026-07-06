@@ -1,0 +1,30 @@
+{
+  "canonical_base": "https://chickenroad.run",
+  "site_name": "Chicken Road",
+  "breadcrumbs": {
+    "home_label": "Chicken Road",
+    "use_site_tree": 0
+  },
+  "faq": [
+    {
+      "q": "What is Chicken Road?",
+      "a": "Chicken Road is a step-based crash-style game where you choose how far the chicken moves before cashing out. On this site you can read guides, try the demo, and learn how the game works before playing with real money at a licensed operator."
+    },
+    {
+      "q": "Can I try Chicken Road for free?",
+      "a": "Yes. Use our demo to practice with a virtual balance. The demo uses the same mechanics as the real game, so you can test difficulty levels and timing without risking your own funds."
+    },
+    {
+      "q": "Is Chicken Road available on mobile?",
+      "a": "Yes. You can play in a mobile browser, install our Android APK, or add the demo to your iPhone Home Screen as a web app from Safari. Pick the option that fits your device."
+    },
+    {
+      "q": "How do deposits and bonuses work?",
+      "a": "Deposits and bonuses are handled by the licensed casino or bookmaker you choose through our links. Amounts in our articles are shown in USD for clarity; always check the operator’s cashier for methods available in your region."
+    },
+    {
+      "q": "What is responsible play?",
+      "a": "Set limits on time and money, take breaks, and never chase losses. If gambling stops being fun, use self-exclusion tools from your operator and seek help from professional support services."
+    }
+  ]
+}

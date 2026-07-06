@@ -16,10 +16,10 @@ IMAGES = {
 LOCALE_META = {
     "1": {
         "code": "en",
-        "name": "Is Chicken Road Legit or a Scam? 2026 Honest Verdict",
-        "title": "Is Chicken Road Legit or a Scam? 2026 Honest Verdict",
+        "name": "Is Chicken Road Legit or a Scam? {year} Honest Verdict",
+        "title": "Is Chicken Road Legit or a Scam? {year} Honest Verdict",
         "description": "Is Chicken Road legit or a scam? Licensed by Curaçao, Provably Fair, 98% RTP — how to spot fakes, play safely, and choose trusted casinos.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
+        "url": "is-chicken-road-legit-or-a-scam-honest-verdict",
     },
 }
 

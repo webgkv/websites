@@ -1,0 +1,1753 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Ubuntu", "Rajdhani", sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #111410;
+    background-image: url("/assets/images/Noise-bg.gif");
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    border-bottom: 1px solid #3d3a3aad;
+    backdrop-filter: blur(45px);
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+main {
+    flex: 1;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header .navbar-brand {
+    margin-right: auto;
+}
+
+header .navbar-brand img {
+    width: 100%;
+    max-width: 200px;
+}
+
+header .navbar-collapse .nav-item a {
+    color: #fff !important;
+    padding: 14px 30px !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+header .navbar-collapse .nav-item .nav-link{
+    position: relative;
+    transition: 0.5s;
+}
+
+
+header .navbar-collapse .nav-item .nav-link:hover:before, header .navbar-collapse .nav-item .nav-link.active:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    background: #232323;
+    content: '';    
+    backdrop-filter: blur(136px);
+    z-index: -1;
+    transform: skewX(20deg);
+}
+
+
+header .navbar-collapse .nav-item .nav-link:hover{
+    color: #e4063a !important ;
+}
+
+header .navbar-collapse .nav-item .nav-link.active{
+    color: #e4063a !important ;
+}
+
+/* Hex button only for last nav item that is NOT dropdown (so Guides stays normal) */
+header .navbar-collapse .nav-item:last-child:not(.dropdown) a, .main_btn {
+    background: #e4063a;
+    clip-path: polygon(15px 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0% 50%);
+    position: relative;
+}
+
+header .navbar-collapse .nav-item:last-child:not(.dropdown) a:hover, header .navbar-collapse .nav-item:last-child:not(.dropdown) a.active{
+    color: #fff !important;
+}
+
+header .navbar-collapse .nav-item:last-child:not(.dropdown) a:hover:before, header .navbar-collapse .nav-item:last-child:not(.dropdown) a.active:before {
+    background-color: white !important;
+    top: 5px;
+    left: 5px;
+    width: 16px;
+    height: calc(100% - 10px);
+    transform: skewX(0deg);
+}
+
+header .navbar-collapse .nav-item:last-child:not(.dropdown) a:before, header .navbar-collapse .nav-item:last-child:not(.dropdown) a:after, .main_btn::before, .main_btn::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    width: 16px;
+    height: calc(100% - 10px);
+    border-radius: 0;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+    clip-path: polygon(85% 0, 100% 0, 15% 50%, 100% 100%, 85% 100%, 0% 50%);
+    transform: skewX(0deg);
+}
+
+header .navbar-collapse .nav-item:last-child:not(.dropdown) a:after, .main_btn::after {
+    right: 5px;
+    left: auto;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* Dropdown (Guides): same style as rest of menu — no hex, dark panel */
+header .navbar-collapse .dropdown-menu {
+    background: #111411;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+}
+header .navbar-collapse .dropdown-item {
+    color: #fff !important;
+    padding: 0.5rem 1.25rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+header .navbar-collapse .dropdown-item:hover,
+header .navbar-collapse .dropdown-item:focus {
+    background: rgba(228, 6, 58, 0.2);
+    color: #e4063a !important;
+}
+header .navbar-collapse .dropdown-divider {
+    border-color: rgba(255,255,255,0.1);
+    margin: 0.25rem 0;
+}
+
+
+.avitor-img img {
+    width: 100%;
+}
+
+.hero_content h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.hero_content p {
+    font-size: 17px;
+    color: #fff;
+}
+
+
+.hero_section {
+    padding-top: 170px;
+}
+
+.hero_content h1 span {
+    color: #e4063a;
+}
+
+
+.main_btn {
+    width: fit-content;
+}
+
+.main_btn a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    padding: 15px 50px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main_btn a:hover,
+.main_btn a:focus,
+.main_btn a:active {
+    color: #fff !important;
+}
+.main_btn a:hover {
+    opacity: 0.92;
+}
+.main_btn a:active {
+    opacity: 0.88;
+}
+
+.hero_content h5,
+.hero_content .hero-eyebrow {
+    color: #e4063a;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.main_heading h5 svg {
+    font-size: 20px;
+    height: 80px;
+    transform: scaleX(-1);
+    fill: #e4063a;
+    margin:0px 10px;
+}
+
+.main_heading {
+    text-align: center;
+}
+
+.main_heading h5 {
+    color: #e4063a;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.main_heading h3 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: -10px;
+}
+
+
+
+
+.about_content img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/* Section "How to Start Playing Aviator" (id=batting): image left, text right, no overlap */
+#batting .row.align-items-center {
+    gap: 2rem;
+}
+#batting .row [class*="col-"] {
+    min-width: 0;
+}
+/* Column that contains the image: clip so image never overlaps text */
+#batting .row [class*="col-"]:has(.about_content img) {
+    overflow: hidden;
+}
+#batting .row [class*="col-"]:has(.about_content ul) {
+    overflow: visible;
+}
+#batting .row [class*="col-"] .about_content {
+    overflow: visible;
+}
+#batting .row [class*="col-"]:first-child .about_content {
+    padding-right: 1rem;
+}
+#batting .row [class*="col-"]:last-child .about_content {
+    padding-left: 1rem;
+}
+@media (min-width: 992px) {
+    /* Image column first (left), text column second (right); use :has(.about_content img) in case img is inside figure */
+    #batting .row > [class*="col-"]:has(.about_content img) {
+        order: 1;
+        flex: 0 0 calc(50% - 1rem);
+        width: calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+    #batting .row > [class*="col-"]:has(.about_content ul) {
+        order: 2;
+        flex: 0 0 calc(50% - 1rem);
+        width: calc(50% - 1rem);
+        max-width: none;
+    }
+}
+
+/* #batting step 2: images/figures in one column stack vertically — no overlapping */
+#batting .about_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Image must stay inside its column — never overlap text */
+#batting .about_content img,
+#batting .about_content figure img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 1;
+    object-fit: contain;
+}
+#batting .about_content figure {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+#batting .about_content figure + figure,
+#batting .about_content img + img,
+#batting .about_content figure + img,
+#batting .about_content img + figure {
+    margin-top: 1rem;
+}
+#batting .about_content ul {
+    order: 1;
+}
+#batting .about_content .main_btn {
+    order: 2;
+}
+
+/* #batting step 3: one bullet style for all list items (dots only, no mixed arrows) */
+#batting .about_content ul li {
+    list-style: none;
+}
+#batting .about_content ul li i {
+    color: transparent !important;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    border-radius: 50%;
+    background: #e4063a;
+    margin-top: 10px;
+}
+
+/* #batting step 4: headings and text blocks above images (not covered) */
+#batting .main_heading,
+#batting .about_content h2,
+#batting .about_content h3,
+#batting .about_content h4,
+#batting .about_content p:first-of-type {
+    position: relative;
+    z-index: 2;
+}
+#batting .about_content > *:not(ul):not(.main_btn) {
+    position: relative;
+    z-index: 2;
+}
+
+/* All content sections: prevent column content from overflowing and overlapping */
+.page-content-from-db .row [class*="col-"] {
+    min-width: 0;
+}
+
+.about_content ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.about_content ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.about_content ul li i {
+    margin-top: 6px;
+    color: #e4063a;
+}
+
+.about_content ul li span {
+    color: #e4063a;
+}
+
+
+.main_heading  p {
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+}
+
+
+.steps_box {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right, #e4063a, white, #fc300f);
+}
+
+.steps_box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.steps_content h3 {
+    color: #e4063a;
+    font-weight: 700;
+}
+
+.steps_content p {
+    margin: 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.steps_box:before {
+    background: #111411;
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 99.5%;
+    height: 99.5%;
+    border-radius: 10px;
+    z-index: -1;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.review_box {
+    background: #1e1e1e;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 17px 17px;
+    /* Avatar is top:-44px and 90px tall → bottom ~46px; need gap before text */
+    padding-top: 4.75rem;
+    padding-bottom: 3rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: visible;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Quote marks: were vertically centered (top:0; bottom:90px) and overlapped centered text on desktop */
+.review_box::before, .review_box::after {
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+    top: auto;
+    margin: 0;
+    width: 22px;
+    height: 40px;
+    content: '';
+    background: url(../images/left-quote.png) no-repeat center / contain;
+    opacity: 0.22;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.review_box::after {
+    left: 38px !important;
+    bottom: 12px;
+    top: auto;
+}
+
+.review_img {
+    position: absolute;
+    left: 0;
+    top: -44px;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background: #252525;
+    margin: auto;
+    border-radius: 50%;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.rounder {
+    height: 75px;
+    width: 75px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid #e4063a;
+    animation: slideDas 5s infinite linear;
+}
+
+@keyframes slideDas {
+    100%{
+    transform: rotate(360deg);
+} 
+    
+}
+
+.rounder:before, .rounder:after {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #e4063a;
+    content: '';
+}
+.rounder:before {
+    left: 7px;
+    top: 0;
+}
+
+.rounder:after {
+    right: 0;
+    bottom: 7px;
+}
+
+.review_img img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review_content {
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    padding-top: 0.35rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Testimonials swiper: room for avatars above cards; avoid clipping */
+#testimonial .swiper.swiper-slider {
+    padding-top: 2.75rem;
+    overflow: hidden;
+}
+#testimonial .swiper .swiper-slide {
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 0.75rem;
+    display: flex;
+    align-items: stretch;
+}
+
+
+.review_content h6 {
+    font: normal normal 600 18px Rajdhani;
+    color: #e4063a;
+    margin: 0 0 0.6rem 0;
+}
+
+.review_content h4{
+    color: #fff;
+    margin: 0 0 0.35rem 0;
+}
+
+
+.review_content  p {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 0.25rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+footer .container {
+    margin-top: 4rem;
+    border-top: 1px solid #3d3a3aad;
+    padding: 2rem 15px 15px;
+}
+
+footer .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+footer .footer-nav a {
+    color: #dbdbdc;
+    text-decoration: none;
+    font-size: 15px;
+}
+footer .footer-nav a:hover {
+    color: #e4063a;
+}
+
+footer .footer-responsible {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    color: #c0c0c0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+footer .footer-responsible p {
+    margin: 0 0 0.75rem;
+}
+footer .footer-responsible p:last-child {
+    margin-bottom: 0;
+}
+footer .footer-responsible strong {
+    color: #e8e8e8;
+}
+
+footer h5 {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #e4063a;
+    color: white;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 2px;
+    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0 100%, 0 30%);
+}
+  
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-toggle i {
+    color: #e4063a;
+    font-size: 25px;
+    pointer-events: none; /* click/tap goes to .menu-toggle, not icon */
+}
+
+/* Separate desktop/mobile language switchers */
+.aviator-lang-switcher-mobile {
+    display: none;
+}
+
+/* Language switcher: flag + native label (Polylang-style); flags via flagcdn.com */
+.aviator-lang-flag {
+    width: 24px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+    vertical-align: middle;
+}
+.aviator-lang-flag--toggle {
+    margin-right: 2px;
+}
+.aviator-lang-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.aviator-lang-mobile-link.aviator-lang-item {
+    display: flex;
+}
+.aviator-lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    max-width: 100%;
+}
+.aviator-lang-toggle-text {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* Desktop language list: show all rows (no inner scroll); mobile uses .aviator-lang-mobile-list */
+.aviator-lang-dropdown.dropdown-menu {
+    max-height: none;
+    overflow-y: visible;
+}
+.aviator-lang-dropdown .dropdown-item.aviator-lang-item {
+    color: #212529;
+}
+.aviator-lang-dropdown .dropdown-item.aviator-lang-item:hover,
+.aviator-lang-dropdown .dropdown-item.aviator-lang-item:focus {
+    color: #1e2125;
+}
+.aviator-lang-dropdown .dropdown-item.aviator-lang-item.active {
+    font-weight: 600;
+}
+
+.breadcrumbs .row {
+    padding:2rem 0;
+    font-size:14px;
+    color:#999;
+    font-weight:400
+}
+
+a {
+    color:#fff;
+}
+
+a:hover {
+    color: #e4063a;
+    transition:0.5s
+}
+
+.breadcrumbs span {
+    color:#e4063a
+}
+
+h1 {
+    font-size:2.5rem;
+    color:#fff;
+    font-weight:700;
+}
+
+.text {
+    color:#999;
+    font-size:17px;
+    margin-top:2rem;
+}
+
+.text h1,.text h2,.text h3 {
+    color:#FFF;
+    margin-bottom:1rem;
+}
+
+.text h1 {
+    margin-bottom:2rem;
+}
+
+.text strong {
+    color:#CFCFCF
+}
+
+.pagination {
+    justify-content:center;
+    margin-top:2rem;
+    font-size:17px;
+    font-weight:700;
+}
+
+.pagination a,.pagination div {
+    display:flex;
+    width:36px;
+    height:36px;
+    border-radius:5px;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #999;
+    margin:2px;
+    text-decoration:none
+}
+
+.pagination div {
+    color:#fff
+}
+
+.pagination div img,.pagination a img {
+    width:16px;
+    height:16px;
+    margin:0;
+    filter: invert(55%) sepia(78%) saturate(0%) hue-rotate(183deg) brightness(93%) contrast(97%);
+}
+
+.pagination a {
+    color:#999;
+}
+
+.pagination a:hover {
+    background:#e4063a;
+    color:#fff
+}
+
+.pagination a:hover img {
+    filter: none;
+}
+
+/* Page content from DB — light text everywhere (table, FAQ, paragraphs) */
+.page-content-from-db,
+.page-content-from-db section {
+    color: #f0f0f0;
+}
+.page-content-from-db .about_content p,
+.page-content-from-db .about_content,
+.page-content-from-db #faq .about_content p,
+.page-content-from-db .about_content strong {
+    color: #f0f0f0;
+}
+.page-content-from-db .about_content p strong {
+    color: #fff;
+}
+
+/* Tables — styled like donor, light text and borders */
+.page-content-from-db .table-responsive,
+.page-content-from-db .table-responsive .table {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.page-content-from-db .table,
+.page-content-from-db .table.table-bordered {
+    color: #f0f0f0;
+    border-color: rgba(255,255,255,0.25);
+    margin-bottom: 0;
+    background-color: rgba(30,30,30,0.5);
+}
+.page-content-from-db .table th,
+.page-content-from-db .table td {
+    color: #f0f0f0;
+    border-color: rgba(255,255,255,0.25);
+    padding: 12px 16px;
+    background-color: transparent;
+}
+.page-content-from-db .table thead th {
+    background-color: rgba(228, 6, 58, 0.2);
+    color: #fff;
+    font-weight: 600;
+}
+.page-content-from-db .table tbody td {
+    color: #f0f0f0;
+}
+.page-content-from-db .table a {
+    color: #f0f0f0;
+}
+.page-content-from-db .table a:hover {
+    color: #e4063a;
+}
+
+/* Guides: cards in site style (dark, not white) */
+.guide-card {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.guide-card:hover {
+    border-color: rgba(228, 6, 58, 0.5);
+    box-shadow: 0 4px 20px rgba(228, 6, 58, 0.15);
+    color: #fff;
+}
+.guide-card .card-title {
+    color: #fff;
+}
+.guide-card .guide-card-desc {
+    color: #c0c0c0;
+    font-size: 0.95rem;
+}
+.guide-card .guide-card-link {
+    color: #e4063a;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.guide-card-landing {
+    background-color: #252525;
+}
+/* Card image: full width, no cropping — height auto so image is fully visible */
+.guide-card .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    opacity: 0.95;
+    background: #1a1a1a;
+}
+
+/* Author byline (top of editorial content) */
+.author-byline {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.25rem;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #bdb1de;
+}
+.author-byline-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #e4063a;
+}
+.author-byline-avatar--placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(228, 6, 58, 0.12);
+    color: #e4063a;
+    font-size: 1rem;
+}
+.author-byline-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+}
+.author-byline-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem;
+}
+.author-byline-prefix {
+    color: #bdb1de;
+    font-weight: 500;
+}
+.author-byline-name {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.author-byline-name:hover {
+    color: #e4063a;
+    text-decoration: underline;
+}
+.author-byline-sub {
+    font-size: 0.85rem;
+    color: #9a8fb8;
+}
+.author-byline-role {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.75rem;
+}
+.author-byline-sep {
+    opacity: 0.7;
+}
+.author-profile .author-social a,
+.author-references a {
+    color: #e4063a;
+}
+
+.author-profile-photo {
+    width: 160px;
+    height: 160px;
+    border: 3px solid #e4063a;
+    background: #222;
+}
+.author-profile-photo .fa-user-tie {
+    font-size: 90px;
+    line-height: 160px;
+    color: #e4063a;
+}
+.author-profile-role {
+    color: #e4063a;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Authors list: compact cards with circular avatar */
+.author-list-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem 1rem 1rem;
+}
+.author-list-card-avatar-wrap {
+    margin-bottom: 0.75rem;
+}
+.author-list-card-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #e4063a;
+    background: #222;
+}
+.author-list-card-avatar--placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #e4063a;
+    background: rgba(228, 6, 58, 0.12);
+}
+.author-list-card .card-title {
+    margin-bottom: 0.35rem;
+    font-size: 1.05rem;
+}
+.author-list-card .card-text.small {
+    margin-bottom: 0.5rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #e4063a !important;
+}
+.author-list-card .guide-card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0.65rem;
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+.author-list-card .guide-card-link {
+    margin-top: auto;
+}
+
+/* Category filter strip (All + Analysis, Bonus, …) */
+.guide-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+.guide-filter-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #252525;
+    color: #c0c0c0;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.guide-filter-btn:hover {
+    color: #fff;
+    border-color: rgba(228, 6, 58, 0.5);
+    background: #2a2a2a;
+}
+.guide-filter-btn.active {
+    background: #e4063a;
+    color: #fff;
+    border-color: #e4063a;
+}
+.guide-card-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #e4063a;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.35rem;
+}
+/* Single guide: wrapper injected in PHP — guarantees centered images */
+.guide-img-center {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+.guide-img-center img {
+    display: inline-block !important;
+    max-width: 768px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 8px;
+}
+/* Blog promo: center image like casino block, same display rules */
+.blog-promo-img {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.blog-promo-img img {
+    display: block !important;
+    max-width: 480px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 8px;
+}
+.blog-promo-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.blog-promo-btns .main_btn {
+    margin: 0;
+}
+
+/* Blog: prev/next + related (internal links, not offer CTAs) */
+.blog-internal-links-wrap {
+    padding: 2rem 0 2.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    margin-top: 0.5rem;
+}
+.blog-internal-nav {
+    margin-bottom: 1.75rem;
+}
+.blog-internal-nav-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.blog-internal-nav-item {
+    flex: 0 1 280px;
+    max-width: 100%;
+    line-height: 1.35;
+}
+/* Labels: same tone as .blog-related-heading / breadcrumb row */
+.blog-internal-nav-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #999;
+    margin-bottom: 0.35rem;
+}
+.blog-internal-nav-title-link {
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    color: #e4063a;
+}
+.blog-internal-nav-title-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.blog-internal-nav-prev {
+    text-align: left;
+}
+.blog-internal-nav-next {
+    text-align: right;
+    margin-left: auto;
+}
+.blog-related-heading {
+    font-size: 1.1rem;
+    margin: 0 0 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #999;
+}
+.blog-related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.blog-related-list a {
+    text-decoration: none;
+    color: #e4063a;
+    border-bottom: 1px solid transparent;
+}
+.blog-related-list a:hover {
+    color: #fff;
+    border-bottom-color: currentColor;
+}
+
+/* Casino articles: center all in-content images like guides */
+.casino-article-content img,
+.casino-article-content figure img {
+    display: block !important;
+    max-width: 480px !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 1rem auto !important;
+}
+/* Games: images max 1/3 viewport height on mobile */
+.game-img-center img {
+    max-width: 768px !important;
+    width: auto !important;
+    height: auto !important;
+}
+@media (max-width: 768px) {
+    .game-img-center img {
+        max-height: 33vh !important;
+        width: auto !important;
+        object-fit: contain;
+    }
+}
+/* Legacy: in-content images when not wrapped */
+.page-content-from-db .about_content img,
+.page-content-from-db .about_content figure img {
+    max-width: 768px !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.page-content-from-db .about_content figure {
+    margin: 1.5rem 0;
+}
+.page-content-from-db .about_content figure img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Casino promo / info tables (Battery-style) */
+.promo-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+.promo-table thead th {
+    background: rgba(255,255,255,0.04);
+    color: #fff;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.promo-table tbody td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.promo-table tbody tr:nth-child(2n) td {
+    background: rgba(255,255,255,0.02);
+}
+.promo-table th,
+.promo-table td {
+    vertical-align: top;
+}
+
+/* Guide CTA buttons (like donor) */
+.guide-cta-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    background: #e4063a;
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    border: none;
+    clip-path: polygon(15px 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0% 50%);
+    transition: opacity 0.2s, background 0.2s;
+}
+.guide-cta-btn:hover {
+    color: #fff !important;
+    opacity: 0.9;
+    background: #c80550;
+}
+.page-content-from-db .guide-cta-wrap {
+    margin: 1.5rem 0;
+}
+
+/* Spribe official Aviator demo (16:9 box; DB embed uses .main__frame-ratio, /demo/app/ uses inner div) */
+.main__frame {
+    width: 100%;
+}
+.main__frame-ratio,
+.main__frame > div:first-of-type:not(.main__frame-app-inner) {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+@supports (aspect-ratio: 16 / 9) {
+    .main__frame-ratio,
+    .main__frame > div:first-of-type:not(.main__frame-app-inner) {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        padding-bottom: 0;
+    }
+}
+.main__frame-iframe,
+.main__frame-ratio iframe,
+.main__frame iframe {
+    border: 0;
+    vertical-align: bottom;
+}
+
+/* /download/install-pwa/ — quick-install callout + step list */
+.demo-pwa-ios-page .pwa-ios-quick {
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    border-radius: 6px;
+    padding: 1.5rem 1.5rem 1.75rem;
+    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+.demo-pwa-ios-page .pwa-ios-quick__title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+.demo-pwa-ios-page .pwa-ios-quick__lead {
+    color: #c5ced8;
+    line-height: 1.65;
+    font-size: 1rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick__back {
+    align-self: center;
+    padding: 0.25rem 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #c5ced8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+.demo-pwa-ios-page .pwa-ios-quick__back:hover {
+    color: #fff;
+}
+.demo-pwa-ios-page .pwa-ios-steps {
+    counter-reset: pwa-ios;
+}
+.demo-pwa-ios-page .pwa-ios-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.demo-pwa-ios-page .pwa-ios-step__num {
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #e4063a;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin-top: 0.15rem;
+}
+.demo-pwa-ios-page .pwa-ios-step__body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.demo-pwa-ios-page .pwa-ios-step__fig img {
+    max-height: min(72vh, 640px);
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+}
+.demo-pwa-ios-page .pwa-ios-tip {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* /download/install-pwa/ — render flat HTML from DB (no server-side "scaffold" transforms) */
+.demo-pwa-ios-page .pwa-install-from-db > h1 {
+    margin: 0 0 0.9rem;
+    font-size: clamp(1.6rem, 2.6vw, 2.05rem);
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+.demo-pwa-ios-page .pwa-install-from-db > p:first-of-type {
+    margin: 0 0 1.5rem;
+    color: #b7c2cf;
+    line-height: 1.7;
+    font-size: 1.02rem;
+}
+/* Quick section: 2nd heading + following paragraph in the canonical import template */
+.demo-pwa-ios-page .pwa-install-from-db > h1 + p + h2,
+.demo-pwa-ios-page .pwa-install-from-db > p:first-of-type + h2 {
+    /* selector duplicated for safety across minor markup differences */
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    padding: 1.4rem 1.5rem 0.9rem;
+    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+.demo-pwa-ios-page .pwa-install-from-db > h1 + p + h2 + p,
+.demo-pwa-ios-page .pwa-install-from-db > p:first-of-type + h2 + p {
+    margin: 0 0 2.25rem;
+    color: #c5ced8;
+    line-height: 1.65;
+    font-size: 1rem;
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 0.25rem 1.5rem 1.5rem;
+    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
+    box-shadow: none;
+}
+.demo-pwa-ios-page .pwa-install-from-db {
+    counter-reset: pwa-ios;
+}
+/* Steps: canonical import template = h2 ("Step by step") + repeating (h3 + p + figure) */
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(2) {
+    margin: 0 0 1.1rem;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #fff;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #fff;
+    counter-increment: pwa-ios;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3::before {
+    content: counter(pwa-ios);
+    flex: 0 0 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #e4063a;
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-top: 0.05rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p {
+    margin: 0 0 0.15rem 3.4rem; /* align under the title line (not under the number bubble) */
+    line-height: 1.65;
+    color: #b7c2cf;
+}
+/* Step screenshots: full column width + centered (body stays indented under h3 bubble) */
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + figure {
+    margin: 0.85rem 0 1.5rem 0;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + figure img {
+    max-height: min(72vh, 640px);
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    vertical-align: bottom;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* APK /install-apk/: optional .guide-img-center wrapper inside figure */
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + figure .guide-img-center {
+    margin: 0;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + figure .guide-img-center img {
+    display: block !important;
+    max-height: min(72vh, 640px) !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    object-fit: contain;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    vertical-align: bottom;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + .guide-img-center {
+    margin: 0.85rem 0 1.5rem 0;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + .guide-img-center img {
+    display: block !important;
+    max-height: min(72vh, 640px) !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    object-fit: contain;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    vertical-align: bottom;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h3 + p + figure figcaption {
+    margin-top: 0.5rem;
+    color: #9aa4b2;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    text-align: center;
+}
+/* Tips section (two h2 blocks after steps) */
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3),
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) {
+    margin: 1.75rem 0 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #fff;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) + p,
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) + p {
+    margin: 0 0 0.2rem;
+    line-height: 1.65;
+    color: #b7c2cf;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 1rem 1.1rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+.demo-pwa-ios-page .pwa-install-from-db > p.mt-3 {
+    /* final CTA line in canonical import */
+    margin-top: 0.9rem;
+    color: #dbe4ee;
+    font-weight: 700;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) + p + p {
+    /* if there is no `.mt-3` class, the last line is the paragraph after the final tip */
+    margin-top: 0.9rem;
+    color: #dbe4ee;
+    font-weight: 700;
+}
+
+.demo-ios-pwa-banner {
+    font-size: 0.95rem;
+    padding: 0.65rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    background: rgba(21, 27, 36, 0.65);
+}
+.demo-ios-pwa-banner a {
+    color: #f0f4f8;
+    font-weight: 600;
+    text-decoration: none;
+}
+.demo-ios-pwa-banner a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Shared Quick Access block for /demo/ and /download/ */
+.demo-quick-access {
+    margin: 2rem auto;
+    padding: 1.65rem 1.5rem 1.75rem;
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    border-radius: 28px;
+    background: linear-gradient(180deg, #181a18 0%, #101110 100%);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    text-align: center;
+}
+.demo-quick-access__eyebrow {
+    margin: 0 0 0.65rem;
+    color: #e4063a;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.demo-quick-access__title {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.65rem, 3vw, 2.5rem);
+    line-height: 1.15;
+    font-weight: 800;
+}
+.demo-quick-access__lead,
+.demo-quick-access__note {
+    max-width: 48rem;
+    margin: 1rem auto 0;
+    color: #d6dce4;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+.demo-quick-access__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.demo-quick-access__primary,
+.demo-quick-access__store {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    min-height: 3.75rem;
+    padding: 0.95rem 1.85rem;
+    border-radius: 0;
+    clip-path: polygon(15px 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0% 50%);
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 1.2;
+    position: relative;
+    overflow: visible;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.demo-quick-access__primary::before,
+.demo-quick-access__primary::after,
+.demo-quick-access__store::before,
+.demo-quick-access__store::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 16px;
+    height: calc(100% - 10px);
+    background-color: #fff;
+    clip-path: polygon(85% 0, 100% 0, 15% 50%, 100% 100%, 85% 100%, 0% 50%);
+    z-index: -1;
+    pointer-events: none;
+}
+.demo-quick-access__primary::before,
+.demo-quick-access__store::before {
+    left: 5px;
+}
+.demo-quick-access__primary::after,
+.demo-quick-access__store::after {
+    right: 5px;
+    transform: rotate(180deg);
+}
+.demo-quick-access__primary {
+    min-width: min(100%, 18rem);
+    color: #fff;
+    background: linear-gradient(180deg, #ff0d4f 0%, #d9043a 100%);
+    box-shadow: 0 0 0 1px rgba(255, 73, 118, 0.15), 0 12px 30px rgba(228, 6, 58, 0.28);
+}
+.demo-quick-access__primary:hover,
+.demo-quick-access__store:hover {
+    transform: translateY(-1px);
+    color: #fff;
+    text-decoration: none;
+}
+.demo-quick-access__stores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+    width: 100%;
+}
+.demo-quick-access__store {
+    min-width: 12.75rem;
+    color: #fff;
+    background: linear-gradient(180deg, #ff0d4f 0%, #d9043a 100%);
+    box-shadow: 0 0 0 1px rgba(255, 73, 118, 0.12), 0 12px 26px rgba(228, 6, 58, 0.25);
+}
+.demo-quick-access__primary:focus,
+.demo-quick-access__store:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+    outline-offset: 3px;
+}
+.demo-quick-access__store span {
+    display: block;
+}
+.demo-quick-access__store-icon {
+    flex: 0 0 auto;
+    width: 1.65rem;
+    height: 1.65rem;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    display: block;
+    object-fit: contain;
+    filter: brightness(0) invert(1) !important;
+}
+.demo-quick-access__store-icon--google {
+    width: 1.7rem;
+}
+.demo-quick-access--download {
+    margin-top: 1.4rem;
+}
+.demo-preview-strip {
+    margin: 0 auto 2rem;
+}
+.demo-preview-strip__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+.demo-preview-card {
+    padding: 0.9rem;
+    border: 1px solid rgba(228, 6, 58, 0.35);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.demo-preview-card__image {
+    margin-bottom: 0.85rem;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #2a2c30;
+}
+.demo-preview-card__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    object-fit: cover;
+}
+.demo-preview-card__label {
+    margin: 0;
+    text-align: center;
+    color: #ff2150;
+    font-size: clamp(1.15rem, 2vw, 1.65rem);
+    font-weight: 800;
+    line-height: 1.1;
+}
+@media (min-width: 768px) {
+    .demo-quick-access__actions {
+        gap: 1.1rem;
+    }
+    .demo-quick-access__stores {
+        width: auto;
+    }
+}

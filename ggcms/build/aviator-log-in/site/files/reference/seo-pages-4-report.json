@@ -1,0 +1,458 @@
+{
+    "schema": "seo_cluster_v1",
+    "exported_at": "2026-04-23T09:24:02+00:00",
+    "entity": "pages",
+    "entity_id": 4,
+    "mode": "report",
+    "note": "Report only — not for import. Use mode=meta or full for round-trip JSON.",
+    "locales": [
+        {
+            "lang_id": 1,
+            "lang_url": "en",
+            "url": "demo",
+            "status": "published",
+            "source": "main",
+            "metrics": {
+                "title_display_len": 56,
+                "description_plain_len": 128,
+                "content_bytes": 11652,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 3,
+            "lang_url": "fr",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 58,
+                "description_plain_len": 140,
+                "content_bytes": 12898,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 4,
+            "lang_url": "de",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 56,
+                "description_plain_len": 154,
+                "content_bytes": 12224,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 6,
+            "lang_url": "es",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 59,
+                "description_plain_len": 134,
+                "content_bytes": 12376,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 7,
+            "lang_url": "hi",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 49,
+                "description_plain_len": 136,
+                "content_bytes": 19834,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 8,
+            "lang_url": "pt",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 54,
+                "description_plain_len": 123,
+                "content_bytes": 12248,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 9,
+            "lang_url": "ru",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 54,
+                "description_plain_len": 144,
+                "content_bytes": 16460,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 11,
+            "lang_url": "ar",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 44,
+                "description_plain_len": 124,
+                "content_bytes": 14676,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 12,
+            "lang_url": "az",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 48,
+                "description_plain_len": 121,
+                "content_bytes": 12776,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 13,
+            "lang_url": "bn",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 55,
+                "description_plain_len": 136,
+                "content_bytes": 19290,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 14,
+            "lang_url": "it",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 50,
+                "description_plain_len": 135,
+                "content_bytes": 12207,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 15,
+            "lang_url": "nl",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 50,
+                "description_plain_len": 140,
+                "content_bytes": 11777,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 16,
+            "lang_url": "pl",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 46,
+                "description_plain_len": 141,
+                "content_bytes": 12087,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 17,
+            "lang_url": "vi",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 52,
+                "description_plain_len": 123,
+                "content_bytes": 13008,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 18,
+            "lang_url": "ua",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 53,
+                "description_plain_len": 142,
+                "content_bytes": 16488,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        },
+        {
+            "lang_id": 19,
+            "lang_url": "ro",
+            "url": "demo",
+            "status": "published",
+            "source": "content_i18n",
+            "metrics": {
+                "title_display_len": 52,
+                "description_plain_len": 142,
+                "content_bytes": 12354,
+                "h1_count": 1,
+                "images_missing_alt": 6
+            },
+            "issue_count": 1,
+            "issues": [
+                {
+                    "code": "img_missing_alt",
+                    "detail": 6
+                }
+            ],
+            "issue_summaries": [
+                {
+                    "code": "img_missing_alt",
+                    "label": "Images without alt",
+                    "detail": 6
+                }
+            ]
+        }
+    ]
+}

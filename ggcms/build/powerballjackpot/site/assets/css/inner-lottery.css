@@ -1,0 +1,248 @@
+/* PowerBall Jackpot — inner pages (matches home-lottery.css palette) */
+.pbj-inner.dark-ui {
+  --head-font: "Inter", sans-serif;
+  --para-font: "Lato", sans-serif;
+  --primary-color: #448c74;
+  --secondary-color: #ed5050;
+  --section-1st-color: #181b1e;
+  --section-2nd-color: #051423;
+  --box-2nd-color: #0f1b27;
+  --box-3rd-color: #262d34;
+  --border-color: #262d34;
+  --heading-color: #ffffff;
+  --heading-2nd-color: #edcb50;
+  --para-color: #dfdfdf;
+  color: var(--para-color);
+  background-color: var(--section-2nd-color);
+  font-family: var(--para-font), var(--head-font), sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+main:has(.pbj-inner) {
+  padding: 0;
+  max-width: none;
+  overflow-x: hidden;
+}
+
+.pbj-inner.dark-ui section {
+  position: relative;
+}
+
+.pbj-inner .breadcrumbs .row {
+  padding: 1.25rem 0;
+  font-size: 14px;
+  color: rgba(223, 223, 223, 0.65);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pbj-inner .breadcrumbs span {
+  color: var(--heading-2nd-color);
+}
+
+.pbj-inner section.py-5,
+.pbj-inner > section {
+  background-color: var(--section-2nd-color);
+}
+
+.pbj-inner .blog-internal-links-wrap {
+  background-color: var(--section-1st-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.pbj-inner h1 {
+  color: var(--heading-color);
+  font-family: var(--head-font), sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.pbj-inner h2,
+.pbj-inner h3,
+.pbj-inner h4 {
+  color: var(--heading-color);
+  font-family: var(--head-font), sans-serif;
+}
+
+.pbj-inner .text,
+.pbj-inner .page-content-from-db,
+.pbj-inner .page-content-from-db section {
+  color: var(--para-color);
+}
+
+.pbj-inner .page-content-from-db .about_content p,
+.pbj-inner .page-content-from-db .about_content,
+.pbj-inner .page-content-from-db .about_content strong {
+  color: var(--para-color);
+}
+
+.pbj-inner .page-content-from-db .about_content p strong {
+  color: var(--heading-color);
+}
+
+.pbj-inner .text strong {
+  color: var(--heading-color);
+}
+
+.pbj-inner .page-content-from-db .table,
+.pbj-inner .page-content-from-db .table.table-bordered {
+  background-color: var(--box-2nd-color);
+  border-color: var(--border-color);
+}
+
+.pbj-inner .page-content-from-db .table thead th {
+  background-color: var(--box-3rd-color);
+  color: var(--heading-color);
+}
+
+.pbj-inner .page-content-from-db .table th,
+.pbj-inner .page-content-from-db .table td {
+  border-color: var(--border-color);
+  color: var(--para-color);
+}
+
+.pbj-inner .page-content-from-db .table tbody td {
+  color: var(--para-color);
+}
+
+.pbj-inner .guide-card {
+  background-color: var(--box-2nd-color);
+  border-color: var(--border-color);
+}
+
+.pbj-inner .guide-card:hover {
+  border-color: rgba(237, 203, 80, 0.45);
+  box-shadow: 0 4px 24px rgba(68, 140, 116, 0.15);
+}
+
+.pbj-inner .guide-card .card-img-top {
+  background: var(--box-3rd-color);
+}
+
+.pbj-inner .guide-card .guide-card-desc {
+  color: rgba(223, 223, 223, 0.85);
+}
+
+.pbj-inner .guide-card-landing {
+  background-color: var(--box-2nd-color);
+}
+
+.pbj-inner .guide-filter-btn {
+  background: var(--box-2nd-color);
+  color: var(--para-color);
+  border-color: var(--border-color);
+  border-radius: 8px;
+}
+
+.pbj-inner .guide-filter-btn:hover {
+  background: var(--box-3rd-color);
+  border-color: rgba(237, 203, 80, 0.45);
+  color: var(--heading-color);
+}
+
+.pbj-inner .guide-filter-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.pbj-inner .pagination a {
+  color: var(--para-color);
+  border-color: var(--border-color);
+  background: var(--box-2nd-color);
+}
+
+.pbj-inner .pagination a:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.pbj-inner .blog-internal-nav-label,
+.pbj-inner .blog-related-heading {
+  color: rgba(223, 223, 223, 0.65);
+}
+
+.pbj-inner .blog-internal-nav-title-link,
+.pbj-inner .blog-related-list a {
+  color: var(--heading-2nd-color);
+}
+
+.pbj-inner .blog-internal-nav-title-link:hover,
+.pbj-inner .blog-related-list a:hover {
+  color: var(--heading-color);
+}
+
+.pbj-inner .about_content ul li .pbj-list-meta {
+  color: rgba(223, 223, 223, 0.75);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Demo / download Quick Access — must stay visible inside pbj-inner dark theme */
+.pbj-inner .pbj-demo-quick-shell {
+  clear: both;
+  position: relative;
+  z-index: 2;
+  margin: 2rem 0 2.5rem;
+  width: 100%;
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-quick-access {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  border: 1px solid rgba(237, 203, 80, 0.45);
+  background: linear-gradient(180deg, rgba(15, 27, 39, 0.95) 0%, rgba(5, 20, 35, 0.98) 100%);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-quick-access__title {
+  color: #fff;
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-quick-access__eyebrow {
+  color: var(--heading-2nd-color, #edcb50);
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-quick-access__note {
+  color: rgba(223, 223, 223, 0.85);
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-preview-strip {
+  margin-top: 1.25rem;
+}
+
+.pbj-inner .pbj-demo-quick-shell .demo-preview-card {
+  background: var(--box-2nd-color, #0f1b27);
+  border-color: rgba(237, 203, 80, 0.35);
+}
+
+.pbj-inner .page-content-from-db .about_content .pbj-demo-quick-shell {
+  color: var(--para-color);
+}
+
+.pbj-inner .class-59 {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: var(--section-2nd-color);
+}
+
+.pbj-inner .class-59 .content {
+  color: var(--para-color);
+  font-size: 1.125rem;
+}
+
+.pbj-inner .lead {
+  color: var(--para-color);
+}
+
+.pbj-inner .promo-table thead th {
+  background: var(--box-3rd-color);
+}
+
+.pbj-inner .promo-table tbody tr:nth-child(2n) td {
+  background: var(--box-2nd-color);
+}

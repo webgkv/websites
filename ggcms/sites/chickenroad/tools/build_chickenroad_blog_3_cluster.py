@@ -19,7 +19,6 @@ if str(ROOT / "tools") not in sys.path:
     sys.path.insert(0, str(ROOT / "tools"))
 
 from chickenroad_blog_3_locales import (  # noqa: E402
-    EXAMPLE_LINK,
     IMAGES,
     LOCALE_META,
     PARTNER_HREFS,
@@ -47,7 +46,10 @@ def paras(items) -> str:
 
 
 def link_para(pre: str, anchor: str, post: str, href: str) -> str:
-    return f'<p>{e(pre)}<a href="{e(href)}">{e(anchor)}</a>{e(post)}</p>'
+    anchor_html = f'<a href="{e(href)}">{e(anchor)}</a>'
+    if href.startswith("/"):
+        anchor_html = f"<noads>{anchor_html}</noads>"
+    return f"<p>{e(pre)}{anchor_html}{e(post)}</p>"
 
 
 def ul(items) -> str:
@@ -56,6 +58,8 @@ def ul(items) -> str:
 
 def build_content(body: dict, lang_code: str) -> str:
     demo_href = f"/{lang_code}/demo/"
+    casinos_href = f"/{lang_code}/casinos/"
+    download_href = f"/{lang_code}/download/"
     c: list[str] = []
     c.append(f"<h1>{e(body['h1'])}</h1>")
     c.append(figure(IMAGES["hero"], body["img_hero_alt"]))
@@ -111,12 +115,12 @@ def build_content(body: dict, lang_code: str) -> str:
         partners_ul += f'<li><a href="{e(href)}">{e(name)}</a> &ndash; {e(desc)}</li>'
     partners_ul += "</ul>"
     c.append(partners_ul)
-    c.append(link_para(body["where_after_pre"], body["where_after_anchor"], body["where_after_post"], EXAMPLE_LINK))
+    c.append(link_para(body["where_after_pre"], body["where_after_anchor"], body["where_after_post"], casinos_href))
 
     c.append(f"<h2>{e(body['h2_safe'])}</h2>")
     c.append(paras([body["safe_p1"]]))
-    c.append(link_para(body["safe_p2_pre"], body["safe_p2_anchor"], body["safe_p2_post"], EXAMPLE_LINK))
-    c.append(link_para(body["safe_p3_pre"], body["safe_p3_anchor"], body["safe_p3_post"], EXAMPLE_LINK))
+    c.append(link_para(body["safe_p2_pre"], body["safe_p2_anchor"], body["safe_p2_post"], demo_href))
+    c.append(link_para(body["safe_p3_pre"], body["safe_p3_anchor"], body["safe_p3_post"], download_href))
 
     c.append(f"<h2>{e(body['h2_faq'])}</h2>")
     for q, a in body["faq"]:

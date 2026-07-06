@@ -25,15 +25,14 @@ PARTNER_HREFS = {
     "Fan-Sport": "https://www.google.com/search?q=/fan-sport&authuser=1",
     "1win": "https://www.google.com/search?q=/1win&authuser=1",
 }
-EXAMPLE_LINK = "https://example.com"
 
 LOCALE_META = {
     "1": {
         "code": "en",
-        "name": "Games That Pay Real Money: What Actually Pays in 2026",
-        "title": "Games That Pay Real Money: What Actually Pays in 2026",
+        "name": "Games That Pay Real Money: What Actually Pays in {year}",
+        "title": "Games That Pay Real Money: What Actually Pays in {year}",
         "description": "Real-money games can pay through licensed casinos, crash titles, bingo, skill games and reward apps. Learn what is legit and how to avoid scams.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
+        "url": "games-that-pay-real-money-what-actually-pays",
     },
 }
 

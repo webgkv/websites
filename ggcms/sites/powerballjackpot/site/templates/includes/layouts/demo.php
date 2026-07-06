@@ -10,10 +10,10 @@ require_once(ROOT_DIR . 'functions/site_quick_access.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
 $buttons_html = aviator_cta_buttons_html($offer_path);
 $demo_content = site_demo_apply_quick_access($demo_content, $abc, $lang);
-$demo_content = aviator_insert_cta_after_paragraphs(
+$demo_content = aviator_insert_cta_evenly_in_content(
 	$demo_content,
 	$buttons_html,
-	[1, 5, 10]
+	3
 );
 $demo_content_has_h1 = preg_match('/<h1\b/i', $demo_content) === 1;
 ?>

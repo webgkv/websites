@@ -1,6 +1,7 @@
 <?php
 
 require_once ROOT_DIR . 'functions/blog_i18n_sql.php';
+require_once ROOT_DIR . 'functions/content_year_macro.php';
 
 $abc['gallery'] = mysql_select('select * from gallery', 'rows_id');
 
@@ -127,6 +128,7 @@ if ($u[4]) {
 				";
 			}
 			if ($news = mysql_select($sqlArticleCat, 'row')) {
+				content_year_macro_apply_row($news, $langid);
 
 				$abc['page'] = array_merge($abc['page'], $news);
 				$abc['blog_single'] = true;
@@ -175,7 +177,7 @@ if ($u[4]) {
 					$abc['page']['text2'] = '';
 				}
 				require_once ROOT_DIR . 'functions/blog_promo_guard.php';
-				if (blog_promo_should_autoinsert($abc['page'])) {
+				if (blog_promo_should_autoinsert_images($abc['page'])) {
 					require_once(ROOT_DIR . 'functions/blog_promo.php');
 					$abc['page']['blog_promo'] = blog_promo_random();
 				}
@@ -279,6 +281,7 @@ if ($u[4]) {
 		}
 		$news = mysql_select($sqlArticleSlug, 'row');
 		if ($news) {
+			content_year_macro_apply_row($news, $langid);
 			$abc['page'] = array_merge($abc['page'], $news);
 			$abc['blog_single'] = true;
 			$abc['breadcrumb'][] = array(
@@ -316,7 +319,7 @@ if ($u[4]) {
 				$abc['page']['text2'] = '';
 			}
 			require_once ROOT_DIR . 'functions/blog_promo_guard.php';
-			if (blog_promo_should_autoinsert($abc['page'])) {
+			if (blog_promo_should_autoinsert_images($abc['page'])) {
 				require_once(ROOT_DIR . 'functions/blog_promo.php');
 				$abc['page']['blog_promo'] = blog_promo_random();
 			}
@@ -356,5 +359,12 @@ if ($u[4]) {
 			20,
 			@$_GET['n']
 		);
+	}
+	if (!empty($abc['blog']['list']) && is_array($abc['blog']['list'])) {
+		foreach ($abc['blog']['list'] as $i => $_row) {
+			if (is_array($_row)) {
+				content_year_macro_apply_row($abc['blog']['list'][$i], $langid);
+			}
+		}
 	}
 }

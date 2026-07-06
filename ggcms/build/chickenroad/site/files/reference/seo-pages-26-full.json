@@ -1,0 +1,249 @@
+{
+    "schema": "seo_cluster_v1",
+    "exported_at": "2026-05-22T13:09:45Z",
+    "entity": "pages",
+    "entity_id": 26,
+    "mode": "full",
+    "locales": [
+        {
+            "lang_id": 1,
+            "lang_url": "en",
+            "url": "about-us",
+            "name": "About Us",
+            "title": "About Us | Chicken Road",
+            "description": "Independent guide to Chicken Road, casinos, and responsible play—not a gambling operator.",
+            "content": "<div class=\"about_content\">\n<h1>About Chicken Road</h1>\n<p><strong>Chicken Road</strong> is an independent informational resource about the <em>Chicken Road</em> step game (InOut Games), licensed casinos that host the game, and related topics&mdash;demo play, guides, bonuses, and safer gambling.</p>\n<p>We do <strong>not</strong> operate a casino or sportsbook. We do not register players, hold funds, or pay winnings. Any real-money play happens only on third-party sites you choose; we may link to them for reference.</p>\n<h2>Who this site is for</h2>\n<p>Content is aimed at adults who are legally allowed to gamble in their jurisdiction. If you are unsure, do not use gambling sites.</p>\n<h2>Accuracy</h2>\n<p>We aim to keep information up to date, but bonuses, terms, and availability change. Always verify critical details on the operator&rsquo;s official website before you deposit or play.</p>\n<h2>Affiliate disclosure</h2>\n<p>Some links may be affiliate links. That can mean we receive a commission if you sign up or deposit&mdash;at no extra cost to you. This does not affect our editorial independence, but you should assume commercial relationships may exist.</p>\n<h2>Contact</h2>\n<p>For factual corrections or business enquiries, please use the contact method published on this site (if provided).</p>\n</div>",
+            "status": "published",
+            "source": "main",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 3,
+            "lang_url": "fr",
+            "url": "about-us",
+            "name": "À propos",
+            "title": "À propos | Chicken Road",
+            "description": "Présentation du site : guide indépendant sur Chicken Road, les casinos et le jeu responsable.",
+            "content": "<div class=\"about_content\">\n<h1>&Agrave; propos de Chicken Road</h1>\n<p><strong>Chicken Road</strong> est un site d&rsquo;information ind&eacute;pendant sur le jeu par &eacute;tapes <em>Chicken Road</em> (InOut Games), les casinos en ligne qui le proposent, ainsi que la d&eacute;mo, les guides, les bonus et le jeu responsable.</p>\n<p>Nous ne sommes <strong>pas</strong> un op&eacute;rateur de jeux d&rsquo;argent. Nous n&rsquo;enregistrons pas les joueurs, ne d&eacute;tenons pas de fonds et ne versons pas de gains. Toute mise en argent r&eacute;el se fait uniquement sur les sites tiers que vous choisissez ; nous pouvons y renvoyer par des liens.</p>\n<h2>Public vis&eacute;</h2>\n<p>Le contenu s&rsquo;adresse aux adultes autoris&eacute;s &agrave; jouer dans leur pays. En cas de doute sur la l&eacute;galit&eacute;, n&rsquo;utilisez pas les sites de paris.</p>\n<h2>Exactitude des informations</h2>\n<p>Nous nous effor&ccedil;ons de maintenir des informations &agrave; jour, mais bonus, conditions et disponibilit&eacute; &eacute;voluent. V&eacute;rifiez toujours les d&eacute;tails sur le site officiel de l&rsquo;op&eacute;rateur avant de d&eacute;poser ou de jouer.</p>\n<h2>Liens d&rsquo;affiliation</h2>\n<p>Certains liens peuvent &ecirc;tre des liens d&rsquo;affiliation : nous pouvons percevoir une commission si vous vous inscrivez ou d&eacute;posez, sans surco&ucirc;t pour vous. Cela n&rsquo;emp&ecirc;che pas une r&eacute;daction ind&eacute;pendante, mais des relations commerciales peuvent exister.</p>\n<h2>Contact</h2>\n<p>Pour signaler une erreur ou pour un partenariat, utilisez les coordonn&eacute;es indiqu&eacute;es sur le site (si disponibles).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 4,
+            "lang_url": "de",
+            "url": "about-us",
+            "name": "Über uns",
+            "title": "Über uns | Chicken Road",
+            "description": "Unabhängiger Leitfaden zu Chicken Road, Casinos und verantwortungsvollem Spiel—kein Glücksspielanbieter.",
+            "content": "<div class=\"about_content\">\n<h1>&Uuml;ber Chicken Road</h1>\n<p><strong>Chicken Road</strong> ist ein unabh&auml;ngiger Informationsdienst &uuml;ber das Schrittspiel <em>Chicken Road</em> (InOut Games), lizenzierte Casinos, die es anbieten, sowie Demo-Spiel, Anleitungen, Boni und sicheres Gl&uuml;cksspiel.</p>\n<p>Wir betreiben <strong>kein</strong> Casino und keine Sportwetten. Wir registrieren keine Spieler, halten kein Geld und zahlen keine Gewinne aus. Echtgeldspiel findet nur auf von Ihnen gew&auml;hlten Drittseiten statt; wir k&ouml;nnen dorthin verlinken.</p>\n<h2>F&uuml;r wen diese Seite ist</h2>\n<p>Der Inhalt richtet sich an Erwachsene, die in ihrem Rechtsraum legal spielen d&uuml;rfen. Wenn Sie unsicher sind, nutzen Sie keine Gl&uuml;cksspielseiten.</p>\n<h2>Genauigkeit</h2>\n<p>Wir halten Informationen m&ouml;glichst aktuell, aber Boni, Bedingungen und Verf&uuml;gbarkeit &auml;ndern sich. Pr&uuml;fen Sie wichtige Details immer auf der offiziellen Website des Anbieters, bevor Sie einzahlen oder spielen.</p>\n<h2>Affiliate-Hinweis</h2>\n<p>Einige Links k&ouml;nnen Affiliate-Links sein. Das kann bedeuten, dass wir eine Provision erhalten, wenn Sie sich anmelden oder einzahlen &mdash; ohne Mehrkosten f&uuml;r Sie. Das beeinflusst unsere redaktionelle Unabh&auml;ngigkeit nicht, kommerzielle Beziehungen sind jedoch m&ouml;glich.</p>\n<h2>Kontakt</h2>\n<p>F&uuml;r sachliche Korrekturen oder Gesch&auml;ftsanfragen nutzen Sie bitte die auf dieser Seite ver&ouml;ffentlichte Kontaktm&ouml;glichkeit (falls vorhanden).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 6,
+            "lang_url": "es",
+            "url": "about-us",
+            "name": "Acerca de",
+            "title": "Acerca de | Chicken Road",
+            "description": "Guía independiente sobre Chicken Road, casinos y juego responsable—no somos un operador de apuestas.",
+            "content": "<div class=\"about_content\">\n<h1>Acerca de Chicken Road</h1>\n<p><strong>Chicken Road</strong> es un recurso informativo independiente sobre el juego por pasos <em>Chicken Road</em> (InOut Games), casinos con licencia que lo ofrecen y temas relacionados: demo, gu&iacute;as, bonos y juego responsable.</p>\n<p><strong>No</strong> operamos un casino ni una casa de apuestas. No registramos jugadores, no guardamos fondos ni pagamos premios. El juego con dinero real solo ocurre en sitios de terceros que elijas; podemos enlazarlos como referencia.</p>\n<h2>&iquest;Para qui&eacute;n es este sitio?</h2>\n<p>El contenido va dirigido a adultos con permiso legal para jugar en su jurisdicci&oacute;n. Si tienes dudas, no uses sitios de apuestas.</p>\n<h2>Exactitud</h2>\n<p>Procuramos mantener la informaci&oacute;n al d&iacute;a, pero bonos, t&eacute;rminos y disponibilidad cambian. Verifica siempre los detalles clave en la web oficial del operador antes de depositar o jugar.</p>\n<h2>Divulgaci&oacute;n de afiliados</h2>\n<p>Algunos enlaces pueden ser de afiliado. Eso puede significar que recibimos comisi&oacute;n si te registras o depositas, sin coste extra para ti. No afecta nuestra independencia editorial, pero pueden existir relaciones comerciales.</p>\n<h2>Contacto</h2>\n<p>Para correcciones o consultas comerciales, usa el m&eacute;todo de contacto publicado en este sitio (si est&aacute; disponible).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 7,
+            "lang_url": "hi",
+            "url": "about-us",
+            "name": "हमारे बारे में",
+            "title": "हमारे बारे में | Chicken Road",
+            "description": "Chicken Road, कैसिनो और जिम्मेदार खेल के लिए स्वतंत्र गाइड—कोई जुआ ऑपरेटर नहीं।",
+            "content": "<div class=\"about_content\">\n<h1>Chicken Road के बारे में</h1>\n<p><strong>Chicken Road</strong> <em>Chicken Road</em> स्टेप गेम (InOut Games), इसे होस्ट करने वाले लाइसेंस प्राप्त कैसिनो और संबंधित विषयों—डेमो, गाइड, बोनस और सुरक्षित खेल—के बारे में एक स्वतंत्र जानकारी संसाधन है।</p>\n<p>हम कैसिनो या स्पोर्ट्सबुक <strong>नहीं</strong> चलाते। हम खिलाड़ियों को रजिस्टर नहीं करते, पैसे नहीं रखते और जीत का भुगतान नहीं करते। असली पैसे का खेल केवल आपके चुने तीसरे पक्ष की साइटों पर होता है; हम संदर्भ के लिए उनकी ओर लिंक कर सकते हैं।</p>\n<h2>यह साइट किसके लिए है</h2>\n<p>सामग्री उन वयस्कों के लिए है जो अपने क्षेत्र में कानूनी रूप से जुआ खेल सकते हैं। यदि आप अनिश्चित हैं, तो जुआ साइटों का उपयोग न करें।</p>\n<h2>सटीकता</h2>\n<p>हम जानकारी अद्यतन रखने का प्रयास करते हैं, लेकिन बोनस, शर्तें और उपलब्धता बदलती रहती हैं। जमा या खेलने से पहले ऑपरेटर की आधिकारिक साइट पर महत्वपूर्ण विवरण की पुष्टि करें।</p>\n<h2>अफिलिएट प्रकटीकरण</h2>\n<p>कुछ लिंक अफिलिएट लिंक हो सकते हैं। इसका मतलब हो सकता है कि यदि आप साइन अप या जमा करते हैं तो हमें कमीशन मिले—आपके लिए अतिरिक्त लागत के बिना। यह संपादकीय स्वतंत्रता को प्रभावित नहीं करता, लेकिन व्यावसायिक संबंध हो सकते हैं।</p>\n<h2>संपर्क</h2>\n<p>तथ्यात्मक सुधार या व्यावसायिक पूछताछ के लिए, कृपया इस साइट पर प्रकाशित संपर्क विधि का उपयोग करें (यदि उपलब्ध हो)।</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 8,
+            "lang_url": "pt",
+            "url": "about-us",
+            "name": "Sobre nós",
+            "title": "Sobre nós | Chicken Road",
+            "description": "Guia independente sobre Chicken Road, cassinos e jogo responsável—não somos operador de apostas.",
+            "content": "<div class=\"about_content\">\n<h1>Sobre o Chicken Road</h1>\n<p><strong>Chicken Road</strong> &eacute; um recurso informativo independente sobre o jogo por passos <em>Chicken Road</em> (InOut Games), cassinos licenciados que o oferecem e temas relacionados &mdash; demo, guias, b&oacute;nus e jogo respons&aacute;vel.</p>\n<p><strong>N&atilde;o</strong> operamos cassino nem casa de apostas. N&atilde;o registamos jogadores, n&atilde;o guardamos fundos nem pagamos pr&eacute;mios. Jogo a dinheiro real s&oacute; acontece em sites de terceiros que escolher; podemos ligar a eles como refer&ecirc;ncia.</p>\n<h2>Para quem &eacute; este site</h2>\n<p>O conte&uacute;do destina-se a adultos legalmente autorizados a jogar na sua jurisdi&ccedil;&atilde;o. Se tiver d&uacute;vidas, n&atilde;o use sites de apostas.</p>\n<h2>Exatid&atilde;o</h2>\n<p>Procuramos manter a informa&ccedil;&atilde;o atualizada, mas b&oacute;nus, termos e disponibilidade mudam. Verifique sempre detalhes importantes no site oficial do operador antes de depositar ou jogar.</p>\n<h2>Divulga&ccedil;&atilde;o de afiliados</h2>\n<p>Alguns links podem ser de afiliado. Isso pode significar que recebemos comiss&atilde;o se se registar ou depositar &mdash; sem custo extra para si. Isso n&atilde;o afeta a nossa independ&ecirc;ncia editorial, mas rela&ccedil;&otilde;es comerciais podem existir.</p>\n<h2>Contacto</h2>\n<p>Para correc&ccedil;&otilde;es factuais ou contactos comerciais, use o m&eacute;todo publicado neste site (se dispon&iacute;vel).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 9,
+            "lang_url": "ru",
+            "url": "about-us",
+            "name": "О нас",
+            "title": "О нас | Chicken Road",
+            "description": "Независимый справочник о Chicken Road, казино и ответственной игре — мы не оператор азартных игр.",
+            "content": "<div class=\"about_content\">\n<h1>О Chicken Road</h1>\n<p><strong>Chicken Road</strong> &mdash; независимый информационный ресурс о пошаговой игре <em>Chicken Road</em> (InOut Games), лицензированных казино, где она доступна, а также о демо, гайдах, бонусах и ответственной игре.</p>\n<p>Мы <strong>не</strong> оператор казино или букмекера. Мы не регистрируем игроков, не храним средства и не выплачиваем выигрыши. Игра на деньги проходит только на сторонних сайтах, которые вы выбираете; мы можем ссылаться на них справочно.</p>\n<h2>Для кого этот сайт</h2>\n<p>Контент рассчитан на совершеннолетних, которым в их юрисдикции разрешено играть. Если сомневаетесь &mdash; не используйте азартные сайты.</p>\n<h2>Точность</h2>\n<p>Мы стараемся поддерживать актуальность, но бонусы, условия и доступность меняются. Всегда проверяйте важные детали на официальном сайте оператора перед депозитом или игрой.</p>\n<h2>Партнёрское раскрытие</h2>\n<p>Некоторые ссылки могут быть партнёрскими. Это может означать комиссию при регистрации или депозите &mdash; без дополнительных расходов для вас. На редакционную независимость это не влияет, но коммерческие отношения возможны.</p>\n<h2>Контакты</h2>\n<p>Для исправления фактов или деловых запросов используйте контактный способ, опубликованный на сайте (если указан).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 11,
+            "lang_url": "ar",
+            "url": "about-us",
+            "name": "حولنا",
+            "title": "حولنا | Chicken Road",
+            "description": "دليل مستقل عن Chicken Road والكازينوهات واللعب المسؤول—لسنا مشغّل مقامرة.",
+            "content": "<div class=\"about_content\">\n<h1>حول Chicken Road</h1>\n<p><strong>Chicken Road</strong> مورد معلومات مستقل عن لعبة الخطوات <em>Chicken Road</em> (InOut Games)، والكازينوهات المرخّصة التي تستضيفها، وموضوعات ذات صلة &mdash; العرض التجريبي، الأدلة، المكافآت واللعب المسؤول.</p>\n<p>نحن <strong>لا</strong> نشغّل كازينو أو مراهنات رياضية. لا نسجّل اللاعبين ولا نحتفظ بالأموال ولا ندفع الأرباح. اللعب بمال حقيقي يحدث فقط على مواقع طرف ثالث تختارها؛ قد نربط بها للمرجعية.</p>\n<h2>لمن هذا الموقع</h2>\n<p>المحتوى موجّه للبالغين المسموح لهم قانوناً بالمقامرة في منطقتهم. إذا لم تكن متأكداً، لا تستخدم مواقع المقامرة.</p>\n<h2>الدقة</h2>\n<p>نسعى لإبقاء المعلومات محدّثة، لكن المكافآت والشروط والتوفر تتغيّر. تحقق دائماً من التفاصيل المهمة على الموقع الرسمي للمشغّل قبل الإيداع أو اللعب.</p>\n<h2>إفصاح الإحالة</h2>\n<p>قد تكون بعض الروابط روابط إحالة. قد يعني ذلك أننا نتلقى عمولة إذا سجّلت أو أودعت &mdash; دون تكلفة إضافية عليك. ذلك لا يؤثر على استقلاليتنا التحريرية، لكن قد توجد علاقات تجارية.</p>\n<h2>اتصل بنا</h2>\n<p>لتصحيحات واقعية أو استفسارات تجارية، استخدم وسيلة الاتصال المنشورة على هذا الموقع (إن وُجدت).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 12,
+            "lang_url": "az",
+            "url": "about-us",
+            "name": "Haqqımızda",
+            "title": "Haqqımızda | Chicken Road",
+            "description": "Chicken Road, kazinolar və məsuliyyətli oyun üçün müstəqil bələdçi—qumar operatoru deyilik.",
+            "content": "<div class=\"about_content\">\n<h1>Chicken Road haqqında</h1>\n<p><strong>Chicken Road</strong> <em>Chicken Road</em> addım oyunu (InOut Games), onu təqdim edən lisenziyalı kazinolar və əlaqəli mövzular &mdash; demo, bələdçilər, bonuslar və məsuliyyətli oyun haqqında müstəqil informasiya mənbəyidir.</p>\n<p>Biz kazino və ya idman kitabxanası <strong>deyilik</strong>. Oyunçuları qeydiyyatdan keçirmirik, vəsait saxlamırıq və uduş ödəmirik. Real pul oyunu yalnız sizin seçdiyiniz üçüncü tərəf saytlarında baş verir; istinad üçün onlara link verə bilərik.</p>\n<h2>Bu sayt kim üçündür</h2>\n<p>Məzmun öz yurisdiksiyasında qanuni olaraq oynamağa icazəsi olan yetkinlər üçündür. Əmin deyilsinizsə, qumar saytlarından istifadə etməyin.</p>\n<h2>Dəqiqlik</h2>\n<p>Məlumatları aktual saxlamağa çalışırıq, lakin bonuslar, şərtlər və mövcudluq dəyişir. Depozit və ya oyun əvvəl həmişə operatorun rəsmi saytında vacib detalları yoxlayın.</p>\n<h2>Affiliate açıqlaması</h2>\n<p>Bəzi linklər affiliate ola bilər. Qeydiyyat və ya depozit zamanı komissiya ala bilərik &mdash; sizin üçün əlavə xərc olmadan. Redaksiya müstəqilliyinə təsir etmir, lakin kommersiya əlaqələri ola bilər.</p>\n<h2>Əlaqə</h2>\n<p>Faktiki düzəlişlər və ya biznes sorğuları üçün bu saytda dərc olunan əlaqə üsulundan istifadə edin (əgər varsa).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 13,
+            "lang_url": "bn",
+            "url": "about-us",
+            "name": "আমাদের সম্পর্কে",
+            "title": "আমাদের সম্পর্কে | Chicken Road",
+            "description": "Chicken Road, ক্যাসিনো ও দায়িত্বশীল খেলার স্বাধীন গাইড—আমরা গেমিং অপারেটর নই।",
+            "content": "<div class=\"about_content\">\n<h1>Chicken Road সম্পর্কে</h1>\n<p><strong>Chicken Road</strong> <em>Chicken Road</em> স্টেপ গেম (InOut Games), এটি হোস্ট করা লাইসেন্সপ্রাপ্ত ক্যাসিনো এবং সম্পর্কিত বিষয় &mdash; ডেমো, গাইড, বোনাস ও দায়িত্বশীল খেলা &mdash; নিয়ে একটি স্বাধীন তথ্য উৎস।</p>\n<p>আমরা ক্যাসিনো বা স্পোর্টসবুক <strong>চালাই না</strong>। আমরা খেলোয়াড় নিবন্ধন করি না, তহবিল রাখি না বা জয় পরিশোধ করি না। আসল টাকার খেলা শুধু আপনার বেছে নেওয়া তৃতীয় পক্ষের সাইটে হয়; আমরা রেফারেন্সের জন্য লিঙ্ক করতে পারি।</p>\n<h2>এই সাইট কার জন্য</h2>\n<p>কনটেন্ট তাদের এলাকায় আইনগতভাবে জুয়া খেলতে পারা প্রাপ্তবয়স্কদের জন্য। নিশ্চিত না হলে জুয়া সাইট ব্যবহার করবেন না।</p>\n<h2>নির্ভুলতা</h2>\n<p>আমরা তথ্য হালনাগাদ রাখার চেষ্টা করি, কিন্তু বোনাস, শর্ত ও উপলব্ধতা বদলায়। জমা বা খেলার আগে অপারেটরের অফিসিয়াল সাইটে গুরুত্বপূর্ণ বিবরণ যাচাই করুন।</p>\n<h2>অ্যাফিলিয়েট প্রকাশ</h2>\n<p>কিছু লিঙ্ক অ্যাফিলিয়েট হতে পারে। নিবন্ধন বা জমায় আমরা কমিশন পেতে পারি &mdash; আপনার অতিরিক্ত খরচ ছাড়াই। এটি সম্পাদকীয় স্বাধীনতাকে প্রভাবিত করে না, তবে বাণিজ্যিক সম্পর্ক থাকতে পারে।</p>\n<h2>যোগাযোগ</h2>\n<p>তথ্য সংশোধন বা ব্যবসায়িক জিজ্ঞাসার জন্য এই সাইটে প্রকাশিত যোগাযোগ পদ্ধতি ব্যবহার করুন (যদি থাকে)।</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 14,
+            "lang_url": "it",
+            "url": "about-us",
+            "name": "Chi siamo",
+            "title": "Chi siamo | Chicken Road",
+            "description": "Guida indipendente a Chicken Road, casinò e gioco responsabile—non siamo un operatore di scommesse.",
+            "content": "<div class=\"about_content\">\n<h1>Informazioni su Chicken Road</h1>\n<p><strong>Chicken Road</strong> &egrave; una risorsa informativa indipendente sul gioco a passi <em>Chicken Road</em> (InOut Games), i casin&ograve; con licenza che lo ospitano e argomenti correlati &mdash; demo, guide, bonus e gioco responsabile.</p>\n<p><strong>Non</strong> gestiamo un casin&ograve; n&eacute; un bookmaker. Non registriamo giocatori, non custodiamo fondi n&eacute; paghiamo vincite. Il gioco con denaro reale avviene solo su siti di terze parti che scegliete; possiamo linkarli come riferimento.</p>\n<h2>A chi &egrave; rivolto questo sito</h2>\n<p>Il contenuto &egrave; destinato ad adulti autorizzati legalmente a giocare nella propria giurisdizione. In caso di dubbi, non usate siti di scommesse.</p>\n<h2>Accuratezza</h2>\n<p>Cerchiamo di mantenere le informazioni aggiornate, ma bonus, termini e disponibilit&agrave; cambiano. Verificate sempre i dettagli critici sul sito ufficiale dell&rsquo;operatore prima di depositare o giocare.</p>\n<h2>Informativa affiliati</h2>\n<p>Alcuni link possono essere affiliati. Potremmo ricevere una commissione se vi registrate o depositate &mdash; senza costi extra per voi. Ci&ograve; non influisce sull&rsquo;indipendenza editoriale, ma relazioni commerciali possono esistere.</p>\n<h2>Contatti</h2>\n<p>Per correzioni di fatto o richieste commerciali, usate il metodo di contatto pubblicato su questo sito (se disponibile).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 15,
+            "lang_url": "nl",
+            "url": "about-us",
+            "name": "Over ons",
+            "title": "Over ons | Chicken Road",
+            "description": "Onafhankelijke gids over Chicken Road, casino's en verantwoord spelen—geen gokoperateur.",
+            "content": "<div class=\"about_content\">\n<h1>Over Chicken Road</h1>\n<p><strong>Chicken Road</strong> is een onafhankelijke informatiebron over het stapspel <em>Chicken Road</em> (InOut Games), gelicentieerde casino&rsquo;s die het aanbieden en gerelateerde onderwerpen &mdash; demo, gidsen, bonussen en verantwoord spelen.</p>\n<p>Wij exploiteren <strong>geen</strong> casino of sportsbook. Wij registreren geen spelers, houden geen geld aan en betalen geen winsten uit. Echt geld spelen gebeurt alleen op door u gekozen sites van derden; wij kunnen ernaar linken ter referentie.</p>\n<h2>Voor wie deze site is</h2>\n<p>De inhoud is bedoeld voor volwassenen die in hun rechtsgebied legaal mogen gokken. Bij twijfel: gebruik geen goksites.</p>\n<h2>Nauwkeurigheid</h2>\n<p>We proberen informatie actueel te houden, maar bonussen, voorwaarden en beschikbaarheid wijzigen. Controleer altijd belangrijke details op de offici&euml;le site van de operator v&oacute;&oacute;r u stort of speelt.</p>\n<h2>Affiliate-verklaring</h2>\n<p>Sommige links kunnen affiliatelinks zijn. Dat kan betekenen dat wij commissie ontvangen als u zich aanmeldt of stort &mdash; zonder extra kosten voor u. Dit heeft geen invloed op onze redactionele onafhankelijkheid, maar commerci&euml;le relaties kunnen bestaan.</p>\n<h2>Contact</h2>\n<p>Voor feitelijke correcties of zakelijke vragen gebruikt u de contactmethode op deze site (indien beschikbaar).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 16,
+            "lang_url": "pl",
+            "url": "about-us",
+            "name": "O nas",
+            "title": "O nas | Chicken Road",
+            "description": "Niezależny przewodnik po Chicken Road, kasynach i odpowiedzialnej grze—nie jesteśmy operatorem hazardu.",
+            "content": "<div class=\"about_content\">\n<h1>O Chicken Road</h1>\n<p><strong>Chicken Road</strong> to niezale&#380;ne &#378;r&oacute;d&#322;o informacji o grze krokowej <em>Chicken Road</em> (InOut Games), licencjonowanych kasynach, kt&oacute;re j&#261; oferuj&#261;, oraz powi&#261;zanych tematach &mdash; demo, przewodnikach, bonusach i bezpiecznym graniu.</p>\n<p><strong>Nie</strong> prowadzimy kasyna ani bukmachera. Nie rejestrujemy graczy, nie przechowujemy &#347;rodk&oacute;w ani nie wyp&#322;acamy wygranych. Gra na prawdziwe pieni&#261;dze odbywa si&#281; tylko na wybranych przez Ciebie stronach trzecich; mo&#380;emy do nich linkowa&#263;.</p>\n<h2>Dla kogo jest ta strona</h2>\n<p>Tre&#347;ci s&#261; skierowane do doros&#322;ych, kt&oacute;rzy legalnie mog&#261; gra&#263; w swojej jurysdykcji. Je&#347;li masz w&#261;tpliwo&#347;ci, nie korzystaj z serwis&oacute;w hazardowych.</p>\n<h2>Dok&#322;adno&#347;&#263;</h2>\n<p>Staramy si&#281; utrzymywa&#263; aktualne informacje, ale bonusy, warunki i dost&#281;pno&#347;&#263; si&#281; zmieniaj&#261;. Zawsze sprawd&#378; kluczowe szczeg&oacute;&#322;y na oficjalnej stronie operatora przed wp&#322;at&#261; lub gr&#261;.</p>\n<h2>Informacja o partnerstwie</h2>\n<p>Niekt&oacute;re linki mog&#261; by&#263; partnerskie. Mo&#380;emy otrzyma&#263; prowizj&#281; po rejestracji lub wp&#322;acie &mdash; bez dodatkowych koszt&oacute;w dla Ciebie. Nie wp&#322;ywa to na niezale&#380;no&#347;&#263; redakcyjn&#261;, ale relacje handlowe s&#261; mo&#380;liwe.</p>\n<h2>Kontakt</h2>\n<p>W sprawie korekt fakt&oacute;w lub zapyta&#324; biznesowych skorzystaj z metody kontaktu opublikowanej na tej stronie (je&#347;li jest dost&#281;pna).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 17,
+            "lang_url": "vi",
+            "url": "about-us",
+            "name": "Giới thiệu",
+            "title": "Giới thiệu | Chicken Road",
+            "description": "Hướng dẫn độc lập về Chicken Road, casino và chơi có trách nhiệm—không phải nhà điều hành cờ bạc.",
+            "content": "<div class=\"about_content\">\n<h1>Giới thiệu Chicken Road</h1>\n<p><strong>Chicken Road</strong> l&agrave; nguồn th&ocirc;ng tin độc lập về game theo bước <em>Chicken Road</em> (InOut Games), c&aacute;c s&ograve;ng bạc c&oacute; giấy ph&eacute;p cung cấp game v&agrave; c&aacute;c chủ đề li&ecirc;n quan &mdash; bản thử, hướng dẫn, khuyến m&atilde;i v&agrave; chơi c&oacute; tr&aacute;ch nhiệm.</p>\n<p>Ch&uacute;ng t&ocirc;i <strong>kh&ocirc;ng</strong> vận h&agrave;nh s&ograve;ng bạc hay nh&agrave; c&aacute; thể thao. Ch&uacute;ng t&ocirc;i kh&ocirc;ng đăng k&yacute; người chơi, kh&ocirc;ng giữ tiền v&agrave; kh&ocirc;ng trả thưởng. Chơi tiền thật chỉ diễn ra tr&ecirc;n c&aacute;c site b&ecirc;n thứ ba bạn chọn; ch&uacute;ng t&ocirc;i c&oacute; thể li&ecirc;n kết để tham khảo.</p>\n<h2>Site d&agrave;nh cho ai</h2>\n<p>Nội dung hướng tới người trưởng th&agrave;nh được ph&eacute;p đ&aacute;nh bạc hợp ph&aacute;p tại khu vực của họ. Nếu kh&ocirc;ng chắc, đừng d&ugrave;ng site cờ bạc.</p>\n<h2>Độ ch&iacute;nh x&aacute;c</h2>\n<p>Chúng t&ocirc;i cố giữ th&ocirc;ng tin cập nhật, nhưng khuyến m&atilde;i, điều khoản v&agrave; t&igrave;nh trạng sẵn c&oacute; thay đổi. Lu&ocirc;n x&aacute;c minh chi tiết quan trọng tr&ecirc;n site ch&iacute;nh thức của nh&agrave; vận h&agrave;nh trước khi nạp hoặc chơi.</p>\n<h2>C&ocirc;ng bố li&ecirc;n kết</h2>\n<p>Một số li&ecirc;n kết c&oacute; thể l&agrave; affiliate. Điều đ&oacute; c&oacute; thể nghĩa l&agrave; ch&uacute;ng t&ocirc;i nhận hoa hồng khi bạn đăng k&yacute; hoặc nạp &mdash; kh&ocirc;ng ph&iacute; th&ecirc;m cho bạn. Điều n&agrave;y kh&ocirc;ng ảnh hưởng độc lập bi&ecirc;n tập, nhưng quan hệ thương mại c&oacute; thể tồn tại.</p>\n<h2>Li&ecirc;n hệ</h2>\n<p>Để sửa th&ocirc;ng tin hoặc li&ecirc;n hệ kinh doanh, h&atilde;y d&ugrave;ng phương thức li&ecirc;n hệ tr&ecirc;n site (nếu c&oacute;).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 18,
+            "lang_url": "ua",
+            "url": "about-us",
+            "name": "Про нас",
+            "title": "Про нас | Chicken Road",
+            "description": "Незалежний довідник про Chicken Road, казино та відповідальну гру — ми не оператор азартних ігор.",
+            "content": "<div class=\"about_content\">\n<h1>Про Chicken Road</h1>\n<p><strong>Chicken Road</strong> &mdash; незалежний інформаційний ресурс про покрокову гру <em>Chicken Road</em> (InOut Games), ліцензовані казино, де вона доступна, а також демо, гайди, бонуси та відповідальну гру.</p>\n<p>Ми <strong>не</strong> оператор казино чи букмекера. Ми не реєструємо гравців, не зберігаємо кошти та не виплачуємо виграші. Гра на гроші відбувається лише на сторонніх сайтах, які ви обираєте; ми можемо посилатися на них довідково.</p>\n<h2>Для кого цей сайт</h2>\n<p>Контент для дорослих, яким у їхній юрисдикції дозволено грати. Якщо сумніваєтеся &mdash; не користуйтеся азартними сайтами.</p>\n<h2>Точність</h2>\n<p>Ми намагаємося тримати інформацію актуальною, але бонуси, умови та наявність змінюються. Завжди перевіряйте важливі деталі на офіційному сайті оператора перед депозитом або грою.</p>\n<h2>Розкриття партнерства</h2>\n<p>Деякі посилання можуть бути партнерськими. Це може означати комісію за реєстрацію або депозит &mdash; без додаткових витрат для вас. На редакційну незалежність це не впливає, але комерційні відносини можливі.</p>\n<h2>Контакт</h2>\n<p>Для виправлення фактів або ділових запитів використовуйте контакт, опублікований на сайті (якщо є).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        },
+        {
+            "lang_id": 19,
+            "lang_url": "ro",
+            "url": "about-us",
+            "name": "Despre noi",
+            "title": "Despre noi | Chicken Road",
+            "description": "Ghid independent despre Chicken Road, cazinouri și joc responsabil—nu suntem operator de jocuri de noroc.",
+            "content": "<div class=\"about_content\">\n<h1>Despre Chicken Road</h1>\n<p><strong>Chicken Road</strong> este o resurs&#259; independent&#259; de informa&#539;ii despre jocul pe pa&#537;i <em>Chicken Road</em> (InOut Games), cazinouri licen&#539;iate care &icirc;l g&#259;zduiesc &#537;i subiecte conexe &mdash; demo, ghiduri, bonusuri &#537;i joc responsabil.</p>\n<p><strong>Nu</strong> oper&#259;m un cazinou sau o cas&#259; de pariuri. Nu &icirc;nregistr&#259;m juc&#259;tori, nu p&#259;str&#259;m fonduri &#537;i nu pl&#259;tim c&acirc;&#537;tiguri. Jocul pe bani reali are loc doar pe site-uri ter&#539;e pe care le alegi; putem face leg&#259;turi c&#259;tre ele ca referin&#539;&#259;.</p>\n<h2>Cui se adreseaz&#259; site-ul</h2>\n<p>Con&#539;inutul este destinat adul&#539;ilor care au voie legal s&#259; joace &icirc;n jurisdic&#539;ia lor. Dac&#259; nu e&#537;ti sigur, nu folosi site-uri de jocuri de noroc.</p>\n<h2>Acurate&#539;e</h2>\n<p>&Icirc;ncerc&#259;m s&#259; men&#539;inem informa&#539;iile actualizate, dar bonusurile, termenii &#537;i disponibilitatea se schimb&#259;. Verific&#259; &icirc;ntotdeauna detaliile importante pe site-ul oficial al operatorului &icirc;nainte de depunere sau joc.</p>\n<h2>Dezv&#259;luire afiliere</h2>\n<p>Unele linkuri pot fi de afiliere. Putem primi comision dac&#259; te &icirc;nregistrezi sau depui &mdash; f&#259;r&#259; cost suplimentar pentru tine. Asta nu afecteaz&#259; independen&#539;a editorial&#259;, dar pot exista rela&#539;ii comerciale.</p>\n<h2>Contact</h2>\n<p>Pentru corec&#539;ii factuale sau solicit&#259;ri comerciale, folose&#537;te metoda de contact publicat&#259; pe acest site (dac&#259; este disponibil&#259;).</p>\n</div>",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 26
+            }
+        }
+    ]
+}

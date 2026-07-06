@@ -49,11 +49,13 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               <?php
               require_once(ROOT_DIR . 'functions/cta_inject.php');
               require_once(ROOT_DIR . 'functions/blog_promo_guard.php');
+              require_once(ROOT_DIR . 'functions/content_exclude_tags.php');
               $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
               $full_text = (string)($q['text1'] ?? '') . (string)($q['text2'] ?? '');
+              $cta_btns = aviator_cta_buttons_html($offer_path);
 
-              if (blog_promo_should_autoinsert($q)):
-              // Blog promo: show multiple times inside one post, with at least 2 different random images.
+              if (blog_promo_should_autoinsert_images($q)) {
+              // Random promo images + buttons inside one post (at least 2 different images).
               require_once(ROOT_DIR . 'functions/blog_promo.php');
               
               // Best-effort extraction of <img src="..."> from promo html.
@@ -95,7 +97,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
 
               $promo_html = function($promo) use ($fallback_btns): string {
               	$img_html = (string)($promo['image'] ?? '');
-              	$btn_html = (string)($promo['buttons_html'] ?? '');
+              	$btn_html = (string)($promo['buttons_html'] ?? $promo['buttons'] ?? '');
               	if (trim($btn_html) === '') $btn_html = $fallback_btns;
               	return $img_html . $btn_html;
               };
@@ -104,12 +106,27 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               $promo2_html = $promo_html($promo2);
               $promo3_html = $promo_html($promo3);
 
-              // Insert 3 different promo blocks (best-effort uniqueness of images):
-              // 1st promo after 1st <p>, 2nd after 2nd <p>, 3rd after 5th <p>.
-              $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo1_html, array(1));
-              $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo2_html, array(2));
-              $full_text = aviator_insert_cta_after_paragraphs($full_text, $promo3_html, array(5));
-              endif;
+              $cta_positions = aviator_cta_even_paragraph_positions(
+              	aviator_count_content_paragraphs($full_text),
+              	3
+              );
+              if (count($cta_positions) >= 1) {
+              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo1_html, array($cta_positions[0]));
+              }
+              if (count($cta_positions) >= 2) {
+              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo2_html, array($cta_positions[1]));
+              }
+              if (count($cta_positions) >= 3) {
+              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo3_html, array($cta_positions[2]));
+              }
+
+              } elseif ($cta_btns !== '') {
+              // skip_random_images: CTA buttons only (noinc still respected).
+              $full_text = aviator_insert_cta_evenly_in_content($full_text, $cta_btns, 3);
+              }
+
+              $full_text = content_normalize_noads_links($full_text);
+              $full_text = content_unwrap_exclude_tags($full_text);
 
               echo function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($full_text) : $full_text;
               ?>

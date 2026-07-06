@@ -80,7 +80,7 @@ if ($page_html !== '' && $page_slug === 'download') {
 if ($page_html !== '' && $page_slug !== '' && !in_array($page_slug, $skip_cta_slugs, true)) {
 	$offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
 	$buttons_html = aviator_cta_buttons_html($offer_path);
-	$page_html = aviator_insert_cta_after_paragraphs($page_html, $buttons_html, [1, 5, 10]);
+	$page_html = aviator_insert_cta_evenly_in_content($page_html, $buttons_html, 3);
 }
 // One H1 per page: raw CMS HTML may contain <h1> that aviator_seo_clean_content downgrades to <h2>.
 $__page_html_for_h1 = ($page_html !== '' && function_exists('aviator_seo_clean_content'))

@@ -1,0 +1,181 @@
+/* Advertising API banner popup (betika-style). Loaded only when ad_partner is set. */
+.wd-banner-caption {
+	margin: 0 0 12px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wd-banner-caption .wd-cap-part,
+.wd-banner-caption .wd-cap-highlight {
+	padding: 0;
+	background: transparent;
+	line-height: 1.2;
+	text-shadow: none;
+}
+.wd-banner-caption .wd-cap-part {
+	color: #fff !important;
+}
+p.wd-banner-caption span.wd-cap-highlight,
+.wd-banner-caption .wd-cap-highlight,
+.wd-banner-popup-inner .wd-banner-caption .wd-cap-highlight,
+.wd-banner-inline .wd-banner-caption .wd-cap-highlight {
+	color: #e4063a !important; /* основной красный цвета сайта */
+	text-transform: uppercase !important;
+	border-bottom: 2px solid #FFD800; /* тонкая жёлтая окантовка снизу */
+	padding-bottom: 2px;
+}
+.wd-banner-popup-inner .wd-banner-caption { margin-bottom: 8px; }
+.wd-banner-inline .wd-banner-caption { margin-bottom: 8px; }
+.wd-banner-popup { box-sizing: border-box; }
+.wd-banner-popup-inner {
+	box-sizing: border-box;
+	background: transparent;
+	border-radius: 0;
+	overflow: visible;
+	box-shadow: none;
+	padding: 0;
+	display: grid;
+	gap: 10px;
+	justify-items: center;
+	align-content: center;
+	position: relative;
+	max-width: 90vw;
+}
+.wd-banner-popup-link {
+	display: block;
+	line-height: 0;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.wd-banner-popup-link img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.wd-banner-img {
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	object-fit: contain;
+	max-width: 100%;
+}
+.wd-banner-popup .wd-banner-img {
+	max-height: min(75vh, 85vw);
+	max-width: 100%;
+}
+.wd-banner-inline .wd-banner-img {
+	max-height: min(50vh, 92vw);
+	max-width: 100%;
+}
+/* Universal close button for popups/banners: fixed in viewport top-right (outside cards) */
+.wd-ui-close,
+.wd-banner-popup-close,
+.wd-banner-retention-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background: rgba(255,255,255,0.92);
+	border-radius: 999px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 100002;
+	color: #111;
+	-webkit-tap-highlight-color: transparent;
+}
+.wd-ui-close:hover,
+.wd-banner-popup-close:hover,
+.wd-banner-retention-close:hover { background: #fff; }
+.wd-ui-close i,
+.wd-banner-popup-close i,
+.wd-banner-retention-close i {
+	font-size: 1.25rem;
+	line-height: 1;
+}
+.wd-banner-retention {
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	backdrop-filter: blur(4px);
+	position: relative;
+}
+.wd-banner-retention-inner {
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	max-width: 480px;
+	background: #18171b;
+	border-radius: 20px;
+	border: 2px solid #323340;
+	padding: 20px;
+	text-align: center;
+	max-height: 90vh;
+	overflow-y: auto;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	--white: #18171b;
+	--black: #fff;
+	--light-black: rgba(255,255,255,0.85);
+	--yellow: #fcd200;
+	color: #fff;
+}
+
+/* No extra padding needed: close button is outside cards (fixed to viewport). */
+.wd-banner-retention-inner span { color: var(--yellow); }
+.wd-banner-retention-inner > p:first-child,
+.wd-banner-retention-inner > div:first-child p:first-child {
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--yellow);
+	margin: 0 0 4px;
+}
+.wd-banner-retention-inner p a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	margin-top: 8px;
+}
+.wd-banner-retention-inner p:last-of-type a,
+.wd-banner-retention-inner a[href]:not([href^="#"]):not([href=""]) {
+	background: #12cc1b;
+	color: #fff !important;
+	padding: 14px 28px;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(18, 204, 27, 0.4);
+}
+.wd-banner-retention-inner p:last-of-type a:hover,
+.wd-banner-retention-inner a[href]:not([href^="#"]):not([href=""]):hover {
+	background: #36d939;
+	color: #fff !important;
+}
+.wd-banner-placeholder { text-align: center; }
+.wd-banner-placeholder-title {
+	margin: 0 0 10px;
+	font-size: 1.15rem;
+	font-weight: 700;
+	color: var(--yellow);
+}
+.wd-banner-placeholder-cta {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	background: #12cc1b;
+	color: #fff !important;
+	padding: 12px 24px;
+	border-radius: 8px;
+}

@@ -1,0 +1,10 @@
+# Force LF so shell scripts run without "command not found" (CRLF breaks bash)
+root = true
+
+[*.sh]
+end_of_line = lf
+charset = utf-8
+
+[deploy.ftp.local]
+end_of_line = lf
+charset = utf-8

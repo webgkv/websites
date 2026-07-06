@@ -23,10 +23,10 @@ $buttons_html = aviator_cta_buttons_html($offer_path);
             <div class="text page-content-from-db about_content casino-article-content">
                 <?php
                 $article_html = isset($article['text']) ? (string)$article['text'] : '';
-                echo aviator_insert_cta_after_paragraphs(
+                echo aviator_insert_cta_evenly_in_content(
                     function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($article_html) : $article_html,
                     $buttons_html,
-                    [1, 5, 10]
+                    3
                 );
                 ?>
             </div>

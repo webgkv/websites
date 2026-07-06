@@ -1,0 +1,88 @@
+{
+    "schema": "menu_page_names_v1",
+    "description": "pages#6: menu label Strategies, slug /strategies/ (was /predictor/)",
+    "page_id": 6,
+    "url": "strategies",
+    "menu_items": [
+        {
+            "lang_id": 1,
+            "name": "Strategies",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 3,
+            "name": "Stratégies",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 4,
+            "name": "Strategien",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 6,
+            "name": "Estrategias",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 7,
+            "name": "रणनीतियाँ",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 8,
+            "name": "Estratégias",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 9,
+            "name": "Стратегии",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 11,
+            "name": "استراتيجيات",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 12,
+            "name": "Strategiyalar",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 13,
+            "name": "কৌশল",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 14,
+            "name": "Strategie",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 15,
+            "name": "Strategieën",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 16,
+            "name": "Strategie",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 17,
+            "name": "Chiến lược",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 18,
+            "name": "Стратегії",
+            "url": "strategies"
+        },
+        {
+            "lang_id": 19,
+            "name": "Strategii",
+            "url": "strategies"
+        }
+    ]
+}

@@ -1,0 +1,505 @@
+.layout-builder {
+    position: fixed;
+    width: 400px;
+    background: white;
+    z-index: 1000;
+    right: -400px;
+    top: 0;
+    bottom: 0;
+    box-shadow: 8px 0 10px 3px rgba(0, 0, 0, 0.50);
+    overflow: auto;
+    transition: right .2s;
+}
+
+.layout-builder.show {
+    right: 0;
+}
+
+.layout-builder .layout-builder-toggle.shw i {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+	  -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+	  -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+	  transform: rotate(360deg);
+    }
+}
+
+.layout-builder .layout-builder-toggle.hdn {
+    display: none;
+}
+
+.layout-builder.show .layout-builder-toggle.hdn {
+    display: flex;
+}
+
+.layout-builder .layout-builder-toggle {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: black;
+    position: fixed;
+    top: 50%;
+    margin-left: -50px;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.layout-builder .layout-builder-body {
+    padding: 30px;
+}
+
+.layout-builder .layout-builder-body .custom-control input[type="checkbox"]:checked + label {
+    color: black;
+}
+
+.layout-builder .layout-colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+}
+
+.layout-builder .layout-colors .layout-color-item {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.layout-builder .layout-colors .layout-color-item.active {
+    box-shadow: 0px 0px 0px 1px black
+}
+
+.layout-builder .layout-colors .layout-color-item span {
+    display: block;
+    height: 45%;
+}
+
+.layout-builder .layout-colors .layout-color-item span:first-child {
+    background: black;
+    transform: rotate(15deg);
+    width: 110%;
+    height: 70%;
+    margin-top: -5px;
+}
+
+.layout-alert {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+@media (max-width: 992px) {
+    .layout-builder {
+	  display: none;
+    }
+}
+
+/* Translate stats overview (admin) — readable colour blocks, Jobs-style cues */
+.tstats-overview-source {
+    border: 1px solid #c9d8ea;
+    border-left: 4px solid #138496;
+    background: #fff;
+}
+.tstats-overview .tstats-overview-source-head {
+    background: linear-gradient(180deg, #f4f9ff 0%, #e9f2fb 100%);
+    color: #212529;
+    border-bottom: 1px solid #c9d8ea !important;
+}
+.tstats-overview .tstats-overview-source-head .text-dark {
+    color: #1a1a1a !important;
+}
+.tstats-overview .tstats-source-breakdown-btn {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+.tstats-overview .tstats-metric {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+}
+.tstats-overview .tstats-metric-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6c757d;
+    margin-bottom: 0.35rem;
+}
+.tstats-overview .tstats-metric-value {
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #212529;
+}
+.tstats-overview .tstats-section-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #6c757d;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+/* % chip: like badge-secondary / fr — readable box, bold text; status = left stripe only */
+.tstats-overview .tstats-pct-box {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 3rem;
+    padding: 0.28rem 0.45rem 0.32rem;
+    border-radius: 4px;
+    line-height: 1;
+    background: #f3f9fd;
+    color: #1a1a1a;
+    border: 1px solid #8abfe0;
+    border-left-width: 3px;
+    border-left-color: #2b8fc8;
+    box-shadow: 0 1px 2px rgba(23, 105, 170, 0.12);
+}
+.tstats-overview .tstats-pct-box-num {
+    font-size: 1.12rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+.tstats-overview .tstats-pct-box-pct {
+    font-size: 0.72rem;
+    font-weight: 800;
+    margin-left: 1px;
+    color: #495057;
+    align-self: flex-end;
+    padding-bottom: 0.08rem;
+}
+.tstats-overview .tstats-pct-box--low {
+    border-left-color: #c82333;
+}
+.tstats-overview .tstats-pct-box--mid {
+    border-left-color: #d39e00;
+}
+.tstats-overview .tstats-pct-box--high {
+    border-left-color: #1e7e34;
+}
+.tstats-overview .tstats-progress {
+    height: 10px;
+    border-radius: 6px;
+    background-color: #e9ecef;
+}
+.tstats-overview .tstats-mini {
+    border-radius: 6px;
+    padding: 0.5rem 0.35rem;
+    min-height: 4.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.tstats-overview .tstats-mini--content {
+    background: linear-gradient(180deg, #e7f4ff 0%, #dceeff 100%);
+    border-color: #b8daff;
+}
+.tstats-overview .tstats-mini--dict {
+    background: linear-gradient(180deg, #fff8e6 0%, #ffefc2 100%);
+    border-color: #ffdeb8;
+}
+.tstats-overview .tstats-mini--menu {
+    background: linear-gradient(180deg, #f3e8ff 0%, #e8def8 100%);
+    border-color: #d4c4f0;
+}
+.tstats-overview .tstats-mini-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #495057;
+    margin-bottom: 0.25rem;
+}
+.tstats-overview .tstats-mini-value {
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+.tstats-overview .tstats-mini-num {
+    font-weight: 800;
+    color: #212529;
+}
+.tstats-overview .tstats-mini-den {
+    font-weight: 500;
+    color: #6c757d;
+    font-size: 0.82em;
+}
+.tstats-overview .tstats-mini-hint {
+    font-size: 0.65rem;
+    color: #6c757d;
+    margin-top: 0.2rem;
+}
+.tstats-overview .tstats-footline {
+    font-size: 0.82rem;
+}
+.tstats-overview-target-link:hover .tstats-overview-target-card {
+    box-shadow: 0 0.5rem 1.15rem rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-1px);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.tstats-overview-target-card {
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+/* SEO Monitor overview: long AJAX hint (blog / job) must stay inside card */
+.tstats-overview .seo-mon-score-hint {
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    line-height: 1.25;
+}
+
+/* SEO Monitor list: rows excluded from validation */
+tr.seo-mon-row-excluded td {
+    vertical-align: middle;
+}
+
+/* Standard admin module shell: use <div class="admin-module-page"> around section content */
+.admin-module-page .card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.admin-module-page .card-header {
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.admin-module-page .nav-tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.admin-module-page .nav-tabs .nav-link {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.admin-module-page pre.ad-api-debug {
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 280px;
+    overflow: auto;
+    font-size: 0.8125rem;
+}
+
+/* Translations review: high-contrast status badges (dark text on soft fills) */
+.translations-review-page .badge,
+.translations-review-header .badge {
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    color: #1a1a1a !important;
+}
+.translations-review-page .badge-success,
+.translations-review-header .badge-success {
+    background-color: #c3e6cb !important;
+    color: #0d3d1a !important;
+    border-color: rgba(13, 61, 26, 0.35);
+}
+.translations-review-page .badge-danger,
+.translations-review-header .badge-danger {
+    background-color: #f5c6cb !important;
+    color: #491217 !important;
+    border-color: rgba(73, 18, 23, 0.35);
+}
+.translations-review-page .badge-warning,
+.translations-review-header .badge-warning {
+    background-color: #ffeeba !important;
+    color: #533f03 !important;
+    border-color: rgba(83, 63, 3, 0.35);
+}
+.translations-review-page .badge-secondary,
+.translations-review-header .badge-secondary {
+    background-color: #dee2e6 !important;
+    color: #212529 !important;
+    border-color: rgba(0, 0, 0, 0.18);
+}
+.translations-review-page .badge-info,
+.translations-review-header .badge-info {
+    background-color: #bee5eb !important;
+    color: #0c5460 !important;
+    border-color: rgba(12, 84, 96, 0.35);
+}
+.translations-review-page .badge-primary,
+.translations-review-header .badge-primary {
+    background-color: #c6d4ff !important;
+    color: #001a4d !important;
+    border-color: rgba(0, 26, 77, 0.3);
+}
+/* Primary actions: solid green with crisp white label */
+.translations-review-page .btn-success {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+    color: #fff !important;
+    font-weight: 600;
+}
+.translations-review-page .btn-success:hover {
+    background-color: #18692b;
+    border-color: #155d26;
+    color: #fff !important;
+}
+/* Header cluster strip: dark readable copy */
+.translations-review-header {
+    color: #212529;
+}
+.translations-review-header .tc-review-strip-title {
+    font-weight: 700;
+    color: #111;
+}
+.translations-review-header .tc-review-strip-hint {
+    font-weight: 600;
+    color: #212529 !important;
+    font-size: 0.8125rem;
+}
+.translations-review-header .btn-tc-review-open {
+    font-weight: 700;
+    color: #111 !important;
+    background-color: #f8f9fa;
+    border: 1px solid #343a40;
+}
+.translations-review-header .btn-tc-review-open:hover {
+    background-color: #e9ecef;
+    color: #000 !important;
+}
+.translations-review-header .progress {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+.translations-review-header .progress-bar {
+    background-color: #1c5bbf;
+}
+.translations-review-page .table thead th {
+    color: #111;
+    font-weight: 600;
+    border-bottom-width: 2px;
+}
+.translations-review-page .table td {
+    color: #212529;
+}
+
+/* Translations hub (m=translations): top-level tabs under autopilot strip */
+.translations-hub-nav .nav-tabs {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.translations-hub-nav .nav-tabs .nav-link {
+    color: #1a1a1a;
+    border: 1px solid transparent;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.translations-hub-nav .nav-tabs .nav-link:hover {
+    color: #000;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+.translations-hub-nav .nav-tabs .nav-link.active {
+    color: #0d47a1;
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.12) #fff;
+    font-weight: 700;
+}
+
+/* Summernote WYSIWYG — full width in admin forms */
+.form .tinymce-editor-wrap,
+.form .tinymce textarea,
+.form .note-editor,
+.form .note-editing-area,
+.form .note-editable {
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box;
+}
+.form .note-editor.note-frame {
+	border: 1px solid #dee2e6;
+}
+.form .note-editable {
+	min-height: 280px;
+}
+
+/* TinyMCE: distinct image toolbar buttons (insert vs edit) — always visible */
+.mce-btn.mce-medialibrary-btn .mce-ico {
+    color: #1565c0;
+}
+.mce-btn.mce-editimage-btn .mce-ico {
+    color: #6a1b9a;
+}
+.mce-btn.mce-editimage-btn .mce-txt {
+    color: #6a1b9a;
+    font-weight: 600;
+}
+
+/* TinyMCE image edit / media picker overlays (above Bootstrap #window ~1050) */
+#image-editor-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: 10600;
+    pointer-events: none;
+}
+#image-editor-wrap .media-image-edit-modal,
+#image-editor-wrap .media-image-edit-backdrop,
+#media-picker-wrap .media-picker-modal {
+    pointer-events: auto;
+}
+#image-editor-wrap .media-image-edit-modal,
+#media-picker-wrap .media-picker-modal {
+    z-index: 10601;
+}
+#image-editor-wrap .media-image-edit-backdrop {
+    z-index: 10600;
+}
+
+/* Ensure native TinyMCE 4 windows and float panels are layered high on top of Bootstrap modals */
+.mce-window,
+.mce-floatpanel {
+	z-index: 999999 !important;
+}
+
+/* SYSTEM-WIDE HIGH-CONTRAST CONTRAST & LEGIBILITY FIXES */
+
+/* Override the muddy #afb8bd light background to a clean, bright, modern off-white */
+.bg-light {
+    background-color: #f8fafc !important;
+}
+
+/* Ensure card headers with bg-light look professional, clear and bright */
+.card-header.bg-light {
+    background-color: #f1f5f9 !important;
+    border-bottom: 1px solid #cbd5e1 !important;
+}
+
+/* Fix text colors inside light containers to ensure perfect contrast and legibility */
+.bg-light, 
+.bg-light label, 
+.bg-light .form-label, 
+.bg-light .text-secondary, 
+.bg-light .text-muted,
+.bg-light .font-weight-bold,
+.card-header.bg-light strong,
+.card-header.bg-light span {
+    color: #1e293b !important; /* Dark Slate color for high-contrast reading */
+}
+
+/* General form labels inside admin page should be dark and highly readable */
+.form-label, 
+label.form-label {
+    color: #334155 !important; /* High contrast dark charcoal */
+    font-weight: 600 !important;
+}
+
+/* Ensure placeholder text inside inputs has a clear, readable color */
+.form-control::placeholder {
+    color: #94a3b8 !important;
+}
