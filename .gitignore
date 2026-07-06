@@ -3,8 +3,8 @@
 **/__pycache__/
 **/*.pyc
 
-# GGCMS build artifacts
-ggcms/build/
+# Blog cluster: translations live in *-full.json, not override modules
+ggcms/sites/chickenroad/tools/chickenroad_blog_*_overrides*.py
 
 # Deploy secrets — optional local overrides (deploy.ftp.local is tracked in private repo)
 **/deploy.ftp.local.sftp-key

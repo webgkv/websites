@@ -70,7 +70,22 @@ python3 scripts/normalize_seo_cluster_html.py /path/to/seo-games-1-full.json
 python3 scripts/normalize_games_html.py /path/to/seo-games-1-full.json
 ```
 
-For large clusters, optional repo builders follow the `tools/build_chickenroad_home_cluster.py` pattern (`*_locales.py` + `*_overrides*.py` + `build_*_cluster.py`). Rebuild writes back into the working `*-full.json`.
+### Blog cluster builders (EN only)
+
+For one-off blog articles, keep **translations in the working `*-full.json`** — the agent edits and polishes locales there by hand. Do **not** commit `chickenroad_blog_*_overrides*.py` to git.
+
+Repo tools (example: `tools/build_chickenroad_blog_3_cluster.py`):
+
+- `chickenroad_blog_*_locales.py` — canonical **EN** structured body (`_EN_BODY`), image paths, partner hrefs
+- `build_chickenroad_blog_*_cluster.py` — rebuilds **only `lang_id=1`** HTML into the JSON; other locales are left unchanged
+
+```bash
+python3 ggcms/sites/chickenroad/tools/build_chickenroad_blog_3_cluster.py
+```
+
+Homepage / casino article builders may still use `*_overrides*.py` where that pipeline is established — blog handoffs use JSON-only i18n.
+
+For large clusters, optional repo builders follow the `tools/build_chickenroad_home_cluster.py` pattern. Rebuild writes back into the working `*-full.json`.
 
 `authors` clusters are plain-text bios — skip table/figure normalization.
 

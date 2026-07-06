@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Rebuild blog#3 'Games That Pay Real Money' cluster — clean HTML + locale translations.
+"""Rebuild blog#3 EN canonical HTML in the working *-full.json.
 
-Same token schema for every locale => identical structure (h1/h2/h3/p/li/img + links).
+Only lang_id=1 is regenerated from the structured EN body. All target locales
+stay as edited in the JSON (agent handoff).
 """
 
 from __future__ import annotations
@@ -22,7 +23,7 @@ from chickenroad_blog_3_locales import (  # noqa: E402
     IMAGES,
     LOCALE_META,
     PARTNER_HREFS,
-    get_body,
+    get_en_body,
 )
 
 CLUSTER_IN = Path("/home/lenovo/Downloads/09/seo-blog-3-full.json")
@@ -128,15 +129,16 @@ def build_content(body: dict, lang_code: str) -> str:
 def main() -> None:
     with CLUSTER_IN.open(encoding="utf-8") as f:
         cluster = json.load(f)
-    old_by_lang = {int(loc["lang_id"]): loc for loc in cluster["locales"]}
 
-    for lang_id_str, meta in LOCALE_META.items():
-        lang_id = int(lang_id_str)
-        body = get_body(lang_id_str)
-        content = build_content(body, meta["code"])
-        old = old_by_lang.get(lang_id, {})
-        loc = {
-            "lang_id": lang_id,
+    meta = LOCALE_META["1"]
+    content = build_content(get_en_body(), meta["code"])
+
+    updated = False
+    for i, loc in enumerate(cluster["locales"]):
+        if int(loc["lang_id"]) != 1:
+            continue
+        cluster["locales"][i] = {
+            **loc,
             "lang_url": meta["code"],
             "url": meta["url"],
             "name": meta["name"],
@@ -144,19 +146,21 @@ def main() -> None:
             "description": meta["description"],
             "content": content,
             "status": "published",
-            "source": "main" if lang_id == 1 else "content_i18n",
-            "seo_monitor_ctx": old.get("seo_monitor_ctx", {"entity": "blog", "entity_id": 3}),
+            "source": "main",
         }
-        for i, cur in enumerate(cluster["locales"]):
-            if int(cur["lang_id"]) == lang_id:
-                cluster["locales"][i] = loc
-                break
+        updated = True
+        break
+
+    if not updated:
+        raise SystemExit("lang_id=1 not found in cluster JSON")
 
     cluster["exported_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00")
     with OUT_PATH.open("w", encoding="utf-8") as f:
         json.dump(cluster, f, ensure_ascii=False, indent=4)
         f.write("\n")
-    print(f"Wrote {OUT_PATH} ({len(LOCALE_META)} locales)")
+
+    n = len(cluster["locales"])
+    print(f"Wrote EN canonical to {OUT_PATH} ({n} locales in file, only EN rebuilt)")
 
 
 if __name__ == "__main__":

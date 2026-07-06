@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Structured body + meta for blog#2 Chicken Road legit/scam cluster."""
+"""Canonical EN body + meta for blog#2. Target locales live in *-full.json only."""
 
 from __future__ import annotations
 
@@ -19,111 +19,6 @@ LOCALE_META = {
         "name": "Is Chicken Road Legit or a Scam? 2026 Honest Verdict",
         "title": "Is Chicken Road Legit or a Scam? 2026 Honest Verdict",
         "description": "Is Chicken Road legit or a scam? Licensed by Curaçao, Provably Fair, 98% RTP — how to spot fakes, play safely, and choose trusted casinos.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "3": {
-        "code": "fr",
-        "name": "Chicken Road est-il fiable ou une arnaque ? Verdict 2026",
-        "title": "Chicken Road : arnaque ou jeu fiable ? Verdict honnête 2026",
-        "description": "Chicken Road est-il légitime ? Licence Curaçao, Provably Fair, RTP 98 % — repérer les faux, jouer en sécurité et choisir un casino fiable.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "4": {
-        "code": "de",
-        "name": "Ist Chicken Road seriös oder Betrug? Ehrliches Urteil 2026",
-        "title": "Chicken Road: seriös oder Scam? Ehrliches Urteil 2026",
-        "description": "Ist Chicken Road legitim? Curaçao-Lizenz, Provably Fair, 98 % RTP — Fakes erkennen, sicher spielen und vertrauenswürdige Casinos wählen.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "6": {
-        "code": "es",
-        "name": "¿Chicken Road es legítimo o estafa? Veredicto honesto 2026",
-        "title": "¿Chicken Road es legítimo o estafa? Veredicto 2026",
-        "description": "¿Chicken Road es legítimo? Licencia Curaçao, Provably Fair, RTP 98 % — detectar clones, jugar seguro y elegir casinos de confianza.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "7": {
-        "code": "hi",
-        "name": "क्या Chicken Road वैध है या स्कैम? 2026 ईमानदार निर्णय",
-        "title": "Chicken Road वैध है या स्कैम? 2026 ईमानदार निर्णय",
-        "description": "क्या Chicken Road लीगिट है? Curaçao लाइसेंस, Provably Fair, 98% RTP — नकली ऐप पहचानें, सुरक्षित खेलें, भरोसेमंद कैसीनो चुनें।",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "8": {
-        "code": "pt",
-        "name": "Chicken Road é legítimo ou golpe? Veredito honesto 2026",
-        "title": "Chicken Road é legítimo ou golpe? Veredito 2026",
-        "description": "Chicken Road é legítimo? Licença Curaçao, Provably Fair, RTP 98% — identificar falsos, jogar com segurança e escolher casinos confiáveis.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "9": {
-        "code": "ru",
-        "name": "Chicken Road — развод или честная игра? Вердикт 2026",
-        "title": "Chicken Road: развод или честная игра? Вердикт 2026",
-        "description": "Chicken Road легитимен? Лицензия Curaçao, Provably Fair, RTP 98% — как отличить подделки, играть безопасно и выбрать надёжное казино.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "11": {
-        "code": "ar",
-        "name": "هل Chicken Road موثوق أم احتيال؟ حكم صادق 2026",
-        "title": "هل Chicken Road موثوق أم احتيال؟ حكم صادق 2026",
-        "description": "هل Chicken Road شرعي؟ ترخيص Curaçao وProvably Fair وRTP 98% — كيف تكتشف النسخ المزيفة وتلعب بأمان وتختار كازينو موثوقًا.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "12": {
-        "code": "az",
-        "name": "Chicken Road etibarlıdır, yoxsa fırıldaqçılıq? 2026 qərarı",
-        "title": "Chicken Road etibarlıdır, yoxsa fırıldaq? 2026 qərarı",
-        "description": "Chicken Road legitimdir? Curaçao lisenziyası, Provably Fair, 98% RTP — saxta klonları tanıyın, təhlükəsiz oynayın, etibarlı kazino seçin.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "13": {
-        "code": "bn",
-        "name": "Chicken Road কি বৈধ নাকি স্ক্যাম? ২০২৬ সৎ রায়",
-        "title": "Chicken Road বৈধ নাকি স্ক্যাম? ২০২৬ সৎ রায়",
-        "description": "Chicken Road কি লিগিট? Curaçao লাইসেন্স, Provably Fair, 98% RTP — নকল অ্যাপ চিনুন, নিরাপদে খেলুন, বিশ্বস্ত ক্যাসিনো বেছে নিন।",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "14": {
-        "code": "it",
-        "name": "Chicken Road è legittimo o una truffa? Verdetto onesto 2026",
-        "title": "Chicken Road: legittimo o truffa? Verdetto onesto 2026",
-        "description": "Chicken Road è legittimo? Licenza Curaçao, Provably Fair, RTP 98% — riconoscere i falsi, giocare in sicurezza e scegliere casino affidabili.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "15": {
-        "code": "nl",
-        "name": "Is Chicken Road betrouwbaar of oplichting? Eerlijk oordeel 2026",
-        "title": "Chicken Road: betrouwbaar of oplichting? Oordeel 2026",
-        "description": "Is Chicken Road legitiem? Curaçao-licentie, Provably Fair, 98% RTP — nepkloons herkennen, veilig spelen en betrouwbare casino's kiezen.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "16": {
-        "code": "pl",
-        "name": "Czy Chicken Road jest uczciwy, czy oszustwem? Werdykt 2026",
-        "title": "Chicken Road: uczciwy czy scam? Szczery werdykt 2026",
-        "description": "Czy Chicken Road jest legalny? Licencja Curaçao, Provably Fair, RTP 98% — jak rozpoznać podróbki, grać bezpiecznie i wybrać zaufane kasyno.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "17": {
-        "code": "vi",
-        "name": "Chicken Road có hợp pháp hay lừa đảo? Phán quyết 2026",
-        "title": "Chicken Road hợp pháp hay lừa đảo? Phán quyết 2026",
-        "description": "Chicken Road có legit không? Giấy phép Curaçao, Provably Fair, RTP 98% — nhận diện bản giả, chơi an toàn và chọn casino uy tín.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "18": {
-        "code": "ua",
-        "name": "Chicken Road — обман чи чесна гра? Вердикт 2026",
-        "title": "Chicken Road: обман чи чесна гра? Вердикт 2026",
-        "description": "Чи легітимний Chicken Road? Ліцензія Curaçao, Provably Fair, RTP 98% — як відрізнити підробки, грати безпечно й обрати надійне казино.",
-        "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
-    },
-    "19": {
-        "code": "ro",
-        "name": "Chicken Road e legitim sau escrocherie? Verdict onest 2026",
-        "title": "Chicken Road: legitim sau escrocherie? Verdict 2026",
-        "description": "Chicken Road e legitim? Licență Curaçao, Provably Fair, RTP 98% — cum recunoști clonele false, joci în siguranță și alegi cazinouri de încredere.",
         "url": "is-chicken-road-legit-or-a-scam-2026-honest-verdict",
     },
 }
@@ -266,34 +161,5 @@ _EN_BODY = {
 }
 
 
-def _load_overrides() -> dict[str, dict]:
-    out: dict[str, dict] = {}
-    for mod_name in (
-        "chickenroad_blog_2_overrides_fr_de_es_ru",
-        "chickenroad_blog_2_overrides_pt_it_nl_pl",
-        "chickenroad_blog_2_overrides_hi_bn_vi_ar_az",
-        "chickenroad_blog_2_overrides_ua_ro",
-    ):
-        try:
-            mod = __import__(mod_name, fromlist=["OVERRIDES"])
-            out.update(mod.OVERRIDES)
-        except Exception:
-            pass
-    return out
-
-
-_OVERRIDES_CACHE: dict[str, dict] | None = None
-
-
-def get_body(lang_id: str) -> dict:
-    if lang_id == "1":
-        return deepcopy(_EN_BODY)
-    global _OVERRIDES_CACHE
-    if _OVERRIDES_CACHE is None:
-        _OVERRIDES_CACHE = _load_overrides()
-    patch = _OVERRIDES_CACHE.get(lang_id)
-    if not patch:
-        return deepcopy(_EN_BODY)
-    out = deepcopy(_EN_BODY)
-    out.update(patch)
-    return out
+def get_en_body() -> dict:
+    return deepcopy(_EN_BODY)

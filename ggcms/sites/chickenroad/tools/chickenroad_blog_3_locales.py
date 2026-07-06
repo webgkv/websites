@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Structured body + meta for blog#3 'Games That Pay Real Money' cluster.
+"""Canonical EN body + shared constants for blog#3.
 
-Every locale is rebuilt from the SAME token schema so the HTML structure
-(h1/h2/h3/p/li/img and inline links) stays identical across languages.
+The builder assembles EN HTML from _EN_BODY. Translations and editorial
+polish are done in the working *-full.json by the agent — not in *_overrides*.py.
 """
 
 from __future__ import annotations
@@ -33,111 +33,6 @@ LOCALE_META = {
         "name": "Games That Pay Real Money: What Actually Pays in 2026",
         "title": "Games That Pay Real Money: What Actually Pays in 2026",
         "description": "Real-money games can pay through licensed casinos, crash titles, bingo, skill games and reward apps. Learn what is legit and how to avoid scams.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "3": {
-        "code": "fr",
-        "name": "Jeux qui rapportent de l'argent réel : ce qui paie en 2026",
-        "title": "Jeux qui rapportent de l'argent réel : ce qui paie en 2026",
-        "description": "Les jeux en argent réel paient via casinos licenciés, crash games, bingo, jeux d'adresse et apps. Ce qui est fiable et comment éviter les arnaques.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "4": {
-        "code": "de",
-        "name": "Spiele mit echtem Geld: Was 2026 wirklich auszahlt",
-        "title": "Spiele mit echtem Geld: Was 2026 wirklich auszahlt",
-        "description": "Echtgeld-Spiele zahlen über lizenzierte Casinos, Crash-Games, Bingo, Skill-Spiele und Apps. Was seriös ist und wie man Betrug erkennt.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "6": {
-        "code": "es",
-        "name": "Juegos que pagan dinero real: qué paga de verdad en 2026",
-        "title": "Juegos que pagan dinero real: qué paga de verdad en 2026",
-        "description": "Los juegos de dinero real pagan vía casinos con licencia, crash, bingo, juegos de habilidad y apps. Qué es legítimo y cómo evitar estafas.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "7": {
-        "code": "hi",
-        "name": "असली पैसे देने वाले गेम: 2026 में क्या वाकई भुगतान करता है",
-        "title": "असली पैसे देने वाले गेम: 2026 में क्या भुगतान करता है",
-        "description": "असली पैसे वाले गेम लाइसेंस्ड कैसीनो, क्रैश गेम, बिंगो, स्किल गेम और ऐप से भुगतान करते हैं। क्या वैध है और स्कैम से कैसे बचें।",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "8": {
-        "code": "pt",
-        "name": "Jogos que pagam dinheiro real: o que realmente paga em 2026",
-        "title": "Jogos que pagam dinheiro real: o que paga em 2026",
-        "description": "Jogos de dinheiro real pagam via cassinos licenciados, crash, bingo, jogos de habilidade e apps. O que é legítimo e como evitar golpes.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "9": {
-        "code": "ru",
-        "name": "Игры за реальные деньги: что действительно платит в 2026",
-        "title": "Игры за реальные деньги: что реально платит в 2026",
-        "description": "Игры на реальные деньги платят через лицензированные казино, crash-игры, бинго, скилл-игры и приложения. Что легитимно и как избежать скама.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "11": {
-        "code": "ar",
-        "name": "ألعاب تربح أموالاً حقيقية: ما الذي يدفع فعلاً في 2026",
-        "title": "ألعاب تربح أموالاً حقيقية: ما الذي يدفع في 2026",
-        "description": "ألعاب المال الحقيقي تدفع عبر كازينوهات مرخّصة وألعاب crash وبينغو وألعاب مهارة وتطبيقات. ما هو موثوق وكيف تتجنب الاحتيال.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "12": {
-        "code": "az",
-        "name": "Real pul qazandıran oyunlar: 2026-da nə həqiqətən ödəyir",
-        "title": "Real pul qazandıran oyunlar: 2026-da nə ödəyir",
-        "description": "Real pul oyunları lisenziyalı kazino, crash oyunları, bingo, bacarıq oyunları və tətbiqlər vasitəsilə ödəyir. Nə etibarlıdır və fırıldaqdan necə qorunmalı.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "13": {
-        "code": "bn",
-        "name": "আসল টাকা দেয় এমন গেম: ২০২৬ সালে আসলে কী পে করে",
-        "title": "আসল টাকা দেয় এমন গেম: ২০২৬ সালে কী পে করে",
-        "description": "আসল টাকার গেম লাইসেন্সপ্রাপ্ত ক্যাসিনো, ক্র্যাশ গেম, বিঙ্গো, স্কিল গেম ও অ্যাপে পে করে। কোনটা বৈধ এবং স্ক্যাম কীভাবে এড়াবেন।",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "14": {
-        "code": "it",
-        "name": "Giochi che pagano soldi veri: cosa paga davvero nel 2026",
-        "title": "Giochi che pagano soldi veri: cosa paga nel 2026",
-        "description": "I giochi con soldi veri pagano tramite casino con licenza, crash, bingo, giochi di abilità e app. Cosa è legittimo e come evitare le truffe.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "15": {
-        "code": "nl",
-        "name": "Spellen die echt geld betalen: wat echt uitbetaalt in 2026",
-        "title": "Spellen die echt geld betalen: wat uitbetaalt in 2026",
-        "description": "Echt-geldspellen betalen via licentiecasino's, crash games, bingo, skill games en apps. Wat is legitiem en hoe vermijd je oplichting.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "16": {
-        "code": "pl",
-        "name": "Gry płacące prawdziwe pieniądze: co naprawdę płaci w 2026",
-        "title": "Gry płacące prawdziwe pieniądze: co płaci w 2026",
-        "description": "Gry na prawdziwe pieniądze płacą przez licencjonowane kasyna, crash, bingo, gry zręcznościowe i aplikacje. Co jest legalne i jak unikać oszustw.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "17": {
-        "code": "vi",
-        "name": "Game trả tiền thật: cái nào thực sự trả tiền năm 2026",
-        "title": "Game trả tiền thật: cái nào thực sự trả năm 2026",
-        "description": "Game tiền thật trả qua casino có phép, crash game, bingo, game kỹ năng và app. Cái nào hợp pháp và cách tránh lừa đảo.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "18": {
-        "code": "ua",
-        "name": "Ігри за реальні гроші: що справді платить у 2026",
-        "title": "Ігри за реальні гроші: що реально платить у 2026",
-        "description": "Ігри на реальні гроші платять через ліцензовані казино, crash-ігри, бінго, скіл-ігри та застосунки. Що легітимно й як уникнути шахрайства.",
-        "url": "games-that-pay-real-money-what-actually-pays-in-2026",
-    },
-    "19": {
-        "code": "ro",
-        "name": "Jocuri care plătesc bani reali: ce plătește cu adevărat în 2026",
-        "title": "Jocuri care plătesc bani reali: ce plătește în 2026",
-        "description": "Jocurile pe bani reali plătesc prin cazinouri licențiate, crash, bingo, jocuri de abilitate și aplicații. Ce e legitim și cum eviți escrocheriile.",
         "url": "games-that-pay-real-money-what-actually-pays-in-2026",
     },
 }
@@ -260,34 +155,5 @@ _EN_BODY = {
 }
 
 
-def _load_overrides() -> dict[str, dict]:
-    out: dict[str, dict] = {}
-    for mod_name in (
-        "chickenroad_blog_3_overrides_fr_de_es_ru",
-        "chickenroad_blog_3_overrides_pt_it_nl_pl",
-        "chickenroad_blog_3_overrides_hi_bn_vi_ar_az",
-        "chickenroad_blog_3_overrides_ua_ro",
-    ):
-        try:
-            mod = __import__(mod_name, fromlist=["OVERRIDES"])
-            out.update(mod.OVERRIDES)
-        except Exception:
-            pass
-    return out
-
-
-_OVERRIDES_CACHE: dict[str, dict] | None = None
-
-
-def get_body(lang_id: str) -> dict:
-    if lang_id == "1":
-        return deepcopy(_EN_BODY)
-    global _OVERRIDES_CACHE
-    if _OVERRIDES_CACHE is None:
-        _OVERRIDES_CACHE = _load_overrides()
-    patch = _OVERRIDES_CACHE.get(lang_id)
-    if not patch:
-        return deepcopy(_EN_BODY)
-    out = deepcopy(_EN_BODY)
-    out.update(patch)
-    return out
+def get_en_body() -> dict:
+    return deepcopy(_EN_BODY)
