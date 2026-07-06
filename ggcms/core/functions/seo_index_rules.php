@@ -46,24 +46,78 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 	}
 
 	function seo_index_rules_route_map() {
-		return array(
-			'home' => 'Home',
-			'demo_app' => 'Demo app',
-		);
+		return array();
 	}
 
 	function seo_index_rules_engine_options() {
 		return array(
 			'inherit' => 'Inherit',
 			'all' => 'All crawlers',
-			'google' => 'Google only',
+			'google' => 'Google',
+			'yandex' => 'Yandex',
+			'bing' => 'Bing',
+			'custom' => 'Custom bot',
 		);
 	}
 
 	function seo_index_rules_normalize_engines($engines) {
 		$engines = strtolower(trim((string) $engines));
-		$allowed = array('inherit', 'all', 'google');
+		$allowed = array('inherit', 'all', 'google', 'yandex', 'bing', 'custom');
 		return in_array($engines, $allowed, true) ? $engines : 'inherit';
+	}
+
+	/** Meta name for a known engine key, or sanitized custom bot name. */
+	function seo_index_rules_sanitize_custom_bot_name($name) {
+		$name = strtolower(trim((string) $name));
+		$name = preg_replace('/[^a-z0-9_-]+/', '', $name);
+		return substr($name, 0, 64);
+	}
+
+	function seo_index_rules_engine_meta_name($engines, $engines_list = '') {
+		switch (seo_index_rules_normalize_engines($engines)) {
+			case 'all':
+				return 'robots';
+			case 'google':
+				return 'googlebot';
+			case 'yandex':
+				return 'yandex';
+			case 'bing':
+				return 'bingbot';
+			case 'custom':
+				return seo_index_rules_sanitize_custom_bot_name($engines_list);
+			default:
+				return '';
+		}
+	}
+
+	function seo_index_rules_engine_label($engines, $engines_list = '') {
+		$opts = seo_index_rules_engine_options();
+		$engines = seo_index_rules_normalize_engines($engines);
+		if ($engines === 'custom') {
+			$bot = seo_index_rules_sanitize_custom_bot_name($engines_list);
+			return $bot !== '' ? ('Custom: ' . $bot) : 'Custom bot';
+		}
+		return isset($opts[$engines]) ? $opts[$engines] : $engines;
+	}
+
+	/**
+	 * Meta tags when indexing is blocked.
+	 *
+	 * @return array<string,string> meta name => content
+	 */
+	function seo_index_rules_block_meta_tags($engines, $engines_list = '') {
+		$engines = seo_index_rules_normalize_engines($engines);
+		$tags = array();
+		if ($engines === 'all') {
+			$tags['robots'] = 'noindex, nofollow';
+			$tags['googlebot'] = 'noindex, nofollow';
+			return $tags;
+		}
+		$name = seo_index_rules_engine_meta_name($engines, $engines_list);
+		if ($name !== '') {
+			$tags[$name] = 'noindex, follow';
+		}
+		return $tags;
 	}
 
 	function seo_index_rules_row_key($scope, $scope_key = '', $entity_id = 0) {
@@ -155,22 +209,9 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 		return $site && !empty($site['block']);
 	}
 
-	/** @return string[] language url segments allowed for /{lang}/demo/app/ when route is open */
+	/** @deprecated Demo app is never indexable; kept for BC. */
 	function seo_index_rules_demo_app_langs() {
-		$route = seo_index_rules_get('route', 'demo_app', 0);
-		if ($route && !empty($route['engines_list'])) {
-			$out = array();
-			foreach (preg_split('#[\s,]+#', (string) $route['engines_list']) as $seg) {
-				$seg = trim((string) $seg, '/');
-				if ($seg !== '') {
-					$out[] = $seg;
-				}
-			}
-			if (!empty($out)) {
-				return array_values(array_unique($out));
-			}
-		}
-		return array('en');
+		return array();
 	}
 
 	function seo_index_rules_resolved_for_context(array $ctx) {
@@ -204,6 +245,7 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 
 		$block = 0;
 		$engines = 'inherit';
+		$engines_list = '';
 		foreach ($chain as $row) {
 			if (!is_array($row)) {
 				continue;
@@ -213,12 +255,13 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 			}
 			if (!empty($row['engines']) && $row['engines'] !== 'inherit') {
 				$engines = $row['engines'];
+				$engines_list = (string) ($row['engines_list'] ?? '');
 			}
 		}
 		if ($engines === 'inherit') {
 			$engines = 'all';
 		}
-		return array('block' => $block, 'engines' => $engines);
+		return array('block' => $block, 'engines' => $engines, 'engines_list' => $engines_list);
 	}
 
 	function seo_index_rules_detect_context(?array $abc = null, ?array $u = null, ?array $lang = null) {
@@ -242,12 +285,6 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 		}
 
 		$ctx = array();
-		if (function_exists('site_seo_page_is_home') && site_seo_page_is_home($abc)) {
-			$ctx['route'] = 'home';
-		} elseif (function_exists('site_seo_page_is_whitelisted_demo_app') && site_seo_page_is_whitelisted_demo_app($abc, $u, $lang)) {
-			$ctx['route'] = 'demo_app';
-		}
-
 		$mod = isset($abc['module']) ? (string) $abc['module'] : '';
 		$page = isset($abc['page']) && is_array($abc['page']) ? $abc['page'] : array();
 		$page_id = (int) ($page['id'] ?? 0);
@@ -264,7 +301,10 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 		} elseif ($mod === 'authors') {
 			$ctx['entity'] = 'authors';
 			$ctx['entity_id'] = $page_id;
-		} elseif ($mod === 'pages' && empty($ctx['route'])) {
+		} elseif ($mod === 'index' || ($mod === 'pages' && function_exists('site_seo_page_is_home') && site_seo_page_is_home($abc))) {
+			$ctx['entity'] = 'pages';
+			$ctx['entity_id'] = $page_id;
+		} elseif ($mod === 'pages') {
 			$ctx['entity'] = 'pages';
 			$ctx['entity_id'] = $page_id;
 		}
@@ -272,47 +312,20 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 		return $ctx;
 	}
 
-	function seo_index_rules_whitelist_exceptions(array $ctx) {
-		$site = seo_index_rules_get('site', 'site', 0);
-		if (!$site || empty($site['block'])) {
-			return false;
-		}
-		if (!empty($ctx['route']) && $ctx['route'] === 'home') {
-			$route = seo_index_rules_get('route', 'home', 0);
-			if ($route && empty($route['block'])) {
-				return true;
-			}
-		}
-		if (!empty($ctx['route']) && $ctx['route'] === 'demo_app') {
-			$route = seo_index_rules_get('route', 'demo_app', 0);
-			if ($route && empty($route['block'])) {
-				return true;
-			}
-		}
-		return false;
-	}
-
 	function seo_index_rules_allow_search_indexing(?array $abc = null, ?array $u = null, ?array $lang = null) {
 		$ctx = seo_index_rules_detect_context($abc, $u, $lang);
-		if (seo_index_rules_whitelist_exceptions($ctx)) {
-			return true;
-		}
 		$resolved = seo_index_rules_resolved_for_context($ctx);
 		return empty($resolved['block']);
 	}
 
-	/** @return array{robots:string,googlebot:string} */
+	/** @return array<string,string> */
 	function seo_index_rules_robots_meta_tags(?array $abc = null, ?array $u = null, ?array $lang = null) {
-		$empty = array('robots' => '', 'googlebot' => '');
 		if (seo_index_rules_allow_search_indexing($abc, $u, $lang)) {
-			return $empty;
+			return array();
 		}
 		$ctx = seo_index_rules_detect_context($abc, $u, $lang);
 		$resolved = seo_index_rules_resolved_for_context($ctx);
-		if ($resolved['engines'] === 'google') {
-			return array('robots' => '', 'googlebot' => 'noindex, follow');
-		}
-		return array('robots' => 'noindex, nofollow', 'googlebot' => 'noindex, nofollow');
+		return seo_index_rules_block_meta_tags($resolved['engines'], $resolved['engines_list'] ?? '');
 	}
 
 	function seo_index_rules_echo_robots_meta_tags(?array $abc = null, ?array $u = null, ?array $lang = null) {
@@ -326,15 +339,17 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 	}
 
 	function seo_index_rules_apply_robots_header(?array $abc = null, ?array $u = null, ?array $lang = null) {
-		$tags = seo_index_rules_robots_meta_tags($abc, $u, $lang);
-		$parts = array();
-		if ($tags['robots'] !== '') {
-			$parts[] = $tags['robots'];
-		} elseif ($tags['googlebot'] !== '') {
-			$parts[] = $tags['googlebot'];
+		if (seo_index_rules_allow_search_indexing($abc, $u, $lang)) {
+			return;
 		}
-		if (!empty($parts) && !headers_sent()) {
-			header('X-Robots-Tag: ' . $parts[0], true);
+		$ctx = seo_index_rules_detect_context($abc, $u, $lang);
+		$resolved = seo_index_rules_resolved_for_context($ctx);
+		if (seo_index_rules_normalize_engines($resolved['engines']) !== 'all') {
+			return;
+		}
+		$tags = seo_index_rules_block_meta_tags($resolved['engines'], $resolved['engines_list'] ?? '');
+		if (!empty($tags['robots']) && !headers_sent()) {
+			header('X-Robots-Tag: ' . $tags['robots'], true);
 		}
 	}
 

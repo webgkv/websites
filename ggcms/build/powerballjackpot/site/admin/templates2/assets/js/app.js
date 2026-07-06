@@ -118,8 +118,11 @@
             }
             $li.addClass('nav-group');
             var $a = $li.children('a').first();
-            if (!$a.find('.sub-menu-arrow').length) {
-                $a.append('<i class="sub-menu-arrow ti-angle-up"></i>');
+            var $arrows = $a.find('.sub-menu-arrow');
+            if ($arrows.length > 1) {
+                $arrows.slice(1).remove();
+            } else if (!$arrows.length) {
+                $a.append('<i class="sub-menu-arrow ti-angle-up" aria-hidden="true"></i>');
             }
             if ($a.attr('href') && $a.attr('href').indexOf('admin.php') === 0) {
                 $a.attr('href', '#');

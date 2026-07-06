@@ -211,19 +211,25 @@ function site_seo_allow_search_indexing(?array $abc = null, ?array $u = null, ?a
 function site_seo_robots_meta_tags(?array $abc = null, ?array $u = null, ?array $lang = null) {
 	site_seo_load_index_rules();
 	if (function_exists('seo_index_rules_robots_meta_tags')) {
-		return seo_index_rules_robots_meta_tags($abc, $u, $lang);
+		$tags = seo_index_rules_robots_meta_tags($abc, $u, $lang);
+		if (!is_array($tags)) {
+			return array();
+		}
+		return $tags;
 	}
-	return array('robots' => '', 'googlebot' => '');
+	return array();
 }
 
 /** @return string robots meta / X-Robots-Tag value, or empty when indexing is allowed */
 function site_seo_robots_meta_content(?array $abc = null, ?array $u = null, ?array $lang = null) {
 	$tags = site_seo_robots_meta_tags($abc, $u, $lang);
-	if ($tags['robots'] !== '') {
-		return $tags['robots'];
+	if (!is_array($tags)) {
+		return '';
 	}
-	if ($tags['googlebot'] !== '') {
-		return $tags['googlebot'];
+	foreach ($tags as $content) {
+		if ($content !== '') {
+			return $content;
+		}
 	}
 	return '';
 }
@@ -305,9 +311,6 @@ function site_seo_sitemap_whitelist_entries($base, array $lang) {
 	$entries = array(
 		array('loc' => $base . $path, 'lastmod' => null),
 	);
-	if (in_array($langSlug, site_seo_index_demo_app_langs(), true)) {
-		$entries[] = array('loc' => $base . '/' . $langSlug . '/demo/app/', 'lastmod' => null);
-	}
 	return $entries;
 }
 
