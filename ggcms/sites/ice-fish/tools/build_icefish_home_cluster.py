@@ -14,17 +14,20 @@ from icefish_html_extract import extract_english
 from icefish_home_full_ru import get_russian
 
 ROOT = Path(__file__).resolve().parents[1]
-CLUSTER_IN = ROOT / "tmp/jason/seo-pages-1-full.json"
-OUT_REPO = ROOT / "site/files/reference/seo-pages-1-full.json"
+CLUSTER_IN = ROOT / "site/files/reference/seo-pages-1-full.json"
+OUT_REPO = CLUSTER_IN
 OUT_DL = ROOT / "tmp/jason/seo-pages-1-full.json"
 
 IMAGES = {
     "app": "/assets/images/ice-fish-app-desktop-mobile.webp",
     "gameplay": "/assets/images/ice-fish-gameplay.webp",
+    "multipliers": "/assets/images/ice-fish-multipliers.webp",
     "step1": "/assets/images/ice-fish-step-1.webp",
     "step2": "/assets/images/ice-fish-step-2.webp",
     "step3": "/assets/images/ice-fish-step-3.webp",
     "mobile": "/assets/images/ice-fish-mobile.webp",
+    "demo": "/assets/images/ice-fish-demo-interface.webp",
+    "inout": "/assets/images/ice-fish-inout.webp",
 }
 
 LOCALE_META = {
@@ -151,7 +154,7 @@ def build_content(s: dict, page_title: str) -> str:
 <div class="row mt-5">
 <div class="col-12">
 <div class="about_content">
-{paras_block(s["why_paras"])}
+{paras_block_with_figure(s["why_paras"], 1, "multipliers", a["multipliers"])}
 <p><strong>{e(t["why_hooks_title"])}</strong></p>
 <ul>
 {hooks}
@@ -222,7 +225,7 @@ def build_content(s: dict, page_title: str) -> str:
 <div class="row mt-5">
 <div class="col-12">
 <div class="about_content">
-{paras_block(s["demo_paras"])}
+{paras_block_with_figure(s["demo_paras"], 1, "demo", a["demo"])}
 </div>
 </div>
 </div>
@@ -249,6 +252,13 @@ def build_content(s: dict, page_title: str) -> str:
 <div class="col-12">
 <div class="main_heading">
 <h3>{e(t["specs_h3"])}</h3>
+</div>
+</div>
+<div class="row mt-3">
+<div class="col-12">
+<div class="about_content">
+{inline_figure("inout", a["inout"])}
+</div>
 </div>
 </div>
 <div class="row mt-3">
@@ -325,10 +335,13 @@ def english_alts() -> dict:
     return {
         "app": "Ice Fish game interface on desktop and mobile",
         "gameplay": "Ice Fish multiplier climbing during a live round",
-        "step1": "Set your stake and difficulty before a Ice Fish round starts",
-        "step2": "Advance the chicken across road lanes during the round",
-        "step3": "Cash out before the chicken hits a trap",
+        "multipliers": "Ice Fish multipliers from 2x to 10x on screen",
+        "step1": "Set your stake and target before an Ice Fish round starts",
+        "step2": "Follow the catch progress through each stage of the round",
+        "step3": "Cash out your multiplier before the round ends",
         "mobile": "Ice Fish mobile interface in portrait mode",
+        "demo": "Ice Fish demo mode with virtual balance on screen",
+        "inout": "Ice Fish by InOut Games — provider and game branding",
     }
 
 

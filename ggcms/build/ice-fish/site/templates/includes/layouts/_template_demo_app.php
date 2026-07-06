@@ -58,9 +58,9 @@ if (function_exists('aviator_seo_public_origin')) {
 			flex-shrink: 0;
 			width: 28px;
 			height: 28px;
-			background-color: #fdb614;
-			-webkit-mask-image: var(--demo-egg-mask);
-			mask-image: var(--demo-egg-mask);
+			background-color: var(--cr-accent);
+			-webkit-mask-image: var(--demo-hook-mask);
+			mask-image: var(--demo-hook-mask);
 			-webkit-mask-repeat: no-repeat;
 			mask-repeat: no-repeat;
 			-webkit-mask-position: center;

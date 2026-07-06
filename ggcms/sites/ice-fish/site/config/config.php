@@ -21,7 +21,7 @@ $config['site_hero_image'] = '/assets/images/ice-fish-hero.webp';
 $config['site_default_og_image'] = '/assets/images/ice-fish-hero.webp';
 $config['popup_after']=10; //seconds
 // After deploying new CSS/JS/images: bump so browsers and CDN pick up new static files.
-$config['assets_version'] = 19;
+$config['assets_version'] = 26;
 
 // Game demo (neutral keys; legacy *_{brand}_inout_* still read by game_demo_embed.php)
 $config['game_demo_provider'] = 'inout';

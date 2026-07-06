@@ -763,22 +763,31 @@ footer h5 {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 24px;
     z-index: 99;
+    width: 58px;
     line-height: 0;
     border: none;
     outline: none;
     background: var(--cr-btn-gradient);
     box-shadow: var(--cr-btn-shadow);
     cursor: pointer;
-    padding: 12px 14px;
-    border-radius: 14px;
-    clip-path: none;
+    padding: 0;
+    /* Upward beacon: pointed top edge guides the eye */
+    clip-path: polygon(50% 0%, 92% 15%, 92% 100%, 8% 100%, 8% 15%);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-#myBtn .myBtn__egg {
+#myBtn:hover,
+#myBtn:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: var(--cr-btn-shadow-hover);
+}
+#myBtn .myBtn__hook {
     display: block;
-    width: 18px;
-    height: auto;
+    width: 36px;
+    height: 36px;
+    margin: 16px auto 12px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.28));
 }
   
 

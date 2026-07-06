@@ -24,8 +24,8 @@ if ($try_bonus_label === '' || strpos($try_bonus_label, 'common|') === 0) {
 	$try_bonus_label = 'Try Bonus';
 }
 $offer_path = (isset($abc['ad_offer_path']) && is_string($abc['ad_offer_path'])) ? trim($abc['ad_offer_path']) : '';
-$icon_path = (defined('ROOT_DIR') && file_exists(ROOT_DIR . 'assets/images/egg.svg'))
-	? ROOT_DIR . 'assets/images/egg.svg'
+$icon_path = (defined('ROOT_DIR') && file_exists(ROOT_DIR . 'assets/images/hook.svg'))
+	? ROOT_DIR . 'assets/images/hook.svg'
 	: '';
 $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 ?>
@@ -35,7 +35,7 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 		<a class="demo-app-brand" href="<?= htmlspecialchars($demo_back_url, ENT_QUOTES, 'UTF-8') ?>"
 			aria-label="<?= htmlspecialchars($logo_alt, ENT_QUOTES, 'UTF-8') ?>"
 			title="<?= htmlspecialchars($logo_alt, ENT_QUOTES, 'UTF-8') ?>">
-			<span class="demo-app-logo-icon" style="--demo-egg-mask: url('/assets/images/egg.svg?v=<?= (int) $logo_v ?>');" aria-hidden="true"></span>
+			<span class="demo-app-logo-icon" style="--demo-hook-mask: url('/assets/images/hook.svg?v=<?= (int) $logo_v ?>');" aria-hidden="true"></span>
 		</a>
 		<a class="demo-app-icon-btn demo-app-portal" href="<?= htmlspecialchars($demo_portal_url, ENT_QUOTES, 'UTF-8') ?>"
 			title="<?= htmlspecialchars($portal_aria, ENT_QUOTES, 'UTF-8') ?>"
