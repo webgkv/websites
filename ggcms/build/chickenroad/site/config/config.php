@@ -250,7 +250,10 @@ ini_set('magic_quotes_gpc', 0);
 header('Content-type: text/html; charset='.$config['charset']);
 header('X-UA-Compatible: IE=edge');
 
-session_start();
+// Guest HTML pages skip auto-session so PHP does not emit no-store headers (nginx proxy cache).
+if (!defined('SITE_SKIP_AUTO_SESSION') || !SITE_SKIP_AUTO_SESSION) {
+	session_start();
+}
 
 // error handler
 function error_handler($errno,$errmsg,$file,$line) {

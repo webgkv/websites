@@ -776,8 +776,9 @@ if (!function_exists('seo_monitor_entity_map')) {
 			'status' => 'missing',
 			'source' => 'empty',
 		);
+		$page_module = isset($main['module']) ? trim((string)$main['module']) : '';
 		if (!$main) {
-			$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id);
+			$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id, 'module' => $page_module);
 			return $out;
 		}
 		$main_url = isset($main['url']) ? trim((string)$main['url'], '/') : '';
@@ -797,7 +798,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			$out['content'] = $body;
 			$out['status'] = 'published';
 			$out['source'] = 'main';
-			$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id);
+			$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id, 'module' => $page_module);
 			return $out;
 		}
 		if ($i18n && seo_monitor_i18n_status_ok($i18n['status'] ?? '')) {
@@ -813,7 +814,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			$out['url'] = $main_url;
 			$out['source'] = 'missing';
 		}
-		$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id);
+		$out['seo_monitor_ctx'] = array('entity' => $entity, 'entity_id' => (int)$entity_id, 'module' => $page_module);
 		return $out;
 	}
 
@@ -885,6 +886,28 @@ if (!function_exists('seo_monitor_entity_map')) {
 	}
 
 	/**
+	 * How many H1 tags does the page template/layout add outside of DB content?
+	 *
+	 * Layouts that always render their own H1 (hero, page title) contribute 1.
+	 * Layouts with conditional H1 (show H1 only if content lacks one) return
+	 * a value that depends on $content_h1_count so the total is always 1.
+	 *
+	 * Returns the number of H1 tags the template adds for the given module.
+	 */
+	function seo_monitor_template_h1_count($module, $content_h1_count = 0) {
+		$module = trim((string) $module);
+		$always_h1 = array('index');
+		if (in_array($module, $always_h1, true)) {
+			return 1;
+		}
+		$conditional_h1 = array('page', 'demo', 'download', 'news');
+		if (in_array($module, $conditional_h1, true)) {
+			return ($content_h1_count >= 1) ? 0 : 1;
+		}
+		return 0;
+	}
+
+	/**
 	 * HTML diagnostics for UI / report (null counts when there is no body).
 	 *
 	 * @return array{has_html:bool,h1_count:int|null,img_missing_alt:int|null}
@@ -895,9 +918,13 @@ if (!function_exists('seo_monitor_entity_map')) {
 			return array('has_html' => false, 'h1_count' => null, 'img_missing_alt' => null);
 		}
 		$dom = seo_monitor_dom_analyze_html($html);
+		$content_h1 = (int)$dom['h1_count'];
+		$ctx = isset($loc['seo_monitor_ctx']) && is_array($loc['seo_monitor_ctx']) ? $loc['seo_monitor_ctx'] : array();
+		$module = isset($ctx['module']) ? (string)$ctx['module'] : '';
+		$template_h1 = seo_monitor_template_h1_count($module, $content_h1);
 		return array(
 			'has_html' => true,
-			'h1_count' => (int)$dom['h1_count'],
+			'h1_count' => $content_h1 + $template_h1,
 			'img_missing_alt' => (int)$dom['img_missing_alt'],
 		);
 	}
@@ -942,9 +969,12 @@ if (!function_exists('seo_monitor_entity_map')) {
 		}
 		if ($html !== '') {
 			$dom = seo_monitor_dom_analyze_html($html);
-			$h1c = (int)$dom['h1_count'];
-			if ($h1c !== 1) {
-				$issues[] = array('code' => 'h1_not_single', 'detail' => $h1c);
+			$content_h1 = (int)$dom['h1_count'];
+			$module = isset($ctx['module']) ? (string)$ctx['module'] : '';
+			$template_h1 = seo_monitor_template_h1_count($module, $content_h1);
+			$page_h1 = $content_h1 + $template_h1;
+			if ($page_h1 !== 1) {
+				$issues[] = array('code' => 'h1_not_single', 'detail' => $page_h1);
 			}
 			if ((int)$dom['img_missing_alt'] > 0) {
 				$issues[] = array('code' => 'img_missing_alt', 'detail' => (int)$dom['img_missing_alt']);

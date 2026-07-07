@@ -543,7 +543,7 @@ elseif ($seo_u === 'cluster') {
 
 		$content .= '<h6 class="mt-4">Locales</h6>';
 		$content .= '<div class="table-responsive"><table class="table table-sm table-bordered align-middle">';
-		$content .= '<thead><tr><th>Lang</th><th>ID</th><th>Status</th><th>Title len</th><th>H1</th><th>Img no alt</th><th>Issues</th><th>Source</th></tr></thead><tbody>';
+		$content .= '<thead><tr><th>Lang</th><th>ID</th><th>Status</th><th>Title len</th><th title="H1 count on full page (content + template)">H1 page</th><th>Img no alt</th><th>Issues</th><th>Source</th></tr></thead><tbody>';
 		foreach ($cluster_langs as $lm) {
 			$lid = (int)$lm['id'];
 			$i18n = isset($i18n_by[$lid]) ? $i18n_by[$lid] : null;

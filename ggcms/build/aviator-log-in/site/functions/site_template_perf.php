@@ -132,6 +132,44 @@ if (!function_exists('site_template_counters_include_onesignal')) {
 	}
 }
 
+if (!function_exists('site_template_deferred_counters_script')) {
+	/**
+	 * Inject DB counters (GTM, analytics, OneSignal, …) after window load so a slow
+	 * third-party (e.g. Microsoft Clarity via GTM) cannot block the tab spinner or LCP.
+	 */
+	function site_template_deferred_counters_script($counters) {
+		if (empty($counters) || !is_array($counters)) {
+			return '';
+		}
+		$html = '';
+		foreach ($counters as $counter) {
+			$html .= site_template_async_counter((string) $counter) . "\n";
+		}
+		if (trim($html) === '') {
+			return '';
+		}
+		$json = json_encode($html, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+		if ($json === false) {
+			return $html;
+		}
+		return '        <script>
+        window.addEventListener("load", function () {
+          var html = ' . $json . ';
+          var wrap = document.createElement("div");
+          wrap.innerHTML = html;
+          Array.prototype.slice.call(wrap.querySelectorAll("script")).forEach(function (old) {
+            var s = document.createElement("script");
+            Array.prototype.slice.call(old.attributes).forEach(function (a) {
+              s.setAttribute(a.name, a.value);
+            });
+            s.textContent = old.textContent;
+            document.head.appendChild(s);
+          });
+        });
+        </script>' . "\n";
+	}
+}
+
 if (!function_exists('site_template_service_worker_bootstrap_script')) {
 	/**
 	 * Register combined PWA SW only when OneSignal is absent (OneSignal.init registers /sw.js itself).

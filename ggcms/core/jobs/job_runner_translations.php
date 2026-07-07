@@ -1207,7 +1207,7 @@ function run_translations_validate_locale($payload = array(), $job = array()) {
 		}
 		return array('ok' => true, 'message' => "Locale {$entity}#{$entity_id} {$dst_lang}: missing row, requeued translate");
 	}
-	$validation = translation_cluster_validate_locale($source, $dst_row, $lang_row ? (string)$lang_row['url'] : '', $entity);
+	$validation = translation_cluster_validate_locale($source, $dst_row, $lang_row ? (string)$lang_row['url'] : '', $entity, $entity_id);
 	$signals = isset($validation['content_signals']) && is_array($validation['content_signals']) ? $validation['content_signals'] : array();
 	$ai_tail_reason = '';
 	if (
@@ -1337,7 +1337,7 @@ function run_translations_repair_locale($payload = array(), $job = array()) {
 		'repair_pass' => 1,
 	);
 	if (is_array($dst_row_v) && $lang_url !== '') {
-		$v = translation_cluster_validate_locale($src_snap, $dst_row_v, $lang_url, $entity);
+		$v = translation_cluster_validate_locale($src_snap, $dst_row_v, $lang_url, $entity, $entity_id);
 		if (empty($v['blockers'])) {
 			$meta_only = array();
 			$warn_list = (isset($v['warnings']) && is_array($v['warnings'])) ? $v['warnings'] : array();

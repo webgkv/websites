@@ -1160,7 +1160,7 @@ function translation_cluster_translate_fields($entity) {
 	return array('name', 'title', 'description', 'content');
 }
 
-function translation_cluster_validate_locale(array $src, array $dst, $dst_lang_url, $entity = '') {
+function translation_cluster_validate_locale(array $src, array $dst, $dst_lang_url, $entity = '', $entity_id = 0) {
 	$entity = trim((string)$entity);
 	$dst_lang_url = trim((string)$dst_lang_url, '/');
 	$blockers = array();
@@ -1215,7 +1215,14 @@ function translation_cluster_validate_locale(array $src, array $dst, $dst_lang_u
 		'name' => isset($dst['name']) ? $dst['name'] : '',
 		'description' => isset($dst['description']) ? $dst['description'] : '',
 		'content' => '',
+		'seo_monitor_ctx' => array('entity' => $entity, 'module' => ''),
 	);
+	if ($entity === 'pages' && (int)$entity_id > 0 && function_exists('mysql_select')) {
+		$_tc_main = mysql_select("SELECT module FROM pages WHERE id=" . (int)$entity_id . " LIMIT 1", 'row');
+		if ($_tc_main && isset($_tc_main['module'])) {
+			$seo_loc['seo_monitor_ctx']['module'] = (string)$_tc_main['module'];
+		}
+	}
 	if ($seo_full) {
 		$seo_loc['content'] = isset($dst['content']) ? (string)$dst['content'] : '';
 		$seo_loc['source'] = 'content_i18n';
@@ -1375,7 +1382,7 @@ function translation_cluster_refresh_state($entity, $entity_id, $src_lang_id, $d
 			continue;
 		}
 		$present++;
-		$validation = translation_cluster_validate_locale($source, $dst_row, $lang_row ? (string)$lang_row['url'] : '', $entity);
+		$validation = translation_cluster_validate_locale($source, $dst_row, $lang_row ? (string)$lang_row['url'] : '', $entity, $entity_id);
 		$locale_ok = empty($validation['blockers']);
 		if ($locale_ok) {
 			$ready++;

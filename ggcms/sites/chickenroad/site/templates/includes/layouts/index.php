@@ -26,7 +26,7 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="hero_content">
-                            <h2 class="hero_content__title"><?= $hero_title !== '' ? htmlspecialchars($hero_title) : '' ?></h2>
+                            <h1 class="hero_content__title"><?= $hero_title !== '' ? htmlspecialchars($hero_title) : '' ?></h1>
                             <?php if ($hero_desc !== ''): ?><p><?= htmlspecialchars($hero_desc) ?></p><?php endif; ?>
                             <div class="main_btn mt-5">
                                 <a href="<?= !empty($abc['ad_offer_path']) ? htmlspecialchars($abc['ad_offer_path']) : '#demo' ?>"><?=htmlspecialchars(i18n('common|hero_cta'))?></a>
@@ -53,7 +53,7 @@ if ($page_text !== '') {
 	}
 }
 if ($page_text !== ''): ?>
-        <section class="container py-5 page-content-from-db"><div class="row"><div class="col-12"><?= function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($page_text, false) : $page_text ?></div></div></section>
+        <section class="container py-5 page-content-from-db"><div class="row"><div class="col-12"><?= function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($page_text, true) : $page_text ?></div></div></section>
 <?php else: ?>
         <section class="container py-5"><div class="row"><div class="col-12"><p><?=htmlspecialchars(i18n('common|no_content'))?></p></div></div></section>
 <?php endif; ?>

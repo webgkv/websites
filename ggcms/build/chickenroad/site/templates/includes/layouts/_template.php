@@ -485,7 +485,11 @@ if ($_preload_hero !== '') {
         }
         echo site_template_service_worker_bootstrap_script($_site_median_native_shell, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
         ?>
-        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo site_template_async_counter($_counter) . "\n        "; } } ?>
+        <?php
+        if (!empty($abc['counters_head'])) {
+            echo site_template_deferred_counters_script($abc['counters_head']);
+        }
+        ?>
         <?php
         if (!function_exists('site_onesignal_web_ios_prompt_script')) {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';

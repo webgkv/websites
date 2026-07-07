@@ -495,7 +495,14 @@ if ($_preload_hero !== '') {
         }
         echo site_template_service_worker_bootstrap_script(false, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
         ?>
-        <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo site_template_async_counter($_counter) . "\n        "; } } ?>
+        <?php
+        if (!empty($abc['counters_head'])) {
+            if (!function_exists('site_template_deferred_counters_script')) {
+                require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
+            }
+            echo site_template_deferred_counters_script($abc['counters_head']);
+        }
+        ?>
 <?php
       // Canonical + hreflang (Google: canonical = this locale's URL; alternates + reciprocal set; x-default = primary/source locale same page)
       $ts_settings = null;
