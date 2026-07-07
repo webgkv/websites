@@ -28,10 +28,16 @@ Deploy flags (pass after the brand; forwarded to the per-site upload step):
                         (rsync --delete / lftp mirror -e).
   --no-delete-remote    Keep remote-only files even if USE_MIRROR_DELETE=1
                         in deploy.ftp.local.
+  --extras_plus         Also upload server-editable files that are skipped by
+                        default: robots.txt, .htaccess, assets/css/*.css.
+                        Use when intentionally pushing base styles/config from repo.
 
 Default upload mode (no flags):
   Incremental — only new or changed files (--only-newer). Remote-only files
   are kept unless --delete-remote or USE_MIRROR_DELETE is enabled.
+
+Skipped on normal deploy (live on server; edit via admin SEO → Site CSS / robots):
+  robots.txt, .htaccess, assets/css/*.css
 
 Per-site config (ggcms/sites/<brand>/deploy.ftp.local):
   HOST                  Server hostname (required)
@@ -50,12 +56,73 @@ Build step (always runs before upload):
 Examples:
   ./deploy.sh --chickenroad
   ./deploy.sh --aviator-log-in --reset
+  ./deploy.sh --chickenroad --extras_plus
   ./deploy.sh --powerballjackpot --reset --transfer-all
   ./deploy.sh --all --reset --transfer-all --delete-remote
   ./deploy.sh --help
   ./ggcms/scripts/deploy_site.sh chickenroad --reset
 
 EOF
+}
+
+# Server-editable files: excluded from normal deploy; use --extras_plus to upload.
+deploy_protected_paths_note() {
+	echo "robots.txt, .htaccess, assets/css/*.css"
+}
+
+deploy_rsync_upload_protected() {
+	local SSH_OPTS="$1" LOCAL_PATH="$2" REMOTE="$3" RSYNC_OPTS="$4"
+	local has_any=0
+	[ -f "$LOCAL_PATH/robots.txt" ] && has_any=1
+	[ -f "$LOCAL_PATH/.htaccess" ] && has_any=1
+	[ -d "$LOCAL_PATH/assets/css" ] && has_any=1
+	if [ "$has_any" -eq 0 ]; then
+		echo "extras_plus: no protected files found locally — skip"
+		return 0
+	fi
+	echo "extras_plus: uploading protected files..."
+	rsync -a -z $RSYNC_OPTS -e "ssh $SSH_OPTS" \
+		--include 'robots.txt' \
+		--include '.htaccess' \
+		--include 'assets/' \
+		--include 'assets/css/' \
+		--include 'assets/css/***' \
+		--exclude '*' \
+		"$LOCAL_PATH/" "$REMOTE"
+}
+
+deploy_lftp_upload_protected() {
+	local SCHEME="$1" USER="$2" PASS="$3" LOCAL_PATH="$4" REMOTE_PATH="$5"
+	local ONLY_NEWER="$6" TRANSFER_ALL="$7"
+	local has_any=0
+	[ -f "$LOCAL_PATH/robots.txt" ] && has_any=1
+	[ -f "$LOCAL_PATH/.htaccess" ] && has_any=1
+	[ -d "$LOCAL_PATH/assets/css" ] && has_any=1
+	if [ "$has_any" -eq 0 ]; then
+		echo "extras_plus: no protected files found locally — skip"
+		return 0
+	fi
+	echo "extras_plus: uploading protected files..."
+	local LFTP_CMDS="set ssl:verify-certificate no
+set net:timeout 30
+set net:max-retries 3
+lcd $LOCAL_PATH
+cd $REMOTE_PATH"
+	if [ -f "$LOCAL_PATH/robots.txt" ]; then
+		LFTP_CMDS="$LFTP_CMDS
+put -O . robots.txt"
+	fi
+	if [ -f "$LOCAL_PATH/.htaccess" ]; then
+		LFTP_CMDS="$LFTP_CMDS
+put -O . .htaccess"
+	fi
+	if [ -d "$LOCAL_PATH/assets/css" ]; then
+		LFTP_CMDS="$LFTP_CMDS
+mirror -R assets/css assets/css $ONLY_NEWER $TRANSFER_ALL --verbose"
+	fi
+	LFTP_CMDS="$LFTP_CMDS
+quit"
+	printf '%s\n' "$LFTP_CMDS" | lftp -u "$USER,$PASS" "$SCHEME"
 }
 
 run_ggcms_deploy() {
@@ -77,7 +144,7 @@ run_ggcms_deploy() {
 	"$GGCMS_ROOT/scripts/build_site.sh" "$BRAND"
 
 	# 2) Parse flags.
-	local FULL_RESET=0 TRANSFER_ALL_FLAG=0 DELETE_REMOTE_OVERRIDE=""
+	local FULL_RESET=0 TRANSFER_ALL_FLAG=0 DELETE_REMOTE_OVERRIDE="" EXTRAS_PLUS=0
 	local arg
 	for arg in "$@"; do
 		case "$arg" in
@@ -85,6 +152,7 @@ run_ggcms_deploy() {
 			--transfer-all) TRANSFER_ALL_FLAG=1 ;;
 			--delete-remote) DELETE_REMOTE_OVERRIDE=1 ;;
 			--no-delete-remote) DELETE_REMOTE_OVERRIDE=0 ;;
+			--extras_plus) EXTRAS_PLUS=1 ;;
 		esac
 	done
 
@@ -156,6 +224,11 @@ run_ggcms_deploy() {
 
 	echo "Mode:       $RESET_MODE"
 	echo "Delete:     $([ "$DELETE_REMOTE" = "1" ] && echo yes || echo no)"
+	if [ "$EXTRAS_PLUS" = "1" ]; then
+		echo "Protected:  upload ($(deploy_protected_paths_note))"
+	else
+		echo "Protected:  skip ($(deploy_protected_paths_note))"
+	fi
 	echo "----------------------------------------------"
 
 	if [ -n "${SSH_KEY:-}" ]; then
@@ -163,19 +236,24 @@ run_ggcms_deploy() {
 		[ -n "${PORT:-}" ] && [ "$PORT" != "22" ] && SSH_OPTS="$SSH_OPTS -p $PORT"
 		local RSYNC_EXCLUDE=(--exclude '.DS_Store' --exclude '.git' --exclude '*.md' --exclude '*.log' \
 			--exclude 'node_modules' --exclude 'venv' --exclude '.venv' --exclude 'env' --exclude '.env' \
-			--exclude 'files/media/***')
+			--exclude 'files/media/***' \
+			--exclude 'robots.txt' --exclude '.htaccess' --exclude 'assets/css/***')
 		local REMOTE="$USER@$HOST:$REMOTE_PATH/"
 		local RSYNC_OPTS="-v"
 		[ "$FULL_RESET" = "1" ] && [ "$TRANSFER_ALL_FLAG" = "1" ] && RSYNC_OPTS="$RSYNC_OPTS --ignore-times"
 		[ "$DELETE_REMOTE" = "1" ] && RSYNC_OPTS="$RSYNC_OPTS --delete"
 		command -v rsync &>/dev/null || { echo "Error: rsync not found"; return 1; }
 		rsync -a -z $RSYNC_OPTS -e "ssh $SSH_OPTS" "${RSYNC_EXCLUDE[@]}" "$LOCAL_PATH/" "$REMOTE"
+		if [ "$EXTRAS_PLUS" = "1" ]; then
+			deploy_rsync_upload_protected "$SSH_OPTS" "$LOCAL_PATH" "$REMOTE" "$RSYNC_OPTS"
+		fi
 	else
 		command -v lftp &>/dev/null || { echo "Error: lftp not found"; return 1; }
 		local MIRROR_OPTS="-R $ONLY_NEWER $TRANSFER_ALL --verbose"
 		[ "$DELETE_REMOTE" = "1" ] && MIRROR_OPTS="-R -e $ONLY_NEWER $TRANSFER_ALL --verbose"
 		MIRROR_OPTS="$MIRROR_OPTS --exclude \\.DS_Store --exclude \\.git --exclude \\.md\$ --exclude \\.log\$"
 		MIRROR_OPTS="$MIRROR_OPTS --exclude '^node_modules' --exclude '^venv' --exclude '^files/media/'"
+		MIRROR_OPTS="$MIRROR_OPTS --exclude '^robots\\.txt\$' --exclude '^\\.htaccess\$' --exclude '^assets/css/'"
 		lftp -u "$USER,$PASS" "$SCHEME" <<EOF
 set ssl:verify-certificate no
 set net:timeout 30
@@ -183,6 +261,9 @@ set net:max-retries 3
 mirror $MIRROR_OPTS "$LOCAL_PATH" "$REMOTE_PATH"
 quit
 EOF
+		if [ "$EXTRAS_PLUS" = "1" ]; then
+			deploy_lftp_upload_protected "$SCHEME" "$USER" "$PASS" "$LOCAL_PATH" "$REMOTE_PATH" "$ONLY_NEWER" "$TRANSFER_ALL"
+		fi
 	fi
 
 	echo ""

@@ -352,17 +352,8 @@ def build_where_to_play(lang: str) -> str:
 
 
 def ensure_h1_lead(html: str, title: str) -> str:
-    title = title.strip()
-    if not title:
-        return html
-    if re.search(r'page-content-lead[\s\S]*?<h1\b', html, re.I):
-        return html
-    lead = (
-        '<div class="about_content page-content-lead">\n'
-        f'<h1>{title}</h1>\n'
-        '</div>\n'
-    )
-    return lead + html.lstrip()
+    """Homepage title is rendered in hero H2; do not inject hidden page-content-lead H1."""
+    return html
 
 
 def localize_hrefs(html: str, lang: str) -> str:

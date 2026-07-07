@@ -99,6 +99,7 @@ $a18n = array(
 'seo_robots' => 'robots.txt',
 'seo_sitemap' => 'sitemap.xml',
 'seo_htaccess' => '.htaccess',
+'seo_custom_css' => 'Site CSS',
 'seo_links' => 'links',
 'seo_pages' => 'page',
 'seo_links_import' => 'import',

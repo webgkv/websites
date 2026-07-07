@@ -169,6 +169,10 @@ $modules_admin = array(
 				'name'=>'robots.txt'
 			),
 			array(
+				'module'=>'seo_custom_css',
+				'name'=>'Site CSS'
+			),
+			array(
 				'module'=>'seo_htaccess',
 				'name'=>'.htaccess'
 			),

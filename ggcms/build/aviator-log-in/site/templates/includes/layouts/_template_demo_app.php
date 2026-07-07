@@ -44,6 +44,7 @@ if (function_exists('aviator_seo_public_origin')) {
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css?v=<?= htmlspecialchars($getV($r . 'assets/css/style.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/responsive.css?v=<?= htmlspecialchars($getV($r . 'assets/css/responsive.css'), ENT_QUOTES, 'UTF-8') ?>">
+	<link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= htmlspecialchars($getV($r . 'assets/css/custom-overrides.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<style>
 		html, body { height: 100%; margin: 0; overflow: hidden; background: #0f1419; }
 		/* Override main site body texture for this shell */

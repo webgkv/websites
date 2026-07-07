@@ -10,6 +10,7 @@
 #
 # Extra deploy flags are passed through to the per-site deploy, e.g.:
 #   ./deploy.sh --aviator-log-in --reset
+#   ./deploy.sh --chickenroad --extras_plus
 #   ./deploy.sh --all --reset --transfer-all
 
 set -u

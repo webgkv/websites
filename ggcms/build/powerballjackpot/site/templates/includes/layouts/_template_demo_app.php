@@ -48,6 +48,7 @@ if (function_exists('aviator_seo_public_origin')) {
 	<link rel="stylesheet" href="/assets/css/home-lottery.css?v=<?= htmlspecialchars($getV($r . 'assets/css/home-lottery.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/lottery-simulator.css?v=<?= htmlspecialchars($getV($r . 'assets/css/lottery-simulator.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/responsive.css?v=<?= htmlspecialchars($getV($r . 'assets/css/responsive.css'), ENT_QUOTES, 'UTF-8') ?>">
+	<link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= htmlspecialchars($getV($r . 'assets/css/custom-overrides.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<style>
 		html, body { height: 100%; margin: 0; overflow: hidden; background: #2c2a33; }
 		/* Override main site body texture for this shell */

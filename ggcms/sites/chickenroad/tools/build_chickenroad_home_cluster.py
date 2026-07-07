@@ -106,10 +106,7 @@ def build_content(s: dict, page_title: str) -> str:
     )
     hooks = "".join(f"<li><i></i>{e(h)}</li>" for h in s["hooks"])
 
-    return f"""<div class="about_content page-content-lead">
-<h1>{e(page_title)}</h1>
-</div>
-<section id="chickenroad-app" class="mt-5 pt-5">
+    return f"""<section id="chickenroad-app" class="mt-5 pt-5">
 <div class="container">
 <div class="col-12">
 <div class="main_heading">

@@ -338,3 +338,21 @@ function site_seo_admin_indexing_guard_timing() {
 		'minutes_limit' => 30,
 	);
 }
+
+/**
+ * Remove duplicate homepage title block (hidden H1 in .page-content-lead).
+ * Hero layout shows the page title as visible H2.
+ */
+function site_strip_page_content_lead($html) {
+	$html = (string) $html;
+	if ($html === '' || stripos($html, 'page-content-lead') === false) {
+		return $html;
+	}
+	$stripped = preg_replace(
+		'/<div\b[^>]*\bpage-content-lead\b[^>]*>[\s\S]*?<\/div>\s*/iu',
+		'',
+		$html,
+		1
+	);
+	return is_string($stripped) ? $stripped : $html;
+}

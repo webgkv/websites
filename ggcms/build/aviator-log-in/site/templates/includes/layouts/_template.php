@@ -456,6 +456,7 @@ if ($_preload_hero !== '') {
         <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=<?= htmlspecialchars($getV($_favicon), ENT_QUOTES, 'UTF-8') ?>">
         <link rel="stylesheet" href="/assets/css/style.css?v=<?= $getV($r.'assets/css/style.css') ?>">
         <link rel="stylesheet" href="/assets/css/responsive.css?v=<?= $getV($r.'assets/css/responsive.css') ?>">
+        <link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= $getV($r.'assets/css/custom-overrides.css') ?>">
         <script>
         (function(){
           window._burgerDebug = window._burgerDebug || { inited: false, toggleClicks: 0, toggleTouches: 0 };

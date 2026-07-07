@@ -4,6 +4,7 @@
 # Usage:
 #   ./ggcms/scripts/deploy_site.sh chickenroad
 #   ./ggcms/scripts/deploy_site.sh aviator-log-in --reset
+#   ./ggcms/scripts/deploy_site.sh chickenroad --extras_plus
 
 set -euo pipefail
 

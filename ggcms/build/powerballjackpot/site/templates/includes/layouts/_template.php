@@ -441,6 +441,7 @@ if ($_preload_hero !== '') {
         <link rel="stylesheet" href="/assets/css/style.css?v=<?= $getV($r.'assets/css/style.css') ?>">
         <link rel="stylesheet" href="/assets/css/lottery-buttons.css?v=<?= $getV($r.'assets/css/lottery-buttons.css') ?>">
         <link rel="stylesheet" href="/assets/css/responsive.css?v=<?= $getV($r.'assets/css/responsive.css') ?>">
+        <link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= $getV($r.'assets/css/custom-overrides.css') ?>">
 <?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
 <?= site_template_google_font('Lato:wght@400;700') ?>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">

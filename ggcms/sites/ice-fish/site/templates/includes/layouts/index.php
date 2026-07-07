@@ -26,7 +26,6 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="hero_content">
-                            <p class="hero-eyebrow"><span>#</span> <?=htmlspecialchars(i18n('common|hero_subtitle'))?> <span>#</span></p>
                             <h2 class="hero_content__title"><?= $hero_title !== '' ? htmlspecialchars($hero_title) : '' ?></h2>
                             <?php if ($hero_desc !== ''): ?><p><?= htmlspecialchars($hero_desc) ?></p><?php endif; ?>
                             <div class="main_btn mt-5">
@@ -48,6 +47,9 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
 
 <?php
 if ($page_text !== '') {
+	if (function_exists('site_strip_page_content_lead')) {
+		$page_text = site_strip_page_content_lead($page_text);
+	}
 	if (!empty($abc['ad_offer_path']) && function_exists('aviator_ad_replace_content_links')) {
 		$page_text = aviator_ad_replace_content_links($page_text, $abc['ad_offer_path']);
 	}
