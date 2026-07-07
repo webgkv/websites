@@ -5,11 +5,11 @@
 global $abc;
 $page_html = isset($abc['content']) ? (string) $abc['content'] : '';
 // Stable APK href + placeholder.svg → PNGs: mirror pages.php when this template runs with raw DB content.
-if ($page_html !== '' && function_exists('aviator_apk_normalize_apk_link_in_content')) {
-	$page_html = aviator_apk_normalize_apk_link_in_content($page_html);
+if ($page_html !== '' && function_exists('apk_install_normalize_apk_link_in_content')) {
+	$page_html = apk_install_normalize_apk_link_in_content($page_html);
 }
-if ($page_html !== '' && function_exists('aviator_apk_replace_placeholder_step_images')) {
-	$page_html = aviator_apk_replace_placeholder_step_images($page_html);
+if ($page_html !== '' && function_exists('apk_install_replace_placeholder_step_images')) {
+	$page_html = apk_install_replace_placeholder_step_images($page_html);
 }
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>

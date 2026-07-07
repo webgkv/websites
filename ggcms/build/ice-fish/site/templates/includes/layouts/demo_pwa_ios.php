@@ -4,8 +4,8 @@
  */
 global $abc;
 $page_html = isset($abc['content']) ? (string) $abc['content'] : '';
-if ($page_html !== '' && function_exists('aviator_pwa_bust_install_ios_image_cache')) {
-	$page_html = aviator_pwa_bust_install_ios_image_cache($page_html);
+if ($page_html !== '' && function_exists('pwa_install_bust_ios_image_cache')) {
+	$page_html = pwa_install_bust_ios_image_cache($page_html);
 }
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>

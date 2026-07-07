@@ -44,22 +44,22 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 		$abc['content'] = aviator_ad_replace_content_links($abc['content'], $abc['ad_offer_path']);
 	}
 	if ($demo_apk_route) {
-		if (function_exists('aviator_apk_normalize_apk_link_in_content')) {
-			$abc['content'] = aviator_apk_normalize_apk_link_in_content($abc['content']);
+		if (function_exists('apk_install_normalize_apk_link_in_content')) {
+			$abc['content'] = apk_install_normalize_apk_link_in_content($abc['content']);
 		}
-		if (function_exists('aviator_apk_replace_placeholder_step_images')) {
-			$abc['content'] = aviator_apk_replace_placeholder_step_images($abc['content']);
+		if (function_exists('apk_install_replace_placeholder_step_images')) {
+			$abc['content'] = apk_install_replace_placeholder_step_images($abc['content']);
 		}
-		if (function_exists('aviator_apk_bust_install_android_image_cache')) {
-			$abc['content'] = aviator_apk_bust_install_android_image_cache($abc['content']);
+		if (function_exists('apk_install_bust_android_image_cache')) {
+			$abc['content'] = apk_install_bust_android_image_cache($abc['content']);
 		}
 	}
 	if ($demo_pwa_ios_route) {
-		if (function_exists('aviator_pwa_normalize_demo_links_in_content')) {
-			$abc['content'] = aviator_pwa_normalize_demo_links_in_content($abc['content'], $abc, $lang);
+		if (function_exists('pwa_install_normalize_demo_links_in_content')) {
+			$abc['content'] = pwa_install_normalize_demo_links_in_content($abc['content'], $abc, $lang);
 		}
-		if (function_exists('aviator_pwa_bust_install_ios_image_cache')) {
-			$abc['content'] = aviator_pwa_bust_install_ios_image_cache($abc['content']);
+		if (function_exists('pwa_install_bust_ios_image_cache')) {
+			$abc['content'] = pwa_install_bust_ios_image_cache($abc['content']);
 		}
 	}
 	if (function_exists('site_brand_rebrand_text') && !empty($abc['content'])) {

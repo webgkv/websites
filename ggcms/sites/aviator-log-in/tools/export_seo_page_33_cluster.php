@@ -1,12 +1,12 @@
 #!/usr/bin/env php
 <?php
 /**
- * Build seo_pages_33 full cluster JSON from files/i18n/pwa-ios-install.php + aviator_pwa_seo_cluster_content_html().
+ * Build seo_pages_33 full cluster JSON from files/i18n/pwa-ios-install.php + pwa_install_seo_cluster_content_html().
  * Output to stdout. See LOCALIZATION_GUIDE.md (entity pages, same HTML scaffold for every locale).
  */
 $site = dirname(__DIR__) . '/site';
 $bundles = require $site . '/files/i18n/pwa-ios-install.php';
-require_once $site . '/functions/aviator_pwa_install.php';
+require_once $site . '/functions/pwa_install.php';
 
 $en = isset($bundles['en']) && is_array($bundles['en']) ? $bundles['en'] : array();
 
@@ -44,7 +44,7 @@ foreach ($map as $row) {
 	$lurl = (string) $row[1];
 	$key = (string) $row[2];
 	$b = $merge($key);
-	$content = function_exists('aviator_pwa_seo_cluster_content_html') ? aviator_pwa_seo_cluster_content_html($b) : '';
+	$content = function_exists('pwa_install_seo_cluster_content_html') ? pwa_install_seo_cluster_content_html($b) : '';
 	$is_en = ($key === 'en');
 	$locales[] = array(
 		'lang_id' => $lid,

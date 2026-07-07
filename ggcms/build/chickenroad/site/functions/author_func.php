@@ -25,6 +25,56 @@ function aviator_is_legal_page_slug($slug) {
 }
 
 /**
+ * System product pages (module pages): no author byline — not editorial hubs.
+ * Guides, blog, and casino reviews keep the author block.
+ *
+ * @return string[]
+ */
+function aviator_system_page_slugs() {
+	return array(
+		'download',
+		'predictor',
+		'strategies', // pages#6 migration: predictor → strategies (ice-fish, chickenroad, powerballjackpot)
+		'demo',
+	);
+}
+
+function aviator_is_system_page_slug($slug) {
+	$slug = trim((string) $slug, "/ \t\n\r\0\x0B");
+	return $slug !== '' && in_array($slug, aviator_system_page_slugs(), true);
+}
+
+/**
+ * Collect URL slugs from the routed page row (all locale columns).
+ *
+ * @param array<string,mixed> $abc
+ * @return string[]
+ */
+function aviator_page_slugs_from_abc($abc) {
+	$slugs = array();
+	if (!is_array($abc) || empty($abc['page']) || !is_array($abc['page'])) {
+		return $slugs;
+	}
+	$page = $abc['page'];
+	$langid = isset($abc['langid']) ? (string) $abc['langid'] : '';
+	if ($langid !== '' && !empty($page['url' . $langid])) {
+		$slugs[] = trim((string) $page['url' . $langid], '/');
+	}
+	if (!empty($abc['page_i18n']['url'])) {
+		$slugs[] = trim((string) $abc['page_i18n']['url'], '/');
+	}
+	if (!empty($page['url'])) {
+		$slugs[] = trim((string) $page['url'], '/');
+	}
+	foreach ($page as $pk => $pv) {
+		if (preg_match('/^url\d*$/', (string) $pk) && trim((string) $pv) !== '') {
+			$slugs[] = trim((string) $pv, '/');
+		}
+	}
+	return array_values(array_unique(array_filter($slugs)));
+}
+
+/**
  * Overlay name / job_title / bio from content_i18n for the current front language.
  *
  * @param array<string,mixed> $author site_authors row
@@ -38,7 +88,13 @@ function aviator_should_show_author_block($abc) {
 	if (!is_array($abc)) {
 		return true;
 	}
-	if (isset($abc['page']['url']) && aviator_is_legal_page_slug($abc['page']['url'])) {
+	foreach (aviator_page_slugs_from_abc($abc) as $slug) {
+		if (aviator_is_legal_page_slug($slug) || aviator_is_system_page_slug($slug)) {
+			return false;
+		}
+	}
+	$layout = isset($abc['layout']) ? (string) $abc['layout'] : '';
+	if ($layout !== '' && ($layout === 'demo' || strpos($layout, 'demo_') === 0)) {
 		return false;
 	}
 	return true;

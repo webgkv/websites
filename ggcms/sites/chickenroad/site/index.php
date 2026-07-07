@@ -105,8 +105,8 @@ if (function_exists('site_telemetry_request_begin')) {
 }
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "6. after mysql_func\n"; flush(); }
 require_once(ROOT_DIR.'functions/string_func.php');	// strings
-require_once(ROOT_DIR.'functions/aviator_pwa_install.php');	// PWA manifest start_url + /download/install-pwa/ guide
-require_once(ROOT_DIR.'functions/aviator_apk_install.php');	// /download/install-apk/ Android guide
+require_once(ROOT_DIR.'functions/pwa_install.php');	// PWA manifest start_url + /download/install-pwa/ guide
+require_once(ROOT_DIR.'functions/apk_install.php');	// /download/install-apk/ Android guide
 require_once(ROOT_DIR.'functions/site_language_agnostic_entry.php');	// /{path} without /{lang}/ → /{lang}/{path}/ (cookie, Accept-Language, geo IP)
 require_once(ROOT_DIR.'functions/page_routing.php');	// flat nested pages (guides children) + SEO links
 require_once(ROOT_DIR.'functions/chickenroad_legacy_slugs.php');	// Aviator slug → Chicken Road redirects
@@ -1236,8 +1236,8 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 			&& isset($abc['page']['module']) && (string) $abc['page']['module'] === 'pages'
 			&& isset($u[1]) && strtolower(trim((string) $u[1], '/')) === $__pwa_slug
 			&& (!isset($u[2]) || trim((string) $u[2], '/') === '')) {
-			if (function_exists('aviator_pwa_install_guide_path')) {
-				$to = aviator_pwa_install_guide_path($lang);
+			if (function_exists('pwa_install_guide_path')) {
+				$to = pwa_install_guide_path($lang);
 			} else {
 				$to = '';
 			}
@@ -1250,7 +1250,7 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 			&& isset($abc['page']['module']) && (string) $abc['page']['module'] === 'pages'
 			&& isset($u[1]) && strtolower(trim((string) $u[1], '/')) === $__pwa_slug
 			&& (!isset($u[2]) || trim((string) $u[2], '/') === '')) {
-			$to = function_exists('aviator_apk_install_guide_path') ? aviator_apk_install_guide_path($lang) : '';
+			$to = function_exists('apk_install_guide_path') ? apk_install_guide_path($lang) : '';
 			if ($to !== '') {
 				header('Location: ' . $to, true, 301);
 				exit;
@@ -1292,8 +1292,8 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 		}
 		// PWA install guide (legacy): /{lang}/demo/ios-pwa/ → 301 to /{lang}/{download}/install-pwa/
 		if ($abc['layout'] === 'demo' && isset($u[2]) && strtolower(trim((string) $u[2], '/')) === 'ios-pwa') {
-			if (function_exists('aviator_pwa_install_guide_path')) {
-				$to = aviator_pwa_install_guide_path($lang);
+			if (function_exists('pwa_install_guide_path')) {
+				$to = pwa_install_guide_path($lang);
 				if ($to !== '') {
 					header('Location: ' . $to, true, 301);
 					exit;
@@ -1307,8 +1307,8 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 		));
 		if ($__dl_match && isset($u[2])) {
 			$__pwa_seg = strtolower(trim((string) $u[2], '/'));
-			if ($__pwa_seg === 'ios-pwa' && function_exists('aviator_pwa_install_guide_path')) {
-				$to = aviator_pwa_install_guide_path($lang);
+			if ($__pwa_seg === 'ios-pwa' && function_exists('pwa_install_guide_path')) {
+				$to = pwa_install_guide_path($lang);
 				if ($to !== '') {
 					header('Location: ' . $to, true, 301);
 					exit;
@@ -1467,16 +1467,16 @@ for($i=1;$i<=count($abc['languages']);$i++) {
 		}
 
 		if (!empty($abc['layout']) && $abc['layout'] === 'demo_pwa_ios') {
-			if (function_exists('aviator_pwa_ios_merge_seo_child_into_abc')) {
-				aviator_pwa_ios_merge_seo_child_into_abc($abc, $lang);
+			if (function_exists('pwa_install_merge_seo_child_into_abc')) {
+				pwa_install_merge_seo_child_into_abc($abc, $lang);
 			}
-			aviator_pwa_ios_apply_page_meta($abc, $lang);
+			pwa_install_apply_page_meta($abc, $lang);
 		}
 		if (!empty($abc['layout']) && $abc['layout'] === 'demo_apk_android') {
-			if (function_exists('aviator_apk_merge_seo_child_into_abc')) {
-				aviator_apk_merge_seo_child_into_abc($abc, $lang);
+			if (function_exists('apk_install_merge_seo_child_into_abc')) {
+				apk_install_merge_seo_child_into_abc($abc, $lang);
 			}
-			aviator_apk_apply_page_meta($abc, $lang);
+			apk_install_apply_page_meta($abc, $lang);
 		}
 
 		// Load module (use blog_cat when blog page has category/tag/article in URL)

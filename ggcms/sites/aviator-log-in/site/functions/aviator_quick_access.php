@@ -122,8 +122,8 @@ function aviator_quick_access_google_url($lang) {
 }
 
 function aviator_quick_access_app_store_url($abc, $lang) {
-	if (function_exists('aviator_pwa_ios_guide_url')) {
-		$url = (string) aviator_pwa_ios_guide_url($abc, $lang);
+	if (function_exists('pwa_install_guide_url')) {
+		$url = (string) pwa_install_guide_url($abc, $lang);
 		if ($url !== '') {
 			return $url;
 		}
