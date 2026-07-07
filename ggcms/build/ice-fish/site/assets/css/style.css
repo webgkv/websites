@@ -282,6 +282,20 @@ header .navbar-collapse .dropdown-divider {
     -webkit-backdrop-filter: blur(8px);
 }
 
+.page-content-from-db > .row > [class*="col-"] > section.mt-5,
+.page-content-from-db section.mt-5 {
+    margin-top: 1.5rem !important;
+}
+
+.page-content-from-db > .row > [class*="col-"] > section.pt-5,
+.page-content-from-db section.pt-5 {
+    padding-top: 0 !important;
+}
+
+.page-content-from-db section .main_heading {
+    margin-bottom: 1rem;
+}
+
 .page-content-from-db h1,
 .page-content-from-db h2,
 .page-content-from-db .main_heading h2,
@@ -293,6 +307,48 @@ header .navbar-collapse .dropdown-divider {
 .page-content-from-db h2,
 .page-content-from-db .main_heading h3 {
     margin-top: 35px;
+}
+
+.page-content-from-db > h1,
+.page-content-from-db > .row > [class*="col-"] > h1 {
+    margin: 0 0 1rem;
+}
+
+.page-content-from-db > h2,
+.page-content-from-db > .row > [class*="col-"] > h2 {
+    margin: 2rem 0 1rem;
+}
+
+.page-content-from-db > p,
+.page-content-from-db > .row > [class*="col-"] > p {
+    margin: 0 0 1rem;
+}
+
+.page-content-from-db > ul,
+.page-content-from-db > ol,
+.page-content-from-db > .row > [class*="col-"] > ul,
+.page-content-from-db > .row > [class*="col-"] > ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.35rem;
+}
+
+.page-content-from-db > li + li,
+.page-content-from-db > ul li + li,
+.page-content-from-db > ol li + li,
+.page-content-from-db > .row > [class*="col-"] > ul li + li,
+.page-content-from-db > .row > [class*="col-"] > ol li + li {
+    margin-top: 0.35rem;
+}
+
+.page-content-from-db > p + h2,
+.page-content-from-db > ul + h2,
+.page-content-from-db > ol + h2,
+.page-content-from-db > figure + h2,
+.page-content-from-db > .row > [class*="col-"] > p + h2,
+.page-content-from-db > .row > [class*="col-"] > ul + h2,
+.page-content-from-db > .row > [class*="col-"] > ol + h2,
+.page-content-from-db > .row > [class*="col-"] > figure + h2 {
+    margin-top: 1.5rem;
 }
 
 .hero_content h1 span,
@@ -358,6 +414,11 @@ header .navbar-collapse .dropdown-divider {
     color: var(--cr-text-light);
     margin-top: -10px;
     line-height: 1.18;
+}
+
+.page-content-from-db .main_heading h2,
+.page-content-from-db .main_heading h3 {
+    margin-top: 0;
 }
 
 .page-content-from-db .about_content p,
@@ -974,6 +1035,11 @@ h1 {
 .page-content-from-db .about_content strong {
     color: #f0f0f0;
 }
+.page-content-from-db .about_content p,
+.page-content-from-db .about_content li {
+    font-size: 20px;
+    line-height: 1.6;
+}
 .page-content-from-db .about_content p strong {
     color: #fff;
 }
@@ -1002,6 +1068,8 @@ h1 {
 .page-content-from-db .table td {
     color: #f3faff;
     border-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
     padding: 12px 16px;
     background-color: transparent;
 }
@@ -1018,6 +1086,35 @@ h1 {
 }
 .page-content-from-db .table a:hover {
     color: var(--cr-accent);
+}
+
+.page-content-from-db .faq-list {
+    display: grid;
+    gap: 12px;
+}
+
+.page-content-from-db .faq-item {
+    background: rgba(8, 22, 50, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    padding: 4px 20px;
+}
+
+.page-content-from-db .faq-item summary {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    padding: 14px 0;
+}
+
+.page-content-from-db .faq-item p {
+    color: #f0f0f0;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 0 16px;
 }
 
 /* Guides: cards in site style (dark, not white) */
@@ -1386,9 +1483,18 @@ h1 {
 .page-content-from-db .about_content.section-media figure,
 .page-content-from-db .about_content .section-media__figure,
 .page-content-from-db .section-media__figure {
-    margin: 1.5rem auto !important;
+    margin: 0.75rem auto !important;
     max-width: 768px;
     text-align: center;
+}
+.page-content-from-db .section-media__figure--medium {
+    max-width: 680px;
+}
+.page-content-from-db .section-media__figure--compact {
+    max-width: 560px;
+}
+.page-content-from-db .section-media__figure--portrait {
+    max-width: 420px;
 }
 .page-content-from-db .about_content.section-media figure img,
 .page-content-from-db .about_content.section-media img,
@@ -1402,6 +1508,9 @@ h1 {
     margin-right: auto !important;
     object-fit: contain;
     border-radius: 8px;
+}
+.page-content-from-db .section-media__figure--rounded img {
+    border-radius: 12px;
 }
 
 /* Games / long-form DB lists: figures must be block-level, not inside inline spans */
