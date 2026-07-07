@@ -118,11 +118,21 @@
             }
             $li.addClass('nav-group');
             var $a = $li.children('a').first();
-            var $arrows = $a.find('.sub-menu-arrow');
+            var $arrows = $a.children('.sub-menu-arrow');
             if ($arrows.length > 1) {
                 $arrows.slice(1).remove();
-            } else if (!$arrows.length) {
-                $a.append('<i class="sub-menu-arrow ti-angle-up" aria-hidden="true"></i>');
+            }
+            var $arrow = $a.children('.sub-menu-arrow').first();
+            if (!$arrow.length) {
+                $arrow = $('<i class="sub-menu-arrow ti-angle-up" aria-hidden="true"></i>');
+                $a.append($arrow);
+            } else {
+                $arrow.removeClass('ti-plus ti-minus').addClass('ti-angle-up');
+            }
+            if ($li.hasClass('open')) {
+                $arrow.addClass('rotate-in');
+            } else {
+                $arrow.removeClass('rotate-in');
             }
             if ($a.attr('href') && $a.attr('href').indexOf('admin.php') === 0) {
                 $a.attr('href', '#');
@@ -267,25 +277,15 @@
     $(document).on('click', '.navigation ul li a', function () {
         var $this = $(this);
         if ($this.next('ul').length) {
-            var sub_menu_arrow = $this.find('.sub-menu-arrow');
+            var sub_menu_arrow = $this.children('.sub-menu-arrow').first();
             var $li = $this.parent('li');
             $li.toggleClass('open');
             $li.siblings('.nav-group').removeClass('open');
-            sub_menu_arrow.toggleClass('rotate-in');
+            sub_menu_arrow.removeClass('ti-plus ti-minus').addClass('ti-angle-up').toggleClass('rotate-in');
             $this.next('ul').toggle(200);
             $this.parent('li').siblings().find('ul').not($this.parent('li').find('ul')).slideUp(200);
             $this.next('ul').find('li ul').slideUp(200);
-            $this.next('ul').find('li>a').find('.sub-menu-arrow').removeClass('ti-minus').addClass('ti-plus');
-            $this.next('ul').find('li>a').find('.sub-menu-arrow').removeClass('rotate-in');
-            $this.parent('li').siblings().not($this.parent('li').find('ul')).find('>a').find('.sub-menu-arrow').removeClass('ti-minus').addClass('ti-plus');
-            $this.parent('li').siblings().not($this.parent('li').find('ul')).find('>a').find('.sub-menu-arrow').removeClass('rotate-in');
-            if (sub_menu_arrow.hasClass('rotate-in')) {
-                setTimeout(function () {
-                    sub_menu_arrow.removeClass('ti-plus').addClass('ti-minus');
-                }, 200);
-            } else {
-                sub_menu_arrow.removeClass('ti-minus').addClass('ti-plus');
-            }
+            $this.parent('li').siblings('.nav-group').find('>a>.sub-menu-arrow').removeClass('rotate-in ti-plus ti-minus').addClass('ti-angle-up');
             if (!body_.hasClass('horizontal-side-menu') && wind_.width() >= 1200) {
                 setTimeout(function (e) {
                     $('.navigation').getNiceScroll().resize();
@@ -299,7 +299,7 @@
     }, function (e) {
         e.stopPropagation();
         $('.navigation ul').removeAttr('style');
-        $('.navigation ul li').not('.open').find('>a>.sub-menu-arrow').removeClass('rotate-in').removeClass('ti-minus').addClass('ti-plus');
+        $('.navigation ul li').not('.open').find('>a>.sub-menu-arrow').removeClass('rotate-in ti-plus ti-minus').addClass('ti-angle-up');
     });
     /*------------- aside menu toggle -------------*/
 

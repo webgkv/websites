@@ -149,6 +149,9 @@ body.small-navigation:not(.hidden-navigation) .navigation .navigation-menu-body 
 .navigation .navigation-menu-body > ul > li.nav-group.open > a .sub-menu-arrow.rotate-in {
 	transform: rotate(0deg);
 }
+.navigation .navigation-menu-body > ul > li.nav-group > a .sub-menu-arrow ~ .sub-menu-arrow {
+	display: none !important;
+}
 
 /* Popup success / error z-index */
 .mfp-bg {z-index: 2042!important;}
@@ -177,7 +180,7 @@ body.small-navigation:not(.hidden-navigation) .navigation .navigation-menu-body 
 	padding: .75rem .25rem;
 }
 .table .level {color:#828282;}
-.table td.level .feather {width: 16px; margin-right: -5px}
+.table td.level .feather {width: 16px; margin-right: 0}
 .table .is_open {background-color: #c3e6cb;}
 
 /* Modal */

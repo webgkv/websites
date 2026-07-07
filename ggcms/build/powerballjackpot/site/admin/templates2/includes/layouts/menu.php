@@ -47,7 +47,6 @@ foreach ($modules2 as $key => $value) {
 					<a href="#" class="nav-parent-link" data-nav-toggle="1">
 						<i class="nav-link-icon" data-feather="'.$value['icon'].'"></i>
 						<span>'.a18n($value['name']).'</span>
-						<i class="sub-menu-arrow ti-angle-up" aria-hidden="true"></i>
 					</a>
 					<ul>'.$bottom2.'</ul>
 				</li>';

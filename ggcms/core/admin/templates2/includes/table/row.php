@@ -44,10 +44,9 @@ foreach ($q['table'] as $k=>$v) {
 		$content.= '<td class="text-nowrap"><a target="_blank" href="'.get_url($v,$row).'" class="btn btn-sm btn-outline-secondary" data-toggle="tooltip" title="'.a18n('display').'"><i data-feather="search" class="mr-0"></i></a></td>';
 	}
 	elseif ($k=='_tree')	{
-		$content.= '<td class="level">';
-		for ($n=1; $n<=$row['level']; $n++) {
-			$content.='<i data-feather="chevron-right"></i>';
-		}
+		$tree_level = max(1, (int)$row['level']);
+		$content.= '<td class="level" data-level="'.$tree_level.'" style="padding-left:'.(6 + ($tree_level - 1) * 16).'px">';
+		$content.='<i data-feather="chevron-right"></i>';
 		$content.='</td>';
 	}
 	elseif ($k=='_sorting')	$content.= '<td><span class="sprite sorting"></span></td>';
