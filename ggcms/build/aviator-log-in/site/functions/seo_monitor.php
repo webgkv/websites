@@ -1529,7 +1529,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			case 'description_too_long':
 				return 'Meta description > 160';
 			case 'h1_not_single':
-				return 'H1 count ≠ 1';
+				return 'H1 count ≠ 1 (page total)';
 			case 'img_missing_alt':
 				return 'Images without alt';
 			case 'body_empty':

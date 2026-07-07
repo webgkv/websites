@@ -559,7 +559,11 @@ elseif ($seo_u === 'cluster') {
 				$badges = '<span class="badge bg-success">OK</span>';
 			} else {
 				foreach ($issues as $is) {
-					$badges .= '<span class="badge bg-warning text-dark me-1 mb-1">' . htmlspecialchars(seo_monitor_issue_label($is['code'])) . '</span> ';
+					$lbl = seo_monitor_issue_label($is['code']);
+					if ($is['code'] === 'h1_not_single' && isset($is['detail'])) {
+						$lbl .= ': ' . (int)$is['detail'];
+					}
+					$badges .= '<span class="badge bg-warning text-dark me-1 mb-1">' . htmlspecialchars($lbl) . '</span> ';
 				}
 			}
 			$h1_cell = '—';
