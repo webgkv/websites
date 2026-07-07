@@ -1,0 +1,22 @@
+# Ice Fish
+
+> Official guides, demo, download, and blog for Ice Fish (crash-style game). English URLs use the `/en/` prefix; other languages use the same slugs under `/{lang}/`.
+
+## Main pages
+
+- [Home](https://ice-fish.run/en/)
+- [Demo (play in browser)](https://ice-fish.run/en/demo/)
+- [Demo app (fullscreen)](https://ice-fish.run/en/demo/app/)
+- [Download / Android APK guide](https://ice-fish.run/en/download/)
+- [Predictor](https://ice-fish.run/en/predictor/)
+
+## Content
+
+- [Blog](https://ice-fish.run/en/blog/)
+- [Guides](https://ice-fish.run/en/guides/)
+- [Games](https://ice-fish.run/en/games/)
+
+## Machine-readable
+
+- [Sitemap](https://ice-fish.run/api/sitemap/index_hub.xml)
+- [robots.txt](https://ice-fish.run/robots.txt)

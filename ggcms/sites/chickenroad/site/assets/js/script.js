@@ -93,6 +93,12 @@ try {
       t.addEventListener('touchend', function (e) { openClose(e || window.event); }, { passive: false });
     }
     if (n) n.addEventListener('click', onNavClick, false);
+    var langSwitcher = document.querySelector('.aviator-lang-switcher.desktop-only.dropdown');
+    if (langSwitcher) {
+      langSwitcher.addEventListener('show.bs.dropdown', function () {
+        loadDeferredFlags(langSwitcher);
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', init);

@@ -7,6 +7,7 @@ This folder contains custom HestiaCP **Nginx (proxy)** templates and an install 
 - Adds a custom proxy caching template `caching-chickenroad` for **Nginx + Apache2** setups.
 - Uses the **existing** global Nginx cache zone `cache` (as configured in `/etc/nginx/nginx.conf`).
 - Ensures admin-like paths are **not cached**.
+- Ensures **`/{lang}/demo/app/`** is **not cached** (dynamic mirror loader / iframe shell).
 
 ## Install on server
 

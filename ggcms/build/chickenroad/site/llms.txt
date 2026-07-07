@@ -1,0 +1,22 @@
+# Chicken Road
+
+> Official guides, demo, download, and blog for Chicken Road (crash-style game). English URLs use the `/en/` prefix; other languages use the same slugs under `/{lang}/`.
+
+## Main pages
+
+- [Home](https://chickenroad.run/en/)
+- [Demo (play in browser)](https://chickenroad.run/en/demo/)
+- [Demo app (fullscreen)](https://chickenroad.run/en/demo/app/)
+- [Download / Android APK guide](https://chickenroad.run/en/download/)
+- [Predictor](https://chickenroad.run/en/predictor/)
+
+## Content
+
+- [Blog](https://chickenroad.run/en/blog/)
+- [Guides](https://chickenroad.run/en/guides/)
+- [Games](https://chickenroad.run/en/games/)
+
+## Machine-readable
+
+- [Sitemap](https://chickenroad.run/api/sitemap/index_hub.xml)
+- [robots.txt](https://chickenroad.run/robots.txt)

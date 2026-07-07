@@ -26,7 +26,8 @@ self.addEventListener('activate', function (event) {
 				return Promise.all(
 					keys
 						.filter(function (key) {
-							return key !== STATIC_CACHE;
+							/* Only prune our own static caches — never delete OneSignal / third-party caches. */
+							return key.indexOf('aviator-static-') === 0 && key !== STATIC_CACHE;
 						})
 						.map(function (key) {
 							return caches.delete(key);

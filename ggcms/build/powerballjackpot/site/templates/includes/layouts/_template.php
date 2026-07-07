@@ -488,20 +488,12 @@ if ($_preload_hero !== '') {
         }
         $_site_median_native_shell = site_is_median_native_webview();
         ?>
-        <script>
-        (function () {
-          if (!('serviceWorker' in navigator)) return;
-          if (<?= $_site_median_native_shell ? 'true' : 'false' ?>) {
-            navigator.serviceWorker.getRegistrations().then(function (regs) {
-              regs.forEach(function (r) { r.unregister(); });
-            }).catch(function () {});
-            return;
-          }
-          window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/sw.js').catch(function () {});
-          });
-        })();
-        </script>
+        <?php
+        if (!function_exists('site_template_service_worker_bootstrap_script')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
+        }
+        echo site_template_service_worker_bootstrap_script($_site_median_native_shell, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
+        ?>
         <?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo site_template_async_counter($_counter) . "\n        "; } } ?>
         <?php
         if (!function_exists('site_onesignal_web_ios_prompt_script')) {
@@ -758,7 +750,7 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
                                 <li>
                                     <a class="aviator-lang-mobile-link aviator-lang-item<?=($lu === $_aviator_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>">
 <?php if ($fcc !== null && $fcc !== ''): ?>
-                                        <img class="aviator-lang-flag" src="https://flagcdn.com/24x18/<?= htmlspecialchars(strtolower((string)$fcc), ENT_QUOTES, 'UTF-8') ?>.png" width="24" height="18" alt="<?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async">
+                                        <?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_aviator_lang_seg) ?>
 <?php endif; ?>
                                         <span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span>
                                     </a>
@@ -773,7 +765,7 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
 <?php if ($_aviator_cur_switch):
 	$_cf = isset($_aviator_cur_switch['flag_cc']) ? $_aviator_cur_switch['flag_cc'] : null;
 	if ($_cf !== null && $_cf !== ''): ?>
-                            <img class="aviator-lang-flag aviator-lang-flag--toggle" src="https://flagcdn.com/24x18/<?= htmlspecialchars(strtolower((string)$_cf), ENT_QUOTES, 'UTF-8') ?>.png" width="24" height="18" alt="<?= htmlspecialchars($_aviator_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async">
+                            <?= site_template_lang_flag_img($_cf, $_aviator_cur_switch['label'], false) ?>
 <?php endif; ?>
                             <span class="aviator-lang-toggle-text"><?= htmlspecialchars($_aviator_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?></span>
 <?php else: ?>
@@ -786,7 +778,7 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
 	$lbl = $sw['label'];
 	$fcc = isset($sw['flag_cc']) ? $sw['flag_cc'] : null;
 ?>
-                            <li><a class="dropdown-item aviator-lang-item<?=($lu === $_aviator_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>"><?php if ($fcc !== null && $fcc !== ''): ?><img class="aviator-lang-flag" src="https://flagcdn.com/24x18/<?= htmlspecialchars(strtolower((string)$fcc), ENT_QUOTES, 'UTF-8') ?>.png" width="24" height="18" alt="<?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?>" loading="lazy" decoding="async"><?php endif; ?><span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span></a></li>
+                            <li><a class="dropdown-item aviator-lang-item<?=($lu === $_aviator_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>"><?php if ($fcc !== null && $fcc !== ''): ?><?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_aviator_lang_seg) ?><?php endif; ?><span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span></a></li>
 <?php endforeach; ?>
                         </ul>
                     </div>

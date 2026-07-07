@@ -37,7 +37,7 @@ server {
 		set $no_cache 0;
 
 		# Never cache admin / dynamic endpoints
-		if ($request_uri ~* "/admin/|/administrator/|/manager/|/user/|/login|/logout|/api/telemetry_|/api/") {
+		if ($request_uri ~* "/admin\.php|/admin/|/administrator/|/manager/|/user/|/login|/logout|/demo/app|/api/telemetry_|/api/") {
 			set $no_cache 1;
 		}
 

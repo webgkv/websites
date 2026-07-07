@@ -1,0 +1,22 @@
+# Aviator Log In
+
+> Official guides, demo, download, and blog for Aviator (crash-style game). English URLs use the `/en/` prefix; other languages use the same slugs under `/{lang}/`.
+
+## Main pages
+
+- [Home](https://aviator-log-in.com/en/)
+- [Demo (play in browser)](https://aviator-log-in.com/en/demo/)
+- [Demo app (fullscreen)](https://aviator-log-in.com/en/demo/app/)
+- [Download / Android APK guide](https://aviator-log-in.com/en/download/)
+- [Predictor](https://aviator-log-in.com/en/predictor/)
+
+## Content
+
+- [Blog](https://aviator-log-in.com/en/blog/)
+- [Guides](https://aviator-log-in.com/en/guides/)
+- [Games](https://aviator-log-in.com/en/games/)
+
+## Machine-readable
+
+- [Sitemap](https://aviator-log-in.com/api/sitemap/index_hub.xml)
+- [robots.txt](https://aviator-log-in.com/robots.txt)

@@ -65,6 +65,9 @@ $abc['showpariuri']=$showpariuri;
 
 //session_start();
 
+// Guest pages: defer session until something needs $_SESSION (admin always loads session via admin.php).
+define('SITE_SKIP_AUTO_SESSION', true);
+
 // Load config
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "2. before config\n"; flush(); }
 require_once(ROOT_DIR.'config/config.php');

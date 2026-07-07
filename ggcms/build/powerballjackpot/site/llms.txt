@@ -1,0 +1,18 @@
+# PowerBall Jackpot
+
+> Lottery news, jackpots, guides, and tools for Powerball players. English URLs use the `/en/` prefix; other languages use the same slugs under `/{lang}/`.
+
+## Main pages
+
+- [Home](https://powerballjackpot.run/en/)
+
+## Content
+
+- [Blog](https://powerballjackpot.run/en/blog/)
+- [Guides](https://powerballjackpot.run/en/guides/)
+- [Games](https://powerballjackpot.run/en/games/)
+
+## Machine-readable
+
+- [Sitemap](https://powerballjackpot.run/api/sitemap/index_hub.xml)
+- [robots.txt](https://powerballjackpot.run/robots.txt)

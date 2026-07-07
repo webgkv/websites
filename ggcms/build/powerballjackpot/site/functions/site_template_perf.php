@@ -97,3 +97,62 @@ if (!function_exists('site_template_google_font')) {
 		return site_template_deferred_stylesheet($href);
 	}
 }
+
+if (!function_exists('site_template_lang_flag_img')) {
+	/**
+	 * Language switcher flag. Non-current flags use data-src (loaded on menu/dropdown open).
+	 */
+	function site_template_lang_flag_img($flag_cc, $label, $defer = false) {
+		$cc = strtolower((string) $flag_cc);
+		if ($cc === '') {
+			return '';
+		}
+		$url = 'https://flagcdn.com/24x18/' . $cc . '.png';
+		$alt = htmlspecialchars((string) $label, ENT_QUOTES, 'UTF-8');
+		$eh = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
+		if ($defer) {
+			return '<img class="aviator-lang-flag aviator-lang-flag--deferred" data-src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
+		}
+		return '<img class="aviator-lang-flag" src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
+	}
+}
+
+if (!function_exists('site_template_counters_include_onesignal')) {
+	function site_template_counters_include_onesignal($counters) {
+		if (empty($counters) || !is_array($counters)) {
+			return false;
+		}
+		foreach ($counters as $html) {
+			$h = (string) $html;
+			if (stripos($h, 'OneSignal') !== false || stripos($h, 'onesignal.com') !== false) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+if (!function_exists('site_template_service_worker_bootstrap_script')) {
+	/**
+	 * Register combined PWA SW only when OneSignal is absent (OneSignal.init registers /sw.js itself).
+	 */
+	function site_template_service_worker_bootstrap_script($median_native_shell, $counters_head) {
+		$median = $median_native_shell ? 'true' : 'false';
+		$skip_register = site_template_counters_include_onesignal($counters_head) ? 'true' : 'false';
+		return '        <script>
+        (function () {
+          if (!(\'serviceWorker\' in navigator)) return;
+          if (' . $median . ') {
+            navigator.serviceWorker.getRegistrations().then(function (regs) {
+              regs.forEach(function (r) { r.unregister(); });
+            }).catch(function () {});
+            return;
+          }
+          if (' . $skip_register . ') return;
+          window.addEventListener(\'load\', function () {
+            navigator.serviceWorker.register(\'/sw.js\').catch(function () {});
+          });
+        })();
+        </script>';
+	}
+}

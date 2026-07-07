@@ -93,6 +93,12 @@ try {
       t.addEventListener('touchend', function (e) { openClose(e || window.event); }, { passive: false });
     }
     if (n) n.addEventListener('click', onNavClick, false);
+    var langSwitcher = document.querySelector('.aviator-lang-switcher.desktop-only.dropdown');
+    if (langSwitcher) {
+      langSwitcher.addEventListener('show.bs.dropdown', function () {
+        loadDeferredFlags(langSwitcher);
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
@@ -103,7 +109,7 @@ var mybutton = document.getElementById("myBtn");
 if (mybutton) {
   window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "flex";
+      mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
     }
