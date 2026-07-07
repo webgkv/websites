@@ -7,7 +7,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 
 	function seo_monitor_entity_map() {
 		return array(
-			'pages' => array('table' => 'pages', 'label' => 'Pages', 'src_content_col' => 'text'),
+			'pages' => array('table' => 'pages', 'label' => 'Pages', 'src_content_col' => 'text', 'has_module' => true),
 			// guides/games/casino_articles store body in `text` (see admin/modules/*.php CREATE TABLE), not `content`.
 			'guides' => array('table' => 'guides', 'label' => 'Guides', 'src_content_col' => 'text'),
 			'games' => array('table' => 'games', 'label' => 'Games', 'src_content_col' => 'text'),
@@ -40,13 +40,14 @@ if (!function_exists('seo_monitor_entity_map')) {
 	 */
 	function seo_monitor_main_row_select_sql(array $info) {
 		if (!empty($info['profile_only'])) {
-			return "id, '' AS url, name, job_title AS title, '' AS description, bio AS body_html";
+			return "id, '' AS url, name, job_title AS title, '' AS description, bio AS body_html, '' AS module";
 		}
 		$col = isset($info['src_content_col']) ? (string)$info['src_content_col'] : 'content';
 		if (!in_array($col, array('text', 'content', 'bio'), true)) {
 			$col = 'content';
 		}
-		return "id, url, name, title, description, `" . mysql_res($col) . "` AS body_html";
+		$extra = !empty($info['has_module']) ? ', module' : ", '' AS module";
+		return "id, url, name, title, description, `" . mysql_res($col) . "` AS body_html" . $extra;
 	}
 
 	/**
