@@ -68,4 +68,13 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 	if (function_exists('site_brand_normalize_image_paths') && !empty($abc['content'])) {
 		$abc['content'] = site_brand_normalize_image_paths($abc['content']);
 	}
+	if (!function_exists('site_template_lazyload_content_images')) {
+		$perf = (defined('ROOT_DIR') ? ROOT_DIR : '') . 'functions/site_template_perf.php';
+		if ($perf !== 'functions/site_template_perf.php' && is_file($perf)) {
+			require_once $perf;
+		}
+	}
+	if (function_exists('site_template_lazyload_content_images') && !empty($abc['content'])) {
+		$abc['content'] = site_template_lazyload_content_images($abc['content']);
+	}
 }

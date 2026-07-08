@@ -267,6 +267,11 @@ EOF
 	fi
 
 	echo ""
+	if [ "$EXTRAS_PLUS" != "1" ] && [ -d "$LOCAL_PATH/assets/css" ]; then
+		echo "Note: assets/css/*.css were NOT uploaded (SEO edits live on server)."
+		echo "      To push CSS from repo, re-run with --extras_plus"
+		echo ""
+	fi
 	echo "=============================================="
 	echo "Deploy complete: $TITLE"
 	echo "=============================================="

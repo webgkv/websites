@@ -19,6 +19,7 @@ if (!function_exists('site_template_preconnect_hints')) {
 			array('href' => 'https://cdnjs.cloudflare.com', 'crossorigin' => true),
 			array('href' => 'https://fonts.googleapis.com', 'crossorigin' => false),
 			array('href' => 'https://fonts.gstatic.com', 'crossorigin' => true),
+			array('href' => 'https://flagcdn.com', 'crossorigin' => false),
 		);
 		$out = '';
 		foreach ($hints as $h) {
@@ -95,6 +96,42 @@ if (!function_exists('site_template_google_font')) {
 	function site_template_google_font($family_query) {
 		$href = 'https://fonts.googleapis.com/css2?family=' . $family_query . '&display=swap';
 		return site_template_deferred_stylesheet($href);
+	}
+}
+
+if (!function_exists('site_template_lazyload_content_images')) {
+	/**
+	 * Add loading="lazy" and decoding="async" to content <img> tags that lack loading.
+	 * Skips images already marked eager/high-priority or hero/LCP classes.
+	 */
+	function site_template_lazyload_content_images($html) {
+		$html = (string) $html;
+		if ($html === '' || stripos($html, '<img') === false) {
+			return $html;
+		}
+		return preg_replace_callback(
+			'/<img\b([^>]*?)\s*\/?>/i',
+			function ($m) {
+				$attrs = rtrim($m[1]);
+				if (preg_match('/\bloading\s*=/i', $attrs)) {
+					return $m[0];
+				}
+				if (preg_match('/\bfetchpriority\s*=\s*["\']?high/i', $attrs)) {
+					return $m[0];
+				}
+				if (preg_match('/\bclass\s*=\s*["\']([^"\']*)["\']/i', $attrs, $cm)) {
+					if (preg_match('/\b(hero|lcp|above-fold|navbar-brand)\b/i', $cm[1])) {
+						return $m[0];
+					}
+				}
+				$add = ' loading="lazy"';
+				if (!preg_match('/\bdecoding\s*=/i', $attrs)) {
+					$add .= ' decoding="async"';
+				}
+				return '<img' . $attrs . $add . '>';
+			},
+			$html
+		);
 	}
 }
 

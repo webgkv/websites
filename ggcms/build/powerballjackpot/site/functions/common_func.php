@@ -630,5 +630,11 @@ function aviator_seo_clean_content($html, $demote_h1 = true) {
 	if (function_exists('site_brand_normalize_image_paths')) {
 		$html = site_brand_normalize_image_paths($html);
 	}
+	if (!function_exists('site_template_lazyload_content_images')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../') . 'functions/site_template_perf.php';
+	}
+	if (function_exists('site_template_lazyload_content_images')) {
+		$html = site_template_lazyload_content_images($html);
+	}
 	return $html;
 }

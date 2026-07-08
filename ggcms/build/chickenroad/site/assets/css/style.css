@@ -1956,3 +1956,159 @@ h1 {
         width: auto;
     }
 }
+
+/* === DB content global cleanup: styles moved from inline HTML === */
+
+.page-content-from-db .about_content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Normal text lists inside DB content */
+.page-content-from-db .about_content ul {
+    list-style: disc;
+    padding-left: 1.4em;
+    margin: 0 0 1.2em 0;
+}
+
+.page-content-from-db .about_content ol {
+    list-style: decimal;
+    padding-left: 1.4em;
+    margin: 0 0 1.2em 0;
+}
+
+.page-content-from-db .about_content ul li,
+.page-content-from-db .about_content ol li {
+    font-size: 20px;
+    line-height: 1.6;
+    display: list-item;
+    list-style-position: outside;
+    margin: 0 0 .4em 0;
+    padding: 0;
+    gap: 0;
+    color: var(--cr-text);
+    font-weight: 400;
+}
+
+.page-content-from-db .about_content ul li {
+    list-style-type: disc;
+}
+
+.page-content-from-db .about_content ol li {
+    list-style-type: decimal;
+}
+
+/* Keep special image-list blocks untouched */
+.page-content-from-db .about_content ul:has(.section-media__figure) {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-content-from-db .about_content ul:has(.section-media__figure) li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-size: inherit;
+    font-weight: 600;
+    color: var(--cr-text);
+    list-style: none;
+}
+
+/* Section figures moved from inline styles */
+.page-content-from-db .section-media__figure,
+.page-content-from-db .about_content > figure {
+    width: 100%;
+    max-width: 768px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Large article/media images */
+.page-content-from-db .section-media__figure img,
+.page-content-from-db .about_content > figure > img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 340px !important;
+    object-fit: cover !important;
+    object-position: center 35% !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 8px;
+}
+
+/* Step cards images */
+.page-content-from-db .steps_box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.page-content-from-db .steps_box img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 190px !important;
+    object-fit: cover !important;
+    object-position: left center !important;
+    display: block !important;
+    margin-bottom: 1rem !important;
+}
+
+/* Step text can stay slightly smaller if site style already expects it */
+.page-content-from-db .steps_content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Tables: keep Bootstrap/site table styling, only normalize text size */
+.page-content-from-db .table-responsive {
+    width: 100%;
+}
+
+.page-content-from-db .table th,
+.page-content-from-db .table td {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CTA wrapper when used inside DB content */
+.page-content-from-db .main_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page-content-from-db .main_btn a {
+    display: inline-block;
+}
+
+/* FAQ moved from inline styles */
+.page-content-from-db .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.page-content-from-db .faq-item {
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+    padding: 4px 20px;
+    margin-bottom: 12px;
+    background: rgba(0,0,0,.02);
+}
+
+.page-content-from-db .faq-item summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 14px 0;
+}
+
+.page-content-from-db .faq-item p {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-bottom: 16px;
+    margin: 0;
+}
