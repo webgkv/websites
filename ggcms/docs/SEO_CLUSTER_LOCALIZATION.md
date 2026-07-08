@@ -2,6 +2,14 @@
 
 Manual preparation of `seo_cluster_v1` JSON exports before import into `content_i18n` via SEO Monitor or CLI. This is **not** the autopilot / `seo_monitor_handoff` pipeline in PHP — it is the editorial handoff for agents and humans.
 
+## First rule — preserve existing manual edits
+
+Before changing any cluster, check whether someone has already made manual editorial or structural edits in the working JSON. Do **not** overwrite those edits blindly.
+
+At the very start of work in the working folder, create a backup copy of the original `*-full.json` file. Use that backup to compare the current state against later edits and to identify which changes were already made by a human editor or SEO specialist.
+
+When EN, FR, DE, ES, or any other locale has already been manually updated, treat those edits as a source of truth unless the user explicitly says to replace them. Bring the remaining locales into parity with the edited canonical state instead of regenerating the whole cluster from an older template.
+
 ## Files and folders
 
 | Item | Role |
