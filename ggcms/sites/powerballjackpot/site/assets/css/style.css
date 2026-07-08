@@ -132,16 +132,14 @@ header .navbar-collapse .dropdown-divider {
 }
 
 
-.avitor-img,
-.chickenroad-hero-img {
+.powerball-hero-img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     min-height: 0;
 }
 
-.avitor-img img,
-.chickenroad-hero-img img {
+.powerball-hero-img img {
     width: 100%;
     max-width: 450px;
     height: auto;

@@ -154,7 +154,6 @@ header .navbar-collapse .dropdown-divider {
 }
 
 
-.avitor-img,
 .chickenroad-hero-img {
     display: flex;
     align-items: center;
@@ -162,7 +161,6 @@ header .navbar-collapse .dropdown-divider {
     min-height: 0;
 }
 
-.avitor-img img,
 .chickenroad-hero-img img {
     width: 100%;
     max-width: 450px;

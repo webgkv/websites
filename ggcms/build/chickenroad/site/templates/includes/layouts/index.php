@@ -34,7 +34,7 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="avitor-img chickenroad-hero-img">
+                        <div class="chickenroad-hero-img">
                             <img src="<?= htmlspecialchars(site_brand_hero_image_url(), ENT_QUOTES, 'UTF-8') ?>" alt="Chicken Road game — cross the road and win" width="1024" height="836" loading="eager" decoding="async" fetchpriority="high">
                         </div>
                     </div>

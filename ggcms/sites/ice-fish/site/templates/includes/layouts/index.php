@@ -34,7 +34,7 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="avitor-img ice-fish-hero-img">
+                        <div class="ice-fish-hero-img">
                             <div class="ice-fish-hero-backdrop">
                                 <img src="<?= htmlspecialchars(site_brand_hero_image_url(), ENT_QUOTES, 'UTF-8') ?>" alt="Ice Fish character with industrial fishing gear on arctic ice" width="1536" height="1024" loading="eager" decoding="async" fetchpriority="high">
                             </div>

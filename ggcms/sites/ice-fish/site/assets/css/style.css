@@ -173,7 +173,6 @@ header .navbar-collapse .dropdown-divider {
 }
 
 
-.avitor-img,
 .ice-fish-hero-img {
     display: flex;
     align-items: center;
@@ -181,7 +180,7 @@ header .navbar-collapse .dropdown-divider {
     min-height: 0;
 }
 
-.avitor-img img {
+.ice-fish-hero-img img {
     width: 100%;
     max-width: 520px;
     height: auto;
