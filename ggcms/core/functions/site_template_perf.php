@@ -113,15 +113,17 @@ if (!function_exists('site_template_lazyload_content_images')) {
 			'/<img\b([^>]*?)\s*\/?>/i',
 			function ($m) {
 				$attrs = rtrim($m[1]);
+				// Strip invalid height="auto" — CSS handles auto, HTML attribute expects px.
+				$attrs = preg_replace('/\s*height\s*=\s*["\']?\s*auto\s*["\']?/i', '', $attrs);
 				if (preg_match('/\bloading\s*=/i', $attrs)) {
-					return $m[0];
+					return '<img' . $attrs . '>';
 				}
 				if (preg_match('/\bfetchpriority\s*=\s*["\']?high/i', $attrs)) {
-					return $m[0];
+					return '<img' . $attrs . '>';
 				}
 				if (preg_match('/\bclass\s*=\s*["\']([^"\']*)["\']/i', $attrs, $cm)) {
 					if (preg_match('/\b(hero|lcp|above-fold|navbar-brand)\b/i', $cm[1])) {
-						return $m[0];
+						return '<img' . $attrs . '>';
 					}
 				}
 				$add = ' loading="lazy"';
