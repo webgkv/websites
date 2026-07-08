@@ -32,9 +32,15 @@ function media_image_is_raster_extension($ext) {
 	return in_array($ext, array('jpg', 'jpeg', 'png', 'gif', 'webp'), true);
 }
 
+/** Formats stored as-is (no WebP conversion). GIF keeps animation; SVG stays vector. */
 function media_image_passthrough_extension($ext) {
 	$ext = strtolower((string)$ext);
-	return $ext === 'svg';
+	return in_array($ext, array('svg', 'gif'), true);
+}
+
+function media_image_converts_to_webp($ext) {
+	$ext = strtolower((string)$ext);
+	return in_array($ext, array('jpg', 'jpeg', 'png', 'webp'), true);
 }
 
 /**
@@ -84,6 +90,10 @@ function media_image_convert_to_webp($abs_in, $abs_out, $max_width, $quality) {
 	if (!is_file($abs_in)) {
 		return array('ok' => false, 'message' => 'Source file missing');
 	}
+	$in_ext = strtolower(pathinfo($abs_in, PATHINFO_EXTENSION));
+	if (media_image_passthrough_extension($in_ext)) {
+		return array('ok' => false, 'message' => 'Format kept as original');
+	}
 	$max_width = max(1, (int)$max_width);
 	$quality = max(1, min(100, (int)$quality));
 
@@ -120,7 +130,6 @@ function media_image_convert_to_webp($abs_in, $abs_out, $max_width, $quality) {
 	switch ($mime) {
 		case 'image/jpeg': $loader = 'imagecreatefromjpeg'; break;
 		case 'image/png':  $loader = 'imagecreatefrompng'; break;
-		case 'image/gif':  $loader = 'imagecreatefromgif'; break;
 		case 'image/webp': $loader = 'imagecreatefromwebp'; break;
 	}
 	if ($loader === '' || !function_exists($loader)) {
@@ -163,7 +172,7 @@ function media_image_convert_to_webp($abs_in, $abs_out, $max_width, $quality) {
 }
 
 /**
- * Normalize uploaded/stored raster to WebP; SVG unchanged.
+ * Normalize uploaded/stored raster to WebP; SVG and GIF unchanged.
  *
  * @return array{ok:bool, message:string, abs?:string, rel?:string, ext?:string}
  */
@@ -174,9 +183,9 @@ function media_image_normalize_absolute($abs_path, $profile = 'content') {
 	$ext = strtolower(pathinfo($abs_path, PATHINFO_EXTENSION));
 	if (media_image_passthrough_extension($ext)) {
 		$rel = ltrim(str_replace('\\', '/', substr($abs_path, strlen(ROOT_DIR))), '/');
-		return array('ok' => true, 'message' => 'Skipped SVG', 'abs' => $abs_path, 'rel' => $rel, 'ext' => $ext);
+		return array('ok' => true, 'message' => 'Kept original format', 'abs' => $abs_path, 'rel' => $rel, 'ext' => $ext);
 	}
-	if (!media_image_is_raster_extension($ext)) {
+	if (!media_image_converts_to_webp($ext)) {
 		return array('ok' => false, 'message' => 'Unsupported file type');
 	}
 
@@ -216,6 +225,13 @@ function media_image_write_admin_thumb($abs_file) {
 	$dir = dirname($abs_file) . '/';
 	$name = basename($abs_file);
 	$thumb = $dir . 'a-' . $name;
+	$ext = strtolower(pathinfo($abs_file, PATHINFO_EXTENSION));
+	if (media_image_passthrough_extension($ext)) {
+		if (realpath($abs_file) === realpath($thumb)) {
+			return true;
+		}
+		return @copy($abs_file, $thumb);
+	}
 	$opts = media_image_profile_options('thumb');
 	$conv = media_image_convert_to_webp($abs_file, $thumb, $opts['max_width'], $opts['quality']);
 	return $conv['ok'];
@@ -267,7 +283,9 @@ function media_library_store_uploaded_file($tmp_path, $original_name, $profile =
 	@chmod($root . $name, 0644);
 
 	$abs = $root . $name;
-	if (media_image_is_raster_extension($staging_ext)) {
+	if (media_image_passthrough_extension($staging_ext)) {
+		$file_rel = $rel_dir . '/' . $name;
+	} elseif (media_image_converts_to_webp($staging_ext)) {
 		$norm = media_image_normalize_absolute($abs, $profile);
 		if (!$norm['ok']) {
 			@unlink($abs);
@@ -279,7 +297,9 @@ function media_library_store_uploaded_file($tmp_path, $original_name, $profile =
 		$file_rel = $rel_dir . '/' . $name;
 	}
 
-	if (media_image_is_raster_extension(pathinfo($abs, PATHINFO_EXTENSION))) {
+	if (media_image_is_raster_extension(pathinfo($abs, PATHINFO_EXTENSION))
+		|| media_image_passthrough_extension(pathinfo($abs, PATHINFO_EXTENSION))
+	) {
 		media_image_write_admin_thumb($abs);
 	}
 
@@ -308,7 +328,7 @@ function media_image_resolve_disk_media_path($rel_path) {
 		return $rel;
 	}
 	$ext = strtolower(pathinfo($rel, PATHINFO_EXTENSION));
-	if (in_array($ext, array('png', 'jpg', 'jpeg', 'gif'), true)) {
+	if (in_array($ext, array('png', 'jpg', 'jpeg'), true)) {
 		$webp = pathinfo($rel, PATHINFO_DIRNAME) . '/' . pathinfo($rel, PATHINFO_FILENAME) . '.webp';
 		if (media_library_file_exists($webp)) {
 			return $webp;
