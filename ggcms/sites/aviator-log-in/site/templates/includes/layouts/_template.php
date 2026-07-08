@@ -732,9 +732,9 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
                 <div class="container">
                     <a class="navbar-brand" href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>">
                         <?php
-                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.png') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.png') ? filemtime(ROOT_DIR.'assets/images/logo.png') : time());
+                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.webp') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.webp') ? filemtime(ROOT_DIR.'assets/images/logo.webp') : time());
                         ?>
-                        <img src="/assets/images/logo.png?v=<?= $logo_v ?>" alt="Aviator Logo" title="Aviator Logo">
+                        <img src="/assets/images/logo.webp?v=<?= $logo_v ?>" alt="Aviator Logo" title="Aviator Logo">
                     </a>
                     <div class="menu-toggle" role="button" tabindex="0" aria-label="Toggle navigation" id="navbarToggler" onclick="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)" ontouchend="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)"><i class="fa fa-bars"></i></div>
                     <div class="navbar-collapse justify-content-end navbarNav" id="navbarNav">
