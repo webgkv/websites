@@ -10,6 +10,14 @@ At the very start of work in the working folder, create a backup copy of the ori
 
 When EN, FR, DE, ES, or any other locale has already been manually updated, treat those edits as a source of truth unless the user explicitly says to replace them. Bring the remaining locales into parity with the edited canonical state instead of regenerating the whole cluster from an older template.
 
+## Mandatory rule — native-level editorial review for all locales
+
+Every finished cluster must pass native-level editorial review for all **16 locales**. Technical translation, machine translation cleanup, or structural parity alone is not enough.
+
+Each locale must read as if it was edited by a fluent native-speaking editor: natural phrasing, correct local grammar, appropriate vocabulary, no awkward calques from English, no mixed-language leftovers, and no visible template-like filler. This applies to the full body, headings, FAQ, table cells, image `alt`, `name`, `title`, and `description`.
+
+Do not mark a localization task as complete until all 16 locales have been reviewed and polished at this editorial level.
+
 ## Files and folders
 
 | Item | Role |

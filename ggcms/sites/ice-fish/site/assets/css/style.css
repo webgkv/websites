@@ -1496,6 +1496,12 @@ h1 {
 .page-content-from-db .section-media__figure--portrait {
     max-width: 420px;
 }
+.page-content-from-db .section-media__figure--mobile-large img {
+    max-height: 340px;
+}
+.page-content-from-db .section-media__figure--mobile-compact img {
+    max-height: 280px;
+}
 .page-content-from-db .about_content.section-media figure img,
 .page-content-from-db .about_content.section-media img,
 .page-content-from-db .section-media__figure img,
@@ -1511,6 +1517,26 @@ h1 {
 }
 .page-content-from-db .section-media__figure--rounded img {
     border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .page-content-from-db .section-media__figure--mobile-large img {
+        max-height: 280px;
+    }
+
+    .page-content-from-db .section-media__figure--mobile-compact img {
+        max-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-content-from-db .section-media__figure--mobile-large img {
+        max-height: 240px;
+    }
+
+    .page-content-from-db .section-media__figure--mobile-compact img {
+        max-height: 200px;
+    }
 }
 
 /* Games / long-form DB lists: figures must be block-level, not inside inline spans */
