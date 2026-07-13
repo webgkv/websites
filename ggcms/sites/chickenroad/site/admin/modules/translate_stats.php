@@ -70,7 +70,7 @@ function translate_stats_monitored_common_keys($source_lang_id) {
 		'read_guide', 'read_more', 'guides_cat_all', 'guides_title', 'games_title', 'games_cat_all',
 		'games_cat_crash', 'games_cat_crash-p2e', 'games_cat_other', 'guides_cat_analysis', 'guides_cat_bonus',
 		'guides_cat_how-to-win', 'guides_cat_signals', 'guides_cat_crash-gambling', 'hero_subtitle', 'hero_cta',
-		'cta_play_aviator_now', 'cta_try_bonus', 'strategies_menu', 'predictor_menu', 'popup_special_offer', 'index_page', 'breadcrumb_index', 'breadcrumb_separator',
+		'cta_play_now', 'cta_try_bonus', 'strategies_menu', 'predictor_menu', 'popup_special_offer', 'index_page', 'breadcrumb_index', 'breadcrumb_separator',
 	);
 	foreach ($extra as $k) {
 		$keys[] = $k;

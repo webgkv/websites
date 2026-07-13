@@ -46,13 +46,13 @@ function game_demo_mirror_resolve_params(array $abc, array $config) {
 		$bankGroupId = 'GoldenBet_' . $currency;
 	}
 
-	if (!function_exists('aviator_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
+	if (!function_exists('site_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
 		require_once ROOT_DIR . 'functions/advertising_api.php';
 	}
 	$playerIp = '127.0.0.1';
-	if (function_exists('aviator_ad_resolve_ip_context')) {
+	if (function_exists('site_ad_resolve_ip_context')) {
 		$ad = (isset($abc['advertising_api']) && is_array($abc['advertising_api'])) ? $abc['advertising_api'] : array();
-		$ip_ctx = aviator_ad_resolve_ip_context($ad);
+		$ip_ctx = site_ad_resolve_ip_context($ad);
 		$playerIp = isset($ip_ctx['ip_sent_to_backend']) ? trim((string) $ip_ctx['ip_sent_to_backend']) : '127.0.0.1';
 	}
 
@@ -187,14 +187,14 @@ function game_demo_mirror_session_probe(array $abc, array $config, array $opts =
  * Full debug payload for /{lang}/demo/app/?debug_ip_check=1 (admin only).
  */
 function game_demo_app_build_debug_payload(array $abc, array $config) {
-	if (!function_exists('aviator_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
+	if (!function_exists('site_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
 		require_once ROOT_DIR . 'functions/advertising_api.php';
 	}
 
 	$params = game_demo_mirror_resolve_params($abc, $config);
 	$ad = (isset($abc['advertising_api']) && is_array($abc['advertising_api'])) ? $abc['advertising_api'] : array();
-	$ip_ctx = function_exists('aviator_ad_resolve_ip_context') ? aviator_ad_resolve_ip_context($ad) : array();
-	$country_ctx = function_exists('aviator_ad_resolve_country_context') ? aviator_ad_resolve_country_context($ad, $ip_ctx) : array();
+	$ip_ctx = function_exists('site_ad_resolve_ip_context') ? site_ad_resolve_ip_context($ad) : array();
+	$country_ctx = function_exists('site_ad_resolve_country_context') ? site_ad_resolve_country_context($ad, $ip_ctx) : array();
 
 	$serverProbe = game_demo_mirror_session_probe($abc, $config);
 	$clientPayload = game_demo_mirror_session_payload($params, '');
@@ -305,7 +305,7 @@ function game_demo_spribe_official_url(array $abc, array $config = array()) {
 }
 
 /**
- * Optional full-URL override ($config['aviator_demo_iframe_url']); otherwise same as game_demo_spribe_official_url().
+ * Optional full-URL override ($config['game_demo_iframe_url']); otherwise same as game_demo_spribe_official_url().
  *
  * @param array $abc Template globals (expects $abc['lang'] from router).
  * @param array $config Site config.
@@ -313,9 +313,6 @@ function game_demo_spribe_official_url(array $abc, array $config = array()) {
 function game_demo_spribe_launch_url(array $abc, array $config) {
 	if (!empty($config['game_demo_iframe_url']) && trim((string) $config['game_demo_iframe_url']) !== '') {
 		return trim((string) $config['game_demo_iframe_url']);
-	}
-	if (!empty($config['aviator_demo_iframe_url']) && trim((string) $config['aviator_demo_iframe_url']) !== '') {
-		return trim((string) $config['aviator_demo_iframe_url']);
 	}
 	return game_demo_spribe_official_url($abc, $config);
 }
@@ -446,21 +443,4 @@ function game_demo_filter_content_iframe($html, array $abc, array $config) {
 </script>';
 	}, $html);
 	return $replaced !== null ? $replaced : $html;
-}
-
-
-if (!function_exists('aviator_spribe_demo_currency_param')) {
-	function aviator_spribe_demo_currency_param(array $abc, array $config = array()) {
-		return game_demo_spribe_currency_param($abc, $config);
-	}
-}
-if (!function_exists('aviator_filter_demo_content_iframe')) {
-	function aviator_filter_demo_content_iframe($html, array $abc, array $config) {
-		return game_demo_filter_content_iframe($html, $abc, $config);
-	}
-}
-if (!function_exists('aviator_demo_app_build_debug_payload')) {
-	function aviator_demo_app_build_debug_payload(array $abc, array $config) {
-		return game_demo_app_build_debug_payload($abc, $config);
-	}
 }

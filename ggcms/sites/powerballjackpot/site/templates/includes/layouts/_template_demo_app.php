@@ -6,9 +6,9 @@
 global $abc, $config;
 $_desc = isset($abc['page']['description']) ? htmlspecialchars(strip_tags((string) $abc['page']['description']), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') : '';
 $_canon = '';
-if (function_exists('aviator_seo_public_origin')) {
+if (function_exists('site_seo_public_origin')) {
 	$path = isset($_SERVER['REQUEST_URI']) ? preg_replace('#\?.*#', '', (string) $_SERVER['REQUEST_URI']) : '/';
-	$_canon = aviator_seo_public_origin() . preg_replace('#/+#', '/', $path === '' ? '/' : $path);
+	$_canon = site_seo_public_origin() . preg_replace('#/+#', '/', $path === '' ? '/' : $path);
 }
 ?>
 <!DOCTYPE html>

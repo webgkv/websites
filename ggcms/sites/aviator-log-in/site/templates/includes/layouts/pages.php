@@ -66,25 +66,25 @@ if ($page_name === '' && !empty($abc['breadcrumb']) && is_array($abc['breadcrumb
 }
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
-require_once(ROOT_DIR . 'functions/aviator_quick_access.php');
+require_once(ROOT_DIR . 'functions/site_quick_access.php');
 require_once(ROOT_DIR . 'functions/author_func.php');
-$legal_page_slugs = function_exists('aviator_legal_page_slugs') ? aviator_legal_page_slugs() : array('about-us', 'terms-and-conditions', 'privacy-policy', 'responsible-gambling');
+$legal_page_slugs = function_exists('site_legal_page_slugs') ? site_legal_page_slugs() : array('about-us', 'terms-and-conditions', 'privacy-policy', 'responsible-gambling');
 // Legal pages: no mid-page CTA injection (terms/privacy/responsible; about-us keeps body CTAs from CMS only).
 $skip_cta_slugs = array('terms-and-conditions', 'privacy-policy', 'responsible-gambling');
 $page_html = isset($abc['content']) ? (string)$abc['content'] : '';
 
 if ($page_html !== '' && in_array('download', $page_slugs, true)) {
-	$page_html = aviator_download_apply_quick_access($page_html, $abc, $lang);
+	$page_html = site_download_apply_quick_access($page_html, $abc, $lang);
 }
 
 if ($page_html !== '' && $page_slug !== '' && !in_array($page_slug, $skip_cta_slugs, true)) {
 	$offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-	$buttons_html = aviator_cta_buttons_html($offer_path);
-	$page_html = aviator_insert_cta_evenly_in_content($page_html, $buttons_html, 3);
+	$buttons_html = site_cta_buttons_html($offer_path);
+	$page_html = site_insert_cta_evenly_in_content($page_html, $buttons_html, 3);
 }
-// One H1 per page: raw CMS HTML may contain <h1> that aviator_seo_clean_content downgrades to <h2>.
-$__page_html_for_h1 = ($page_html !== '' && function_exists('aviator_seo_clean_content'))
-	? aviator_seo_clean_content($page_html)
+// One H1 per page: raw CMS HTML may contain <h1> that site_seo_clean_content downgrades to <h2>.
+$__page_html_for_h1 = ($page_html !== '' && function_exists('site_seo_clean_content'))
+	? site_seo_clean_content($page_html)
 	: $page_html;
 $body_has_h1 = ($__page_html_for_h1 !== '' && preg_match('/<h1\\b/i', $__page_html_for_h1));
 ?>
@@ -96,9 +96,9 @@ $body_has_h1 = ($__page_html_for_h1 !== '' && preg_match('/<h1\\b/i', $__page_ht
                 <?php if ($page_name !== '' && !$body_has_h1): ?>
                 <h1><?= htmlspecialchars($page_name) ?></h1>
                 <?php endif; ?>
-                <?php if ($page_slug !== '' && !in_array($page_slug, $legal_page_slugs, true) && function_exists('aviator_render_author_byline')) echo aviator_render_author_byline($abc); ?>
+                <?php if ($page_slug !== '' && !in_array($page_slug, $legal_page_slugs, true) && function_exists('site_render_author_byline')) echo site_render_author_byline($abc); ?>
                 <div class="text page-content-from-db">
-                    <?= function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($page_html) : $page_html ?>
+                    <?= function_exists('site_seo_clean_content') ? site_seo_clean_content($page_html) : $page_html ?>
                 </div>
             </div>
         </div>

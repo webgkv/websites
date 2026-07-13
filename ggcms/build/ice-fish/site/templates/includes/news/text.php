@@ -64,11 +64,11 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
       <div class='container'>
         <div class="row">
           <div class="col-12">
-            <?php if (function_exists('aviator_render_author_byline')) echo aviator_render_author_byline($abc, array('date' => $q['date'] ?? '')); ?>
+            <?php if (function_exists('site_render_author_byline')) echo site_render_author_byline($abc, array('date' => $q['date'] ?? '')); ?>
             <!--text-->
             <div class='text'>
               <div class="text page-content-from-db">
-                <?= function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($q['text1'] . $q['text2']) : ($q['text1'] . $q['text2']) ?>
+                <?= function_exists('site_seo_clean_content') ? site_seo_clean_content($q['text1'] . $q['text2']) : ($q['text1'] . $q['text2']) ?>
               </div>
             </div>
             <!--text-->

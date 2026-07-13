@@ -35,7 +35,7 @@ try {
 
   function loadDeferredFlags(root) {
     if (!root) return;
-    root.querySelectorAll('img.aviator-lang-flag--deferred[data-src]').forEach(function (img) {
+    root.querySelectorAll('img.site-lang-flag--deferred[data-src]').forEach(function (img) {
       if (!img.getAttribute('src')) {
         img.setAttribute('src', img.getAttribute('data-src'));
       }
@@ -93,9 +93,9 @@ try {
       t.addEventListener('touchend', function (e) { openClose(e || window.event); }, { passive: false });
     }
     if (n) n.addEventListener('click', onNavClick, false);
-    var mobileLang = document.querySelector('.aviator-lang-switcher-mobile');
+    var mobileLang = document.querySelector('.site-lang-switcher-mobile');
     if (mobileLang) loadDeferredFlags(mobileLang);
-    var langSwitcher = document.querySelector('.aviator-lang-switcher.desktop-only.dropdown');
+    var langSwitcher = document.querySelector('.site-lang-switcher.desktop-only.dropdown');
     if (langSwitcher) {
       langSwitcher.addEventListener('show.bs.dropdown', function () {
         loadDeferredFlags(langSwitcher);

@@ -44,7 +44,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
       <div class='container'>
         <div class="row">
           <div class="col-12">
-            <?php if (function_exists('aviator_render_author_byline')) echo aviator_render_author_byline($abc, array('date' => $q['date'] ?? '')); ?>
+            <?php if (function_exists('site_render_author_byline')) echo site_render_author_byline($abc, array('date' => $q['date'] ?? '')); ?>
             <div class='text page-content-from-db about_content'>
               <?php
               require_once(ROOT_DIR . 'functions/cta_inject.php');
@@ -52,7 +52,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               require_once(ROOT_DIR . 'functions/content_exclude_tags.php');
               $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
               $full_text = (string)($q['text1'] ?? '') . (string)($q['text2'] ?? '');
-              $cta_btns = aviator_cta_buttons_html($offer_path);
+              $cta_btns = site_cta_buttons_html($offer_path);
 
               if (blog_promo_should_autoinsert_images($q)) {
               // Random promo images + buttons inside one post (at least 2 different images).
@@ -65,7 +65,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               	return '';
               };
 
-              $fallback_btns = aviator_cta_buttons_html($offer_path);
+              $fallback_btns = site_cta_buttons_html($offer_path);
 
               $promo1 = (!empty($q['blog_promo']) && is_array($q['blog_promo'])) ? $q['blog_promo'] : blog_promo_random();
               $promo2 = blog_promo_random();
@@ -106,29 +106,29 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               $promo2_html = $promo_html($promo2);
               $promo3_html = $promo_html($promo3);
 
-              $cta_positions = aviator_cta_even_paragraph_positions(
+              $cta_positions = site_cta_even_paragraph_positions(
               	aviator_count_content_paragraphs($full_text),
               	3
               );
               if (count($cta_positions) >= 1) {
-              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo1_html, array($cta_positions[0]));
+              	$full_text = site_insert_cta_after_paragraphs($full_text, $promo1_html, array($cta_positions[0]));
               }
               if (count($cta_positions) >= 2) {
-              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo2_html, array($cta_positions[1]));
+              	$full_text = site_insert_cta_after_paragraphs($full_text, $promo2_html, array($cta_positions[1]));
               }
               if (count($cta_positions) >= 3) {
-              	$full_text = aviator_insert_cta_after_paragraphs($full_text, $promo3_html, array($cta_positions[2]));
+              	$full_text = site_insert_cta_after_paragraphs($full_text, $promo3_html, array($cta_positions[2]));
               }
 
               } elseif ($cta_btns !== '') {
               // skip_random_images: CTA buttons only (noinc still respected).
-              $full_text = aviator_insert_cta_evenly_in_content($full_text, $cta_btns, 3);
+              $full_text = site_insert_cta_evenly_in_content($full_text, $cta_btns, 3);
               }
 
               $full_text = content_normalize_noads_links($full_text);
               $full_text = content_unwrap_exclude_tags($full_text);
 
-              echo function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($full_text) : $full_text;
+              echo function_exists('site_seo_clean_content') ? site_seo_clean_content($full_text) : $full_text;
               ?>
             </div>
           </div>

@@ -10,7 +10,7 @@ require_once ROOT_DIR . 'functions/author_profiles.php';
  *
  * @return string[]
  */
-function aviator_legal_page_slugs() {
+function site_legal_page_slugs() {
 	return array(
 		'about-us',
 		'terms-and-conditions',
@@ -19,9 +19,9 @@ function aviator_legal_page_slugs() {
 	);
 }
 
-function aviator_is_legal_page_slug($slug) {
+function site_is_legal_page_slug($slug) {
 	$slug = trim((string) $slug, "/ \t\n\r\0\x0B");
-	return $slug !== '' && in_array($slug, aviator_legal_page_slugs(), true);
+	return $slug !== '' && in_array($slug, site_legal_page_slugs(), true);
 }
 
 /**
@@ -30,7 +30,7 @@ function aviator_is_legal_page_slug($slug) {
  *
  * @return string[]
  */
-function aviator_system_page_slugs() {
+function site_system_page_slugs() {
 	return array(
 		'download',
 		'predictor',
@@ -39,9 +39,9 @@ function aviator_system_page_slugs() {
 	);
 }
 
-function aviator_is_system_page_slug($slug) {
+function site_is_system_page_slug($slug) {
 	$slug = trim((string) $slug, "/ \t\n\r\0\x0B");
-	return $slug !== '' && in_array($slug, aviator_system_page_slugs(), true);
+	return $slug !== '' && in_array($slug, site_system_page_slugs(), true);
 }
 
 /**
@@ -50,7 +50,7 @@ function aviator_is_system_page_slug($slug) {
  * @param array<string,mixed> $abc
  * @return string[]
  */
-function aviator_page_slugs_from_abc($abc) {
+function site_page_slugs_from_abc($abc) {
 	$slugs = array();
 	if (!is_array($abc) || empty($abc['page']) || !is_array($abc['page'])) {
 		return $slugs;
@@ -80,16 +80,16 @@ function aviator_page_slugs_from_abc($abc) {
  * @param array<string,mixed> $author site_authors row
  * @return array<string,mixed>
  */
-function aviator_author_apply_locale(array $author) {
+function site_author_apply_locale(array $author) {
 	return author_apply_locale($author);
 }
 
-function aviator_should_show_author_block($abc) {
+function site_should_show_author_block($abc) {
 	if (!is_array($abc)) {
 		return true;
 	}
-	foreach (aviator_page_slugs_from_abc($abc) as $slug) {
-		if (aviator_is_legal_page_slug($slug) || aviator_is_system_page_slug($slug)) {
+	foreach (site_page_slugs_from_abc($abc) as $slug) {
+		if (site_is_legal_page_slug($slug) || site_is_system_page_slug($slug)) {
 			return false;
 		}
 	}
@@ -106,8 +106,8 @@ function aviator_should_show_author_block($abc) {
  * @param array<string,mixed> $abc
  * @param array<string,mixed> $options optional: date (string)
  */
-function aviator_render_author_byline($abc, $options = array()) {
-	if (!aviator_should_show_author_block($abc)) {
+function site_render_author_byline($abc, $options = array()) {
+	if (!site_should_show_author_block($abc)) {
 		return '';
 	}
 
@@ -151,7 +151,7 @@ function aviator_render_author_byline($abc, $options = array()) {
 	return ob_get_clean();
 }
 
-/** @deprecated Use aviator_render_author_byline() at the top of content. */
-function aviator_render_author_block($abc) {
+/** @deprecated Use site_render_author_byline() at the top of content. */
+function site_render_author_block($abc) {
 	return '';
 }

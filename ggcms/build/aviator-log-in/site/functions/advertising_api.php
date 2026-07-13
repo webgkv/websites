@@ -6,7 +6,7 @@
  * Returns partner array: link_code, banner1, banner1_url, banner2, html (banner2 html).
  */
 
-function aviator_ad_first_valid_ip($value) {
+function site_ad_first_valid_ip($value) {
 	if (!is_string($value) || trim($value) === '') return '';
 	$parts = explode(',', $value);
 	foreach ($parts as $part) {
@@ -16,13 +16,13 @@ function aviator_ad_first_valid_ip($value) {
 	return '';
 }
 
-function aviator_ad_is_private_or_reserved_ip($ip) {
+function site_ad_is_private_or_reserved_ip($ip) {
 	if (!is_string($ip) || trim($ip) === '') return false;
 	$ip = trim($ip);
 	return filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) === false;
 }
 
-function aviator_ad_proxy_whitelist($ad_config = array()) {
+function site_ad_proxy_whitelist($ad_config = array()) {
 	$raw = isset($ad_config['trusted_proxy_ips']) ? $ad_config['trusted_proxy_ips'] : array();
 	$out = array();
 	if (is_string($raw)) {
@@ -37,16 +37,16 @@ function aviator_ad_proxy_whitelist($ad_config = array()) {
 	return $out;
 }
 
-function aviator_ad_resolve_ip_context($ad_config = array()) {
+function site_ad_resolve_ip_context($ad_config = array()) {
 	$remote_addr = isset($_SERVER['REMOTE_ADDR']) ? trim((string)$_SERVER['REMOTE_ADDR']) : '';
-	$cf_ip = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? aviator_ad_first_valid_ip((string)$_SERVER['HTTP_CF_CONNECTING_IP']) : '';
-	$xff_ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? aviator_ad_first_valid_ip((string)$_SERVER['HTTP_X_FORWARDED_FOR']) : '';
-	$x_real_ip = isset($_SERVER['HTTP_X_REAL_IP']) ? aviator_ad_first_valid_ip((string)$_SERVER['HTTP_X_REAL_IP']) : '';
-	$client_ip = isset($_SERVER['HTTP_CLIENT_IP']) ? aviator_ad_first_valid_ip((string)$_SERVER['HTTP_CLIENT_IP']) : '';
+	$cf_ip = isset($_SERVER['HTTP_CF_CONNECTING_IP']) ? site_ad_first_valid_ip((string)$_SERVER['HTTP_CF_CONNECTING_IP']) : '';
+	$xff_ip = isset($_SERVER['HTTP_X_FORWARDED_FOR']) ? site_ad_first_valid_ip((string)$_SERVER['HTTP_X_FORWARDED_FOR']) : '';
+	$x_real_ip = isset($_SERVER['HTTP_X_REAL_IP']) ? site_ad_first_valid_ip((string)$_SERVER['HTTP_X_REAL_IP']) : '';
+	$client_ip = isset($_SERVER['HTTP_CLIENT_IP']) ? site_ad_first_valid_ip((string)$_SERVER['HTTP_CLIENT_IP']) : '';
 	$trusted_real_ip = '';
-	$whitelist = aviator_ad_proxy_whitelist($ad_config);
+	$whitelist = site_ad_proxy_whitelist($ad_config);
 	$is_trusted_proxy = $remote_addr !== '' && isset($whitelist[$remote_addr]);
-	$auto_trust_forwarded = $remote_addr !== '' && aviator_ad_is_private_or_reserved_ip($remote_addr);
+	$auto_trust_forwarded = $remote_addr !== '' && site_ad_is_private_or_reserved_ip($remote_addr);
 	if ($is_trusted_proxy || $auto_trust_forwarded || empty($whitelist)) {
 		if ($cf_ip !== '') $trusted_real_ip = $cf_ip;
 		elseif ($xff_ip !== '') $trusted_real_ip = $xff_ip;
@@ -70,7 +70,7 @@ function aviator_ad_resolve_ip_context($ad_config = array()) {
 	);
 }
 
-function aviator_ad_resolve_country_context($ad_config = array(), $ip_ctx = array()) {
+function site_ad_resolve_country_context($ad_config = array(), $ip_ctx = array()) {
 	$manual_country = isset($ad_config['manual_country']) ? strtoupper(substr(trim((string)$ad_config['manual_country']), 0, 2)) : '';
 	if (!preg_match('/^[A-Z]{2}$/', $manual_country)) $manual_country = '';
 	$cf_country = isset($_SERVER['HTTP_CF_IPCOUNTRY']) ? strtoupper(substr(trim((string)$_SERVER['HTTP_CF_IPCOUNTRY']), 0, 2)) : '';
@@ -86,12 +86,12 @@ function aviator_ad_resolve_country_context($ad_config = array(), $ip_ctx = arra
 	else {
 		// Prefer local geo by resolved real IP for backend-facing country.
 		$ip_for_geo = isset($ip_ctx['ip_sent_to_backend']) ? (string)$ip_ctx['ip_sent_to_backend'] : '';
-		if ($ip_for_geo !== '') $geo_country = aviator_ad_country_by_ip($ip_for_geo);
+		if ($ip_for_geo !== '') $geo_country = site_ad_country_by_ip($ip_for_geo);
 		if ($geo_country !== '') {
 			$country = $geo_country;
 			$source = isset($ip_ctx['trusted_real_ip']) && (string)$ip_ctx['trusted_real_ip'] !== '' ? 'xff_ip' : 'remote_addr';
 		}
-		elseif ($cf_country !== '') {
+		elseif ($ip_for_geo === '' && $cf_country !== '') {
 			$country = $cf_country;
 			$source = 'cf_header';
 		}
@@ -113,7 +113,7 @@ function aviator_ad_resolve_country_context($ad_config = array(), $ip_ctx = arra
 /**
  * Resolve country code by IP (when no Cloudflare or proxy header). Uses ip-api.com, cache in data/.
  */
-function aviator_ad_country_by_ip($ip) {
+function site_ad_country_by_ip($ip) {
 	if (empty($ip) || !preg_match('/^[0-9a-f.:]{7,45}$/i', trim($ip))) return '';
 	$ip = trim($ip);
 	$cache_dir = defined('ROOT_DIR') ? (rtrim(ROOT_DIR, '/') . '/data') : (dirname(__DIR__) . '/data');
@@ -185,7 +185,7 @@ function aviator_ad_country_by_ip($ip) {
 /**
  * Server-side fetch must use JSON track API (/track/CODE/api or t.php?api=1), not browser redirect /track/CODE.
  */
-function aviator_ad_normalize_track_api_url($base) {
+function site_ad_normalize_track_api_url($base) {
 	$base = trim(rtrim((string)$base, '/'));
 	if ($base === '') {
 		return '';
@@ -205,7 +205,7 @@ function aviator_ad_normalize_track_api_url($base) {
 /**
  * Extract partners_offers.code from track/t.php URLs in api_sources (for banner API parity with click).
  */
-function aviator_ad_offer_code_from_sources($sources) {
+function site_ad_offer_code_from_sources($sources) {
 	if (!is_array($sources)) {
 		return '';
 	}
@@ -227,12 +227,12 @@ function aviator_ad_offer_code_from_sources($sources) {
 /**
  * Probe first api_sources URL (track) — same call as /go/ button click. For ?debug_ip_check=1.
  */
-function aviator_ad_debug_track_click_preview($ad_config, $country_ctx, $ip_ctx) {
+function site_ad_debug_track_click_preview($ad_config, $country_ctx, $ip_ctx) {
 	$sources = isset($ad_config['api_sources']) && is_array($ad_config['api_sources']) ? $ad_config['api_sources'] : array();
 	$token = isset($ad_config['token']) ? (string)$ad_config['token'] : '';
 	$out = array(
 		'note' => 'Button click uses api_sources (track), NOT b.php link_code. This probe mirrors /go/ handler.',
-		'offer_code_from_api_sources' => aviator_ad_offer_code_from_sources($sources),
+		'offer_code_from_api_sources' => site_ad_offer_code_from_sources($sources),
 		'probes' => array(),
 	);
 	$country_to_backend = isset($country_ctx['country_sent_to_backend']) ? (string)$country_ctx['country_sent_to_backend'] : '';
@@ -244,7 +244,7 @@ function aviator_ad_debug_track_click_preview($ad_config, $country_ctx, $ip_ctx)
 		if ($base === '') {
 			continue;
 		}
-		$url = aviator_ad_normalize_track_api_url($base);
+		$url = site_ad_normalize_track_api_url($base);
 		$sep = (strpos($url, '?') !== false) ? '&' : '?';
 		if (strpos($url, 'token=') === false && $token !== '') {
 			$url .= $sep . 'token=' . rawurlencode($token);
@@ -265,7 +265,7 @@ function aviator_ad_debug_track_click_preview($ad_config, $country_ctx, $ip_ctx)
 			'track_url_configured' => preg_replace('#token=[^&]+#', 'token=***', $base),
 			'track_url_called' => preg_replace('#token=[^&]+#', 'token=***', $url),
 			'uses_track_api_json' => (stripos($url, '/api') !== false || stripos($url, 'api=1') !== false) ? 1 : 0,
-			'offer_code_in_url' => aviator_ad_offer_code_from_sources(array($base)),
+			'offer_code_in_url' => site_ad_offer_code_from_sources(array($base)),
 			'http_code' => 0,
 			'error' => '',
 			'response_parsed' => null,
@@ -313,7 +313,7 @@ function aviator_ad_debug_track_click_preview($ad_config, $country_ctx, $ip_ctx)
 	return $out;
 }
 
-function aviator_ad_get_partner(&$api_debug = null) {
+function site_ad_get_partner(&$api_debug = null) {
 	global $abc;
 	$config = isset($abc['advertising_api']) ? $abc['advertising_api'] : array();
 	if (empty($config['mode']) || $config['mode'] !== 'api') {
@@ -328,7 +328,7 @@ function aviator_ad_get_partner(&$api_debug = null) {
 		return null;
 	}
 	$collect_debug = is_array($api_debug);
-	$ip_ctx = aviator_ad_resolve_ip_context($config);
+	$ip_ctx = site_ad_resolve_ip_context($config);
 	$ip_for_backend = isset($ip_ctx['ip_sent_to_backend']) ? trim((string)$ip_ctx['ip_sent_to_backend']) : '';
 	$lang_sent = isset($abc['lang']['url']) ? trim((string)$abc['lang']['url']) : '';
 	if ($lang_sent === '') $lang_sent = 'en';
@@ -337,7 +337,7 @@ function aviator_ad_get_partner(&$api_debug = null) {
 	if ($priority !== '' && in_array($priority, $api_sources_banners)) {
 		$api_sources_banners = array_merge(array($priority), array_diff($api_sources_banners, array($priority)));
 	}
-	$country_ctx = aviator_ad_resolve_country_context($config, $ip_ctx);
+	$country_ctx = site_ad_resolve_country_context($config, $ip_ctx);
 	$country = isset($country_ctx['country_sent_to_backend']) ? (string)$country_ctx['country_sent_to_backend'] : 'XX';
 	$cache_ttl = 300; // 5 min
 	$cache_dir = defined('ROOT_DIR') ? (rtrim(ROOT_DIR, '/') . '/data') : (dirname(__DIR__) . '/data');
@@ -374,7 +374,7 @@ function aviator_ad_get_partner(&$api_debug = null) {
 	}
 	$token = isset($config['token']) ? $config['token'] : '';
 	$link_sources = isset($config['api_sources']) && is_array($config['api_sources']) ? $config['api_sources'] : array();
-	$offer_code_auto = aviator_ad_offer_code_from_sources($link_sources);
+	$offer_code_auto = site_ad_offer_code_from_sources($link_sources);
 	if ($collect_debug) {
 		$api_debug['offer_code_auto_from_api_sources'] = $offer_code_auto;
 	}
@@ -446,7 +446,7 @@ function aviator_ad_get_partner(&$api_debug = null) {
 				'banner2' => isset($data['banner2']['code']) ? $data['banner2']['code'] : '',
 				'html' => isset($data['banner2']['html']) ? $data['banner2']['html'] : '',
 			);
-			aviator_ad_partner_banner_proxy($partner);
+			site_ad_partner_banner_proxy($partner);
 			$by_country[$country] = array('ts' => $now, 'data' => $partner);
 			$write_cache(array('last_success' => $partner, 'by_country' => $by_country));
 			break;
@@ -454,7 +454,7 @@ function aviator_ad_get_partner(&$api_debug = null) {
 	}
 	if ($partner === null && $last_success !== null) {
 		$partner = $last_success;
-		aviator_ad_partner_banner_proxy($partner);
+		site_ad_partner_banner_proxy($partner);
 		if ($collect_debug) {
 			$api_debug['used_last_success'] = true;
 			$api_debug['partner'] = $partner;
@@ -466,8 +466,8 @@ function aviator_ad_get_partner(&$api_debug = null) {
 }
 
 /** TTL for banner cache: re-check remote (by hash) when file is older than this (seconds). */
-if (!defined('AVIATOR_AD_BANNER_CACHE_TTL')) {
-	define('AVIATOR_AD_BANNER_CACHE_TTL', 3600);
+if (!defined('SITE_AD_BANNER_CACHE_TTL')) {
+	define('SITE_AD_BANNER_CACHE_TTL', 3600);
 }
 
 /**
@@ -476,7 +476,7 @@ if (!defined('AVIATOR_AD_BANNER_CACHE_TTL')) {
  * if unchanged keep cache (just touch), if changed save new image.
  * Frontend never sees backend domain. On fetch failure still returns proxy URL (image may 404).
  */
-function aviator_ad_banner_proxy_url($image_url) {
+function site_ad_banner_proxy_url($image_url) {
 	if (!is_string($image_url) || $image_url === '') return '';
 	if (!preg_match('#^https?://#i', $image_url)) return $image_url;
 	// Already our proxy URL — return as-is
@@ -487,7 +487,7 @@ function aviator_ad_banner_proxy_url($image_url) {
 	$file = $cache_dir . '/' . $id;
 	$ct_file = $file . '.ct';
 	$hash_file = $file . '.hash';
-	$ttl = defined('AVIATOR_AD_BANNER_CACHE_TTL') ? (int)AVIATOR_AD_BANNER_CACHE_TTL : 3600;
+	$ttl = defined('SITE_AD_BANNER_CACHE_TTL') ? (int)SITE_AD_BANNER_CACHE_TTL : 3600;
 
 	$need_fetch = false;
 	if (!is_file($file) || !is_readable($file)) {
@@ -559,14 +559,14 @@ function aviator_ad_banner_proxy_url($image_url) {
 /**
  * Replace all img src="https?://..." in HTML with our proxy URLs so backend is never exposed.
  */
-function aviator_ad_replace_html_banner_urls($html) {
+function site_ad_replace_html_banner_urls($html) {
 	if (!is_string($html) || $html === '') return $html;
-	// Remove agent-specific close icon that references /promo/close.svg (no such asset on Aviator).
+	// Remove agent-specific close icon that references /promo/close.svg (no such asset on this site).
 	$html = preg_replace('#<img[^>]+src=(["\'])/promo/close\.svg\1[^>]*>#i', '', $html);
 	return preg_replace_callback(
 		'#<img\s+([^>]*?)src=(["\'])(https?://[^"\']+)\2#i',
 		function ($m) {
-			$proxy = aviator_ad_banner_proxy_url($m[3]);
+			$proxy = site_ad_banner_proxy_url($m[3]);
 			return '<img ' . $m[1] . 'src=' . $m[2] . $proxy . $m[2];
 		},
 		$html
@@ -576,23 +576,23 @@ function aviator_ad_replace_html_banner_urls($html) {
 /**
  * Replace partner banner1_url and banner2 html image URLs with our proxy so backend URL is never exposed.
  */
-function aviator_ad_partner_banner_proxy(&$partner) {
+function site_ad_partner_banner_proxy(&$partner) {
 	if (!is_array($partner)) return;
 	if (!empty($partner['banner1_url'])) {
 		$url = $partner['banner1_url'];
 		if (preg_match('#^https?://#i', $url)) {
-			$partner['banner1_url'] = aviator_ad_banner_proxy_url($url);
+			$partner['banner1_url'] = site_ad_banner_proxy_url($url);
 		}
 	}
 	if (!empty($partner['html'])) {
-		$partner['html'] = aviator_ad_replace_html_banner_urls($partner['html']);
+		$partner['html'] = site_ad_replace_html_banner_urls($partner['html']);
 	}
 }
 
 /**
  * External / special href values that must not be rewritten to the offer tracker.
  */
-function aviator_ad_preserve_content_link_href($href) {
+function site_ad_preserve_content_link_href($href) {
 	$href = trim((string) $href);
 	if ($href !== '' && $href[0] === '#' && $href !== '#') {
 		return true;
@@ -633,7 +633,7 @@ function aviator_ad_preserve_content_link_href($href) {
  * Replace all content links (a[href] not anchor-only) with offer path. Used in page content and index text.
  * Closed <noads>...</noads> blocks keep original hrefs; unclosed <noads> is ignored.
  */
-function aviator_ad_replace_content_links($html, $offer_path) {
+function site_ad_replace_content_links($html, $offer_path) {
 	if ($offer_path === '' || $html === '') {
 		return $html;
 	}
@@ -645,7 +645,7 @@ function aviator_ad_replace_content_links($html, $offer_path) {
 		'/<a\s([^>]*?)href=(["\'])([^"\']*)\2([^>]*)>/i',
 		function ($m) use ($offer_path_esc) {
 			$href = trim((string) $m[3]);
-			if (aviator_ad_preserve_content_link_href($href)) {
+			if (site_ad_preserve_content_link_href($href)) {
 				return $m[0];
 			}
 			return '<a ' . $m[1] . 'href="' . $offer_path_esc . '"' . $m[4] . '>';

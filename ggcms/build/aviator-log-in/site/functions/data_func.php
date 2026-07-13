@@ -252,10 +252,10 @@ if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
 	} else {
 		$abc['counters_head'][] = '<script src="https://cdn.counter.dev/script.js" data-id="a555a78e-c2d3-41eb-95d4-8c319224b944" data-utcoffset="3"></script>';
 	}
-	if (!function_exists('aviator_counters_strip_onesignal_web_for_native_shell')) {
-		require_once dirname(__FILE__) . '/aviator_median_ua.php';
+	if (!function_exists('site_counters_strip_onesignal_web_for_native_shell')) {
+		require_once ROOT_DIR . 'functions/site_median_shell.php';
 	}
-	aviator_counters_strip_onesignal_web_for_native_shell($abc['counters_head'], $abc['counters_body'], $abc['counters_footer']);
+	site_counters_strip_onesignal_web_for_native_shell($abc['counters_head'], $abc['counters_body'], $abc['counters_footer']);
 	// Advertising API mode (token + api_sources for external backend)
 	$row_ad = mysql_select("SELECT value FROM `variables` WHERE `key` = 'advertising_api' LIMIT 1", 'row');
 	$abc['advertising_api'] = array('mode' => 'self', 'token' => '', 'api_sources' => array(), 'api_sources_priority' => '', 'api_url' => '', 'debug_ip_check' => 0, 'manual_country' => '', 'trusted_proxy_ips' => array());

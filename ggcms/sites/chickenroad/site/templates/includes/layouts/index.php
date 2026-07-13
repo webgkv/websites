@@ -48,12 +48,12 @@ if ($page_text !== '') {
 	if (function_exists('site_strip_page_content_lead')) {
 		$page_text = site_strip_page_content_lead($page_text);
 	}
-	if (!empty($abc['ad_offer_path']) && function_exists('aviator_ad_replace_content_links')) {
-		$page_text = aviator_ad_replace_content_links($page_text, $abc['ad_offer_path']);
+	if (!empty($abc['ad_offer_path']) && function_exists('site_ad_replace_content_links')) {
+		$page_text = site_ad_replace_content_links($page_text, $abc['ad_offer_path']);
 	}
 }
 if ($page_text !== ''): ?>
-        <section class="container py-5 page-content-from-db"><div class="row"><div class="col-12"><?= function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($page_text, true) : $page_text ?></div></div></section>
+        <section class="container py-5 page-content-from-db"><div class="row"><div class="col-12"><?= function_exists('site_seo_clean_content') ? site_seo_clean_content($page_text, true) : $page_text ?></div></div></section>
 <?php else: ?>
         <section class="container py-5"><div class="row"><div class="col-12"><p><?=htmlspecialchars(i18n('common|no_content'))?></p></div></div></section>
 <?php endif; ?>

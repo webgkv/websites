@@ -8,9 +8,9 @@ $demo_iframe_url = function_exists('site_game_demo_iframe_url') ? site_game_demo
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 require_once(ROOT_DIR . 'functions/site_quick_access.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = aviator_cta_buttons_html($offer_path);
+$buttons_html = site_cta_buttons_html($offer_path);
 $demo_content = site_demo_apply_quick_access($demo_content, $abc, $lang);
-$demo_content = aviator_insert_cta_evenly_in_content(
+$demo_content = site_insert_cta_evenly_in_content(
 	$demo_content,
 	$buttons_html,
 	3

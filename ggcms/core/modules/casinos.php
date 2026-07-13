@@ -119,8 +119,8 @@ if (!empty($u[3])) {
 		$abc['casino_single'] = $article;
 
 		$abc['casino_single']['text'] = isset($article['text']) ? $article['text'] : '';
-		if (!empty($abc['ad_offer_path']) && function_exists('aviator_ad_replace_content_links')) {
-			$abc['casino_single']['text'] = aviator_ad_replace_content_links($abc['casino_single']['text'], $abc['ad_offer_path']);
+		if (!empty($abc['ad_offer_path']) && function_exists('site_ad_replace_content_links')) {
+			$abc['casino_single']['text'] = site_ad_replace_content_links($abc['casino_single']['text'], $abc['ad_offer_path']);
 		}
 
 		foreach ($abc['languages'] as $i => $v) {

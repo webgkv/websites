@@ -5,7 +5,7 @@ $games_base = isset($abc['page']) ? get_url('page', $abc['page']) : '';
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = aviator_cta_buttons_html($offer_path);
+$buttons_html = site_cta_buttons_html($offer_path);
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5">
@@ -30,12 +30,12 @@ $buttons_html = aviator_cta_buttons_html($offer_path);
             <?php if ($game_name !== '' && !$game_body_has_h1) : ?>
             <h1><?= htmlspecialchars($game_name, ENT_QUOTES, 'UTF-8') ?></h1>
             <?php endif; ?>
-            <?php if (function_exists('aviator_render_author_byline')) echo aviator_render_author_byline($abc, array('date' => $game['date'] ?? ($game['updated_at'] ?? ''))); ?>
+            <?php if (function_exists('site_render_author_byline')) echo site_render_author_byline($abc, array('date' => $game['date'] ?? ($game['updated_at'] ?? ''))); ?>
             <div class="text page-content-from-db about_content">
                 <?php
                 $g_html = isset($game['text']) ? (string)$game['text'] : '';
-                echo aviator_insert_cta_evenly_in_content(
-                    function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($g_html) : $g_html,
+                echo site_insert_cta_evenly_in_content(
+                    function_exists('site_seo_clean_content') ? site_seo_clean_content($g_html) : $g_html,
                     $buttons_html,
                     3
                 );

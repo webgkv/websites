@@ -8,7 +8,7 @@ $guides_base = preg_replace('#/+#', '/', $guides_base);
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = aviator_cta_buttons_html($offer_path);
+$buttons_html = site_cta_buttons_html($offer_path);
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5">
@@ -30,7 +30,7 @@ $buttons_html = aviator_cta_buttons_html($offer_path);
         ?>
         <?php if (!empty($abc['guide_single'])) : ?>
             <?php $guide = $abc['guide_single']; ?>
-            <?php if (function_exists('aviator_render_author_byline')) echo aviator_render_author_byline($abc, array('date' => $guide['date'] ?? ($guide['updated_at'] ?? ''))); ?>
+            <?php if (function_exists('site_render_author_byline')) echo site_render_author_byline($abc, array('date' => $guide['date'] ?? ($guide['updated_at'] ?? ''))); ?>
             <div class="text page-content-from-db about_content">
                 <?php
                 $guide_html = isset($guide['text']) ? (string)$guide['text'] : '';
@@ -46,8 +46,8 @@ $buttons_html = aviator_cta_buttons_html($offer_path);
 						$guide_html
 					);
                 }
-                echo aviator_insert_cta_evenly_in_content(
-                    function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($guide_html) : $guide_html,
+                echo site_insert_cta_evenly_in_content(
+                    function_exists('site_seo_clean_content') ? site_seo_clean_content($guide_html) : $guide_html,
                     $buttons_html,
                     3
                 );

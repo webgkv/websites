@@ -39,10 +39,10 @@ if ($ad_tab === 'mode' && !empty($_POST) && $ad_test_clicked) {
 	$test_country = isset($_SERVER['HTTP_CF_IPCOUNTRY']) ? strtoupper(substr(trim($_SERVER['HTTP_CF_IPCOUNTRY']), 0, 2)) : '';
 	if ($test_country === '' || $test_country === 'T1') $test_country = 'XX';
 	if ($test_country === 'XX' && !empty($_SERVER['REMOTE_ADDR'])) {
-		if (!function_exists('aviator_ad_country_by_ip')) {
+		if (!function_exists('site_ad_country_by_ip')) {
 			require_once(defined('ROOT_DIR') ? ROOT_DIR . 'functions/advertising_api.php' : dirname(__DIR__, 2) . '/functions/advertising_api.php');
 		}
-		$by_ip = aviator_ad_country_by_ip($_SERVER['REMOTE_ADDR']);
+		$by_ip = site_ad_country_by_ip($_SERVER['REMOTE_ADDR']);
 		if ($by_ip !== '') $test_country = $by_ip;
 	}
 	$build_banner_url = function($base, $token, $country) {

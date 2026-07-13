@@ -313,8 +313,5 @@ function site_game_demo_iframe_url(array $config = array()) {
 	if (!empty($config['game_demo_iframe_url'])) {
 		return trim((string) $config['game_demo_iframe_url']);
 	}
-	if (!empty($config['aviator_demo_iframe_url'])) {
-		return trim((string) $config['aviator_demo_iframe_url']);
-	}
 	return '';
 }

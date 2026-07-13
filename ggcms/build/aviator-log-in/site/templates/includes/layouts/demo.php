@@ -6,14 +6,14 @@ $demo_content = (isset($abc['page_i18n']['content']) && (string)$abc['page_i18n'
 $demo_iframe_url = function_exists('site_game_demo_iframe_url') ? site_game_demo_iframe_url($config) : '';
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
-require_once(ROOT_DIR . 'functions/aviator_quick_access.php');
+require_once(ROOT_DIR . 'functions/site_quick_access.php');
 require_once(ROOT_DIR . 'functions/game_demo_embed.php');
 game_demo_ensure_spribe_provider();
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = aviator_cta_buttons_html($offer_path);
-$demo_content = aviator_demo_apply_quick_access($demo_content, $abc, $lang);
+$buttons_html = site_cta_buttons_html($offer_path);
+$demo_content = site_demo_apply_quick_access($demo_content, $abc, $lang);
 $demo_content = game_demo_filter_content_iframe($demo_content, $abc, $config);
-$demo_content = aviator_insert_cta_evenly_in_content(
+$demo_content = site_insert_cta_evenly_in_content(
 	$demo_content,
 	$buttons_html,
 	3

@@ -712,12 +712,12 @@ footer h5 {
 }
 
 /* Separate desktop/mobile language switchers */
-.aviator-lang-switcher-mobile {
+.site-lang-switcher-mobile {
     display: none;
 }
 
 /* Language switcher: flag + native label (Polylang-style); flags via flagcdn.com */
-.aviator-lang-flag {
+.site-lang-flag {
     width: 24px;
     height: 18px;
     object-fit: cover;
@@ -726,18 +726,18 @@ footer h5 {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
     vertical-align: middle;
 }
-.aviator-lang-flag--toggle {
+.site-lang-flag--toggle {
     margin-right: 2px;
 }
-.aviator-lang-item {
+.site-lang-item {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
-.aviator-lang-mobile-link.aviator-lang-item {
+.site-lang-mobile-link.site-lang-item {
     display: flex;
 }
-.aviator-lang-toggle {
+.site-lang-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -747,33 +747,33 @@ footer h5 {
     border-radius: 20px !important;
     color: #fff !important;
 }
-.aviator-lang-toggle:hover,
-.aviator-lang-toggle:focus {
+.site-lang-toggle:hover,
+.site-lang-toggle:focus {
     background: var(--cr-surface-hover) !important;
     color: #fff !important;
 }
-.aviator-lang-toggle-text {
+.site-lang-toggle-text {
     max-width: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.aviator-lang-dropdown.dropdown-menu {
+.site-lang-dropdown.dropdown-menu {
     max-height: none;
     overflow-y: visible;
     background: var(--cr-surface);
     border: 1px solid rgba(189, 193, 222, 0.18);
     border-radius: 12px;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item {
+.site-lang-dropdown .dropdown-item.site-lang-item {
     color: #fff;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:hover,
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:focus {
+.site-lang-dropdown .dropdown-item.site-lang-item:hover,
+.site-lang-dropdown .dropdown-item.site-lang-item:focus {
     background: rgba(255, 203, 13, 0.12);
     color: var(--cr-accent);
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item.active {
+.site-lang-dropdown .dropdown-item.site-lang-item.active {
     font-weight: 600;
     color: var(--cr-accent);
 }

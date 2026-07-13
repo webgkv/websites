@@ -167,7 +167,7 @@ $lang['common'] = array(
 	'footer_copyright'=>'Aviator Game © {year} Vérification des droits',
 	'hero_subtitle'=>'Jeu Aviator Crash',
 	'hero_cta'=>'Jouer à Aviator',
-	'cta_play_aviator_now'=>'Jouer à Aviator maintenant',
+	'cta_play_now'=>'Jouer à Aviator maintenant',
 	'cta_try_bonus'=>'Essayez le bonus',
 	// Games (categories)
 	'games_cat_all'=>'Tous',

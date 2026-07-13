@@ -17,7 +17,7 @@ function blog_promo_random() {
 
 	$offer_path = isset($abc['ad_offer_path']) && $abc['ad_offer_path'] !== '' ? $abc['ad_offer_path'] : $index_url . '#demo';
 
-	$cta_play_label = i18n('common|cta_play_aviator_now');
+	$cta_play_label = i18n('common|cta_play_now');
 	$cta_try_label = i18n('common|cta_try_bonus');
 	$brand = function_exists('site_brand_name') ? site_brand_name() : 'Ice Fish';
 	$hero = function_exists('site_brand_hero_image_path') ? site_brand_hero_image_path() : '/assets/images/ice-fish-hero.webp';

@@ -239,8 +239,8 @@ if ($abc['route_debug'] !== null) {
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "8a. after lang langid=" . $langid . "\n"; flush(); }
 
 // Wrong legacy path /{lang}/guides/{page-slug}/ → flat /{lang}/{page-slug}/ (fixes hreflang 404 cluster).
-if (function_exists('aviator_guides_flat_page_redirect_if_needed')) {
-	aviator_guides_flat_page_redirect_if_needed($u, $lang, $request_url);
+if (function_exists('site_guides_flat_page_redirect_if_needed')) {
+	site_guides_flat_page_redirect_if_needed($u, $lang, $request_url);
 }
 
 // Template vars
@@ -275,8 +275,8 @@ $abc['debug_ip_check'] = (isset($_GET['debug_ip_check']) && (string)$_GET['debug
 	|| !empty($config['debug_ip_check'])
 	|| !empty($abc['advertising_api']['debug_ip_check']);
 if (!empty($abc['debug_ip_check'])) {
-	$ip_ctx_dbg = aviator_ad_resolve_ip_context($abc['advertising_api']);
-	$country_ctx_dbg = aviator_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_dbg);
+	$ip_ctx_dbg = site_ad_resolve_ip_context($abc['advertising_api']);
+	$country_ctx_dbg = site_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_dbg);
 	$abc['debug_ip_check_info'] = array(
 		'remote_addr' => (string)$ip_ctx_dbg['remote_addr'],
 		'trusted_real_ip' => (string)$ip_ctx_dbg['trusted_real_ip'],
@@ -342,8 +342,8 @@ if ($go_code !== null && !empty($abc['advertising_api']['mode']) && $abc['advert
 		|| !empty($config['debug_ip_check'])
 		|| !empty($abc['advertising_api']['debug_ip_check']);
 	$debug_ip_check_full = (isset($_GET['debug_ip_check_full']) && (string)$_GET['debug_ip_check_full'] === '1');
-	$ip_ctx = aviator_ad_resolve_ip_context($abc['advertising_api']);
-	$country_ctx = aviator_ad_resolve_country_context($abc['advertising_api'], $ip_ctx);
+	$ip_ctx = site_ad_resolve_ip_context($abc['advertising_api']);
+	$country_ctx = site_ad_resolve_country_context($abc['advertising_api'], $ip_ctx);
 
 	// Backend API for redirects: explicit /api base from config (api_url).
 	$backend_api = isset($abc['advertising_api']['api_url']) ? trim((string)$abc['advertising_api']['api_url']) : '';
@@ -359,8 +359,8 @@ if ($go_code !== null && !empty($abc['advertising_api']['mode']) && $abc['advert
 		foreach ($sources as $base) {
 			$base = trim(rtrim((string)$base, '/'));
 			if ($base === '') continue;
-			$api_redirect_url = function_exists('aviator_ad_normalize_track_api_url')
-				? aviator_ad_normalize_track_api_url($base)
+			$api_redirect_url = function_exists('site_ad_normalize_track_api_url')
+				? site_ad_normalize_track_api_url($base)
 				: $base;
 			$sep = (strpos($api_redirect_url, '?') !== false) ? '&' : '?';
 			// Append token if not already present
@@ -539,7 +539,7 @@ $abc['ad_offer_path'] = '';
 $abc['debug_ads_banner_api'] = array();
 $abc['ad_render_mode'] = 'banner';
 if (!empty($abc['advertising_api']['mode']) && $abc['advertising_api']['mode'] === 'api') {
-	$abc['ad_partner'] = aviator_ad_get_partner($abc['debug_ads_banner_api']);
+	$abc['ad_partner'] = site_ad_get_partner($abc['debug_ads_banner_api']);
 	$lang_current = isset($abc['lang']['url']) ? trim((string)$abc['lang']['url']) : 'en';
 	if ($lang_current === '') {
 		$lang_current = 'en';
@@ -644,9 +644,9 @@ if (!empty($abc['advertising_api']['mode']) && $abc['advertising_api']['mode'] =
 		}
 		$abc['debug_ip_check_info']['banner_routing'] = $banner_routing;
 		$abc['debug_ip_check_info']['banner_link_code'] = !empty($abc['ad_partner']['code']) ? (string)$abc['ad_partner']['code'] : '';
-		$ip_ctx_dbg2 = aviator_ad_resolve_ip_context($abc['advertising_api']);
-		$country_ctx_dbg2 = aviator_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_dbg2);
-		$abc['debug_ip_check_info']['link_click_track'] = aviator_ad_debug_track_click_preview($abc['advertising_api'], $country_ctx_dbg2, $ip_ctx_dbg2);
+		$ip_ctx_dbg2 = site_ad_resolve_ip_context($abc['advertising_api']);
+		$country_ctx_dbg2 = site_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_dbg2);
+		$abc['debug_ip_check_info']['link_click_track'] = site_ad_debug_track_click_preview($abc['advertising_api'], $country_ctx_dbg2, $ip_ctx_dbg2);
 		$tr0 = isset($abc['debug_ip_check_info']['link_click_track']['probes'][0]) ? $abc['debug_ip_check_info']['link_click_track']['probes'][0] : array();
 		$abc['debug_ip_check_info']['important'] = array(
 			'banner_api_picks_link_for_href_only' => true,
@@ -710,8 +710,8 @@ if (!empty($abc['advertising_api']['mode']) && $abc['advertising_api']['mode'] =
 	$want_banner_dbg_full = isset($_GET['debug_ip_banner_check_full']) && (string)$_GET['debug_ip_banner_check_full'] === '1';
 	$want_banner_dbg_compact = isset($_GET['debug_ip_banner_check']) && (string)$_GET['debug_ip_banner_check'] === '1';
 	if ($want_banner_dbg_full || $want_banner_dbg_compact) {
-		$ip_ctx_b = aviator_ad_resolve_ip_context($abc['advertising_api']);
-		$country_ctx_b = aviator_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_b);
+		$ip_ctx_b = site_ad_resolve_ip_context($abc['advertising_api']);
+		$country_ctx_b = site_ad_resolve_country_context($abc['advertising_api'], $ip_ctx_b);
 		$frm = (!empty($abc['ad_render_debug']['final_render_mode'])) ? (string)$abc['ad_render_debug']['final_render_mode'] : '';
 		$pr = (!empty($abc['ad_render_debug']['placeholder_reason'])) ? (string)$abc['ad_render_debug']['placeholder_reason'] : '';
 		$has_code = !empty($abc['ad_partner']) && is_array($abc['ad_partner']) && !empty($abc['ad_partner']['code']);
@@ -978,69 +978,6 @@ function page_i18n_fields_current($page, $lang_id) {
 	return $out;
 }
 
-/**
- * Games section landing row: `pages` with module=pages and slug "games" in url/urlN OR in content_i18n (e.g. FR "jeux" only in i18n).
- * @return array{row: array, via: string}|null
- */
-function aviator_find_games_landing_page_row($current_lang_id) {
-	global $config;
-	if (!empty($config['games_landing_page_id'])) {
-		$gid = (int)$config['games_landing_page_id'];
-		if ($gid > 0) {
-			$row = mysql_select("SELECT * FROM `pages` WHERE id=" . $gid . " AND display=1 LIMIT 1", 'row', 0);
-			if ($row && isset($row['module']) && (string)$row['module'] === 'pages') {
-				return array('row' => $row, 'via' => 'config_games_landing_page_id');
-			}
-		}
-	}
-	$gl_or = array();
-	$col_rows = mysql_select("SHOW COLUMNS FROM `pages` LIKE 'url%'", 'rows', 0);
-	if (is_array($col_rows)) {
-		foreach ($col_rows as $c) {
-			if (empty($c['Field'])) {
-				continue;
-			}
-			$f = (string)$c['Field'];
-			if (!preg_match('/^url\\d*$/', $f)) {
-				continue;
-			}
-			$gl_or[] = '`' . str_replace('`', '``', $f) . "`='games'";
-		}
-	}
-	if (empty($gl_or)) {
-		$gl_or[] = "`url`='games'";
-	}
-	$row = mysql_select(
-		"SELECT * FROM `pages` WHERE display=1 AND module='pages' AND (" . implode(' OR ', $gl_or) . ") LIMIT 1",
-		'row',
-		0
-	);
-	if ($row) {
-		return array('row' => $row, 'via' => 'pages_column_equals_games');
-	}
-	if ($current_lang_id > 0 && @mysql_select("SHOW TABLES LIKE 'content_i18n'", 'num_rows') > 0) {
-		$esc = mysql_res('games');
-		$row = mysql_select("
-			SELECT p.*
-			FROM pages p
-			INNER JOIN content_i18n ci ON ci.entity='pages' AND ci.entity_id=p.id AND ci.lang_id=" . (int)$current_lang_id . "
-			WHERE p.display=1 AND p.module='pages'
-			  AND ci.status IN ('published','review','draft','missing')
-			  AND (
-				ci.url='" . $esc . "'
-				OR ci.url='/games'
-				OR ci.url='/games/'
-				OR ci.url='games/'
-			  )
-			ORDER BY FIELD(ci.status,'published','review','draft','missing') ASC, ci.id DESC
-			LIMIT 1
-		", 'row', 0);
-		if ($row) {
-			return array('row' => $row, 'via' => 'content_i18n_url_games');
-		}
-	}
-	return null;
-}
 
 	// Homepage or module condition
 
@@ -1180,7 +1117,7 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 			", 'row', 0);
 		}
 		if ($game_row) {
-			$gl_found = aviator_find_games_landing_page_row($current_lang_id);
+			$gl_found = site_find_games_landing_page_row($current_lang_id);
 			$games_landing = $gl_found && !empty($gl_found['row']) ? $gl_found['row'] : null;
 			if ($games_landing) {
 				$pi = page_i18n_fields_current($games_landing, $current_lang_id);
@@ -1403,8 +1340,8 @@ function aviator_find_games_landing_page_row($current_lang_id) {
 
 			}
 
-			if (function_exists('aviator_apply_flat_page_seo_links')) {
-				aviator_apply_flat_page_seo_links($abc, $u);
+			if (function_exists('site_apply_flat_page_seo_links')) {
+				site_apply_flat_page_seo_links($abc, $u);
 			}
 
 

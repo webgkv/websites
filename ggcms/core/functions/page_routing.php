@@ -3,8 +3,8 @@
  * Flat URL routing for nested `pages` rows (e.g. guides children at /{lang}/{slug}/).
  */
 
-if (!function_exists('aviator_guide_category_slugs')) {
-	function aviator_guide_category_slugs() {
+if (!function_exists('site_guide_category_slugs')) {
+	function site_guide_category_slugs() {
 		return array('analysis', 'bonus', 'how-to-win', 'signals', 'crash-gambling');
 	}
 }
@@ -12,8 +12,8 @@ if (!function_exists('aviator_guide_category_slugs')) {
 /**
  * True when the current page was loaded via /{lang}/{slug}/ (no extra path segments).
  */
-if (!function_exists('aviator_page_resolved_via_flat_url')) {
-	function aviator_page_resolved_via_flat_url($abc, $u) {
+if (!function_exists('site_page_resolved_via_flat_url')) {
+	function site_page_resolved_via_flat_url($abc, $u) {
 		if (empty($abc['page']) || !is_array($abc['page'])) {
 			return false;
 		}
@@ -31,8 +31,8 @@ if (!function_exists('aviator_page_resolved_via_flat_url')) {
 /**
  * 301 /{lang}/guides/{page-slug}/ → /{lang}/{page-slug}/ for nested pages (not guide categories).
  */
-if (!function_exists('aviator_guides_flat_page_redirect_if_needed')) {
-	function aviator_guides_flat_page_redirect_if_needed($u, $lang, $request_url) {
+if (!function_exists('site_guides_flat_page_redirect_if_needed')) {
+	function site_guides_flat_page_redirect_if_needed($u, $lang, $request_url) {
 		global $config, $langid;
 
 		$seg1 = isset($u[1]) ? trim((string)$u[1], '/') : '';
@@ -41,7 +41,7 @@ if (!function_exists('aviator_guides_flat_page_redirect_if_needed')) {
 		if ($seg1 !== 'guides' || $seg2 === '' || $seg3 !== '') {
 			return;
 		}
-		if (in_array($seg2, aviator_guide_category_slugs(), true)) {
+		if (in_array($seg2, site_guide_category_slugs(), true)) {
 			return;
 		}
 
@@ -116,9 +116,9 @@ if (!function_exists('aviator_guides_flat_page_redirect_if_needed')) {
 /**
  * hreflang + language switcher: nested pages under guides use flat /{lang}/{slug}/, not /{lang}/guides/{slug}/.
  */
-if (!function_exists('aviator_apply_flat_page_seo_links')) {
-	function aviator_apply_flat_page_seo_links(&$abc, $u) {
-		if (!aviator_page_resolved_via_flat_url($abc, $u)) {
+if (!function_exists('site_apply_flat_page_seo_links')) {
+	function site_apply_flat_page_seo_links(&$abc, $u) {
+		if (!site_page_resolved_via_flat_url($abc, $u)) {
 			return;
 		}
 		if (empty($abc['languages']) || !is_array($abc['languages'])) {
@@ -159,4 +159,68 @@ if (!function_exists('aviator_apply_flat_page_seo_links')) {
 			}
 		}
 	}
+}
+
+/**
+ * Games section landing row: `pages` with module=pages and slug "games" in url/urlN OR in content_i18n (e.g. FR "jeux" only in i18n).
+ * @return array{row: array, via: string}|null
+ */
+function site_find_games_landing_page_row($current_lang_id) {
+	global $config;
+	if (!empty($config['games_landing_page_id'])) {
+		$gid = (int)$config['games_landing_page_id'];
+		if ($gid > 0) {
+			$row = mysql_select("SELECT * FROM `pages` WHERE id=" . $gid . " AND display=1 LIMIT 1", 'row', 0);
+			if ($row && isset($row['module']) && (string)$row['module'] === 'pages') {
+				return array('row' => $row, 'via' => 'config_games_landing_page_id');
+			}
+		}
+	}
+	$gl_or = array();
+	$col_rows = mysql_select("SHOW COLUMNS FROM `pages` LIKE 'url%'", 'rows', 0);
+	if (is_array($col_rows)) {
+		foreach ($col_rows as $c) {
+			if (empty($c['Field'])) {
+				continue;
+			}
+			$f = (string)$c['Field'];
+			if (!preg_match('/^url\\d*$/', $f)) {
+				continue;
+			}
+			$gl_or[] = '`' . str_replace('`', '``', $f) . "`='games'";
+		}
+	}
+	if (empty($gl_or)) {
+		$gl_or[] = "`url`='games'";
+	}
+	$row = mysql_select(
+		"SELECT * FROM `pages` WHERE display=1 AND module='pages' AND (" . implode(' OR ', $gl_or) . ") LIMIT 1",
+		'row',
+		0
+	);
+	if ($row) {
+		return array('row' => $row, 'via' => 'pages_column_equals_games');
+	}
+	if ($current_lang_id > 0 && @mysql_select("SHOW TABLES LIKE 'content_i18n'", 'num_rows') > 0) {
+		$esc = mysql_res('games');
+		$row = mysql_select("
+			SELECT p.*
+			FROM pages p
+			INNER JOIN content_i18n ci ON ci.entity='pages' AND ci.entity_id=p.id AND ci.lang_id=" . (int)$current_lang_id . "
+			WHERE p.display=1 AND p.module='pages'
+			  AND ci.status IN ('published','review','draft','missing')
+			  AND (
+				ci.url='" . $esc . "'
+				OR ci.url='/games'
+				OR ci.url='/games/'
+				OR ci.url='games/'
+			  )
+			ORDER BY FIELD(ci.status,'published','review','draft','missing') ASC, ci.id DESC
+			LIMIT 1
+		", 'row', 0);
+		if ($row) {
+			return array('row' => $row, 'via' => 'content_i18n_url_games');
+		}
+	}
+	return null;
 }

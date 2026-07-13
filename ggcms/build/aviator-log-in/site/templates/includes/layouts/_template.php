@@ -1,4 +1,5 @@
 <?php
+require_once ROOT_DIR . 'functions/site_template_i18n.php';
 // Use normalized i18n fields when available (supports 14+ languages via content_i18n)
 $page_title_raw = '';
 $page_desc_raw = '';
@@ -83,32 +84,32 @@ $page_desc_raw = html_entity_decode((string)$page_desc_raw, ENT_QUOTES | ENT_HTM
 $abc['page']['title'] = trim(strip_tags((string)$page_title_raw));
 $abc['page']['description'] = trim(strip_tags((string)($page_desc_raw !== '' ? $page_desc_raw : $abc['page']['title'])));
 // Template always appends site name below; strip if import already included it (EN SEO exports often do).
-$aviator_site_title_suffix = ' | Aviator Log In';
-$_suf_len = strlen($aviator_site_title_suffix);
+$site_title_suffix = ' | Aviator Log In';
+$_suf_len = strlen($site_title_suffix);
 $_t = $abc['page']['title'];
-while ($_suf_len > 0 && strlen($_t) >= $_suf_len && substr($_t, -$_suf_len) === $aviator_site_title_suffix) {
+while ($_suf_len > 0 && strlen($_t) >= $_suf_len && substr($_t, -$_suf_len) === $site_title_suffix) {
 	$_t = rtrim(substr($_t, 0, -$_suf_len));
 }
 $abc['page']['title'] = $_t;
 // Avoid "… | Aviator | Aviator Log In": middle "| Aviator" is redundant with the template suffix.
-$_aviator_mid_brand = ' | Aviator';
-$_bml = strlen($_aviator_mid_brand);
-if ($abc['page']['title'] !== '' && strlen($abc['page']['title']) >= $_bml && substr($abc['page']['title'], -$_bml) === $_aviator_mid_brand) {
+$_site_mid_brand = ' | Aviator';
+$_bml = strlen($_site_mid_brand);
+if ($abc['page']['title'] !== '' && strlen($abc['page']['title']) >= $_bml && substr($abc['page']['title'], -$_bml) === $_site_mid_brand) {
 	$abc['page']['title'] = rtrim(substr($abc['page']['title'], 0, -$_bml));
 }
 // Avoid & in <title>: validators count literal HTML (&amp; = 5 chars). Prefer “and” for readable, shorter encoded output.
 $abc['page']['title'] = trim(preg_replace('/\s*&\s*/u', ' and ', $abc['page']['title']));
 // Bing flags title length **greater than** 70; cap escaped <title> inner text at 70 code points.
-$_aviator_title_max_inner = 70;
-$_aviator_title_inner_len = function ($base) use ($aviator_site_title_suffix) {
+$_site_title_max_inner = 70;
+$_site_title_inner_len = function ($base) use ($site_title_suffix) {
 	$inner = htmlspecialchars((string)$base, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')
-		. htmlspecialchars($aviator_site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+		. htmlspecialchars($site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 	if (function_exists('mb_strlen')) {
 		return (int)mb_strlen($inner, 'UTF-8');
 	}
 	return strlen($inner);
 };
-$_aviator_title_shrink_one = function ($base) {
+$_site_title_shrink_one = function ($base) {
 	$base = (string)$base;
 	if ($base === '') {
 		return '';
@@ -122,9 +123,9 @@ $_aviator_title_shrink_one = function ($base) {
 	}
 	return rtrim(substr($base, 0, -1));
 };
-while ($_aviator_title_inner_len($abc['page']['title']) > $_aviator_title_max_inner) {
+while ($_site_title_inner_len($abc['page']['title']) > $_site_title_max_inner) {
 	$prev = $abc['page']['title'];
-	$abc['page']['title'] = $_aviator_title_shrink_one($abc['page']['title']);
+	$abc['page']['title'] = $_site_title_shrink_one($abc['page']['title']);
 	if ($abc['page']['title'] === $prev || $abc['page']['title'] === '') {
 		break;
 	}
@@ -132,230 +133,18 @@ while ($_aviator_title_inner_len($abc['page']['title']) > $_aviator_title_max_in
 if (trim($abc['page']['title']) === '') {
 	$abc['page']['title'] = 'Aviator';
 }
-unset($_aviator_mid_brand, $_bml, $_aviator_title_max_inner, $_aviator_title_inner_len, $_aviator_title_shrink_one);
-$_aviator_doc_title_esc = htmlspecialchars($abc['page']['title'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-$_aviator_doc_suffix_esc = htmlspecialchars($aviator_site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-$_aviator_meta_desc_esc = htmlspecialchars((string)$abc['page']['description'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-if ($_aviator_meta_desc_esc === '') {
-	$_aviator_meta_desc_esc = htmlspecialchars($abc['page']['title'] . $aviator_site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+unset($_site_mid_brand, $_bml, $_site_title_max_inner, $_site_title_inner_len, $_site_title_shrink_one);
+$_site_doc_title_esc = htmlspecialchars($abc['page']['title'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$_site_doc_suffix_esc = htmlspecialchars($site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$_site_meta_desc_esc = htmlspecialchars((string)$abc['page']['description'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+if ($_site_meta_desc_esc === '') {
+	$_site_meta_desc_esc = htmlspecialchars($abc['page']['title'] . $site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 // Normalized language segment + home href (matches get_url / footer; avoids /hi// from trailing slashes in DB).
-$_aviator_lang_seg = isset($abc['lang']['url']) ? trim((string)$abc['lang']['url'], '/') : '';
-$_aviator_lang_base = ($_aviator_lang_seg !== '') ? '/' . $_aviator_lang_seg . '/' : '/';
-if (!function_exists('aviator_template_links_for_lang')) {
-	function aviator_template_links_for_lang($abc, $lang_url_raw) {
-		$links = isset($abc['links']) && is_array($abc['links']) ? $abc['links'] : array();
-		$candidates = array((string)$lang_url_raw, trim((string)$lang_url_raw, '/'));
-		$seen = array();
-		foreach ($candidates as $k) {
-			if ($k === '' || isset($seen[$k])) {
-				continue;
-			}
-			$seen[$k] = true;
-			if (isset($links[$k]) && is_array($links[$k]) && count($links[$k]) > 0) {
-				return $links[$k];
-			}
-		}
-		return null;
-	}
-}
-if (!function_exists('aviator_seo_public_origin')) {
-	/**
-	 * Absolute origin for canonical/hreflang (SEO → Structured canonical_base, else https://HTTP_HOST).
-	 */
-	function aviator_seo_public_origin() {
-		global $abc;
-		$cfg = isset($abc['seo_structured']) && is_array($abc['seo_structured']) ? $abc['seo_structured'] : array();
-		$b = isset($cfg['canonical_base']) ? trim((string)$cfg['canonical_base']) : '';
-		if ($b !== '') {
-			return rtrim($b, '/');
-		}
-		$host = isset($_SERVER['HTTP_HOST']) ? (string)$_SERVER['HTTP_HOST'] : '';
-		if ($host === '') {
-			return 'https://localhost';
-		}
-		return 'https://' . $host;
-	}
-}
-if (!function_exists('aviator_hreflang_code')) {
-	/**
-	 * BCP47 hreflang value: prefer languages.localization (e.g. uk, en-gb), not path segment (ua ≠ language).
-	 */
-	function aviator_hreflang_code($abc, $lang_url_segment) {
-		$u = strtolower(trim((string)$lang_url_segment, '/'));
-		if (!isset($abc['languages']) || !is_array($abc['languages'])) {
-			return ($u === 'ua') ? 'uk' : $u;
-		}
-		foreach ($abc['languages'] as $row) {
-			if (!is_array($row)) {
-				continue;
-			}
-			$row_u = strtolower(trim((string)($row['url'] ?? ''), '/'));
-			if ($row_u !== $u) {
-				continue;
-			}
-			$loc = isset($row['localization']) ? trim((string)$row['localization']) : '';
-			$loc = str_replace('_', '-', strtolower($loc));
-			if ($loc !== '' && preg_match('/^[a-z]{2,3}(-[a-z0-9]+)*$/i', $loc)) {
-				// BCP47: Ukrainian is `uk`; DB sometimes stores `ua` (country / legacy).
-				return ($loc === 'ua') ? 'uk' : $loc;
-			}
-			break;
-		}
-		if ($u === 'ua') {
-			return 'uk';
-		}
-		return $u;
-	}
-}
-if (!function_exists('aviator_lang_flag_country_code')) {
-	/**
-	 * Map languages.url segment (often ISO 639-1) to a flagcdn.com country code (ISO 3166-1 alpha-2).
-	 */
-	function aviator_lang_flag_country_code($url_seg) {
-		$u = strtolower(trim((string)$url_seg, '/'));
-		$map = array(
-			'en' => 'gb',
-			'fr' => 'fr',
-			'de' => 'de',
-			'es' => 'es',
-			'it' => 'it',
-			'pl' => 'pl',
-			'pt' => 'br',
-			'hi' => 'in',
-			'bn' => 'bd',
-			'ar' => 'sa',
-			'vi' => 'vn',
-			'az' => 'az',
-			'ru' => 'ru',
-			'nl' => 'nl',
-			'ua' => 'ua',
-			'tr' => 'tr',
-			'ja' => 'jp',
-			'zh' => 'cn',
-			'ko' => 'kr',
-			'cs' => 'cz',
-			'sv' => 'se',
-			'da' => 'dk',
-			'fi' => 'fi',
-			'no' => 'no',
-			'nb' => 'no',
-			'nn' => 'no',
-			'ro' => 'ro',
-			'el' => 'gr',
-			'he' => 'il',
-			'th' => 'th',
-			'id' => 'id',
-			'ms' => 'my',
-			'tl' => 'ph',
-			'fa' => 'ir',
-			'ur' => 'pk',
-			'sk' => 'sk',
-			'hu' => 'hu',
-			'bg' => 'bg',
-			'hr' => 'hr',
-			'sr' => 'rs',
-			'sl' => 'si',
-			'et' => 'ee',
-			'lv' => 'lv',
-			'lt' => 'lt',
-			'sq' => 'al',
-			'bs' => 'ba',
-			'mk' => 'mk',
-			'is' => 'is',
-			'ga' => 'ie',
-			'cy' => 'gb',
-			'eu' => 'es',
-			'ca' => 'es',
-			'gl' => 'es',
-			'lb' => 'lu',
-			'mt' => 'mt',
-			'hy' => 'am',
-			'ka' => 'ge',
-			'kk' => 'kz',
-			'uz' => 'uz',
-			'tg' => 'tj',
-			'ky' => 'kg',
-			'mn' => 'mn',
-			'ne' => 'np',
-			'si' => 'lk',
-			'my' => 'mm',
-			'km' => 'kh',
-			'lo' => 'la',
-			'fil' => 'ph',
-		);
-		if (isset($map[$u])) {
-			return $map[$u];
-		}
-		if (preg_match('/^[a-z]{2}$/', $u)) {
-			return $u;
-		}
-		return null;
-	}
-}
-if (!function_exists('aviator_lang_switcher_label')) {
-	/**
-	 * Native-style label for switcher (Polylang-like); falls back to DB languages.name.
-	 */
-	function aviator_lang_switcher_label($url_seg, $db_name = '') {
-		$d = trim((string)$db_name);
-		if ($d !== '') {
-			return $d;
-		}
-		$u = strtolower(trim((string)$url_seg, '/'));
-		$labels = array(
-			'en' => 'English',
-			'fr' => 'Français',
-			'de' => 'Deutsch',
-			'es' => 'Español',
-			'it' => 'Italiano',
-			'pl' => 'Polski',
-			'pt' => 'Português',
-			'hi' => 'हिन्दी',
-			'bn' => 'বাংলা',
-			'ar' => 'العربية',
-			'vi' => 'Tiếng Việt',
-			'az' => 'Azərbaycan',
-			'ru' => 'Русский',
-			'nl' => 'Nederlands',
-			'ua' => 'Українська',
-			'tr' => 'Türkçe',
-			'ja' => '日本語',
-			'zh' => '中文',
-			'ko' => '한국어',
-			'cs' => 'Čeština',
-			'sv' => 'Svenska',
-			'da' => 'Dansk',
-			'fi' => 'Suomi',
-			'no' => 'Norsk',
-			'nb' => 'Norsk',
-			'nn' => 'Norsk',
-			'ro' => 'Română',
-			'el' => 'Ελληνικά',
-			'he' => 'עברית',
-			'th' => 'ไทย',
-			'id' => 'Bahasa Indonesia',
-			'ms' => 'Bahasa Melayu',
-			'fa' => 'فارسی',
-			'ur' => 'اردو',
-			'sk' => 'Slovenčina',
-			'hu' => 'Magyar',
-			'bg' => 'Български',
-			'hr' => 'Hrvatski',
-			'sr' => 'Српски',
-			'sl' => 'Slovenščina',
-			'et' => 'Eesti',
-			'lv' => 'Latviešu',
-			'lt' => 'Lietuvių',
-		);
-		if (isset($labels[$u])) {
-			return $labels[$u];
-		}
-		return strtoupper($u);
-	}
-}
+$_site_lang_seg = isset($abc['lang']['url']) ? trim((string)$abc['lang']['url'], '/') : '';
+$_site_lang_base = ($_site_lang_seg !== '') ? '/' . $_site_lang_seg . '/' : '/';
 // <html lang>: BCP47 from DB localization when possible (e.g. path /ua/ → uk)
-$_aviator_html_lang = $_aviator_lang_seg !== '' ? aviator_hreflang_code($abc, $_aviator_lang_seg) : 'en';
+$_site_html_lang = $_site_lang_seg !== '' ? site_hreflang_code($abc, $_site_lang_seg) : 'en';
 
 // Minimal chrome + iframe only (no site header/footer/popups): /{lang}/demo/app/
 if (!empty($abc['layout']) && $abc['layout'] === 'demo_app') {
@@ -385,7 +174,7 @@ if (!empty($abc['layout']) && $abc['layout'] === 'demo_app') {
 ?>
 <!DOCTYPE html>
 <!-- layout v2: overflow/batting/burger fixes -->
-<html lang="<?= htmlspecialchars($_aviator_html_lang, ENT_QUOTES, 'UTF-8') ?>">
+<html lang="<?= htmlspecialchars($_site_html_lang, ENT_QUOTES, 'UTF-8') ?>">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
@@ -405,8 +194,8 @@ if ($_preload_hero !== '') {
 	echo '        <link rel="preload" as="image" href="' . htmlspecialchars($_preload_hero, ENT_QUOTES, 'UTF-8') . '" fetchpriority="high">' . "\n";
 }
 ?>
-        <title><?=$_aviator_doc_title_esc?><?=$_aviator_doc_suffix_esc?></title>
-        <meta name="description" content="<?=$_aviator_meta_desc_esc?>">
+        <title><?=$_site_doc_title_esc?><?=$_site_doc_suffix_esc?></title>
+        <meta name="description" content="<?=$_site_meta_desc_esc?>">
 <?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
         <meta name="theme-color" content="#151b24">
         <meta name="mobile-web-app-capable" content="yes">
@@ -467,7 +256,7 @@ if ($_preload_hero !== '') {
             window._burgerDebug.inited = true;
             function loadDeferredFlags(root) {
               if (!root) return;
-              root.querySelectorAll('img.aviator-lang-flag--deferred[data-src]').forEach(function (img) {
+              root.querySelectorAll('img.site-lang-flag--deferred[data-src]').forEach(function (img) {
                 if (!img.getAttribute('src')) img.setAttribute('src', img.getAttribute('data-src'));
               });
             }
@@ -536,11 +325,11 @@ if ($_preload_hero !== '') {
       $enabled_lang_urls = array_values(array_filter(array_unique($enabled_lang_urls)));
 
       /** @var array<string,true> Dedupe alternate hreflangs (fixes duplicate `<link>` when two DB rows collapse to same code). */
-      $aviator_seen_hreflang_codes = array();
+      $site_seen_hreflang_codes = array();
 
-      $seo_origin = aviator_seo_public_origin();
-      $canon_path = $_aviator_lang_base;
-      $_canon_ln = aviator_template_links_for_lang($abc, isset($abc['lang']['url']) ? $abc['lang']['url'] : '');
+      $seo_origin = site_seo_public_origin();
+      $canon_path = $_site_lang_base;
+      $_canon_ln = site_template_links_for_lang($abc, isset($abc['lang']['url']) ? $abc['lang']['url'] : '');
       if ($_canon_ln !== null) {
           $canon_path = preg_replace('#/+#', '/', '/' . implode('/', $_canon_ln) . '/');
       }
@@ -557,7 +346,7 @@ if ($_preload_hero !== '') {
           $xdef_lang_url = is_array($first_lang) && isset($first_lang['url']) ? (string)$first_lang['url'] : '';
       }
       $xdef_path = '/' . trim($xdef_lang_url, '/') . '/';
-      $_xdef_ln = aviator_template_links_for_lang($abc, $xdef_lang_url);
+      $_xdef_ln = site_template_links_for_lang($abc, $xdef_lang_url);
       if ($_xdef_ln !== null) {
           $xdef_path = preg_replace('#/+#', '/', '/' . implode('/', $_xdef_ln) . '/');
       }
@@ -569,35 +358,35 @@ if ($_preload_hero !== '') {
           $lu = trim((string)$_hreflang_raw, '/');
           if ($lu === '') continue;
           $path = '/' . $lu . '/';
-          $_alt_ln = aviator_template_links_for_lang($abc, $_hreflang_raw);
+          $_alt_ln = site_template_links_for_lang($abc, $_hreflang_raw);
           if ($_alt_ln !== null) {
               $path = preg_replace('#/+#', '/', '/' . implode('/', $_alt_ln) . '/');
           }
           $href = $seo_origin . $path;
-          $hreflang = aviator_hreflang_code($abc, $_hreflang_raw);
+          $hreflang = site_hreflang_code($abc, $_hreflang_raw);
           $hreflang_lc = strtolower($hreflang);
-          if ($hreflang_lc !== '' && isset($aviator_seen_hreflang_codes[$hreflang_lc])) {
+          if ($hreflang_lc !== '' && isset($site_seen_hreflang_codes[$hreflang_lc])) {
               continue;
           }
-          $aviator_seen_hreflang_codes[$hreflang_lc] = true;
+          $site_seen_hreflang_codes[$hreflang_lc] = true;
 ?>
         <link rel='alternate' hreflang='<?=htmlspecialchars($hreflang)?>' href='<?=htmlspecialchars($href)?>'>
 <?php endforeach; ?>
 <?php
-      $_aviator_og_type = (!empty($abc['blog_single']) || !empty($abc['news_single']) || !empty($abc['game_single']) || !empty($abc['guide_single']) || !empty($abc['casino_single'])) ? 'article' : 'website';
-      $_aviator_og_title = htmlspecialchars(($abc['page']['title'] ?? '') . $aviator_site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-      $_aviator_og_image_abs = htmlspecialchars(rtrim($seo_origin, '/') . '/assets/images/aviator-main.webp', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+      $_site_og_type = (!empty($abc['blog_single']) || !empty($abc['news_single']) || !empty($abc['game_single']) || !empty($abc['guide_single']) || !empty($abc['casino_single'])) ? 'article' : 'website';
+      $_site_og_title = htmlspecialchars(($abc['page']['title'] ?? '') . $site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+      $_site_og_image_abs = htmlspecialchars(rtrim($seo_origin, '/') . '/assets/images/aviator-main.webp', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
-        <meta property="og:type" content="<?=$_aviator_og_type?>">
+        <meta property="og:type" content="<?=$_site_og_type?>">
         <meta property="og:url" content="<?=htmlspecialchars($canonical_href, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')?>">
-        <meta property="og:title" content="<?=$_aviator_og_title?>">
-        <meta property="og:description" content="<?=$_aviator_meta_desc_esc?>">
-        <meta property="og:image" content="<?=$_aviator_og_image_abs?>">
+        <meta property="og:title" content="<?=$_site_og_title?>">
+        <meta property="og:description" content="<?=$_site_meta_desc_esc?>">
+        <meta property="og:image" content="<?=$_site_og_image_abs?>">
         <meta property="og:site_name" content="<?= htmlspecialchars(!empty($abc['seo_structured']['site_name']) ? (string)$abc['seo_structured']['site_name'] : 'Aviator Log In', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="<?=$_aviator_og_title?>">
-        <meta name="twitter:description" content="<?=$_aviator_meta_desc_esc?>">
-        <meta name="twitter:image" content="<?=$_aviator_og_image_abs?>">
+        <meta name="twitter:title" content="<?=$_site_og_title?>">
+        <meta name="twitter:description" content="<?=$_site_meta_desc_esc?>">
+        <meta name="twitter:image" content="<?=$_site_og_image_abs?>">
 <?php
       // Structured data: WebPage + BreadcrumbList + FAQPage (from seo_structured)
       $canonical_url = $canonical_href;
@@ -703,7 +492,7 @@ if (empty($enabled_lang_urls)) {
 $enabled_lang_urls = array_values(array_filter(array_unique($enabled_lang_urls)));
 
 // Language switcher rows: href, native label, flag country code (flagcdn)
-$aviator_lang_switcher_items = array();
+$site_lang_switcher_items = array();
 foreach ($enabled_lang_urls as $_switch_raw) {
 	$lu = trim((string)$_switch_raw, '/');
 	if ($lu === '') {
@@ -717,27 +506,27 @@ foreach ($enabled_lang_urls as $_switch_raw) {
 		}
 	}
 	$path = '/' . $lu . '/';
-	$_switch_ln = aviator_template_links_for_lang($abc, $_switch_raw);
+	$_switch_ln = site_template_links_for_lang($abc, $_switch_raw);
 	if ($_switch_ln !== null) {
 		$path = preg_replace('#/+#', '/', '/' . implode('/', $_switch_ln) . '/');
 	}
-	$aviator_lang_switcher_items[$lu] = array(
+	$site_lang_switcher_items[$lu] = array(
 		'href' => $path,
-		'label' => aviator_lang_switcher_label($lu, $dbname),
-		'flag_cc' => aviator_lang_flag_country_code($lu),
+		'label' => site_lang_switcher_label($lu, $dbname),
+		'flag_cc' => site_lang_flag_country_code($lu),
 	);
 }
-$_aviator_cur_lu = $_aviator_lang_seg !== '' ? $_aviator_lang_seg : trim((string)($abc['lang']['url'] ?? ''), '/');
-$_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_items[$_aviator_cur_lu]))
-	? $aviator_lang_switcher_items[$_aviator_cur_lu]
-	: (count($aviator_lang_switcher_items) ? reset($aviator_lang_switcher_items) : null);
+$_site_cur_lu = $_site_lang_seg !== '' ? $_site_lang_seg : trim((string)($abc['lang']['url'] ?? ''), '/');
+$_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_site_cur_lu]))
+	? $site_lang_switcher_items[$_site_cur_lu]
+	: (count($site_lang_switcher_items) ? reset($site_lang_switcher_items) : null);
 ?>
 
         <!-- header section start -->
         <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container">
-                    <a class="navbar-brand" href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>">
+                    <a class="navbar-brand" href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>">
                         <?php
                         $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.png') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.png') ? filemtime(ROOT_DIR.'assets/images/logo.png') : time());
                         ?>
@@ -746,18 +535,18 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
                     <div class="menu-toggle" role="button" tabindex="0" aria-label="Toggle navigation" id="navbarToggler" onclick="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)" ontouchend="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)"><i class="fa fa-bars"></i></div>
                     <div class="navbar-collapse justify-content-end navbarNav" id="navbarNav">
 <?=html_render('menu/list',$abc['menu'])?>
-                        <div class="aviator-lang-switcher-mobile">
-                            <div class="aviator-lang-mobile-title">Language</div>
-                            <ul class="aviator-lang-mobile-list">
-<?php foreach ($aviator_lang_switcher_items as $lu => $sw):
+                        <div class="site-lang-switcher-mobile">
+                            <div class="site-lang-mobile-title">Language</div>
+                            <ul class="site-lang-mobile-list">
+<?php foreach ($site_lang_switcher_items as $lu => $sw):
 	$href = $sw['href'];
 	$lbl = $sw['label'];
 	$fcc = isset($sw['flag_cc']) ? $sw['flag_cc'] : null;
 ?>
                                 <li>
-                                    <a class="aviator-lang-mobile-link aviator-lang-item<?=($lu === $_aviator_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>">
+                                    <a class="site-lang-mobile-link site-lang-item<?=($lu === $_site_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>">
 <?php if ($fcc !== null && $fcc !== ''): ?>
-                                        <?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_aviator_lang_seg) ?>
+                                        <?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_site_lang_seg) ?>
 <?php endif; ?>
                                         <span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span>
                                     </a>
@@ -767,25 +556,25 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
                         </div>
                     </div>
 
-                    <div class="aviator-lang-switcher desktop-only dropdown" style="margin-left:16px;">
-                        <button class="btn btn-outline-light btn-sm dropdown-toggle aviator-lang-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"<?php if ($_aviator_cur_switch): ?> aria-label="<?= htmlspecialchars('Language: ' . $_aviator_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?>"<?php endif; ?>>
-<?php if ($_aviator_cur_switch):
-	$_cf = isset($_aviator_cur_switch['flag_cc']) ? $_aviator_cur_switch['flag_cc'] : null;
+                    <div class="site-lang-switcher desktop-only dropdown" style="margin-left:16px;">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle site-lang-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true"<?php if ($_site_cur_switch): ?> aria-label="<?= htmlspecialchars('Language: ' . $_site_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?>"<?php endif; ?>>
+<?php if ($_site_cur_switch):
+	$_cf = isset($_site_cur_switch['flag_cc']) ? $_site_cur_switch['flag_cc'] : null;
 	if ($_cf !== null && $_cf !== ''): ?>
-                            <?= site_template_lang_flag_img($_cf, $_aviator_cur_switch['label'], false) ?>
+                            <?= site_template_lang_flag_img($_cf, $_site_cur_switch['label'], false) ?>
 <?php endif; ?>
-                            <span class="aviator-lang-toggle-text"><?= htmlspecialchars($_aviator_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?></span>
+                            <span class="site-lang-toggle-text"><?= htmlspecialchars($_site_cur_switch['label'], ENT_QUOTES, 'UTF-8') ?></span>
 <?php else: ?>
-                            <?= htmlspecialchars(mb_strtoupper($_aviator_cur_lu !== '' ? $_aviator_cur_lu : 'EN'), ENT_QUOTES, 'UTF-8') ?>
+                            <?= htmlspecialchars(mb_strtoupper($_site_cur_lu !== '' ? $_site_cur_lu : 'EN'), ENT_QUOTES, 'UTF-8') ?>
 <?php endif; ?>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end aviator-lang-dropdown" aria-labelledby="langDropdown">
-<?php foreach ($aviator_lang_switcher_items as $lu => $sw):
+                        <ul class="dropdown-menu dropdown-menu-end site-lang-dropdown" aria-labelledby="langDropdown">
+<?php foreach ($site_lang_switcher_items as $lu => $sw):
 	$href = $sw['href'];
 	$lbl = $sw['label'];
 	$fcc = isset($sw['flag_cc']) ? $sw['flag_cc'] : null;
 ?>
-                            <li><a class="dropdown-item aviator-lang-item<?=($lu === $_aviator_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>"><?php if ($fcc !== null && $fcc !== ''): ?><?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_aviator_lang_seg) ?><?php endif; ?><span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span></a></li>
+                            <li><a class="dropdown-item site-lang-item<?=($lu === $_site_lang_seg) ? ' active' : ''?>" href="<?= htmlspecialchars($href, ENT_QUOTES, 'UTF-8') ?>"><?php if ($fcc !== null && $fcc !== ''): ?><?= site_template_lang_flag_img($fcc, $lbl, $lu !== $_site_lang_seg) ?><?php endif; ?><span><?= htmlspecialchars($lbl, ENT_QUOTES, 'UTF-8') ?></span></a></li>
 <?php endforeach; ?>
                         </ul>
                     </div>
@@ -803,11 +592,11 @@ $_aviator_cur_switch = ($_aviator_cur_lu !== '' && isset($aviator_lang_switcher_
         <footer>
             <div class="container">
                 <nav class="footer-nav">
-                    <a href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>about-us/"><?=i18n('common|footer_about_us')?></a>
-                    <a href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>terms-and-conditions/"><?=i18n('common|footer_terms')?></a>
-                    <a href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>privacy-policy/"><?=i18n('common|footer_privacy')?></a>
-                    <a href="<?= htmlspecialchars($_aviator_lang_base, ENT_QUOTES, 'UTF-8') ?>responsible-gambling/"><?=i18n('common|footer_responsible')?></a>
-                    <a href="<?= htmlspecialchars(rtrim($_aviator_lang_base, '/') . '/authors/', ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(function_exists('author_list_title') ? author_list_title() : 'Authors', ENT_QUOTES, 'UTF-8') ?></a>
+                    <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>about-us/"><?=i18n('common|footer_about_us')?></a>
+                    <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>terms-and-conditions/"><?=i18n('common|footer_terms')?></a>
+                    <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>privacy-policy/"><?=i18n('common|footer_privacy')?></a>
+                    <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>responsible-gambling/"><?=i18n('common|footer_responsible')?></a>
+                    <a href="<?= htmlspecialchars(rtrim($_site_lang_base, '/') . '/authors/', ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(function_exists('author_list_title') ? author_list_title() : 'Authors', ENT_QUOTES, 'UTF-8') ?></a>
                 </nav>
                 <div class="footer-responsible">
                     <p><strong><?=i18n('common|footer_responsible')?>:</strong> <?=i18n('common|footer_responsible_text')?></p>

@@ -40,8 +40,8 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 	}
 
 	// Advertising API: replace content links with offer path
-	if (!empty($abc['ad_offer_path']) && function_exists('aviator_ad_replace_content_links')) {
-		$abc['content'] = aviator_ad_replace_content_links($abc['content'], $abc['ad_offer_path']);
+	if (!empty($abc['ad_offer_path']) && function_exists('site_ad_replace_content_links')) {
+		$abc['content'] = site_ad_replace_content_links($abc['content'], $abc['ad_offer_path']);
 	}
 	if ($demo_apk_route) {
 		if (function_exists('apk_install_normalize_apk_link_in_content')) {

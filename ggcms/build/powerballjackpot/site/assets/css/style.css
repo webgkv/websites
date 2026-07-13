@@ -669,12 +669,12 @@ footer h5 {
 }
 
 /* Separate desktop/mobile language switchers */
-.aviator-lang-switcher-mobile {
+.site-lang-switcher-mobile {
     display: none;
 }
 
 /* Language switcher: flag + native label (Polylang-style); flags via flagcdn.com */
-.aviator-lang-flag {
+.site-lang-flag {
     width: 24px;
     height: 18px;
     object-fit: cover;
@@ -683,18 +683,18 @@ footer h5 {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
     vertical-align: middle;
 }
-.aviator-lang-flag--toggle {
+.site-lang-flag--toggle {
     margin-right: 2px;
 }
-.aviator-lang-item {
+.site-lang-item {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
-.aviator-lang-mobile-link.aviator-lang-item {
+.site-lang-mobile-link.site-lang-item {
     display: flex;
 }
-.aviator-lang-toggle {
+.site-lang-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -704,33 +704,33 @@ footer h5 {
     border-radius: 20px !important;
     color: #fff !important;
 }
-.aviator-lang-toggle:hover,
-.aviator-lang-toggle:focus {
+.site-lang-toggle:hover,
+.site-lang-toggle:focus {
     background: var(--cr-surface-hover) !important;
     color: #fff !important;
 }
-.aviator-lang-toggle-text {
+.site-lang-toggle-text {
     max-width: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.aviator-lang-dropdown.dropdown-menu {
+.site-lang-dropdown.dropdown-menu {
     max-height: none;
     overflow-y: visible;
     background: var(--cr-surface);
     border: 1px solid rgba(189, 193, 222, 0.18);
     border-radius: 12px;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item {
+.site-lang-dropdown .dropdown-item.site-lang-item {
     color: #fff;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:hover,
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:focus {
+.site-lang-dropdown .dropdown-item.site-lang-item:hover,
+.site-lang-dropdown .dropdown-item.site-lang-item:focus {
     background: rgba(255, 203, 13, 0.12);
     color: var(--cr-accent);
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item.active {
+.site-lang-dropdown .dropdown-item.site-lang-item.active {
     font-weight: 600;
     color: var(--cr-accent);
 }
@@ -1726,23 +1726,42 @@ h1 {
 }
 .demo-quick-access__primary,
 .demo-quick-access__store {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.7rem;
-    line-height: 1.2;
+    padding: 0.95rem 1.85rem;
+    border-radius: 18px;
+    clip-path: none;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: 900;
+    line-height: 1.2;
+    position: relative;
+    overflow: visible;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
-
+.demo-quick-access__primary {
+    min-height: 3.75rem;
+}
+.demo-quick-access__primary::before,
+.demo-quick-access__primary::after,
+.demo-quick-access__store::before,
+.demo-quick-access__store::after {
+    display: none;
+}
 .demo-quick-access__primary {
     min-width: min(100%, 18rem);
-    min-height: auto;
+    color: var(--cr-btn-text);
+    background: var(--cr-btn-gradient);
+    box-shadow: var(--cr-btn-shadow);
 }
-
 .demo-quick-access__primary:hover,
 .demo-quick-access__store:hover {
+    transform: translateY(-1px);
+    color: var(--cr-btn-text);
     text-decoration: none;
+    background: var(--cr-btn-gradient-hover);
+    box-shadow: var(--cr-btn-shadow-hover);
 }
 .demo-quick-access__stores {
     display: flex;
@@ -1765,15 +1784,27 @@ h1 {
     background: transparent;
     border: 1px solid var(--cr-accent);
     box-shadow: var(--cr-btn-shadow);
+    text-align: center;
+}
+.demo-quick-access__store-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    max-width: 100%;
+}
+.demo-quick-access__store-text {
+    display: inline;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 .demo-quick-access__primary:focus,
 .demo-quick-access__store:focus {
     outline: 2px solid rgba(255, 255, 255, 0.7);
     outline-offset: 3px;
 }
-.demo-quick-access__store span {
-    display: block;
-    line-height: 1.2;
+.page-content-from-db .about_content .demo-quick-access {
+    text-align: center;
 }
 .demo-quick-access__store-icon {
     flex: 0 0 auto !important;

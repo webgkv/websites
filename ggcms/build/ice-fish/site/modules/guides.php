@@ -94,8 +94,8 @@ if (!empty($u[4])) {
                 return '<div class="guide-img-center">' . $m[0] . '</div>';
             }, $guide_text);
             $abc['guide_single']['text'] = $guide_text;
-            if (!empty($abc['ad_offer_path']) && function_exists('aviator_ad_replace_content_links')) {
-                $abc['guide_single']['text'] = aviator_ad_replace_content_links($abc['guide_single']['text'], $abc['ad_offer_path']);
+            if (!empty($abc['ad_offer_path']) && function_exists('site_ad_replace_content_links')) {
+                $abc['guide_single']['text'] = site_ad_replace_content_links($abc['guide_single']['text'], $abc['ad_offer_path']);
             }
             $abc['guide_category_name'] = $guide_categories[$cat];
 

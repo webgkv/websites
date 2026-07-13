@@ -247,7 +247,7 @@ function site_language_agnostic_default_lang_url() {
  * @return string language url segment
  */
 function site_language_agnostic_resolve_target_lang_url() {
-	foreach (array(SITE_LANG_PREF_COOKIE, 'aviator_lang_pref') as $cookie_name) {
+	foreach (array(SITE_LANG_PREF_COOKIE) as $cookie_name) {
 		if (empty($_COOKIE[$cookie_name])) {
 			continue;
 		}
@@ -261,8 +261,8 @@ function site_language_agnostic_resolve_target_lang_url() {
 		return $al;
 	}
 	require_once ROOT_DIR . 'functions/advertising_api.php';
-	$ip_ctx = aviator_ad_resolve_ip_context(array());
-	$ct = aviator_ad_resolve_country_context(array(), $ip_ctx);
+	$ip_ctx = site_ad_resolve_ip_context(array());
+	$ct = site_ad_resolve_country_context(array(), $ip_ctx);
 	$country = isset($ct['country_sent_to_backend']) ? strtoupper((string) $ct['country_sent_to_backend']) : '';
 	if ($country !== '' && $country !== 'XX') {
 		$byc = site_language_agnostic_country_to_lang_url($country);

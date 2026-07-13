@@ -671,12 +671,12 @@ footer h5 {
 }
 
 /* Separate desktop/mobile language switchers */
-.aviator-lang-switcher-mobile {
+.site-lang-switcher-mobile {
     display: none;
 }
 
 /* Language switcher: flag + native label (Polylang-style); flags via flagcdn.com */
-.aviator-lang-flag {
+.site-lang-flag {
     width: 24px;
     height: 18px;
     object-fit: cover;
@@ -685,42 +685,42 @@ footer h5 {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
     vertical-align: middle;
 }
-.aviator-lang-flag--toggle {
+.site-lang-flag--toggle {
     margin-right: 2px;
 }
-.aviator-lang-item {
+.site-lang-item {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
 }
-.aviator-lang-mobile-link.aviator-lang-item {
+.site-lang-mobile-link.site-lang-item {
     display: flex;
 }
-.aviator-lang-toggle {
+.site-lang-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
     max-width: 100%;
 }
-.aviator-lang-toggle-text {
+.site-lang-toggle-text {
     max-width: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-/* Desktop language list: show all rows (no inner scroll); mobile uses .aviator-lang-mobile-list */
-.aviator-lang-dropdown.dropdown-menu {
+/* Desktop language list: show all rows (no inner scroll); mobile uses .site-lang-mobile-list */
+.site-lang-dropdown.dropdown-menu {
     max-height: none;
     overflow-y: visible;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item {
+.site-lang-dropdown .dropdown-item.site-lang-item {
     color: #212529;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:hover,
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item:focus {
+.site-lang-dropdown .dropdown-item.site-lang-item:hover,
+.site-lang-dropdown .dropdown-item.site-lang-item:focus {
     color: #1e2125;
 }
-.aviator-lang-dropdown .dropdown-item.aviator-lang-item.active {
+.site-lang-dropdown .dropdown-item.site-lang-item.active {
     font-weight: 600;
 }
 

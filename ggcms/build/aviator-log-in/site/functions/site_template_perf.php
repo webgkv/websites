@@ -150,9 +150,9 @@ if (!function_exists('site_template_lang_flag_img')) {
 		$alt = htmlspecialchars((string) $label, ENT_QUOTES, 'UTF-8');
 		$eh = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
 		if ($defer) {
-			return '<img class="aviator-lang-flag aviator-lang-flag--deferred" data-src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
+			return '<img class="site-lang-flag site-lang-flag--deferred" data-src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
 		}
-		return '<img class="aviator-lang-flag" src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
+		return '<img class="site-lang-flag" src="' . $eh . '" width="24" height="18" alt="' . $alt . '" decoding="async">';
 	}
 }
 

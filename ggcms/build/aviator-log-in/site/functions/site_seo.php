@@ -89,10 +89,29 @@ function site_seo_public_origin() {
 	return $scheme . '://' . $host;
 }
 
-if (!function_exists('aviator_seo_public_origin')) {
-	function aviator_seo_public_origin() {
-		return site_seo_public_origin();
+/**
+ * SEO content cleaning: downgrade H1 to H2 to ensure only one H1 per page.
+ */
+function site_seo_clean_content($html, $demote_h1 = true) {
+	if (empty($html)) {
+		return '';
 	}
+	if ($demote_h1) {
+		$html = preg_replace('/<h1\b([^>]*)>(.*?)<\/h1>/is', '<h2$1>$2</h2>', $html);
+	}
+	if (function_exists('site_brand_rebrand_text')) {
+		$html = site_brand_rebrand_text($html);
+	}
+	if (function_exists('site_brand_normalize_image_paths')) {
+		$html = site_brand_normalize_image_paths($html);
+	}
+	if (!function_exists('site_template_lazyload_content_images')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/') . 'functions/site_template_perf.php';
+	}
+	if (function_exists('site_template_lazyload_content_images')) {
+		$html = site_template_lazyload_content_images($html);
+	}
+	return $html;
 }
 
 /**

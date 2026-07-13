@@ -65,7 +65,7 @@ $read_more = author_read_more_label();
                     <?php
                     $bio = trim((string)($author['bio'] ?? ''));
                     if ($bio !== '' && strpos($bio, '<') !== false) {
-                        echo function_exists('aviator_seo_clean_content') ? aviator_seo_clean_content($bio) : $bio;
+                        echo function_exists('site_seo_clean_content') ? site_seo_clean_content($bio) : $bio;
                     } elseif ($bio !== '') {
                         echo nl2br(htmlspecialchars($bio, ENT_QUOTES, 'UTF-8'));
                     }

@@ -99,7 +99,6 @@ function game_demo_config_value(array $config, $name, $default = null) {
 		);
 		if ($n === 'currency' || $n === 'demo_currency') {
 			$candidates[] = 'game_demo_currency';
-			$candidates[] = 'aviator_demo_currency';
 		}
 		foreach ($candidates as $key) {
 			if (array_key_exists($key, $config) && $config[$key] !== '' && $config[$key] !== null) {
@@ -123,13 +122,13 @@ function game_demo_currency_param(array $abc, array $config = array()) {
 	if (preg_match('/^[A-Za-z]{3}$/', (string) $forced)) {
 		return strtoupper((string) $forced);
 	}
-	if (!function_exists('aviator_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
+	if (!function_exists('site_ad_resolve_ip_context') && defined('ROOT_DIR') && is_file(ROOT_DIR . 'functions/advertising_api.php')) {
 		require_once ROOT_DIR . 'functions/advertising_api.php';
 	}
-	if (function_exists('aviator_ad_resolve_ip_context') && function_exists('aviator_ad_resolve_country_context')) {
+	if (function_exists('site_ad_resolve_ip_context') && function_exists('site_ad_resolve_country_context')) {
 		$ad = (isset($abc['advertising_api']) && is_array($abc['advertising_api'])) ? $abc['advertising_api'] : array();
-		$ip_ctx = aviator_ad_resolve_ip_context($ad);
-		$ct = aviator_ad_resolve_country_context($ad, $ip_ctx);
+		$ip_ctx = site_ad_resolve_ip_context($ad);
+		$ct = site_ad_resolve_country_context($ad, $ip_ctx);
 		$country = isset($ct['country_sent_to_backend']) ? strtoupper((string) $ct['country_sent_to_backend']) : '';
 		if ($country !== '' && $country !== 'XX' && preg_match('/^[A-Z]{2}$/', $country)) {
 			return game_demo_currency_normalize_for_launch(game_demo_currency_for_country($country));
@@ -173,10 +172,6 @@ function game_demo_lobby_url() {
 	if (function_exists('site_seo_public_origin')) {
 		$path = isset($_SERVER['REQUEST_URI']) ? preg_replace('#\?.*#', '', (string) $_SERVER['REQUEST_URI']) : '/';
 		return site_seo_public_origin() . preg_replace('#/+#', '/', $path === '' ? '/' : $path);
-	}
-	if (function_exists('aviator_seo_public_origin')) {
-		$path = isset($_SERVER['REQUEST_URI']) ? preg_replace('#\?.*#', '', (string) $_SERVER['REQUEST_URI']) : '/';
-		return aviator_seo_public_origin() . preg_replace('#/+#', '/', $path === '' ? '/' : $path);
 	}
 	$host = isset($_SERVER['HTTP_HOST']) ? (string) $_SERVER['HTTP_HOST'] : '';
 	$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
@@ -280,44 +275,4 @@ function game_demo_official_url(array $abc, array $config = array()) {
 
 function game_demo_launch_url(array $abc, array $config = array()) {
 	return game_demo_official_url($abc, $config);
-}
-
-// --- Legacy aliases (deprecated; remove after all call sites migrate) ---
-
-if (!function_exists('aviator_request_uri_first_path_segment')) {
-	function aviator_request_uri_first_path_segment() { return game_demo_request_uri_first_path_segment(); }
-}
-if (!function_exists('aviator_spribe_demo_lang_path_map')) {
-	function aviator_spribe_demo_lang_path_map() { return game_demo_lang_path_map(); }
-}
-if (!function_exists('aviator_spribe_demo_currency_for_country')) {
-	function aviator_spribe_demo_currency_for_country($cc) { return game_demo_currency_for_country($cc); }
-}
-if (!function_exists('aviator_spribe_demo_currency_normalize_for_launch')) {
-	function aviator_spribe_demo_currency_normalize_for_launch($c) { return game_demo_currency_normalize_for_launch($c); }
-}
-if (!function_exists('aviator_spribe_demo_lang_param')) {
-	function aviator_spribe_demo_lang_param(array $abc) { return game_demo_lang_param($abc); }
-}
-if (!function_exists('aviator_spribe_official_demo_url')) {
-	function aviator_spribe_official_demo_url(array $abc, array $config = array()) { return game_demo_official_url($abc, $config); }
-}
-if (!function_exists('aviator_spribe_demo_currency_param')) {
-	function aviator_spribe_demo_currency_param(array $abc, array $config = array()) {
-		return function_exists('game_demo_spribe_currency_param')
-			? game_demo_spribe_currency_param($abc, $config)
-			: game_demo_currency_param($abc, $config);
-	}
-}
-if (!function_exists('chickenroad_inout_official_demo_url')) {
-	function chickenroad_inout_official_demo_url(array $abc, array $config = array()) { return game_demo_inout_official_url($abc, $config); }
-}
-if (!function_exists('icefish_inout_official_demo_url')) {
-	function icefish_inout_official_demo_url(array $abc, array $config = array()) { return game_demo_inout_official_url($abc, $config); }
-}
-if (!function_exists('chickenroad_inout_demo_lobby_url')) {
-	function chickenroad_inout_demo_lobby_url() { return game_demo_lobby_url(); }
-}
-if (!function_exists('icefish_inout_demo_lobby_url')) {
-	function icefish_inout_demo_lobby_url() { return game_demo_lobby_url(); }
 }
