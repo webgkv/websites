@@ -449,6 +449,12 @@ if ($_preload_hero !== '') {
             var t = document.querySelector('.menu-toggle');
             if (!nav || !t) return;
             window._burgerDebug.inited = true;
+            function loadDeferredFlags(root) {
+              if (!root) return;
+              root.querySelectorAll('img.aviator-lang-flag--deferred[data-src]').forEach(function (img) {
+                if (!img.getAttribute('src')) img.setAttribute('src', img.getAttribute('data-src'));
+              });
+            }
             function openClose(e) {
               if (e && e._aviatorHandled) return;
               if (e) e._aviatorHandled = true;
@@ -457,6 +463,7 @@ if ($_preload_hero !== '') {
               if (e) { e.preventDefault(); e.stopPropagation(); }
               nav.classList.toggle('active');
               var isOpen = nav.classList.contains('active');
+              if (isOpen) loadDeferredFlags(nav);
               t.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
               document.body.classList.toggle('menu-open', isOpen);
             }
