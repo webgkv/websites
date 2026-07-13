@@ -89,6 +89,7 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "6. after mysql_func
 require_once(ROOT_DIR.'functions/string_func.php');	// strings
 require_once(ROOT_DIR.'functions/pwa_install.php');	// PWA manifest start_url + /download/install-pwa/ guide
 require_once(ROOT_DIR.'functions/apk_install.php');	// /download/install-apk/ Android guide
+require_once(ROOT_DIR.'functions/demo_app_install_affordance.php');	// DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md
 require_once(ROOT_DIR.'functions/site_language_agnostic_entry.php');	// /{path} without /{lang}/ → /{lang}/{path}/ (cookie, Accept-Language, geo IP)
 require_once(ROOT_DIR.'functions/author_func.php'); // SEO: Author block
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "7. after all requires (boot ok)\n"; flush(); }

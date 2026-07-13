@@ -49,7 +49,16 @@ if (function_exists('aviator_seo_public_origin')) {
 		html, body { height: 100%; margin: 0; overflow: hidden; background: #2c2a33; }
 		/* Override main site body texture for this shell */
 		body.demo-app-doc { font-family: 'Poppins', system-ui, sans-serif; background: #2c2a33 !important; background-image: none !important; }
-		.demo-app-shell { display: flex; flex-direction: column; height: 100dvh; min-height: 100vh; max-height: 100dvh; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); box-sizing: border-box; }
+		.demo-app-shell {
+			--demo-install-accent: #fdb614;
+			display: flex;
+			flex-direction: column;
+			height: 100dvh;
+			min-height: 100vh;
+			max-height: 100dvh;
+			padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+			box-sizing: border-box;
+		}
 		.demo-app-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; min-height: 0; background: #2c2a33; border-bottom: 1px solid rgba(255,255,255,.08); }
 		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 0 1 auto; min-width: 0; }
 		.demo-app-portal { flex-shrink: 0; }
@@ -73,6 +82,9 @@ if (function_exists('aviator_seo_public_origin')) {
 		/* Compact CTA in demo chrome — uses site .main_btn (yellow gradient); only scale down */
 		.demo-app-cta-btn.main_btn {
 			flex-shrink: 0;
+			flex: 0 1 auto;
+			min-width: 0;
+			max-width: clamp(88px, 38vw, 152px);
 		}
 		.demo-app-cta-btn.main_btn a {
 			padding: 8px 18px;
@@ -80,10 +92,90 @@ if (function_exists('aviator_seo_public_origin')) {
 			font-weight: 900;
 			line-height: 1.25;
 			border-radius: 14px;
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 		}
 		.demo-app-icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: #e8eef5; text-decoration: none; cursor: pointer; transition: background .15s ease; }
 		.demo-app-icon-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
 		.demo-app-close { }
+		/* DEMO_INSTALL_AFFORDANCE start — rollback: DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
+		.demo-app-install { flex-shrink: 0; }
+		@keyframes demo-install-pulse {
+			0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 45%, transparent); }
+			70% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
+			100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
+		}
+		.demo-app-install--attention {
+			border-color: color-mix(in srgb, var(--demo-install-accent) 65%, transparent);
+			color: var(--demo-install-accent);
+			animation: demo-install-pulse 2.5s ease-out 3;
+		}
+		@keyframes demo-cta-nudge {
+			0%, 92%, 100% { box-shadow: none; transform: scale(1); }
+			94% { box-shadow: 0 0 12px color-mix(in srgb, var(--demo-install-accent) 35%, transparent); transform: scale(1.02); }
+			96% { box-shadow: none; transform: scale(1); }
+		}
+		.demo-app-cta-btn--nudge a {
+			animation: demo-cta-nudge 18s ease-in-out infinite;
+		}
+		.demo-app-safari-hint[hidden] { display: none !important; }
+		.demo-app-safari-hint {
+			position: fixed;
+			inset: 0;
+			z-index: 10050;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 16px;
+		}
+		.demo-app-safari-hint__backdrop {
+			position: absolute;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.65);
+		}
+		.demo-app-safari-hint__panel {
+			position: relative;
+			max-width: 340px;
+			width: 100%;
+			background: #2c2a33;
+			border: 1px solid rgba(255, 255, 255, 0.12);
+			border-radius: 12px;
+			padding: 16px;
+			box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+		}
+		.demo-app-safari-hint__title {
+			margin: 0 0 8px;
+			font-size: 16px;
+			font-weight: 700;
+			color: #fff;
+		}
+		.demo-app-safari-hint__body {
+			margin: 0 0 14px;
+			font-size: 13px;
+			line-height: 1.45;
+			color: #cfcfcf;
+		}
+		.demo-app-safari-hint__ok {
+			display: block;
+			width: 100%;
+			padding: 10px 14px;
+			border: 0;
+			border-radius: 10px;
+			background: var(--demo-install-accent);
+			color: #1a1a1a;
+			font-weight: 700;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		@media (prefers-reduced-motion: reduce) {
+			.demo-app-install--attention,
+			.demo-app-cta-btn--nudge a {
+				animation: none !important;
+			}
+		}
+		/* DEMO_INSTALL_AFFORDANCE end */
 		/* Game area: fill all space below bar (desktop + portrait mobile); no 16:9 letterbox */
 		.demo-app-frame-host { flex: 1 1 auto; min-height: 0; position: relative; background: #000; display: flex; flex-direction: column; overflow: hidden; padding: 0; }
 		.demo-app-frame-host .main__frame--app-shell { flex: 1; min-height: 0; width: 100%; max-width: none; margin: 0; display: flex; flex-direction: column; }

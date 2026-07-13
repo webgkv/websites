@@ -24,6 +24,15 @@ if ($try_bonus_label === '' || strpos($try_bonus_label, 'common|') === 0) {
 	$try_bonus_label = 'Try Bonus';
 }
 $offer_path = (isset($abc['ad_offer_path']) && is_string($abc['ad_offer_path'])) ? trim($abc['ad_offer_path']) : '';
+// DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md
+$_demo_install = (function_exists('demo_app_install_affordance') && isset($lang) && is_array($lang))
+	? demo_app_install_affordance($abc, $lang)
+	: array('enabled' => false);
+$_demo_install_ui = function_exists('demo_app_install_ui_strings') ? demo_app_install_ui_strings() : array(
+	'safari_title' => 'Open in Safari',
+	'safari_body' => 'Open this page in Safari, then use Share → Add to Home Screen.',
+	'modal_ok' => 'Got it',
+);
 $icon_path = (defined('ROOT_DIR') && file_exists(ROOT_DIR . 'assets/images/aviator-icon.svg')) ? ROOT_DIR . 'assets/images/aviator-icon.svg' : '';
 $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 ?>
@@ -40,10 +49,19 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 			aria-label="<?= htmlspecialchars($portal_aria, ENT_QUOTES, 'UTF-8') ?>">
 			<i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
 		</a>
+<?php if (!empty($_demo_install['enabled'])): ?>
+		<a class="demo-app-icon-btn demo-app-install" id="demoAppInstallBtn"
+			href="<?= htmlspecialchars((string) $_demo_install['href'], ENT_QUOTES, 'UTF-8') ?>"
+			data-platform="<?= htmlspecialchars((string) $_demo_install['platform'], ENT_QUOTES, 'UTF-8') ?>"
+			title="<?= htmlspecialchars((string) $_demo_install['label'], ENT_QUOTES, 'UTF-8') ?>"
+			aria-label="<?= htmlspecialchars((string) $_demo_install['label'], ENT_QUOTES, 'UTF-8') ?>">
+			<i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+		</a>
+<?php endif; ?>
 		</div>
 		<div class="demo-app-actions">
 			<?php if ($offer_path !== ''): ?>
-			<div class="main_btn demo-app-cta-btn">
+			<div class="main_btn demo-app-cta-btn" id="demoAppCtaBtn">
 				<a href="<?= htmlspecialchars($offer_path, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($try_bonus_label, ENT_QUOTES, 'UTF-8') ?></a>
 			</div>
 			<?php endif; ?>
@@ -66,6 +84,16 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 		?>
 	</div>
 </div>
+<?php if (!empty($_demo_install['enabled'])): ?>
+<div class="demo-app-safari-hint" id="demoAppSafariHint" hidden role="dialog" aria-modal="true" aria-labelledby="demoAppSafariHintTitle">
+	<div class="demo-app-safari-hint__backdrop" data-demo-safari-dismiss></div>
+	<div class="demo-app-safari-hint__panel">
+		<p class="demo-app-safari-hint__title" id="demoAppSafariHintTitle"><?= htmlspecialchars((string) $_demo_install_ui['safari_title'], ENT_QUOTES, 'UTF-8') ?></p>
+		<p class="demo-app-safari-hint__body"><?= htmlspecialchars((string) $_demo_install_ui['safari_body'], ENT_QUOTES, 'UTF-8') ?></p>
+		<button type="button" class="demo-app-safari-hint__ok" data-demo-safari-dismiss><?= htmlspecialchars((string) $_demo_install_ui['modal_ok'], ENT_QUOTES, 'UTF-8') ?></button>
+	</div>
+</div>
+<?php endif; ?>
 <script>
 (function () {
 	var host = document.getElementById('demoAppFrameHost');
@@ -93,3 +121,75 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 	});
 })();
 </script>
+<?php if (!empty($_demo_install['enabled'])): ?>
+<script>
+/* DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
+(function () {
+	var installBtn = document.getElementById('demoAppInstallBtn');
+	if (!installBtn) return;
+	function isStandaloneShell() {
+		if (window.navigator.standalone === true) return true;
+		try {
+			if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) return true;
+			if (window.matchMedia && window.matchMedia('(display-mode: fullscreen)').matches) return true;
+		} catch (e) { /* ignore */ }
+		return false;
+	}
+	function isIosDevice() {
+		var ua = navigator.userAgent || '';
+		if (/iPhone|iPad|iPod/i.test(ua)) return true;
+		return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+	}
+	function isIosInAppBrowser() {
+		if (!isIosDevice()) return false;
+		var ua = navigator.userAgent || '';
+		if (/Telegram|FBAN|FBAV|Instagram|Line\/|Twitter|Snapchat|LinkedInApp|Pinterest|GSA\//i.test(ua)) return true;
+		if (/CriOS|FxiOS|EdgiOS/i.test(ua)) return false;
+		if (/Safari/i.test(ua)) return false;
+		return /AppleWebKit/i.test(ua);
+	}
+	function prefersReducedMotion() {
+		try {
+			return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		} catch (e) {
+			return false;
+		}
+	}
+	if (isStandaloneShell()) {
+		installBtn.style.display = 'none';
+		installBtn.setAttribute('aria-hidden', 'true');
+		return;
+	}
+	if (!prefersReducedMotion() && !sessionStorage.getItem('demo_install_affordance_seen')) {
+		installBtn.classList.add('demo-app-install--attention');
+		sessionStorage.setItem('demo_install_affordance_seen', '1');
+	}
+	var hint = document.getElementById('demoAppSafariHint');
+	var platform = installBtn.getAttribute('data-platform') || '';
+	installBtn.addEventListener('click', function (e) {
+		installBtn.classList.remove('demo-app-install--attention');
+		sessionStorage.setItem('demo_install_tapped', '1');
+		if (platform === 'ios' && isIosInAppBrowser()) {
+			e.preventDefault();
+			if (hint) hint.hidden = false;
+		}
+	});
+	if (hint) {
+		hint.querySelectorAll('[data-demo-safari-dismiss]').forEach(function (el) {
+			el.addEventListener('click', function () { hint.hidden = true; });
+		});
+	}
+	var cta = document.getElementById('demoAppCtaBtn');
+	if (cta && !prefersReducedMotion() && !sessionStorage.getItem('demo_cta_clicked')) {
+		cta.classList.add('demo-app-cta-btn--nudge');
+		var ctaLink = cta.querySelector('a');
+		if (ctaLink) {
+			ctaLink.addEventListener('click', function () {
+				sessionStorage.setItem('demo_cta_clicked', '1');
+				cta.classList.remove('demo-app-cta-btn--nudge');
+			});
+		}
+	}
+})();
+</script>
+<?php endif; ?>
