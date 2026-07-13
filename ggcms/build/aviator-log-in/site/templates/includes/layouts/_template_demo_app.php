@@ -120,13 +120,13 @@ if (function_exists('aviator_seo_public_origin')) {
 			color: var(--demo-install-accent);
 			animation: demo-install-pulse 2.5s ease-out 3;
 		}
-		@keyframes demo-cta-nudge {
-			0%, 92%, 100% { box-shadow: none; transform: scale(1); }
-			94% { box-shadow: 0 0 12px color-mix(in srgb, var(--demo-install-accent) 35%, transparent); transform: scale(1.02); }
-			96% { box-shadow: none; transform: scale(1); }
+		@keyframes demo-cta-burst-pulse {
+			0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 50%, transparent); transform: scale(1); }
+			70% { box-shadow: 0 0 14px color-mix(in srgb, var(--demo-install-accent) 0%, transparent); transform: scale(1.06); }
+			100% { box-shadow: 0 0 0 0 transparent; transform: scale(1); }
 		}
-		.demo-app-cta-btn--nudge a {
-			animation: demo-cta-nudge 18s ease-in-out infinite;
+		.demo-app-cta-btn--burst {
+			animation: demo-cta-burst-pulse 0.83s ease-out 3;
 		}
 		.demo-app-safari-hint[hidden] { display: none !important; }
 		.demo-app-safari-hint {
@@ -179,7 +179,7 @@ if (function_exists('aviator_seo_public_origin')) {
 		}
 		@media (prefers-reduced-motion: reduce) {
 			.demo-app-install--attention,
-			.demo-app-cta-btn--nudge a {
+			.demo-app-cta-btn--burst {
 				animation: none !important;
 			}
 		}

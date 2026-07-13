@@ -189,12 +189,39 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 	}
 	var cta = document.getElementById('demoAppCtaBtn');
 	if (cta && !prefersReducedMotion() && !sessionStorage.getItem('demo_cta_clicked')) {
-		cta.classList.add('demo-app-cta-btn--nudge');
+		var CTA_FIRST_MS = 60000;
+		var CTA_REPEAT_MS = 240000;
+		var CTA_BURST_MS = 2600;
+		var ctaBurstTimer = null;
+
+		function stopCtaBurst() {
+			if (ctaBurstTimer) {
+				clearTimeout(ctaBurstTimer);
+				ctaBurstTimer = null;
+			}
+			cta.classList.remove('demo-app-cta-btn--burst');
+		}
+
+		function scheduleNextCtaBurst() {
+			if (sessionStorage.getItem('demo_cta_clicked')) return;
+			ctaBurstTimer = setTimeout(runCtaBurst, CTA_REPEAT_MS);
+		}
+
+		function runCtaBurst() {
+			if (sessionStorage.getItem('demo_cta_clicked')) return;
+			cta.classList.remove('demo-app-cta-btn--burst');
+			void cta.offsetWidth;
+			cta.classList.add('demo-app-cta-btn--burst');
+			ctaBurstTimer = setTimeout(scheduleNextCtaBurst, CTA_BURST_MS);
+		}
+
+		ctaBurstTimer = setTimeout(runCtaBurst, CTA_FIRST_MS);
+
 		var ctaLink = cta.querySelector('a');
 		if (ctaLink) {
 			ctaLink.addEventListener('click', function () {
 				sessionStorage.setItem('demo_cta_clicked', '1');
-				cta.classList.remove('demo-app-cta-btn--nudge');
+				stopCtaBurst();
 			});
 		}
 	}
