@@ -9,6 +9,9 @@ ggcms/sites/chickenroad/tools/chickenroad_blog_*_overrides*.py
 # Deploy secrets — optional local overrides (deploy.ftp.local is tracked in private repo)
 **/deploy.ftp.local.sftp-key
 
+# Cloudflare API token (see ggcms/docs/CLOUDFLARE_ACCESS.md.example)
+ggcms/docs/CLOUDFLARE_ACCESS.local.md
+
 # Python
 **/__pycache__/
 **/.venv/

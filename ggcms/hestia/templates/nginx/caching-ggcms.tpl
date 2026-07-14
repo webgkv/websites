@@ -1,36 +1,39 @@
 #=========================================================================#
-# Custom Hestia proxy cache template for chickenroad.run (SSL)             #
-# Based on Hestia default caching.stpl                                     #
+# Shared Hestia proxy cache template for all GGCMS brands                 #
+# Based on Hestia default caching.tpl                                     #
 #                                                                         #
-# IMPORTANT: This is for Nginx (Proxy) mode (Nginx + Apache2).             #
+# IMPORTANT: This is for Nginx (Proxy) mode (Nginx + Apache2).            #
 # It relies on a global Nginx cache zone named `cache`.                   #
+# Per-domain isolation comes from Hestia placeholders (%domain%, etc.).   #
 #=========================================================================#
 
 server {
-	listen      %ip%:%proxy_ssl_port% ssl;
+	listen      %ip%:%proxy_port%;
 	server_name %domain_idn% %alias_idn%;
 	error_log   /var/log/%web_system%/domains/%domain%.error.log error;
 
-	ssl_certificate     %ssl_pem%;
-	ssl_certificate_key %ssl_key%;
-	ssl_stapling        on;
-	ssl_stapling_verify on;
-
-	# TLS 1.3 0-RTT anti-replay
-	if ($anti_replay = 307) { return 307 https://$host$request_uri; }
-	if ($anti_replay = 425) { return 425; }
-
-	include %home%/%user%/conf/web/%domain%/nginx.hsts.conf*;
+	include %home%/%user%/conf/web/%domain%/nginx.forcessl.conf*;
 
 	location ~ /\.(?!well-known\/|file) {
 		deny all;
 		return 404;
 	}
 
+	location ~* "^/[a-z]{2}(-[a-z]{2})?/demo/app/?$" {
+		proxy_pass http://%ip%:%web_port%;
+
+		proxy_cache off;
+		proxy_no_cache 1;
+		proxy_cache_bypass 1;
+
+		add_header Cache-Control "private, no-store, no-cache, must-revalidate, max-age=0" always;
+		add_header CDN-Cache-Control "no-store" always;
+		add_header Cloudflare-CDN-Cache-Control "no-store" always;
+		add_header X-Proxy-Cache "BYPASS" always;
+	}
+
 	location / {
-		proxy_ssl_server_name on;
-		proxy_ssl_name $host;
-		proxy_pass https://%ip%:%web_ssl_port%;
+		proxy_pass http://%ip%:%web_port%;
 
 		# Do not let upstream sessions disable caching for guests
 		proxy_ignore_headers "Set-Cookie" "Cache-Control" "Expires";
@@ -48,7 +51,7 @@ server {
 		set $no_cache 0;
 
 		# Never cache admin / dynamic endpoints
-		if ($request_uri ~* "/admin/|/administrator/|/manager/|/user/|/login|/logout|/api/telemetry_|/api/") {
+		if ($request_uri ~* "/admin\.php|/admin/|/administrator/|/manager/|/user/|/login|/logout|/demo/app|/api/telemetry_|/api/") {
 			set $no_cache 1;
 		}
 
@@ -60,7 +63,7 @@ server {
 		location ~* ^.+\.(%proxy_extensions%)$ {
 			try_files  $uri @fallback;
 
-			root       %sdocroot%;
+			root       %docroot%;
 			access_log /var/log/%web_system%/domains/%domain%.log combined;
 			access_log /var/log/%web_system%/domains/%domain%.bytes bytes;
 
@@ -71,16 +74,12 @@ server {
 	}
 
 	location @fallback {
-		proxy_ssl_server_name on;
-		proxy_ssl_name $host;
-		proxy_pass https://%ip%:%web_ssl_port%;
+		proxy_pass http://%ip%:%web_port%;
 	}
 
 	location /error/ {
 		alias %home%/%user%/web/%domain%/document_errors/;
 	}
 
-	proxy_hide_header Upgrade;
-
-	include %home%/%user%/conf/web/%domain%/nginx.ssl.conf_*;
+	include %home%/%user%/conf/web/%domain%/nginx.conf_*;
 }

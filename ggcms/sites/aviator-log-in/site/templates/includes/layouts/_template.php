@@ -148,6 +148,9 @@ $_site_html_lang = $_site_lang_seg !== '' ? site_hreflang_code($abc, $_site_lang
 
 // Minimal chrome + iframe only (no site header/footer/popups): /{lang}/demo/app/
 if (!empty($abc['layout']) && $abc['layout'] === 'demo_app') {
+	if (function_exists('site_demo_app_send_nocache_headers')) {
+		site_demo_app_send_nocache_headers();
+	}
 	$__demo_app_debug = !empty($abc['debug_ip_check'])
 		&& isset($_GET['debug_ip_check'])
 		&& (string) $_GET['debug_ip_check'] === '1';

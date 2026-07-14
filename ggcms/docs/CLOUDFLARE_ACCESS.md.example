@@ -1,0 +1,38 @@
+# Cloudflare API — шаблон (без секретов)
+
+Скопировать в `CLOUDFLARE_ACCESS.local.md` (файл в `.gitignore`) и заполнить токен.
+
+```bash
+cp ggcms/docs/CLOUDFLARE_ACCESS.md.example ggcms/docs/CLOUDFLARE_ACCESS.local.md
+```
+
+## Account ID
+
+```
+8d892510801265106f8305023218f3c1
+```
+
+## API Token
+
+```
+<CF_API_TOKEN>
+```
+
+Права: **Zone → Cache Rules → Edit** на все зоны ниже. Опционально: Cache Purge, Zone Read.
+
+## Cache Rules (все зоны)
+
+Правило `Cache HTML for PageSpeed` — HTML кэшируется, **кроме** `/admin`, `/api`, **`/demo/app`**.
+
+См. полный expression и API-команды в `CLOUDFLARE_ACCESS.local.md`.
+
+## Zones
+
+| Бренд | Домен | Zone ID |
+|-------|-------|---------|
+| chickenroad | chickenroad.run | 5d069345241e84dcbc13a4bfe5c95a92 |
+| aviator-log-in | aviator-log-in.com | bf541c3f4fad64baee82778576a46e28 |
+| ice-fish | ice-fish.run | 38f7273737d5455acd5970a1af41ec42 |
+| powerballjackpot | powerballjackpot.run | e865e2dcb09e46b32634eb6042c5671a |
+
+Полные команды (verify, purge demo/app, curl-проверки) — в `CLOUDFLARE_ACCESS.local.md`.

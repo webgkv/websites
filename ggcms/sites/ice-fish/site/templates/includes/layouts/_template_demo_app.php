@@ -16,6 +16,8 @@ if (function_exists('site_seo_public_origin')) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+	<meta http-equiv="Pragma" content="no-cache">
 	<title><?= $_aviator_doc_title_esc ?><?= $_aviator_doc_suffix_esc ?></title>
 	<?php if ($_desc !== ''): ?>
 	<meta name="description" content="<?= $_desc ?>">

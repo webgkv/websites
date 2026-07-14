@@ -2,7 +2,56 @@
 
 /**
  * DEMO_INSTALL_AFFORDANCE — /demo/app/ install icon (rollback: DEMO_INSTALL_AFFORDANCE_ROLLBACK.md).
+ * /demo/app/ must never be cached (Cloudflare, nginx proxy, html_query) — UA-specific install affordance.
  */
+
+if (!function_exists('site_demo_app_request_is_shell')) {
+	/**
+	 * True for /{lang}/demo/app/ (optional trailing slash).
+	 */
+	function site_demo_app_request_is_shell($uri = null) {
+		if ($uri === null) {
+			$uri = isset($_SERVER['REQUEST_URI']) ? (string) $_SERVER['REQUEST_URI'] : '';
+		}
+		$path = parse_url($uri, PHP_URL_PATH);
+		if (!is_string($path) || $path === '') {
+			return false;
+		}
+		$path = preg_replace('#/+#', '/', $path);
+
+		return (bool) preg_match('#/(?:[a-z]{2}(?:-[a-z]{2})?/)demo/app/?$#i', $path);
+	}
+}
+
+if (!function_exists('site_demo_app_send_nocache_headers')) {
+	/**
+	 * Hard no-store for demo app shell — Cloudflare, nginx proxy, browser.
+	 */
+	function site_demo_app_send_nocache_headers() {
+		if (headers_sent()) {
+			return;
+		}
+		header('Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0');
+		header('Pragma: no-cache');
+		header('Expires: Thu, 01 Jan 1970 00:00:00 GMT');
+		header('CDN-Cache-Control: no-store');
+		header('Cloudflare-CDN-Cache-Control: no-store');
+		header('Vary: User-Agent', false);
+		header('X-GGCMS-Cache-Policy: demo-app-no-store');
+	}
+}
+
+if (!function_exists('site_demo_app_bootstrap_nocache')) {
+	function site_demo_app_bootstrap_nocache() {
+		if (site_demo_app_request_is_shell()) {
+			global $config;
+			if (isset($config) && is_array($config)) {
+				$config['cache'] = 0;
+			}
+			site_demo_app_send_nocache_headers();
+		}
+	}
+}
 
 if (!function_exists('demo_app_install_ua_platform')) {
 	/**

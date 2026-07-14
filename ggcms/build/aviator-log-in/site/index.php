@@ -50,6 +50,10 @@ define('SITE_SKIP_AUTO_SESSION', true);
 // Load config
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "2. before config\n"; flush(); }
 require_once(ROOT_DIR.'config/config.php');
+require_once(ROOT_DIR.'functions/demo_app_install_affordance.php');
+if (function_exists('site_demo_app_bootstrap_nocache')) {
+	site_demo_app_bootstrap_nocache();
+}
 require_once(ROOT_DIR.'functions/brand_profile.php');
 site_apply_profile_static_redirects();
 // www -> apex (301); works behind Cloudflare when CF Redirect Rule is absent or misconfigured.
@@ -90,7 +94,6 @@ if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "6. after mysql_func
 require_once(ROOT_DIR.'functions/string_func.php');	// strings
 require_once(ROOT_DIR.'functions/pwa_install.php');	// PWA manifest start_url + /download/install-pwa/ guide
 require_once(ROOT_DIR.'functions/apk_install.php');	// /download/install-apk/ Android guide
-require_once(ROOT_DIR.'functions/demo_app_install_affordance.php');	// DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md
 require_once(ROOT_DIR.'functions/site_language_agnostic_entry.php');	// /{path} without /{lang}/ → /{lang}/{path}/ (cookie, Accept-Language, geo IP)
 require_once(ROOT_DIR.'functions/author_func.php'); // SEO: Author block
 if (isset($_GET['debug']) && $_GET['debug'] === '1') { echo "7. after all requires (boot ok)\n"; flush(); }

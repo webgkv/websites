@@ -10,7 +10,7 @@
 | `scripts/` | **Только brand-specific** | chickenroad: DB import (`prepare_chickenroad_db.py`, `DB_AND_IMAGES.txt`). Общие — в `ggcms/scripts/shared/` |
 | `tools/` | **Да, per-brand** | Python для SEO-кластеров и контента. Одноразовые миграции, не runtime |
 | `docs/` | **Да, per-brand** | aviator: backlog + гайды. Общие: `ggcms/docs/AGENT_TELEMETRY.md` |
-| `hestia/` | **Да** | nginx-шаблоны для деплоя на HestiaCP |
+| `hestia/` | **Ссылка** | README → общий `ggcms/hestia/` (`caching-ggcms`) |
 | `.cursor/` | **Да** | Правила агента (aviator, chickenroad). powerball — нет |
 | `deploy.ftp.*` | **Да** | Секреты и пример деплоя |
 
@@ -44,7 +44,7 @@
 
 ## Замечания / TODO
 
-1. **powerball `hestia/`** — шаблоны названы `caching-chickenroad.*` (наследие rebrand). Работают, но лучше переименовать под powerball.
+1. ~~powerball `hestia/`~~ — **сделано**: один shared template `ggcms/hestia/caching-ggcms` для всех брендов.
 2. **`tools/`** — одноразовые миграции; в git для истории, на сервер не деплоятся.
 3. **`aviator-log-in/docs/source-json-archive/`** — архив JSON, можно вынести из git или в LFS при росте.
 4. Пустые `plugins/`, `modules/`, `scripts/` не создаём заранее — только когда появится фича.
