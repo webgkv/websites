@@ -107,7 +107,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               $promo3_html = $promo_html($promo3);
 
               $cta_positions = site_cta_even_paragraph_positions(
-              	aviator_count_content_paragraphs($full_text),
+              	site_count_content_paragraphs($full_text),
               	3
               );
               if (count($cta_positions) >= 1) {
