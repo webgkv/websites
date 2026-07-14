@@ -139,7 +139,7 @@ if (!function_exists('demo_app_install_ui_strings')) {
 	/**
 	 * Modal copy for iOS in-app browser hint.
 	 *
-	 * @return array{safari_title:string,safari_body:string,modal_ok:string}
+	 * @return array{safari_title:string,safari_body:string,modal_ok:string,inapp_tooltip:string}
 	 */
 	function demo_app_install_ui_strings() {
 		$brand = function_exists('site_brand_name') ? site_brand_name() : 'this app';
@@ -155,11 +155,16 @@ if (!function_exists('demo_app_install_ui_strings')) {
 		if ($ok === '' || strpos($ok, 'common|') === 0) {
 			$ok = 'Got it';
 		}
+		$tooltip = trim((string) i18n('common|demo_app_install_inapp_tooltip'));
+		if ($tooltip === '' || strpos($tooltip, 'common|') === 0) {
+			$tooltip = 'Open in Safari to add the app';
+		}
 
 		return array(
 			'safari_title' => $title,
 			'safari_body' => $body,
 			'modal_ok' => $ok,
+			'inapp_tooltip' => $tooltip,
 		);
 	}
 }

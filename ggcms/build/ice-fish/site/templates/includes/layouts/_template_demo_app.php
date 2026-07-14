@@ -95,16 +95,89 @@ if (function_exists('site_seo_public_origin')) {
 		.demo-app-icon-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
 		.demo-app-close { }
 		/* DEMO_INSTALL_AFFORDANCE start — rollback: DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
+		.demo-app-install-wrap {
+			position: relative;
+			display: inline-flex;
+			flex-shrink: 0;
+		}
 		.demo-app-install { flex-shrink: 0; }
+		.demo-app-install--ios-idle {
+			position: relative;
+			border-color: color-mix(in srgb, var(--demo-install-accent) 70%, transparent);
+			color: var(--demo-install-accent);
+			box-shadow: 0 0 0 1px color-mix(in srgb, var(--demo-install-accent) 22%, transparent);
+		}
+		.demo-app-install--ios-idle::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--demo-install-accent);
+			pointer-events: none;
+		}
 		@keyframes demo-install-pulse {
 			0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 45%, transparent); }
 			70% { box-shadow: 0 0 0 8px color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
+			100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
+		}
+		@keyframes demo-install-pulse-ios {
+			0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 55%, transparent); }
+			70% { box-shadow: 0 0 0 10px color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
 			100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 0%, transparent); }
 		}
 		.demo-app-install--attention {
 			border-color: color-mix(in srgb, var(--demo-install-accent) 65%, transparent);
 			color: var(--demo-install-accent);
 			animation: demo-install-pulse 2.5s ease-out 3;
+		}
+		.demo-app-install--attention-ios {
+			border-color: color-mix(in srgb, var(--demo-install-accent) 75%, transparent);
+			color: var(--demo-install-accent);
+			animation: demo-install-pulse-ios 2.5s ease-out 2;
+		}
+		.demo-app-install--attention-ios-once {
+			border-color: color-mix(in srgb, var(--demo-install-accent) 75%, transparent);
+			color: var(--demo-install-accent);
+			animation: demo-install-pulse-ios 2.5s ease-out 1;
+		}
+		@media (max-width: 767px) {
+			.demo-app-install-wrap .demo-app-install {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.demo-app-install-tooltip[hidden] { display: none !important; }
+		.demo-app-install-tooltip {
+			position: absolute;
+			top: calc(100% + 6px);
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10040;
+			width: max-content;
+			max-width: 200px;
+			padding: 6px 10px;
+			border-radius: 8px;
+			background: #2c2a33;
+			border: 1px solid rgba(255, 255, 255, 0.14);
+			color: #e8eef5;
+			font-size: 11px;
+			line-height: 1.35;
+			text-align: center;
+			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+			pointer-events: none;
+			white-space: normal;
+		}
+		.demo-app-install-tooltip::before {
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border: 5px solid transparent;
+			border-bottom-color: #2c2a33;
 		}
 		@keyframes demo-cta-burst-pulse {
 			0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--demo-install-accent) 50%, transparent); transform: scale(1); }
@@ -165,6 +238,8 @@ if (function_exists('site_seo_public_origin')) {
 		}
 		@media (prefers-reduced-motion: reduce) {
 			.demo-app-install--attention,
+			.demo-app-install--attention-ios,
+			.demo-app-install--attention-ios-once,
 			.demo-app-cta-btn--burst {
 				animation: none !important;
 			}

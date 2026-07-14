@@ -52,6 +52,7 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 			<i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
 		</a>
 <?php if (!empty($_demo_install['enabled'])): ?>
+		<span class="demo-app-install-wrap">
 		<a class="demo-app-icon-btn demo-app-install" id="demoAppInstallBtn"
 			href="<?= htmlspecialchars((string) $_demo_install['href'], ENT_QUOTES, 'UTF-8') ?>"
 			data-platform="<?= htmlspecialchars((string) $_demo_install['platform'], ENT_QUOTES, 'UTF-8') ?>"
@@ -59,6 +60,8 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 			aria-label="<?= htmlspecialchars((string) $_demo_install['label'], ENT_QUOTES, 'UTF-8') ?>">
 			<i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
 		</a>
+		<span class="demo-app-install-tooltip" id="demoAppInstallTooltip" hidden role="tooltip"><?= htmlspecialchars((string) ($_demo_install_ui['inapp_tooltip'] ?? 'Open in Safari to add the app'), ENT_QUOTES, 'UTF-8') ?></span>
+		</span>
 <?php endif; ?>
 		</div>
 		<div class="demo-app-actions">
@@ -125,10 +128,23 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 </script>
 <?php if (!empty($_demo_install['enabled'])): ?>
 <script>
-/* DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
+/* DEMO_INSTALL_AFFORDANCE — rollback: ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
 (function () {
 	var installBtn = document.getElementById('demoAppInstallBtn');
 	if (!installBtn) return;
+
+	var INSTALL_IOS_FIRST_MS = 20000;
+	var INSTALL_IOS_REPEAT_MS = 150000;
+	var INSTALL_INAPP_TOOLTIP_MS = 12000;
+	var INSTALL_INAPP_TOOLTIP_DURATION_MS = 5000;
+	var INSTALL_PULSE_CYCLE_MS = 2500;
+	var MUTEX_DEFER_MS = 8000;
+	var CTA_FIRST_MS = 60000;
+	var CTA_REPEAT_MS = 240000;
+	var CTA_BURST_MS = 2600;
+
+	var barAnimState = { install: false, cta: false };
+
 	function isStandaloneShell() {
 		if (window.navigator.standalone === true) return true;
 		try {
@@ -137,11 +153,13 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 		} catch (e) { /* ignore */ }
 		return false;
 	}
+
 	function isIosDevice() {
 		var ua = navigator.userAgent || '';
 		if (/iPhone|iPad|iPod/i.test(ua)) return true;
 		return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
 	}
+
 	function isIosInAppBrowser() {
 		if (!isIosDevice()) return false;
 		var ua = navigator.userAgent || '';
@@ -150,6 +168,7 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 		if (/Safari/i.test(ua)) return false;
 		return /AppleWebKit/i.test(ua);
 	}
+
 	function prefersReducedMotion() {
 		try {
 			return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -157,35 +176,114 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 			return false;
 		}
 	}
+
+	function installWasTapped() {
+		return sessionStorage.getItem('demo_install_tapped') === '1';
+	}
+
+	function clearInstallAttentionClasses() {
+		installBtn.classList.remove(
+			'demo-app-install--attention',
+			'demo-app-install--attention-ios',
+			'demo-app-install--attention-ios-once',
+			'demo-app-install--ios-idle'
+		);
+	}
+
+	function hideInstallTooltip() {
+		var tooltip = document.getElementById('demoAppInstallTooltip');
+		if (tooltip) tooltip.hidden = true;
+	}
+
+	function isBarAnimating() {
+		return barAnimState.install || barAnimState.cta;
+	}
+
+	function runInstallPulse(cycles, iosPulse) {
+		if (installWasTapped() || prefersReducedMotion()) return;
+		if (isBarAnimating()) {
+			setTimeout(function () { runInstallPulse(cycles, iosPulse); }, MUTEX_DEFER_MS);
+			return;
+		}
+		barAnimState.install = true;
+		installBtn.classList.remove(
+			'demo-app-install--attention',
+			'demo-app-install--attention-ios',
+			'demo-app-install--attention-ios-once'
+		);
+		void installBtn.offsetWidth;
+		if (iosPulse) {
+			installBtn.classList.add(cycles === 1 ? 'demo-app-install--attention-ios-once' : 'demo-app-install--attention-ios');
+		} else {
+			installBtn.classList.add('demo-app-install--attention');
+		}
+		setTimeout(function () {
+			installBtn.classList.remove(
+				'demo-app-install--attention',
+				'demo-app-install--attention-ios',
+				'demo-app-install--attention-ios-once'
+			);
+			barAnimState.install = false;
+		}, cycles * INSTALL_PULSE_CYCLE_MS);
+	}
+
 	if (isStandaloneShell()) {
 		installBtn.style.display = 'none';
 		installBtn.setAttribute('aria-hidden', 'true');
 		return;
 	}
-	if (!prefersReducedMotion() && !sessionStorage.getItem('demo_install_affordance_seen')) {
+
+	var hint = document.getElementById('demoAppSafariHint');
+	var platform = installBtn.getAttribute('data-platform') || '';
+	var isIos = platform === 'ios';
+	var reduceMotion = prefersReducedMotion();
+
+	if (isIos && !installWasTapped()) {
+		installBtn.classList.add('demo-app-install--ios-idle');
+		if (!reduceMotion) {
+			setTimeout(function () {
+				if (installWasTapped() || sessionStorage.getItem('demo_install_ios_pulse_initial')) return;
+				sessionStorage.setItem('demo_install_ios_pulse_initial', '1');
+				runInstallPulse(2, true);
+			}, INSTALL_IOS_FIRST_MS);
+			setTimeout(function () {
+				if (installWasTapped() || sessionStorage.getItem('demo_install_ios_pulse_repeat')) return;
+				sessionStorage.setItem('demo_install_ios_pulse_repeat', '1');
+				runInstallPulse(1, true);
+			}, INSTALL_IOS_REPEAT_MS);
+		}
+		var tooltip = document.getElementById('demoAppInstallTooltip');
+		if (tooltip && isIosInAppBrowser() && !sessionStorage.getItem('demo_install_inapp_tooltip_seen')) {
+			setTimeout(function () {
+				if (installWasTapped()) return;
+				tooltip.hidden = false;
+				sessionStorage.setItem('demo_install_inapp_tooltip_seen', '1');
+				setTimeout(hideInstallTooltip, INSTALL_INAPP_TOOLTIP_DURATION_MS);
+			}, INSTALL_INAPP_TOOLTIP_MS);
+		}
+	} else if (platform === 'android' && !reduceMotion && !sessionStorage.getItem('demo_install_affordance_seen')) {
 		installBtn.classList.add('demo-app-install--attention');
 		sessionStorage.setItem('demo_install_affordance_seen', '1');
 	}
-	var hint = document.getElementById('demoAppSafariHint');
-	var platform = installBtn.getAttribute('data-platform') || '';
+
 	installBtn.addEventListener('click', function (e) {
-		installBtn.classList.remove('demo-app-install--attention');
+		clearInstallAttentionClasses();
+		hideInstallTooltip();
 		sessionStorage.setItem('demo_install_tapped', '1');
 		if (platform === 'ios' && isIosInAppBrowser()) {
 			e.preventDefault();
 			if (hint) hint.hidden = false;
 		}
 	});
+
 	if (hint) {
 		hint.querySelectorAll('[data-demo-safari-dismiss]').forEach(function (el) {
 			el.addEventListener('click', function () { hint.hidden = true; });
 		});
 	}
+
 	var cta = document.getElementById('demoAppCtaBtn');
-	if (cta && !prefersReducedMotion() && !sessionStorage.getItem('demo_cta_clicked')) {
-		var CTA_FIRST_MS = 60000;
-		var CTA_REPEAT_MS = 240000;
-		var CTA_BURST_MS = 2600;
+	if (cta && !reduceMotion && !sessionStorage.getItem('demo_cta_clicked')) {
 		var ctaBurstTimer = null;
 
 		function stopCtaBurst() {
@@ -194,6 +292,7 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 				ctaBurstTimer = null;
 			}
 			cta.classList.remove('demo-app-cta-btn--burst');
+			barAnimState.cta = false;
 		}
 
 		function scheduleNextCtaBurst() {
@@ -203,10 +302,19 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 
 		function runCtaBurst() {
 			if (sessionStorage.getItem('demo_cta_clicked')) return;
+			if (barAnimState.install) {
+				ctaBurstTimer = setTimeout(runCtaBurst, MUTEX_DEFER_MS);
+				return;
+			}
+			barAnimState.cta = true;
 			cta.classList.remove('demo-app-cta-btn--burst');
 			void cta.offsetWidth;
 			cta.classList.add('demo-app-cta-btn--burst');
-			ctaBurstTimer = setTimeout(scheduleNextCtaBurst, CTA_BURST_MS);
+			ctaBurstTimer = setTimeout(function () {
+				cta.classList.remove('demo-app-cta-btn--burst');
+				barAnimState.cta = false;
+				scheduleNextCtaBurst();
+			}, CTA_BURST_MS);
 		}
 
 		ctaBurstTimer = setTimeout(runCtaBurst, CTA_FIRST_MS);
