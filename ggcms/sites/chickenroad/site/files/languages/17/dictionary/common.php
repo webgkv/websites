@@ -24,6 +24,11 @@ $lang['common'] = array(
 	'popup_special_offer' => 'Nhận ưu đãi đặc biệt',
 	'aria_close' => 'Đóng',
 	'demo_app_fullscreen' => 'Toàn màn hình',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'Lên đầu trang',
 	'quick_access_eyebrow' => 'Truy cập nhanh',
 	'quick_access_title' => 'Mở bản demo Chicken Road trong trình duyệt hoặc dùng các tùy chọn di động',

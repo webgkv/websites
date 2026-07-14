@@ -206,71 +206,15 @@ if ($download_id !== null && ($idx = array_search($download_id, $menu_order)) !=
 	$abc['menu'] = $new_menu;
 }
 
-// Statistics counters (from Settings → Counters): head / after <body> / before </body>
+// Statistics counters (Settings → Counters or files/reference/counters.json)
 $abc['counters_head'] = array();
 $abc['counters_body'] = array();
 $abc['counters_footer'] = array();
+if (!function_exists('site_counters_hydrate_abc')) {
+	require_once dirname(__FILE__) . '/site_counters.php';
+}
+site_counters_hydrate_abc($abc);
 if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
-	$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'counters' LIMIT 1", 'row');
-	if ($row) {
-		if ($row['value'] !== '') {
-			$dec = json_decode($row['value'], true);
-			if (is_array($dec)) {
-				foreach ($dec as $c) {
-					if (empty($c['display'])) {
-						continue;
-					}
-					$split = array_key_exists('code_head', $c) || array_key_exists('code_body', $c) || array_key_exists('code_footer', $c);
-					$has_placement = isset($c['place_head']) || isset($c['place_body']) || isset($c['place_footer']);
-					if (!$has_placement) {
-						$ph = true;
-						$pb = false;
-						$pf = false;
-					} else {
-						$ph = !empty($c['place_head']);
-						$pb = !empty($c['place_body']);
-						$pf = !empty($c['place_footer']);
-						if (!$ph && !$pb && !$pf) {
-							continue;
-						}
-					}
-					if ($split) {
-						$ch = isset($c['code_head']) ? trim((string)$c['code_head']) : '';
-						$cb = isset($c['code_body']) ? trim((string)$c['code_body']) : '';
-						$cf = isset($c['code_footer']) ? trim((string)$c['code_footer']) : '';
-						if ($ph && $ch !== '') {
-							$abc['counters_head'][] = $ch;
-						}
-						if ($pb && $cb !== '') {
-							$abc['counters_body'][] = $cb;
-						}
-						if ($pf && $cf !== '') {
-							$abc['counters_footer'][] = $cf;
-						}
-					} else {
-						if (empty($c['code'])) {
-							continue;
-						}
-						if ($ph) {
-							$abc['counters_head'][] = $c['code'];
-						}
-						if ($pb) {
-							$abc['counters_body'][] = $c['code'];
-						}
-						if ($pf) {
-							$abc['counters_footer'][] = $c['code'];
-						}
-					}
-				}
-			}
-		}
-	} else {
-		$abc['counters_head'][] = '<script src="https://cdn.counter.dev/script.js" data-id="a555a78e-c2d3-41eb-95d4-8c319224b944" data-utcoffset="3"></script>';
-	}
-	if (!function_exists('site_counters_strip_onesignal_web_for_native_shell')) {
-		require_once dirname(__FILE__) . '/site_median_shell.php';
-	}
-	site_counters_strip_onesignal_web_for_native_shell($abc['counters_head'], $abc['counters_body'], $abc['counters_footer']);
 	// Advertising API mode (token + api_sources for external backend)
 	$row_ad = mysql_select("SELECT value FROM `variables` WHERE `key` = 'advertising_api' LIMIT 1", 'row');
 	$abc['advertising_api'] = array('mode' => 'self', 'token' => '', 'api_sources' => array(), 'api_sources_priority' => '', 'api_url' => '', 'debug_ip_check' => 0, 'manual_country' => '', 'trusted_proxy_ips' => array());

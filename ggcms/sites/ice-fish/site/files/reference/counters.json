@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "settings": {
+        "source": "json",
+        "onesignal_web_enabled": 1
+    },
+    "counters": [
+        {
+            "name": "Counter.dev",
+            "kind": "",
+            "code_head": "<script src=\"https://cdn.counter.dev/script.js\" data-id=\"a555a78e-c2d3-41eb-95d4-8c319224b944\" data-utcoffset=\"3\"></script>",
+            "code_body": "",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 0,
+            "place_footer": 0
+        },
+        {
+            "name": "ahrefs",
+            "kind": "",
+            "code_head": "<script src=\"https://analytics.ahrefs.com/analytics.js\" data-key=\"cQkRyatVncWDA29re4Xl4g\" async></script>",
+            "code_body": "",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 0,
+            "place_footer": 0
+        },
+        {
+            "name": "GTM",
+            "kind": "",
+            "code_head": "<!-- Google Tag Manager -->\r\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-WHH5NX4W');</script>\r\n<!-- End Google Tag Manager -->",
+            "code_body": "<!-- Google Tag Manager (noscript) -->\r\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-WHH5NX4W\"\r\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\r\n<!-- End Google Tag Manager (noscript) -->",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 1,
+            "place_footer": 0
+        },
+        {
+            "name": "onesignal",
+            "kind": "onesignal",
+            "code_head": "<script src=\"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js\" defer></script>\n<script>\nwindow.OneSignalDeferred = window.OneSignalDeferred || [];\nOneSignalDeferred.push(async function (OneSignal) {\n  await OneSignal.init({\n    appId: \"25b6a167-e7ce-4cdd-a8f6-364aba0ffa0a\",\n    serviceWorkerPath: \"/sw.js\",\n    serviceWorkerParam: { scope: \"/\" },\n    promptOptions: {\n      slidedown: {\n        prompts: [{\n          type: \"push\",\n          autoPrompt: false,\n          text: {\n            actionMessage: \"Get updates and alerts from Ice Fish. You can turn this off anytime in Settings.\",\n            acceptButton: \"Allow\",\n            cancelButton: \"Not now\",\n          },\n        }],\n      },\n    },\n  });\n});\n</script>",
+            "code_body": "",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 0,
+            "place_footer": 0
+        }
+    ]
+}

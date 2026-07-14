@@ -24,6 +24,11 @@ $lang['common'] = array(
 	'popup_special_offer' => 'अपना खास ऑफर लें',
 	'aria_close' => 'बंद करें',
 	'demo_app_fullscreen' => 'फ़ुलस्क्रीन',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'ऊपर जाएँ',
 	'quick_access_eyebrow' => 'त्वरित पहुँच',
 	'quick_access_title' => 'ब्राउज़र में Chicken Road डेमो खोलें या मोबाइल विकल्पों का उपयोग करें',

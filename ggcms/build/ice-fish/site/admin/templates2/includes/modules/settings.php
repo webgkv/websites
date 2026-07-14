@@ -309,18 +309,51 @@ $tab_url = 'admin.php?m=settings&tab=';
 <?php if ($tab === 'counters') { ?>
 <?php
 $counters = isset($q['counters']) && is_array($q['counters']) ? $q['counters'] : array();
+$counters_settings = isset($q['counters_settings']) && is_array($q['counters_settings']) ? $q['counters_settings'] : array('source' => 'json', 'onesignal_web_enabled' => 1);
+$counters_json_path = isset($q['counters_json_path']) ? (string)$q['counters_json_path'] : '';
+$counters_json_exists = !empty($q['counters_json_exists']);
+$import_msg = isset($_GET['import_msg']) ? (string)$_GET['import_msg'] : '';
 ?>
 <?php if (!$variables_exists) { ?>
 <div class="alert alert-info">Create table <code>variables</code> (id, <code>key</code>, value) to save counters. Until then, the default Counter.dev script is used on the site.</div>
 <?php } ?>
 <div class="card mb-4">
 	<div class="card-body">
-		<?php if ($saved) { ?><div class="alert alert-success mb-3">Counters saved.</div><?php } ?>
-		<form method="post" action="/admin.php?m=settings&tab=counters">
+		<h6 class="card-title mb-3">Counters source &amp; OneSignal</h6>
+		<p class="small text-muted mb-3">Reference file (git): <code>files/reference/counters.json</code><?php if ($counters_json_path !== '') { ?> — <?php if ($counters_json_exists) { ?><span class="text-success">found</span><?php } else { ?><span class="text-warning">missing on server</span><?php } ?><?php } ?>. CLI: <code>php scripts/export_counters_cli.php db</code>, <code>php scripts/import_counters_cli.php counters.json both</code>.</p>
+		<?php if ($import_msg !== '') { ?><div class="alert alert-info mb-3"><?= htmlspecialchars($import_msg) ?></div><?php } ?>
+		<form method="post" action="/admin.php?m=settings&tab=counters" class="mb-0">
 			<input type="hidden" name="counters_save" value="1" />
+			<div class="form-row mb-3">
+				<div class="col-md-4">
+					<label class="small font-weight-bold">Load counters from</label>
+					<select class="form-control form-control-sm" name="counters_source">
+						<option value="json" <?= (isset($counters_settings['source']) && $counters_settings['source'] === 'json') ? 'selected' : '' ?>>JSON file (reference)</option>
+						<option value="db" <?= (isset($counters_settings['source']) && $counters_settings['source'] === 'db') ? 'selected' : '' ?>>Database (admin edits below)</option>
+					</select>
+				</div>
+				<div class="col-md-4 pt-md-4">
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" name="onesignal_web_enabled" value="1" id="onesignalWebEnabled" <?= !empty($counters_settings['onesignal_web_enabled']) ? 'checked' : '' ?> />
+						<label class="form-check-label small" for="onesignalWebEnabled">OneSignal web push (custom counter code)</label>
+					</div>
+				</div>
+				<div class="col-md-4 pt-md-3 text-md-right">
+					<a class="btn btn-outline-secondary btn-sm" href="/admin.php?m=settings&tab=counters&counters_export=1">Export DB → JSON</a>
+				</div>
+			</div>
+			<div class="form-row mb-3 align-items-end">
+				<div class="col-md-8">
+					<label class="small font-weight-bold">Import JSON → database</label>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<?php if ($saved) { ?><div class="alert alert-success mb-3">Counters saved.</div><?php } ?>
 			<div id="counters-list">
 				<?php foreach ($counters as $i => $c) {
 					$name = isset($c['name']) ? $c['name'] : '';
+					$kind = isset($c['kind']) ? $c['kind'] : '';
 					$display = !empty($c['display']);
 					$has_place = isset($c['place_head']) || isset($c['place_body']) || isset($c['place_footer']);
 					$place_head = $has_place ? !empty($c['place_head']) : true;
@@ -344,6 +377,7 @@ $counters = isset($q['counters']) && is_array($q['counters']) ? $q['counters'] :
 						<div class="col-12 col-md-4 mb-2 mb-md-0">
 							<label class="small font-weight-bold">Name</label>
 							<input type="text" class="form-control form-control-sm" name="counters[<?= (int)$i ?>][name]" value="<?= htmlspecialchars($name) ?>" placeholder="e.g. GTM" />
+							<input type="hidden" name="counters[<?= (int)$i ?>][kind]" value="<?= htmlspecialchars($kind) ?>" />
 						</div>
 						<div class="col-12 col-md-2 mb-2 mb-md-0 pt-md-4">
 							<label class="small d-block">On</label>
@@ -385,7 +419,18 @@ $counters = isset($q['counters']) && is_array($q['counters']) ? $q['counters'] :
 			<div class="mb-3">
 				<button type="button" class="btn btn-outline-secondary btn-sm" id="counters-add">+ Add counter</button>
 			</div>
-			<button type="submit" class="btn btn-primary">Save counters</button>
+			<button type="submit" class="btn btn-primary">Save counters &amp; settings</button>
+		</form>
+		<form method="post" action="/admin.php?m=settings&tab=counters" enctype="multipart/form-data" class="mt-3 pt-3 border-top">
+			<div class="form-row align-items-end">
+				<div class="col-md-8">
+					<label class="small font-weight-bold">Import JSON file → database</label>
+					<input type="file" class="form-control-file form-control-sm" name="counters_json_file" accept=".json,application/json" required />
+				</div>
+				<div class="col-md-4">
+					<button type="submit" name="counters_import_json" value="1" class="btn btn-outline-primary btn-sm">Import to DB</button>
+				</div>
+			</div>
 		</form>
 	</div>
 </div>

@@ -314,10 +314,11 @@ if ($_preload_hero !== '') {
         }
         ?>
         <?php
-        if (!function_exists('site_onesignal_web_ios_prompt_script')) {
+        if (!function_exists('site_onesignal_push_flow_helpers_script')) {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
         }
         if (!$_site_median_native_shell) {
+            echo site_onesignal_push_flow_helpers_script();
             echo site_onesignal_web_ios_prompt_script();
         }
         ?>

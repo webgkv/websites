@@ -21,10 +21,22 @@ if (!is_file($config_file)) {
 	exit(1);
 }
 
+require_once(ROOT_DIR . 'config/config.php');
+
 // Avoid "Undefined index" in config when run from CLI (no HTTP_HOST, REMOTE_ADDR, SERVER_ADDR)
 if ($is_cli) {
-	if (!isset($_SERVER['HTTP_HOST'])) {
-		$_SERVER['HTTP_HOST'] = 'localhost';
+	if (!isset($_SERVER['HTTP_HOST']) || $_SERVER['HTTP_HOST'] === '' || $_SERVER['HTTP_HOST'] === 'localhost') {
+		$cli_host = '';
+		if (!empty($config['domain_main'])) {
+			$cli_host = preg_replace('/^www\./', '', strtolower((string) $config['domain_main']));
+		}
+		if ($cli_host === '' && is_file(ROOT_DIR . 'config/brand.profile.php')) {
+			$profile = require ROOT_DIR . 'config/brand.profile.php';
+			if (is_array($profile) && !empty($profile['domain'])) {
+				$cli_host = preg_replace('/^www\./', '', strtolower((string) $profile['domain']));
+			}
+		}
+		$_SERVER['HTTP_HOST'] = $cli_host !== '' ? $cli_host : 'localhost';
 	}
 	if (!isset($_SERVER['REMOTE_ADDR'])) {
 		$_SERVER['REMOTE_ADDR'] = '127.0.0.1';
@@ -34,7 +46,6 @@ if ($is_cli) {
 	}
 }
 
-require_once(ROOT_DIR . 'config/config.php');
 require_once(ROOT_DIR . 'functions/mysql_func.php');
 require_once(ROOT_DIR . 'admin/actions/migrate_BD_run.php');
 

@@ -24,6 +24,11 @@ $lang['common'] = array(
 	'popup_special_offer' => 'Sichern Sie sich Ihr Sonderangebot',
 	'aria_close' => 'Schließen',
 	'demo_app_fullscreen' => 'Vollbild',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'Nach oben',
 	'quick_access_eyebrow' => 'Schnellzugriff',
 	'quick_access_title' => 'Öffnen Sie die Chicken-Road-Demo im Browser oder nutzen Sie die mobilen Optionen',

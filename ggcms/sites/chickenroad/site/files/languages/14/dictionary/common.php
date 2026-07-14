@@ -24,6 +24,11 @@ $lang['common'] = array(
 	'popup_special_offer' => 'Richiedi la tua offerta speciale',
 	'aria_close' => 'Chiudi',
 	'demo_app_fullscreen' => 'Schermo intero',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'Torna su',
 	'quick_access_eyebrow' => 'Accesso rapido',
 	'quick_access_title' => 'Apri la demo di Chicken Road nel browser oppure usa le opzioni mobile',

@@ -64,6 +64,8 @@ if (!function_exists('demo_app_push_affordance_markup')) {
 
 if (!function_exists('demo_app_push_affordance_modal')) {
 	/**
+	 * Settings hint when native permission is denied (not a subscribe soft prompt).
+	 *
 	 * @param array $ui from demo_app_push_ui_strings()
 	 */
 	function demo_app_push_affordance_modal(array $ui) {
@@ -94,31 +96,8 @@ if (!function_exists('demo_app_push_affordance_script')) {
 	var installBtn = document.getElementById('demoAppInstallBtn');
 	if (!pushWrap || !pushBtn || !installBtn) return;
 
-	var LS_AUTO = 'os_ios_push_auto_offered';
-
-	function isStandaloneShell() {
-		if (window.navigator.standalone === true) return true;
-		try {
-			if (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) return true;
-			if (window.matchMedia && window.matchMedia('(display-mode: fullscreen)').matches) return true;
-		} catch (e) { /* ignore */ }
-		return false;
-	}
-
-	function isIosDevice() {
-		var ua = navigator.userAgent || '';
-		if (/iPhone|iPad|iPod/i.test(ua)) return true;
-		return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-	}
-
-	function nativePermission() {
-		try {
-			if (window.Notification && Notification.permission) {
-				return Notification.permission;
-			}
-		} catch (e) { /* ignore */ }
-		return 'default';
-	}
+	var flow = window.siteOneSignalPushFlow;
+	if (!flow) return;
 
 	function hidePushAffordance() {
 		pushWrap.hidden = true;
@@ -141,32 +120,20 @@ if (!function_exists('demo_app_push_affordance_script')) {
 		pushBtn.removeAttribute('aria-hidden');
 	}
 
-	function syncFromPermission() {
-		if (!isStandaloneShell() || !isIosDevice()) {
+	async function syncFromOneSignal(OneSignal) {
+		if (!flow.isStandaloneShell() || !flow.isIosDevice()) {
 			hidePushAffordance();
 			return;
 		}
-		var perm = nativePermission();
-		if (perm === 'granted') {
+		if (flow.nativePermission() === 'denied') {
+			showPushAffordance('denied');
+			return;
+		}
+		if (OneSignal && await flow.isSubscribed(OneSignal)) {
 			hidePushAffordance();
 			return;
 		}
-		showPushAffordance(perm === 'denied' ? 'denied' : 'default');
-	}
-
-	function markAutoOffered() {
-		try { localStorage.setItem(LS_AUTO, '1'); } catch (e) { /* ignore */ }
-	}
-
-	function requestPushPermission(OneSignal) {
-		markAutoOffered();
-		if (OneSignal && OneSignal.Notifications && typeof OneSignal.Notifications.requestPermission === 'function') {
-			return OneSignal.Notifications.requestPermission();
-		}
-		if (window.Notification && typeof Notification.requestPermission === 'function') {
-			return Notification.requestPermission();
-		}
-		return Promise.resolve();
+		showPushAffordance('default');
 	}
 
 	function bindPushHint() {
@@ -177,46 +144,32 @@ if (!function_exists('demo_app_push_affordance_script')) {
 	}
 
 	function bindPushClick(OneSignal) {
-		pushBtn.addEventListener('click', function () {
-			var perm = nativePermission();
-			if (perm === 'denied') {
+		flow.setReady(OneSignal);
+
+		pushBtn.addEventListener('click', async function () {
+			if (flow.nativePermission() === 'denied') {
 				if (pushHint) pushHint.hidden = false;
 				return;
 			}
-			requestPushPermission(OneSignal).finally(function () {
-				setTimeout(syncFromPermission, 300);
-			});
+			pushBtn.disabled = true;
+			pushBtn.classList.add('demo-app-push--loading');
+			try {
+				var OS = await flow.waitReady();
+				await flow.ensureSubscribed(OS, { force: true });
+			} catch (e) { /* ignore */ }
+			pushBtn.classList.remove('demo-app-push--loading');
+			pushBtn.disabled = false;
+			await syncFromOneSignal(await flow.waitReady());
 		});
 	}
 
-	function initWithOneSignal(OneSignal) {
-		if (!isStandaloneShell() || !isIosDevice()) return;
-		var installWrap = installBtn.closest('.demo-app-install-wrap');
-		if (installWrap) installWrap.style.display = 'none';
-		installBtn.style.display = 'none';
-		installBtn.setAttribute('aria-hidden', 'true');
-
-		syncFromPermission();
-
-		if (OneSignal && OneSignal.Notifications && typeof OneSignal.Notifications.addEventListener === 'function') {
-			OneSignal.Notifications.addEventListener('permissionChange', function () {
-				syncFromPermission();
-			});
+	async function initWithOneSignal(OneSignal) {
+		if (!flow.isStandaloneShell() || !flow.isIosDevice()) {
+			hidePushAffordance();
+			return;
 		}
-
-		bindPushClick(OneSignal);
-		bindPushHint();
-	}
-
-	if (!isStandaloneShell() || !isIosDevice()) {
-		hidePushAffordance();
-		return;
-	}
-
-	window.OneSignalDeferred = window.OneSignalDeferred || [];
-	OneSignalDeferred.push(async function (OneSignal) {
 		try {
-			if (!(await OneSignal.Notifications.isPushSupported())) {
+			if (!(await flow.isPushSupported(OneSignal))) {
 				hidePushAffordance();
 				return;
 			}
@@ -224,16 +177,47 @@ if (!function_exists('demo_app_push_affordance_script')) {
 			hidePushAffordance();
 			return;
 		}
-		initWithOneSignal(OneSignal);
-	});
 
-	// Fallback if OneSignal never loads — still show settings hint affordance from Notification API.
-	setTimeout(function () {
-		if (pushWrap.hidden === false) return;
-		if (!isStandaloneShell() || !isIosDevice()) return;
-		if (nativePermission() === 'granted') return;
-		initWithOneSignal(null);
-	}, 4000);
+		flow.setReady(OneSignal);
+		flow.warmup(OneSignal);
+
+		var installWrap = installBtn.closest('.demo-app-install-wrap');
+		if (installWrap) installWrap.style.display = 'none';
+		installBtn.style.display = 'none';
+		installBtn.setAttribute('aria-hidden', 'true');
+
+		await syncFromOneSignal(OneSignal);
+
+		if (OneSignal.Notifications && typeof OneSignal.Notifications.addEventListener === 'function') {
+			OneSignal.Notifications.addEventListener('permissionChange', function () {
+				syncFromOneSignal(OneSignal);
+			});
+		}
+		if (OneSignal.User && OneSignal.User.PushSubscription
+			&& typeof OneSignal.User.PushSubscription.addEventListener === 'function') {
+			OneSignal.User.PushSubscription.addEventListener('change', function () {
+				syncFromOneSignal(OneSignal);
+			});
+		}
+
+		bindPushClick(OneSignal);
+		bindPushHint();
+	}
+
+	window.__demoAppPushSyncUI = function () {
+		if (flow._oneSignal) {
+			syncFromOneSignal(flow._oneSignal);
+		}
+	};
+
+	if (!flow.isStandaloneShell() || !flow.isIosDevice()) {
+		hidePushAffordance();
+		return;
+	}
+
+	flow.schedulePostInit(async function (OneSignal) {
+		await initWithOneSignal(OneSignal);
+	});
 })();
 </script>
 HTML;

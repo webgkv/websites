@@ -27,6 +27,11 @@ $lang['common'] = array(
 	'demo_app_open_in_safari_title' => 'Open in Safari',
 	'demo_app_open_in_safari_body' => 'To add PowerBall Jackpot to your Home Screen, open this page in Safari first, then use Share → Add to Home Screen.',
 	'demo_app_modal_got_it' => 'Got it',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'Go to top',
 	'quick_access_eyebrow' => 'Quick Access',
 	'quick_access_title' => 'Open the PowerBall Jackpot demo in your browser or use the mobile options',

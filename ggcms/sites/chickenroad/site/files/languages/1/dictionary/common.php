@@ -31,6 +31,11 @@ $lang['common'] = array(
 	'demo_app_push_denied_label' => 'Notifications off',
 	'demo_app_push_denied_title' => 'Turn on notifications',
 	'demo_app_push_denied_body' => 'Open the Settings app → Notifications → Chicken Road → turn on Allow Notifications. Then return to the app.',
+
+	'demo_app_push_soft_title' => 'Stay in the loop',
+	'demo_app_push_soft_body' => 'Get updates and alerts from {brand}. You can turn this off anytime in Settings.',
+	'demo_app_push_soft_allow' => 'Allow notifications',
+	'demo_app_push_soft_cancel' => 'Not now',
 	'go_to_top' => 'Go to top',
 	'quick_access_eyebrow' => 'Quick Access',
 	'quick_access_title' => 'Open the Chicken Road demo in your browser or use the mobile options',

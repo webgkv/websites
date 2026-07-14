@@ -125,6 +125,7 @@ if ($tab === 'cron' && !empty($_POST['cron_task_run_now']) && isset($_POST['cron
 if ($tab === 'counters' && !empty($_POST['counters_save']) && isset($_POST['counters']) && is_array($_POST['counters'])) {
 	$variables_exists = @mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0;
 	if ($variables_exists) {
+		require_once ROOT_DIR . 'functions/site_counters.php';
 		$list = array();
 		foreach ($_POST['counters'] as $row) {
 			if (!isset($row['name'])) {
@@ -139,6 +140,7 @@ if ($tab === 'counters' && !empty($_POST['counters_save']) && isset($_POST['coun
 			}
 			$list[] = array(
 				'name'         => $name ?: 'Counter',
+				'kind'         => isset($row['kind']) ? trim((string)$row['kind']) : '',
 				'code_head'    => $code_head,
 				'code_body'    => $code_body,
 				'code_footer'  => $code_footer,
@@ -148,15 +150,35 @@ if ($tab === 'counters' && !empty($_POST['counters_save']) && isset($_POST['coun
 				'place_footer' => !empty($row['place_footer']) ? 1 : 0,
 			);
 		}
-		$json = json_encode($list, JSON_UNESCAPED_UNICODE);
-		$exists = mysql_select("SELECT id, value FROM `variables` WHERE `key` = 'counters' LIMIT 1", 'row');
-		if ($exists && !empty($exists['id'])) {
-			mysql_fn('update', 'variables', array('id' => $exists['id'], 'value' => $json));
-		} else {
-			mysql_fn('insert', 'variables', array('key' => 'counters', 'value' => $json));
-		}
+		site_counters_save_to_db($list);
+		site_counters_save_settings(array(
+			'source' => isset($_POST['counters_source']) ? (string)$_POST['counters_source'] : 'json',
+			'onesignal_web_enabled' => !empty($_POST['onesignal_web_enabled']) ? 1 : 0,
+		));
 	}
 	header('Location: /admin.php?m=settings&tab=counters&saved=1');
+	exit;
+}
+
+if ($tab === 'counters' && !empty($_POST['counters_import_json']) && !empty($_FILES['counters_json_file']['tmp_name'])) {
+	require_once ROOT_DIR . 'functions/site_counters.php';
+	$raw = file_get_contents($_FILES['counters_json_file']['tmp_name']);
+	$pack = json_decode($raw, true);
+	$msg = 'Invalid JSON';
+	if (is_array($pack)) {
+		$res = site_counters_import_pack($pack, 'db');
+		$msg = $res['message'];
+	}
+	header('Location: /admin.php?m=settings&tab=counters&import_msg=' . rawurlencode($msg));
+	exit;
+}
+
+if ($tab === 'counters' && !empty($_GET['counters_export']) && $_GET['counters_export'] === '1') {
+	require_once ROOT_DIR . 'functions/site_counters.php';
+	$pack = site_counters_export_pack('db');
+	header('Content-Type: application/json; charset=utf-8');
+	header('Content-Disposition: attachment; filename="counters-export.json"');
+	echo json_encode($pack, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 	exit;
 }
 
@@ -225,11 +247,30 @@ if ($variables_exists) {
 
 // ----- Counters tab: load from variables or default (counter.dev)
 $counters = array();
+$counters_settings = array('source' => 'json', 'onesignal_web_enabled' => 1);
+$counters_json_path = '';
+$counters_json_exists = false;
+if (is_file(ROOT_DIR . 'functions/site_counters.php')) {
+	require_once ROOT_DIR . 'functions/site_counters.php';
+	$counters_settings = site_counters_load_settings();
+	$counters_json_path = site_counters_reference_path();
+	$counters_json_exists = is_file($counters_json_path);
+	if ($counters_settings['source'] === 'json' && $counters_json_exists) {
+		$json_pack = site_counters_load_json_file($counters_json_path);
+		if ($json_pack !== null) {
+			$counters = $json_pack['counters'];
+		}
+	}
+}
 if ($variables_exists) {
-	$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'counters' LIMIT 1", 'row');
-	if ($row && $row['value'] !== '') {
-		$dec = json_decode($row['value'], true);
-		if (is_array($dec)) $counters = $dec;
+	if (empty($counters) || $counters_settings['source'] === 'db') {
+		$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'counters' LIMIT 1", 'row');
+		if ($row && $row['value'] !== '') {
+			$dec = json_decode($row['value'], true);
+			if (is_array($dec)) {
+				$counters = $dec;
+			}
+		}
 	}
 }
 if (empty($counters)) {
@@ -298,6 +339,9 @@ $content = html_array('modules/settings', array(
 	'variables_map_json' => json_encode($variables_map_for_js, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_UNESCAPED_UNICODE),
 	'variables_exists' => $variables_exists,
 	'counters' => $counters,
+	'counters_settings' => $counters_settings,
+	'counters_json_path' => $counters_json_path,
+	'counters_json_exists' => $counters_json_exists,
 	'saved' => isset($get['saved']) && $get['saved'] == '1',
 	'logs_cleanup_saved' => isset($get['logs_cleanup_saved']) && $get['logs_cleanup_saved'] == '1',
 	'jobs_cleanup_saved' => isset($get['jobs_cleanup_saved']) && $get['jobs_cleanup_saved'] == '1',

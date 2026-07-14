@@ -180,6 +180,56 @@ if (function_exists('site_seo_public_origin')) {
 			border-color: color-mix(in srgb, #e8eef5 35%, transparent);
 			color: #e8eef5;
 		}
+		.demo-app-push--loading {
+			pointer-events: none;
+			opacity: 0.85;
+		}
+		.demo-app-push--loading #demoAppPushIcon {
+			animation: demo-push-spin 0.75s linear infinite;
+		}
+		@keyframes demo-push-spin {
+			from { transform: rotate(0deg); }
+			to { transform: rotate(360deg); }
+		}
+		.demo-app-push-soft__actions {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			margin-top: 0.75rem;
+		}
+		.demo-app-push-soft .demo-app-safari-hint__panel {
+			background: #ffffff;
+			border: none;
+			box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+		}
+		.demo-app-push-soft .demo-app-safari-hint__title {
+			color: #111111;
+			font-size: 17px;
+		}
+		.demo-app-push-soft .demo-app-safari-hint__body {
+			color: #444444;
+			font-size: 14px;
+		}
+		.demo-app-push-soft__allow {
+			display: block;
+			width: 100%;
+			padding: 12px 14px;
+			border: 0;
+			border-radius: 10px;
+			background: var(--demo-install-accent);
+			color: #1a1a1a;
+			font-weight: 700;
+			font-size: 15px;
+			cursor: pointer;
+		}
+		.demo-app-push-soft__cancel {
+			background: transparent;
+			border: none;
+			color: #666666;
+			font-size: 0.9rem;
+			padding: 0.35rem;
+			cursor: pointer;
+		}
 		@media (max-width: 767px) {
 			.demo-app-install-wrap .demo-app-install,
 			.demo-app-push-wrap .demo-app-push {
@@ -305,14 +355,27 @@ if (function_exists('site_seo_public_origin')) {
 	}
 	$_demo_app_median_shell = function_exists('site_is_median_native_webview') && site_is_median_native_webview();
 	if (!$_demo_app_median_shell) {
-		if (!function_exists('site_onesignal_web_ios_prompt_script')) {
+		if (!function_exists('site_onesignal_early_sw_script')) {
 			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
 		}
+		echo site_onesignal_early_sw_script();
+	}
+	?>
+	<?php /* OneSignal SDK/init; then push helpers + delayed auto-prompt. */ ?>
+	<?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n\t"; } } ?>
+	<?php
+	if (!function_exists('site_is_median_native_webview')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_median_shell.php';
+	}
+	$_demo_app_median_shell = function_exists('site_is_median_native_webview') && site_is_median_native_webview();
+	if (!$_demo_app_median_shell) {
+		if (!function_exists('site_onesignal_push_flow_helpers_script')) {
+			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
+		}
+		echo site_onesignal_push_flow_helpers_script();
 		echo site_onesignal_web_ios_prompt_script();
 	}
 	?>
-	<?php /* No service worker on /demo/app/: avoid interfering with third-party game iframe. */ ?>
-	<?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n\t"; } } ?>
 </head>
 <body class="demo-app-doc">
 <?php if (!empty($abc['counters_body'])) { foreach ($abc['counters_body'] as $_counter) { echo $_counter . "\n"; } } ?>
