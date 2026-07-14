@@ -574,12 +574,13 @@
         gap: 0.8rem;
     }
     .demo-quick-access__store {
-        flex-direction: row;
         justify-content: center;
-        gap: 0.7rem;
         min-height: 4.25rem;
         font-size: 1rem;
         text-align: center;
+    }
+    .demo-quick-access__store-label {
+        gap: 0.55rem;
     }
     .demo-preview-strip__grid {
         grid-template-columns: 1fr;
@@ -613,5 +614,9 @@
     }
     .demo-quick-access__store {
         text-align: center;
+        justify-content: center;
+    }
+    .demo-quick-access__store-label {
+        justify-content: center;
     }
 }

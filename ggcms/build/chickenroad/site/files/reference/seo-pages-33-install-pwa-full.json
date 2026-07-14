@@ -1,0 +1,249 @@
+{
+    "schema": "seo_cluster_v1",
+    "exported_at": "2026-07-14T12:53:12Z",
+    "entity": "pages",
+    "entity_id": 33,
+    "mode": "full",
+    "locales": [
+        {
+            "lang_id": 1,
+            "lang_url": "en",
+            "url": "install-pwa",
+            "name": "Install on iPhone",
+            "title": "Install Chicken Road demo on iPhone",
+            "description": "Add Chicken Road to your iPhone Home Screen in about a minute — full-screen demo, one tap, same experience as a regular app. Official Safari shortcut: Share → Add to Home Screen.",
+            "content": "<h1>Install the Chicken Road demo on your iPhone</h1>\r\n<p class=\"pwa-ios-trust-intro\">In about a minute, Chicken Road will sit on your Home Screen — full screen, one tap, the same daily flow you already know from your favorite apps. The icon stays where you expect it, opens in its own window, and feels familiar from the very first launch. Apple built this official iPhone shortcut into Safari; the three steps below are the same path millions of people use — and the result matches a regular installed app.</p>\r\n<h2>Fastest path</h2>\r\n<p>Open the fullscreen demo in Safari — <a href=\"https://chickenroad.run/en/demo/app/\">https://chickenroad.run/en/demo/app/</a>. Then follow the steps below, starting with Share.</p>\r\n<h2>Step by step</h2>\r\n<h3>Step 1 — Share</h3>\r\n<p>First tap <strong>Share</strong>. In Safari this is usually the square with an up arrow; on some iOS layouts you may see a <strong>⋯</strong> (three dots) or an overflow menu that leads to the same actions.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Safari share sheet on the Chicken Road demo page\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Safari share sheet on the Chicken Road demo page</figcaption>\r\n</figure>\r\n<h3>Step 2 — Add to Home Screen</h3>\r\n<p>Scroll the list of actions and choose <strong>Add to Home Screen</strong>. If it is not listed, use Edit Actions at the bottom and switch it on.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Add to Home Screen selected in the share menu\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Add to Home Screen selected in the share menu</figcaption>\r\n</figure>\r\n<h3>Step 3 — Open as Web App</h3>\r\n<p>In the add sheet, if iOS offers <strong>Open as Web App</strong>, turn it on, then tap <strong>Add</strong>.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Add to Home Screen sheet with Open as Web App on\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Add to Home Screen sheet with Open as Web App on</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "main",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 3,
+            "lang_url": "fr",
+            "url": "install-pwa",
+            "name": "Installer sur iPhone",
+            "title": "Installer la démo Chicken Road sur iPhone",
+            "description": "Ajoutez la démo Chicken Road à l’écran d’accueil dans Safari, activez Ouvrir comme application web, et gardez la même page d’ouverture pour l’icône enregistrée.",
+            "content": "<h1>Ajouter la démo Chicken Road sur l’écran d’accueil</h1>\r\n<p class=\"pwa-ios-trust-intro\">En une minute environ, Chicken Road sera sur votre écran d’accueil — plein écran, un tap, le même rituel que vos applis habituelles. L’icône reste à sa place, s’ouvre dans sa propre fenêtre et paraît familière dès le premier lancement. Apple a intégré ce raccourci officiel dans Safari ; les trois étapes ci-dessous mènent au même résultat qu’une application installée.</p>\r\n<h2>Raccourci le plus clair</h2>\r\n<p>Ouvrez la démo plein écran dans Safari — <a href=\"https://chickenroad.run/fr/demo/app/\">https://chickenroad.run/fr/demo/app/</a>. Puis suivez les étapes, en commençant par Partager.</p>\r\n<h2>Procédure détaillée</h2>\r\n<h3>Partager dans Safari</h3>\r\n<p>Depuis la page que vous voulez figer, touchez Partager, le carré avec la flèche sortante.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Feuille Partager sur la page démo Chicken Road\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Feuille Partager sur la page démo Chicken Road</figcaption>\r\n</figure>\r\n<h3>Sur l’écran d’accueil</h3>\r\n<p>Faites défiler les actions, choisissez Sur l’écran d’accueil. Absent de la liste ? Touchez Modifier les actions, puis réactivez la commande.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"L’action Sur l’écran d’accueil mise en avant\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">L’action Sur l’écran d’accueil mise en avant</figcaption>\r\n</figure>\r\n<h3>Ouvrir comme application web</h3>\r\n<p>Lorsqu’iOS affiche l’option, activez Ouvrir comme application web, puis validez avec Ajouter. L’ouverture se fait souvent en fenêtre propre, pas en mini-onglet figé.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Feuille Sur l’écran d’accueil avec l’option web app actif\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Feuille Sur l’écran d’accueil avec l’option web app actif</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 4,
+            "lang_url": "de",
+            "url": "install-pwa",
+            "name": "Auf iPhone installieren",
+            "title": "Chicken Road-Demo auf dem iPhone ablegen",
+            "description": "Chicken Road-Demo in Safari auf den Home-Bildschirm legen, optional „Als Web-App öffnen“ nutzen, dieselbe Startseite beim Tippen auf die Kachel behalten.",
+            "content": "<h1>Chicken Road-Demo als Home-Screen-Verknüpfung</h1>\r\n<p class=\"pwa-ios-trust-intro\">In etwa einer Minute liegt Chicken Road auf Ihrem Home-Bildschirm — Vollbild, ein Tippen, derselbe Ablauf wie bei Apps, die Sie schon nutzen. Das Symbol bleibt dort, wo Sie es erwarten, öffnet sich in einem eigenen Fenster und wirkt vom ersten Start an vertraut. Apple hat diesen offiziellen Safari-Weg in jedes iPhone eingebaut; die drei Schritte unten führen zum gleichen Ergebnis wie eine installierte App.</p>\r\n<h2>Direkter Ablauf</h2>\r\n<p>Öffnen Sie die Vollbild-Demo in Safari, z. B. <a href=\"https://chickenroad.run/de/demo/app/\">https://chickenroad.run/de/demo/app/</a>. Dann die Schritte ab „Teilen“ befolgen.</p>\r\n<h2>Schritt für Schritt</h2>\r\n<h3>Teilen in Safari</h3>\r\n<p>Auf der Zielseite (z. B. Vollbild-Demo) die Teilen-Fläche antippen — Quadrat mit Pfeil.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Teilen-Menü in Safari auf der Chicken Road-Demo\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Teilen-Menü in Safari auf der Chicken Road-Demo</figcaption>\r\n</figure>\r\n<h3>Zum Home-Bildschirm</h3>\r\n<p>Zum Eintrag Zum Home-Bildschirm scrollen. Fehlt er, unten Aktionen bearbeiten und den Eintrag aktivieren.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Aktion Zum Home-Bildschirm im Teilen-Panel sichtbar\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Aktion Zum Home-Bildschirm im Teilen-Panel sichtbar</figcaption>\r\n</figure>\r\n<h3>Als Web-App öffnen</h3>\r\n<p>Ist der Schalter sichtbar, einschalten, danach Hinzufügen. So öffnet sich der Shortcut in einem eigenen Fenster statt in einem Mini-Tab.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Dialog Zum Home-Bildschirm mit Web-App-Schalter an\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Dialog Zum Home-Bildschirm mit Web-App-Schalter an</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 6,
+            "lang_url": "es",
+            "url": "install-pwa",
+            "name": "Instalar en iPhone",
+            "title": "Añadir la demo de Chicken Road al iPhone",
+            "description": "Añade la demo de Chicken Road a la pantalla de inicio en Safari, activa Abrir como app web y conserva el mismo inicio al abrir el icono guardado.",
+            "content": "<h1>Guarda la demo de Chicken Road en la pantalla de inicio</h1>\r\n<p class=\"pwa-ios-trust-intro\">En un minuto, Chicken Road estará en tu pantalla de inicio — pantalla completa, un toque, el mismo ritmo diario que tus apps favoritas. El icono queda donde lo esperas, se abre en su propia ventana y se siente familiar desde el primer uso. Apple integró este acceso oficial en Safari; los tres pasos de abajo dan el mismo resultado que una app instalada.</p>\r\n<h2>Ruta mínima</h2>\r\n<p>Abre la demo a pantalla completa en Safari, p. ej. <a href=\"https://chickenroad.run/es/demo/app/\">https://chickenroad.run/es/demo/app/</a>. Luego los pasos desde Compartir.</p>\r\n<h2>Paso a paso</h2>\r\n<h3>Compartir en Safari</h3>\r\n<p>Sobre la página fijada, toca Compartir, el cuadrado con la flecha saliente.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Hoja Compartir en el demo Chicken Road de Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Hoja Compartir en el demo Chicken Road de Safari</figcaption>\r\n</figure>\r\n<h3>Añadir a la pantalla de inicio</h3>\r\n<p>Baja en la lista y elige Añadir. Si no aparece, toca Editar acciones y actívala.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Acción añadida a la pantalla de inicio resaltada\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Acción añadida a la pantalla de inicio resaltada</figcaption>\r\n</figure>\r\n<h3>Abrir como app web</h3>\r\n<p>Con el conmutador visible, actívalo y pulsa Añadir. De ese modo se evita el mini-visor y el acceso gana cuerpo de app.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Diálogo con Abrir como app web activo\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Diálogo con Abrir como app web activo</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 7,
+            "lang_url": "hi",
+            "url": "install-pwa",
+            "name": "iPhone इंस्टॉल",
+            "title": "iPhone पर Chicken Road डेमो सेव करें",
+            "description": "Safari में Chicken Road डेमो होम स्क्रीन पर सहेजें, वेब ऐप विकल्प चालू रखें, नए आइकन पर वही पेज मिले जो आपने देखा।",
+            "content": "<h1>होम स्क्रीन पर Chicken Road डेमो जोड़ें</h1>\r\n<p class=\"pwa-ios-trust-intro\">लगभग एक मिनट में Chicken Road आपकी होम स्क्रीन पर होगा — फुल स्क्रीन, एक टैप, वही रोज़ का अनुभव जो आपके पसंदीदा ऐप्स देते हैं। आइकन वहीं रहता है जहाँ आप उम्मीद करते हैं, अपनी विंडो में खुलता है और पहली बार से ही परिचित लगता है। Apple ने Safari में यह आधिकारिक शॉर्टकट दिया है; नीचे के तीन चरण वही परिणाम देते हैं जो एक इंस्टॉल किए गए ऐप से मिलता है।</p>\r\n<h2>कम देर में पूरा करें</h2>\r\n<p>Safari में फुलस्क्रीन डेमो खोलें, जैसे <a href=\"https://chickenroad.run/hi/demo/app/\">https://chickenroad.run/hi/demo/app/</a>। फिर शेयर से आगे।</p>\r\n<h2>चरण दर चरण</h2>\r\n<h3>Safari में शेयर</h3>\r\n<p>सही पेज खुला रखें, तब शेयर दबाएं — ऊपर तीर वाला चौकोर आइकन।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Chicken Road डेमो पेज पर Safari शेयर शीट\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Chicken Road डेमो पेज पर Safari शेयर शीट</figcaption>\r\n</figure>\r\n<h3>होम स्क्रीन में जोड़ें</h3>\r\n<p>क्रियाएँ सूची नीचे स्क्रॉल करें, “होम स्क्रीन में जोड़ें” चुनें। विकल्प न दिखे तो “क्रियाएँ संपादित करें” से पंक्ति वापस लाएं।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"शेयर मेन्यू में होम स्क्रीन विकल्प हाइलाइट\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">शेयर मेन्यू में होम स्क्रीन विकल्प हाइलाइट</figcaption>\r\n</figure>\r\n<h3>वेब ऐप के रूप में खोलें</h3>\r\n<p>“वेब ऐप के रूप में खोलें” वाला स्विच चालू करें, फिर जोड़ें टैप करें। ऐसे साइट ठोस विंडो में खुलेगी, संकीर्ण टैब प्रिव्यू में नहीं।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"वेब ऐप विकल्प सक्रिय जोड़ें संवाद\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">वेब ऐप विकल्प सक्रिय जोड़ें संवाद</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 8,
+            "lang_url": "pt",
+            "url": "install-pwa",
+            "name": "Instalar no iPhone",
+            "title": "Adicionar a demo Chicken Road ao iPhone",
+            "description": "Adicione a demo Chicken Road à Tela Inicial no Safari, ligue Abrir como app web e mantenha o mesmo ponto de partida ao tocar o ícone.",
+            "content": "<h1>Fixar a demo Chicken Road no ecrã principal</h1>\r\n<p class=\"pwa-ios-trust-intro\">Em cerca de um minuto, Chicken Road ficará na sua Tela Inicial — ecrã inteiro, um toque, o mesmo fluxo das apps que já usa. O ícone fica onde espera, abre numa janela própria e parece familiar desde o primeiro arranque. A Apple integrou este atalho oficial no Safari; os três passos abaixo levam ao mesmo resultado de uma app instalada.</p>\r\n<h2>Caminho curto</h2>\r\n<p>Abra a demo em ecrã inteiro no Safari, ex.: <a href=\"https://chickenroad.run/pt/demo/app/\">https://chickenroad.run/pt/demo/app/</a>. Depois siga a partir de Partilhar.</p>\r\n<h2>Passo a passo</h2>\r\n<h3>Partilhar no Safari</h3>\r\n<p>Na página desejada, toque em Partilhar, o quadrado com seta para fora.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Folha Partilhar na demo Chicken Road no Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Folha Partilhar na demo Chicken Road no Safari</figcaption>\r\n</figure>\r\n<h3>Adicionar à Tela Inicial</h3>\r\n<p>Rola até a ação, escolhe Adicionar. Se faltar, Editar ações e reativa a linha certa.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Ação Adicionar à Tela Inicial em destaque\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Ação Adicionar à Tela Inicial em destaque</figcaption>\r\n</figure>\r\n<h3>Abrir como app web</h3>\r\n<p>Com o comutador visível, ativa-o, confirma com Adicionar. A abertura fica com cara de app em vez de cartão mínimo.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Folha com Abrir como app web ligada\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Folha com Abrir como app web ligada</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 9,
+            "lang_url": "ru",
+            "url": "install-pwa",
+            "name": "Установить на iPhone",
+            "title": "Как установить демо Chicken Road на iPhone",
+            "description": "Демо Chicken Road с экрана «Домой»: откройте /demo/app/ в Safari, «Поделиться», «На экран Домой», «Открыть как веб‑приложение».",
+            "content": "<h1>Как установить демо Chicken Road на iPhone</h1>\r\n<p class=\"pwa-ios-trust-intro\">Примерно за минуту Chicken Road окажется на экране «Домой» — полный экран, один тап, тот же привычный сценарий, что у приложений, которыми вы уже пользуетесь. Иконка стоит там, где вы её ждёте, открывается в отдельном окне и с первого запуска ощущается своей. Apple встроила этот официальный способ в Safari; три шага ниже — тот же путь, которым пользуются миллионы, и итог не отличается от обычного установленного приложения.</p>\r\n<h2>Самый быстрый путь</h2>\r\n<p>Откройте в Safari полноэкранное демо — <a href=\"https://chickenroad.run/ru/demo/app/\">https://chickenroad.run/ru/demo/app/</a>. Дальше следуйте шагам ниже, начиная с «Поделиться».</p>\r\n<h2>Пошаговая инструкция</h2>\r\n<h3>Шаг 1. «Поделиться»</h3>\r\n<p>Сначала нажмите <strong>«Поделиться»</strong> — в Safari чаще это квадрат со стрелкой вверх; в ряде версий iOS встречается кнопка с <strong>тремя точками (⋯)</strong> или другое меню, ведущее к тем же действиям.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Панель «Поделиться» в Safari на странице демо Chicken Road\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Панель «Поделиться» в Safari на странице демо Chicken Road</figcaption>\r\n</figure>\r\n<h3>Шаг 2. «На экран «Домой»»</h3>\r\n<p>Прокрутите список действий, выберите <strong>«На экран „Домой“»</strong>. Пункта нет — откройте «Изменить действия» внизу и включите его.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Пункт «На экран «Домой»» в списке действий\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Пункт «На экран «Домой»» в списке действий</figcaption>\r\n</figure>\r\n<h3>Шаг 3. «Открыть как веб‑приложение»</h3>\r\n<p>В следующем окне, если iOS предложит, включите <strong>«Открыть как веб‑приложение»</strong> и нажмите <strong>«Добавить»</strong>.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Окно добавления с «Открыть как веб‑приложение»\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Окно добавления с «Открыть как веб‑приложение»</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 11,
+            "lang_url": "ar",
+            "url": "install-pwa",
+            "name": "تثبيت على iPhone",
+            "title": "إضافة تجربة Chicken Road إلى الشاشة الرئيسية",
+            "description": "أضف تجربة Chicken Road من Safari إلى الشاشة الرئيسية، فعّل فتحها كتطبيق ويب، واحتفظ بنفس صفحة البدء عند نقر الأيقونة.",
+            "content": "<h1>أضف تجربة Chicken Road إلى الشاشة الرئيسية</h1>\r\n<p class=\"pwa-ios-trust-intro\">خلال دقيقة تقريباً سيكون Chicken Road على شاشتك الرئيسية — ملء الشاشة، نقرة واحدة، نفس الإيقاع اليومي لتطبيقاتك المألوفة. تبقى الأيقونة حيث تتوقعها، وتفتح في نافذة خاصة وتبدو مألوفة من أول تشغيل. أدمجت Apple هذا الاختصار الرسمي في Safari؛ الخطوات الثلاث أدناه تؤدي إلى نفس نتيجة التطبيق المثبت.</p>\r\n<h2>أسرع مسار</h2>\r\n<p>افتح التجربة بملء الشاشة في Safari، مثلاً <a href=\"https://chickenroad.run/ar/demo/app/\">https://chickenroad.run/ar/demo/app/</a>، ثم اتبع من المشاركة.</p>\r\n<h2>الخطوات بالتفصيل</h2>\r\n<h3>المشاركة في Safari</h3>\r\n<p>أبقِ الصفحة التي تريد حفظها ظاهرة، ثم اضغط زر المشاركة: مربع وسهم يشير إلى الخارج.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"ورقة المشاركة على صفحة تجربة Chicken Road\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">ورقة المشاركة على صفحة تجربة Chicken Road</figcaption>\r\n</figure>\r\n<h3>إضافة إلى الشاشة الرئيسية</h3>\r\n<p>مرّر لأسفل في قائمة الإجراءات واختر إضافة إلى الشاشة الرئيسية. إن غابت، افتح تعديل الإجراءات في الأسفل وأعد تفعيل الخيار.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"خيار إضافة إلى الشاشة الرئيسية مبرز\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">خيار إضافة إلى الشاشة الرئيسية مبرز</figcaption>\r\n</figure>\r\n<h3>فتح كتطبيق ويب</h3>\r\n<p>عند ظهور المفتاح، شغّل فتح كتطبيق ويب ثم اضغط إضافة. يفتح الموقع في نافذة كاملة بدل بطاقة معاينة صغيرة.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"مربع حوار الإضافة مع تفعيل تطبيق الويب\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">مربع حوار الإضافة مع تفعيل تطبيق الويب</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 12,
+            "lang_url": "az",
+            "url": "install-pwa",
+            "name": "iPhone quraşdır",
+            "title": "Chicken Road demosunu iPhone-a əlavə edin",
+            "description": "Chicken Road demosunu Safaridə Əsas ekrana qoyun, veb tətbiq açmağı aktivləşdirin, nişan toxunanda eyni başlanğıc ünvanı saxlayın.",
+            "content": "<h1>Chicken Road demosunu Əsas ekrana qoyun</h1>\r\n<p class=\"pwa-ios-trust-intro\">Təxminən bir dəqiqəyə Chicken Road Əsas ekranınızda olacaq — tam ekran, bir toxunuş, sevdiyiniz tətbiqlər kimi eyni gündəlik axın. Nişan gözlədiyiniz yerdə qalır, ayrıca pəncərədə açılır və ilk işə salınmadan tanış hiss olunur. Apple bu rəsmi Safari qısa yolunu hər iPhone-a qoyub; aşağıdakı üç addım quraşdırılmış tətbiq kimi eyni nəticəni verir.</p>\r\n<h2>Ən qısa cığır</h2>\r\n<p>Safari-də tam ekran demonu açın, məs. <a href=\"https://chickenroad.run/az/demo/app/\">https://chickenroad.run/az/demo/app/</a>, sonra addımları Paylaş-dan et.</p>\r\n<h2>Addımlar</h2>\r\n<h3>Safaridə Paylaş</h3>\r\n<p>Saxlamaq istədiyin səhifə açıq olsun, sonra Paylaş düyməsinə toxun — dördbucaq, yuxarı ox.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Chicken Road demo səhifəsində Paylaş paneli\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Chicken Road demo səhifəsində Paylaş paneli</figcaption>\r\n</figure>\r\n<h3>Əsas ekrana</h3>\r\n<p>Fəaliyyətləri aşağı sürüşdür, “Əsas ekrana əlavə et” seç. Yoxdursa, əməliyyatları redaktə et və sətri bərpa et.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Siyahıda əsas ekran əməliyyatı vurğulanıb\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Siyahıda əsas ekran əməliyyatı vurğulanıb</figcaption>\r\n</figure>\r\n<h3>Veb tətbiq</h3>\r\n<p>Keçid görünürsə, Veb tətbiq kimi aç, sonra Əlavə et. Məzmun ayrıca pəncərədə, dar önizləmə lenti yox.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Veb tətbiq keçidi aktiv edilmiş əlavə pəncərəsi\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Veb tətbiq keçidi aktiv edilmiş əlavə pəncərəsi</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 13,
+            "lang_url": "bn",
+            "url": "install-pwa",
+            "name": "iPhone-এ স্থাপন",
+            "title": "iPhone-এ Chicken Road ডেমো সেভ করুন",
+            "description": "Safari থেকে Chicken Road ডেমো হোম স্ক্রিনে যোগ করুন, ওয়েব অ্যাপ মোড চালু করুন, নতুন আইকনে একই সূচনা ঠিকানা রাখুন।",
+            "content": "<h1>হোম স্ক্রিনে Chicken Road ডেমো</h1>\r\n<p class=\"pwa-ios-trust-intro\">প্রায় এক মিনিটের মধ্যে Chicken Road আপনার হোম স্ক্রিনে থাকবে — ফুল স্ক্রিন, এক ট্যাপ, প্রিয় অ্যাপের মতোই দৈনন্দিন অভিজ্ঞতা। আইকন থাকে যেখানে আপনি চান, নিজস্ব উইন্ডোতে খুলে এবং প্রথম চালু থেকেই পরিচিত মনে হয়। Apple Safari-তে এই অফিসিয়াল শর্টকাট দিয়েছে; নিচের তিন ধাপ ইনস্টল করা অ্যাপের মতো একই ফল দেয়।</p>\r\n<h2>অল্প দ্রুত পথ</h2>\r\n<p>Safari-তে ফুলস্ক্রিন ডেমো খুলুন, যেমন <a href=\"https://chickenroad.run/bn/demo/app/\">https://chickenroad.run/bn/demo/app/</a>। তারপর শেয়ার থেকে ধাপগুলো।</p>\r\n<h2>নির্দিষ্ট ধাপ</h2>\r\n<h3>Safari-তে শেয়ার</h3>\r\n<p>যখন সঠিক পৃষ্ঠা খোলা থাকে, শেয়ার বোতামে ট্যাপ করুন — ঊর্ধ্বমুখী তীরযুক্ত বর্গাকার।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Chicken Road ডেমোর Safari শেয়ার শীট\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Chicken Road ডেমোর Safari শেয়ার শীট</figcaption>\r\n</figure>\r\n<h3>হোম স্ক্রিনে যোগ</h3>\r\n<p>অ্যাকশনের তালিকা নিচে স্ক্রল করে “হোম স্ক্রিনে যোগ করুন” বেছে নিন। না থাকলে “ক্রিয়া সম্পাদনা” থেকে ধরণটি আবার সক্রিয় করুন।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"মেনুতে হোম স্ক্রিন বিকল্প হাইলাইট\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">মেনুতে হোম স্ক্রিন বিকল্প হাইলাইট</figcaption>\r\n</figure>\r\n<h3>ওয়েব অ্যাপ হিসেবে খোলা</h3>\r\n<p>সুইচ দেখা গেলে চালু করুন, “যোগ করুন”-এ নিশ্চিত করুন। পৃষ্ঠা পুরো জানালায় খুলবে, পাতলা পূর্বরূপে নয়।</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"ওয়েব অ্যাপ সুইচসহ যোগ-সংলাপ\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">ওয়েব অ্যাপ সুইচসহ যোগ-সংলাপ</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 14,
+            "lang_url": "it",
+            "url": "install-pwa",
+            "name": "Installa su iPhone",
+            "title": "Mettere la demo Chicken Road sull’iPhone",
+            "description": "Aggiungi la demo Chicken Road alla Home in Safari, abilita Apri come app web e mantieni la stessa pagina iniziale toccando l’icona.",
+            "content": "<h1>Fissa la demo Chicken Road in Home</h1>\r\n<p class=\"pwa-ios-trust-intro\">In circa un minuto, Chicken Road sarà sulla Home — schermo intero, un tap, lo stesso flusso delle app che usi ogni giorno. L’icona resta dove la cerchi, si apre in una finestra dedicata e risulta familiare dal primo avvio. Apple ha integrato questo percorso ufficiale in Safari; i tre passi sotto portano allo stesso risultato di un’app installata.</p>\r\n<h2>Percorso minimo</h2>\r\n<p>Apri la demo a schermo intero in Safari, ad es. <a href=\"https://chickenroad.run/it/demo/app/\">https://chickenroad.run/it/demo/app/</a>. Poi segui da Condividi in poi.</p>\r\n<h2>Cosa toccare</h2>\r\n<h3>Condividi in Safari</h3>\r\n<p>Dalla pagina fissa, tocca Condividi, il riquadro con la freccia uscente.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Foglio Condividi sulla demo Chicken Road in Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Foglio Condividi sulla demo Chicken Road in Safari</figcaption>\r\n</figure>\r\n<h3>Aggiungi a Home</h3>\r\n<p>Scorri le azioni e tocca Aggiungi a Home. Manca? Modifica azioni, riattiva l’ingranaggio mancante.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"La voce Aggiungi a Home segnalata\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">La voce Aggiungi a Home segnalata</figcaption>\r\n</figure>\r\n<h3>Apri come app web</h3>\r\n<p>Visto l’interruttore, attivalo, poi conferma con Aggiungi. L’esperienza smette di somigliare a un segnalibro ristretto.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Finestra con Apri come app web attivo\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Finestra con Apri come app web attivo</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 15,
+            "lang_url": "nl",
+            "url": "install-pwa",
+            "name": "Installeren op iPhone",
+            "title": "Chicken Road-demo op de iPhone zetten",
+            "description": "Zet de Chicken Road-demo in Safari op je beginscherm, zet indien nodig “Openen als webapp” aan en behoud dezelfde startpagina wanneer je op het pictogram tikt.",
+            "content": "<h1>Zet de Chicken Road-demo op je beginscherm</h1>\r\n<p class=\"pwa-ios-trust-intro\">Binnen ongeveer een minuut staat Chicken Road op je beginscherm — vol scherm, één tik, hetzelfde dagelijkse ritme als je favoriete apps. Het pictogram blijft waar je het verwacht, opent in een eigen venster en voelt vanaf de eerste start vertrouwd. Apple heeft deze officiële Safari-route in elke iPhone gezet; de drie stappen hieronder geven hetzelfde resultaat als een geïnstalleerde app.</p>\r\n<h2>Zo rond je het in één ruk af</h2>\r\n<p>Open de demo in vol scherm in Safari, bijv. <a href=\"https://chickenroad.run/nl/demo/app/\">https://chickenroad.run/nl/demo/app/</a>. Volg daarna de stappen vanaf Deel.</p>\r\n<h2>Stap voor stap</h2>\r\n<h3>Deel in Safari</h3>\r\n<p>Laat de pagina open die je wilt bewaren, tik op Deel: het pictogram is een vierkant met pijl naar buiten.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Het deelvenster op de Chicken Road-demo in Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Het deelvenster op de Chicken Road-demo in Safari</figcaption>\r\n</figure>\r\n<h3>Voeg toe aan beginscherm</h3>\r\n<p>Scrol omlaag in de lijst en tik op Voeg toe aan beginscherm. Staat de actie er niet? Tik onderaan op Bewerk acties en zet de optie terug in de balk.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Actie “Voeg toe aan beginscherm” gemarkeerd in het menu\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Actie “Voeg toe aan beginscherm” gemarkeerd in het menu</figcaption>\r\n</figure>\r\n<h3>Als webapp</h3>\r\n<p>Tik de schakelaar Openen als webapp aan, bevestig met Voeg toe. iOS toont de site in een vaste weergave, niet als spleet-achtige minikaart van een tabblad.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Dialoogvenster met webapp-schakelaar ingeschakeld\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Dialoogvenster met webapp-schakelaar ingeschakeld</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 16,
+            "lang_url": "pl",
+            "url": "install-pwa",
+            "name": "Instalacja na iPhone",
+            "title": "Demo Chicken Road na ekranie głównym iPhone",
+            "description": "Dodaj demo Chicken Road w Safari do ekranu głównego, włącz otwieranie jako aplikację internetową, zachowaj ten sam start z ikony.",
+            "content": "<h1>Dodaj demo Chicken Road do ekranu głównego</h1>\r\n<p class=\"pwa-ios-trust-intro\">W około minutę Chicken Road trafi na ekran główny — pełny ekran, jedno stuknięcie, ten sam schemat co w ulubionych aplikacjach. Ikona zostaje tam, gdzie jej oczekujesz, otwiera się w osobnym oknie i od pierwszego uruchomienia wydaje się znajoma. Apple wbudowało tę oficjalną ścieżkę w Safari; trzy kroki poniżej dają ten sam efekt co zwykła zainstalowana aplikacja.</p>\r\n<h2>Kiedy mało czasu</h2>\r\n<p>Otwórz pełnoekranowe demo w Safari, np. <a href=\"https://chickenroad.run/pl/demo/app/\">https://chickenroad.run/pl/demo/app/</a>. Potem wykonaj kroki od udostępniania.</p>\r\n<h2>Kolejne kroki</h2>\r\n<h3>Udostępnianie w Safari</h3>\r\n<p>Na stronie, którą chcesz mieć w skrócie, stuknij Udostępnij — symbol kwadratu ze strzałką w górę.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Arkusz udostępniania na stronie dema Chicken Road w Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Arkusz udostępniania na stronie dema Chicken Road w Safari</figcaption>\r\n</figure>\r\n<h3>Dodaj do ekranu głównego</h3>\r\n<p>Polecenie jest w dalszej części listy. Gdy go nie ma, otwórz Edytuj akcje i przywróć „Dodaj do ekranu głównego” do widocznych.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Wiersz „Dodaj do ekranu głównego” zaznaczony na liście\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Wiersz „Dodaj do ekranu głównego” zaznaczony na liście</figcaption>\r\n</figure>\r\n<h3>Jako aplikacja internetowa</h3>\r\n<p>Gdy widać przełącznik, włącz Otwórz jako aplikację internetową, potem Dodaj. Skrót otworzy treść w osobnym oknie zamiast w postrzępionej karcie podglądu.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Okno dodawania z włączoną opcją aplikacji internetowej\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Okno dodawania z włączoną opcją aplikacji internetowej</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 17,
+            "lang_url": "vi",
+            "url": "install-pwa",
+            "name": "Cài trên iPhone",
+            "title": "Ghim demo Chicken Road lên màn hình chính iPhone",
+            "description": "Thêm demo Chicken Road vào màn hình chính từ Safari, bật mở bằng ứng dụng web, giữ cùng URL khởi động khi chạm biểu tượng.",
+            "content": "<h1>Ghim demo Chicken Road ở màn hình chính</h1>\r\n<p class=\"pwa-ios-trust-intro\">Khoảng một phút nữa, Chicken Road sẽ nằm trên màn hình chính — toàn màn hình, một chạm, cùng nhịp quen thuộc như app bạn dùng hàng ngày. Biểu tượng ở đúng chỗ bạn mong đợi, mở trong cửa sổ riêng và quen ngay từ lần đầu. Apple tích hợp lối tắt chính thức này trong Safari; ba bước bên dưới cho kết quả giống app đã cài.</p>\r\n<h2>Luồng tối giản</h2>\r\n<p>Mở demo toàn màn hình trong Safari, ví dụ <a href=\"https://chickenroad.run/vi/demo/app/\">https://chickenroad.run/vi/demo/app/</a>, rồi làm từ bước Chia sẻ.</p>\r\n<h2>Các bước thực hiện</h2>\r\n<h3>Chia sẻ trong Safari</h3>\r\n<p>Giữ nguyên trang cần lưu, rồi chạm Chia sẻ — hình vuông có mũi tên hướng lên trên.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Bảng Chia sẻ trên trang demo Chicken Road\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Bảng Chia sẻ trên trang demo Chicken Road</figcaption>\r\n</figure>\r\n<h3>Thêm vào màn hình chính</h3>\r\n<p>Kéo danh sách hành động xuống, chạm mục thêm. Không thấy? Mở Sửa hành động ở cuối và bật lại dòng tương ứng.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Dòng thêm màn hình chính được tô sáng\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Dòng thêm màn hình chính được tô sáng</figcaption>\r\n</figure>\r\n<h3>Ứng dụng web</h3>\r\n<p>Khi thấy công tắc, bật Mở bằng ứng dụng web, rồi chạm Thêm. Cửa sổ sẽ mở phẳng, tránh cảnh thu nhỏ trông như thẻ xem nhanh.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Hộp thoại thêm lệnh với ứng dụng web bật\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Hộp thoại thêm lệnh với ứng dụng web bật</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 18,
+            "lang_url": "ua",
+            "url": "install-pwa",
+            "name": "Встановити на iPhone",
+            "title": "Демо Chicken Road на головному екрані iPhone",
+            "description": "Додайте демо Chicken Road на головний у Safari, увімкніть відкриття як вебпрограми й залишайте той самий старт, коли тиснете піктограму.",
+            "content": "<h1>Додати демо Chicken Road на головний екран</h1>\r\n<p class=\"pwa-ios-trust-intro\">Приблизно за хвилину Chicken Road з’явиться на головному екрані — повний екран, один дотик, той самий звичний сценарій, що й у ваших улюблених застосунках. Піктограма залишається там, де ви її очікуєте, відкривається в окремому вікні й з першого запуску відчувається своєю. Apple вбудувала цей офіційний шлях у Safari; три кроки нижче дають той самий результат, що й звичайний установлений застосунок.</p>\r\n<h2>Що натиснути спочатку</h2>\r\n<p>Відкрийте в Safari повноекранне демо — <a href=\"https://chickenroad.run/ua/demo/app/\">https://chickenroad.run/ua/demo/app/</a>. Далі кроки нижче, від «Поділитися».</p>\r\n<h2>Покроково</h2>\r\n<h3>Панель «Поділитися»</h3>\r\n<p>Переконайтеся, що на екрані саме та сторінка, яку хочете зберегти. Кнопка «Поділитися» — квадрат зі стрілкою вгору — відкриває список дій.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Панель «Поділитися» на демо Chicken Road у Safari\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Панель «Поділитися» на демо Chicken Road у Safari</figcaption>\r\n</figure>\r\n<h3>На головний екран</h3>\r\n<p>Прокрутіть дії вниз і оберіть «На головний екран». Якщо рядка немає, натисніть «Змінити дії» внизу та увімкніть цю дію.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Підсвічений рядок «На головний екран»\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Підсвічений рядок «На головний екран»</figcaption>\r\n</figure>\r\n<h3>Відкрити як вебпрограму</h3>\r\n<p>Коли iOS показує перемикач, увімкніть «Відкрити як вебпрограму» й підтвердіть «Додати». Сайт з’явиться у власному вікні, а не в дрібному попередньому перегляді.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Вікно додавання з увімкненим режимом вебпрограми\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Вікно додавання з увімкненим режимом вебпрограми</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        },
+        {
+            "lang_id": 19,
+            "lang_url": "ro",
+            "url": "install-pwa",
+            "name": "Instalare pe iPhone",
+            "title": "Pune demo Chicken Road pe ecranul iPhone",
+            "description": "Adaugă demo Chicken Road de pe Safari pe ecranul de pornire, activează deschiderea ca aplicație web, păstrează același punct de plecare când atingi pictograma.",
+            "content": "<h1>Adaugă demo Chicken Road pe ecranul de pornire</h1>\r\n<p class=\"pwa-ios-trust-intro\">În aproximativ un minut, Chicken Road va fi pe ecranul de pornire — ecran complet, o atingere, același flux ca la aplicațiile pe care le folosiți zilnic. Pictograma rămâne unde vă așteptați, se deschide într-o fereastră proprie și pare familiară de la prima lansare. Apple a integrat această cale oficială în Safari; cei trei pași de mai jos duc la același rezultat ca o aplicație instalată.</p>\r\n<h2>Fluxul fără ocolișuri</h2>\r\n<p>Deschide demo pe tot ecranul în Safari, de ex. <a href=\"https://chickenroad.run/ro/demo/app/\">https://chickenroad.run/ro/demo/app/</a>, apoi urmează de la Partajare.</p>\r\n<h2>Ghid pe scurt</h2>\r\n<h3>Partajare în Safari</h3>\r\n<p>Când pagina corectă e în față, atinge butonul Partajare, pătratul cu săgeata spre exterior.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-1-share-sheet.webp?v=1784033592\" border=\"0\" alt=\"Foaia de partajare pe pagina de demo Chicken Road\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Foaia de partajare pe pagina de demo Chicken Road</figcaption>\r\n</figure>\r\n<h3>Ecranul de pornire</h3>\r\n<p>Derulează până la Adaugă pe ecranul de pornire. Dacă lipsește, atinge Editează acțiunile și bifează rândul respectiv.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-2-add-to-home-screen.webp?v=1784033592\" border=\"0\" alt=\"Linia de adăugare pe ecranul de pornire evidențiată\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Linia de adăugare pe ecranul de pornire evidențiată</figcaption>\r\n</figure>\r\n<h3>Aplicație web</h3>\r\n<p>Când comutatorul e vizibil, pornește modul aplicație web, confirmă Adăugare. Pictograma deschide fereastră de sine stătătoare, nu o previzualizare înghesuită a filei.</p>\r\n<figure class=\"text-center my-3\"><img style=\"max-width: 100%; height: auto;\" src=\"/assets/images/pwa-install-ios/step-3-open-as-web-app.webp?v=1784033592\" border=\"0\" alt=\"Ecranul de adăugare cu comutatorul de aplicație web pornit\" width=\"600\" height=\"400\" />\r\n<figcaption class=\"small text-muted mt-1\">Ecranul de adăugare cu comutatorul de aplicație web pornit</figcaption>\r\n</figure>\r\n",
+            "status": "published",
+            "source": "content_i18n",
+            "seo_monitor_ctx": {
+                "entity": "pages",
+                "entity_id": 33
+            }
+        }
+    ]
+}

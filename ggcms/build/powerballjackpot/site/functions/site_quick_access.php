@@ -59,11 +59,9 @@ function site_quick_access_copy($context = 'demo') {
 		'app_store' => site_quick_access_text('quick_access_app_store'),
 		'demo_note' => site_quick_access_text('quick_access_demo_note'),
 		'download_lead' => site_quick_access_text('quick_access_download_lead'),
-		'download_note' => site_quick_access_text('quick_access_download_note'),
 	);
 	if ($context !== 'download') {
 		$out['download_lead'] = '';
-		$out['download_note'] = '';
 	}
 	return $out;
 }
@@ -183,7 +181,7 @@ function site_quick_access_html($abc, $lang, $context = 'demo') {
 	$google_url = site_quick_access_google_url($lang);
 	$app_store_url = site_quick_access_app_store_url($abc, $lang);
 	$lead = $context === 'download' ? (string) $bundle['download_lead'] : '';
-	$note = $context === 'download' ? (string) $bundle['download_note'] : (string) $bundle['demo_note'];
+	$note = (string) $bundle['demo_note'];
 	$dir = site_quick_access_lang_key($lang) === 'ar' ? 'rtl' : 'ltr';
 	$google_icon = site_quick_access_store_icon_url('google');
 	$appstore_icon = site_quick_access_store_icon_url('appstore');

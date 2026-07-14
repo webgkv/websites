@@ -374,7 +374,7 @@ function pwa_install_seo_cluster_content_html(array $b) {
 	$a2 = isset($b['step2_img_alt']) ? $b['step2_img_alt'] : '';
 	$a3 = isset($b['step3_img_alt']) ? $b['step3_img_alt'] : '';
 	return '<h1>' . $b['h1'] . '</h1>' . $sep
-		. '<p>' . $b['intro'] . '</p>' . $sep
+		. '<p class="pwa-ios-trust-intro">' . $b['intro'] . '</p>' . $sep
 		. '<h2>' . $b['quick_h2'] . '</h2>' . $sep
 		. '<p>' . $b['quick_lead'] . '</p>' . $sep
 		. '<h2>' . $sbs . '</h2>' . $sep

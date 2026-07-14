@@ -2,13 +2,13 @@
 /**
  * iOS PWA install copy — /{lang}/{download}/install-pwa/
  * Tone and localization: see CONTENT_QUALITY_GUIDE.md, LOCALIZATION_GUIDE.md in repo root.
- * Product name: Aviator (Latin). No machine calques; metas within usual SEO length.
+ * Product name: Aviator. Trust-first motivating copy.
  */
 $en = array(
 	'install_short' => 'Install on iPhone',
 	'demo_banner_link' => 'Install on iPhone — step-by-step in Safari',
 	'page_title' => 'Install Aviator demo on iPhone',
-	'meta_description' => 'Add the Aviator demo from Safari like an app: open the /demo/app/ page, use Share, Add to Home Screen, and Open as Web App when available.',
+	'meta_description' => 'Add Aviator to your iPhone Home Screen in about a minute — full-screen demo, one tap, same experience as a regular app. Official Safari shortcut: Share → Add to Home Screen.',
 	'breadcrumb_label' => 'Install on iPhone',
 	'section_steps_h2' => 'Step by step',
 	'quick_h2' => 'Fastest path',
@@ -23,7 +23,7 @@ $en = array(
 	'step3_body' => 'In the add sheet, if iOS offers <strong>Open as Web App</strong>, turn it on, then tap <strong>Add</strong>.',
 	'step3_img_alt' => 'Add to Home Screen sheet with Open as Web App on',
 	'h1' => 'Install the Aviator demo on your iPhone',
-	'intro' => 'It feels almost like installing from the App Store: an icon on your Home Screen and a window that behaves like an app. In reality this is <strong>not</strong> an App Store download—it is a Safari web app—but it feels very similar; only the setup steps differ a little. Apple may change labels between iOS versions, but the flow stays: Share → Add to Home Screen → when shown, Open as Web App.',
+	'intro' => 'In about a minute, Aviator will sit on your Home Screen — full screen, one tap, the same daily flow you already know from your favorite apps. The icon stays where you expect it, opens in its own window, and feels familiar from the very first launch. Apple built this official iPhone shortcut into Safari; the three steps below are the same path millions of people use — and the result matches a regular installed app.',
 );
 
 return array(
@@ -48,7 +48,7 @@ return array(
 		'step3_body' => 'Lorsqu’iOS affiche l’option, activez Ouvrir comme application web, puis validez avec Ajouter. L’ouverture se fait souvent en fenêtre propre, pas en mini-onglet figé.',
 		'step3_img_alt' => 'Feuille Sur l’écran d’accueil avec l’option web app actif',
 		'h1' => 'Ajouter la démo Aviator sur l’écran d’accueil',
-		'intro' => 'On parle ici d’un raccourci Safari, pas d’une fiche App Store. Les libellés varient, la séquence, elle, reste Partager → écran d’accueil → option web app.',
+		'intro' => 'En une minute environ, Aviator sera sur votre écran d’accueil — plein écran, un tap, le même rituel que vos applis habituelles. L’icône reste à sa place, s’ouvre dans sa propre fenêtre et paraît familière dès le premier lancement. Apple a intégré ce raccourci officiel dans Safari ; les trois étapes ci-dessous mènent au même résultat qu’une application installée.',
 	),
 	'de' => array(
 		'demo_banner_link' => 'Auf dem iPhone installieren — Anleitung in Safari',
@@ -70,7 +70,7 @@ return array(
 		'step3_body' => 'Ist der Schalter sichtbar, einschalten, danach Hinzufügen. So öffnet sich der Shortcut in einem eigenen Fenster statt in einem Mini-Tab.',
 		'step3_img_alt' => 'Dialog Zum Home-Bildschirm mit Web-App-Schalter an',
 		'h1' => 'Aviator-Demo als Home-Screen-Verknüpfung',
-		'intro' => 'Kein App-Store-Download, nur ein Safari-Shortcut. Bezeichnungen ändern sich je nach iOS, die Tippfolge ist gleich: Teilen → Home → Web-App-Schalter.',
+		'intro' => 'In etwa einer Minute liegt Aviator auf Ihrem Home-Bildschirm — Vollbild, ein Tippen, derselbe Ablauf wie bei Apps, die Sie schon nutzen. Das Symbol bleibt dort, wo Sie es erwarten, öffnet sich in einem eigenen Fenster und wirkt vom ersten Start an vertraut. Apple hat diesen offiziellen Safari-Weg in jedes iPhone eingebaut; die drei Schritte unten führen zum gleichen Ergebnis wie eine installierte App.',
 	),
 	'es' => array(
 		'demo_banner_link' => 'Instalar en iPhone — guía clara en Safari',
@@ -92,7 +92,7 @@ return array(
 		'step3_body' => 'Con el conmutador visible, actívalo y pulsa Añadir. De ese modo se evita el mini-visor y el acceso gana cuerpo de app.',
 		'step3_img_alt' => 'Diálogo con Abrir como app web activo',
 		'h1' => 'Guarda la demo de Aviator en la pantalla de inicio',
-		'intro' => 'Es un atajo de Safari, no un instalable de la tienda. iOS reordena textos, pero el gesto básico no cambia: Compartir, pantalla de inicio, app web.',
+		'intro' => 'En un minuto, Aviator estará en tu pantalla de inicio — pantalla completa, un toque, el mismo ritmo diario que tus apps favoritas. El icono queda donde lo esperas, se abre en su propia ventana y se siente familiar desde el primer uso. Apple integró este acceso oficial en Safari; los tres pasos de abajo dan el mismo resultado que una app instalada.',
 	),
 	'pt' => array(
 		'demo_banner_link' => 'Instalar no iPhone — roteiro simples no Safari',
@@ -114,7 +114,7 @@ return array(
 		'step3_body' => 'Com o comutador visível, ativa-o, confirma com Adicionar. A abertura fica com cara de app em vez de cartão mínimo.',
 		'step3_img_alt' => 'Folha com Abrir como app web ligada',
 		'h1' => 'Fixar a demo Aviator no ecrã principal',
-		'intro' => 'Falamos de atalho de Safari, não de IPA. Os rótulos mudam com o iOS, a sequência Partilhar → Tela Inicial → web app, não.',
+		'intro' => 'Em cerca de um minuto, Aviator ficará na sua Tela Inicial — ecrã inteiro, um toque, o mesmo fluxo das apps que já usa. O ícone fica onde espera, abre numa janela própria e parece familiar desde o primeiro arranque. A Apple integrou este atalho oficial no Safari; os três passos abaixo levam ao mesmo resultado de uma app instalada.',
 	),
 	'ru' => array(
 		'demo_banner_link' => 'Установка на iPhone — шаги в Safari',
@@ -135,7 +135,7 @@ return array(
 		'step3_body' => 'В следующем окне, если iOS предложит, включите <strong>«Открыть как веб‑приложение»</strong> и нажмите <strong>«Добавить»</strong>.',
 		'step3_img_alt' => 'Окно добавления с «Открыть как веб‑приложение»',
 		'h1' => 'Как установить демо Aviator на iPhone',
-		'intro' => 'По ощущениям это близко к установке из App Store: иконка на «Домой» и отдельное окно, как у приложения. На самом деле это <strong>не</strong> загрузка из магазина, а веб‑приложение Safari, но вести оно будет себя почти так же; отличается лишь процесс добавления. Подписи в iOS могут немного отличаться по версиям, суть та же: «Поделиться» → «На экран „Домой“» → при появлении — «Открыть как веб‑приложение».',
+		'intro' => 'Примерно за минуту Aviator окажется на экране «Домой» — полный экран, один тап, тот же привычный сценарий, что у приложений, которыми вы уже пользуетесь. Иконка стоит там, где вы её ждёте, открывается в отдельном окне и с первого запуска ощущается своей. Apple встроила этот официальный способ в Safari; три шага ниже — тот же путь, которым пользуются миллионы, и итог не отличается от обычного установленного приложения.',
 	),
 	'it' => array(
 		'demo_banner_link' => 'Installa su iPhone — guida in Safari',
@@ -157,7 +157,7 @@ return array(
 		'step3_body' => 'Visto l’interruttore, attivalo, poi conferma con Aggiungi. L’esperienza smette di somigliare a un segnalibro ristretto.',
 		'step3_img_alt' => 'Finestra con Apri come app web attivo',
 		'h1' => 'Fissa la demo Aviator in Home',
-		'intro' => 'Scorciatoia di Safari, non pacchetto store. IOS reitera, ma l’ordine reale di tap non cambia: Condividi, Home, app web.',
+		'intro' => 'In circa un minuto, Aviator sarà sulla Home — schermo intero, un tap, lo stesso flusso delle app che usi ogni giorno. L’icona resta dove la cerchi, si apre in una finestra dedicata e risulta familiare dal primo avvio. Apple ha integrato questo percorso ufficiale in Safari; i tre passi sotto portano allo stesso risultato di un’app installata.',
 	),
 	'pl' => array(
 		'demo_banner_link' => 'Instalacja na iPhonie — instrukcja w Safari',
@@ -179,7 +179,7 @@ return array(
 		'step3_body' => 'Gdy widać przełącznik, włącz Otwórz jako aplikację internetową, potem Dodaj. Skrót otworzy treść w osobnym oknie zamiast w postrzępionej karcie podglądu.',
 		'step3_img_alt' => 'Okno dodawania z włączoną opcją aplikacji internetowej',
 		'h1' => 'Dodaj demo Aviator do ekranu głównego',
-		'intro' => 'To skrót w Safari, nie instalator z App Store. Napisy w interfejsie iOS bywają inne, ale układ: udostępnianie, ekran główny, tryb web app — wciąż ten sam.',
+		'intro' => 'W około minutę Aviator trafi na ekran główny — pełny ekran, jedno stuknięcie, ten sam schemat co w ulubionych aplikacjach. Ikona zostaje tam, gdzie jej oczekujesz, otwiera się w osobnym oknie i od pierwszego uruchomienia wydaje się znajoma. Apple wbudowało tę oficjalną ścieżkę w Safari; trzy kroki poniżej dają ten sam efekt co zwykła zainstalowana aplikacja.',
 	),
 	'uk' => array(
 		'demo_banner_link' => 'Встановити на iPhone — коротка інструкція в Safari',
@@ -201,7 +201,7 @@ return array(
 		'step3_body' => 'Коли iOS показує перемикач, увімкніть «Відкрити як вебпрограму» й підтвердіть «Додати». Сайт з’явиться у власному вікні, а не в дрібному попередньому перегляді.',
 		'step3_img_alt' => 'Вікно додавання з увімкненим режимом вебпрограми',
 		'h1' => 'Додати демо Aviator на головний екран',
-		'intro' => 'Це ярлик Safari, не інсталятор з магазину. Apple змінює назви в меню, послідовність — Поділитися, головний екран, вебпрограма — залишається тією ж.',
+		'intro' => 'Приблизно за хвилину Aviator з’явиться на головному екрані — повний екран, один дотик, той самий звичний сценарій, що й у ваших улюблених застосунках. Піктограма залишається там, де ви її очікуєте, відкривається в окремому вікні й з першого запуску відчувається своєю. Apple вбудувала цей офіційний шлях у Safari; три кроки нижче дають той самий результат, що й звичайний установлений застосунок.',
 	),
 	'nl' => array(
 		'demo_banner_link' => 'Installeren op iPhone — duidelijk stappenplan in Safari',
@@ -223,7 +223,7 @@ return array(
 		'step3_body' => 'Tik de schakelaar Openen als webapp aan, bevestig met Voeg toe. iOS toont de site in een vaste weergave, niet als spleet-achtige minikaart van een tabblad.',
 		'step3_img_alt' => 'Dialoogvenster met webapp-schakelaar ingeschakeld',
 		'h1' => 'Zet de Aviator-demo op je beginscherm',
-		'intro' => 'Je maakt geen app-storepakket, je maakt een Safari-snelkoppeling. iOS wijzigt bewoordingen, maar de volgorde Deel — beginscherm — webapp blijft herkenbaar.',
+		'intro' => 'Binnen ongeveer een minuut staat Aviator op je beginscherm — vol scherm, één tik, hetzelfde dagelijkse ritme als je favoriete apps. Het pictogram blijft waar je het verwacht, opent in een eigen venster en voelt vanaf de eerste start vertrouwd. Apple heeft deze officiële Safari-route in elke iPhone gezet; de drie stappen hieronder geven hetzelfde resultaat als een geïnstalleerde app.',
 	),
 	'ro' => array(
 		'demo_banner_link' => 'Instalare pe iPhone — pași clari în Safari',
@@ -245,7 +245,7 @@ return array(
 		'step3_body' => 'Când comutatorul e vizibil, pornește modul aplicație web, confirmă Adăugare. Pictograma deschide fereastră de sine stătătoare, nu o previzualizare înghesuită a filei.',
 		'step3_img_alt' => 'Ecranul de adăugare cu comutatorul de aplicație web pornit',
 		'h1' => 'Adaugă demo Aviator pe ecranul de pornire',
-		'intro' => 'E scurtătură Safari, nu aplicație din magazin. iOS reîncreionează etichete, dar aranjamentul: partajare, ecran de pornire, mod web, rămâne liniar.',
+		'intro' => 'În aproximativ un minut, Aviator va fi pe ecranul de pornire — ecran complet, o atingere, același flux ca la aplicațiile pe care le folosiți zilnic. Pictograma rămâne unde vă așteptați, se deschide într-o fereastră proprie și pare familiară de la prima lansare. Apple a integrat această cale oficială în Safari; cei trei pași de mai jos duc la același rezultat ca o aplicație instalată.',
 	),
 	'hi' => array(
 		'demo_banner_link' => 'iPhone — Safari संक्षिप्त गाइड',
@@ -267,7 +267,7 @@ return array(
 		'step3_body' => '“वेब ऐप के रूप में खोलें” वाला स्विच चालू करें, फिर जोड़ें टैप करें। ऐसे साइट ठोस विंडो में खुलेगी, संकीर्ण टैब प्रिव्यू में नहीं।',
 		'step3_img_alt' => 'वेब ऐप विकल्प सक्रिय जोड़ें संवाद',
 		'h1' => 'होम स्क्रीन पर Aviator डेमो जोड़ें',
-		'intro' => 'यह ऐप स्टोर इंस्टॉल नहीं, Safari में बनाया गया शॉर्टकट है। iOS शब्द बदल दे, पर क्रम — शेयर, होम स्क्रीन, वेब ऐप — वही रहता है।',
+		'intro' => 'लगभग एक मिनट में Aviator आपकी होम स्क्रीन पर होगा — फुल स्क्रीन, एक टैप, वही रोज़ का अनुभव जो आपके पसंदीदा ऐप्स देते हैं। आइकन वहीं रहता है जहाँ आप उम्मीद करते हैं, अपनी विंडो में खुलता है और पहली बार से ही परिचित लगता है। Apple ने Safari में यह आधिकारिक शॉर्टकट दिया है; नीचे के तीन चरण वही परिणाम देते हैं जो एक इंस्टॉल किए गए ऐप से मिलता है।',
 	),
 	'ar' => array(
 		'demo_banner_link' => 'التثبيت على iPhone — خطوات واضحة في Safari',
@@ -289,7 +289,7 @@ return array(
 		'step3_body' => 'عند ظهور المفتاح، شغّل فتح كتطبيق ويب ثم اضغط إضافة. يفتح الموقع في نافذة كاملة بدل بطاقة معاينة صغيرة.',
 		'step3_img_alt' => 'مربع حوار الإضافة مع تفعيل تطبيق الويب',
 		'h1' => 'أضف تجربة Aviator إلى الشاشة الرئيسية',
-		'intro' => 'هذا اختصار في Safari وليس تنزيلاً من المتجر. آبل تغيّر صياغة العناصر، لكن التسلسل: مشاركة → شاشة رئيسية → تطبيق ويب يبقى ثابتاً.',
+		'intro' => 'خلال دقيقة تقريباً سيكون Aviator على شاشتك الرئيسية — ملء الشاشة، نقرة واحدة، نفس الإيقاع اليومي لتطبيقاتك المألوفة. تبقى الأيقونة حيث تتوقعها، وتفتح في نافذة خاصة وتبدو مألوفة من أول تشغيل. أدمجت Apple هذا الاختصار الرسمي في Safari؛ الخطوات الثلاث أدناه تؤدي إلى نفس نتيجة التطبيق المثبت.',
 	),
 	'bn' => array(
 		'demo_banner_link' => 'iPhone — Safari-তে ধাপে ধাপে',
@@ -311,7 +311,7 @@ return array(
 		'step3_body' => 'সুইচ দেখা গেলে চালু করুন, “যোগ করুন”-এ নিশ্চিত করুন। পৃষ্ঠা পুরো জানালায় খুলবে, পাতলা পূর্বরূপে নয়।',
 		'step3_img_alt' => 'ওয়েব অ্যাপ সুইচসহ যোগ-সংলাপ',
 		'h1' => 'হোম স্ক্রিনে Aviator ডেমো',
-		'intro' => 'এটা App Store-এর ইনস্টল নয়, Safari-র শর্টকাট। iOS কখনও শব্দ বদলে, ধারাবাহিকতা: শেয়ার → হোম স্ক্রিন → ওয়েব অ্যাপ — ঠিক একই।',
+		'intro' => 'প্রায় এক মিনিটের মধ্যে Aviator আপনার হোম স্ক্রিনে থাকবে — ফুল স্ক্রিন, এক ট্যাপ, প্রিয় অ্যাপের মতোই দৈনন্দিন অভিজ্ঞতা। আইকন থাকে যেখানে আপনি চান, নিজস্ব উইন্ডোতে খুলে এবং প্রথম চালু থেকেই পরিচিত মনে হয়। Apple Safari-তে এই অফিসিয়াল শর্টকাট দিয়েছে; নিচের তিন ধাপ ইনস্টল করা অ্যাপের মতো একই ফল দেয়।',
 	),
 	'vi' => array(
 		'demo_banner_link' => 'Cài trên iPhone — hướng dẫn Safari từng bước',
@@ -333,7 +333,7 @@ return array(
 		'step3_body' => 'Khi thấy công tắc, bật Mở bằng ứng dụng web, rồi chạm Thêm. Cửa sổ sẽ mở phẳng, tránh cảnh thu nhỏ trông như thẻ xem nhanh.',
 		'step3_img_alt' => 'Hộp thoại thêm lệnh với ứng dụng web bật',
 		'h1' => 'Ghim demo Aviator ở màn hình chính',
-		'intro' => 'Đây là lối tắt Safari, không phải gói tải từ store. Bản iOS bản đổi chữ, nhưng thứ tự Chia sẻ → màn hình chính → ứng dụng web vẫn giữ nguyên ý nghĩa.',
+		'intro' => 'Khoảng một phút nữa, Aviator sẽ nằm trên màn hình chính — toàn màn hình, một chạm, cùng nhịp quen thuộc như app bạn dùng hàng ngày. Biểu tượng ở đúng chỗ bạn mong đợi, mở trong cửa sổ riêng và quen ngay từ lần đầu. Apple tích hợp lối tắt chính thức này trong Safari; ba bước bên dưới cho kết quả giống app đã cài.',
 	),
 	'az' => array(
 		'demo_banner_link' => 'iPhone — Safari addımları ilə',
@@ -355,6 +355,6 @@ return array(
 		'step3_body' => 'Keçid görünürsə, Veb tətbiq kimi aç, sonra Əlavə et. Məzmun ayrıca pəncərədə, dar önizləmə lenti yox.',
 		'step3_img_alt' => 'Veb tətbiq keçidi aktiv edilmiş əlavə pəncərəsi',
 		'h1' => 'Aviator demosunu Əsas ekrana qoyun',
-		'intro' => 'App Store faylı deyil, Safari qısa yoludur. iOS adları dəyişir, lakin Paylaş → Əsas ekran → veb tətbiq ardıcıllığı eyni qalır.',
+		'intro' => 'Təxminən bir dəqiqəyə Aviator Əsas ekranınızda olacaq — tam ekran, bir toxunuş, sevdiyiniz tətbiqlər kimi eyni gündəlik axın. Nişan gözlədiyiniz yerdə qalır, ayrıca pəncərədə açılır və ilk işə salınmadan tanış hiss olunur. Apple bu rəsmi Safari qısa yolunu hər iPhone-a qoyub; aşağıdakı üç addım quraşdırılmış tətbiq kimi eyni nəticəni verir.',
 	),
 );
