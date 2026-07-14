@@ -289,17 +289,28 @@ if ($_preload_hero !== '') {
         })();
         </script>
         <?php
+        if (!function_exists('site_is_median_native_webview')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_median_shell.php';
+        }
+        $_site_median_native_shell = site_is_median_native_webview();
+        ?>
+        <?php
         if (!function_exists('site_template_service_worker_bootstrap_script')) {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
         }
-        echo site_template_service_worker_bootstrap_script(false, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
+        echo site_template_service_worker_bootstrap_script($_site_median_native_shell, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
         ?>
         <?php
         if (!empty($abc['counters_head'])) {
-            if (!function_exists('site_template_deferred_counters_script')) {
-                require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
-            }
             echo site_template_deferred_counters_script($abc['counters_head']);
+        }
+        ?>
+        <?php
+        if (!function_exists('site_onesignal_web_ios_prompt_script')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
+        }
+        if (!$_site_median_native_shell) {
+            echo site_onesignal_web_ios_prompt_script();
         }
         ?>
 <?php
