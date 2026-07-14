@@ -168,3 +168,5 @@ if (!function_exists('demo_app_install_ui_strings')) {
 		);
 	}
 }
+
+require_once __DIR__ . '/demo_app_push_affordance.php';

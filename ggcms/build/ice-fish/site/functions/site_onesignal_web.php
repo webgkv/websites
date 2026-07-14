@@ -46,7 +46,16 @@ function site_onesignal_web_ios_prompt_script() {
       if (OneSignal.Notifications.permission) {
         return;
       }
+      var lsKey = 'os_ios_push_auto_offered';
+      try {
+        if (localStorage.getItem(lsKey) === '1') {
+          return;
+        }
+      } catch (e) { /* ignore */ }
       await OneSignal.Notifications.requestPermission();
+      try {
+        localStorage.setItem(lsKey, '1');
+      } catch (e) { /* ignore */ }
     } catch (e) {}
   });
 })();

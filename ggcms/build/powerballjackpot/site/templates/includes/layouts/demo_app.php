@@ -75,6 +75,9 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 		</a>
 		<span class="demo-app-install-tooltip" id="demoAppInstallTooltip" hidden role="tooltip"><?= htmlspecialchars((string) ($_demo_install_ui['inapp_tooltip'] ?? 'Open in Safari to add the app'), ENT_QUOTES, 'UTF-8') ?></span>
 		</span>
+<?php if (($_demo_install['platform'] ?? '') === 'ios' && function_exists('demo_app_push_affordance_markup')): ?>
+		<?= demo_app_push_affordance_markup(demo_app_push_ui_strings()) ?>
+<?php endif; ?>
 <?php endif; ?>
 		</div>
 		<div class="demo-app-actions">
@@ -95,6 +98,9 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 		<?= site_lottery_sim_render($pbj_slides, $pbj_games, $pbj_games_defaults) ?>
 	</div>
 </div>
+<?php if (!empty($_demo_install['enabled']) && (($_demo_install['platform'] ?? '') === 'ios') && function_exists('demo_app_push_affordance_modal')): ?>
+<?= demo_app_push_affordance_modal(demo_app_push_ui_strings()) ?>
+<?php endif; ?>
 <?php if (!empty($_demo_install['enabled'])): ?>
 <div class="demo-app-safari-hint" id="demoAppSafariHint" hidden role="dialog" aria-modal="true" aria-labelledby="demoAppSafariHintTitle">
 	<div class="demo-app-safari-hint__backdrop" data-demo-safari-dismiss></div>
@@ -236,6 +242,8 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 	if (isStandaloneShell()) {
 		installBtn.style.display = 'none';
 		installBtn.setAttribute('aria-hidden', 'true');
+		var installWrap = installBtn.closest('.demo-app-install-wrap');
+		if (installWrap) installWrap.style.display = 'none';
 		return;
 	}
 
@@ -335,4 +343,7 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 	}
 })();
 </script>
+<?php endif; ?>
+<?php if (!empty($_demo_install['enabled']) && (($_demo_install['platform'] ?? '') === 'ios') && function_exists('demo_app_push_affordance_script')): ?>
+<?= demo_app_push_affordance_script() ?>
 <?php endif; ?>

@@ -12,7 +12,7 @@ if (function_exists('site_seo_public_origin')) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="<?= htmlspecialchars((string) $_aviator_html_lang, ENT_QUOTES, 'UTF-8') ?>">
+<html lang="<?= htmlspecialchars((string) $_site_html_lang, ENT_QUOTES, 'UTF-8') ?>">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -25,11 +25,11 @@ if (function_exists('site_seo_public_origin')) {
 	<?php if ($_canon !== ''): ?>
 	<link rel="canonical" href="<?= htmlspecialchars($_canon, ENT_QUOTES, 'UTF-8') ?>">
 	<?php endif; ?>
-	<meta name="theme-color" content="#151b24">
+	<meta name="theme-color" content="#2c2a33">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="apple-mobile-web-app-title" content="Aviator">
+	<meta name="apple-mobile-web-app-title" content="<?= htmlspecialchars(function_exists('site_brand_name') ? site_brand_name() : 'Chicken Road', ENT_QUOTES, 'UTF-8') ?>">
 	<?php
 	$_pwa180 = $r . 'assets/images/pwa-icon-180.png';
 	$_pwa192 = $r . 'assets/images/pwa-icon-192.png';
@@ -43,70 +43,67 @@ if (function_exists('site_seo_public_origin')) {
 	<link rel="icon" type="image/png" href="/assets/images/favicon.png?v=<?= htmlspecialchars($getV($_favicon), ENT_QUOTES, 'UTF-8') ?>">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css?v=<?= htmlspecialchars($getV($r . 'assets/css/style.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/responsive.css?v=<?= htmlspecialchars($getV($r . 'assets/css/responsive.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= htmlspecialchars($getV($r . 'assets/css/custom-overrides.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<style>
-		html, body { height: 100%; margin: 0; overflow: hidden; background: #0f1419; }
+		html, body { height: 100%; margin: 0; overflow: hidden; background: #2c2a33; }
 		/* Override main site body texture for this shell */
-		body.demo-app-doc { font-family: 'Open Sans', system-ui, sans-serif; background: #0f1419 !important; background-image: none !important; }
-		.demo-app-shell { --demo-install-accent: #e4063a; display: flex; flex-direction: column; height: 100dvh; min-height: 100vh; max-height: 100dvh; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); box-sizing: border-box; }
-		.demo-app-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; min-height: 0; background: #151b24; border-bottom: 1px solid rgba(255,255,255,.08); }
-		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 0 1 auto; min-width: 0; }
+		body.demo-app-doc { font-family: 'Poppins', system-ui, sans-serif; background: #2c2a33 !important; background-image: none !important; }
+		.demo-app-shell {
+			--demo-install-accent: #fdb614;
+			display: flex;
+			flex-direction: column;
+			height: 100dvh;
+			min-height: 100vh;
+			max-height: 100dvh;
+			padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+			box-sizing: border-box;
+		}
+		.demo-app-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 4px 8px; min-height: 0; background: #2c2a33; border-bottom: 1px solid rgba(255,255,255,.08); }
+		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 1 1 auto; min-width: 0; overflow: hidden; }
 		.demo-app-portal { flex-shrink: 0; }
 		.demo-app-brand { display: flex; align-items: center; flex: 0 0 auto; opacity: .95; }
-		.demo-app-logo-icon { display: block; height: 22px; width: auto; max-width: 56px; object-fit: contain; object-position: left center; }
-		.demo-app-actions { display: flex; align-items: center; gap: 6px; flex: 0 0 auto; margin-left: auto; }
-		/* Mini hex CTA: same .main_btn identity (magenta + clip-path + white chevrons), scaled for the narrow bar */
-		.demo-app-cta-btn.main_btn {
+		.demo-app-logo-icon {
+			display: block;
 			flex-shrink: 0;
-			flex: 0 1 auto;
-			min-width: 0;
-			max-width: clamp(88px, 38vw, 152px);
-			position: relative;
-			background: #e4063a;
-			/* site uses 15px bevel; ~0.55× for compact row */
-			clip-path: polygon(8px 0%, calc(100% - 8px) 0%, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0% 50%);
+			width: 28px;
+			height: 28px;
+			background-color: #fdb614;
+			-webkit-mask-image: var(--demo-egg-mask);
+			mask-image: var(--demo-egg-mask);
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			-webkit-mask-position: center;
+			mask-position: center;
+			-webkit-mask-size: contain;
+			mask-size: contain;
 		}
-		.demo-app-cta-btn.main_btn::before,
-		.demo-app-cta-btn.main_btn::after {
-			content: "";
-			position: absolute;
-			background-color: #fff;
-			z-index: -1;
-			top: 3px;
-			width: 9px;
-			height: calc(100% - 6px);
-			border-radius: 0;
-			transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
-			clip-path: polygon(85% 0, 100% 0, 15% 50%, 100% 100%, 85% 100%, 0% 50%);
-			transform: skewX(0deg);
-		}
-		.demo-app-cta-btn.main_btn::before { left: 3px; }
-		.demo-app-cta-btn.main_btn::after {
-			right: 3px;
-			left: auto;
-			-webkit-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			transform: rotate(180deg);
+		.demo-app-actions { display: flex; align-items: center; gap: 5px; flex: 0 0 auto; flex-shrink: 0; margin-left: 6px; }
+		/* CTA: never shrink in flex row; wrap to 2 lines only when label exceeds max-width */
+		.demo-app-cta-btn.main_btn {
+			flex: 0 0 auto;
+			flex-shrink: 0;
+			width: auto;
+			max-width: 10.5rem;
 		}
 		.demo-app-cta-btn.main_btn a {
-			position: relative;
-			z-index: 1;
-			padding: 6px 16px;
-			font-size: 11px;
-			font-weight: 600;
-			line-height: 1.25;
-			letter-spacing: 0.04em;
-			text-transform: uppercase;
 			display: block;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
+			width: auto;
+			max-width: 10.5rem;
+			box-sizing: border-box;
+			padding: 8px 12px;
+			font-size: 12px;
+			font-weight: 900;
+			line-height: 1.2;
+			border-radius: 14px;
+			text-align: center;
+			text-transform: none;
+			white-space: normal;
+			word-break: break-word;
+			overflow-wrap: break-word;
 		}
-		.demo-app-cta-btn.main_btn a:hover,
-		.demo-app-cta-btn.main_btn a:focus { color: #fff !important; }
 		.demo-app-icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: #e8eef5; text-decoration: none; cursor: pointer; transition: background .15s ease; }
 		.demo-app-icon-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
 		.demo-app-close { }
@@ -159,8 +156,33 @@ if (function_exists('site_seo_public_origin')) {
 			color: var(--demo-install-accent);
 			animation: demo-install-pulse-ios 2.5s ease-out 1;
 		}
+		.demo-app-push-wrap .demo-app-push { flex-shrink: 0; }
+		.demo-app-push--idle {
+			position: relative;
+			border-color: color-mix(in srgb, var(--demo-install-accent) 70%, transparent);
+			color: var(--demo-install-accent);
+			box-shadow: 0 0 0 1px color-mix(in srgb, var(--demo-install-accent) 22%, transparent);
+		}
+		.demo-app-push--idle::after,
+		.demo-app-push--denied::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--demo-install-accent);
+			pointer-events: none;
+		}
+		.demo-app-push--denied {
+			position: relative;
+			border-color: color-mix(in srgb, #e8eef5 35%, transparent);
+			color: #e8eef5;
+		}
 		@media (max-width: 767px) {
-			.demo-app-install-wrap .demo-app-install {
+			.demo-app-install-wrap .demo-app-install,
+			.demo-app-push-wrap .demo-app-push {
 				width: 40px;
 				height: 40px;
 			}
@@ -273,15 +295,23 @@ if (function_exists('site_seo_public_origin')) {
 		.demo-app-missing { margin: 0; color: #9aa4b2 !important; }
 		@media (max-width: 768px) {
 			.demo-app-fs-btn { display: none !important; }
+			.demo-app-icon-btn { width: 32px; height: 32px; border-radius: 7px; font-size: 14px; }
+			.demo-app-logo-icon { width: 26px; height: 26px; }
 		}
 	</style>
-	<script>
-	if ('serviceWorker' in navigator) {
-		window.addEventListener('load', function () {
-			navigator.serviceWorker.register('/sw.js').catch(function () {});
-		});
+	<?php
+	if (!function_exists('site_is_median_native_webview')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_median_shell.php';
 	}
-	</script>
+	$_demo_app_median_shell = function_exists('site_is_median_native_webview') && site_is_median_native_webview();
+	if (!$_demo_app_median_shell) {
+		if (!function_exists('site_onesignal_web_ios_prompt_script')) {
+			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
+		}
+		echo site_onesignal_web_ios_prompt_script();
+	}
+	?>
+	<?php /* No service worker on /demo/app/: avoid interfering with third-party game iframe. */ ?>
 	<?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n\t"; } } ?>
 </head>
 <body class="demo-app-doc">

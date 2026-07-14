@@ -25,12 +25,11 @@ if (function_exists('site_seo_public_origin')) {
 	<?php if ($_canon !== ''): ?>
 	<link rel="canonical" href="<?= htmlspecialchars($_canon, ENT_QUOTES, 'UTF-8') ?>">
 	<?php endif; ?>
-<?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
 	<meta name="theme-color" content="#2c2a33">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="apple-mobile-web-app-title" content="<?= htmlspecialchars(function_exists('site_brand_name') ? site_brand_name() : 'PowerBall Jackpot', ENT_QUOTES, 'UTF-8') ?>">
+	<meta name="apple-mobile-web-app-title" content="<?= htmlspecialchars(function_exists('site_brand_name') ? site_brand_name() : 'Chicken Road', ENT_QUOTES, 'UTF-8') ?>">
 	<?php
 	$_pwa180 = $r . 'assets/images/pwa-icon-180.png';
 	$_pwa192 = $r . 'assets/images/pwa-icon-192.png';
@@ -46,18 +45,24 @@ if (function_exists('site_seo_public_origin')) {
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css?v=<?= htmlspecialchars($getV($r . 'assets/css/style.css'), ENT_QUOTES, 'UTF-8') ?>">
-	<link rel="stylesheet" href="/assets/css/lottery-buttons.css?v=<?= htmlspecialchars($getV($r . 'assets/css/lottery-buttons.css'), ENT_QUOTES, 'UTF-8') ?>">
-	<link rel="stylesheet" href="/assets/css/home-lottery.css?v=<?= htmlspecialchars($getV($r . 'assets/css/home-lottery.css'), ENT_QUOTES, 'UTF-8') ?>">
-	<link rel="stylesheet" href="/assets/css/lottery-simulator.css?v=<?= htmlspecialchars($getV($r . 'assets/css/lottery-simulator.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/responsive.css?v=<?= htmlspecialchars($getV($r . 'assets/css/responsive.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= htmlspecialchars($getV($r . 'assets/css/custom-overrides.css'), ENT_QUOTES, 'UTF-8') ?>">
 	<style>
 		html, body { height: 100%; margin: 0; overflow: hidden; background: #2c2a33; }
 		/* Override main site body texture for this shell */
 		body.demo-app-doc { font-family: 'Poppins', system-ui, sans-serif; background: #2c2a33 !important; background-image: none !important; }
-		.demo-app-shell { --demo-install-accent: #edcb50; display: flex; flex-direction: column; height: 100dvh; min-height: 100vh; max-height: 100dvh; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); box-sizing: border-box; }
-		.demo-app-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; min-height: 0; background: #2c2a33; border-bottom: 1px solid rgba(255,255,255,.08); }
-		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 0 1 auto; min-width: 0; }
+		.demo-app-shell {
+			--demo-install-accent: #fdb614;
+			display: flex;
+			flex-direction: column;
+			height: 100dvh;
+			min-height: 100vh;
+			max-height: 100dvh;
+			padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+			box-sizing: border-box;
+		}
+		.demo-app-bar { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 4px 8px; min-height: 0; background: #2c2a33; border-bottom: 1px solid rgba(255,255,255,.08); }
+		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 1 1 auto; min-width: 0; overflow: hidden; }
 		.demo-app-portal { flex-shrink: 0; }
 		.demo-app-brand { display: flex; align-items: center; flex: 0 0 auto; opacity: .95; }
 		.demo-app-logo-icon {
@@ -65,25 +70,39 @@ if (function_exists('site_seo_public_origin')) {
 			flex-shrink: 0;
 			width: 28px;
 			height: 28px;
+			background-color: #fdb614;
+			-webkit-mask-image: var(--demo-egg-mask);
+			mask-image: var(--demo-egg-mask);
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			-webkit-mask-position: center;
+			mask-position: center;
+			-webkit-mask-size: contain;
+			mask-size: contain;
 		}
-		.demo-app-actions { display: flex; align-items: center; gap: 6px; flex: 0 0 auto; margin-left: auto; }
-		/* Compact CTA in demo chrome — uses site .main_btn (yellow gradient); only scale down */
+		.demo-app-actions { display: flex; align-items: center; gap: 5px; flex: 0 0 auto; flex-shrink: 0; margin-left: 6px; }
+		/* CTA: never shrink in flex row; wrap to 2 lines only when label exceeds max-width */
 		.demo-app-cta-btn.main_btn {
+			flex: 0 0 auto;
 			flex-shrink: 0;
-			flex: 0 1 auto;
-			min-width: 0;
-			max-width: clamp(88px, 38vw, 152px);
+			width: auto;
+			max-width: 10.5rem;
 		}
 		.demo-app-cta-btn.main_btn a {
-			padding: 8px 18px;
+			display: block;
+			width: auto;
+			max-width: 10.5rem;
+			box-sizing: border-box;
+			padding: 8px 12px;
 			font-size: 12px;
 			font-weight: 900;
-			line-height: 1.25;
+			line-height: 1.2;
 			border-radius: 14px;
-			display: block;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
+			text-align: center;
+			text-transform: none;
+			white-space: normal;
+			word-break: break-word;
+			overflow-wrap: break-word;
 		}
 		.demo-app-icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: #e8eef5; text-decoration: none; cursor: pointer; transition: background .15s ease; }
 		.demo-app-icon-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
@@ -137,8 +156,33 @@ if (function_exists('site_seo_public_origin')) {
 			color: var(--demo-install-accent);
 			animation: demo-install-pulse-ios 2.5s ease-out 1;
 		}
+		.demo-app-push-wrap .demo-app-push { flex-shrink: 0; }
+		.demo-app-push--idle {
+			position: relative;
+			border-color: color-mix(in srgb, var(--demo-install-accent) 70%, transparent);
+			color: var(--demo-install-accent);
+			box-shadow: 0 0 0 1px color-mix(in srgb, var(--demo-install-accent) 22%, transparent);
+		}
+		.demo-app-push--idle::after,
+		.demo-app-push--denied::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--demo-install-accent);
+			pointer-events: none;
+		}
+		.demo-app-push--denied {
+			position: relative;
+			border-color: color-mix(in srgb, #e8eef5 35%, transparent);
+			color: #e8eef5;
+		}
 		@media (max-width: 767px) {
-			.demo-app-install-wrap .demo-app-install {
+			.demo-app-install-wrap .demo-app-install,
+			.demo-app-push-wrap .demo-app-push {
 				width: 40px;
 				height: 40px;
 			}
@@ -240,8 +284,7 @@ if (function_exists('site_seo_public_origin')) {
 		}
 		/* DEMO_INSTALL_AFFORDANCE end */
 		/* Game area: fill all space below bar (desktop + portrait mobile); no 16:9 letterbox */
-		.demo-app-frame-host { flex: 1 1 auto; min-height: 0; position: relative; background: #051423; display: flex; flex-direction: column; overflow: hidden; padding: 0; }
-		.demo-app-frame-host.demo-app-sim-host { overflow: auto; -webkit-overflow-scrolling: touch; }
+		.demo-app-frame-host { flex: 1 1 auto; min-height: 0; position: relative; background: #000; display: flex; flex-direction: column; overflow: hidden; padding: 0; }
 		.demo-app-frame-host .main__frame--app-shell { flex: 1; min-height: 0; width: 100%; max-width: none; margin: 0; display: flex; flex-direction: column; }
 		.demo-app-frame-host .main__frame-app-inner { position: relative; flex: 1; min-height: 0; width: 100%; -webkit-overflow-scrolling: touch; }
 		.demo-app-frame-host .main__frame-app-inner iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
@@ -252,8 +295,22 @@ if (function_exists('site_seo_public_origin')) {
 		.demo-app-missing { margin: 0; color: #9aa4b2 !important; }
 		@media (max-width: 768px) {
 			.demo-app-fs-btn { display: none !important; }
+			.demo-app-icon-btn { width: 32px; height: 32px; border-radius: 7px; font-size: 14px; }
+			.demo-app-logo-icon { width: 26px; height: 26px; }
 		}
 	</style>
+	<?php
+	if (!function_exists('site_is_median_native_webview')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_median_shell.php';
+	}
+	$_demo_app_median_shell = function_exists('site_is_median_native_webview') && site_is_median_native_webview();
+	if (!$_demo_app_median_shell) {
+		if (!function_exists('site_onesignal_web_ios_prompt_script')) {
+			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
+		}
+		echo site_onesignal_web_ios_prompt_script();
+	}
+	?>
 	<?php /* No service worker on /demo/app/: avoid interfering with third-party game iframe. */ ?>
 	<?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n\t"; } } ?>
 </head>
@@ -261,8 +318,5 @@ if (function_exists('site_seo_public_origin')) {
 <?php if (!empty($abc['counters_body'])) { foreach ($abc['counters_body'] as $_counter) { echo $_counter . "\n"; } } ?>
 <?= html_render('layouts/demo_app') ?>
 <?php if (!empty($abc['counters_footer'])) { foreach ($abc['counters_footer'] as $_counter) { echo $_counter . "\n"; } } ?>
-<script src="/assets/js/lottery-sim-core.js?v=<?= htmlspecialchars($getV($r . 'assets/js/lottery-sim-core.js'), ENT_QUOTES, 'UTF-8') ?>"></script>
-<script src="/assets/js/home-lucky-picker.js?v=<?= htmlspecialchars($getV($r . 'assets/js/home-lucky-picker.js'), ENT_QUOTES, 'UTF-8') ?>"></script>
-<script src="/assets/js/lottery-sim-ui.js?v=<?= htmlspecialchars($getV($r . 'assets/js/lottery-sim-ui.js'), ENT_QUOTES, 'UTF-8') ?>"></script>
 </body>
 </html>
