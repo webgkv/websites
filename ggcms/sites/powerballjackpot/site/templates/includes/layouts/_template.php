@@ -319,7 +319,16 @@ if ($_preload_hero !== '') {
         }
         if (!$_site_median_native_shell) {
             echo site_onesignal_push_flow_helpers_script();
-            echo site_onesignal_web_ios_prompt_script();
+            echo site_onesignal_suppress_slidedown_script();
+            echo site_onesignal_web_ios_prompt_script($abc);
+        }
+        ?>
+        <?php
+        if (!$_site_median_native_shell) {
+            if (!function_exists('site_push_soft_prompt_styles')) {
+                require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_push_soft_prompt.php';
+            }
+            echo site_push_soft_prompt_styles();
         }
         ?>
 <?php
@@ -876,6 +885,15 @@ if (!empty($abc['counters_footer'])) {
 	foreach ($abc['counters_footer'] as $_counter) {
 		echo $_counter . "\n";
 	}
+}
+?>
+<?php
+if (!$_site_median_native_shell) {
+	if (!function_exists('site_push_soft_prompt_render')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_push_soft_prompt.php';
+	}
+	echo site_push_soft_prompt_markup();
+	echo site_push_soft_prompt_bind_script();
 }
 ?>
     </body>

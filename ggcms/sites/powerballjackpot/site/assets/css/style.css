@@ -21,6 +21,13 @@
     --cr-secondary: #ed5050;
     --cr-border: #262d34;
     --cr-muted: rgba(223, 223, 223, 0.65);
+    --push-soft-accent: linear-gradient(360deg, #3a7a63 0%, #448c74 100%);
+    --push-soft-accent-text: #ffffff;
+    --push-soft-panel-bg: #0f1b27;
+    --push-soft-panel-border: #262d34;
+    --push-soft-title-color: #edcb50;
+    --push-soft-body-color: #dfdfdf;
+    --push-soft-cancel-color: rgba(223, 223, 223, 0.65);
 }
 
 *{

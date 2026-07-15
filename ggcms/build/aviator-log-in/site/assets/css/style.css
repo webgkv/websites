@@ -5,6 +5,16 @@
     font-family: "Open Sans", "Ubuntu", "Rajdhani", sans-serif;
 }
 
+:root {
+    --push-soft-accent: #e4063a;
+    --push-soft-accent-text: #ffffff;
+    --push-soft-panel-bg: #1a1d18;
+    --push-soft-panel-border: rgba(255, 255, 255, 0.1);
+    --push-soft-title-color: #ffffff;
+    --push-soft-body-color: #cfcfcf;
+    --push-soft-cancel-color: #9aa4b2;
+}
+
 html, body {
     overflow-x: hidden;
 }

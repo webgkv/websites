@@ -16,6 +16,13 @@
     --cr-btn-shadow: 0 0 4px rgba(255, 210, 27, 0.5);
     --cr-btn-shadow-hover: 0 0 14px rgba(255, 210, 27, 0.8);
     --cr-font: "Roboto", sans-serif;
+    --push-soft-accent: linear-gradient(360deg, #ffae00 0%, #ffdd26 100%);
+    --push-soft-accent-text: #141a39;
+    --push-soft-panel-bg: #ffffff;
+    --push-soft-panel-border: rgba(0, 0, 0, 0.08);
+    --push-soft-title-color: #141a39;
+    --push-soft-body-color: #444444;
+    --push-soft-cancel-color: #666666;
 }
 
 *{

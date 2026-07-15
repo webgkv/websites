@@ -267,35 +267,29 @@ if (!function_exists('site_counters_js_string')) {
 
 if (!function_exists('site_counters_localize_onesignal_html')) {
 	/**
-	 * Replace OneSignal slidedown copy in init with current locale (common dictionary).
+	 * Strip OneSignal slidedown init (custom soft prompt replaces SDK/dashboard UI).
 	 */
 	function site_counters_localize_onesignal_html($html) {
 		$html = (string) $html;
-		if ($html === '' || stripos($html, 'OneSignal.init') === false || !function_exists('i18n')) {
+		if ($html === '' || stripos($html, 'OneSignal.init') === false) {
 			return $html;
 		}
-		$brand = function_exists('site_brand_name') ? site_brand_name() : '';
-		$action = trim((string) i18n('common|demo_app_push_soft_body'));
-		if ($action === '' || strpos($action, 'common|') === 0) {
-			$action = 'Get updates and alerts from ' . $brand . '. You can turn this off anytime in Settings.';
-		} else {
-			$action = str_replace('{brand}', $brand, $action);
+		if (preg_match('/\s*promptOptions\s*:/', $html)) {
+			$html = preg_replace(
+				'/,\s*promptOptions\s*:\s*\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}/s',
+				'',
+				$html,
+				1
+			);
 		}
-		$accept = trim((string) i18n('common|demo_app_push_soft_allow'));
-		if ($accept === '' || strpos($accept, 'common|') === 0) {
-			$accept = 'Allow notifications';
-		}
-		$cancel = trim((string) i18n('common|demo_app_push_soft_cancel'));
-		if ($cancel === '' || strpos($cancel, 'common|') === 0) {
-			$cancel = 'Not now';
-		}
-		$replacements = array(
-			'/actionMessage\s*:\s*"[^"]*"/' => 'actionMessage: "' . site_counters_js_string($action) . '"',
-			'/acceptButton\s*:\s*"[^"]*"/' => 'acceptButton: "' . site_counters_js_string($accept) . '"',
-			'/cancelButton\s*:\s*"[^"]*"/' => 'cancelButton: "' . site_counters_js_string($cancel) . '"',
-		);
-		foreach ($replacements as $pattern => $replacement) {
-			$html = preg_replace($pattern, $replacement, $html, 1);
+		if (stripos($html, 'welcomeNotification') === false
+			&& preg_match('/OneSignal\.init\s*\(\s*\{/', $html)) {
+			$html = preg_replace(
+				'/OneSignal\.init\s*\(\s*\{/',
+				'OneSignal.init({ welcomeNotification: { disable: true },',
+				$html,
+				1
+			);
 		}
 		return $html;
 	}

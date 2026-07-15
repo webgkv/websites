@@ -36,9 +36,7 @@ HTML;
 }
 
 /**
- * Shared client-side push flow (iOS standalone PWA).
- *
- * Two-step UX: OneSignal Slidedown only → native iOS permission → optIn.
+ * Shared client-side push flow (custom soft prompt → same subscribe path as OneSignal Slidedown Allow).
  *
  * @return string HTML script block
  */
@@ -48,6 +46,7 @@ function site_onesignal_push_flow_helpers_script() {
 (function () {
   window.siteOneSignalPushFlow = {
     LS_SUBSCRIBED: 'os_ios_push_subscribed',
+    LS_AUTO_OFFERED: 'os_push_soft_offered',
     AUTO_PROMPT_DELAY_MS: 10000,
 
     isStandaloneShell: function () {
@@ -63,6 +62,24 @@ function site_onesignal_push_flow_helpers_script() {
       var ua = navigator.userAgent || '';
       if (/iPhone|iPad|iPod/i.test(ua)) return true;
       return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    },
+
+    isMobileUa: function () {
+      var ua = navigator.userAgent || '';
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua)
+        || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    },
+
+    isDesktopBrowser: function () {
+      return !this.isMobileUa();
+    },
+
+    wasAutoOffered: function () {
+      try { return localStorage.getItem(this.LS_AUTO_OFFERED) === '1'; } catch (e) { return false; }
+    },
+
+    markAutoOffered: function () {
+      try { localStorage.setItem(this.LS_AUTO_OFFERED, '1'); } catch (e) { /* ignore */ }
     },
 
     nativePermission: function () {
@@ -87,14 +104,20 @@ function site_onesignal_push_flow_helpers_script() {
         if (!OneSignal || !OneSignal.User || !OneSignal.User.PushSubscription) {
           return false;
         }
-        if (OneSignal.User.PushSubscription.optedIn === true) {
+        var ps = OneSignal.User.PushSubscription;
+        if (ps.optedIn === true) {
           return true;
         }
-        var id = OneSignal.User.PushSubscription.id;
-        return !!id;
+        if (ps.id) {
+          return true;
+        }
+        if (ps.token) {
+          return true;
+        }
       } catch (e) {
         return false;
       }
+      return false;
     },
 
     markSubscribed: function () {
@@ -109,6 +132,8 @@ function site_onesignal_push_flow_helpers_script() {
     _warmupPromise: null,
     _inFlight: null,
     _autoTimer: null,
+    _pendingSubscribeRequest: null,
+    _pendingNativePermission: null,
 
     setReady: function (OneSignal) {
       this._oneSignal = OneSignal;
@@ -145,65 +170,131 @@ function site_onesignal_push_flow_helpers_script() {
       return this._warmupPromise;
     },
 
-    hasSlidedownApi: function (OneSignal) {
-      return !!(OneSignal && OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function');
+    /** Step 1: our localized soft prompt (replaces OneSignal Slidedown). */
+    promptSoftSubscribe: async function () {
+      if (typeof this.showCustomSoftPrompt === 'function') {
+        return await this.showCustomSoftPrompt();
+      }
+      return false;
     },
 
-    /** Step 1a: OneSignal Slidedown (dashboard / promptOptions). Returns true if native permission granted. */
-    trySlidedown: async function (OneSignal, force) {
-      if (!OneSignal.Slidedown || typeof OneSignal.Slidedown.promptPush !== 'function') {
-        return false;
+    /**
+     * Start browser permission in click handler (user gesture). Does not require OneSignal.
+     * OneSignal registration runs afterward in runSubscribe().
+     */
+    beginSubscribeFromGesture: function () {
+      if (this.nativePermission() === 'denied') {
+        return;
       }
-      var permBefore = !!OneSignal.Notifications.permission;
+      if (this.nativePermission() === 'granted') {
+        var OneSignal = this._oneSignal;
+        if (OneSignal && OneSignal.User && OneSignal.User.PushSubscription
+          && typeof OneSignal.User.PushSubscription.optIn === 'function') {
+          try {
+            this._pendingSubscribeRequest = OneSignal.User.PushSubscription.optIn();
+          } catch (e) { /* ignore */ }
+        }
+        return;
+      }
       try {
-        await OneSignal.Slidedown.promptPush({ force: !!force });
+        if (typeof Notification !== 'undefined'
+          && typeof Notification.requestPermission === 'function') {
+          this._pendingNativePermission = Notification.requestPermission();
+        }
       } catch (e) { /* ignore */ }
-      return !permBefore && !!OneSignal.Notifications.permission;
     },
 
-    /** Step 2: native iOS permission via OneSignal. */
-    requestNativePermission: async function (OneSignal) {
+    runSubscribe: async function (OneSignal) {
       OneSignal = OneSignal || this._oneSignal;
-      if (!OneSignal || !OneSignal.Notifications
-        || typeof OneSignal.Notifications.requestPermission !== 'function') {
+      if (!OneSignal) {
+        OneSignal = await this.waitReady();
+        this.setReady(OneSignal);
+      }
+      if (!OneSignal || !OneSignal.Notifications) {
         return false;
       }
-      if (this.nativePermission() === 'denied' || OneSignal.Notifications.permission === false) {
+      await this.warmup(OneSignal);
+
+      if (this._pendingNativePermission) {
+        try {
+          await this._pendingNativePermission;
+        } catch (e) { /* ignore */ }
+        this._pendingNativePermission = null;
+      }
+
+      if (this._pendingSubscribeRequest) {
+        try {
+          await this._pendingSubscribeRequest;
+        } catch (e) { /* ignore */ }
+        this._pendingSubscribeRequest = null;
+      }
+
+      var granted = this.nativePermission() === 'granted'
+        || OneSignal.Notifications.permission === true;
+
+      if (!granted) {
+        try {
+          await OneSignal.Notifications.requestPermission();
+        } catch (e) {
+          return false;
+        }
+        granted = this.nativePermission() === 'granted'
+          || OneSignal.Notifications.permission === true;
+      }
+
+      if (!granted) {
         return false;
       }
-      if (!OneSignal.Notifications.permission) {
+
+      // Permission granted — run OneSignal register chain (SW + token + backend), no second prompt.
+      try {
         await OneSignal.Notifications.requestPermission();
+      } catch (e) { /* ignore */ }
+
+      if (!await this.isSubscribed(OneSignal)
+        && OneSignal.User && OneSignal.User.PushSubscription
+        && typeof OneSignal.User.PushSubscription.optIn === 'function') {
+        try {
+          await OneSignal.User.PushSubscription.optIn();
+        } catch (e) { /* ignore */ }
       }
-      return !!OneSignal.Notifications.permission;
+
+      return true;
     },
 
-    completeOptIn: async function (OneSignal) {
+    waitForSubscription: async function (OneSignal) {
       OneSignal = OneSignal || this._oneSignal;
-      if (!OneSignal || !OneSignal.Notifications || !OneSignal.Notifications.permission) {
-        return { ok: false, reason: 'no_permission' };
-      }
-      var subscribed = await this.isSubscribed(OneSignal);
-      if (!subscribed && OneSignal.User && OneSignal.User.PushSubscription
-        && typeof OneSignal.User.PushSubscription.optIn === 'function') {
-        await OneSignal.User.PushSubscription.optIn();
-        await new Promise(function (resolve) { setTimeout(resolve, 400); });
+      var subscribed = false;
+      for (var i = 0; i < 20; i++) {
         subscribed = await this.isSubscribed(OneSignal);
+        if (subscribed) {
+          break;
+        }
+        if (this.nativePermission() === 'denied') {
+          break;
+        }
+        await new Promise(function (resolve) { setTimeout(resolve, 500); });
       }
       if (subscribed) {
         this.markSubscribed();
       } else {
         this.clearSubscribedFlag();
       }
-      return { ok: subscribed, reason: subscribed ? 'subscribed' : 'no_subscription' };
+      var reason = subscribed ? 'subscribed' : (this.nativePermission() === 'denied' ? 'denied' : 'no_subscription');
+      return { ok: subscribed, reason: reason };
     },
 
     /**
-     * Full subscribe flow: OneSignal Slidedown → native → optIn (no custom fallback modal).
-     * @param {{force?:boolean, skipSlidedown?:boolean}} opts force=true on bell click
+     * Full subscribe flow: custom soft prompt → native Slidedown subscribe path.
+     * @param {{force?:boolean, auto?:boolean}} opts force=true on bell click; auto=true marks LS after attempt
      */
     showSubscribeFlow: async function (OneSignal, opts) {
       opts = opts || {};
       OneSignal = OneSignal || this._oneSignal;
+      if (!OneSignal) {
+        OneSignal = await this.waitReady();
+        this.setReady(OneSignal);
+      }
       await this.warmup(OneSignal);
 
       if (await this.isSubscribed(OneSignal)) {
@@ -213,19 +304,25 @@ function site_onesignal_push_flow_helpers_script() {
         return { ok: false, reason: 'denied' };
       }
 
-      var slidedownApi = this.hasSlidedownApi(OneSignal);
-
-      if (!opts.skipSlidedown && slidedownApi) {
-        await this.trySlidedown(OneSignal, !!opts.force);
-      } else if (!slidedownApi && opts.force) {
-        await this.requestNativePermission(OneSignal);
+      if (!OneSignal || !OneSignal.Notifications) {
+        return { ok: false, reason: 'not_ready' };
       }
 
-      if (!OneSignal.Notifications.permission) {
-        return { ok: false, reason: slidedownApi || opts.force ? 'dismissed' : 'no_prompt' };
+      var needsSoft = !OneSignal.Notifications.permission && this.nativePermission() !== 'granted';
+      if (needsSoft) {
+        var accepted = await this.promptSoftSubscribe();
+        if (opts.auto) {
+          this.markAutoOffered();
+        }
+        if (!accepted) {
+          return { ok: false, reason: 'dismissed' };
+        }
+      } else if (opts.auto) {
+        this.markAutoOffered();
       }
 
-      return await this.completeOptIn(OneSignal);
+      await this.runSubscribe(OneSignal);
+      return await this.waitForSubscription(OneSignal);
     },
 
     ensureSubscribed: async function (OneSignal, opts) {
@@ -241,11 +338,18 @@ function site_onesignal_push_flow_helpers_script() {
       }
     },
 
+    isAutoPromptContext: function () {
+      if (this.isIosDevice() && this.isStandaloneShell()) return true;
+      if (this.isDesktopBrowser()) return true;
+      return false;
+    },
+
     shouldOfferPush: async function (OneSignal) {
-      if (!this.isIosDevice() || !this.isStandaloneShell()) return false;
+      if (!this.isAutoPromptContext()) return false;
       if (!(await this.isPushSupported(OneSignal))) return false;
       if (this.nativePermission() === 'denied') return false;
       if (await this.isSubscribed(OneSignal)) return false;
+      if (this.wasAutoOffered()) return false;
       return true;
     },
 
@@ -256,7 +360,7 @@ function site_onesignal_push_flow_helpers_script() {
         self._autoTimer = null;
         try {
           if (!(await self.shouldOfferPush(OneSignal))) return;
-          await self.ensureSubscribed(OneSignal, { force: false });
+          await self.ensureSubscribed(OneSignal, { auto: true });
           if (typeof window.__demoAppPushSyncUI === 'function') {
             window.__demoAppPushSyncUI();
           }
@@ -288,11 +392,79 @@ HTML;
 }
 
 /**
- * Auto-prompt on iOS standalone PWA: SW warmup + delayed Slidedown/soft prompt after init.
+ * Hide OneSignal SDK/dashboard slidedown — we use site_push_soft_prompt only.
  *
+ * @return string HTML script + style block or empty in Median shell
+ */
+function site_onesignal_suppress_slidedown_script() {
+	if (function_exists('site_is_median_native_webview') && site_is_median_native_webview()) {
+		return '';
+	}
+	return <<<'HTML'
+<style>
+#onesignal-slidedown-container,
+.onesignal-slidedown-container,
+.onesignal-slidedown-dialog,
+[class*="onesignal-slidedown"],
+[id*="onesignal-slidedown"],
+[id*="OneSignal-slidedown"] {
+	display: none !important;
+	visibility: hidden !important;
+	pointer-events: none !important;
+	opacity: 0 !important;
+}
+</style>
+<script>
+(function () {
+  function hideOneSignalSlidedown() {
+    var selectors = [
+      '#onesignal-slidedown-container',
+      '.onesignal-slidedown-container',
+      '.onesignal-slidedown-dialog',
+      '[class*="onesignal-slidedown"]',
+      '[id*="onesignal-slidedown"]',
+      '[id*="OneSignal-slidedown"]'
+    ];
+    selectors.forEach(function (sel) {
+      try {
+        document.querySelectorAll(sel).forEach(function (el) {
+          el.style.setProperty('display', 'none', 'important');
+          el.style.setProperty('visibility', 'hidden', 'important');
+          el.style.setProperty('pointer-events', 'none', 'important');
+        });
+      } catch (e) { /* ignore */ }
+    });
+  }
+
+  hideOneSignalSlidedown();
+  try {
+    new MutationObserver(hideOneSignalSlidedown).observe(document.documentElement, {
+      childList: true,
+      subtree: true
+    });
+  } catch (e) { /* ignore */ }
+
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function (OneSignal) {
+    hideOneSignalSlidedown();
+    try {
+      if (OneSignal.Slidedown && typeof OneSignal.Slidedown.addEventListener === 'function') {
+        OneSignal.Slidedown.addEventListener('slidedownShown', hideOneSignalSlidedown);
+      }
+    } catch (e) { /* ignore */ }
+  });
+})();
+</script>
+HTML;
+}
+
+/**
+ * Auto-prompt after init. Language is auto-detected by OneSignal from device/browser on subscribe.
+ *
+ * @param array $abc Unused; kept for template call signature.
  * @return string HTML script block or empty string in Median shell
  */
-function site_onesignal_web_ios_prompt_script() {
+function site_onesignal_web_ios_prompt_script($abc = array()) {
 	if (function_exists('site_is_median_native_webview') && site_is_median_native_webview()) {
 		return '';
 	}

@@ -19,6 +19,13 @@
     --cr-font: "Roboto", sans-serif;
     --cr-glass-border: rgba(190, 240, 255, 0.16);
     --cr-heading-glow: 0 0 10px rgba(120, 220, 255, 0.2), 0 2px 8px rgba(0, 0, 0, 0.35);
+    --push-soft-accent: linear-gradient(180deg, #7ce8ff 0%, #24b5ff 22%, #0077ff 58%, #0050d8 100%);
+    --push-soft-accent-text: #ffffff;
+    --push-soft-panel-bg: rgba(8, 22, 50, 0.96);
+    --push-soft-panel-border: rgba(190, 240, 255, 0.16);
+    --push-soft-title-color: #ffffff;
+    --push-soft-body-color: #d8f2ff;
+    --push-soft-cancel-color: #9ab8cc;
 }
 
 *{

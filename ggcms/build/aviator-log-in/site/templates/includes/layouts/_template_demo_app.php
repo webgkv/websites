@@ -197,38 +197,25 @@ if (function_exists('site_seo_public_origin')) {
 			gap: 0.5rem;
 			margin-top: 0.75rem;
 		}
-		.demo-app-push-soft .demo-app-safari-hint__panel {
+		.demo-app-doc .site-push-soft__panel {
 			background: #ffffff;
 			border: none;
 			box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
 		}
-		.demo-app-push-soft .demo-app-safari-hint__title {
+		.demo-app-doc .site-push-soft__title {
 			color: #111111;
 			font-size: 17px;
 		}
-		.demo-app-push-soft .demo-app-safari-hint__body {
+		.demo-app-doc .site-push-soft__body {
 			color: #444444;
 			font-size: 14px;
 		}
-		.demo-app-push-soft__allow {
-			display: block;
-			width: 100%;
-			padding: 12px 14px;
-			border: 0;
-			border-radius: 10px;
+		.demo-app-doc .site-push-soft__allow {
 			background: var(--demo-install-accent);
 			color: #1a1a1a;
-			font-weight: 700;
-			font-size: 15px;
-			cursor: pointer;
 		}
-		.demo-app-push-soft__cancel {
-			background: transparent;
-			border: none;
+		.demo-app-doc .site-push-soft__cancel {
 			color: #666666;
-			font-size: 0.9rem;
-			padding: 0.35rem;
-			cursor: pointer;
 		}
 		@media (max-width: 767px) {
 			.demo-app-install-wrap .demo-app-install,
@@ -373,7 +360,12 @@ if (function_exists('site_seo_public_origin')) {
 			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_onesignal_web.php';
 		}
 		echo site_onesignal_push_flow_helpers_script();
-		echo site_onesignal_web_ios_prompt_script();
+		echo site_onesignal_suppress_slidedown_script();
+		echo site_onesignal_web_ios_prompt_script($abc);
+		if (!function_exists('site_push_soft_prompt_styles')) {
+			require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_push_soft_prompt.php';
+		}
+		echo site_push_soft_prompt_styles();
 	}
 	?>
 </head>
@@ -381,5 +373,14 @@ if (function_exists('site_seo_public_origin')) {
 <?php if (!empty($abc['counters_body'])) { foreach ($abc['counters_body'] as $_counter) { echo $_counter . "\n"; } } ?>
 <?= html_render('layouts/demo_app') ?>
 <?php if (!empty($abc['counters_footer'])) { foreach ($abc['counters_footer'] as $_counter) { echo $_counter . "\n"; } } ?>
+<?php
+if (!$_demo_app_median_shell) {
+	if (!function_exists('site_push_soft_prompt_render')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_push_soft_prompt.php';
+	}
+	echo site_push_soft_prompt_markup();
+	echo site_push_soft_prompt_bind_script();
+}
+?>
 </body>
 </html>

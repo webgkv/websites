@@ -41,7 +41,7 @@
         {
             "name": "onesignal",
             "kind": "onesignal",
-            "code_head": "<script src=\"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js\" defer></script>\n<script>\nwindow.OneSignalDeferred = window.OneSignalDeferred || [];\nOneSignalDeferred.push(async function (OneSignal) {\n  await OneSignal.init({\n    appId: \"2e0fcf0c-e308-4615-ad80-3c35f94d9842\",\n    serviceWorkerPath: \"/sw.js\",\n    serviceWorkerParam: { scope: \"/\" },\n    promptOptions: {\n      slidedown: {\n        prompts: [{\n          type: \"push\",\n          autoPrompt: false,\n          text: {\n            actionMessage: \"Get updates and alerts from PowerBall Jackpot. You can turn this off anytime in Settings.\",\n            acceptButton: \"Allow\",\n            cancelButton: \"Not now\",\n          },\n        }],\n      },\n    },\n  });\n});\n</script>",
+            "code_head": "<script src=\"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js\" defer></script>\n<script>\nwindow.OneSignalDeferred = window.OneSignalDeferred || [];\nOneSignalDeferred.push(async function (OneSignal) {\n  await OneSignal.init({\n    appId: \"2e0fcf0c-e308-4615-ad80-3c35f94d9842\",\n    serviceWorkerPath: \"/sw.js\",\n    serviceWorkerParam: { scope: \"/\" },\n  });\n});\n</script>",
             "code_body": "",
             "code_footer": "",
             "display": 1,
