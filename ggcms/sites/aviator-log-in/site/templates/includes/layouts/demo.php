@@ -10,14 +10,9 @@ require_once(ROOT_DIR . 'functions/site_quick_access.php');
 require_once(ROOT_DIR . 'functions/game_demo_embed.php');
 game_demo_ensure_spribe_provider();
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = site_cta_buttons_html($offer_path);
 $demo_content = site_demo_apply_quick_access($demo_content, $abc, $lang);
 $demo_content = game_demo_filter_content_iframe($demo_content, $abc, $config);
-$demo_content = site_insert_cta_evenly_in_content(
-	$demo_content,
-	$buttons_html,
-	3
-);
+$demo_content = site_insert_cta_evenly_in_content($demo_content, $offer_path);
 $demo_content_has_h1 = preg_match('/<h1\b/i', $demo_content) === 1;
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>

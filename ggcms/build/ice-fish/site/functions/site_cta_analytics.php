@@ -6,17 +6,77 @@
  * Event schema (pushed to window.dataLayer):
  *   event: cta_click | cta_page_view
  *   page_key, page_lang, page_path
- *   button_slot (001..), button_role, button_variant
+ *   button_slot ({page}_{role}_{nn}, e.g. da_tb_01), button_role, button_variant
  */
 
-if (!function_exists('site_cta_normalize_slot')) {
-	function site_cta_normalize_slot($slot): string {
-		$digits = preg_replace('/\D+/', '', (string) $slot);
-		if ($digits === '') {
-			$digits = '1';
+if (!function_exists('site_cta_page_abbr')) {
+	function site_cta_page_abbr(string $page_key): string {
+		static $map = array(
+			'home' => 'ho',
+			'demo_app' => 'da',
+			'demo' => 'dm',
+			'blog' => 'bl',
+			'guides' => 'gu',
+			'games' => 'gm',
+			'casinos' => 'cs',
+			'pages' => 'pg',
+			'page' => 'pg',
+		);
+		$key = strtolower(trim($page_key));
+		if (isset($map[$key])) {
+			return $map[$key];
 		}
-		$digits = substr($digits, -3);
-		return str_pad($digits, 3, '0', STR_PAD_LEFT);
+		$parts = preg_split('/[^a-z0-9]+/', $key, -1, PREG_SPLIT_NO_EMPTY);
+		if (count($parts) >= 2) {
+			return substr($parts[0], 0, 1) . substr($parts[1], 0, 1);
+		}
+		$compact = preg_replace('/[^a-z0-9]/', '', $key);
+		return substr($compact !== '' ? $compact : 'pg', 0, 2);
+	}
+}
+
+if (!function_exists('site_cta_role_abbr')) {
+	function site_cta_role_abbr(string $role): string {
+		static $map = array(
+			'play_now' => 'pn',
+			'bonus' => 'tb',
+			'popup_banner' => 'pb',
+			'popup_bonus' => 'px',
+			'download_nav' => 'dn',
+			'games_nav' => 'gn',
+			'cta' => 'ct',
+		);
+		$role = site_cta_normalize_role($role);
+		if (isset($map[$role])) {
+			return $map[$role];
+		}
+		$compact = preg_replace('/[^a-z0-9]/', '', $role);
+		return substr($compact !== '' ? $compact : 'ct', 0, 2);
+	}
+}
+
+if (!function_exists('site_cta_make_slot')) {
+	/**
+	 * Page-scoped button id: {page_abbr}_{role_abbr}_{instance}, e.g. gu_pn_02.
+	 */
+	function site_cta_make_slot(string $page_key, string $role, int $instance = 1): string {
+		$instance = max(1, min(99, (int) $instance));
+		return site_cta_page_abbr($page_key) . '_'
+			. site_cta_role_abbr($role) . '_'
+			. str_pad((string) $instance, 2, '0', STR_PAD_LEFT);
+	}
+}
+
+if (!function_exists('site_cta_normalize_slot')) {
+	function site_cta_normalize_slot($slot, string $page_key = '', string $role = '', int $instance = 0): string {
+		$slot = strtolower(trim((string) $slot));
+		if (preg_match('/^[a-z]{2}_[a-z]{2}_\d{2}$/', $slot)) {
+			return $slot;
+		}
+		if ($instance > 0 && $page_key !== '' && $role !== '') {
+			return site_cta_make_slot($page_key, $role, $instance);
+		}
+		return 'pg_ct_01';
 	}
 }
 
@@ -97,13 +157,8 @@ if (!function_exists('site_cta_click_ref')) {
 	 * Compact ref for ?cta= on /go/ links (not UTM).
 	 */
 	function site_cta_click_ref(string $page_key, string $slot, string $role): string {
-		$page_key = preg_replace('/[^a-z0-9_-]+/i', '', strtolower($page_key));
-		$slot = site_cta_normalize_slot($slot);
-		$role = site_cta_normalize_role($role);
-		if ($page_key === '') {
-			$page_key = 'page';
-		}
-		return $page_key . '_' . $slot . '_' . $role;
+		$slot = site_cta_normalize_slot($slot, $page_key, $role);
+		return preg_replace('/[^a-z0-9_-]+/i', '', strtolower($slot));
 	}
 }
 
@@ -141,8 +196,8 @@ if (!function_exists('site_cta_offer_href')) {
 }
 
 if (!function_exists('site_cta_data_attrs')) {
-	function site_cta_data_attrs(string $slot, string $role, string $variant = 'text'): string {
-		$slot = site_cta_normalize_slot($slot);
+	function site_cta_data_attrs(string $slot, string $role, string $variant = 'text', string $page_key = ''): string {
+		$slot = site_cta_normalize_slot($slot, $page_key, $role);
 		$role = site_cta_normalize_role($role);
 		$variant = site_cta_normalize_variant($variant);
 		return ' data-cta-slot="' . htmlspecialchars($slot, ENT_QUOTES, 'UTF-8') . '"'
@@ -176,8 +231,9 @@ if (!function_exists('site_cta_guess_role_from_label')) {
 }
 
 if (!function_exists('site_cta_promo_button_html')) {
-	function site_cta_promo_button_html(string $href, string $text, string $page_key, string $slot, string $role = '', string $variant = 'text'): string {
+	function site_cta_promo_button_html(string $href, string $text, string $page_key, int $instance = 1, string $role = '', string $variant = 'text'): string {
 		$role = $role !== '' ? $role : site_cta_guess_role_from_label($text);
+		$slot = site_cta_make_slot($page_key, $role, $instance);
 		$tracked_href = site_cta_is_trackable_href($href)
 			? site_cta_offer_href($href, $page_key, $slot, $role)
 			: $href;

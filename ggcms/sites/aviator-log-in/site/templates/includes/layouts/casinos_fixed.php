@@ -15,7 +15,6 @@ if ($read_more === '' || trim($read_more) === 'Read more') {
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 require_once(ROOT_DIR . 'functions/author_func.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = site_cta_buttons_html($offer_path);
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5">
@@ -26,11 +25,7 @@ $buttons_html = site_cta_buttons_html($offer_path);
 			<div class="text page-content-from-db about_content casino-article-content">
 				<?php
 				$article_html = isset($article['text']) ? (string)$article['text'] : '';
-				echo site_insert_cta_evenly_in_content(
-					function_exists('site_seo_clean_content') ? site_seo_clean_content($article_html) : $article_html,
-					$buttons_html,
-					3
-				);
+				echo site_insert_cta_evenly_in_content(function_exists('site_seo_clean_content') ? site_seo_clean_content($article_html) : $article_html, $offer_path);
 				?>
 			</div>
 		<?php elseif (!empty($abc['casino_list']) || !empty($abc['casino_pagination'])) : ?>

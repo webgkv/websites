@@ -5,7 +5,6 @@ $games_base = isset($abc['page']) ? get_url('page', $abc['page']) : '';
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = site_cta_buttons_html($offer_path);
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5">
@@ -34,11 +33,7 @@ $buttons_html = site_cta_buttons_html($offer_path);
             <div class="text page-content-from-db about_content">
                 <?php
                 $g_html = isset($game['text']) ? (string)$game['text'] : '';
-                echo site_insert_cta_evenly_in_content(
-                    function_exists('site_seo_clean_content') ? site_seo_clean_content($g_html) : $g_html,
-                    $buttons_html,
-                    3
-                );
+                echo site_insert_cta_evenly_in_content(function_exists('site_seo_clean_content') ? site_seo_clean_content($g_html) : $g_html, $offer_path);
                 ?>
             </div>
         <?php elseif (!empty($abc['game_list'])) : ?>

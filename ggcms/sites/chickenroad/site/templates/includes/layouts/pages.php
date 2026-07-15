@@ -79,8 +79,7 @@ if ($page_html !== '' && $page_slug === 'download') {
 
 if ($page_html !== '' && $page_slug !== '' && !in_array($page_slug, $skip_cta_slugs, true)) {
 	$offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-	$buttons_html = site_cta_buttons_html($offer_path);
-	$page_html = site_insert_cta_evenly_in_content($page_html, $buttons_html, 3);
+	$page_html = site_insert_cta_evenly_in_content($page_html, $offer_path);
 }
 // One H1 per page: raw CMS HTML may contain <h1> that site_seo_clean_content downgrades to <h2>.
 $__page_html_for_h1 = ($page_html !== '' && function_exists('site_seo_clean_content'))

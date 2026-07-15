@@ -3,7 +3,7 @@
  * Blog promo: random one image and two buttons from main, games, predictor, download pages.
  * Used on blog article view only.
  */
-function blog_promo_random() {
+function blog_promo_random(int $instance = 1) {
 	global $abc, $langid;
 	if (empty($langid)) $langid = isset($abc['langid']) ? $abc['langid'] : '';
 	$langid = $langid ?: '';
@@ -47,9 +47,9 @@ function blog_promo_random() {
 
 	$image_html = '<figure class="blog-promo-img my-4"><img src="' . htmlspecialchars($img['src']) . '" alt="' . htmlspecialchars($img['alt']) . '" width="500" height="auto"></figure>';
 	$buttons_html = '<div class="blog-promo-btns mt-4">'
-		. site_cta_promo_button_html((string) $btn1['href'], (string) $btn1['text'], $page_key, '010')
+		. site_cta_promo_button_html((string) $btn1['href'], (string) $btn1['text'], $page_key, $instance)
 		. ' '
-		. site_cta_promo_button_html((string) $btn2['href'], (string) $btn2['text'], $page_key, '011')
+		. site_cta_promo_button_html((string) $btn2['href'], (string) $btn2['text'], $page_key, $instance)
 		. '</div>'
 		. '<br>';
 

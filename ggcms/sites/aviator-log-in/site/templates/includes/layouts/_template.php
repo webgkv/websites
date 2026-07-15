@@ -645,6 +645,8 @@ $ad_has_popup = !empty($abc['advertising_api']['popup_enabled']) && !empty($abc[
 if ($ad_has_popup):
 	require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
 	$_cta_page_key = site_cta_resolve_page_key($abc);
+	$_cta_popup_banner_slot = site_cta_make_slot($_cta_page_key, 'popup_banner', 1);
+	$_cta_popup_bonus_slot = site_cta_make_slot($_cta_page_key, 'popup_bonus', 1);
 	$ad_caption = i18n('common|popup_join').'|'.i18n('common|popup_partner');
 	$ad_caption_html = strpos($ad_caption, '|') !== false
 		? '<p class="wd-banner-caption"><span class="wd-cap-part">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[0])) . '</span> <span class="wd-cap-highlight">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[1] ?? '')) . '</span></p>'
@@ -664,7 +666,7 @@ if ($ad_has_popup):
 		$ad_popup_href .= (strpos($ad_popup_url, '?') !== false ? '&' : '?') . 'debug_ads=1';
 	}
 	$ad_popup_track_href = ($ad_popup_href !== '' && site_cta_is_trackable_href($ad_popup_href))
-		? site_cta_offer_href($ad_popup_href, $_cta_page_key, '003', 'popup_banner')
+		? site_cta_offer_href($ad_popup_href, $_cta_page_key, $_cta_popup_banner_slot, 'popup_banner')
 		: $ad_popup_href;
 	$ad_retention_html = isset($abc['ad_partner']['html']) ? str_replace('{link}', $ad_popup_url, $abc['ad_partner']['html']) : '';
 	$ad_render_mode = isset($abc['ad_render_mode']) ? (string)$abc['ad_render_mode'] : 'banner';
@@ -678,14 +680,14 @@ if ($ad_has_popup):
 	}
 	if ($ad_render_mode === 'placeholder') {
 		$ad_img_src = '';
-		$_popup_bonus_href = site_cta_offer_href($ad_popup_url, $_cta_page_key, '004', 'popup_bonus');
-		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($_popup_bonus_href, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta"' . site_cta_data_attrs('004', 'popup_bonus', 'text') . '>' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
+		$_popup_bonus_href = site_cta_offer_href($ad_popup_url, $_cta_page_key, $_cta_popup_bonus_slot, 'popup_bonus');
+		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($_popup_bonus_href, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta"' . site_cta_data_attrs($_cta_popup_bonus_slot, 'popup_bonus', 'text') . '>' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
 	}
 ?>
         <div id="wd-banner-popup" class="wd-banner-popup" style="position:fixed;left:0;top:0;right:0;bottom:0;z-index:99998;background:rgba(0,0,0,0.5);display:grid;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:opacity 0.3s;">
             <div class="wd-banner-popup-inner">
                 <?= $ad_caption_html ?>
-                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_track_href) ?>" class="wd-banner-popup-link"<?= site_cta_data_attrs('003', 'popup_banner', 'image') ?>><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
+                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_track_href) ?>" class="wd-banner-popup-link"<?= site_cta_data_attrs($_cta_popup_banner_slot, 'popup_banner', 'image') ?>><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
                 <?php if (!$ad_img_src && $ad_render_mode === 'placeholder'): ?><div class="wd-banner-retention-inner"><?= $ad_retention_html ?></div><?php endif; ?>
                 <a href="#" class="wd-banner-popup-close" id="wd-banner-close" aria-label="<?=htmlspecialchars(i18n('common|aria_close'))?>"><i class="fa fa-times"></i></a>
             </div>

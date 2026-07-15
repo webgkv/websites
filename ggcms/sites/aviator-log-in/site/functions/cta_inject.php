@@ -1,16 +1,50 @@
 <?php
 /**
  * Inject promo buttons into HTML after specific paragraph indices.
- * Used to place CTAs multiple times inside long-form content.
+ * Slot ids are page-scoped and numbered top-to-bottom (gu_pn_01, gu_tb_01, gu_pn_02…).
  */
 
-function site_cta_buttons_html(string $offer_path, string $page_key = '', int $slot_base = 20, string $variant = 'text'): string {
+function site_cta_content_plain_length(string $html): int {
+	$text = strip_tags($html);
+	$text = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+	$text = preg_replace('/\s+/u', ' ', trim($text));
+	if ($text === '') {
+		return 0;
+	}
+	return (int) mb_strlen($text, 'UTF-8');
+}
+
+/**
+ * How many CTA blocks to inject based on visible text length + paragraph count.
+ *
+ * Thresholds (plain text after strip_tags):
+ *   < 800 chars or < 3 paragraphs → 0
+ *   < 1500 chars or < 6 paragraphs → 1
+ *   < 4500 chars or < 12 paragraphs → 2
+ *   otherwise → 3
+ */
+function site_cta_resolve_injection_count(string $html): int {
+	$len = site_cta_content_plain_length($html);
+	$paras = site_count_content_paragraphs($html);
+	if ($paras < 3 || $len < 800) {
+		return 0;
+	}
+	if ($len < 1500 || $paras < 6) {
+		return 1;
+	}
+	if ($len < 4500 || $paras < 12) {
+		return 2;
+	}
+	return 3;
+}
+
+function site_cta_buttons_html(string $offer_path, string $page_key = '', int $instance = 1, string $variant = 'text'): string {
 	$offer_path = trim($offer_path);
 	if ($offer_path === '') {
 		return '';
 	}
 
-	if (!function_exists('site_cta_data_attrs')) {
+	if (!function_exists('site_cta_make_slot')) {
 		require_once ROOT_DIR . 'functions/site_cta_analytics.php';
 	}
 	global $abc;
@@ -21,8 +55,8 @@ function site_cta_buttons_html(string $offer_path, string $page_key = '', int $s
 		$page_key = 'page';
 	}
 
-	$slot_play = site_cta_normalize_slot($slot_base);
-	$slot_bonus = site_cta_normalize_slot($slot_base + 1);
+	$slot_play = site_cta_make_slot($page_key, 'play_now', $instance);
+	$slot_bonus = site_cta_make_slot($page_key, 'bonus', $instance);
 	$href_play = site_cta_offer_href($offer_path, $page_key, $slot_play, 'play_now');
 	$href_bonus = site_cta_offer_href($offer_path, $page_key, $slot_bonus, 'bonus');
 
@@ -148,9 +182,24 @@ function site_cta_even_paragraph_positions(int $paragraph_count, int $cta_count 
 }
 
 /**
- * Insert the same CTA block at evenly spaced paragraphs (respects <noinc>).
+ * Insert CTA pairs at evenly spaced paragraphs; each block gets a unique instance (01, 02…).
+ *
+ * @param int $cta_count -1 = auto from content length
  */
-function site_insert_cta_evenly_in_content(string $html, string $buttons_html, int $cta_count = 3): string {
+function site_insert_cta_evenly_in_content(string $html, string $offer_path, string $page_key = '', int $cta_count = -1, string $variant = 'text'): string {
+	$html = (string) $html;
+	$offer_path = trim($offer_path);
+	if ($html === '' || $offer_path === '') {
+		return $html;
+	}
+
+	if ($cta_count < 0) {
+		$cta_count = site_cta_resolve_injection_count($html);
+	}
+	if ($cta_count <= 0) {
+		return $html;
+	}
+
 	$positions = site_cta_even_paragraph_positions(
 		site_count_content_paragraphs($html),
 		$cta_count
@@ -158,5 +207,23 @@ function site_insert_cta_evenly_in_content(string $html, string $buttons_html, i
 	if (empty($positions)) {
 		return $html;
 	}
-	return site_insert_cta_after_paragraphs($html, $buttons_html, $positions);
+
+	if (!function_exists('site_cta_resolve_page_key')) {
+		require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+	}
+	global $abc;
+	if ($page_key === '' && isset($abc) && is_array($abc)) {
+		$page_key = site_cta_resolve_page_key($abc);
+	}
+	if ($page_key === '') {
+		$page_key = 'page';
+	}
+
+	foreach ($positions as $idx => $pos) {
+		$instance = $idx + 1;
+		$buttons_html = site_cta_buttons_html($offer_path, $page_key, $instance, $variant);
+		$html = site_insert_cta_after_paragraphs($html, $buttons_html, array($pos));
+	}
+
+	return $html;
 }
