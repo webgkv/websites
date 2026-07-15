@@ -348,6 +348,12 @@ if (function_exists('site_seo_public_origin')) {
 		echo site_onesignal_early_sw_script();
 	}
 	?>
+	<?php
+	if (!function_exists('site_cta_analytics_bootstrap_script')) {
+		require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
+	}
+	echo site_cta_analytics_bootstrap_script($abc);
+	?>
 	<?php /* OneSignal SDK/init; then push helpers + delayed auto-prompt. */ ?>
 	<?php if (!empty($abc['counters_head'])) { foreach ($abc['counters_head'] as $_counter) { echo $_counter . "\n\t"; } } ?>
 	<?php

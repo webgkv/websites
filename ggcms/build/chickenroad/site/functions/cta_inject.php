@@ -4,17 +4,35 @@
  * Used to place CTAs multiple times inside long-form content.
  */
 
-function site_cta_buttons_html(string $offer_path): string {
+function site_cta_buttons_html(string $offer_path, string $page_key = '', int $slot_base = 20, string $variant = 'text'): string {
 	$offer_path = trim($offer_path);
 	if ($offer_path === '') {
 		return '';
 	}
 
+	if (!function_exists('site_cta_data_attrs')) {
+		require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+	}
+	global $abc;
+	if ($page_key === '' && isset($abc) && is_array($abc)) {
+		$page_key = site_cta_resolve_page_key($abc);
+	}
+	if ($page_key === '') {
+		$page_key = 'page';
+	}
+
+	$slot_play = site_cta_normalize_slot($slot_base);
+	$slot_bonus = site_cta_normalize_slot($slot_base + 1);
+	$href_play = site_cta_offer_href($offer_path, $page_key, $slot_play, 'play_now');
+	$href_bonus = site_cta_offer_href($offer_path, $page_key, $slot_bonus, 'bonus');
+
 	$play_label = htmlspecialchars(i18n('common|cta_play_now'), ENT_QUOTES, 'UTF-8');
 	$try_label = htmlspecialchars(i18n('common|cta_try_bonus'), ENT_QUOTES, 'UTF-8');
 	return '<div class="blog-promo-btns mt-4">'
-		. '<div class="main_btn"><a href="' . htmlspecialchars($offer_path) . '">' . $play_label . '</a></div> '
-		. '<div class="main_btn"><a href="' . htmlspecialchars($offer_path) . '">' . $try_label . '</a></div>'
+		. '<div class="main_btn"><a href="' . htmlspecialchars($href_play, ENT_QUOTES, 'UTF-8') . '"'
+		. site_cta_data_attrs($slot_play, 'play_now', $variant) . '>' . $play_label . '</a></div> '
+		. '<div class="main_btn"><a href="' . htmlspecialchars($href_bonus, ENT_QUOTES, 'UTF-8') . '"'
+		. site_cta_data_attrs($slot_bonus, 'bonus', $variant) . '>' . $try_label . '</a></div>'
 		. '</div>'
 		. '<br>';
 }

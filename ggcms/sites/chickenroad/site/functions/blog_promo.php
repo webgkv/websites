@@ -42,10 +42,14 @@ function blog_promo_random() {
 	$btn1 = $buttons[$keys[0]];
 	$btn2 = $buttons[$keys[1]];
 
+	require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+	$page_key = site_cta_resolve_page_key($abc);
+
 	$image_html = '<figure class="blog-promo-img my-4"><img src="' . htmlspecialchars($img['src']) . '" alt="' . htmlspecialchars($img['alt']) . '" width="500" height="auto"></figure>';
 	$buttons_html = '<div class="blog-promo-btns mt-4">'
-		. '<div class="main_btn"><a href="' . htmlspecialchars($btn1['href']) . '">' . htmlspecialchars($btn1['text']) . '</a></div> '
-		. '<div class="main_btn"><a href="' . htmlspecialchars($btn2['href']) . '">' . htmlspecialchars($btn2['text']) . '</a></div>'
+		. site_cta_promo_button_html((string) $btn1['href'], (string) $btn1['text'], $page_key, '010')
+		. ' '
+		. site_cta_promo_button_html((string) $btn2['href'], (string) $btn2['text'], $page_key, '011')
 		. '</div>'
 		. '<br>';
 

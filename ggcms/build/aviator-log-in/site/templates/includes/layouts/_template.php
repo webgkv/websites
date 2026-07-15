@@ -84,7 +84,10 @@ $page_desc_raw = html_entity_decode((string)$page_desc_raw, ENT_QUOTES | ENT_HTM
 $abc['page']['title'] = trim(strip_tags((string)$page_title_raw));
 $abc['page']['description'] = trim(strip_tags((string)($page_desc_raw !== '' ? $page_desc_raw : $abc['page']['title'])));
 // Template always appends site name below; strip if import already included it (EN SEO exports often do).
-$site_title_suffix = ' | Aviator Log In';
+if (!function_exists('site_brand_title_suffix')) {
+	require_once ROOT_DIR . 'functions/site_brand.php';
+}
+$site_title_suffix = site_brand_title_suffix();
 $_suf_len = strlen($site_title_suffix);
 $_t = $abc['page']['title'];
 while ($_suf_len > 0 && strlen($_t) >= $_suf_len && substr($_t, -$_suf_len) === $site_title_suffix) {
@@ -92,14 +95,20 @@ while ($_suf_len > 0 && strlen($_t) >= $_suf_len && substr($_t, -$_suf_len) === 
 }
 $abc['page']['title'] = $_t;
 // Avoid "… | Aviator | Aviator Log In": middle "| Aviator" is redundant with the template suffix.
-$_site_mid_brand = ' | Aviator';
+$_site_mid_brand = site_brand_mid_suffix();
 $_bml = strlen($_site_mid_brand);
 if ($abc['page']['title'] !== '' && strlen($abc['page']['title']) >= $_bml && substr($abc['page']['title'], -$_bml) === $_site_mid_brand) {
 	$abc['page']['title'] = rtrim(substr($abc['page']['title'], 0, -$_bml));
 }
 // Avoid & in <title>: validators count literal HTML (&amp; = 5 chars). Prefer “and” for readable, shorter encoded output.
 $abc['page']['title'] = trim(preg_replace('/\s*&\s*/u', ' and ', $abc['page']['title']));
+if (function_exists('site_brand_apply_rebrand_to_abc')) {
+	site_brand_apply_rebrand_to_abc($abc);
+}
+// Full heading for on-page hero (index layout); do not shrink — Bing 70-char rule is for <title> only.
+$abc['page']['heading'] = $abc['page']['title'];
 // Bing flags title length **greater than** 70; cap escaped <title> inner text at 70 code points.
+$_site_doc_title = $abc['page']['title'];
 $_site_title_max_inner = 70;
 $_site_title_inner_len = function ($base) use ($site_title_suffix) {
 	$inner = htmlspecialchars((string)$base, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')
@@ -123,18 +132,19 @@ $_site_title_shrink_one = function ($base) {
 	}
 	return rtrim(substr($base, 0, -1));
 };
-while ($_site_title_inner_len($abc['page']['title']) > $_site_title_max_inner) {
-	$prev = $abc['page']['title'];
-	$abc['page']['title'] = $_site_title_shrink_one($abc['page']['title']);
-	if ($abc['page']['title'] === $prev || $abc['page']['title'] === '') {
+while ($_site_title_inner_len($_site_doc_title) > $_site_title_max_inner) {
+	$prev = $_site_doc_title;
+	$_site_doc_title = $_site_title_shrink_one($_site_doc_title);
+	if ($_site_doc_title === $prev || $_site_doc_title === '') {
 		break;
 	}
 }
-if (trim($abc['page']['title']) === '') {
-	$abc['page']['title'] = 'Aviator';
+if (trim($_site_doc_title) === '') {
+	$_site_doc_title = site_brand_name();
 }
+$abc['page']['title'] = $_site_doc_title;
 unset($_site_mid_brand, $_bml, $_site_title_max_inner, $_site_title_inner_len, $_site_title_shrink_one);
-$_site_doc_title_esc = htmlspecialchars($abc['page']['title'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$_site_doc_title_esc = htmlspecialchars($_site_doc_title, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $_site_doc_suffix_esc = htmlspecialchars($site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 $_site_meta_desc_esc = htmlspecialchars((string)$abc['page']['description'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 if ($_site_meta_desc_esc === '') {
@@ -150,17 +160,6 @@ $_site_html_lang = $_site_lang_seg !== '' ? site_hreflang_code($abc, $_site_lang
 if (!empty($abc['layout']) && $abc['layout'] === 'demo_app') {
 	if (function_exists('site_demo_app_send_nocache_headers')) {
 		site_demo_app_send_nocache_headers();
-	}
-	$__demo_app_debug = !empty($abc['debug_ip_check'])
-		&& isset($_GET['debug_ip_check'])
-		&& (string) $_GET['debug_ip_check'] === '1';
-	if ($__demo_app_debug) {
-		$__r = defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../';
-		require_once $__r . 'functions/game_demo_embed.php';
-		game_demo_ensure_spribe_provider();
-		$abc['debug_demo_app'] = game_demo_app_build_debug_payload($abc, $config);
-		require __DIR__ . '/_debug_demo_app_full.php';
-		return;
 	}
 	$r = defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../';
 	$getV = function ($f) {
@@ -200,11 +199,11 @@ if ($_preload_hero !== '') {
         <title><?=$_site_doc_title_esc?><?=$_site_doc_suffix_esc?></title>
         <meta name="description" content="<?=$_site_meta_desc_esc?>">
 <?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
-        <meta name="theme-color" content="#151b24">
+        <meta name="theme-color" content="#2c2a33">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Aviator">
+        <meta name="apple-mobile-web-app-title" content="<?= htmlspecialchars(site_brand_name(), ENT_QUOTES, 'UTF-8') ?>">
         <!-- PWA icons + manifest after $getV below (cache-bust; iOS needs 180 + /apple-touch-icon.png) -->
         <!-- Place favicon.ico in the root directory -->
         <?php
@@ -218,7 +217,7 @@ if ($_preload_hero !== '') {
         <!-- font awesome cdn links (subset: solid + brands) -->
 <?= site_template_fontawesome_stylesheets() ?>
         <!-- google font (non-blocking: system font renders first, swaps on load) -->
-<?= site_template_google_font('Open+Sans:wght@400;600;700') ?>
+<?= site_template_google_font('Roboto:wght@400;700;900') ?>
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -299,6 +298,12 @@ if ($_preload_hero !== '') {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
         }
         echo site_template_service_worker_bootstrap_script($_site_median_native_shell, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
+        ?>
+        <?php
+        if (!function_exists('site_cta_analytics_bootstrap_script')) {
+            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
+        }
+        echo site_cta_analytics_bootstrap_script($abc);
         ?>
         <?php
         if (!empty($abc['counters_head'])) {
@@ -399,14 +404,14 @@ if ($_preload_hero !== '') {
 <?php
       $_site_og_type = (!empty($abc['blog_single']) || !empty($abc['news_single']) || !empty($abc['game_single']) || !empty($abc['guide_single']) || !empty($abc['casino_single'])) ? 'article' : 'website';
       $_site_og_title = htmlspecialchars(($abc['page']['title'] ?? '') . $site_title_suffix, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-      $_site_og_image_abs = htmlspecialchars(rtrim($seo_origin, '/') . '/assets/images/aviator-main.webp', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+      $_site_og_image_abs = htmlspecialchars(rtrim($seo_origin, '/') . site_brand_default_og_image_path(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
         <meta property="og:type" content="<?=$_site_og_type?>">
         <meta property="og:url" content="<?=htmlspecialchars($canonical_href, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')?>">
         <meta property="og:title" content="<?=$_site_og_title?>">
         <meta property="og:description" content="<?=$_site_meta_desc_esc?>">
         <meta property="og:image" content="<?=$_site_og_image_abs?>">
-        <meta property="og:site_name" content="<?= htmlspecialchars(!empty($abc['seo_structured']['site_name']) ? (string)$abc['seo_structured']['site_name'] : 'Aviator Log In', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>">
+        <meta property="og:site_name" content="<?= htmlspecialchars(!empty($abc['seo_structured']['site_name']) ? (string)$abc['seo_structured']['site_name'] : site_brand_name(), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?>">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="<?=$_site_og_title?>">
         <meta name="twitter:description" content="<?=$_site_meta_desc_esc?>">
@@ -415,7 +420,7 @@ if ($_preload_hero !== '') {
       // Structured data: WebPage + BreadcrumbList + FAQPage (from seo_structured)
       $canonical_url = $canonical_href;
       $seo_cfg = isset($abc['seo_structured']) && is_array($abc['seo_structured']) ? $abc['seo_structured'] : array();
-      $site_name = !empty($seo_cfg['site_name']) ? $seo_cfg['site_name'] : 'Aviator Log In';
+      $site_name = !empty($seo_cfg['site_name']) ? $seo_cfg['site_name'] : site_brand_name();
       $home_label = isset($seo_cfg['breadcrumbs']['home_label']) && $seo_cfg['breadcrumbs']['home_label'] !== '' ? $seo_cfg['breadcrumbs']['home_label'] : $site_name;
       if ($canonical_url) {
           $page_title = $abc['page']['title'];
@@ -552,9 +557,9 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
                 <div class="container">
                     <a class="navbar-brand" href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>">
                         <?php
-                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.png') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.png') ? filemtime(ROOT_DIR.'assets/images/logo.png') : time());
+                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.webp') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.webp') ? filemtime(ROOT_DIR.'assets/images/logo.webp') : time());
                         ?>
-                        <img src="/assets/images/logo.png?v=<?= $logo_v ?>" alt="Aviator Logo" title="Aviator Logo" width="456" height="103">
+                        <img src="/assets/images/logo.webp?v=<?= $logo_v ?>" alt="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" title="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" width="597" height="258" decoding="async">
                     </a>
                     <div class="menu-toggle" role="button" tabindex="0" aria-label="Toggle navigation" id="navbarToggler" onclick="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)" ontouchend="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)"><i class="fa fa-bars"></i></div>
                     <div class="navbar-collapse justify-content-end navbarNav" id="navbarNav">
@@ -631,12 +636,15 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
         </footer>
         <!-- footer section end -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-        <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><i class="fa-solid fa-jet-fighter-up"></i></button>
+        <?php $_eggIcon = $r . 'assets/images/egg-scroll-white.svg'; ?>
+        <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><img src="/assets/images/egg-scroll-white.svg?v=<?= htmlspecialchars($getV($_eggIcon), ENT_QUOTES, 'UTF-8') ?>" alt="" width="18" height="23" class="myBtn__egg"></button>
         <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>" defer></script>
 <?php
 // Show popup when we have partner and something to show (banner and/or offer link)
 $ad_has_popup = !empty($abc['advertising_api']['popup_enabled']) && !empty($abc['ad_partner']) && (!empty($abc['ad_offer_path']) || !empty($abc['ad_partner']['banner1_url']) || !empty($abc['ad_partner']['html']));
 if ($ad_has_popup):
+	require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
+	$_cta_page_key = site_cta_resolve_page_key($abc);
 	$ad_caption = i18n('common|popup_join').'|'.i18n('common|popup_partner');
 	$ad_caption_html = strpos($ad_caption, '|') !== false
 		? '<p class="wd-banner-caption"><span class="wd-cap-part">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[0])) . '</span> <span class="wd-cap-highlight">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[1] ?? '')) . '</span></p>'
@@ -655,6 +663,9 @@ if ($ad_has_popup):
 	if (!empty($abc['debug_ads']) && $ad_popup_url !== '' && strpos($ad_popup_url, 'banner-img.php') === false) {
 		$ad_popup_href .= (strpos($ad_popup_url, '?') !== false ? '&' : '?') . 'debug_ads=1';
 	}
+	$ad_popup_track_href = ($ad_popup_href !== '' && site_cta_is_trackable_href($ad_popup_href))
+		? site_cta_offer_href($ad_popup_href, $_cta_page_key, '003', 'popup_banner')
+		: $ad_popup_href;
 	$ad_retention_html = isset($abc['ad_partner']['html']) ? str_replace('{link}', $ad_popup_url, $abc['ad_partner']['html']) : '';
 	$ad_render_mode = isset($abc['ad_render_mode']) ? (string)$abc['ad_render_mode'] : 'banner';
 	$placeholder_cta = i18n('common|cta_try_bonus');
@@ -667,13 +678,14 @@ if ($ad_has_popup):
 	}
 	if ($ad_render_mode === 'placeholder') {
 		$ad_img_src = '';
-		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($ad_popup_url, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta">' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
+		$_popup_bonus_href = site_cta_offer_href($ad_popup_url, $_cta_page_key, '004', 'popup_bonus');
+		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($_popup_bonus_href, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta"' . site_cta_data_attrs('004', 'popup_bonus', 'text') . '>' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
 	}
 ?>
         <div id="wd-banner-popup" class="wd-banner-popup" style="position:fixed;left:0;top:0;right:0;bottom:0;z-index:99998;background:rgba(0,0,0,0.5);display:grid;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:opacity 0.3s;">
             <div class="wd-banner-popup-inner">
                 <?= $ad_caption_html ?>
-                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_href) ?>" class="wd-banner-popup-link"><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
+                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_track_href) ?>" class="wd-banner-popup-link"<?= site_cta_data_attrs('003', 'popup_banner', 'image') ?>><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
                 <?php if (!$ad_img_src && $ad_render_mode === 'placeholder'): ?><div class="wd-banner-retention-inner"><?= $ad_retention_html ?></div><?php endif; ?>
                 <a href="#" class="wd-banner-popup-close" id="wd-banner-close" aria-label="<?=htmlspecialchars(i18n('common|aria_close'))?>"><i class="fa fa-times"></i></a>
             </div>

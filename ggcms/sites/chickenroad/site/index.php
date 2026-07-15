@@ -397,6 +397,16 @@ if ($go_code !== null && !empty($abc['advertising_api']['mode']) && $abc['advert
 			. (!empty($ip_ctx['ip_sent_to_backend']) ? '&ip=' . rawurlencode((string)$ip_ctx['ip_sent_to_backend']) : '');
 	}
 
+	if (!empty($api_redirect_url)) {
+		if (!function_exists('site_cta_go_request_ref')) {
+			require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+		}
+		$cta_ref = site_cta_go_request_ref();
+		if ($cta_ref !== '') {
+			$api_redirect_url = site_cta_append_url_param($api_redirect_url, 'cta', $cta_ref);
+		}
+	}
+
 	if (!empty($abc['debug'])) {
 		$abc['debug_info']['go_handler']['api_redirect_url'] = isset($api_redirect_url) ? $api_redirect_url : null;
 	}

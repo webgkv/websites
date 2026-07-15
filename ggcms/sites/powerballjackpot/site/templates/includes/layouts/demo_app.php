@@ -17,13 +17,15 @@ if ($close_label === '' || strpos($close_label, 'common|') === 0) {
 }
 $logo_alt = trim(i18n('common|sitename'));
 if ($logo_alt === '' || strpos($logo_alt, 'common|') === 0) {
-	$logo_alt = function_exists('site_brand_name') ? site_brand_name() : 'PowerBall Jackpot';
+	$logo_alt = function_exists('site_brand_name') ? site_brand_name() : 'Chicken Road';
 }
 $try_bonus_label = trim(i18n('common|cta_try_bonus'));
 if ($try_bonus_label === '' || strpos($try_bonus_label, 'common|') === 0) {
 	$try_bonus_label = 'Try Bonus';
 }
 $offer_path = (isset($abc['ad_offer_path']) && is_string($abc['ad_offer_path'])) ? trim($abc['ad_offer_path']) : '';
+require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+$_cta_page_key = site_cta_resolve_page_key($abc);
 // DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md
 $_demo_install = (function_exists('demo_app_install_affordance') && isset($lang) && is_array($lang))
 	? demo_app_install_affordance($abc, $lang)
@@ -32,13 +34,12 @@ $_demo_install_ui = function_exists('demo_app_install_ui_strings') ? demo_app_in
 	'safari_title' => 'Open in Safari',
 	'safari_body' => 'Open this page in Safari, then use Share → Add to Home Screen.',
 	'modal_ok' => 'Got it',
+	'inapp_tooltip' => 'Open in Safari to add the app',
 );
-
-require_once ROOT_DIR . 'functions/site_lottery_simulator.php';
-$pbj_slides = site_home_lottery_slides();
-$pbj_games_cfg = site_home_lottery_games_load();
-$pbj_games = site_home_lottery_enabled_games();
-$pbj_games_defaults = $pbj_games_cfg['defaults'];
+$icon_path = (defined('ROOT_DIR') && file_exists(ROOT_DIR . 'assets/images/egg.svg'))
+	? ROOT_DIR . 'assets/images/egg.svg'
+	: '';
+$logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 ?>
 <div class="demo-app-shell">
 	<header class="demo-app-bar" role="banner">
@@ -46,18 +47,7 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 		<a class="demo-app-brand" href="<?= htmlspecialchars($demo_back_url, ENT_QUOTES, 'UTF-8') ?>"
 			aria-label="<?= htmlspecialchars($logo_alt, ENT_QUOTES, 'UTF-8') ?>"
 			title="<?= htmlspecialchars($logo_alt, ENT_QUOTES, 'UTF-8') ?>">
-			<svg class="demo-app-logo-icon" viewBox="0 0 68 68" width="28" height="28" aria-hidden="true" focusable="false">
-				<defs>
-					<radialGradient id="demoAppBall" cx="35%" cy="30%" r="65%">
-						<stop offset="0%" stop-color="#ff5a66"/>
-						<stop offset="55%" stop-color="#d21828"/>
-						<stop offset="100%" stop-color="#8c0c18"/>
-					</radialGradient>
-				</defs>
-				<circle cx="34" cy="34" r="30" fill="url(#demoAppBall)"/>
-				<ellipse cx="24" cy="22" rx="11" ry="7" fill="#ffffff" opacity="0.35"/>
-				<text x="34" y="44" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" font-size="32" fill="#ffffff" transform="rotate(-10 34 34)">P</text>
-			</svg>
+			<span class="demo-app-logo-icon" style="--demo-egg-mask: url('/assets/images/egg.svg?v=<?= (int) $logo_v ?>');" aria-hidden="true"></span>
 		</a>
 		<a class="demo-app-icon-btn demo-app-portal" href="<?= htmlspecialchars($demo_portal_url, ENT_QUOTES, 'UTF-8') ?>"
 			title="<?= htmlspecialchars($portal_aria, ENT_QUOTES, 'UTF-8') ?>"
@@ -81,11 +71,11 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 <?php endif; ?>
 		</div>
 		<div class="demo-app-actions">
-			<?php if ($offer_path !== ''): ?>
+		<?php if ($offer_path !== ''): ?>
 			<div class="main_btn demo-app-cta-btn" id="demoAppCtaBtn">
-				<a href="<?= htmlspecialchars($offer_path, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($try_bonus_label, ENT_QUOTES, 'UTF-8') ?></a>
+				<a href="<?= htmlspecialchars(site_cta_offer_href($offer_path, $_cta_page_key, '002', 'bonus'), ENT_QUOTES, 'UTF-8') ?>"<?= site_cta_data_attrs('002', 'bonus', 'text') ?>><?= htmlspecialchars($try_bonus_label, ENT_QUOTES, 'UTF-8') ?></a>
 			</div>
-			<?php endif; ?>
+		<?php endif; ?>
 			<button type="button" class="demo-app-icon-btn demo-app-fs-btn" id="demoAppFsBtn" aria-pressed="false" title="<?= htmlspecialchars($fs_label, ENT_QUOTES, 'UTF-8') ?>" aria-label="<?= htmlspecialchars($fs_label, ENT_QUOTES, 'UTF-8') ?>">
 				<i class="fa-solid fa-expand" aria-hidden="true"></i>
 			</button>
@@ -94,8 +84,15 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 			</a>
 		</div>
 	</header>
-	<div class="demo-app-frame-host demo-app-sim-host" id="demoAppFrameHost">
-		<?= site_lottery_sim_render($pbj_slides, $pbj_games, $pbj_games_defaults) ?>
+	<div class="demo-app-frame-host" id="demoAppFrameHost">
+		<?php
+		require_once ROOT_DIR . 'functions/game_demo_embed.php';
+		if (function_exists('game_demo_is_mirror_shell') && game_demo_is_mirror_shell($config)) {
+			require ROOT_DIR . 'templates/includes/common/app_demo_mirror.php';
+		} else {
+			require ROOT_DIR . 'templates/includes/common/app_demo.php';
+		}
+		?>
 	</div>
 </div>
 <?php if (!empty($_demo_install['enabled']) && (($_demo_install['platform'] ?? '') === 'ios') && function_exists('demo_app_push_affordance_modal')): ?>

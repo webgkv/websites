@@ -15,16 +15,18 @@ function blog_promo_random() {
 	$download_url = $download_page ? get_url('page', $download_page) : $index_url;
 	$predictor_url = $predictor_page ? get_url('page', $predictor_page) : $index_url;
 
-	$offer_path = isset($abc['ad_offer_path']) && $abc['ad_offer_path'] !== '' ? $abc['ad_offer_path'] : $index_url . '#aviator-app';
+	$offer_path = isset($abc['ad_offer_path']) && $abc['ad_offer_path'] !== '' ? $abc['ad_offer_path'] : $index_url . '#demo';
 
 	$cta_play_label = i18n('common|cta_play_now');
 	$cta_try_label = i18n('common|cta_try_bonus');
+	$brand = function_exists('site_brand_name') ? site_brand_name() : 'Chicken Road';
+	$hero = function_exists('site_brand_hero_image_path') ? site_brand_hero_image_path() : '/assets/images/chickenroad-hero.webp';
 
 	$images = array(
-		array('src' => function_exists('site_brand_asset_url') ? site_brand_asset_url('/assets/images/aviator-main.webp') : '/assets/images/aviator-main.webp', 'alt' => 'Aviator game multiplier and plane'),
-		array('src' => function_exists('site_brand_asset_url') ? site_brand_asset_url('/assets/images/aviator-main.webp') : '/assets/images/aviator-main.webp', 'alt' => 'Aviator games'),
-		array('src' => '/images/predictor/Aviator-Predictor-for-Casinos.png', 'alt' => 'Aviator Predictor'),
-		array('src' => '/images/download/Aviator-App-for-Header.webp', 'alt' => 'Aviator app download'),
+		array('src' => $hero, 'alt' => $brand . ' game preview'),
+		array('src' => $hero, 'alt' => $brand . ' games'),
+		array('src' => '/assets/images/chickenroad-gameplay.webp', 'alt' => $brand . ' gameplay'),
+		array('src' => '/assets/images/chickenroad-app-desktop-mobile.webp', 'alt' => $brand . ' app download'),
 	);
 
 	$buttons = array(
@@ -40,10 +42,14 @@ function blog_promo_random() {
 	$btn1 = $buttons[$keys[0]];
 	$btn2 = $buttons[$keys[1]];
 
+	require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+	$page_key = site_cta_resolve_page_key($abc);
+
 	$image_html = '<figure class="blog-promo-img my-4"><img src="' . htmlspecialchars($img['src']) . '" alt="' . htmlspecialchars($img['alt']) . '" width="500" height="auto"></figure>';
 	$buttons_html = '<div class="blog-promo-btns mt-4">'
-		. '<div class="main_btn"><a href="' . htmlspecialchars($btn1['href']) . '">' . htmlspecialchars($btn1['text']) . '</a></div> '
-		. '<div class="main_btn"><a href="' . htmlspecialchars($btn2['href']) . '">' . htmlspecialchars($btn2['text']) . '</a></div>'
+		. site_cta_promo_button_html((string) $btn1['href'], (string) $btn1['text'], $page_key, '010')
+		. ' '
+		. site_cta_promo_button_html((string) $btn2['href'], (string) $btn2['text'], $page_key, '011')
 		. '</div>'
 		. '<br>';
 

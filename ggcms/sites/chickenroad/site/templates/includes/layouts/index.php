@@ -19,6 +19,11 @@ if (isset($abc['page']['heading']) && trim((string)$abc['page']['heading']) !== 
 	$hero_title = (string)$abc['page']['title'];
 }
 $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['description'] : '';
+require_once ROOT_DIR . 'functions/site_cta_analytics.php';
+$_cta_page_key = site_cta_resolve_page_key($abc);
+$_hero_offer_href = !empty($abc['ad_offer_path'])
+	? site_cta_offer_href((string) $abc['ad_offer_path'], $_cta_page_key, '001', 'play_now')
+	: '#demo';
 ?>
         <!-- hero section start -->
         <section class="hero_section" id="index">
@@ -29,7 +34,7 @@ $hero_desc  = isset($abc['page']['description']) ? (string)$abc['page']['descrip
                             <h1 class="hero_content__title"><?= $hero_title !== '' ? htmlspecialchars($hero_title) : '' ?></h1>
                             <?php if ($hero_desc !== ''): ?><p><?= htmlspecialchars($hero_desc) ?></p><?php endif; ?>
                             <div class="main_btn mt-5">
-                                <a href="<?= !empty($abc['ad_offer_path']) ? htmlspecialchars($abc['ad_offer_path']) : '#demo' ?>"><?=htmlspecialchars(i18n('common|hero_cta'))?></a>
+                                <a href="<?= htmlspecialchars($_hero_offer_href) ?>"<?= !empty($abc['ad_offer_path']) ? site_cta_data_attrs('001', 'play_now', 'text') : '' ?>><?=htmlspecialchars(i18n('common|hero_cta'))?></a>
                             </div>
                         </div>
                     </div>
