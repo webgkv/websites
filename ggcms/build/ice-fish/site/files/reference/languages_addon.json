@@ -1,0 +1,27 @@
+{
+  "languages": [
+    {
+      "id": 20,
+      "url": "sw",
+      "name": "Swahili",
+      "localization": "sw",
+      "rank": 6,
+      "display": 1
+    },
+    {
+      "id": 21,
+      "url": "ln",
+      "name": "Lingala",
+      "localization": "ln",
+      "rank": 5,
+      "display": 1
+    }
+  ],
+  "portuguese": {
+    "id": 8,
+    "url": "pt",
+    "name": "Português",
+    "localization": "pt",
+    "flag_country": "pt"
+  }
+}
