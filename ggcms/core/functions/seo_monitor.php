@@ -185,8 +185,8 @@ if (!function_exists('seo_monitor_entity_map')) {
 		if (!empty($cfg['blog_listing_module']) && $mod === 'blog') {
 			return true;
 		}
-		// Section rows may use module=casinos|games|guides (see bd_pages_upgrade / admin) while runtime switches layout in index.php.
-		if (in_array($mod, array('casinos', 'games', 'guides'), true)) {
+		// Section rows may use module=casinos|games|guides|authors (see bd_pages_upgrade / admin) while runtime switches layout in index.php.
+		if (in_array($mod, array('casinos', 'games', 'guides', 'authors'), true)) {
 			return true;
 		}
 		if ($mod === 'pages' && $url !== '' && in_array($url, $cfg['page_slugs'], true)) {
