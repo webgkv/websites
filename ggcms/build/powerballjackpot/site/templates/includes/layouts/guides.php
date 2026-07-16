@@ -8,7 +8,6 @@ $guides_base = preg_replace('#/+#', '/', $guides_base);
 
 require_once(ROOT_DIR . 'functions/cta_inject.php');
 $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
-$buttons_html = site_cta_buttons_html($offer_path);
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5">
@@ -46,11 +45,7 @@ $buttons_html = site_cta_buttons_html($offer_path);
 						$guide_html
 					);
                 }
-                echo site_insert_cta_evenly_in_content(
-                    function_exists('site_seo_clean_content') ? site_seo_clean_content($guide_html) : $guide_html,
-                    $buttons_html,
-                    3
-                );
+                echo site_insert_cta_evenly_in_content(function_exists('site_seo_clean_content') ? site_seo_clean_content($guide_html) : $guide_html, $offer_path);
                 ?>
             </div>
         <?php elseif (!empty($abc['guide_list'])) : ?>

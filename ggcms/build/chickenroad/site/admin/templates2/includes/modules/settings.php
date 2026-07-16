@@ -320,7 +320,7 @@ $import_msg = isset($_GET['import_msg']) ? (string)$_GET['import_msg'] : '';
 <div class="card mb-4">
 	<div class="card-body">
 		<h6 class="card-title mb-3">Counters source &amp; OneSignal</h6>
-		<p class="small text-muted mb-3">Reference file (git): <code>files/reference/counters.json</code><?php if ($counters_json_path !== '') { ?> — <?php if ($counters_json_exists) { ?><span class="text-success">found</span><?php } else { ?><span class="text-warning">missing on server</span><?php } ?><?php } ?>. CLI: <code>php scripts/export_counters_cli.php db</code>, <code>php scripts/import_counters_cli.php counters.json both</code>.</p>
+		<p class="small text-muted mb-3">Reference file (git): <code>files/reference/counters.json</code><?php if ($counters_json_path !== '') { ?> — <?php if ($counters_json_exists) { ?><span class="text-success">found</span><?php } else { ?><span class="text-warning">missing on server</span><?php } ?><?php } ?>. With <strong>JSON file</strong> selected, <strong>Save</strong> updates the reference file automatically. CLI: <code>php scripts/export_counters_cli.php db</code>, <code>php scripts/import_counters_cli.php counters.json both</code>.</p>
 		<?php if ($import_msg !== '') { ?><div class="alert alert-info mb-3"><?= htmlspecialchars($import_msg) ?></div><?php } ?>
 		<form method="post" action="/admin.php?m=settings&tab=counters" class="mb-0">
 			<input type="hidden" name="counters_save" value="1" />

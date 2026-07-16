@@ -52,8 +52,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               require_once(ROOT_DIR . 'functions/content_exclude_tags.php');
               $offer_path = isset($abc['ad_offer_path']) ? (string)$abc['ad_offer_path'] : '';
               $full_text = (string)($q['text1'] ?? '') . (string)($q['text2'] ?? '');
-              $cta_btns = site_cta_buttons_html($offer_path);
-
+              
               if (blog_promo_should_autoinsert_images($q)) {
               // Random promo images + buttons inside one post (at least 2 different images).
               require_once(ROOT_DIR . 'functions/blog_promo.php');
@@ -65,11 +64,11 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               	return '';
               };
 
-              $fallback_btns = site_cta_buttons_html($offer_path);
+              $fallback_btns = site_cta_buttons_html($offer_path, '', 1);
 
-              $promo1 = (!empty($q['blog_promo']) && is_array($q['blog_promo'])) ? $q['blog_promo'] : blog_promo_random();
-              $promo2 = blog_promo_random();
-              $promo3 = blog_promo_random();
+              $promo1 = (!empty($q['blog_promo']) && is_array($q['blog_promo'])) ? $q['blog_promo'] : blog_promo_random(1);
+              $promo2 = blog_promo_random(1);
+              $promo3 = blog_promo_random(1);
 
               $src1 = $extract_img_src((string)($promo1['image'] ?? ''));
               $src2 = $extract_img_src((string)($promo2['image'] ?? ''));
@@ -78,7 +77,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               // Ensure promo2 image differs from promo1 (best-effort).
               $tries = 0;
               while ($src1 !== '' && $src2 !== '' && $src1 === $src2 && $tries < 8) {
-              	$promo2 = blog_promo_random();
+              	$promo2 = blog_promo_random(1);
               	$src2 = $extract_img_src((string)($promo2['image'] ?? ''));
               	$tries++;
               }
@@ -91,7 +90,7 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               	if ($src1 !== '' && $src3 !== '' && $src1 === $src3) $bad = true;
               	if ($src2 !== '' && $src3 !== '' && $src2 === $src3) $bad = true;
               	if (!$bad) break;
-              	$promo3 = blog_promo_random();
+              	$promo3 = blog_promo_random(1);
               	$tries++;
               }
 
@@ -106,9 +105,10 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               $promo2_html = $promo_html($promo2);
               $promo3_html = $promo_html($promo3);
 
+              $cta_inject_count = site_cta_resolve_injection_count($full_text);
               $cta_positions = site_cta_even_paragraph_positions(
               	site_count_content_paragraphs($full_text),
-              	3
+              	$cta_inject_count
               );
               if (count($cta_positions) >= 1) {
               	$full_text = site_insert_cta_after_paragraphs($full_text, $promo1_html, array($cta_positions[0]));
@@ -120,9 +120,9 @@ $__blog_author_schema = author_schema_person($__blog_author, $abc, true);
               	$full_text = site_insert_cta_after_paragraphs($full_text, $promo3_html, array($cta_positions[2]));
               }
 
-              } elseif ($cta_btns !== '') {
+              } elseif ($offer_path !== '') {
               // skip_random_images: CTA buttons only (noinc still respected).
-              $full_text = site_insert_cta_evenly_in_content($full_text, $cta_btns, 3);
+              $full_text = site_insert_cta_evenly_in_content($full_text, $offer_path);
               }
 
               $full_text = content_normalize_noads_links($full_text);

@@ -26,6 +26,7 @@ if ($try_bonus_label === '' || strpos($try_bonus_label, 'common|') === 0) {
 $offer_path = (isset($abc['ad_offer_path']) && is_string($abc['ad_offer_path'])) ? trim($abc['ad_offer_path']) : '';
 require_once ROOT_DIR . 'functions/site_cta_analytics.php';
 $_cta_page_key = site_cta_resolve_page_key($abc);
+$_cta_bonus_slot = site_cta_make_slot($_cta_page_key, 'bonus', 1);
 // DEMO_INSTALL_AFFORDANCE — ggcms/DEMO_INSTALL_AFFORDANCE_ROLLBACK.md
 $_demo_install = (function_exists('demo_app_install_affordance') && isset($lang) && is_array($lang))
 	? demo_app_install_affordance($abc, $lang)
@@ -73,7 +74,7 @@ $logo_v = $icon_path !== '' ? (int) filemtime($icon_path) : time();
 		<div class="demo-app-actions">
 		<?php if ($offer_path !== ''): ?>
 			<div class="main_btn demo-app-cta-btn" id="demoAppCtaBtn">
-				<a href="<?= htmlspecialchars(site_cta_offer_href($offer_path, $_cta_page_key, '002', 'bonus'), ENT_QUOTES, 'UTF-8') ?>"<?= site_cta_data_attrs('002', 'bonus', 'text') ?>><?= htmlspecialchars($try_bonus_label, ENT_QUOTES, 'UTF-8') ?></a>
+				<a href="<?= htmlspecialchars(site_cta_offer_href($offer_path, $_cta_page_key, $_cta_bonus_slot, 'bonus'), ENT_QUOTES, 'UTF-8') ?>"<?= site_cta_data_attrs($_cta_bonus_slot, 'bonus', 'text') ?>><?= htmlspecialchars($try_bonus_label, ENT_QUOTES, 'UTF-8') ?></a>
 			</div>
 		<?php endif; ?>
 			<button type="button" class="demo-app-icon-btn demo-app-fs-btn" id="demoAppFsBtn" aria-pressed="false" title="<?= htmlspecialchars($fs_label, ENT_QUOTES, 'UTF-8') ?>" aria-label="<?= htmlspecialchars($fs_label, ENT_QUOTES, 'UTF-8') ?>">

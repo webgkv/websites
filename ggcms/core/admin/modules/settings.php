@@ -150,11 +150,16 @@ if ($tab === 'counters' && !empty($_POST['counters_save']) && isset($_POST['coun
 				'place_footer' => !empty($row['place_footer']) ? 1 : 0,
 			);
 		}
-		site_counters_save_to_db($list);
-		site_counters_save_settings(array(
+		$counters_settings = array(
 			'source' => isset($_POST['counters_source']) ? (string)$_POST['counters_source'] : 'json',
 			'onesignal_web_enabled' => !empty($_POST['onesignal_web_enabled']) ? 1 : 0,
-		));
+		);
+		site_counters_save_to_db($list);
+		site_counters_save_settings($counters_settings);
+		// When source=json, frontend and this tab read files/reference/counters.json — sync on save.
+		if ($counters_settings['source'] === 'json') {
+			site_counters_save_reference_file($list, $counters_settings);
+		}
 	}
 	header('Location: /admin.php?m=settings&tab=counters&saved=1');
 	exit;

@@ -636,8 +636,7 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
         </footer>
         <!-- footer section end -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-        <?php $_eggIcon = $r . 'assets/images/egg-scroll-white.svg'; ?>
-        <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><img src="/assets/images/egg-scroll-white.svg?v=<?= htmlspecialchars($getV($_eggIcon), ENT_QUOTES, 'UTF-8') ?>" alt="" width="18" height="23" class="myBtn__egg"></button>
+        <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><i class="fa-solid fa-jet-fighter-up"></i></button>
         <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>" defer></script>
 <?php
 // Show popup when we have partner and something to show (banner and/or offer link)

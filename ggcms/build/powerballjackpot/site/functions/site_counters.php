@@ -148,6 +148,36 @@ if (!function_exists('site_counters_load_from_db')) {
 	}
 }
 
+if (!function_exists('site_counters_save_reference_file')) {
+	/**
+	 * Write counters pack to files/reference/counters.json (used when source=json).
+	 *
+	 * @return array{ok:bool,message:string}
+	 */
+	function site_counters_save_reference_file(array $counters, array $settings = array()) {
+		$path = site_counters_reference_path();
+		if ($path === '') {
+			return array('ok' => false, 'message' => 'Reference path is empty');
+		}
+		$dir = dirname($path);
+		if (!is_dir($dir) && !@mkdir($dir, 0755, true)) {
+			return array('ok' => false, 'message' => 'Failed to create directory: ' . $dir);
+		}
+		$settings = array_merge(site_counters_load_settings(), $settings);
+		$json = json_encode(
+			site_counters_build_pack($counters, $settings),
+			JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES
+		);
+		if ($json === false) {
+			return array('ok' => false, 'message' => 'Failed to encode counters JSON');
+		}
+		if (@file_put_contents($path, $json . "\n") === false) {
+			return array('ok' => false, 'message' => 'Failed to write ' . $path);
+		}
+		return array('ok' => true, 'message' => 'Reference file updated');
+	}
+}
+
 if (!function_exists('site_counters_save_to_db')) {
 	function site_counters_save_to_db(array $counters) {
 		if (!function_exists('mysql_fn') || !function_exists('mysql_select')) {
