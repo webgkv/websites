@@ -199,7 +199,7 @@ if ($_preload_hero !== '') {
         <title><?=$_site_doc_title_esc?><?=$_site_doc_suffix_esc?></title>
         <meta name="description" content="<?=$_site_meta_desc_esc?>">
 <?php if (function_exists('site_seo_echo_robots_meta_tags')) { site_seo_echo_robots_meta_tags(); } ?>
-        <meta name="theme-color" content="#2c2a33">
+        <meta name="theme-color" content="#051423">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -217,7 +217,7 @@ if ($_preload_hero !== '') {
         <!-- font awesome cdn links (subset: solid + brands) -->
 <?= site_template_fontawesome_stylesheets() ?>
         <!-- google font (non-blocking: system font renders first, swaps on load) -->
-<?= site_template_google_font('Roboto:wght@400;700;900') ?>
+<?= site_template_google_font('Inter:wght@400;600;700;800') ?>
 <?php /*
         <!-- swipper slider cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
@@ -246,8 +246,17 @@ if ($_preload_hero !== '') {
         <link rel="manifest" href="<?= htmlspecialchars(function_exists('pwa_install_manifest_href') ? pwa_install_manifest_href($getV, $r) : ('/manifest.php?start=%2F&v=' . $getV($r . 'manifest.php')), ENT_QUOTES, 'UTF-8') ?>">
         <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=<?= htmlspecialchars($getV($_favicon), ENT_QUOTES, 'UTF-8') ?>">
         <link rel="stylesheet" href="/assets/css/style.css?v=<?= $getV($r.'assets/css/style.css') ?>">
+        <link rel="stylesheet" href="/assets/css/lottery-buttons.css?v=<?= $getV($r.'assets/css/lottery-buttons.css') ?>">
         <link rel="stylesheet" href="/assets/css/responsive.css?v=<?= $getV($r.'assets/css/responsive.css') ?>">
         <link rel="stylesheet" href="/assets/css/custom-overrides.css?v=<?= $getV($r.'assets/css/custom-overrides.css') ?>">
+<?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
+<?= site_template_google_font('Lato:wght@400;700') ?>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="/assets/css/home-lottery.css?v=<?= $getV($r.'assets/css/home-lottery.css') ?>">
+<?php elseif (!empty($abc['layout']) && (string) $abc['layout'] !== 'demo_app'): ?>
+<?= site_template_google_font('Lato:wght@400;700') ?>
+        <link rel="stylesheet" href="/assets/css/inner-lottery.css?v=<?= $getV($r.'assets/css/inner-lottery.css') ?>">
+<?php endif; ?>
         <script>
         (function(){
           window._burgerDebug = window._burgerDebug || { inited: false, toggleClicks: 0, toggleTouches: 0 };
@@ -298,12 +307,6 @@ if ($_preload_hero !== '') {
             require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../../') . 'functions/site_template_perf.php';
         }
         echo site_template_service_worker_bootstrap_script($_site_median_native_shell, !empty($abc['counters_head']) ? $abc['counters_head'] : array());
-        ?>
-        <?php
-        if (!function_exists('site_cta_analytics_bootstrap_script')) {
-            require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
-        }
-        echo site_cta_analytics_bootstrap_script($abc);
         ?>
         <?php
         if (!empty($abc['counters_head'])) {
@@ -557,9 +560,9 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
                 <div class="container">
                     <a class="navbar-brand" href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>">
                         <?php
-                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.webp') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.webp') ? filemtime(ROOT_DIR.'assets/images/logo.webp') : time());
+                        $logo_v = isset($r, $getV) ? $getV($r.'assets/images/logo.png') : (defined('ROOT_DIR') && file_exists(ROOT_DIR.'assets/images/logo.png') ? filemtime(ROOT_DIR.'assets/images/logo.png') : time());
                         ?>
-                        <img src="/assets/images/logo.webp?v=<?= $logo_v ?>" alt="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" title="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" width="597" height="258" decoding="async">
+                        <img src="/assets/images/logo.png?v=<?= $logo_v ?>" alt="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" title="<?= htmlspecialchars(site_brand_name() . ' Logo', ENT_QUOTES, 'UTF-8') ?>" width="458" height="68" decoding="async">
                     </a>
                     <div class="menu-toggle" role="button" tabindex="0" aria-label="Toggle navigation" id="navbarToggler" onclick="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)" ontouchend="window.aviatorBurgerTap&amp;&amp;window.aviatorBurgerTap(event)"><i class="fa fa-bars"></i></div>
                     <div class="navbar-collapse justify-content-end navbarNav" id="navbarNav">
@@ -614,7 +617,17 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
         <!-- header section end -->
 
         <main>
+<?php
+$_pbj_inner_layout = !empty($abc['layout'])
+    && (string) $abc['layout'] !== 'index'
+    && (string) $abc['layout'] !== 'demo_app';
+if ($_pbj_inner_layout): ?>
+        <div class="pbj-inner dark-ui">
+<?php endif; ?>
 <?=html_render('layouts/'.$abc['layout'])?>
+<?php if ($_pbj_inner_layout): ?>
+        </div>
+<?php endif; ?>
         </main>
 
         <!-- footer section start -->
@@ -636,15 +649,19 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
         </footer>
         <!-- footer section end -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-        <?php $_eggIcon = $r . 'assets/images/egg-scroll-white.svg'; ?>
-        <button onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><img src="/assets/images/egg-scroll-white.svg?v=<?= htmlspecialchars($getV($_eggIcon), ENT_QUOTES, 'UTF-8') ?>" alt="" width="18" height="23" class="myBtn__egg"></button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <button type="button" onclick="topFunction()" id="myBtn" title="<?=htmlspecialchars(i18n('common|go_to_top'))?>" aria-label="<?=htmlspecialchars(i18n('common|go_to_top'))?>"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
         <script src="/assets/js/script.js?v=<?= $getV($r.'assets/js/script.js') ?>" defer></script>
+<?php if (!empty($abc['layout']) && (string) $abc['layout'] === 'index'): ?>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+        <script src="/assets/js/home-lottery.js?v=<?= $getV($r.'assets/js/home-lottery.js') ?>" defer></script>
+        <script src="/assets/js/home-lucky-picker.js?v=<?= $getV($r.'assets/js/home-lucky-picker.js') ?>" defer></script>
+        <script src="/assets/js/home-ticket-checker.js?v=<?= $getV($r.'assets/js/home-ticket-checker.js') ?>" defer></script>
+<?php endif; ?>
 <?php
 // Show popup when we have partner and something to show (banner and/or offer link)
 $ad_has_popup = !empty($abc['advertising_api']['popup_enabled']) && !empty($abc['ad_partner']) && (!empty($abc['ad_offer_path']) || !empty($abc['ad_partner']['banner1_url']) || !empty($abc['ad_partner']['html']));
 if ($ad_has_popup):
-	require_once (defined('ROOT_DIR') ? ROOT_DIR : dirname(__FILE__) . '/../../../') . 'functions/site_cta_analytics.php';
-	$_cta_page_key = site_cta_resolve_page_key($abc);
 	$ad_caption = i18n('common|popup_join').'|'.i18n('common|popup_partner');
 	$ad_caption_html = strpos($ad_caption, '|') !== false
 		? '<p class="wd-banner-caption"><span class="wd-cap-part">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[0])) . '</span> <span class="wd-cap-highlight">' . htmlspecialchars(trim(explode('|', $ad_caption, 2)[1] ?? '')) . '</span></p>'
@@ -663,9 +680,6 @@ if ($ad_has_popup):
 	if (!empty($abc['debug_ads']) && $ad_popup_url !== '' && strpos($ad_popup_url, 'banner-img.php') === false) {
 		$ad_popup_href .= (strpos($ad_popup_url, '?') !== false ? '&' : '?') . 'debug_ads=1';
 	}
-	$ad_popup_track_href = ($ad_popup_href !== '' && site_cta_is_trackable_href($ad_popup_href))
-		? site_cta_offer_href($ad_popup_href, $_cta_page_key, '003', 'popup_banner')
-		: $ad_popup_href;
 	$ad_retention_html = isset($abc['ad_partner']['html']) ? str_replace('{link}', $ad_popup_url, $abc['ad_partner']['html']) : '';
 	$ad_render_mode = isset($abc['ad_render_mode']) ? (string)$abc['ad_render_mode'] : 'banner';
 	$placeholder_cta = i18n('common|cta_try_bonus');
@@ -678,14 +692,13 @@ if ($ad_has_popup):
 	}
 	if ($ad_render_mode === 'placeholder') {
 		$ad_img_src = '';
-		$_popup_bonus_href = site_cta_offer_href($ad_popup_url, $_cta_page_key, '004', 'popup_bonus');
-		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($_popup_bonus_href, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta"' . site_cta_data_attrs('004', 'popup_bonus', 'text') . '>' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
+		$ad_retention_html = '<div class="wd-banner-placeholder"><p class="wd-banner-placeholder-title">' . htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') . '</p><p><a href="' . htmlspecialchars($ad_popup_url, ENT_QUOTES, 'UTF-8') . '" class="wd-banner-placeholder-cta">' . htmlspecialchars($placeholder_cta, ENT_QUOTES, 'UTF-8') . '</a></p></div>';
 	}
 ?>
         <div id="wd-banner-popup" class="wd-banner-popup" style="position:fixed;left:0;top:0;right:0;bottom:0;z-index:99998;background:rgba(0,0,0,0.5);display:grid;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:opacity 0.3s;">
             <div class="wd-banner-popup-inner">
                 <?= $ad_caption_html ?>
-                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_track_href) ?>" class="wd-banner-popup-link"<?= site_cta_data_attrs('003', 'popup_banner', 'image') ?>><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
+                <?php if ($ad_img_src): ?><a href="<?= htmlspecialchars($ad_popup_href) ?>" class="wd-banner-popup-link"><img class="wd-banner-img" src="<?= $ad_img_src ?>" alt="<?= htmlspecialchars($placeholder_title, ENT_QUOTES, 'UTF-8') ?>" loading="lazy"></a><?php endif; ?>
                 <?php if (!$ad_img_src && $ad_render_mode === 'placeholder'): ?><div class="wd-banner-retention-inner"><?= $ad_retention_html ?></div><?php endif; ?>
                 <a href="#" class="wd-banner-popup-close" id="wd-banner-close" aria-label="<?=htmlspecialchars(i18n('common|aria_close'))?>"><i class="fa fa-times"></i></a>
             </div>
