@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-/** Verify sw/ln locales for pages and guides clusters on prod. */
+/** Verify sw/ln locales for all SEO Monitor entities on prod. */
 if (php_sapi_name() !== 'cli') {
 	exit(1);
 }
@@ -16,8 +16,14 @@ require_once ROOT_DIR . 'functions/mysql_func.php';
 require_once ROOT_DIR . 'functions/string_func.php';
 require_once ROOT_DIR . 'functions/seo_monitor.php';
 
-$pages = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 26, 27, 28, 29, 33, 34, 35);
-$guides = array(1, 2, 3, 4, 5, 6, 7, 8);
+$entities = array(
+	'pages' => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 26, 27, 28, 29, 33, 34, 35),
+	'guides' => array(1, 2, 3, 4, 5, 6, 7, 8),
+	'games' => array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12),
+	'casino_articles' => array(10, 11, 18, 24, 25, 26),
+	'blog' => array(1, 2, 3, 4),
+	'authors' => array(1, 2),
+);
 
 function plain_len($html) {
 	return strlen(trim(strip_tags((string)$html)));
@@ -62,7 +68,7 @@ function check_entity($entity, array $ids) {
 	}
 }
 
-echo "=== PAGES ===\n";
-check_entity('pages', $pages);
-echo "=== GUIDES ===\n";
-check_entity('guides', $guides);
+foreach ($entities as $entity => $ids) {
+	echo '=== ' . strtoupper($entity) . " ===\n";
+	check_entity($entity, $ids);
+}
