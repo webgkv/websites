@@ -1,0 +1,464 @@
+{
+  "meta": {
+    "fr": {
+      "name": "Chicken Road original",
+      "title": "Chicken Road : le crash game original expliqué",
+      "description": "Guide Chicken Road : règles, démo gratuite, niveaux Easy à Hardcore, Provably Fair et gains max jusqu'à $20,000."
+    },
+    "ar": {
+      "name": "Chicken Road الأصلي",
+      "title": "Chicken Road: شرح لعبة الكrash الأصلية",
+      "description": "دليل Chicken Road: القواعد، العرض التجريبي المجاني، مستويات Easy وMedium وHard وHardcore، Provably Fair والحد الأقصى $20,000."
+    }
+  },
+  "pairs": {
+    "fr": [
+      [
+        "Chicken Road",
+        "Chicken Road"
+      ]
+    ],
+    "ar": [
+      [
+        "Chicken Road Game",
+        "لعبة Chicken Road"
+      ],
+      [
+        "Basic Info",
+        "معلومات أساسية"
+      ],
+      [
+        "Free Chicken Road Demo",
+        "Chicken Road Demo المجاني"
+      ],
+      [
+        "Reach $20,000 in Max Winnings",
+        "الوصول إلى $20,000 في أقصى الأرباح"
+      ],
+      [
+        "Chicken Road Difficulty Levels",
+        "مستويات صعوبة Chicken Road"
+      ],
+      [
+        "Easy",
+        "Easy"
+      ],
+      [
+        "Medium",
+        "Medium"
+      ],
+      [
+        "Hard",
+        "Hard"
+      ],
+      [
+        "Hardcore",
+        "Hardcore"
+      ],
+      [
+        "Provably Fair Technology",
+        "تقنية Provably Fair"
+      ],
+      [
+        "Chicken Road Bonus Game",
+        "Chicken Road Bonus Game"
+      ],
+      [
+        "Chicken Road vs Chicken Road Bonus",
+        "Chicken Road مقابل Chicken Road Bonus"
+      ],
+      [
+        "Chicken Road Awards and Recognition",
+        "جوائز Chicken Road والاعتراف"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Road multiplier climbing during a round",
+        "مضاعف Chicken Road يرتفع أثناء الجولة"
+      ],
+      [
+        "Chicken Road max win screen with high multiplier",
+        "شاشة max win في Chicken Road بمضاعف عالٍ وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road round ending after a failed step",
+        "انتهاء جولة Chicken Road بعد خطوة فاشلة وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road was made for players who like fast crash-style games with simple rules and quick decisions.",
+        "Chicken Road صُممت للاعبين الذين يحبون ألعاب crash السريعة بقواعد بسيطة وقرارات سريعة. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road does not try to look like a classic slot. No reels, no overloaded screen, no long bonus rules. Every safe step increases the potential payout. The more you move forward, the better the multiplier looks. But that is also where the risk starts to grow. One bad step can end the round, so the whole game comes down to timing and discipline.",
+        "Chicken Road لا تحاول أن تبدو كسلوت كلاسيكي. لا بكرات، لا شاشة مزدحمة، لا قواعد مكافأة طويلة. كل خطوة آمنة تزيد الدفع المحتمل. كلما تقدمت، يبدو المضاعف أفضل. لكن هناك يبدأ الخطر بالنمو. خطوة سيئة تنهي الجولة، فاللعبة كلها تتعلق بالتوقيت والانضباط. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Game Type",
+        "نوع اللعبة وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Single-player crash game",
+        "نوع اللعبة وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Release Date",
+        "تاريخ الإصدار وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "04.04.2024",
+        "04.04.2024 وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Main Mechanic",
+        "الميكانيكا الرئيسية وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Move forward, grow the multiplier, cash out before losing",
+        "تقدم، نمّ المضاعف، اسحب Cash Out قبل الخسارة وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Want to see how far your chicken can go without risking real money? On our site, you can open the Free Chicken Road Demo instantly.",
+        "تقدم، نمّ المضاعف، اسحب Cash Out قبل الخسارة وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "In demo, you play with virtual credits. In real mode, every mistake touches your own money.",
+        "في Demo، تلعب برصيد افتراضي. في الوضع الحقيقي، كل خطأ يلمس مالك. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Use demo mode as a test lab. Try safe runs, push for higher multipliers, lose a few rounds, restart, and see what kind of strategy feels natural for you. It is the easiest way to understand Chicken Road before making real bets.",
+        "استخدم Demo كمختبر. جرّب جولات آمنة، ادفع للمضاعفات الأعلى، اخسر جولات، أعد البدء وانظر أي استراتيجية تبدو طبيعية. أسهل طريقة لفهم Chicken Road قبل الرهان الحقيقي. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Use demo mode before moving to real wagers. That says a lot about how players approach this game: first test, then decide if real-money play makes sense.",
+        "استخدم Demo قبل الانتقال للرهانات الحقيقية. ذلك يقول الكثير عن كيفية تعامل اللاعبين مع اللعبة: اختبار أولاً، ثم قرار اللعب بمال حقيقي. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road has a $20,000 max win cap. This is the biggest payout available in the current build. No bonus wheel, no jackpot screen, no extra mini-game. Just the chicken, the road, the multiplier, and your decision to stop or keep moving.",
+        "Chicken Road لها سقف max win $20,000. هذا أكبر دفع متاح في النسخة الحالية. لا عجلة مكbonus، لا شاشة jackpot، لا mini-game إضافي. فقط الدجاجة، الطريق، المضاعف وقرارك بالتوقف أو الاستمرار. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "In theory, the cap can be reached in different ways. Looks simple on paper. In the game, it is not that easy.",
+        "استخدم Demo قبل الانتقال للرهانات الحقيقية. ذلك يقول الكثير عن كيفية تعامل اللاعبين مع اللعبة: اختبار أولاً، ثم قرار اللعب بمال حقيقي. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "The bigger multipliers usually come from higher-risk modes, especially Hard and Hardcore. These modes can look attractive because the payout grows faster, but the balance can disappear just as fast. One wrong step, and the round is over.",
+        "Chicken Road لها سقف max win $20,000. هذا أكبر دفع متاح في النسخة الحالية. لا عجلة مكافأة، لا شاشة jackpot، لا mini-game إضافي. فقط الدجاجة، الطريق، المضاعف وقرارك بالتوقف أو الاستمرار. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "So chasing the $20,000 cap from the first session is not the smartest idea. Better start small. Try $1–$5 bets, play the demo first, and see how each difficulty feels. Medium and Hard make more sense only after you understand how quickly the game can turn against you.",
+        "نظرياً، يمكن الوصول للسقف بطرق مختلفة. يبدو بسيطاً على الورق. في اللعبة، ليس بهذه السهولة. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "The max win is not a normal target for every round. It is the ceiling. Most players should think more about when to cash out, not how to reach the biggest number on the screen.",
+        "المضاعfات الأكبر عادة من أوضاع أعلى مخاطرة، خاصة Hard وHardcore. قد تبدو جذابة لأن الدفع ينمو أسرع، لكن الرصيد قد يختفي بنفس السرعة. خطوة خاطئة واحدة، والجولة تنتهi. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road gives you choices: bet size, difficulty, steps, cash out timing. But it does not give you control over the next result. A plan can help you play cleaner, but it will not guarantee a max win.",
+        "Chicken Road تعطيك خيارات: حجم الرهان، الصعوبة، الخطوات، توقيت Cash Out. لكنها لا تعطيك سيطرة على النتيجة التالية. خطة قد تساعدك على اللعب أنظف، لكنها لن تضمن max win. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "If you go for bigger multipliers, keep the risk in your head. Small bets give more attempts. Demo mode gives space to test. And sometimes taking a smaller win is better than pushing the run until it breaks.",
+        "إن سعيت لمضاعفات أكبر، أبقِ المخاطرة في ذهنك. الرهانات الصغيرة تعطي محاولات أكثر. Demo يعطي مساحة للاختبار. وأحياناً أخذ ربح أصغر أفضل من دفع الجولة حتى تنكسر. وهذه تفاصيل مهمة يجب معرفتها قبل اللعب."
+      ],
+      [
+        "Chicken Road has four difficulty levels, and each one changes the whole feeling of the game. The bet range stays the same — from $0.01 to $200 — but the risk, pace, and payout growth are different.",
+        "Chicken Road لها أربعة مستويات صعوبة، وكل واحد يغيّر إحساس اللعبة كاملة. نطاق الرهان كما هو — من $0.01 إلى $200 — لكن المخاطرة والإيقاع ونمو الدفع مختلفان."
+      ],
+      [
+        "Do not think of these modes as player skill levels. Easy does not mean you are bad, and Hardcore does not mean you are a pro. It is more about how much risk you are ready to take in one run.",
+        "لا تعامل هذه الأ modes كمستويات مهارة. Easy لا تعني أنك مبتدئ، وHardcore لا تعني أنك محترف. الأمر أكثر عن مقدار المخاطرة التي تستعد لها في جولة واحدة."
+      ],
+      [
+        "Best For",
+        "الأفضل لـ"
+      ],
+      [
+        "Payout Feel",
+        "إحساس الدفع"
+      ],
+      [
+        "Beginners, demo testing, calm play",
+        "المبتدئين، اختبار Demo، لعب هادئ"
+      ],
+      [
+        "Slow and steady",
+        "بطيء وثابتاً"
+      ],
+      [
+        "Regular players",
+        "اللاعبين العاديين"
+      ],
+      [
+        "Moderate",
+        "معتدل"
+      ],
+      [
+        "Better growth, more pressure",
+        "نمو أفضل، ضغط أكبر"
+      ],
+      [
+        "Riskier play",
+        "لعب أكثر مخاطرة"
+      ],
+      [
+        "Fast multiplier jumps",
+        "قفزات مضاعف سريعة"
+      ],
+      [
+        "High-risk players",
+        "لاعبين عاليي المخاطرة"
+      ],
+      [
+        "Very high",
+        "عالٍ جداً"
+      ],
+      [
+        "Sharp growth, low room for error",
+        "نمو حاد، هامش خطأ ضيق"
+      ],
+      [
+        "Easy mode is the best place to start. The multiplier does not grow as aggressively, but that is the trade-off. You get a smoother game and more room to cash out before things go wrong.",
+        "Easy أفضل مكان للبدء. المضاعف لا ينمو بقوة، لكن ذلك هو المقايضة. تحصل على لgame أكثر سلاسة ومساحة أكبر للـ Cash Out قبل أن تسوء الأمور."
+      ],
+      [
+        "Medium is where Chicken Road starts to feel more active. The multiplier grows faster than on Easy, but the game also becomes less forgiving.",
+        "Medium حيث تبدأ Chicken Road أكثر نشاطاً. المضاعف ينمو أسرع من Easy، لكن اللعبة تصبح أقل تسامحاً."
+      ],
+      [
+        "This is the most balanced mode, but still, you need a plan. Decide your exit point before the round starts, not when emotions are already involved.",
+        "هذا الوضع الأكثر توازناً، لكن ما زلت تحتاج خطة. حدّد نقطة خروجك قبل بدء الجولة، لا عندما تكون العواطف مشاركة."
+      ],
+      [
+        "Hard mode is already a serious jump. The payouts look better, but the risk grows fast.",
+        "Hard قفزة جدية بالفعل. الدفعات تبدو أفضل، لكن المخاطرة تنمو بسرعة."
+      ],
+      [
+        "This mode is not for random clicking. If you play Hard, it makes sense to use smaller stakes and choose your cash out point in advance. One extra step can look tempting, but this is exactly where the round can turn against you.",
+        "هذا الوضع ليس للنقر العشوائي. إن لعبت Hard، من المنطقي استخدام رهانات أصغر واختيار نقطة Cash Out مسبقاً. خطوة إضافية قد تبدو مغرية، لكن هنا بالضبط قد تنقلب الجولة ضدك."
+      ],
+      [
+        "Hardcore is the most volatile mode. The multiplier can grow widely. It can look attractive because of the payout potential, but it can also drain a balance very quickly. Try it in demo first and keep the stakes low.",
+        "Hardcore أكثر أوضاع تقلباً. المضاعف قد ينمو بشكل كبير. قد يبدو جذاباً لإمكانية الدفع، لكنه قد ينفد الرصيد بسرعة أيضاً. جرّبه في Demo أولاً وأبقِ الرهانات منخفضة."
+      ],
+      [
+        "The difficulty does not make you a better player. It only changes the risk curve. Easy gives more control over the session. Hardcore gives bigger numbers, but much less breathing room.",
+        "الصعوبة لا تجعلك لاعباً أفضل. تغيّر فقط منحنى المخاطرة. Easy يعطي تحكماً أكبر بالجلسة. Hardcore يعطي أرقاماً أكبر، لكن هامشاً أقل للتنفس."
+      ],
+      [
+        "Chicken Road uses Provably Fair technology, so the result of a round is not just hidden somewhere on the casino side. Each run can be checked and verified after the game is finished.",
+        "Chicken Road تستخدم تقنية Provably Fair، لذا نتيجة الجولة ليست مخفية عند الكازينو فقط. يمكن التحقق من كل جولة بعد انتهائها."
+      ],
+      [
+        "Here is the simple idea. Before the round starts, the game locks the result with a cryptographic hash. After the round ends, the server seed, client seed, and final hash can be checked. This lets players confirm that the outcome was created before the round and was not changed after pressing Play.",
+        "الفكرة ببساطة. قبل بدء الجولة، تُقفل النتيجة بتجزئة تشفيرية. بعد انتهاء الجولة، يمكن التحقق من server seed وclient seed والتجزئة النهائية. هذا يتيح للاعبين التأكد أن النتيجة أُنشئت قبل الجولة ولم تُغيّر بعد الضغط على Play."
+      ],
+      [
+        "How it works:",
+        "كيف يعمل:"
+      ],
+      [
+        "SHA-256 encryption is used to protect the round result before the game starts",
+        "تشفير SHA-256 يحمي نتيجة الجولة قبل بدء اللعبة"
+      ],
+      [
+        "client seed + server seed logic helps prevent manipulation from either side",
+        "منطق client seed + server seed يساعد على منع التلاعب من أي طرف"
+      ],
+      [
+        "after the run, players can check the seed data and final hash",
+        "بعد الجولة، يمكن للاعبين التحقق من بيانات seed والتجزئة النهائية"
+      ],
+      [
+        "every jump, multiplier, and losing step is part of the pre-generated result",
+        "كل قفزة ومضاعف وخطوة خاسرة جزء من النتيجة المُولّدة مسبقاً"
+      ],
+      [
+        "Why does this matter? Because in games like Chicken Road, trust is important. Provably Fair does not mean you will win more often.",
+        "لماذا ي مهم؟ لأن في ألعاب مثل Chicken Road، الثقة مهمة. Provably Fair لا يعني أنك ستفوز أكثر."
+      ],
+      [
+        "There are no hot rounds, no hidden safe path, and no secret script that starts working after you raise the bet. Each round is based on math, RNG, and the seed system behind the game. If you want the real Chicken Road experience, check that the game comes from InOut Games and that the fairness tools are available inside the game panel.",
+        "لا جولات ساخنة، لا مسار آمن مخفي، ولا سكript سري يبدأ بعد رفع الرهان. كل جولة مبنية على الحسابات وRNG ونظام seed خلف اللعبة. إن أردت تجربة Chicken Road الحقيقية، تحقق أن اللعبة من InOut Games وأن أدوات العدالة متاحة داخل لوحة اللعبة."
+      ],
+      [
+        "Chicken Road Bonus is a separate version for players who want the same chicken mechanic, but with more action around the bonus round.",
+        "Chicken Road Bonus نسخة منفصلة لمن يريد نفس ميكانيكا الدجاج لكن بحركة أكثر حول جولة المكbonus."
+      ],
+      [
+        "The base game still feels familiar: the chicken moves forward, the risk grows, and the player decides when to stop. But in the Bonus version, there is an extra feature — the Bonus Game.",
+        "اللعبة الأساسية ما زالت مألوفة: الدجاجة تتقدم، الخطر ينمو، واللاعب يقرر متى يتوقف. لكن في نسخة Bonus، هناك ميزة إضافية — Bonus Game."
+      ],
+      [
+        "Chicken Road",
+        "Chicken Road"
+      ],
+      [
+        "Chicken Road Bonus",
+        "Chicken Road Bonus"
+      ],
+      [
+        "Bonus Game",
+        "Bonus Game"
+      ],
+      [
+        "Yes, 10 Free Runs",
+        "نعم، 10 Free Runs"
+      ],
+      [
+        "How Bonus Starts",
+        "كيف تبدأ المكbonus"
+      ],
+      [
+        "Not available",
+        "غير متاح"
+      ],
+      [
+        "3 coin symbols or bonus buy",
+        "3 رموز عملة أو bonus buy"
+      ],
+      [
+        "Free Runs",
+        "Free Runs"
+      ],
+      [
+        "Chicken moves automatically",
+        "الدجاجة تتحرك تلقائياً"
+      ],
+      [
+        "Multiplier Logic",
+        "منطق المضاعف"
+      ],
+      [
+        "One round, one result",
+        "جولة واحدة، نتيجة واحدة"
+      ],
+      [
+        "Multipliers are collected together",
+        "تُجمع المضاعفات معاً"
+      ],
+      [
+        "Controls",
+        "عناصر التحكم"
+      ],
+      [
+        "Manual clicks",
+        "نقرات يدوية"
+      ],
+      [
+        "Manual + Space quick-play",
+        "يدوي + Space للعب السريع"
+      ],
+      [
+        "Game Pace",
+        "إيقاع اللعبة"
+      ],
+      [
+        "Slower and more tactical",
+        "أبطأ وأكثر تكتيكاً"
+      ],
+      [
+        "Faster and more dynamic",
+        "أسرع وأكثر ديناميكية"
+      ],
+      [
+        "Main Feeling",
+        "الإحساس الرئيسي"
+      ],
+      [
+        "Step-by-step risk",
+        "مخاطرة خطوة بخطوة"
+      ],
+      [
+        "Bonus-focused action",
+        "حركة مركزة على المكbonus"
+      ],
+      [
+        "To activate it, you need to collect three coin symbols during regular play. Some operators may also offer a direct bonus buy, where you can open the bonus round without waiting for the symbols to appear.",
+        "لتفعيلها، تحتاج جمع ثلاثة رموز عملة أثناء اللعب العادي. بعض المشغّلين قد يقدمون bonus buy مباشراً لفتح جولة المكbonus دون انتظار الرموز."
+      ],
+      [
+        "Once the Bonus Game starts, the player gets 10 Free Runs. During these runs, the chicken moves automatically and stops before the burn. The multipliers collected during the bonus are not lost after each run. They are added together and paid as one final result.",
+        "عند بدء Bonus Game، يحصل اللاعب على 10 Free Runs. أثناءها، تتحرك الدجاجة تلقائياً وتتوقf قبل الاحتراق. المضاعفات المجمعة أثناء المكbonus لا تُفقد بعد كل جولة. تُضاف معاً وتُدفع كنتيجة نهائية واحدة."
+      ],
+      [
+        "That is the main difference from the standard Chicken Road. In the regular version, each round stands alone. You move, cash out, or lose. In Chicken Road Bonus, the bonus round builds a combined payout from several free runs, which makes the game feel faster and more event-driven.",
+        "هذا الفرق الرئيسي عن Chicken Road القياسية. في النسخة العادية، كل جولة مستقلة. تتحرك، تسحب Cash Out أو تخسر. في Chicken Road Bonus، جولة المكbonus تبني دفعاً مجمعاً من عدة free runs، مما يجعل اللعبة أسرع وأكثر تركيزاً على بناء نتيجة أكبر."
+      ],
+      [
+        "There is also a Space quick-play option in the menu. The Bonus version feels quicker, louder, and more focused on building one bigger result through free runs. Start in demo if possible, understand how the bonus works and do not treat the feature as free money.",
+        "هناك أيضاً خيار Space للعب السريع في القائمة. نسخة Bonus أسرع وأ louder وأكثر تركيزاً على بناء نتيجة أكبر عبر free runs. ابدأ Demo إن أمكن، افهم كيف تعمل المكbonus ولا تعامل الميزة كمال مجاني."
+      ],
+      [
+        "In 2025, Chicken Road was no longer just a new release from InOut Games. The game had already made enough noise to get noticed at industry level, including a nomination for Best Crash Game of the Year at the SiGMA Awards Africa.",
+        "في 2025، Chicken Road لم تعد مجرد إصدار جديد من InOut Games. اللعبة أحدثت ضجة كافية للحصول على اعتراف على مستوى الصناعة، بما في ذلك ترشيح لجائزة Best Crash Game of the Year في SiGMA Awards Africa."
+      ],
+      [
+        "Chicken Road caught attention because it feels different from the usual click-and-wait crash games. It has a real arcade mood, animated movement, clear difficulty levels, and a format where the player feels involved in every step.",
+        "Chicken Road لفتت الانتباه لأنها مختلفة عن ألعاب crash المعتادة النقر والانتظار. لها أجواء أركيد حقيقية، حركة متحركة، مستويات صعوبة واضحة وتنسيق يجعل اللاعب مشاركاً في كل خطوة."
+      ],
+      [
+        "A few things helped the game stand out:",
+        "بعض الأمور ساعدت اللعبة على التميز:"
+      ],
+      [
+        "strong player activity after launch",
+        "نشاط لاعبين قوي بعد الإطلاق"
+      ],
+      [
+        "simple but memorable chicken-road mechanic",
+        "ميكانيكا chicken-road بسيطة لكن لا تُنسى"
+      ],
+      [
+        "fast rounds that work well on mobile",
+        "جولات سريعة تعمل جيداً على الهاتف"
+      ],
+      [
+        "clean visuals and responsive gameplay",
+        "رسوم نظيفة ولعب سلس"
+      ],
+      [
+        "positive feedback from players who wanted crash games to feel more like actual games",
+        "تعليقات إيجابية من لاعبين أرادوا أن تشعر ألعاب crash كألعاب حقيقية"
+      ],
+      [
+        "The main strength of Chicken Road is that it does not feel like a reskinned slot. There are no reels, no symbol chaos, no long bonus screens. The game gives one clear situation: move forward, increase the multiplier, or stop before the round goes wrong.",
+        "قوة Chicken Road أنها لا تشعر كسلوت معاد تلوينه. لا بكرات، لا فوضى رموز، لا شاشات مكbonus طويلة. اللعبة تعطي موقفاً واحداً واضحاً: تقدم، زد المضاعف، أو توقf قبل أن تسوء الجولة."
+      ],
+      [
+        "For InOut Games, Chicken Road became more than a single release. After the first version became popular, InOut Games started building more titles around the same chicken character.",
+        "بالنسبة لـ InOut Games، Chicken Road أصبحت أكثر من إصدار واحد. بعد نجاح النسخة الأولى، InOut Games بدأت ببناء عناوين أكثر حول نفس شخصية الدجاج."
+      ],
+      [
+        "The 2025 recognition only made it more obvious: players liked the formula. Simple arcade look, short decisions, growing risk, and that constant feeling that one more step might be worth it.",
+        "اعتراف 2025 جعل الأمر أوضح: اللاعبون أحبوا الصيغة. مظهر أركيد بسيط، قرارات قصيرة، مخاطرة متنامية، وذلك الإحساس الدائم أن خطوة أخرى قد تستحق."
+      ],
+      [
+        "But awards do not make the game safer. Chicken Road is still gambling when real money is involved. Start with demo mode, understand the mechanics, and play only with limits.",
+        "لكن الجوائز لا تجعل اللعبة أكثر أماناً. Chicken Road ما زالت قماراً عندما يكون المال الحقيقي في اللعب. ابدأ Demo، افهم الميكانيكا والعب فقط بحدود."
+      ],
+      [
+        "Can I try Chicken Road for free? Yes. You can open the Chicken Road demo and test the game without real money. No deposit is needed. Just open the demo and play with virtual credits.",
+        "هل يمكنني تجربة Chicken Road مجاناً؟ نعم. يمكنك فتح Chicken Road Demo واختبار اللعبة دون مال حقيقي. لا إيداع مطلوب. افتح Demo والعب برصيد افتراضي."
+      ],
+      [
+        "What devices does Chicken Road work on? The game works on every device, including desktop and mobile browsers.",
+        "على أي أجهزة تعمل Chicken Road؟ اللعبة تعمل على كل جهاز، بما في ذلك متصفحات سطح المكتب والهاتف."
+      ],
+      [
+        "Can casinos add Chicken Road to their platform? Yes. Chicken Road can be added through InOut Games integration — provider API, wallet connection, and lobby setup.",
+        "هل يمكن للكازينوهات إضافة Chicken Road لمنصتها؟ نعم. Chicken Road يمكن إضافتها عبر تكامل InOut Games — API المزوّd، ربط المحفظة وإعداد اللobby."
+      ],
+      [
+        "Languages and currencies? Chicken Road is built for international use. Casinos can offer different languages; balances may show USD or crypto such as BTC, ETH, and USDT.",
+        "اللغات والعملات؟ Chicken Road مبنية للاستخدام الدولي. الكازينوهات قد تقدم لغات مختلفة؛ الأرصدة قد تظهر USD أو عملات مشفرة مثل BTC وETH وUSDT."
+      ],
+      [
+        "Can I play for real money? Yes. Chicken Road is built for real-money casino play and should be offered through licensed operators.",
+        "هل يمكنني اللعب بمال حقيقي؟ نعم. Chicken Road مبنية للعب بأموال حقيقية في الكازينو ويجب أن تُقدَّم عبر مشغّلين مرخّصين."
+      ]
+    ]
+  }
+}

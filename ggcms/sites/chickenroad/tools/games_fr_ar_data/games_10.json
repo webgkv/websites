@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "fr": {
+      "name": "Chicken Banana",
+      "title": "Chicken Banana : règles, RTP et où jouer",
+      "description": "Chicken Banana : règles, RTP 96 %, multiplicateur max 1 000x et casinos pour jouer Chicken Banana en ligne."
+    },
+    "ar": {
+      "name": "Chicken Banana",
+      "title": "Chicken Banana: القواعد وRTP وأين تلعب",
+      "description": "Chicken Banana: القواعد، RTP 96%، أقصى مضاعف 1,000x وأفضل الكازينوهات للعب Chicken Banana."
+    }
+  },
+  "pairs": {
+    "fr": [
+      [
+        "Chicken Banana",
+        "Chicken Banana"
+      ],
+      [
+        "Chicken Banana Features",
+        "Fonctionnalités Chicken Banana"
+      ],
+      [
+        "Chicken Banana Max Win &amp; Bet Range",
+        "Gain max et plage de mise Chicken Banana"
+      ],
+      [
+        "Core Chicken Banana Game Mechanics",
+        "Mécaniques de base de Chicken Banana"
+      ],
+      [
+        "Symbols and Value",
+        "Symboles et valeur"
+      ],
+      [
+        "Bonus Activation &amp; Jackpot",
+        "Activation bonus et Jackpot"
+      ],
+      [
+        "Free Spins &mdash; 3 FS Symbols",
+        "Free Spins — 3 symboles FS"
+      ],
+      [
+        "Bonus Game &mdash; 3 Chest Symbols",
+        "Bonus Game — 3 symboles Chest"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Banana instant-win game screenshot",
+        "Capture d'écran du jeu instant-win Chicken Banana"
+      ],
+      [
+        "demo chicken banana",
+        "demo chicken banana"
+      ],
+      [
+        "screen shot1",
+        "screen shot1"
+      ],
+      [
+        "screenshot2",
+        "screenshot2"
+      ],
+      [
+        "Chicken Banana is one of the lighter games in the Chicken Road series. Even by the name, it feels less serious than the original. A chicken, bananas, fast rounds &mdash; the game clearly leans into a funny arcade mood rather than a classic casino style.",
+        "Chicken Banana est l'un des jeux les plus légers de la série Chicken Road. Même par le nom, il paraît moins sérieux que l'original. Un poulet, des bananes, des manches rapides — le jeu penche clairement vers une ambiance arcade amusante plutôt qu'un style casino classique."
+      ],
+      [
+        "This version may suit players who like simple games without too much pressure on the screen. No heavy slot layout, no long rules, no complicated symbols. The idea is closer to a quick mini-game: open it, understand the basics, and play a short round.",
+        "Cette version peut convenir aux joueurs qui aiment les jeux simples sans trop de pression à l'écran. Pas de layout de slot lourd, pas de longues règles, pas de symboles compliqués. L'idée est proche d'un mini-jeu rapide : ouvrir, comprendre les bases, jouer une manche courte."
+      ],
+      [
+        "We have outlined the complete technical breakdown and all core mechanics engineered into the game in the specification table below.",
+        "Nous avons détaillé la fiche technique complète et toutes les mécaniques de base du jeu dans le tableau ci-dessous."
+      ],
+      [
+        "Game title",
+        "Titre du jeu"
+      ],
+      [
+        "Provider",
+        "Fournisseur"
+      ],
+      [
+        "InOut Games",
+        "InOut Games"
+      ],
+      [
+        "Release date",
+        "Date de sortie"
+      ],
+      [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      [
+        "Category",
+        "Catégorie"
+      ],
+      [
+        "Instant win / card-pick game",
+        "Jeu instant-win / choix de cartes"
+      ],
+      [
+        "Max multiplier",
+        "Multiplicateur max"
+      ],
+      [
+        "1,000x bet",
+        "1 000x la mise"
+      ],
+      [
+        "Max cash win",
+        "Gain cash max"
+      ],
+      [
+        "5&times;4, 20 cards",
+        "5&times;4, 20 cartes"
+      ],
+      [
+        "Technology",
+        "Technologie"
+      ],
+      [
+        "HTML5, JS",
+        "HTML5, JS"
+      ],
+      [
+        "Features",
+        "Fonctionnalités"
+      ],
+      [
+        "Guaranteed payout each round, bonus chests, fixed jackpots, free spins, provably fair verification",
+        "Paiement garanti chaque manche, coffres bonus, jackpots fixes, Free Spins, vérification Provably Fair"
+      ],
+      [
+        "Chicken Banana keeps the same general spirit of the series. It is bright, easy to start, and built for players who enjoy fast decisions. The game does not try to look premium or serious. It works because it feels casual and a bit silly, but still keeps the casino risk underneath.",
+        "Chicken Banana conserve l'esprit général de la série. Il est lumineux, facile à démarrer et conçu pour les joueurs qui aiment les décisions rapides. Le jeu ne cherche pas à paraître premium ou sérieux. Il fonctionne parce qu'il paraît décontracté et un peu absurde, tout en gardant le risque casino en dessous."
+      ],
+      [
+        "For players who already like Chicken Road, Chicken Banana can be a fun side version. The same character and arcade feeling, but with a softer, more playful theme.",
+        "Pour les joueurs qui aiment déjà Chicken Road, Chicken Banana peut être une version latérale amusante. Même personnage et sensation arcade, mais avec un thème plus doux et plus ludique."
+      ],
+      [
+        "Still, it is a good game for Chicken fans. If real money is involved, the risk is real too. Start with demo mode, check the mechanics, and only play with real balance if you understand what you are doing.",
+        "C'est pourtant un bon jeu pour les fans de Chicken. Si de l'argent réel est en jeu, le risque est réel aussi. Commencez en Demo, vérifiez les mécaniques, et ne jouez avec un solde réel que si vous comprenez ce que vous faites."
+      ],
+      [
+        "Chicken Banana lets you play from very small stakes or go much higher. The bet range starts at $0.01 and goes up to $200 per round.",
+        "Chicken Banana permet de jouer avec des mises très petites ou beaucoup plus élevées. La plage de mise va de $0.01 à $200 par manche."
+      ],
+      [
+        "That is why big bets are not always better in Chicken Banana. You can risk more money, but the top payout is still locked by the cap.",
+        "C'est pourquoi les grosses mises ne sont pas toujours meilleures dans Chicken Banana. Vous pouvez risquer plus, mais le paiement maximum reste limité par le plafond."
+      ],
+      [
+        "For players who care about clean multiplier value, bets up to $20 make more sense. Above that, the max win limit starts cutting the top result.",
+        "Pour les joueurs qui veulent une valeur de multiplicateur propre, les mises jusqu'à $20 ont plus de sens. Au-delà, la limite de gain max commence à couper le résultat final."
+      ],
+      [
+        "Simple idea:",
+        "Idée simple :"
+      ],
+      [
+        "small bets let the full 1,000x work;",
+        "les petites mises laissent travailler le 1 000x complet ;"
+      ],
+      [
+        "$20 fits the cap perfectly;",
+        "$20 correspond parfaitement au plafond ;"
+      ],
+      [
+        "bigger bets hit the ceiling too early.",
+        "les mises plus grandes atteignent le plafond trop tôt."
+      ],
+      [
+        "Chicken Banana does not play like a classic reel slot. There is no long spinning sequence where you just wait for the symbols to stop. The game is built around a faster pick-and-match style, so the result comes quickly and the round does not drag.",
+        "Chicken Banana ne joue pas comme un slot à rouleaux classique. Pas de longue séquence de spin où l'on attend que les symboles s'arrêtent. Le jeu repose sur un style pick-and-match plus rapide : le résultat arrive vite et la manche ne traîne pas."
+      ],
+      [
+        "The idea is more direct: choose your stake, start the round, and let the game resolve the outcome almost instantly. This makes Chicken Banana feel closer to an instant casino game than an old-school slot.",
+        "L'idée est plus directe : choisir la mise, lancer la manche, et laisser le jeu résoudre le résultat presque instantanément. Chicken Banana se rapproche ainsi d'un jeu casino instantané plutôt que d'un slot old-school."
+      ],
+      [
+        "The math behind the game is still important. Outcomes are not based on guessing or reading the screen. The result is handled by the game engine, and each round carries its own risk. The fast format simply makes the process quicker.",
+        "Les maths derrière le jeu restent importantes. Les résultats ne reposent pas sur la devinette ou la lecture de l'écran. Le moteur du jeu gère le résultat, et chaque manche a son propre risque. Le format rapide rend simplement le processus plus court."
+      ],
+      [
+        "That is why bankroll control matters here. Chicken Banana can feel light and easy, but fast rounds also mean the balance can move quickly. Set your stake before you start, avoid emotional clicks, and do not treat the game like something you can predict.",
+        "C'est pourquoi le contrôle de bankroll compte ici. Chicken Banana peut sembler léger et facile, mais des manches rapides signifient aussi que le solde peut bouger vite. Fixez la mise avant de commencer, évitez les clics émotionnels et ne traitez pas le jeu comme quelque chose de prévisible."
+      ],
+      [
+        "Multiplier Payout",
+        "Paiement multiplicateur"
+      ],
+      [
+        "Net Result on a $10 Bet",
+        "Résultat net sur une mise de $10"
+      ],
+      [
+        "Peeled Banana",
+        "Peeled Banana"
+      ],
+      [
+        "$1 Return (-$9.00)",
+        "Retour $1 (-$9.00)"
+      ],
+      [
+        "Fried Chicken",
+        "Fried Chicken"
+      ],
+      [
+        "$2 Return (-$8.00)",
+        "Retour $2 (-$8.00)"
+      ],
+      [
+        "Two Bananas",
+        "Two Bananas"
+      ],
+      [
+        "$5 Return (-$5.00)",
+        "Retour $5 (-$5.00)"
+      ],
+      [
+        "Small Chicken Bucket",
+        "Small Chicken Bucket"
+      ],
+      [
+        "$10 Return (Break Even)",
+        "Retour $10 (Break Even)"
+      ],
+      [
+        "Three Bananas",
+        "Three Bananas"
+      ],
+      [
+        "$15 Return (+$5.00)",
+        "Retour $15 (+$5.00)"
+      ],
+      [
+        "Large Chicken Bucket",
+        "Large Chicken Bucket"
+      ],
+      [
+        "$20 Return (+$10.00)",
+        "Retour $20 (+$10.00)"
+      ],
+      [
+        "Banana Cluster",
+        "Banana Cluster"
+      ],
+      [
+        "$40 Return (+$30.00)",
+        "Retour $40 (+$30.00)"
+      ],
+      [
+        "$100 Return (+$90.00)",
+        "Retour $100 (+$90.00)"
+      ],
+      [
+        "Chicken Banana has two main bonus triggers, and both work through scatter symbols. The idea is simple: find three matching scatters and the game moves into one of its bonus paths.",
+        "Chicken Banana a deux déclencheurs bonus principaux, tous deux via des symboles Scatter. L'idée est simple : trouver trois scatters identiques et le jeu passe dans l'une de ses voies bonus."
+      ],
+      [
+        "If you reveal 3 FS symbols, the game awards a random number of free rounds &mdash; from 1 to 10.",
+        "Si vous révélez 3 symboles FS, le jeu accorde un nombre aléatoire de Free Spins — de 1 à 10."
+      ],
+      [
+        "The nice part is that free spins can be extended. If 3 more FS symbols appear during an active free round, extra spins are added to the queue. So the feature does not always end after the first batch. Sometimes it can keep going, which makes the round more interesting.",
+        "Le plus intéressant, c'est que les Free Spins peuvent être prolongés. Si 3 symboles FS supplémentaires apparaissent pendant une manche gratuite active, des spins extra sont ajoutés à la file. La fonction ne se termine donc pas toujours après le premier lot. Parfois elle continue, ce qui rend la manche plus intéressante."
+      ],
+      [
+        "The Chest symbols open the jackpot-style bonus game. This is not a regular line-pay feature. Once the bonus starts, the game moves into a separate branch where the payout is based on fixed jackpot multipliers.",
+        "Les symboles Chest ouvrent le bonus de type jackpot. Ce n'est pas une fonction de ligne classique. Une fois le bonus lancé, le jeu passe dans une branche séparée où le paiement repose sur des multiplicateurs de jackpot fixes."
+      ],
+      [
+        "The Mega Jackpot is the top result here. If it lands, the round pays the full 1,000x multiplier, unless the game&rsquo;s max win cap cuts the payout.",
+        "Le Mega Jackpot est le résultat maximal ici. S'il tombe, la manche paie le multiplicateur complet de 1 000x, sauf si le plafond de gain max du jeu réduit le paiement."
+      ],
+      [
+        "This bonus setup makes Chicken Banana feel less like a normal spin-and-wait game. You are not only watching for small wins. You are looking for the right scatter setup that can open free spins or send the round straight into the jackpot feature. Keep the stake under control, especially if you are chasing bonus triggers.",
+        "Cette configuration bonus fait que Chicken Banana ressemble moins à un jeu spin-and-wait classique. Vous ne surveillez pas seulement de petits gains. Vous cherchez la bonne combinaison scatter qui peut ouvrir les Free Spins ou envoyer la manche directement dans la fonction jackpot. Gardez la mise sous contrôle, surtout si vous chassez les déclencheurs bonus."
+      ],
+      [
+        "Jackpot Tier",
+        "Niveau Jackpot"
+      ],
+      [
+        "Guaranteed Multiplier",
+        "Multiplicateur garanti"
+      ],
+      [
+        "Payout on $10 Bet",
+        "Paiement sur mise de $10"
+      ],
+      [
+        "What is Chicken Banana? Chicken Banana is a fast 5&times;4 instant-win game from InOut Games. It does not feel like a normal reel slot. Instead of waiting for reels to spin, you play on a 20-card grid and look for 3 matching symbols. The important detail: a match does not always mean profit. Some symbols can pay less than your stake, so the round can technically win and still leave you down.",
+        "Qu'est-ce que Chicken Banana ? Chicken Banana est un jeu instant-win 5&times;4 rapide d'InOut Games. Il ne ressemble pas à un slot à rouleaux normal. Au lieu d'attendre que les rouleaux tournent, vous jouez sur une grille de 20 cartes et cherchez 3 symboles identiques. Détail important : une correspondance ne signifie pas toujours un profit. Certains symboles peuvent payer moins que votre mise, donc la manche peut techniquement « gagner » tout en vous laissant en perte."
+      ],
+      [
+        "What RTP does Chicken Banana have? The game runs on 96% RTP. That is a long-term number, not a promise for one session. You can have a good run, a dry run, or something in between. RTP only starts making sense over a large number of rounds.",
+        "Quel RTP a Chicken Banana ? Le jeu tourne à 96 % RTP. C'est un chiffre à long terme, pas une promesse pour une session. Vous pouvez avoir une bonne série, une série sèche ou quelque chose entre les deux. RTP n'a du sens qu'après un grand nombre de manches."
+      ],
+      [
+        "Are there bonuses in Chicken Banana? Yes. There are two main bonus triggers: Free Spins through 3 FS symbols, and the chest bonus game through 3 Chest symbols.",
+        "Y a-t-il des bonus dans Chicken Banana ? Oui. Deux déclencheurs principaux : Free Spins via 3 symboles FS, et le bonus coffre via 3 symboles Chest."
+      ],
+      [
+        "How many free spins can I get? The feature starts with a random amount from 1 to 10 free rounds. It can also retrigger. If more FS symbols appear while free rounds are already active, the game adds extra spins instead of ending the feature too quickly.",
+        "Combien de Free Spins puis-je obtenir ? La fonction commence avec un montant aléatoire de 1 à 10 manches gratuites. Elle peut aussi se retrigger. Si d'autres symboles FS apparaissent pendant des manches gratuites actives, le jeu ajoute des spins au lieu de terminer la fonction trop vite."
+      ],
+      [
+        "Is there a demo version? Yes. Chicken Banana has a demo mode with a large virtual balance, usually 1,000,000 credits. Use it before real money. The game has a different structure from classic slots, so it is worth testing the card grid, payouts, bonus triggers, and jackpot feature first.",
+        "Y a-t-il une version Demo ? Oui. Chicken Banana a un mode Demo avec un grand solde virtuel, en général 1 000 000 crédits. Utilisez-le avant l'argent réel. Le jeu a une structure différente des slots classiques, donc il vaut la peine de tester la grille de cartes, les paiements, les déclencheurs bonus et la fonction jackpot."
+      ],
+      [
+        "How is Chicken Banana different from a slot? The biggest difference is the format. There are no traditional spinning reels or paylines. Chicken Banana uses a 20-card instant-win grid. Every round is built around finding a 3-symbol match.",
+        "En quoi Chicken Banana diffère-t-il d'un slot ? La plus grande différence est le format. Pas de rouleaux traditionnels ni de lignes de paiement. Chicken Banana utilise une grille instant-win de 20 cartes. Chaque manche repose sur la recherche d'une correspondance à 3 symboles."
+      ]
+    ],
+    "ar": [
+      [
+        "Chicken Banana",
+        "Chicken Banana"
+      ],
+      [
+        "Chicken Banana Features",
+        "ميزات Chicken Banana"
+      ],
+      [
+        "Chicken Banana Max Win &amp; Bet Range",
+        "Chicken Banana الحد الأقصى للفوز ونطاق الرهان"
+      ],
+      [
+        "Core Chicken Banana Game Mechanics",
+        "ميكانيكا Chicken Banana الأساسية"
+      ],
+      [
+        "Symbols and Value",
+        "الرموز والقيمة"
+      ],
+      [
+        "Bonus Activation &amp; Jackpot",
+        "تفعيل المكافأة وJackpot"
+      ],
+      [
+        "Free Spins &mdash; 3 FS Symbols",
+        "Free Spins — 3 رموز FS"
+      ],
+      [
+        "Bonus Game &mdash; 3 Chest Symbols",
+        "Bonus Game — 3 رموز Chest"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Banana instant-win game screenshot",
+        "لقطة شاشة لعبة Chicken Banana الفورية"
+      ],
+      [
+        "demo chicken banana",
+        "demo chicken banana"
+      ],
+      [
+        "screen shot1",
+        "screen shot1"
+      ],
+      [
+        "screenshot2",
+        "screenshot2"
+      ],
+      [
+        "Chicken Banana is one of the lighter games in the Chicken Road series. Even by the name, it feels less serious than the original. A chicken, bananas, fast rounds &mdash; the game clearly leans into a funny arcade mood rather than a classic casino style.",
+        "Chicken Banana من أخف ألعاب سلسلة Chicken Road. حتى من الاسم، تبدو أقل جدية من الأصل. دجاج، موز، جولات سريعة — اللعبة تميل بوضوح لأجواء أركيد مضحكة لا أسلوب كازينو كلاسيكي. Chicken Banana من أخف ألعاب سلسلة Chicken Road. حتى من الاسم، تبدو أقل جدية من الأصل. دجاج، موز، جولات سريعة — اللعبة تميل بوضوح لأجواء أركيد مضحكة لا أسلوب كازينو كلاسيكي، مع قرارات سريعة في كل جولة، مع أسلوب لعب سريع ومباشر."
+      ],
+      [
+        "This version may suit players who like simple games without too much pressure on the screen. No heavy slot layout, no long rules, no complicated symbols. The idea is closer to a quick mini-game: open it, understand the basics, and play a short round.",
+        "قد تناسب اللاعبين الذين يحبون ألعاباً بسيطة دون ضغط كبير على الشاشة. لا تخطيط سلوت ثقيل، لا قواعد طويلة، لا رموز معقدة. الفكرة أقرب للعبة مصغرة سريعة: افتح، افهم الأساسيات، العب جولة قصيرة."
+      ],
+      [
+        "We have outlined the complete technical breakdown and all core mechanics engineered into the game in the specification table below.",
+        "لخصنا التفصيل التقني الكامل وجميع الميكانيكا الأساسية للعبة في الجدول أدناه."
+      ],
+      [
+        "Game title",
+        "عنوان اللعبة"
+      ],
+      [
+        "Provider",
+        "المزوّد"
+      ],
+      [
+        "InOut Games",
+        "InOut Games"
+      ],
+      [
+        "Release date",
+        "تاريخ الإصدار"
+      ],
+      [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      [
+        "Category",
+        "الفئة"
+      ],
+      [
+        "Instant win / card-pick game",
+        "لعبة فوز فوري / اختيار بطاقات"
+      ],
+      [
+        "Max multiplier",
+        "أقصى مضاعف"
+      ],
+      [
+        "1,000x bet",
+        "1,000x الرهان"
+      ],
+      [
+        "Max cash win",
+        "أقصى فوز نقدي"
+      ],
+      [
+        "5&times;4, 20 cards",
+        "5&times;4، 20 بطاقة"
+      ],
+      [
+        "Technology",
+        "التقنية"
+      ],
+      [
+        "HTML5, JS",
+        "HTML5، JS"
+      ],
+      [
+        "Features",
+        "الميزات"
+      ],
+      [
+        "Guaranteed payout each round, bonus chests, fixed jackpots, free spins, provably fair verification",
+        "دفع مضمون كل جولة، صناديق مكافأة، jackpots ثابتة، Free Spins، تحقق Provably Fair"
+      ],
+      [
+        "Chicken Banana keeps the same general spirit of the series. It is bright, easy to start, and built for players who enjoy fast decisions. The game does not try to look premium or serious. It works because it feels casual and a bit silly, but still keeps the casino risk underneath.",
+        "Chicken Banana تحافظ على روح السلسلة العامة. مشرقة، سهلة البدء ومبنية للاعبين الذين يحبون القرارات السريعة. لا تحاول أن تبدو premium أو جادة. تعمل لأنها تبدو عفوية وسخيفة قليلاً، مع بقاء مخاطرة الكازينو تحتها."
+      ],
+      [
+        "For players who already like Chicken Road, Chicken Banana can be a fun side version. The same character and arcade feeling, but with a softer, more playful theme.",
+        "للاعبين الذين يحبون Chicken Road، Chicken Banana قد تكون نسخة جانبية ممتعة. نفس الشخصية وإحساس الأركيد، لكن بثيم أنعم وأكثر مرحاً."
+      ],
+      [
+        "Still, it is a good game for Chicken fans. If real money is involved, the risk is real too. Start with demo mode, check the mechanics, and only play with real balance if you understand what you are doing.",
+        "مع ذلك، لعبة جيدة لعشاق Chicken. إذا كان المال الحقيقي في اللعب، المخاطرة حقيقية. ابدأ Demo، راجع الميكانيكا، والعب برصيد حقيقي فقط إن فهمت ما تفعل."
+      ],
+      [
+        "Chicken Banana lets you play from very small stakes or go much higher. The bet range starts at $0.01 and goes up to $200 per round.",
+        "Chicken Banana تتيح اللعب برهانات صغيرة جداً أو أعلى بكثير. نطاق الرهان من $0.01 إلى $200 لكل جولة."
+      ],
+      [
+        "That is why big bets are not always better in Chicken Banana. You can risk more money, but the top payout is still locked by the cap.",
+        "لهذا الرهانات الكبيرة ليست دائماً أفضل في Chicken Banana. قد تخاطر أكثر، لكن أقصى دفع ما زال مقيداً بالسقف."
+      ],
+      [
+        "For players who care about clean multiplier value, bets up to $20 make more sense. Above that, the max win limit starts cutting the top result.",
+        "لمن يهتم بقيمة المضاعف النظيفة، الرهانات حتى $20 أنسب. فوق ذلك، يبدأ حد max win بقطع النتيجة القصوى."
+      ],
+      [
+        "Simple idea:",
+        "فكرة بسيطة:"
+      ],
+      [
+        "small bets let the full 1,000x work;",
+        "الرهانات الصغيرة تترك 1,000x الكامل يعمل؛"
+      ],
+      [
+        "$20 fits the cap perfectly;",
+        "$20 يناسب السقف تماماً؛"
+      ],
+      [
+        "bigger bets hit the ceiling too early.",
+        "الرهانات الأكبر تصطدم بالسقف مبكراً."
+      ],
+      [
+        "Chicken Banana does not play like a classic reel slot. There is no long spinning sequence where you just wait for the symbols to stop. The game is built around a faster pick-and-match style, so the result comes quickly and the round does not drag.",
+        "Chicken Banana لا تلعب كسلوت بكرات كلاسيكي. لا تسلسل دوران طويل تنتظر فيه توقف الرموز. اللعبة مبنية على أسلوب اختيار ومطابقة أسرع، فيأتي النتيجة بسرعة ولا تطول الجولة."
+      ],
+      [
+        "The idea is more direct: choose your stake, start the round, and let the game resolve the outcome almost instantly. This makes Chicken Banana feel closer to an instant casino game than an old-school slot.",
+        "الفكرة أكثر مباشرة: اختر الرهان، ابدأ الجولة، ودع اللعبة تحسم النتيجة تقريباً فوراً. Chicken Banana أقرب للعبة كازينو فورية من سلوت قديم."
+      ],
+      [
+        "The math behind the game is still important. Outcomes are not based on guessing or reading the screen. The result is handled by the game engine, and each round carries its own risk. The fast format simply makes the process quicker.",
+        "الحسابات وراء اللعبة مهمة. النتائج لا تعتمد على التخمين أو قراءة الشاشة. المحرك يتولى النتيجة، وكل جولة تحمل مخاطرتها. الشكل السريع يجعل العملية أقصر فقط. Chicken Banana لا تلعب كسلوت بكرات كلاسيكي. لا تسلسل دوران طويل تنتظر فيه توقف الرموز. اللعبة مبنية على أسلوب اختيار ومطابقة أسرع، فيأتي النتيجة بسرعة ولا تطول الجولة، وهذا يجعل الإيقاع مختلفاً عن السلوتات التقليدية، وهذا يختلف عن تجربة السلوت الكلاسيكي."
+      ],
+      [
+        "That is why bankroll control matters here. Chicken Banana can feel light and easy, but fast rounds also mean the balance can move quickly. Set your stake before you start, avoid emotional clicks, and do not treat the game like something you can predict.",
+        "لهذا التحكم بالرصيد مهم هنا. Chicken Banana قد تبدو خفيفة وسهلة، لكن الجولات السريعة تعني أن الرصيد قد يتحرك بسرعة. حدّد الرهان قبل البدء، تجنّب النقر العاطفي ولا تعامل اللعبة كشيء يمكن توقعه."
+      ],
+      [
+        "Multiplier Payout",
+        "دفع المضاعف"
+      ],
+      [
+        "Net Result on a $10 Bet",
+        "النتيجة الصافية على رهان $10، لذا إدارة الرصيد مهمة."
+      ],
+      [
+        "Peeled Banana",
+        "Peeled Banana"
+      ],
+      [
+        "$1 Return (-$9.00)",
+        "عائد $1 (-$9.00)"
+      ],
+      [
+        "Fried Chicken",
+        "Fried Chicken"
+      ],
+      [
+        "$2 Return (-$8.00)",
+        "عائد $2 (-$8.00)"
+      ],
+      [
+        "Two Bananas",
+        "Two Bananas"
+      ],
+      [
+        "$5 Return (-$5.00)",
+        "عائد $5 (-$5.00)"
+      ],
+      [
+        "Small Chicken Bucket",
+        "Small Chicken Bucket"
+      ],
+      [
+        "$10 Return (Break Even)",
+        "عائد $10 (تعادل)"
+      ],
+      [
+        "Three Bananas",
+        "Three Bananas"
+      ],
+      [
+        "$15 Return (+$5.00)",
+        "عائد $15 (+$5.00)"
+      ],
+      [
+        "Large Chicken Bucket",
+        "Large Chicken Bucket"
+      ],
+      [
+        "$20 Return (+$10.00)",
+        "عائد $20 (+$10.00)"
+      ],
+      [
+        "Banana Cluster",
+        "Banana Cluster"
+      ],
+      [
+        "$40 Return (+$30.00)",
+        "عائد $40 (+$30.00)"
+      ],
+      [
+        "$100 Return (+$90.00)",
+        "عائد $100 (+$90.00)"
+      ],
+      [
+        "Chicken Banana has two main bonus triggers, and both work through scatter symbols. The idea is simple: find three matching scatters and the game moves into one of its bonus paths.",
+        "Chicken Banana لها محفّزان مكافأة رئيسيان، كلاهما عبر رموز Scatter. الفكرة بسيطة: أوجد ثلاثة scatters متطابقة وتنتقل اللعبة لأحد مسارات المكافأة."
+      ],
+      [
+        "If you reveal 3 FS symbols, the game awards a random number of free rounds &mdash; from 1 to 10.",
+        "إذا كشفت 3 رموز FS، تمنح اللعبة عدداً عشوائياً من Free Spins — من 1 إلى 10."
+      ],
+      [
+        "The nice part is that free spins can be extended. If 3 more FS symbols appear during an active free round, extra spins are added to the queue. So the feature does not always end after the first batch. Sometimes it can keep going, which makes the round more interesting.",
+        "الجزء الجميل أن Free Spins قد تُمدّد. إذا ظهرت 3 رموز FS إضافية أثناء جولة مجانية نشطة، تُضاف دورات إضافية للطابور. الميزة لا تنتهي دائماً بعد الدفعة الأولى. أحياناً تستمر، مما يجعل الجولة أكثر إثارة."
+      ],
+      [
+        "The Chest symbols open the jackpot-style bonus game. This is not a regular line-pay feature. Once the bonus starts, the game moves into a separate branch where the payout is based on fixed jackpot multipliers.",
+        "رموز Chest تفتح مكافأة بأسلوب jackpot. ليست ميزة خطوط عادية. عند بدء المكافأة، تنتقل اللعبة لفرع منفصل حيث الدفع يعتمد على مضاعفات jackpot ثابتة."
+      ],
+      [
+        "The Mega Jackpot is the top result here. If it lands, the round pays the full 1,000x multiplier, unless the game&rsquo;s max win cap cuts the payout.",
+        "Mega Jackpot أعلى نتيجة هنا. إن هبط، تدفع الجولة المضاعف الكامل 1,000x، ما لم يقطع سقف max win الدفع."
+      ],
+      [
+        "This bonus setup makes Chicken Banana feel less like a normal spin-and-wait game. You are not only watching for small wins. You are looking for the right scatter setup that can open free spins or send the round straight into the jackpot feature. Keep the stake under control, especially if you are chasing bonus triggers.",
+        "هذا الإعداد يجعل Chicken Banana أقل شعوراً بلعبة spin-and-wait عادية. لا تراقب أرباحاً صغيرة فقط. تبحث عن تركيب scatter الصحيح الذي يفتح Free Spins أو يرسل الجولة مباشرة لميزة jackpot. حافظ على الرهان تحت السيطرة، خاصة إن كنت تطارد محفّزات المكافأة."
+      ],
+      [
+        "Jackpot Tier",
+        "مستوى Jackpot"
+      ],
+      [
+        "Guaranteed Multiplier",
+        "مضاعف مضمون"
+      ],
+      [
+        "Payout on $10 Bet",
+        "الدفع على رهان $10"
+      ],
+      [
+        "What is Chicken Banana? Chicken Banana is a fast 5&times;4 instant-win game from InOut Games. It does not feel like a normal reel slot. Instead of waiting for reels to spin, you play on a 20-card grid and look for 3 matching symbols. The important detail: a match does not always mean profit. Some symbols can pay less than your stake, so the round can technically win and still leave you down.",
+        "ما Chicken Banana؟ Chicken Banana لعبة فوز فوري 5&times;4 سريعة من InOut Games. لا تشبه سلوت البكرات العادي. بدلاً من انتظار الدوران، تلعب على شبكة 20 بطاقة وتبحث عن 3 رموز متطابقة. التفصيل المهم: التطابق لا يعني دائماً ربحاً. بعض الرموز قد تدفع أقل من رهانك، فقد «تفوز» الجولة تقنياً وتبقى في خسارة."
+      ],
+      [
+        "What RTP does Chicken Banana have? The game runs on 96% RTP. That is a long-term number, not a promise for one session. You can have a good run, a dry run, or something in between. RTP only starts making sense over a large number of rounds.",
+        "ما RTP لـ Chicken Banana؟ اللعبة تعمل على RTP 96%. رقم طويل الأمد، ليس وعداً لجلسة واحدة. قد تحصل على سلسلة جيدة أو جافة أو بينهما. RTP يبدأ معنىً بعد عدد كبير من الجولات. ما Chicken Banana؟ Chicken Banana لعبة فوز فوري 5&times;4 سريعة من InOut Games. لا تشبه سلوت البكرات العادي. بدلاً من انتظار الدوران، تلعب على شبكة 20 بطاقة وتبحث عن 3 رموز متطابقة. التفصيل المهم: التطابق لا يعني دalways ربحاً. بعض الرموز قد تدفع أقل من رهانك، فقد «تفوز» الجولة تقنياً وتبقى في خسارة، لذا راجع جدول الدفع قبل اللعب."
+      ],
+      [
+        "Are there bonuses in Chicken Banana? Yes. There are two main bonus triggers: Free Spins through 3 FS symbols, and the chest bonus game through 3 Chest symbols.",
+        "هل هناك مكافآت في Chicken Banana؟ نعم. محفّزان رئيسيان: Free Spins عبر 3 رموز FS، ومكbonus الصندوق عبر 3 رموز Chest."
+      ],
+      [
+        "How many free spins can I get? The feature starts with a random amount from 1 to 10 free rounds. It can also retrigger. If more FS symbols appear while free rounds are already active, the game adds extra spins instead of ending the feature too quickly.",
+        "كم Free Spin أحصل؟ تبدأ الميزة بعدد عشوائي من 1 إلى 10 جولات مجانية. قد تُعاد أيضاً. إذا ظهرت رموز FS إضافية أثناء جولات مجانية نشطة، تضيف اللعبة دورات بدلاً من إنهاء الميزة بسرعة."
+      ],
+      [
+        "Is there a demo version? Yes. Chicken Banana has a demo mode with a large virtual balance, usually 1,000,000 credits. Use it before real money. The game has a different structure from classic slots, so it is worth testing the card grid, payouts, bonus triggers, and jackpot feature first.",
+        "هل هناك Demo؟ نعم. Chicken Banana لها Demo برصيد افتراضي كبير، عادة 1,000,000 رصيد. استخدمها قبل المال الحقيقي. بنية اللعبة مختلفة عن السلوتات الكلاسيكية، فجرّب شبكة البطاقات والدفعات ومحفّزات المكافأة وميزة jackpot."
+      ],
+      [
+        "How is Chicken Banana different from a slot? The biggest difference is the format. There are no traditional spinning reels or paylines. Chicken Banana uses a 20-card instant-win grid. Every round is built around finding a 3-symbol match.",
+        "كيف تختلف Chicken Banana عن السلوت؟ أكبر فرق هو التنسيق. لا بكرات تقليدية ولا خطوط دفع. Chicken Banana تستخدم شبكة فوز فوري بـ20 بطاقة. كل جولة مبنية على إيجاد تطابق 3 رموز."
+      ]
+    ]
+  }
+}

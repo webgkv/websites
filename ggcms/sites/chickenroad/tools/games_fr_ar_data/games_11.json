@@ -1,0 +1,604 @@
+{
+  "meta": {
+    "fr": {
+      "name": "Chicken Shoot",
+      "title": "Chicken Shoot : jouer en argent réel",
+      "description": "Chicken Shoot : comment jouer, RTP, Provably Fair et meilleurs casinos pour Chicken Shoot en argent réel."
+    },
+    "ar": {
+      "name": "Chicken Shoot",
+      "title": "Chicken Shoot: العب بأموال حقيقية",
+      "description": "Chicken Shoot: طريقة اللعب، RTP، Provably Fair وأفضل الكازينوهات التي تقدم Chicken Shoot."
+    }
+  },
+  "pairs": {
+    "fr": [
+      [
+        "Chicken Shoot",
+        "Chicken Shoot"
+      ],
+      [
+        "Chicken Shoot Max Win",
+        "Chicken Shoot Gain max"
+      ],
+      [
+        "Select the Bet Before Each Round",
+        "Choisir la mise avant chaque manche"
+      ],
+      [
+        "Select Target",
+        "Choisir la cible"
+      ],
+      [
+        "Target Types",
+        "Types de cibles"
+      ],
+      [
+        "Chicken Shoot Online — Shooting and Rounds",
+        "Chicken Shoot en ligne — Tir et manches"
+      ],
+      [
+        "Manual Mode",
+        "Mode Manuel"
+      ],
+      [
+        "Auto Game",
+        "Auto Game"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Shoot online arcade game screenshot",
+        "Capture d'écran du jeu arcade Chicken Shoot en ligne"
+      ],
+      [
+        "Chicken Shoot gameplay with moving chicken targets",
+        "Gameplay Chicken Shoot avec cibles poulet en mouvement"
+      ],
+      [
+        "Chicken Shoot shooting action on the farm screen",
+        "Action de tir Chicken Shoot sur l'écran de la ferme"
+      ],
+      [
+        "Chicken Shoot is one of the more action-based games in the Chicken Road universe. It keeps the same funny chicken style, but the feeling is different from the original road-crossing game. Here the name already tells you what to expect: faster movement, shooting mechanics, and a more active arcade mood.",
+        "Chicken Shoot est l'un des jeux les plus orientés action de l'univers Chicken Road. Il garde le même style de poulet amusant, mais la sensation diffère du jeu original de traversée. Ici, le nom dit déjà quoi attendre : mouvement plus rapide, mécanique de tir et ambiance arcade plus active."
+      ],
+      [
+        "This version is likely to suit players who want something more dynamic. Not just moving step by step, not just waiting for the right cash out moment, but a game that feels closer to a small arcade shooter. The chicken theme stays, but the rhythm becomes sharper.",
+        "Cette version convient probablement aux joueurs qui veulent quelque chose de plus dynamique. Pas seulement avancer pas à pas, pas seulement attendre le bon moment de Cash Out, mais un jeu proche d'un petit shooter arcade. Le thème du poulet reste, mais le rythme devient plus vif."
+      ],
+      [
+        "Chicken Shoot feels like the noisy cousin of the Chicken Road series. Same chicken world, but the mood is not about calmly crossing the road anymore. Here everything sounds more active from the name alone — shooting, movement, faster reactions.",
+        "Chicken Shoot ressemble au cousin bruyant de la série Chicken Road. Même monde du poulet, mais l'ambiance n'est plus de traverser la route calmement. Ici, tout paraît plus actif rien que par le nom — tir, mouvement, réactions plus rapides."
+      ],
+      [
+        "This version is for players who want more action on the screen. Not just step, wait, cash out. The game is a small arcade shooter — it feels quicker and a bit more chaotic.",
+        "Cette version est pour les joueurs qui veulent plus d'action à l'écran. Pas seulement step, wait, cash out. Le jeu est un petit shooter arcade — plus rapide et un peu plus chaotique."
+      ],
+      [
+        "The rhythm is different — it is less about slow pressure and more about reaction. That makes it a good side game for players who already know Chicken Road and want something with a different tempo.",
+        "Le rythme est différent — moins de pression lente, plus de réaction. Cela en fait un bon jeu satellite pour ceux qui connaissent déjà Chicken Road et veulent un autre tempo."
+      ],
+      [
+        "What works here is the same thing that works across the whole series: the game does not look like a classic slot. No reels, no heavy symbol grid, no long explanation before you start. You open it and understand the idea pretty fast.",
+        "Ce qui fonctionne ici, c'est la même chose que dans toute la série : le jeu ne ressemble pas à un slot classique. Pas de rouleaux, pas de grille lourde, pas de longue explication avant de commencer. On l'ouvre et on comprend l'idée assez vite."
+      ],
+      [
+        "Try the shooter-style game to see how it works in practice — it is a completely different experience from the road-crossing format.",
+        "Essayez le jeu de tir pour voir comment il fonctionne en pratique — c'est une expérience complètement différente du format road-crossing."
+      ],
+      [
+        "Chicken Shoot can pay up to $20,000 in this build. Here one round is one shot. You pick the stake, choose a target, fire, and get the result almost immediately.",
+        "Chicken Shoot peut payer jusqu'à $20,000 dans cette build. Ici, une manche = un tir. Vous choisissez la mise, une cible, tirez et obtenez le résultat presque immédiatement."
+      ],
+      [
+        "That speed is what makes the game fun, but also risky. A few shots can happen very quickly, and if you do not watch the bet size, the total amount wagered grows faster than it seems.",
+        "Cette vitesse rend le jeu amusant, mais aussi risqué. Quelques tirs peuvent arriver très vite, et si vous ne surveillez pas la mise, le total misé grossit plus vite qu'il ne semble."
+      ],
+      [
+        "Before every shot, you choose how much you want to risk. In Chicken Shoot, 1 round = 1 shot, so the stake applies only to the next action.",
+        "Avant chaque tir, vous choisissez combien risquer. Dans Chicken Shoot, 1 manche = 1 tir, donc la mise s'applique seulement à l'action suivante."
+      ],
+      [
+        "The flow is simple:",
+        "Le flux est simple :"
+      ],
+      [
+        "set the bet;",
+        "fixer la mise ;"
+      ],
+      [
+        "choose a chicken target;",
+        "choisir une cible poulet ;"
+      ],
+      [
+        "take the shot;",
+        "tirer ;"
+      ],
+      [
+        "if the shot is successful, the payout uses that target's multiplier;",
+        "si le tir réussit, le paiement utilise le multiplicateur de cette cible ;"
+      ],
+      [
+        "if the shot fails, the round ends with no payout.",
+        "si le tir échoue, la manche se termine sans paiement."
+      ],
+      [
+        "This makes the game easy to read. You always know how much is on the line before pressing the button. No hidden sequence, no long spin cycle, no waiting for several stages to finish.",
+        "Le jeu est donc facile à lire. Vous savez toujours combien est en jeu avant d'appuyer. Pas de séquence cachée, pas de long cycle de spin, pas d'attente sur plusieurs étapes."
+      ],
+      [
+        "Still, that does not mean the game is safe. The rounds are short, and short rounds can make players click faster than they planned. Set the stake carefully before every shot.",
+        "Cela ne veut pas dire que le jeu est sûr. Les manches sont courtes, et des manches courtes peuvent pousser à cliquer plus vite que prévu. Fixez la mise avec soin avant chaque tir."
+      ],
+      [
+        "After setting the bet, you choose what to shoot. Chickens move around the screen, and each target can have its own multiplier.",
+        "Après avoir fixé la mise, vous choisissez quoi tirer. Les poulets bougent à l'écran, et chaque cible peut avoir son propre multiplicateur."
+      ],
+      [
+        "There are two ways to play:",
+        "Deux façons de jouer :"
+      ],
+      [
+        "Manual selection — tap the chicken you want to shoot.",
+        "Sélection manuelle — touchez le poulet à tirer."
+      ],
+      [
+        "Automatic selection — use the SPIN button or auto settings to shoot without picking every target yourself.",
+        "Sélection automatique — utilisez le bouton SPIN ou les réglages auto pour tirer sans choisir chaque cible."
+      ],
+      [
+        "Manual play gives more control over the rhythm. You can wait for a better target, ignore lower multipliers, or stop between shots. Auto mode is faster, but it can also make the balance move quickly if you are not careful.",
+        "Le jeu manuel donne plus de contrôle sur le rythme. Vous pouvez attendre une meilleure cible, ignorer les multiplicateurs bas ou vous arrêter entre les tirs. Le mode auto est plus rapide, mais peut aussi faire bouger le solde vite si vous n'êtes pas prudent."
+      ],
+      [
+        "The target you choose matters because the multiplier changes the possible return. Lower multipliers feel calmer. Higher multipliers look better, but usually come with a more volatile experience.",
+        "La cible choisie compte car le multiplicateur change le retour possible. Les multiplicateurs bas semblent plus calmes. Les plus hauts paraissent meilleurs, mais viennent souvent avec une expérience plus volatile."
+      ],
+      [
+        "Chicken Shoot has different chickens flying around the farm, and each one can carry a different multiplier.",
+        "Chicken Shoot a différents poulets volant autour de la ferme, chacun pouvant porter un multiplicateur différent."
+      ],
+      [
+        "The base multiplier range goes from 1.1x to 48x. With the progressive growth mechanic, a target value can rise even higher, up to 120x.",
+        "La plage de multiplicateur de base va de 1.1x à 48x. Avec la mécanique de croissance progressive, une valeur de cible peut monter encore plus haut, jusqu'à 120x."
+      ],
+      [
+        "Characteristic",
+        "Caractéristique"
+      ],
+      [
+        "Base Multiplier Range",
+        "Plage de multiplicateur de base"
+      ],
+      [
+        "1.1x to 48x",
+        "1.1x à 48x"
+      ],
+      [
+        "Maximum Growth Potential",
+        "Potentiel de croissance max"
+      ],
+      [
+        "Up to 120x",
+        "Jusqu'à 120x"
+      ],
+      [
+        "Screen Behavior",
+        "Comportement à l'écran"
+      ],
+      [
+        "Chickens move randomly",
+        "Les poulets bougent aléatoirement"
+      ],
+      [
+        "Selection Method",
+        "Méthode de sélection"
+      ],
+      [
+        "Manual tap or automatic targeting",
+        "Tap manuel ou ciblage automatique"
+      ],
+      [
+        "The player sees targets moving around the screen, but the payout depends on the chicken selected and the shot result. That is the core of the game: pick the target, take the risk, and see if the shot pays.",
+        "Le joueur voit les cibles bouger à l'écran, mais le paiement dépend du poulet sélectionné et du résultat du tir. C'est le cœur du jeu : choisir la cible, prendre le risque, voir si le tir paie."
+      ],
+      [
+        "The basic Chicken Shoot loop is very short: set a bet, wait for the targets, shoot, and get the result.",
+        "La boucle de base de Chicken Shoot est très courte : fixer la mise, attendre les cibles, tirer, obtenir le résultat."
+      ],
+      [
+        "If the shot is successful, the chicken explodes and the bet is multiplied by the target coefficient. If the shot fails, the round ends without a payout.",
+        "Si le tir réussit, le poulet explose et la mise est multipliée par le coefficient de la cible. Si le tir échoue, la manche se termine sans paiement."
+      ],
+      [
+        "Because every round is so quick, Chicken Shoot feels fast on casino platforms.",
+        "Comme chaque manche est si rapide, Chicken Shoot paraît vif sur les plateformes casino."
+      ],
+      [
+        "Manual mode gives you control over each shot. One tap means one round. You choose the target, the timing, and when to stop.",
+        "Le mode Manuel vous donne le contrôle de chaque tir. Un tap = une manche. Vous choisissez la cible, le timing et quand vous arrêter."
+      ],
+      [
+        "This mode is better for players who want to think between shots instead of letting the game run too fast.",
+        "Ce mode convient mieux aux joueurs qui veulent réfléchir entre les tirs au lieu de laisser le jeu courir trop vite."
+      ],
+      [
+        "Manual mode gives you space to:",
+        "Le mode Manuel laisse de l'espace pour :"
+      ],
+      [
+        "pick the exact chicken on the screen;",
+        "choisir le poulet exact à l'écran ;"
+      ],
+      [
+        "wait for a preferred multiplier;",
+        "attendre un multiplicateur préféré ;"
+      ],
+      [
+        "change the stake between rounds;",
+        "changer la mise entre les manches ;"
+      ],
+      [
+        "pause after a loss;",
+        "faire une pause après une perte ;"
+      ],
+      [
+        "avoid automatic rapid-fire play.",
+        "éviter le tir automatique rapide."
+      ],
+      [
+        "Auto Game is the faster option. After the settings are prepared, the game can keep firing automatically until the sequence ends or the player stops it.",
+        "Auto Game est l'option plus rapide. Une fois les réglages préparés, le jeu peut continuer à tirer automatiquement jusqu'à la fin de la séquence ou jusqu'à ce que le joueur l'arrête."
+      ],
+      [
+        "This mode is convenient, but it needs more control. Since Chicken Shoot rounds are already short, autoplay can run through many shots very quickly.",
+        "Ce mode est pratique, mais demande plus de contrôle. Comme les manches Chicken Shoot sont déjà courtes, l'autoplay peut enchaîner beaucoup de tirs très vite."
+      ],
+      [
+        "Before using Auto Game, check the stake, target settings, and any available limits. Do not turn it on just to see what happens. That is usually how players lose track of the session.",
+        "Avant d'utiliser Auto Game, vérifiez la mise, les réglages de cible et les limites disponibles. Ne l'activez pas juste pour voir. C'est souvent ainsi que les joueurs perdent le fil de la session."
+      ],
+      [
+        "Auto mode is best used with small bets and clear limits. If the balance starts moving too fast, stop it manually and return to slower play.",
+        "Le mode auto est mieux avec de petites mises et des limites claires. Si le solde bouge trop vite, arrêtez-le manuellement et revenez à un jeu plus lent."
+      ],
+      [
+        "Is Chicken Shoot a slot? Not really. Chicken Shoot feels more like an arcade instant game. There are no spinning reels or paylines. You set a bet, choose a chicken, shoot, and get the result right away.",
+        "Chicken Shoot est-il un slot ? Pas vraiment. Chicken Shoot ressemble plutôt à un jeu instant-win arcade. Pas de rouleaux qui tournent ni de lignes de paiement. Vous fixez la mise, choisissez un poulet, tirez et obtenez le résultat tout de suite."
+      ],
+      [
+        "How much can I bet? One shot is one round, so every time you fire, that exact stake amount is at risk. After the round ends, you can change the bet again.",
+        "Combien puis-je miser ? Un tir = une manche, donc à chaque fois que vous tirez, ce montant exact est en jeu. Après la manche, vous pouvez changer la mise."
+      ],
+      [
+        "Is Chicken Shoot multiplayer? No. Chicken Shoot is a single-player instant game.",
+        "Chicken Shoot est-il multijoueur ? Non. Chicken Shoot est un jeu instant-win solo."
+      ],
+      [
+        "Can I check if the round was fair? Yes. Chicken Shoot has Provably Fair tools inside the game. After a round, players can check the result through the verification system.",
+        "Puis-je vérifier si la manche était fair ? Oui. Chicken Shoot a des outils Provably Fair dans le jeu. Après une manche, les joueurs peuvent vérifier le résultat via le système de vérification."
+      ],
+      [
+        "Are there bonuses or jackpots? Chicken Shoot does not use classic slot bonuses or jackpot rounds. The game is built around shooting, target multipliers, Auto Game mode, and Progressive Win Growth.",
+        "Y a-t-il des bonus ou jackpots ? Chicken Shoot n'utilise pas les bonus classiques de slot ni les manches jackpot. Le jeu repose sur le tir, les multiplicateurs de cible, le mode Auto Game et la Progressive Win Growth."
+      ],
+      [
+        "How does Auto Game work? In Auto Game, you can select from 1 to 8 target types. After that, the game keeps shooting at the selected chickens until the preset number of shots is finished or you stop it manually.",
+        "Comment fonctionne Auto Game ? Dans Auto Game, vous pouvez sélectionner de 1 à 8 types de cibles. Ensuite, le jeu continue à tirer sur les poulets sélectionnés jusqu'à ce que le nombre prédéfini de tirs soit terminé ou que vous l'arrêtiez manuellement."
+      ],
+      [
+        "Does Chicken Shoot work on mobile? Yes. Chicken Shoot runs through HTML5 in modern mobile browsers and inside partnered casino apps.",
+        "Chicken Shoot fonctionne-t-il sur mobile ? Oui. Chicken Shoot tourne en HTML5 dans les navigateurs mobiles modernes et dans les apps casino partenaires."
+      ],
+      [
+        "Is Chicken Shoot good for long sessions? It is not really a long-session game. It is fast — one shot, instant result, next shot. That is good if you like quick gameplay, but it also means you should watch your balance carefully.",
+        "Chicken Shoot est-il bon pour de longues sessions ? Ce n'est pas vraiment un jeu de longue session. Il est rapide — un tir, résultat instantané, tir suivant. C'est bien si vous aimez le gameplay rapide, mais cela signifie aussi qu'il faut surveiller le solde."
+      ],
+      [
+        "What does adjusted variance mean? It means the game is not locked into one flat risk model. Chicken Shoot is built to give a flexible risk-and-reward feel, depending on target choice, multiplier, and play mode.",
+        "Que signifie adjusted variance ? Cela signifie que le jeu n'est pas bloqué sur un seul modèle de risque plat. Chicken Shoot est conçu pour offrir une sensation flexible de risque et récompense, selon le choix de cible, le multiplicateur et le mode de jeu."
+      ],
+      [
+        "Is Chicken Shoot connected to Chicken Road? Yes. Chicken Shoot is part of the Chicken Road universe from InOut Games, but uses shooter mechanics instead of the step-by-step road format.",
+        "Chicken Shoot est-il lié à Chicken Road ? Oui. Chicken Shoot fait partie de l'univers Chicken Road d'InOut Games, mais utilise des mécaniques de tir au lieu du format road step-by-step."
+      ]
+    ],
+    "ar": [
+      [
+        "Chicken Shoot",
+        "Chicken Shoot"
+      ],
+      [
+        "Chicken Shoot Max Win",
+        "Chicken Shoot الحد الأقصى للفوز"
+      ],
+      [
+        "Select the Bet Before Each Round",
+        "اختر الرهان قبل كل جولة"
+      ],
+      [
+        "Select Target",
+        "اختر الهدف"
+      ],
+      [
+        "Target Types",
+        "أنواع الأهداف"
+      ],
+      [
+        "Chicken Shoot Online — Shooting and Rounds",
+        "Chicken Shoot أونلاين — الرماية والجولات"
+      ],
+      [
+        "Manual Mode",
+        "الوضع اليدوي"
+      ],
+      [
+        "Auto Game",
+        "Auto Game"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Shoot online arcade game screenshot",
+        "لقطة شاشة لعبة Chicken Shoot الأركيد أونلاين"
+      ],
+      [
+        "Chicken Shoot gameplay with moving chicken targets",
+        "أسلوب لعب Chicken Shoot مع أهداف دجاج متحركة"
+      ],
+      [
+        "Chicken Shoot shooting action on the farm screen",
+        "حركة الرماية Chicken Shoot على شاشة المزرعة"
+      ],
+      [
+        "Chicken Shoot is one of the more action-based games in the Chicken Road universe. It keeps the same funny chicken style, but the feeling is different from the original road-crossing game. Here the name already tells you what to expect: faster movement, shooting mechanics, and a more active arcade mood.",
+        "Chicken Shoot من أكثر ألعاب عالم Chicken Road تركيزاً على الحركة. تحافظ على أسلوب الدجاج المضحك، لكن الإحساس مختلف عن لعبة عبور الطريق الأصلية. الاسم يخبرك ماذا تتوقع: حركة أسرع، ميكانيكا رماية وأجواء أركيد أكثر نشاطاً."
+      ],
+      [
+        "This version is likely to suit players who want something more dynamic. Not just moving step by step, not just waiting for the right cash out moment, but a game that feels closer to a small arcade shooter. The chicken theme stays, but the rhythm becomes sharper.",
+        "هذه النسخة تناسب على الأرجح اللاعبين الذين يريدون شيئاً أكثر ديناميكية. ليس فقط التقدم خطوة بخطوة، ليس فقط انتظار لحظة Cash Out المناسبة، بل لعبة أقرب ل shooter أركيد صغير. موضوع الدجاج يبقى، لكن الإيقاع يصبح أكثر حدة. Chicken Shoot من أكثر ألعاب عالم Chicken Road تركيزاً على الحركة. تحافظ على أسلوب الدجاج المضحك، لكن الإحساس مختلف عن لعبة عبور الطريق الأصلية. الاسم يخبرك ماذا تتوقع: حركة أسرع، ميكانيكا رماية وأجواء أركيد أكثر نشاطاً وردود فعل سريعة، مع تركيز على ردود الفعل السريعة."
+      ],
+      [
+        "Chicken Shoot feels like the noisy cousin of the Chicken Road series. Same chicken world, but the mood is not about calmly crossing the road anymore. Here everything sounds more active from the name alone — shooting, movement, faster reactions.",
+        "Chicken Shoot تشبه ابنة العم الصاخبة لسلسلة Chicken Road. نفس عالم الدجاج، لكن الأجواء لم تعد عن عبور الطريق بهدوء. هنا كل شيء يبدو أكثر نشاطاً من الاسم وحده — رماية، حركة، ردود فعل أسرع."
+      ],
+      [
+        "This version is for players who want more action on the screen. Not just step, wait, cash out. The game is a small arcade shooter — it feels quicker and a bit more chaotic.",
+        "هذه النسخة للاعبين الذين يريدون حركة أكثر على الشاشة. ليس فقط خطوة، انتظار، Cash Out. اللعبة shooter أركيد صغير — أسرع وأكثر فوضى قليلاً."
+      ],
+      [
+        "The rhythm is different — it is less about slow pressure and more about reaction. That makes it a good side game for players who already know Chicken Road and want something with a different tempo.",
+        "الإيقاع مختلف — أقل ضغطاً بطيئاً وأكثر اعتماداً على رد الفعل. لذلك لعبة جانبية جيدة لمن يعرف Chicken Road ويريد إيقاعاً مختلفاً."
+      ],
+      [
+        "What works here is the same thing that works across the whole series: the game does not look like a classic slot. No reels, no heavy symbol grid, no long explanation before you start. You open it and understand the idea pretty fast.",
+        "ما ينجح هنا هو ما ينجح في السلسلة كلها: اللعبة لا تبدو كسلوت كلاسيكي. لا بكرات، لا شبكة رموز ثقيلة، لا شرح طويل قبل البدء. تفتحها وتفهم الفكرة بسرعة."
+      ],
+      [
+        "Try the shooter-style game to see how it works in practice — it is a completely different experience from the road-crossing format.",
+        "جرّب لعبة الرماية لترى كيف تعمل عملياً — تجربة مختلفة تماماً عن تنسيق عبور الطريق."
+      ],
+      [
+        "Chicken Shoot can pay up to $20,000 in this build. Here one round is one shot. You pick the stake, choose a target, fire, and get the result almost immediately.",
+        "Chicken Shoot قد تدفع حتى $20,000 في هذه النسخة. هنا جولة واحدة = طلقة واحدة. تختار الرهان، هدفاً، تطلق النار وتحصل على النتيجة تقريباً فوراً."
+      ],
+      [
+        "That speed is what makes the game fun, but also risky. A few shots can happen very quickly, and if you do not watch the bet size, the total amount wagered grows faster than it seems.",
+        "هذه السرعة تجعل اللعبة ممتعة لكن أيضاً محفوفة بالمخاطرة. قد تحدث عدة طلقات بسرعة، وإن لم تراقب حجم الرهان، ينمو إجمالي المراهنة أسرع مما يبدو."
+      ],
+      [
+        "Before every shot, you choose how much you want to risk. In Chicken Shoot, 1 round = 1 shot, so the stake applies only to the next action.",
+        "قبل كل طلقة، تختار مقدار المخاطرة. في Chicken Shoot، جولة واحدة = طلقة واحدة، فيُطبَّق الرهان على الإجراء التالي فقط."
+      ],
+      [
+        "The flow is simple:",
+        "التدفق بسيط:"
+      ],
+      [
+        "set the bet;",
+        "حدّد الرهان؛"
+      ],
+      [
+        "choose a chicken target;",
+        "اختر هدف دجاج؛"
+      ],
+      [
+        "take the shot;",
+        "أطلق النار؛"
+      ],
+      [
+        "if the shot is successful, the payout uses that target's multiplier;",
+        "إذا نجحت الطلقة، يستخدم الدفع مضاعف ذلك الهدف؛"
+      ],
+      [
+        "if the shot fails, the round ends with no payout.",
+        "إذا فشلت، تنتهي الجولة بلا دفع. Chicken Shoot قد تدفع حتى $20,000 في هذه النسخة. هنا جولة واحدة = طلقة واحدة. تختار الرهان، هدفاً، تطلق النار وتحصل على النتيجة تقريباً فوراً، مع مخاطرة واضحة في كل طلقة، لذا راقب حجم الرهان في كل طلقة."
+      ],
+      [
+        "This makes the game easy to read. You always know how much is on the line before pressing the button. No hidden sequence, no long spin cycle, no waiting for several stages to finish.",
+        "اللعبة سهلة القراءة. تعرف دائماً ما على المحك قبل الضغط. لا تسلسل مخفي، لا دوران طويل، لا انتظار لعدة مراحل."
+      ],
+      [
+        "Still, that does not mean the game is safe. The rounds are short, and short rounds can make players click faster than they planned. Set the stake carefully before every shot.",
+        "ذلك لا يعني أن اللعبة آمنة. الجولات قصيرة، والجولات القصيرة قد تجعلك تنقر أسرع مما خططت. حدّد الرهان بعناية قبل كل طلقة."
+      ],
+      [
+        "After setting the bet, you choose what to shoot. Chickens move around the screen, and each target can have its own multiplier.",
+        "بعد تحديد الرهان، تختار ما تطلق عليه النار. الدجاج يتحرك على الشاشة، وكل هدف قد يحمل مضاعفاً خاصاً."
+      ],
+      [
+        "There are two ways to play:",
+        "طريقتان للعب:"
+      ],
+      [
+        "Manual selection — tap the chicken you want to shoot.",
+        "اختيار يدوي — المس الدجاج الذي تريد إطلاق النار عليه."
+      ],
+      [
+        "Automatic selection — use the SPIN button or auto settings to shoot without picking every target yourself.",
+        "اختيار تلقائي — استخدم زر SPIN أو إعدادات auto للرماية دون اختيار كل هدف."
+      ],
+      [
+        "Manual play gives more control over the rhythm. You can wait for a better target, ignore lower multipliers, or stop between shots. Auto mode is faster, but it can also make the balance move quickly if you are not careful.",
+        "اللعب اليدوي يعطي تحكماً أكبر بالإيقاع. قد تنتظر هدفاً أفضل، تتجاهل مضاعفات أقل أو تتوقف بين الطلقات. الوضع التلقائي أسرع لكن قد يحرك الرصيد بسرعة إن لم تكن حذراً."
+      ],
+      [
+        "The target you choose matters because the multiplier changes the possible return. Lower multipliers feel calmer. Higher multipliers look better, but usually come with a more volatile experience.",
+        "الهدف الذي تختاره مهم لأن المضاعف يغيّر العائد المحتمل. المضاعفات الأقل أهدأ. الأعلى تبدو أفضل لكن غالباً مع تجربة أكثر تقلباً."
+      ],
+      [
+        "Chicken Shoot has different chickens flying around the farm, and each one can carry a different multiplier.",
+        "Chicken Shoot فيها دجاج مختلف يطير حول المزرعة، وكل واحد قد يحمل مضاعفاً مختلفاً."
+      ],
+      [
+        "The base multiplier range goes from 1.1x to 48x. With the progressive growth mechanic, a target value can rise even higher, up to 120x.",
+        "نطاق المضاعف الأساسي من 1.1x إلى 48x. مع ميكانيكا النمو التدريجي، قد يرتفع قيمة الهدف أكثر، حتى 120x."
+      ],
+      [
+        "Characteristic",
+        "الخاصية"
+      ],
+      [
+        "Base Multiplier Range",
+        "نطاق المضاعف الأساسي"
+      ],
+      [
+        "1.1x to 48x",
+        "1.1x إلى 48x"
+      ],
+      [
+        "Maximum Growth Potential",
+        "أقصى إمكانية نمو"
+      ],
+      [
+        "Up to 120x",
+        "حتى 120x"
+      ],
+      [
+        "Screen Behavior",
+        "سلوك الشاشة"
+      ],
+      [
+        "Chickens move randomly",
+        "الدجاج يتحرك عشوائياً"
+      ],
+      [
+        "Selection Method",
+        "طريقة الاختيار"
+      ],
+      [
+        "Manual tap or automatic targeting",
+        "لمس يدوي أو استهداف تلقائي"
+      ],
+      [
+        "The player sees targets moving around the screen, but the payout depends on the chicken selected and the shot result. That is the core of the game: pick the target, take the risk, and see if the shot pays.",
+        "يرى اللاعب الأهداف تتحرك، لكن الدفع يعتمد على الدجاج المختار ونتيجة الطلقة. هذا جوهر اللعبة: اختر الهدف، خذ المخاطرة، وانظر إن كانت الطلقة تدفع."
+      ],
+      [
+        "The basic Chicken Shoot loop is very short: set a bet, wait for the targets, shoot, and get the result.",
+        "حلقة Chicken Shoot الأساسية قصيرة جداً: حدّد الرهان، انتظر الأهداف، أطلق النار، احصل على النتيجة."
+      ],
+      [
+        "If the shot is successful, the chicken explodes and the bet is multiplied by the target coefficient. If the shot fails, the round ends without a payout.",
+        "إذا نجحت الطلقة، ينفجر الدجاج ويُضرب الرهان بمعامل الهدف. إذا فشلت، تنتهي الجولة بلا دفع. حلقة Chicken Shoot الأساسية قصيرة جداً: حدّد الرهان، انتظر الأهداف، أطلق النار، احصل على النتيجة. هذا الإيقاع السريع يجعل اللعبة مناسبة لجلسات قصيرة، لكنه يتطلب أيضاً مراقبة الرصيد باستمرار، مع ضرورة ضبط الإيقاع."
+      ],
+      [
+        "Because every round is so quick, Chicken Shoot feels fast on casino platforms.",
+        "بما أن كل جولة سريعة جداً، Chicken Shoot تبدو سريعة على منصات الكازينو."
+      ],
+      [
+        "Manual mode gives you control over each shot. One tap means one round. You choose the target, the timing, and when to stop.",
+        "الوضع اليدوي يعطيك تحكماً بكل طلقة. لمسة واحدة = جولة واحدة. تختار الهدف والتوقيت ومتى تتوقف."
+      ],
+      [
+        "This mode is better for players who want to think between shots instead of letting the game run too fast.",
+        "هذا الوضع أفضل لمن يريد التفكير بين الطلقات بدلاً من ترك اللعبة تجري بسرعة."
+      ],
+      [
+        "Manual mode gives you space to:",
+        "الوضع اليدوي يتيح:"
+      ],
+      [
+        "pick the exact chicken on the screen;",
+        "اختيار الدجاجة المحددة على الشاشة؛"
+      ],
+      [
+        "wait for a preferred multiplier;",
+        "انتظار مضاعف مفضل؛"
+      ],
+      [
+        "change the stake between rounds;",
+        "تغيير الرهان بين الجولات؛"
+      ],
+      [
+        "pause after a loss;",
+        "التوقف بعد خسارة؛"
+      ],
+      [
+        "avoid automatic rapid-fire play.",
+        "تجنّب الرماية التلقائية السريعة."
+      ],
+      [
+        "Auto Game is the faster option. After the settings are prepared, the game can keep firing automatically until the sequence ends or the player stops it.",
+        "Auto Game الخيار الأسرع. بعد إعداد الإعدادات، قد تستمر اللعبة بالرماية تلقائياً حتى تنتهي التسلسلة أو يوقفها اللاعب."
+      ],
+      [
+        "This mode is convenient, but it needs more control. Since Chicken Shoot rounds are already short, autoplay can run through many shots very quickly.",
+        "هذا الوضع مريح لكنه يحتاج تحكماً أكبر. بما أن جولات Chicken Shoot قصيرة أصلاً، قد يمر autoplay بعدة طلقات بسرعة."
+      ],
+      [
+        "Before using Auto Game, check the stake, target settings, and any available limits. Do not turn it on just to see what happens. That is usually how players lose track of the session.",
+        "قبل Auto Game، تحقق من الرهان وإعدادات الهدف وأي حدود متاحة. لا تشغّله فقط لترى. غالباً هكذا يفقد اللاعبون السيطرة على الجلسة."
+      ],
+      [
+        "Auto mode is best used with small bets and clear limits. If the balance starts moving too fast, stop it manually and return to slower play.",
+        "الوضع التلقائي أفضل برهانات صغيرة وحدود واضحة. إن بدأ الرصيد يتحرك بسرعة، أوقفه يدوياً وعد للعب الأبطأ."
+      ],
+      [
+        "Is Chicken Shoot a slot? Not really. Chicken Shoot feels more like an arcade instant game. There are no spinning reels or paylines. You set a bet, choose a chicken, shoot, and get the result right away.",
+        "هل Chicken Shoot سلوت؟ ليس حقاً. Chicken Shoot أقرب للعبة فوز فوري أركيد. لا بكرات دوارة ولا خطوط دفع. تحدّد الرهان، تختار دجاجة، تطلق النار وتحصل على النتيجة فوراً."
+      ],
+      [
+        "How much can I bet? One shot is one round, so every time you fire, that exact stake amount is at risk. After the round ends, you can change the bet again.",
+        "كم يمكن أن أراهن؟ طلقة واحدة = جولة واحدة، فكل مرة تطلق فيها النار، هذا المبلغ بالضبط على المحك. بعد الجولة يمكنك تغيير الرهان."
+      ],
+      [
+        "Is Chicken Shoot multiplayer? No. Chicken Shoot is a single-player instant game.",
+        "هل Chicken Shoot متعددة اللاعبين؟ لا. Chicken Shoot لعبة فوز فوري لاعب واحد، مع أدوات Provably Fair للتحقق."
+      ],
+      [
+        "Can I check if the round was fair? Yes. Chicken Shoot has Provably Fair tools inside the game. After a round, players can check the result through the verification system.",
+        "هل يمكنني التحقق من عدالة الجولة؟ نعم. Chicken Shoot لديها أدوات Provably Fair داخل اللعبة. بعد الجولة، يمكن للاعبين التحقق من النتيجة عبر نظام التحقق."
+      ],
+      [
+        "Are there bonuses or jackpots? Chicken Shoot does not use classic slot bonuses or jackpot rounds. The game is built around shooting, target multipliers, Auto Game mode, and Progressive Win Growth.",
+        "هل هناك مكافآت أو jackpots؟ Chicken Shoot لا تستخدم مكافآت سلوت كلاسيكية ولا جولات jackpot. اللعبة مبنية على الرماية ومضاعفات الأهداف ووضع Auto Game وProgressive Win Growth."
+      ],
+      [
+        "How does Auto Game work? In Auto Game, you can select from 1 to 8 target types. After that, the game keeps shooting at the selected chickens until the preset number of shots is finished or you stop it manually.",
+        "كيف يعمل Auto Game؟ في Auto Game، يمكنك اختيار من 1 إلى 8 أنواع أهداف. بعد ذلك، تستمر اللعبة بالرماية على الدجاج المختار حتى ينتهي عدد الطلقات المحدد أو توقفها يدوياً."
+      ],
+      [
+        "Does Chicken Shoot work on mobile? Yes. Chicken Shoot runs through HTML5 in modern mobile browsers and inside partnered casino apps.",
+        "هل Chicken Shoot تعمل على الهاتف؟ نعم. Chicken Shoot تعمل عبر HTML5 في متصفحات الهاتف الحديثة وتطبيقات الكازينو الشريكة."
+      ],
+      [
+        "Is Chicken Shoot good for long sessions? It is not really a long-session game. It is fast — one shot, instant result, next shot. That is good if you like quick gameplay, but it also means you should watch your balance carefully.",
+        "هل Chicken Shoot جيدة لجلسات طويلة؟ ليست لعبة جلسات طويلة حقاً. سريعة — طلقة، نتيجة فورية، طلقة تالية. جيد إن أحببت اللعب السريع، لكن ذلك يعني أيضاً مراقبة الرصيد بعناية."
+      ],
+      [
+        "What does adjusted variance mean? It means the game is not locked into one flat risk model. Chicken Shoot is built to give a flexible risk-and-reward feel, depending on target choice, multiplier, and play mode.",
+        "ماذا يعني adjusted variance؟ يعني أن اللعبة ليست مقفلة على نموذج مخاطرة واحد مسطح. Chicken Shoot مبنية لإعطاء إحساس مرن بالمخاطرة والمكافأة، حسب اختيار الهدف والمضاعف وطريقة اللعب."
+      ],
+      [
+        "Is Chicken Shoot connected to Chicken Road? Yes. Chicken Shoot is part of the Chicken Road universe from InOut Games, but uses shooter mechanics instead of the step-by-step road format.",
+        "هل Chicken Shoot مرتبطة بـ Chicken Road؟ نعم. Chicken Shoot جزء من عالم Chicken Road من InOut Games، لكنها تستخدم ميكانيكا رماية بدلاً من تنسيق الطريق خطوة بخطوة. هل Chicken Shoot جيدة لجلسات طويلة؟ ليست لعبة جلسات طويلة حقاً. سريعة — طلقة، نتيجة فورية، طلقة تالية. جيد إن أحببت اللعب السريع، لكن ذلك يعني أيضاً مراقبة الرصيد بعناية وتجنّب اللعب العشوائي السريع، وحدّد حدوداً واضحة للجلسة."
+      ]
+    ]
+  }
+}
