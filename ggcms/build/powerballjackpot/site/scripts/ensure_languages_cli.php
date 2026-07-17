@@ -18,6 +18,7 @@ foreach (array('HTTP_HOST', 'REMOTE_ADDR', 'SERVER_ADDR') as $k) {
 
 require_once ROOT_DIR . 'config/config.php';
 require_once ROOT_DIR . 'functions/mysql_func.php';
+require_once ROOT_DIR . 'functions/site_seo.php';
 
 $ref_path = ROOT_DIR . 'files/reference/languages_addon.json';
 if (!is_file($ref_path)) {
@@ -78,6 +79,10 @@ function ensure_language_row(array $row) {
 				mysql_fn('update', 'variables', array('id' => (int) $row_ts['id'], 'value' => json_encode($dec, JSON_UNESCAPED_UNICODE)));
 			}
 		}
+	}
+
+	if (function_exists('site_seo_sitemap_languages_ensure_ids')) {
+		site_seo_sitemap_languages_ensure_ids(array($id));
 	}
 
 	return array('ok' => true, 'message' => "$action language $name ($url, id=$id)");

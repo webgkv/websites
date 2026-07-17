@@ -334,6 +334,94 @@ function site_seo_sitemap_whitelist_entries($base, array $lang) {
 }
 
 /**
+ * Languages included in sitemap rebuild (cron/tasks/sitemap_build.php).
+ *
+ * Uses variables.sitemap_languages when set, but always unions
+ * translation_settings.enabled_lang_ids so newly added locales (e.g. sw/ln)
+ * appear without a manual SEO → Sitemap save.
+ *
+ * @return list<array{id:int|string,url:string}>
+ */
+function site_seo_sitemap_language_rows() {
+	$languages = mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
+	if (!$languages) {
+		return array(array('id' => 0, 'url' => ''));
+	}
+
+	$sitemap_lang_ids = array();
+	$enabled_lang_ids = array();
+	if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
+		$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'sitemap_languages' LIMIT 1", 'row');
+		if ($row && $row['value'] !== '') {
+			$dec = json_decode($row['value'], true);
+			if (is_array($dec) && count($dec) > 0) {
+				$sitemap_lang_ids = array_values(array_filter(array_map('intval', $dec)));
+			}
+		}
+		$row_ts = mysql_select("SELECT value FROM `variables` WHERE `key` = 'translation_settings' LIMIT 1", 'row');
+		if ($row_ts && $row_ts['value'] !== '') {
+			$ts = json_decode($row_ts['value'], true);
+			if (is_array($ts) && !empty($ts['enabled_lang_ids']) && is_array($ts['enabled_lang_ids'])) {
+				$enabled_lang_ids = array_values(array_filter(array_map('intval', $ts['enabled_lang_ids'])));
+			}
+		}
+	}
+
+	if (!empty($enabled_lang_ids)) {
+		if (!empty($sitemap_lang_ids)) {
+			$sitemap_lang_ids = array_values(array_unique(array_merge($sitemap_lang_ids, $enabled_lang_ids)));
+		}
+		$set = array_flip($enabled_lang_ids);
+		$languages = array_values(array_filter($languages, function ($l) use ($set) {
+			return isset($set[(int) $l['id']]);
+		}));
+	} elseif (!empty($sitemap_lang_ids)) {
+		$lang_ids_set = array_flip($sitemap_lang_ids);
+		$languages = array_values(array_filter($languages, function ($l) use ($lang_ids_set) {
+			return isset($lang_ids_set[(int) $l['id']]);
+		}));
+	}
+
+	if (empty($languages)) {
+		return array(array('id' => 0, 'url' => ''));
+	}
+	return $languages;
+}
+
+/**
+ * Append language ids to variables.sitemap_languages when that list is explicit.
+ *
+ * @param list<int> $lang_ids
+ */
+function site_seo_sitemap_languages_ensure_ids(array $lang_ids) {
+	$lang_ids = array_values(array_unique(array_filter(array_map('intval', $lang_ids))));
+	if (empty($lang_ids) || @mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') <= 0) {
+		return;
+	}
+	$row = mysql_select("SELECT id, value FROM `variables` WHERE `key` = 'sitemap_languages' LIMIT 1", 'row');
+	$current = array();
+	if ($row && $row['value'] !== '') {
+		$dec = json_decode($row['value'], true);
+		if (is_array($dec) && count($dec) > 0) {
+			$current = array_values(array_filter(array_map('intval', $dec)));
+		}
+	}
+	if (empty($current)) {
+		return;
+	}
+	$merged = array_values(array_unique(array_merge($current, $lang_ids)));
+	if ($merged === $current) {
+		return;
+	}
+	$json = json_encode($merged, JSON_UNESCAPED_UNICODE);
+	if ($row && !empty($row['id'])) {
+		mysql_fn('update', 'variables', array('value' => $json), " AND `key` = 'sitemap_languages' ");
+	} else {
+		mysql_fn('insert', 'variables', array('key' => 'sitemap_languages', 'value' => $json));
+	}
+}
+
+/**
  * Active search-indexing restrictions for admin UI (whitelist, blog de-index, …).
  *
  * @return list<array{id:string,label:string,detail:string}>

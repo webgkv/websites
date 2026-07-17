@@ -55,6 +55,17 @@ if ($variables_exists) {
 $all_languages = mysql_select("SELECT id, url, name FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
 if (!$all_languages) $all_languages = array();
 
+$translation_enabled_lang_ids = array();
+if ($variables_exists) {
+	$row_ts = mysql_select("SELECT value FROM `variables` WHERE `key` = 'translation_settings' LIMIT 1", 'row');
+	if ($row_ts && $row_ts['value'] !== '') {
+		$ts = json_decode($row_ts['value'], true);
+		if (is_array($ts) && !empty($ts['enabled_lang_ids']) && is_array($ts['enabled_lang_ids'])) {
+			$translation_enabled_lang_ids = array_values(array_filter(array_map('intval', $ts['enabled_lang_ids'])));
+		}
+	}
+}
+
 $saved = false;
 if ($variables_exists && isset($_POST['sitemap_include']) && is_array($_POST['sitemap_include'])) {
 	$new = array();
@@ -190,7 +201,7 @@ if ($variables_exists) {
 	$use_all_langs = (count($sitemap_lang_ids) === 0);
 	foreach ($all_languages as $l) {
 		$lid = (int)$l['id'];
-		$checked = $use_all_langs || in_array($lid, $sitemap_lang_ids, true);
+		$checked = $use_all_langs || in_array($lid, $sitemap_lang_ids, true) || in_array($lid, $translation_enabled_lang_ids, true);
 		$label = htmlspecialchars($l['name'] . ($l['url'] !== '' ? ' (' . $l['url'] . ')' : ''));
 		$content .= '<div class="col-md-4 col-lg-3 mb-2"><div class="form-check">';
 		$content .= '<input type="checkbox" class="form-check-input" name="sitemap_languages[]" id="lang_' . $lid . '" value="' . $lid . '"' . ($checked ? ' checked' : '') . '>';

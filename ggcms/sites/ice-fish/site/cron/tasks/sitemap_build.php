@@ -68,42 +68,9 @@ if (function_exists('site_seo_sitemap_apply_index_rules_to_include')) {
 	$include = site_seo_sitemap_apply_index_rules_to_include($include);
 }
 
-$languages = mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows');
-if (!$languages) {
-	$languages = array(array('id' => 0, 'url' => ''));
-}
-$sitemap_lang_ids = array();
-if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
-	$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'sitemap_languages' LIMIT 1", 'row');
-	if ($row && $row['value'] !== '') {
-		$dec = json_decode($row['value'], true);
-		if (is_array($dec) && count($dec) > 0) {
-			$sitemap_lang_ids = array_map('intval', $dec);
-			$lang_ids_set = array_flip($sitemap_lang_ids);
-			$languages = array_filter($languages, function ($l) use ($lang_ids_set) {
-				return isset($lang_ids_set[(int)$l['id']]);
-			});
-			$languages = array_values($languages);
-		}
-	}
-	$row_ts = mysql_select("SELECT value FROM `variables` WHERE `key` = 'translation_settings' LIMIT 1", 'row');
-	if ($row_ts && $row_ts['value'] !== '') {
-		$ts = json_decode($row_ts['value'], true);
-		if (is_array($ts) && !empty($ts['enabled_lang_ids']) && is_array($ts['enabled_lang_ids'])) {
-			$enabled = array_values(array_filter(array_map('intval', $ts['enabled_lang_ids'])));
-			if (!empty($enabled)) {
-				$set = array_flip($enabled);
-				$languages = array_filter($languages, function ($l) use ($set) {
-					return isset($set[(int)$l['id']]);
-				});
-				$languages = array_values($languages);
-			}
-		}
-	}
-}
-if (empty($languages)) {
-	$languages = array(array('id' => 0, 'url' => ''));
-}
+$languages = function_exists('site_seo_sitemap_language_rows')
+	? site_seo_sitemap_language_rows()
+	: (mysql_select("SELECT id, url FROM languages WHERE display=1 ORDER BY rank DESC", 'rows') ?: array(array('id' => 0, 'url' => '')));
 
 $default_lang = function_exists('lang') ? lang() : null;
 $default_lang_id = $default_lang ? (int)$default_lang['id'] : null;
