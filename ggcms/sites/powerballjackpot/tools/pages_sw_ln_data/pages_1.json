@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Nyumbani",
+      "title": "PowerBall Jackpot: Jackpots Hai, Matokeo na Ukaguzi wa Nambari",
+      "description": "Linganisha jackpots hai za PowerBall, Mega Millions na EuroMillions. Nambari za hivi karibuni, kichagua bahati na ukaguzi wa tiketi."
+    },
+    "ln": {
+      "name": "Liboso",
+      "title": "PowerBall Jackpot: Jackpot na Temps Réel, Resultat mpe Vérification",
+      "description": "Linganisa ba jackpot ya PowerBall, Mega Millions mpe EuroMillions na temps réel. Ba numéro ya sika, sélecteur chance mpe vérification ya ticket."
+    }
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Predictor",
+      "title": "Aviator Predictor: APK, iOS, RNG na Kwa Nini Haifanyi Kazi",
+      "description": "App za predictor za Aviator: yanayodai, kwa nini RNG inazuia utabiri halisi, hatari za APK na iOS, na njia salama zaidi."
+    },
+    "ln": {
+      "name": "Prédicteur",
+      "title": "Prédicteur Aviator: APK, iOS, RNG mpe Mpo na Nini E Salaka Te",
+      "description": "Ba app prédicteur Aviator: oyo e prétendre, mpo na nini RNG e bloquer prédiction solo, ba risques APK mpe iOS, mpe ba nzela plus sûres."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Aviator Predictor: APK, iOS, RNG and Why It Still Does Not Work",
+        "Aviator Predictor: APK, iOS, RNG na Kwa Nini Bado Haifanyi Kazi"
+      ],
+      [
+        "Aviator Predictor::",
+        "Aviator Predictor:"
+      ],
+      [
+        "APK, iOS, RNG and Why It Still Does Not Work",
+        "APK, iOS, RNG na Kwa Nini Bado Haifanyi Kazi"
+      ],
+      [
+        "How Aviator \"Prediction\" Is Supposed to Work",
+        "Utabiri wa Aviator Unapaswa Kufanya Kazi Vipi"
+      ],
+      [
+        "Downloading Aviator Predictor on Android and iOS",
+        "Kupakua Aviator Predictor kwenye Android na iOS"
+      ],
+      [
+        "Get the predictor on Android",
+        "Pata predictor kwenye Android"
+      ],
+      [
+        "Get the predictor on iPhone or iPad",
+        "Pata predictor kwenye iPhone au iPad"
+      ],
+      [
+        "Logging into the predictor bot",
+        "Kuingia kwenye bot ya predictor"
+      ],
+      [
+        "Using predictor hints during the game",
+        "Kutumia vidokezo vya predictor wakati wa mchezo"
+      ],
+      [
+        "Why Aviator Can't Be Predicted (Including by AI)",
+        "Kwa Nini Aviator Haiwezi Kutabiriwa (Hata na AI)"
+      ],
+      [
+        "Predictors and Online Casinos",
+        "Predictor na Kasino za Mtandaoni"
+      ],
+      [
+        "1xBet Aviator predictor",
+        "Predictor ya Aviator ya 1xBet"
+      ],
+      [
+        "1Win Aviator predictor",
+        "Predictor ya Aviator ya 1Win"
+      ],
+      [
+        "Melbet Aviator predictor",
+        "Predictor ya Aviator ya Melbet"
+      ],
+      [
+        "MSport and Hollywood Bet",
+        "MSport na Hollywood Bet"
+      ],
+      [
+        "Betway and Betplay",
+        "Betway na Betplay"
+      ],
+      [
+        "Different Versions of Predictor Software",
+        "Matoleo Tofauti ya Programu ya Predictor"
+      ],
+      [
+        "Aviator Predictor v4.0",
+        "Aviator Predictor v4.0"
+      ],
+      [
+        "Aviator Predictor v12.0.5",
+        "Aviator Predictor v12.0.5"
+      ],
+      [
+        "Premium Aviator bot predictor",
+        "Bot ya predictor ya Aviator premium"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Aviator predictor claims and crash game interface",
+        "Madai ya predictor ya Aviator na kiolesura cha crash game"
+      ],
+      [
+        "Example of an Aviator predictor app interface",
+        "Mfano wa kiolesura cha app ya predictor ya Aviator"
+      ],
+      [
+        "Aviator predictor APK on Android device",
+        "APK ya predictor ya Aviator kwenye kifaa cha Android"
+      ],
+      [
+        "Aviator predictor app concept on iPhone and iPad",
+        "Dhana ya app ya predictor ya Aviator kwenye iPhone na iPad"
+      ],
+      [
+        "Aviator predictor claims compared with AI and RNG limits",
+        "Madai ya predictor ya Aviator ukilinganisha na mipaka ya AI na RNG"
+      ],
+      [
+        "Predictor offers marketed around popular Aviator casino brands",
+        "Matoleo ya predictor yanayouzwa karibu na chapa maarufu za kasino za Aviator"
+      ],
+      [
+        "Predictor apps sell a shortcut: they say they read patterns, guess the next crash, or label a multiplier as “safe” before you cash out. That pitch keeps people hunting for APKs, iPhone sideloads, Telegram bots, and browser plugins.",
+        "App za predictor zinauza njia ya mkato: zinasema zinasoma mifumo, kukisia crash inayofuata, au kuweka lebo ya multiplier kama “salama” kabla ya Cash Out. Hadithi hiyo inawafanya watu kutafuta APK, sideload za iPhone, bot za Telegram, na programu-jalizi za kivinjari."
+      ],
+      [
+        "Predictor apps sell a shortcut::",
+        "App za predictor zinauza njia ya mkato:"
+      ],
+      [
+        "they say they read patterns, guess the next crash, or label a multiplier as “safe” before you cash out. That pitch keeps people hunting for APKs, iPhone sideloads, Telegram bots, and browser plugins.",
+        "zinasema zinasoma mifumo, kukisia crash inayofuata, au kuweka lebo ya multiplier kama “salama” kabla ya Cash Out. Hadithi hiyo inawafanya watu kutafuta APK, sideload za iPhone, bot za Telegram, na programu-jalizi za kivinjari."
+      ],
+      [
+        "Here is the snag: Aviator runs on RNG inside provably fair rules. No external app can know the next round before the server does. Some wrappers are guesswork with neon buttons; others are full scams that pile device risk and data theft on top of normal gambling risk.",
+        "Hapa ndipo tatizo liko: Aviator inaendeshwa na RNG ndani ya sheria za provably fair. Hakuna app ya nje inayoweza kujua raundi inayofuata kabla ya seva. Baadhi ya vifuniko ni makisio yenye vitufe vya neon; vingine ni ulaghai kamili vinavyoongeza hatari ya kifaa na wizi wa data juu ya hatari ya kawaida ya kamari."
+      ],
+      [
+        "Here is the snag::",
+        "Hapa ndipo tatizo liko:"
+      ],
+      [
+        "Aviator runs on RNG inside provably fair rules. No external app can know the next round before the server does. Some wrappers are guesswork with neon buttons; others are full scams that pile device risk and data theft on top of normal gambling risk.",
+        "Aviator inaendeshwa na RNG ndani ya sheria za provably fair. Hakuna app ya nje inayoweza kujua raundi inayofuata kabla ya seva. Baadhi ya vifuniko ni makisio yenye vitufe vya neon; vingine ni ulaghai kamili vinavyoongeza hatari ya kifaa na wizi wa data juu ya hatari ya kawaida ya kamari."
+      ],
+      [
+        "Vendors talk as if randomness had a spine they could feel. The story shifts — past multipliers, “volatility scans”, timing pulses, or an “AI” badge — but the arc is the same: the tool pretends the history panel is a crystal ball.",
+        "Wauzaji huzungumza kana kwamba randomness ina mgongo wanaoweza kuhisi. Hadithi hubadilika — multiplier za zamani, “volatility scans”, mpigo wa timing, au beji ya “AI” — lakini mstari ni ule ule: zana inajifanya paneli ya historia ni mpira wa kioo."
+      ],
+      [
+        "Fast rounds and a crowded ticker make that story sound almost reasonable to a newcomer. Past rounds still do not hand you a map of the next one. At most you get a confidence animation. It is theatre, not a leak of the next crash.",
+        "Raundi za haraka na ticker iliyojaa hufanya hadithi hiyo ionekane karibu na busara kwa mgeni. Raundi za zamani bado hazikupi ramani ya inayofuata. Upeo wa juu unapata uhuishaji wa ujasiri. Ni maigizo, si uvujaji wa crash inayofuata."
+      ],
+      [
+        "Mobile searches fork two ways: anonymous APK hosts for Android, and for iOS a mess of invite links, web shells, and “enterprise” installs that mimic App Store polish. Either path can look frictionless.",
+        "Utafutaji wa simu hugawanyika njia mbili: wenyeji wa APK wasiojulikana kwa Android, na kwa iOS mchanganyiko wa viungo vya mwaliko, ganda la wavuti, na usakinishaji wa “enterprise” unaiga polish ya App Store. Njia zote mbili zinaweza kuonekana bila msuguano."
+      ],
+      [
+        "Mobile searches fork two ways::",
+        "Utafutaji wa simu hugawanyika njia mbili:"
+      ],
+      [
+        "anonymous APK hosts for Android, and for iOS a mess of invite links, web shells, and “enterprise” installs that mimic App Store polish. Either path can look frictionless.",
+        "wenyeji wa APK wasiojulikana kwa Android, na kwa iOS mchanganyiko wa viungo vya mwaliko, ganda la wavuti, na usakinishaji wa “enterprise” unaiga polish ya App Store. Njia zote mbili zinaweza kuonekana bila msuguano."
+      ],
+      [
+        "Frictionless is not the same as legitimate. Before you sideload anything, ask why a stranger deserves trust on your phone, wallet, or casino login if they cannot show a single audited proof of prediction.",
+        "Bila msuguano si sawa na halali. Kabla ya kusakinisha chochote kwa njia ya upande, uliza kwa nini mtu usiyemjua anastahili uaminifu kwenye simu yako, pochi, au kuingia kasino ikiwa hawawezi kuonyesha uthibitisho mmoja wa utabiri uliochunguzwa."
+      ],
+      [
+        "Android funnels almost always point at raw APKs — rarely at a reviewed store listing. The choreography repeats:",
+        "Njia za Android karibu kila wakati huelekeza kwenye APK za mbichi — mara chache kwenye orodha ya store iliyokaguliwa. Mchezo unajirudia:"
+      ],
+      [
+        "Open the site, landing page, or channel pushing the predictor APK.",
+        "Fungua tovuti, ukurasa wa kutua, au chaneli inayosukuma APK ya predictor."
+      ],
+      [
+        "Spot names like “Aviator predictor”, “casino predictor”, or a build number that brags about accuracy.",
+        "Tambua majina kama “Aviator predictor”, “casino predictor”, au nambari ya build inayojivuna kuhusu usahihi."
+      ],
+      [
+        "Download the APK to the handset.",
+        "Pakua APK kwenye simu."
+      ],
+      [
+        "If Android blocks it, flip on installs from unknown sources.",
+        "Ikiwa Android inazuia, washa usakinishaji kutoka vyanzo visivyojulikana."
+      ],
+      [
+        "Launch the package and walk through whatever signup, pairing, or notification steps it demands.",
+        "Zindua paketi na fuata hatua za usajili, kuunganisha, au arifa inazohitaji."
+      ],
+      [
+        "That recipe is why Android carries extra hazard. An unofficial APK means you trusted whoever signed the bytes — not physics. Broken installs, invasive permissions, clones, and straight malware are far more common than a secret edge over RNG.",
+        "Ndio maana Android ina hatari ya ziada. APK isiyo rasmi inamaanisha uliamini aliyeisaini — si fizikia. Usakinishaji uliovunjika, ruhusa za kuingilia, nakala, na malware wazi ni ya kawaida zaidi kuliko faida ya siri dhidi ya RNG."
+      ],
+      [
+        "iOS pitches usually arrive in different wrapping:",
+        "Matoleo ya iOS mara nyingi yanakuja kwa ufungaji tofauti:"
+      ],
+      [
+        "Hunt the App Store, a web wrapper, or a private invite for something labelled Aviator predictor.",
+        "Tafuta App Store, ganda la wavuti, au mwaliko wa kibinafsi kwa kitu kinachoandikwa Aviator predictor."
+      ],
+      [
+        "Open the listing or invite and read what it literally claims.",
+        "Fungua orodha au mwaliko na soma kinachodai haswa."
+      ],
+      [
+        "Download or sideload if the route even exists for your device profile.",
+        "Pakua au sakinisha kwa njia ya upande ikiwa njia hiyo ipo kwa wasifu wa kifaa chako."
+      ],
+      [
+        "Open from the home screen or shortcut once the install finishes.",
+        "Fungua kutoka skrini ya nyumbani au njia ya mkato baada ya usakinishaji kukamilika."
+      ],
+      [
+        "Register, log in, or enable alerts if the vendor insists.",
+        "Jisajili, ingia, au wezesha arifa ikiwa muuzaji anasisitiza."
+      ],
+      [
+        "Most tools hide the “signals” until you create an account. That gate lets them spam you, upsell premium tiers, and fingerprint behaviour. The surface flow stays short:",
+        "Zana nyingi huficha “ishara” hadi uunde akaunti. Lango hilo linawaruhusu kukutumia barua taka, kuuza viwango vya premium, na kuchukua alama za tabia yako. Mtiririko unabaki mfupi:"
+      ],
+      [
+        "Open the app, bot, or dashboard on phone or desktop.",
+        "Fungua app, bot, au dashibodi kwenye simu au desktop."
+      ],
+      [
+        "Hit the registration control.",
+        "Bonyeza kitufe cha usajili."
+      ],
+      [
+        "Fill whatever fields they start with — often just email and password.",
+        "Jaza sehemu wanazofungua — mara nyingi barua pepe na nenosiri tu."
+      ],
+      [
+        "Accept terms, push permissions, or notification toggles if forced.",
+        "Kubali masharti, ruhusa za push, au swichi za arifa ukilazimishwa."
+      ],
+      [
+        "The signup wizard looks innocent. Behind it sits the real trade: they may now hold your contact path, device rights, and gambling habits. None of that touches the RNG inside Aviator.",
+        "Mchawi wa usajili unaonekana isiyo na hatia. Nyuma yake kuna biashara halisi: wanaweza tayari kushikilia njia yako ya mawasiliano, haki za kifaa, na tabia yako ya kamari. Hakuna hiyo inagusa RNG ndani ya Aviator."
+      ],
+      [
+        "After login you usually see pulses, timers, or labels implying this round “looks hot”. Some flows make you pick a casino brand first. Others flash a Start button, fake live scanning, then spit out a multiplier window. Polished motion graphics still sell guesses. They do not reach future seeds, hidden servers, or a private build of the game.",
+        "Baada ya kuingia kwa kawaida unaona mpigo, vipima muda, au lebo zinazomaanisha raundi hii “inaonekana moto”. Baadhi ya mtiririko hukufanya kuchagua chapa ya kasino kwanza. Vingine vinaonyesha kitufe cha Anza, skani ya uwongo ya moja kwa moja, kisha kutoa dirisha la multiplier. Grafu za harakati zilizopangwa bado zinauza makisio. Hazifikii mbegu za baadaye, seva zilizofichwa, au build ya kibinafsi ya mchezo."
+      ],
+      [
+        "The game is learnable as entertainment; it is not forecastable like weather. Whether the brochure says math, bots, AI, or pattern science, the fence is identical: each round stands alone, and outsiders cannot read the outcome early.",
+        "Mchezo unaweza kujifunza kama burudani; hauwezi kutabiriwa kama hali ya hewa. Iwe broshua inasema hesabu, bot, AI, au sayansi ya mifumo, kizuizi ni kile kile: kila raundi inasimama peke yake, na watu wa nje hawawezi kusoma matokeo mapema."
+      ],
+      [
+        "Randomness: Rounds are produced by secured RNG logic, so public history cannot be reverse-engineered into a stable cheat code.",
+        "Randomness: Raundi zinatolewa na mantiki ya RNG iliyolindwa, hivyo historia ya umma haiwezi kubadilishwa nyuma kuwa cheat code thabiti."
+      ],
+      [
+        "Randomness::",
+        "Randomness:"
+      ],
+      [
+        "Rounds are produced by secured RNG logic, so public history cannot be reverse-engineered into a stable cheat code.",
+        "Raundi zinatolewa na mantiki ya RNG iliyolindwa, hivyo historia ya umma haiwezi kubadilishwa nyuma kuwa cheat code thabiti."
+      ],
+      [
+        "Fair design: Everyone plays under the same rules. A real peek at future crash points would break the product and would not survive quietly in a grey-market APK.",
+        "Muundo wa haki: Kila mtu anacheza chini ya sheria sawa. Kuona crash za baadaye kwa kweli kungevunja bidhaa na usingesurvive kimya ndani ya APK ya soko kijivu."
+      ],
+      [
+        "Fair design::",
+        "Muundo wa haki:"
+      ],
+      [
+        "Everyone plays under the same rules. A real peek at future crash points would break the product and would not survive quietly in a grey-market APK.",
+        "Kila mtu anacheza chini ya sheria sawa. Kuona crash za baadaye kwa kweli kungevunja bidhaa na usingesurvive kimya ndani ya APK ya soko kijivu."
+      ],
+      [
+        "Thin history: Old multipliers look meaningful on a chart; they still fail as a dependable model for the next lift-off.",
+        "Historia finyu: Multiplier za zamani zinaonekana zenye maana kwenye chati; bado hazifanyi kazi kama mfano wa kuaminika wa kuondoka inayofuata."
+      ],
+      [
+        "Thin history::",
+        "Historia finyu:"
+      ],
+      [
+        "Old multipliers look meaningful on a chart; they still fail as a dependable model for the next lift-off.",
+        "Multiplier za zamani zinaonekana zenye maana kwenye chati; bado hazifanyi kazi kama mfano wa kuaminika wa kuondoka inayofuata."
+      ],
+      [
+        "Scam pages borrow big brand logos so the offer feels vetted. Copy may hint the APK is “tuned” for one operator or exploits a weakness in that skin. If the round is still RNG-driven, the wrapper is paint, not power.",
+        "Kurasa za ulaghai hukopa nembo kubwa za chapa ili ofa ihisi imethibitishwa. Nakala inaweza kudokeza APK ime “rekebishwa” kwa operator mmoja au inatumia udhaifu wa mandhari hiyo. Ikiwa raundi bado inaendeshwa na RNG, kifuniko ni rangi, si nguvu."
+      ],
+      [
+        "1xBet-related searches often drag in bots that swear they sharpen timing or flag “strong” rounds. Branding changes; the claim does not — outside software beating a random engine. Evidence stays absent.",
+        "Utafutaji unaohusiana na 1xBet mara nyingi huvuta bot zinazoamini zinaboresha timing au kuweka alama kwa raundi “zenye nguvu”. Chapa hubadilika; madai hayabadiliki — programu ya nje inashinda injini ya kubahatisha. Ushahidi haupo."
+      ],
+      [
+        "1Win-themed packs promise cleaner UI, lighter mobile load, or louder alerts. Better packaging does not erase random outcomes; it only dresses up the same guesswork.",
+        "Paketi za mandhari ya 1Win zinaahidi UI safi, mzigo mdogo wa simu, au arifa za sauti zaidi. Ufungashaji bora hauondoi matokeo ya kubahatisha; unaivisha makisio yale yale."
+      ],
+      [
+        "Melbet promos love words like “signal app” or “smart crash timing”. Analytical vocabulary is lipstick on the same pig: no verifiable skill at calling the next crash.",
+        "Matangazo ya Melbet yanapenda maneno kama “signal app” au “smart crash timing”. Msamiati wa uchambuzi ni vipodozi juu ya nguruwe ile ile: hakuna ujuzi unaothibitishwa wa kuita crash inayofuata."
+      ],
+      [
+        "Across MSport and Hollywood Bet, predictors travel through social posts, APK bundles, and side chats that swear they can “read” the board. Certified randomness does not soften because the logo changed. Your exposure to account strikes or infected files can balloon.",
+        "Katika MSport na Hollywood Bet, predictor husafiri kupitia machapisho ya kijamii, paketi za APK, na mazungumzo ya upande yanayoamini yanaweza “kusoma” ubao. Randomness iliyothibitishwa haipunguzwi kwa sababu nembo imebadilika. Hatari yako ya adabu ya akaunti au faili zilizoambukizwa inaweza kupanda."
+      ],
+      [
+        "Betway and Betplay names get used as trust anchors too — safer bets, smarter entries, fewer mistakes. A colder read: bankroll discipline and scam radar beat any signal wallpaper.",
+        "Majina ya Betway na Betplay pia hutumika kama nanga za uaminifu — dau salama zaidi, kuingia kwa akili, makosa machache. Mtazamo baridi: nidhamu ya bankroll na radar ya ulaghai vinashinda ukuta wowote wa ishara."
+      ],
+      [
+        "Sellers rarely ship one SKU. Version numbers, “AI” upgrades, and VIP tiers exist to imply momentum. Newer labels do not prove honesty or accuracy.",
+        "Wauzaji mara chache hutoa SKU moja. Nambari za toleo, uboreshaji wa “AI”, na viwango vya VIP zipo kuonyesha kasi. Lebo mpya hazithibitishi uaminifu au usahihi."
+      ],
+      [
+        "Old badges like v4.0 get framed as battle-tested. Marketing may say it parses past multipliers, plugs into 1xBet or Mostbet, or hands “practical” entry cues. History still cannot override RNG.",
+        "Beji za zamani kama v4.0 huonyeshwa kama zilizojaribiwa vitani. Uuzaji unaweza kusema inachambua multiplier za zamani, inaunganishwa na 1xBet au Mostbet, au inatoa vidokezo vya kuingia vinavyofaa. Historia bado haiwezi kushinda RNG."
+      ],
+      [
+        "High-number builds sell speed, gloss, and “precision”. Extra filters or languages can feel enterprise-grade; presentation is not verification that prediction works.",
+        "Build zenye nambari za juu zinauza kasi, uangavu, na “usahihi”. Vichujio au lugha za ziada zinaweza kuhisi daraja la biashara; uwasilishaji si uthibitisho kwamba utabiri unafanya kazi."
+      ],
+      [
+        "Paywalls pitch the “real” engine behind the free teaser. Often you are only buying louder marketing, broader permission grabs, or shadier APK mirrors — not an edge.",
+        "Paywall zinauza injini ya “kweli” nyuma ya onyesho la bure. Mara nyingi unanunua uuzaji wenye sauti zaidi, ruhusa pana zaidi, au vioo vya APK vyenye shaka — si faida."
+      ],
+      [
+        "Do Aviator predictor apps really work?Nothing public has shown reliable foresight into crash points before the round. Confidence screens are not proof.",
+        "Je, app za predictor ya Aviator zinafanya kazi kweli?Hakuna kitu cha umma kimeonyesha uwezo wa kuona crash points kabla ya raundi. Skrini za ujasiri si uthibitisho."
+      ],
+      [
+        "Do Aviator predictor apps really work?",
+        "Je, app za predictor ya Aviator zinafanya kazi kweli?"
+      ],
+      [
+        "Nothing public has shown reliable foresight into crash points before the round. Confidence screens are not proof.",
+        "Hakuna kitu cha umma kimeonyesha uwezo wa kuona crash points kabla ya raundi. Skrini za ujasiri si uthibitisho."
+      ],
+      [
+        "Is it safe to install an Aviator predictor?Assume risk by default. Unofficial sources, greedy permissions, malware, phishing, and account grief sit far higher on the odds board than a magic signal.",
+        "Je, ni salama kusakinisha predictor ya Aviator?Chukulia hatari kwa chaguo-msingi. Vyanzo visivyo rasmi, ruhusa za kula, malware, ulaghai wa data, na shida za akaunti ziko juu zaidi kwenye uwezekano kuliko ishara ya kichawi."
+      ],
+      [
+        "Is it safe to install an Aviator predictor?",
+        "Je, ni salama kusakinisha predictor ya Aviator?"
+      ],
+      [
+        "Assume risk by default. Unofficial sources, greedy permissions, malware, phishing, and account grief sit far higher on the odds board than a magic signal.",
+        "Chukulia hatari kwa chaguo-msingi. Vyanzo visivyo rasmi, ruhusa za kula, malware, ulaghai wa data, na shida za akaunti ziko juu zaidi kwenye uwezekano kuliko ishara ya kichawi."
+      ],
+      [
+        "Can AI predict Aviator better than normal apps?No. AI can dress guesses in charts; it still cannot read future RNG draws or turn old multipliers into a lock.",
+        "Je, AI inaweza kutabiri Aviator bora kuliko app za kawaida?Hapana. AI inaweza kuvika makisio kwenye chati; bado haiwezi kusoma michoro ya RNG ya baadaye au kubadilisha multiplier za zamani kuwa uhakika."
+      ],
+      [
+        "Can AI predict Aviator better than normal apps?",
+        "Je, AI inaweza kutabiri Aviator bora kuliko app za kawaida?"
+      ],
+      [
+        "No. AI can dress guesses in charts; it still cannot read future RNG draws or turn old multipliers into a lock.",
+        "Hapana. AI inaweza kuvika makisio kwenye chati; bado haiwezi kusoma michoro ya RNG ya baadaye au kubadilisha multiplier za zamani kuwa uhakika."
+      ],
+      [
+        "Why do some players say predictors help?Signals add rhythm and false comfort. Feeling structured is not the same as seeing the future.",
+        "Kwa nini baadhi ya wachezaji wanasema predictor husaidia?Ishara huongeza rhythm na faraja ya uwongo. Kuhisi mpangilio si kuona siku zijazo."
+      ],
+      [
+        "Why do some players say predictors help?",
+        "Kwa nini baadhi ya wachezaji wanasema predictor husaidia?"
+      ],
+      [
+        "Signals add rhythm and false comfort. Feeling structured is not the same as seeing the future.",
+        "Ishara huongeza rhythm na faraja ya uwongo. Kuhisi mpangilio si kuona siku zijazo."
+      ],
+      [
+        "What is the main risk with predictor APK files?The worst loss is often not a bad bet — it is a poisoned install, stolen credentials, or a grift selling certainty.",
+        "Hatari kuu na faili za APK za predictor ni nini?Hasara mbaya zaidi mara nyingi si dau mbaya — ni usakinishaji uliotiwa sumu, hati zilizoibiwa, au ulaghai unauza uhakika."
+      ],
+      [
+        "What is the main risk with predictor APK files?",
+        "Hatari kuu na faili za APK za predictor ni nini?"
+      ],
+      [
+        "The worst loss is often not a bad bet — it is a poisoned install, stolen credentials, or a grift selling certainty.",
+        "Hasara mbaya zaidi mara nyingi si dau mbaya — ni usakinishaji uliotiwa sumu, hati zilizoibiwa, au ulaghai unauza uhakika."
+      ],
+      [
+        "What is a safer alternative to chasing predictors?Learn how Aviator actually behaves, use demo balance when offered, cap sessions, and treat any “guaranteed timing” line as a scam flare.",
+        "Ni mbadala salama gani wa kufuatilia predictor?Jifunze jinsi Aviator inavyofanya kazi, tumia salio la demo inapopatikana, weka mipaka ya kikao, na uichukulie kila mstari wa “timing iliyohakikishwa” kama ishara ya ulaghai."
+      ],
+      [
+        "What is a safer alternative to chasing predictors?",
+        "Ni mbadala salama gani wa kufuatilia predictor?"
+      ],
+      [
+        "Learn how Aviator actually behaves, use demo balance when offered, cap sessions, and treat any “guaranteed timing” line as a scam flare.",
+        "Jifunze jinsi Aviator inavyofanya kazi, tumia salio la demo inapopatikana, weka mipaka ya kikao, na uichukulie kila mstari wa “timing iliyohakikishwa” kama ishara ya ulaghai."
+      ],
+      [
+        "Responsible gaming: This site is an independent information resource and is not affiliated with the operators mentioned above. Check legal age and local rules before gambling, and treat external links and third-party app offers with caution.",
+        "Kamari kwa uwajibikaji: Tovuti hii ni chanzo cha taarifa huru na haihusiani na operator waliotajwa hapo juu. Angalia umri wa kisheria na sheria za eneo kabla ya kucheza kamari, na uichukulie viungo vya nje na matoleo ya app za watu wengine kwa uangalifu."
+      ],
+      [
+        "Responsible gaming::",
+        "Kamari kwa uwajibikaji:"
+      ],
+      [
+        "This site is an independent information resource and is not affiliated with the operators mentioned above. Check legal age and local rules before gambling, and treat external links and third-party app offers with caution.",
+        "Tovuti hii ni chanzo cha taarifa huru na haihusiani na operator waliotajwa hapo juu. Angalia umri wa kisheria na sheria za eneo kabla ya kucheza kamari, na uichukulie viungo vya nje na matoleo ya app za watu wengine kwa uangalifu."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Prédicteur Aviator : APK, iOS, RNG et pourquoi ça ne marche toujours pas",
+        "Prédicteur Aviator : APK, iOS, RNG mpe mpo na nini e salaka noki te"
+      ],
+      [
+        "Prédicteur Aviator ::",
+        "Prédicteur Aviator:"
+      ],
+      [
+        "APK, iOS, RNG et pourquoi ça ne marche toujours pas",
+        "APK, iOS, RNG mpe mpo na nini e salaka noki te"
+      ],
+      [
+        "Comment la « prédiction » Aviator est censée fonctionner",
+        "Ndeni « prédiction » Aviator esengeli kosala"
+      ],
+      [
+        "Télécharger un prédicteur Aviator sur Android et iOS",
+        "Kozua prédicteur Aviator na Android mpe iOS"
+      ],
+      [
+        "Installer le prédicteur sur Android",
+        "Kozua prédicteur na Android"
+      ],
+      [
+        "Installer le prédicteur sur iPhone ou iPad",
+        "Kozua prédicteur na iPhone to iPad"
+      ],
+      [
+        "Se connecter au bot prédicteur",
+        "Ko connecter na bot prédicteur"
+      ],
+      [
+        "Utiliser des indices prédicteur pendant la partie",
+        "Kosalela ba indices prédicteur na kati ya partie"
+      ],
+      [
+        "Pourquoi Aviator ne se prédit pas (y compris par l’IA)",
+        "Mpo na nini Aviator e prédire te (ata na AI)"
+      ],
+      [
+        "Prédicteurs et casinos en ligne",
+        "Ba prédicteurs mpe ba casinos online"
+      ],
+      [
+        "Prédicteur Aviator 1xBet",
+        "Prédicteur Aviator 1xBet"
+      ],
+      [
+        "Prédicteur Aviator 1Win",
+        "Prédicteur Aviator 1Win"
+      ],
+      [
+        "Prédicteur Aviator Melbet",
+        "Prédicteur Aviator Melbet"
+      ],
+      [
+        "MSport et Hollywood Bet",
+        "MSport mpe Hollywood Bet"
+      ],
+      [
+        "Betway et Betplay",
+        "Betway mpe Betplay"
+      ],
+      [
+        "Autres versions du logiciel prédicteur",
+        "Ba versions mosusu ya logiciel prédicteur"
+      ],
+      [
+        "Aviator Predictor v4.0",
+        "Aviator Predictor v4.0"
+      ],
+      [
+        "Aviator Predictor v12.0.5",
+        "Aviator Predictor v12.0.5"
+      ],
+      [
+        "Bot prédicteur Aviator premium",
+        "Bot prédicteur Aviator premium"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Promesses de prédicteur Aviator et interface du crash game",
+        "Ba promesse ya prédicteur Aviator mpe interface ya crash game"
+      ],
+      [
+        "Exemple d’interface d’appli prédicteur Aviator",
+        "Exemple ya interface ya app prédicteur Aviator"
+      ],
+      [
+        "APK prédicteur Aviator sur appareil Android",
+        "APK prédicteur Aviator na appareil Android"
+      ],
+      [
+        "Concept d’appli prédicteur Aviator sur iPhone et iPad",
+        "Concept ya app prédicteur Aviator na iPhone mpe iPad"
+      ],
+      [
+        "Promesses de prédicteur Aviator face aux limites de l’IA et du RNG",
+        "Ba promesse ya prédicteur Aviator vs ba limites ya AI mpe RNG"
+      ],
+      [
+        "Offres prédicteur calées sur des marques casino Aviator populaires",
+        "Ba offres prédicteur calées na ba marques casino Aviator populaires"
+      ],
+      [
+        "Les applis « prédicteur » vendent un raccourci : elles prétendent lire des motifs, deviner le prochain crash, ou coller une étiquette « sûre » sur un multiplicateur avant que vous encaissiez. Ce discours pousse les gens à chercher des APK, des sideloads iPhone, des bots Telegram et des extensions navigateur.",
+        "Ba app « prédicteur » e vendre raccourci : e prétendre kolire ba motifs, kobosana crash oyo ekoya, to kotya étiquette « sûre » na multiplier liboso ya Cash Out. Discours oyo e pousse bato koluka ba APK, ba sideload iPhone, ba bots Telegram mpe ba extensions navigateur."
+      ],
+      [
+        "Le hic : Aviator repose sur un RNG encadré par des règles de type provably fair. Aucune appli externe ne peut connaître la prochaine manche avant le serveur. Certaines coques ne font que deviner avec des boutons néon ; d’autres sont de vraies arnaques qui ajoutent risque sur l’appareil et vol de données au risque habituel du jeu.",
+        "Problème ezali awa : Aviator esalemi na RNG na kati ya mibeko provably fair. Ata app ya libanda e koyeba te round oyo ekoya liboso ya serveur. Ba coques mosusu ezali kaka ba supposition na ba butons néon ; ba mosusu ezali vraies arnaques oyo e ajouter risque appareil mpe vol ya ba données na risque ya solo ya jeu."
+      ],
+      [
+        "Le hic ::",
+        "Problème ezali awa:"
+      ],
+      [
+        "Aviator repose sur un RNG encadré par des règles de type provably fair. Aucune appli externe ne peut connaître la prochaine manche avant le serveur. Certaines coques ne font que deviner avec des boutons néon ; d’autres sont de vraies arnaques qui ajoutent risque sur l’appareil et vol de données au risque habituel du jeu.",
+        "Aviator esalemi na RNG na kati ya mibeko provably fair. Ata app ya libanda e koyeba te round oyo ekoya liboso ya serveur. Ba coques mosusu ezali kaka ba supposition na ba butons néon ; ba mosusu ezali vraies arnaques oyo e ajouter risque appareil mpe vol ya ba données na risque ya solo ya jeu."
+      ],
+      [
+        "Les vendeurs parlent comme si le hasard avait une colonne vertébrale qu’on peut palper. L’histoire change — anciens multiplicateurs, « scans de volatilité », impulsions de timing, ou badge « IA » — mais la ligne reste la même : l’outil fait croire que l’historique est une boule de cristal.",
+        "Ba vendeurs balobaka lokola hasard ezalaki na colonne vertébrale oyo bakoki ko palper. Histoire e changer — ba multipliers ya kala, « scans de volatilité », impulsions ya timing, to badge « AI » — kasi ligne ezali moko : outil e faire croire historique ezali boule de cristal."
+      ],
+      [
+        "Des manches rapides et un ticker chargé rendent ce récit presque crédible pour un débutant. Les tours passés ne vous donnent toujours pas une carte du suivant. Au mieux vous avez une animation de confiance. C’est du spectacle, pas une fuite sur le prochain crash.",
+        "Ba round ya nokinoki mpe ticker ya mobimba e rendre récit yango presque crédible mpo na débutant. Ba tours passés e pesa noki te carte ya oyo ekoya. Na maximum ozua animation ya kondima. Ezali théâtre, te fuite ya crash oyo ekoya."
+      ],
+      [
+        "Les recherches mobiles se divisent : hébergeurs APK anonymes pour Android, et pour iOS un fouillis de liens d’invitation, coques web et installs « entreprise » qui imitent le vernis App Store. Les deux chemins peuvent sembler sans accroc.",
+        "Ba recherche mobile e se diviser : ba hébergeurs APK anonymes mpo na Android, mpe mpo na iOS brouhaha ya ba liens invitation, coques web mpe ba install « entreprise » oyo e imiter polish App Store. Ba deux chemins ekoki kozala sans accroc."
+      ],
+      [
+        "Les recherches mobiles se divisent ::",
+        "Ba recherche mobile e se diviser:"
+      ],
+      [
+        "hébergeurs APK anonymes pour Android, et pour iOS un fouillis de liens d’invitation, coques web et installs « entreprise » qui imitent le vernis App Store. Les deux chemins peuvent sembler sans accroc.",
+        "ba hébergeurs APK anonymes mpo na Android, mpe mpo na iOS brouhaha ya ba liens invitation, coques web mpe ba install « entreprise » oyo e imiter polish App Store. Ba deux chemins ekoki kozala sans accroc."
+      ],
+      [
+        "Sans accroc n’est pas synonyme de légitime. Avant de sideloader quoi que ce soit, demandez-vous pourquoi un inconnu mériterait votre confiance sur le téléphone, le portefeuille ou la connexion casino s’il ne montre pas une seule preuve auditée de prédiction.",
+        "Sans accroc e zala te synonyme ya légitime. Liboso ya sideloader eloko, demander mpo na nini moto oyo oyebi te azalaki na kondima na telefone, portefeuille to login casino soki akoki ko montrer ata preuve auditée moko ya prédiction."
+      ],
+      [
+        "Les tunnels Android pointent presque toujours vers des APK bruts — rarement vers une fiche store examinée. La chorégraphie se répète :",
+        "Ba tunnels Android e pointer presque toujours vers ba APK bruts — mbala moke vers fiche store oyo e vérifier. Chorégraphie e répéter :"
+      ],
+      [
+        "Ouvrir le site, la landing ou le canal qui pousse l’APK prédicteur.",
+        "Fungola site, landing to canal oyo e pousser APK prédicteur."
+      ],
+      [
+        "Repérer des noms du type « prédicteur Aviator », « prédicteur casino », ou un numéro de build qui affiche la précision.",
+        "Repérer ba noms lokola « prédicteur Aviator », « prédicteur casino », to numéro ya build oyo e vanter précision."
+      ],
+      [
+        "Télécharger l’APK sur le téléphone.",
+        "Kozua APK na telefone."
+      ],
+      [
+        "Si Android bloque, activer les installs depuis des sources inconnues.",
+        "Soki Android e bloquer, activer ba install depuis sources inconnues."
+      ],
+      [
+        "Lancer le paquet et suivre inscription, appairage ou notifications si l’outil l’exige.",
+        "Lancer paquet mpe suivre inscription, appairage to ba sango soki e exiger."
+      ],
+      [
+        "Cette recette explique le danger supplémentaire sur Android. Un APK non officiel, c’est faire confiance à celui qui a signé les octets — pas à la physique. Installs cassées, permissions envahissantes, clones et malware pur jus sont bien plus fréquents qu’un avantage secret sur le RNG.",
+        "Recette oyo e expliquer danger supplémentaire na Android. APK non officiel, ezali ko kondima na oyo asigné ba bytes — te na physique. Ba install cassées, permissions envahissantes, clones mpe malware pur e zala mingi koleka litite secret vs RNG."
+      ],
+      [
+        "Les offres iOS arrivent souvent sous un autre emballage :",
+        "Ba offres iOS e arriver souvent na emballage different :"
+      ],
+      [
+        "Chercher sur l’App Store, une coque web, ou une invitation privée pour quelque chose étiqueté prédicteur Aviator.",
+        "Luka App Store, coque web to invitation privée mpo na eloko oyo e étiqueter prédicteur Aviator."
+      ],
+      [
+        "Ouvrir la fiche ou l’invitation et lire ce qu’elle affirme mot pour mot.",
+        "Fungola fiche to invitation mpe tanga oyo e prétendre mot na mot."
+      ],
+      [
+        "Télécharger ou sideloader si la voie existe pour votre profil d’appareil.",
+        "Kozua to sideloader soki nzela ezali mpo na profil appareil na yo."
+      ],
+      [
+        "Ouvrir depuis l’écran d’accueil ou un raccourci une fois l’install terminée.",
+        "Fungola na ecran d’accueil to raccourci na nsima ya install."
+      ],
+      [
+        "S’inscrire, se connecter ou activer les alertes si le vendeur insiste.",
+        "S’inscrire, se connecter to activer alertes soki vendeur e insister."
+      ],
+      [
+        "La plupart des outils cachent les « signaux » tant que vous n’avez pas créé de compte. Ce portillon sert à vous spammer, monter des paliers payants et empreinter le comportement. Le parcours reste court :",
+        "Ba outils mingi e cacher « elembo » tii o créer compte. Portillon oyo e permetre spam, monter paliers payants mpe empreinter ndenge ya kosala. Parcours e rester court :"
+      ],
+      [
+        "Ouvrir l’appli, le bot ou le tableau de bord sur mobile ou bureau.",
+        "Fungola app, bot to dashboard na mobile to bureau."
+      ],
+      [
+        "Appuyer sur le contrôle d’inscription.",
+        "Appuyer libateli ya inscription."
+      ],
+      [
+        "Remplir les champs qu’ils ouvrent — souvent e-mail et mot de passe.",
+        "Remplir ba champs oyo e ouvrir — mbala mingi e-mail mpe mot de passe kaka."
+      ],
+      [
+        "Accepter les conditions, pousser les permissions ou les notifications si on vous y force.",
+        "Accepter mibekos, permissions push to ba sango soki e forcer."
+      ],
+      [
+        "L’assistant d’inscription a l’air anodin. Derrière se joue le vrai marché : ils peuvent déjà tenir votre contact, les droits sur l’appareil et vos habitudes de jeu. Rien de tout cela ne touche le RNG à l’intérieur d’Aviator.",
+        "Assistant ya inscription e zala innocent. Na sima ezali vrai marché : bakoki déjà kozala na contact na yo, droits appareil mpe ba ndenges ya jeu. Rien na yango e toucher RNG na kati ya Aviator."
+      ],
+      [
+        "Après connexion on voit souvent des pulsations, minuteurs ou étiquettes qui suggèrent que cette manche « chauffe ». Certains flux vous font d’abord choisir une marque casino. D’autres affichent Démarrer, un faux scan live, puis crachent une fenêtre de multiplicateurs. Des motion design soignés vendent encore des suppositions. Ils n’atteignent ni les graines futures, ni les serveurs cachés, ni une build privée du jeu.",
+        "Na nsima ya connexion ozali kaka na ba pulsations, minuteurs to étiquettes oyo e suggérer round oyo « chauffe ». Ba flux mosusu e faire kopona marque casino liboso. Ba mosusu e montrer Démarrer, faux scan live, mpe ba fenêtres ya multipliers. Motion design ya malamu e vender mpe ba suppositions. E atteindre te ba graines futures, ba serveurs cachés to build privée ya lisano."
+      ],
+      [
+        "Le jeu se prête au divertissement ; il ne se prévoit pas comme la météo. Que la brochure dise maths, bots, IA ou science des motifs, la barrière est la même : chaque manche est isolée, et les outsiders ne peuvent pas lire le résultat en avance.",
+        "Lisano e prêter na divertissement ; e prédire te lokola météo. Que brochure e koloba maths, bots, AI to science ya motifs, barrière ezali moko : round nionso ezali isolée, mpe ba outsiders e koyeba te résultat liboso."
+      ],
+      [
+        "Hasard : les manches viennent d’une logique RNG sécurisée ; l’historique public ne se retourne pas en cheat code stable.",
+        "Hasard : ba rounds e vient na logique RNG sécurisée ; historique public e reverse-engineer te na cheat code stable."
+      ],
+      [
+        "Hasard ::",
+        "Hasard:"
+      ],
+      [
+        "les manches viennent d’une logique RNG sécurisée ; l’historique public ne se retourne pas en cheat code stable.",
+        "ba rounds e vient na logique RNG sécurisée ; historique public e reverse-engineer te na cheat code stable."
+      ],
+      [
+        "Conception équitable : tout le monde joue sous les mêmes règles. Un vrai aperçu des prochains crashs casserait le produit et ne survivrait pas tranquillement dans un APK gris.",
+        "Conception équitable : bato nionso e betaka na mibeko moko. Vrai aperçu ya ba crashs oyo ekoya e casser produit mpe e survivre te tranquillement na APK gris."
+      ],
+      [
+        "Conception équitable ::",
+        "Conception équitable:"
+      ],
+      [
+        "tout le monde joue sous les mêmes règles. Un vrai aperçu des prochains crashs casserait le produit et ne survivrait pas tranquillement dans un APK gris.",
+        "bato nionso e betaka na mibeko moko. Vrai aperçu ya ba crashs oyo ekoya e casser produit mpe e survivre te tranquillement na APK gris."
+      ],
+      [
+        "Historique maigre : les vieux multiplicateurs paraissent parlants sur un graph ; ils restent mauvais modèle fiable pour le prochain décollage.",
+        "Historique maigre : ba vieux multipliers e paraitre parlants na graph ; e zala mauvais modèle fiable mpo na prochain décollage."
+      ],
+      [
+        "Historique maigre ::",
+        "Historique maigre:"
+      ],
+      [
+        "les vieux multiplicateurs paraissent parlants sur un graph ; ils restent mauvais modèle fiable pour le prochain décollage.",
+        "ba vieux multipliers e paraitre parlants na graph ; e zala mauvais modèle fiable mpo na prochain décollage."
+      ],
+      [
+        "Les pages arnaque empruntent de gros logos pour donner un air validé. Le texte peut laisser entendre que l’APK est « calibré » pour un opérateur ou exploite une faille de ce thème. Si la manche reste pilotée par le RNG, l’enrobage est de la peinture, pas de la puissance.",
+        "Ba pages arnaque e emprunter ba gros logos mpo na offre e zala validée. Texte ekoki kolobela APK e « calibré » mpo na opérateur moko to e exploiter faille ya thème wana. Soki round e rester pilotée na RNG, enveloppe ezali peinture, te puissance."
+      ],
+      [
+        "Les recherches liées à 1xBet attirent des bots qui jurent affiner le timing ou repérer des manches « fortes ». Le branding change ; l’affirmation non — un logiciel externe qui battrait un moteur aléatoire. Les preuves manquent.",
+        "Ba recherche liées na 1xBet e attirer ba bots oyo e jurer affiner timing to repérer ba rounds « forts ». Branding e changer ; affirmation e changer te — logiciel externe oyo e battre moteur ya hasard. Ba preuves e manquer."
+      ],
+      [
+        "Les packs thème 1Win promettent une UI plus propre, un mobile plus léger ou des alertes plus bruyantes. Un meilleur emballage n’efface pas des issues aléatoires ; ça habille les mêmes suppositions.",
+        "Ba packs thème 1Win e promettre UI plus propre, mobile plus léger to alertes plus bruyantes. Meilleur emballage e effacer te ba issues ya hasards ; e habiller ba mêmes suppositions."
+      ],
+      [
+        "Les promos Melbet aiment les termes « appli signal » ou « timing crash intelligent ». Le vocabulaire analytique reste du vernis sur la même impasse : aucune compétence vérifiable pour annoncer le prochain crash.",
+        "Ba promos Melbet balingi ba termes « appli signal » to « timing crash intelligent ». Vocabulaire analytique ezali vernis na même impasse : ata compétence vérifiable te mpo na annoncer prochain crash."
+      ],
+      [
+        "Chez MSport et Hollywood Bet, les prédicteurs circulent via posts sociaux, bundles APK et chats parallèles qui jurent « lire » le tableau. Le hasard certifié ne s’adoucit pas parce que le logo change. Votre exposition aux sanctions de compte ou aux fichiers infectés peut exploser.",
+        "Na MSport mpe Hollywood Bet, ba prédicteurs e circuler via posts sociaux, bundles APK mpe chats parallèles oyo e jurer « lire » tableau. Hasard certifié e adoucir te mpo na logo e changer. Exposition na yo na sanctions compte to fisyés infectés ekoki kozala monene."
+      ],
+      [
+        "Les noms Betway et Betplay servent aussi d’ancres de confiance — paris plus sûrs, entrées plus malines, moins d’erreurs. Lecture plus froide : discipline de bankroll et radar arnaque battent n’importe quel fond d’écran de signaux.",
+        "Ba noms Betway mpe Betplay e servir mpe ancres ya kondima — paris plus sûrs, entrées plus malines, ba erreurs moins. Lecture plus froide : libateli bankroll mpe radar arnaque e battre n’importe quel fond d’ecran ya elembo."
+      ],
+      [
+        "Les vendeurs livrent rarement un seul SKU. Numéros de version, upgrades « IA » et paliers VIP suggèrent de l’élan. Des étiquettes plus récentes ne prouvent ni honnêteté ni justesse.",
+        "Ba vendeurs e livrer mbala moke SKU moko. Ba numéros version, upgrades « AI » mpe paliers VIP e suggérer élan. Ba étiquettes plus récentes e prouver te honnêteté to justesse."
+      ],
+      [
+        "Les vieux badges v4.0 se vendent comme éprouvés au feu. Le marketing peut dire qu’il parse les multiplicateurs passés, se branche sur 1xBet ou Mostbet, ou donne des repères d’entrée concrets. L’historique ne peut toujours pas passer outre le RNG.",
+        "Ba vieux badges v4.0 e vendre lokola éprouvés. Marketing ekoki koloba e parse ba multipliers passés, e brancher na 1xBet to Mostbet, to e pesa repères concrets. Historique e passer outre RNG noki te."
+      ],
+      [
+        "Les builds à gros chiffres vendent vitesse, brillance et « précision ». Filtres ou langues supplémentaires peuvent donner un ton entreprise ; la présentation n’est pas une preuve que la prédiction tient.",
+        "Ba builds na gros chiffres e vendre vitesse, brillance mpe « précision ». Ba filtres to langues supplémentaires ekoki kozala ton entreprise ; présentation e zala preuve te ete prédiction e tenir."
+      ],
+      [
+        "Les paywalls vendent le « vrai » moteur derrière la démo gratuite. Souvent vous payez surtout du marketing plus criard, des ramassages de permissions plus larges ou des miroirs APK plus louches — pas un avantage.",
+        "Ba paywalls e vendre « vrai » moteur na sima ya démo gratuite. Mbala mingi opeleka marketing plus criard, ramassages permissions plus larges to miroirs APK plus louches — te litite."
+      ],
+      [
+        "Les applis prédicteur Aviator fonctionnent-elles vraiment ?Rien de public n’a montré une prévision fiable des crashs avant la manche. Les écrans de confiance ne sont pas une preuve.",
+        "Ba app prédicteur Aviator e salaka solo ?Rien ya public e montrer prévision fiable ya crashs liboso ya round. Ba ecrans kondima e zala preuve te."
+      ],
+      [
+        "Les applis prédicteur Aviator fonctionnent-elles vraiment ?",
+        "Ba app prédicteur Aviator e salaka solo ?"
+      ],
+      [
+        "Rien de public n’a montré une prévision fiable des crashs avant la manche. Les écrans de confiance ne sont pas une preuve.",
+        "Rien ya public e montrer prévision fiable ya crashs liboso ya round. Ba ecrans kondima e zala preuve te."
+      ],
+      [
+        "Est-il sûr d’installer un prédicteur Aviator ?Partez du principe du risque. Sources non officielles, permissions voraces, malware, hameçonnage et galères de compte sont bien plus hauts sur l’échelle des probas qu’un signal magique.",
+        "Ezali sûr ko botia prédicteur Aviator ?Partir principe ya risque. Ba sources non officielles, permissions voraces, malware, hameçonnage mpe galères compte e zala mingi koleka signal magique."
+      ],
+      [
+        "Est-il sûr d’installer un prédicteur Aviator ?",
+        "Ezali sûr ko botia prédicteur Aviator ?"
+      ],
+      [
+        "Partez du principe du risque. Sources non officielles, permissions voraces, malware, hameçonnage et galères de compte sont bien plus hauts sur l’échelle des probas qu’un signal magique.",
+        "Partir principe ya risque. Ba sources non officielles, permissions voraces, malware, hameçonnage mpe galères compte e zala mingi koleka signal magique."
+      ],
+      [
+        "L’IA peut-elle prédire Aviator mieux que les applis classiques ?Non. L’IA peut habiller des suppositions en graphiques ; elle ne lit toujours pas les tirages RNG futurs ni ne transforme les anciens multiplicateurs en certitude.",
+        "AI ekoki prédire Aviator malamu koleka ba app classiques ?Te. AI ekoki habiller ba suppositions na ba graphiques ; e koyeba te ba tirages RNG ya mikolo mpe e transformer te ba multipliers ya kala na certitude."
+      ],
+      [
+        "L’IA peut-elle prédire Aviator mieux que les applis classiques ?",
+        "AI ekoki prédire Aviator malamu koleka ba app classiques ?"
+      ],
+      [
+        "Non. L’IA peut habiller des suppositions en graphiques ; elle ne lit toujours pas les tirages RNG futurs ni ne transforme les anciens multiplicateurs en certitude.",
+        "Te. AI ekoki habiller ba suppositions na ba graphiques ; e koyeba te ba tirages RNG ya mikolo mpe e transformer te ba multipliers ya kala na certitude."
+      ],
+      [
+        "Pourquoi certains joueurs disent que les prédicteurs aident ?Les signaux ajoutent du rythme et un faux réconfort. Se sentir structuré n’est pas voir l’avenir.",
+        "Mpo na nini basaleli mosusu balobaka prédicteurs e salaka ?Ba elembo e ajouter rythme mpe faux réconfort. Ko sentir structuré e zala te komona l’avenir."
+      ],
+      [
+        "Pourquoi certains joueurs disent que les prédicteurs aident ?",
+        "Mpo na nini basaleli mosusu balobaka prédicteurs e salaka ?"
+      ],
+      [
+        "Les signaux ajoutent du rythme et un faux réconfort. Se sentir structuré n’est pas voir l’avenir.",
+        "Ba elembo e ajouter rythme mpe faux réconfort. Ko sentir structuré e zala te komona l’avenir."
+      ],
+      [
+        "Quel est le principal risque avec les fichiers APK prédicteur ?La perte la plus grave n’est souvent pas un mauvais pari — c’est une install empoisonnée, des identifiants volés, ou une arnaque qui vend la certitude.",
+        "Risque principal na ba fisyés APK prédicteur ezali nini ?Perte ya solo mbala mingi e zala te mauvais pari — ezali install empoisonnée, identifiants volés to arnaque oyo e vendre certitude."
+      ],
+      [
+        "Quel est le principal risque avec les fichiers APK prédicteur ?",
+        "Risque principal na ba fisyés APK prédicteur ezali nini ?"
+      ],
+      [
+        "La perte la plus grave n’est souvent pas un mauvais pari — c’est une install empoisonnée, des identifiants volés, ou une arnaque qui vend la certitude.",
+        "Perte ya solo mbala mingi e zala te mauvais pari — ezali install empoisonnée, identifiants volés to arnaque oyo e vendre certitude."
+      ],
+      [
+        "Quelle voie plus saine que de courir après les prédicteurs ?Comprendre le comportement réel d’Aviator, utiliser le solde démo quand il est proposé, borner les sessions, et traiter toute promesse de « timing garanti » comme un signal d’arnaque.",
+        "Nini nzela plus saine koleka koluka ba prédicteurs ?Koyeba ndenge ya kosala ya solo ya Aviator, kosalela solde demo soki e proposer, limiter ba sessions, mpe traiter promesse ya « tango ya surete » lokola signal arnaque."
+      ],
+      [
+        "Quelle voie plus saine que de courir après les prédicteurs ?",
+        "Nini nzela plus saine koleka koluka ba prédicteurs ?"
+      ],
+      [
+        "Comprendre le comportement réel d’Aviator, utiliser le solde démo quand il est proposé, borner les sessions, et traiter toute promesse de « timing garanti » comme un signal d’arnaque.",
+        "Koyeba ndenge ya kosala ya solo ya Aviator, kosalela solde demo soki e proposer, limiter ba sessions, mpe traiter promesse ya « tango ya surete » lokola signal arnaque."
+      ],
+      [
+        "Jeu responsable : Ce site est une ressource d’information indépendante et n’est pas affilié aux opérateurs cités plus haut. Vérifiez l’âge légal et la réglementation locale avant de jouer, et restez prudent avec les liens externes et les offres d’applis tierces.",
+        "Lisano responsable : Site oyo ezali ressource ya information indépendante mpe ezali na lien te na ba opérateurs oyo elobami. Vérifier âge légal mpe réglementation locale liboso ya kobeta, mpe zala prudent na ba liens externes mpe ba offres app tierces."
+      ],
+      [
+        "Jeu responsable ::",
+        "Lisano responsable:"
+      ],
+      [
+        "Ce site est une ressource d’information indépendante et n’est pas affilié aux opérateurs cités plus haut. Vérifiez l’âge légal et la réglementation locale avant de jouer, et restez prudent avec les liens externes et les offres d’applis tierces.",
+        "Site oyo ezali ressource ya information indépendante mpe ezali na lien te na ba opérateurs oyo elobami. Vérifier âge légal mpe réglementation locale liboso ya kobeta, mpe zala prudent na ba liens externes mpe ba offres app tierces."
+      ]
+    ]
+  }
+}

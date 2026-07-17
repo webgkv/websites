@@ -1,0 +1,417 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Mwongozo wa Mkakati na Benki ya Spribe Aviator",
+      "title": "Mkakati wa Aviator: Benki, Malengo, Hatari, Ukweli",
+      "description": "Mkakati unaweza na hauwezi nini katika Aviator: sheria za benki, malengo ya Cash Out, kwa nini raundi za zamani hazibashiri zijazo — si njia ya kushinda."
+    },
+    "ln": {
+      "name": "Guide ya strategy mpe bankroll ya Spribe Aviator",
+      "title": "Strategy ya Aviator: bankroll, cibles, riski, solo",
+      "description": "Oyo strategy ekoki mpe ekoki te na Aviator: mibeko ya bankroll, cibles ya Cash Out, mpo nini ba round ya kala e prévoir te oyo ekoya — garantie ya gain te."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "How to win at Aviator: what strategy can and cannot do",
+        "Jinsi ya kushinda Aviator: mkakati unaweza na hauwezi nini"
+      ],
+      [
+        "Strategy Comparison: What Helps vs What Hurts",
+        "Ulinganisho wa mkakati: kinachosaidia dhidi ya kinachodhuru"
+      ],
+      [
+        "Tips for Smarter Play",
+        "Vidokezo vya uchezaji wa busara zaidi"
+      ],
+      [
+        "Cash-Out Targets: Risk vs Reward",
+        "Malengo ya Cash Out: hatari dhidi ya zawadi"
+      ],
+      [
+        "What to Avoid",
+        "Nini cha kuepuka"
+      ],
+      [
+        "Conclusion",
+        "Hitimisho"
+      ],
+      [
+        "How to approach Aviator strategy realistically",
+        "Jinsi ya kukaribia mkakati wa Aviator kwa ukweli"
+      ],
+      [
+        "Aviator strategy tips and bankroll control",
+        "Vidokezo vya mkakati wa Aviator na udhibiti wa benki"
+      ],
+      [
+        "What to avoid when trying to win at Aviator",
+        "Nini cha kuepuka unapojaribu kushinda Aviator"
+      ],
+      [
+        "People search for “how to win Aviator” as if there were a hidden system behind the game. In reality, Aviator is still a negative-expectation crash game: the multiplier is random, the next round cannot be predicted from the previous one, and no staking method removes the house edge. Strategy still helps when you treat it as risk control, session length, and decision quality — not as a way to force guaranteed profit.",
+        "Watu hutafuta «jinsi ya kushinda Aviator» kana kwamba kuna mfumo wa siri nyuma ya mchezo. Kwa kweli, Aviator bado ni crash game yenye matarajio hasi: multiplier ni nasibu, raundi ijayo haiwezi kutabiriwa kutoka kwa iliyotangulia, na hakuna njia ya kuweka dau inayondoa faida ya nyumba. Mkakati bado husaidia unapouchukulia kama udhibiti wa hatari, urefu wa kikao na ubora wa maamuzi — si njia ya kulazimisha faida iliyohakikishwa."
+      ],
+      [
+        "Reframe the question. Stop asking how to beat the game and start asking how to avoid the common ways players lose control. In Aviator, that usually means chasing high multipliers after regret, raising stakes after losses, trusting prediction groups, or playing too long without a session plan. Winning sessions can happen, but they come from short-term variance, not from breaking the game.",
+        "Badilisha swali. Acha kuuliza jinsi ya kushinda mchezo na anza kuuliza jinsi ya kuepuka njia za kawaida ambazo wachezaji hupoteza udhibiti. Katika Aviator, hiyo kwa kawaida inamaanisha kufuatilia multipliers za juu baada ya majuto, kuongeza dau baada ya hasara, kuamini makundi ya utabiri, au kucheza muda mrefu bila mpango wa kikao. Vikao vya kushinda vinaweza kutokea, lakini hutoka kwa variance ya muda mfupi, si kwa kuvunja mchezo."
+      ],
+      [
+        "Approach",
+        "Mbinu"
+      ],
+      [
+        "Best use",
+        "Matumizi bora"
+      ],
+      [
+        "Low cash-out targets",
+        "Malengo ya chini ya cash-out"
+      ],
+      [
+        "Higher hit rate, but smaller profit per win",
+        "Kiwango cha juu cha kufikia, lakini faida ndogo kwa kila ushindi"
+      ],
+      [
+        "Longer sessions and lower volatility",
+        "Vikao virefu na volatility ya chini"
+      ],
+      [
+        "High multiplier chasing",
+        "Kufuatilia multipliers za juu"
+      ],
+      [
+        "Big upside, but frequent full losses",
+        "Faida kubwa, lakini hasara kamili mara nyingi"
+      ],
+      [
+        "Only if you accept sharp swings",
+        "Tu ukikubali mabadiliko makali"
+      ],
+      [
+        "Martingale or doubling after loss",
+        "Martingale au kuongeza maradufu baada ya hasara"
+      ],
+      [
+        "Does not change the odds and increases blow-up risk",
+        "Haibadilishi uwezekano na huongeza hatari ya kupoteza kila kitu"
+      ],
+      [
+        "Best avoided",
+        "Epuka kwa ubora"
+      ],
+      [
+        "Budget and stop rules",
+        "Bajeti na sheria za kusimama"
+      ],
+      [
+        "Do not change RTP, but protect decision-making",
+        "Haibadilishi RTP, lakini hulinda uamuzi"
+      ],
+      [
+        "Strongly recommended",
+        "Inashauriwa sana"
+      ],
+      [
+        "Set a session budget first: Decide what you can afford to lose before the first round starts.",
+        "Weka bajeti ya kikao kwanza: Amua unaweza kupoteza nini kabla ya raundi ya kwanza kuanza."
+      ],
+      [
+        "Keep stake size small: Many players use a small fixed share of bankroll per round so one losing streak does not wipe out the session quickly.",
+        "Weka ukubwa wa dau mdogo: Wachezaji wengi hutumia sehemu ndogo ya benki kwa kila raundi ili mfululizo wa kushindwa usifute kikao haraka."
+      ],
+      [
+        "Choose targets that match your goal: Lower targets usually mean more frequent wins; higher targets mean more volatility.",
+        "Chagua malengo yanayolingana na lengo lako: Malengo ya chini kwa kawaida yanamaanisha ushindi wa mara nyingi zaidi; ya juu yanamaanisha volatility zaidi."
+      ],
+      [
+        "Use auto cash-out if it helps discipline: It can reduce hesitation, regret, and last-second emotional changes.",
+        "Tumia auto cash-out ikiwa inasaidia nidhamu: Inaweza kupunguza kusita, majuto na mabadiliko ya hisia ya sekunde ya mwisho."
+      ],
+      [
+        "Stop when the plan says stop: A stop-loss, time limit, or profit cap is often more useful than any “winning trick.”",
+        "Simama mpango unaposema simama: Kikomo cha hasara, kikomo cha muda au kikomo cha faida mara nyingi ni muhimu zaidi kuliko «hila ya kushinda» yoyote."
+      ],
+      [
+        "Typical use",
+        "Matumizi ya kawaida"
+      ],
+      [
+        "1.20x&ndash;1.50x",
+        "1.20x&ndash;1.50x"
+      ],
+      [
+        "Lower; frequent hits, smaller margin",
+        "Chini; kufikia mara nyingi, faida ndogo"
+      ],
+      [
+        "Controlled play and longer sessions",
+        "Uchezaji uliodhibitiwa na vikao virefu"
+      ],
+      [
+        "2.00x&ndash;3.00x",
+        "2.00x&ndash;3.00x"
+      ],
+      [
+        "Medium; more variance",
+        "Wastani; variance zaidi"
+      ],
+      [
+        "Balanced approach for some players",
+        "Mbinu iliyosawazishwa kwa wachezaji wengine"
+      ],
+      [
+        "High; many rounds fail before target",
+        "Juu; raundi nyingi hushindwa kabla ya lengo"
+      ],
+      [
+        "Occasional upside with frequent misses",
+        "Faida ya mara kwa mara na kukosa mara nyingi"
+      ],
+      [
+        "Avoid anyone claiming to know the next crash point, to have access to “signals”, or to offer a guaranteed method. Past rounds do not unlock the next one. Doubling systems can make losses faster, not safer. Overlong sessions also create their own danger: once frustration, overconfidence, or fatigue takes over, even a decent plan usually breaks apart.",
+        "Epuka mtu yeyote anayedai kujua crash point ijayo, kuwa na «signals», au kutoa njia iliyohakikishwa. Raundi za zamani hazifungui ijayo. Mifumo ya kuongeza maradufu inaweza kuharakisha hasara, si kuifanya salama. Vikao virefu pia huleta hatari yake: mara hisia, kujiamini kupita kiasi au uchovu unapochukua udhibiti, hata mpango mzuri kwa kawaida huvunjika."
+      ],
+      [
+        "The honest answer to “how to win at Aviator” is that there is no repeatable system that defeats the game. The closest thing to a useful strategy is disciplined bankroll management, realistic targets, and knowing when to stop. That will not remove the house edge, but it can help you play with fewer bad decisions and a clearer understanding of what the game really is.",
+        "Jibu la uaminifu kwa «jinsi ya kushinda Aviator» ni kwamba hakuna mfumo unaorudiwa unaoshinda mchezo. Karibu na mkakati unaofaa ni usimamizi wa nidhamu wa benki, malengo ya kweli na kujua lini kusimama. Hilo haliondoi faida ya nyumba, lakini linaweza kukusaidia kucheza na maamuzi mabaya machache na uelewa wazi wa mchezo ni nini kweli."
+      ],
+      [
+        "Reframe the question.",
+        "Badilisha swali."
+      ],
+      [
+        " Stop asking how to beat the game and start asking how to avoid the common ways players lose control. In Aviator, that usually means chasing high multipliers after regret, raising stakes after losses, trusting prediction groups, or playing too long without a session plan. Winning sessions can happen, but they come from short-term variance, not from breaking the game.",
+        " Acha kuuliza jinsi ya kushinda mchezo na anza kuuliza jinsi ya kuepuka njia za kawaida ambazo wachezaji hupoteza udhibiti. Katika Aviator, hiyo kwa kawaida inamaanisha kufuatilia multipliers za juu baada ya majuto, kuongeza dau baada ya hasara, kuamini makundi ya utabiri, au kucheza muda mrefu bila mpango wa kikao. Vikao vya kushinda vinaweza kutokea, lakini hutoka kwa variance ya muda mfupi, si kwa kuvunja mchezo."
+      ],
+      [
+        "Reality",
+        "Ukweli"
+      ],
+      [
+        "Target",
+        "Lengo"
+      ],
+      [
+        "Risk",
+        "Hatari"
+      ],
+      [
+        "4.00x+",
+        "4.00x+"
+      ],
+      [
+        "1.20x–1.50x",
+        "1.20x–1.50x"
+      ],
+      [
+        "2.00x–3.00x",
+        "2.00x–3.00x"
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Comment gagner à Aviator : ce que la stratégie peut ou ne peut pas faire",
+        "Ndenge ya kolonga na Aviator : oyo strategy ekoki mpe ekoki te"
+      ],
+      [
+        "Comparatif des approches : ce qui aide vs ce qui nuit",
+        "Comparatif ya ba approches : oyo esalisaka vs oyo e bétisi"
+      ],
+      [
+        "Conseils pour jouer plus intelligemment",
+        "Ba conseils mpo na kobeta malamu koleka"
+      ],
+      [
+        "Objectifs de cash-out : risque vs rendement",
+        "Ba objectifs ya cash-out : risque vs rendement"
+      ],
+      [
+        "Ce qu’il faut éviter",
+        "Oyo esengeli koebisa"
+      ],
+      [
+        "Conclusion",
+        "Conclusion"
+      ],
+      [
+        "Aborder la stratégie Aviator de façon réaliste",
+        "Kozala na approche ya solo na strategy Aviator"
+      ],
+      [
+        "Conseils Aviator et gestion du budget",
+        "Ba conseils Aviator mpe gestion ya budget"
+      ],
+      [
+        "Ce qu’il faut éviter quand on essaie de gagner à Aviator",
+        "Oyo esengeli koebisa soki o lingi kolonga na Aviator"
+      ],
+      [
+        "Beaucoup de joueurs recherchent « comment gagner à Aviator » comme s’il existait un système caché derrière le jeu. En réalité, Aviator reste un crash game à espérance négative : le multiplicateur est aléatoire, le tour suivant ne peut pas être déduit du précédent et aucune méthode de mise ne supprime l’avantage de la maison. La stratégie reste utile si on la voit comme un outil pour maîtriser le risque, la durée de session et la qualité des décisions — pas comme un levier de profits garantis.",
+        "Bato mingi e koluka « comment gagner à Aviator » lokola soki ezalaki système caché. Na solo, Aviator e reste crash game na espérance négative : multiplicateur ezali aléatoire, tour oyo ekoya ekoki kozwama te na oyo eleki, mpe méthode ya mise nionso e supprimer te avantage ya ndako. Strategy e reste utile soki omoni yango lokola contrôle ya risque, durée ya session mpe qualité ya ba décisions — te lokola levier ya profits garantis."
+      ],
+      [
+        "Reformulez la question. Cessez de chercher comment battre le jeu et demandez-vous plutôt comment éviter les erreurs classiques qui font perdre le contrôle. Sur Aviator, cela signifie souvent courir après les gros multiplicateurs après un regret, augmenter les mises après des pertes, croire aux groupes de prédiction ou jouer trop longtemps sans plan de session. Des sessions gagnantes sont possibles, mais elles relèvent de la variance à court terme, pas d’une faille du jeu.",
+        "Reformulez question. Tika koluka ndenge ya ko battre lisano mpe demandez plutôt comment éviter ba erreurs classiques oyo e salaka bato perdre contrôle. Na Aviator, oyo elakisi souvent kolanda ba multiplicateurs ya likolo nsima ya regret, augmenter ba mises nsima ya ba pertes, kotya confiance na ba groupes ya prédiction to kobeta trop longtemps sans plan ya session. Ba sessions gagnantes ezali possible, kasi e vient ya variance ya petit terme, te ya faille ya lisano."
+      ],
+      [
+        "Approche",
+        "Approche"
+      ],
+      [
+        "Meilleur usage",
+        "Meilleur usage"
+      ],
+      [
+        "Objectifs de cash-out bas",
+        "Ba objectifs ya cash-out ya bas"
+      ],
+      [
+        "Taux de réussite plus élevé, mais gain plus faible par victoire",
+        "Taux ya réussite ya likolo, kasi gain ya moke na victoire"
+      ],
+      [
+        "Sessions plus longues et volatilité plus faible",
+        "Ba sessions ya molai mpe volatilité ya moke"
+      ],
+      [
+        "Chasse aux multiplicateurs élevés",
+        "Chasse na ba multiplicateurs ya likolo"
+      ],
+      [
+        "Fort potentiel, mais pertes totales fréquentes",
+        "Fort potentiel, kasi ba pertes totales ya mbala mingi"
+      ],
+      [
+        "Seulement si vous acceptez de fortes variations",
+        "Kaka soki o accepte ba variations ya makasi"
+      ],
+      [
+        "Martingale ou doublement après une perte",
+        "Martingale to doublement nsima ya perte"
+      ],
+      [
+        "Ne change pas les probabilités et augmente le risque de tout perdre",
+        "E changer te probabilités mpe e augmenter risque ya ko perdre nionso"
+      ],
+      [
+        "Mieux vaut éviter",
+        "Mieux vaut éviter"
+      ],
+      [
+        "Budget et règles d’arrêt",
+        "Budget mpe ba règles ya arrêt"
+      ],
+      [
+        "Ne changent pas le RTP, mais protègent la prise de décision",
+        "E changer te RTP, kasi e protéger prise ya décision"
+      ],
+      [
+        "Fortement recommandé",
+        "Fortement recommandé"
+      ],
+      [
+        "Fixez un budget de session d’abord : Décidez ce que vous pouvez vous permettre de perdre avant le premier tour.",
+        "Fixer budget ya session liboso : Décider oyo okoki ko perdre liboso ya tour ya liboso."
+      ],
+      [
+        "Gardez des mises modestes : Beaucoup de joueurs utilisent une petite part fixe de leur budget par tour pour qu’une série perdante ne fasse pas exploser la session trop vite.",
+        "Garder ba mises modestes : Bato mingi basalaka petite part fixe ya budget na tour mpo série perdante e fêter te session trop vite."
+      ],
+      [
+        "Choisissez des objectifs adaptés à votre but : Des cibles plus basses signifient généralement des gains plus fréquents ; des cibles plus hautes impliquent davantage de volatilité.",
+        "Pona ba objectifs adaptés na goal na yo : Ba cibles ya bas elakisi généralement ba gains ya mbala mingi ; ba cibles ya likolo, volatilité ya koleka."
+      ],
+      [
+        "Utilisez l’auto cash-out si cela vous aide à rester discipliné : Cela peut réduire l’hésitation, le regret et les changements émotionnels de dernière seconde.",
+        "Sala auto cash-out soki esalisaka rester discipliné : Ekoki kobakisa hesitation, regret mpe ba changements émotionnels ya dernière seconde."
+      ],
+      [
+        "Arrêtez-vous quand le plan le dit : Une limite de perte, un temps de jeu maximal ou un plafond de gain est souvent plus utile qu’une quelconque « astuce gagnante ».",
+        "Tika soki plan elobi tika : Limite ya perte, temps ya jeu maximal to plafond ya gain ezali souvent plus utile na « astuce gagnante » nionso."
+      ],
+      [
+        "Objectif",
+        "Objectif"
+      ],
+      [
+        "Usage typique",
+        "Usage typique"
+      ],
+      [
+        "1.20x&ndash;1.50x",
+        "1.20x&ndash;1.50x"
+      ],
+      [
+        "Plus faible ; plus de tours réussis, mais marge réduite",
+        "Plus faible ; ba tours ya mbala mingi, kasi marge réduite"
+      ],
+      [
+        "Jeu maîtrisé et sessions plus longues",
+        "Jeu maîtrisé mpe ba sessions ya molai"
+      ],
+      [
+        "2.00x&ndash;3.00x",
+        "2.00x&ndash;3.00x"
+      ],
+      [
+        "Moyen ; plus de variance",
+        "Moyen ; variance ya koleka"
+      ],
+      [
+        "Approche équilibrée pour certains joueurs",
+        "Approche équilibrée mpo na ba joueurs mosusu"
+      ],
+      [
+        "Élevé ; beaucoup de tours échouent avant l’objectif",
+        "Élevé ; ba tours mingi e échouer liboso ya objectif"
+      ],
+      [
+        "Gros potentiel ponctuel, mais échecs fréquents",
+        "Gros potentiel ponctuel, kasi ba échecs ya mbala mingi"
+      ],
+      [
+        "Évitez tous ceux qui prétendent connaître le prochain point de crash, avoir accès à des « signaux » ou vendre une méthode garantie. Les tours précédents ne révèlent pas le suivant. Les systèmes de doublement peuvent accélérer les pertes au lieu de les rendre plus sûres. Les sessions trop longues créent aussi leur propre danger : quand la frustration, l’excès de confiance ou la fatigue prennent le dessus, même un plan correct finit généralement par s’effondrer.",
+        "Ebisa bato nionso oyo e prétendre koyeba point ya crash oyo ekoya, kozwa « signaux » to koteka méthode garantie. Ba tours ya liboso e révéler te oyo ekoya. Ba systèmes ya doublement ekoki ko accélérer ba pertes na esika ya kosala yango plus sûr. Ba sessions trop longues e créer mpe danger na yango : soki frustration, excès ya confiance to fatigue e prêter, même plan ya solo e s’effondrer généralement."
+      ],
+      [
+        "La réponse honnête à la question « comment gagner à Aviator » est qu’il n’existe aucun système reproductible capable de battre le jeu. La stratégie la plus utile reste une gestion disciplinée du budget, des objectifs réalistes et la capacité de savoir quand s’arrêter. Cela ne supprime pas l’avantage de la maison, mais peut vous aider à jouer avec moins de mauvaises décisions et une vision plus claire de ce qu’est réellement ce jeu.",
+        "Réponse ya solo na « comment gagner à Aviator » ezali ete ezali système reproductible te oyo ekoki ko battre lisano. Oyo e zala le plus proche ya strategy utile ezali gestion disciplinée ya budget, ba objectifs réalistes mpe capacité ya koyeba tango ya kotika. Oyo e supprimer te avantage ya ndako, kasi ekoki kosalisa kobeta na ba mauvaises décisions ya moke mpe vision ya polele ya oyo lisano ezali solo."
+      ],
+      [
+        "Reformulez la question.",
+        "Reformulez question."
+      ],
+      [
+        " Cessez de chercher comment battre le jeu et demandez-vous plutôt comment éviter les erreurs classiques qui font perdre le contrôle. Sur Aviator, cela signifie souvent courir après les gros multiplicateurs après un regret, augmenter les mises après des pertes, croire aux groupes de prédiction ou jouer trop longtemps sans plan de session. Des sessions gagnantes sont possibles, mais elles relèvent de la variance à court terme, pas d'une faille du jeu.",
+        " Tika koluka ndenge ya ko battre lisano mpe demandez plutôt comment éviter ba erreurs classiques oyo e salaka bato perdre contrôle. Na Aviator, oyo elakisi souvent kolanda ba multiplicateurs ya likolo nsima ya regret, augmenter ba mises nsima ya ba pertes, kotya confiance na ba groupes ya prédiction to kobeta trop longtemps sans plan ya session. Ba sessions gagnantes ezali possible, kasi e vient ya variance ya petit terme, te ya faille ya lisano."
+      ],
+      [
+        "Réalité",
+        "Réalité"
+      ],
+      [
+        "Objectif",
+        "Objectif"
+      ],
+      [
+        "Risque",
+        "Risque"
+      ],
+      [
+        "4.00x+",
+        "4.00x+"
+      ],
+      [
+        "1.20x&ndash;1.50x",
+        "1.20x–1.50x"
+      ],
+      [
+        "2.00x&ndash;3.00x",
+        "2.00x–3.00x"
+      ]
+    ]
+  }
+}

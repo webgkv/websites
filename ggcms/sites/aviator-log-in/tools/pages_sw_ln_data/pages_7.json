@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Games",
+      "title": "Michezo ya Aviator na Crash",
+      "description": "Michezo kama Aviator, JetX na crash games nyingine — mapitio na mahali pa kucheza."
+    },
+    "ln": {
+      "name": "Games",
+      "title": "Ba lisano ya Aviator mpe crash",
+      "description": "Ba lisano lokola Aviator, JetX mpe ba crash game mosusu — ba tala mpe esika ya kobeta."
+    }
+  }
+}

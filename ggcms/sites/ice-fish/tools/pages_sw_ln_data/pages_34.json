@@ -1,0 +1,105 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Sakinisha Android APK",
+      "title": "Sakinisha demo ya Ice Fish (APK Android)",
+      "description": "Pakua APK ya Ice Fish, ruhusu usakinishaji kutoka kwa kivinjari au programu ya Faili, kisha washa arifa za bonasi."
+    },
+    "ln": {
+      "name": "Botia APK Android",
+      "title": "Botia demo Ice Fish (APK Android)",
+      "description": "Télécharger APK Ice Fish, autoriser installation na navigateur to app Fichiers, activé ba notifications ya bonus."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Install the Ice Fish demo (Android APK)",
+        "Sakinisha demo ya Ice Fish (APK Android)"
+      ],
+      ["What you get", "Unachopata"],
+      ["Step by step", "Hatua kwa hatua"],
+      ["Step 1 — Download the APK", "Hatua 1 — Pakua APK"],
+      ["Step 2 — Allow installation from this source", "Hatua 2 — Ruhusu usakinishaji kutoka chanzo hiki"],
+      ["Step 3 — Install, allow notifications, and open", "Hatua 3 — Sakinisha, ruhusu arifa, na ufungue"],
+      [
+        "Download Ice Fish APK (illustration)",
+        "Pakua APK ya Ice Fish (mfano)"
+      ],
+      [
+        "Android settings for install unknown apps (illustration)",
+        "Mipangilio ya Android ya kusakinisha programu zisizojulikana (mfano)"
+      ],
+      [
+        "Install, notifications, and open Ice Fish (illustration)",
+        "Sakinisha, arifa, na ufungua Ice Fish (mfano)"
+      ],
+      [
+        "Installing from our APK gives you almost the same experience as installing Ice Fish from Google Play: the app works the same way after setup, and the only real difference is the installation method.",
+        "Kusakinisha kutoka kwa APK yetu kunakupa uzoefu karibu sawa na kusakinisha Ice Fish kutoka Google Play: programu inafanya kazi vile vile baada ya usanidi, na tofauti pekee ni njia ya usakinishaji."
+      ],
+      [
+        "Use the <strong>Download APK</strong> button on this page to get the file. A direct install from our APK is designed to give you the <strong>same kind of app experience</strong> you expect from an official app: quick access to the Ice Fish demo and important updates in one place.",
+        "Tumia kitufe cha <strong>Pakua APK</strong> kwenye ukurasa huu kupata faili. Usakinishaji wa moja kwa moja kutoka kwa APK yetu umeundwa kukupa <strong>uzoefu wa aina ile ile ya programu</strong> unayotarajia kutoka kwa programu rasmi: ufikiaji wa haraka wa demo ya Ice Fish na masasisho muhimu mahali pamoja."
+      ],
+      ["Download APK", "Pakua APK"],
+      [
+        "Tap <strong>Download APK</strong> above and save the file. When the download finishes, open it from the notification or from your <strong>Downloads</strong> / <strong>Files</strong> app.",
+        "Gusa <strong>Pakua APK</strong> hapo juu na uhifadhi faili. Pakia inapomalizika, ifungue kutoka kwa arifa au kutoka kwa programu yako ya <strong>Downloads</strong> / <strong>Files</strong>."
+      ],
+      [
+        "Android only installs the file if your device allows installs from the app you use to open the APK. Go to <strong>Settings</strong> → <strong>Apps</strong> → <strong>Special app access</strong> → <strong>Install unknown apps</strong>, then choose the app that opens the file, for example <strong>Chrome</strong> or <strong>Files</strong>, and turn on <strong>Allow from this source</strong>. If you do not see this exact path, open <strong>Settings</strong> → <strong>Security</strong> and look for a similar option for unknown sources or external installs for that same app.",
+        "Android husakinisha faili tu ikiwa kifaa chako kinaruhusu usakinishaji kutoka kwa programu unayotumia kufungua APK. Nenda <strong>Settings</strong> → <strong>Apps</strong> → <strong>Special app access</strong> → <strong>Install unknown apps</strong>, kisha chagua programu inayofungua faili, kwa mfano <strong>Chrome</strong> au <strong>Files</strong>, na washa <strong>Allow from this source</strong>. Ukiiona njia hii hasa, fungua <strong>Settings</strong> → <strong>Security</strong> na utafute chaguo linalofanana kwa usakinishaji wa nje kwa programu hiyo hiyo."
+      ],
+      [
+        "Return to the downloaded file, start the install, and confirm. When the system asks, <strong>allow notifications</strong> so you can receive timely information about <strong>bonuses and promotions</strong>. When the installation finishes, open <strong>Ice Fish</strong> from the app drawer or your home screen.",
+        "Rudi kwenye faili iliyopakuliwa, anza usakinishaji, na thibitisha. Mfumo unapouliza, ruhusu <strong>arifa</strong> ili upokee taarifa za wakati kuhusu <strong>bonasi na matangazo</strong>. Usakinishaji unapomalizika, fungua <strong>Ice Fish</strong> kutoka kwa droo ya programu au skrini yako ya nyumbani."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Installer la démo Ice Fish (APK Android)",
+        "Botia demo Ice Fish (APK Android)"
+      ],
+      ["Ce que vous obtenez", "Oyo okozua"],
+      ["Procédure détaillée", "Procédure na ba étapes"],
+      ["Étape 1 — Télécharger l’APK", "Étape 1 — Télécharger l&rsquo;APK"],
+      ["Étape 2 — Autoriser l’installation depuis cette source", "Étape 2 — Autoriser installation na source oyo"],
+      ["Étape 3 — Installer, autoriser les notifications et ouvrir", "Étape 3 — Botia, autoriser ba notifications mpe fungola"],
+      [
+        "Téléchargement de l’APK Ice Fish (illustration)",
+        "Téléchargement ya APK Ice Fish (illustration)"
+      ],
+      [
+        "Paramètres Android pour l’installation d’apps inconnues (illustration)",
+        "Ba paramètres Android mpo na botia ba apps inconnues (illustration)"
+      ],
+      [
+        "Installation, notifications et ouverture d’Ice Fish (illustration)",
+        "Botia, ba notifications mpe kofungola Ice Fish (illustration)"
+      ],
+      [
+        "L’installation via notre APK vous donne pratiquement la même expérience qu’une installation d’Ice Fish depuis Google Play : une fois l’app en place, son fonctionnement reste le même, seule la méthode d’installation change.",
+        "Kobota na APK na biso epesaka presque expérience moko na kobota Ice Fish na Google Play : sima ya setup app esalaka ndenge moko, ndenge ya kobota kaka nde ebongwanaka."
+      ],
+      [
+        "Utilisez le bouton <strong>Télécharger l’APK</strong> sur cette page pour récupérer le fichier. Une installation directe via notre APK vise le <strong>même confort d’usage</strong> qu’une application officielle : accès rapide à la démo Ice Fish et informations importantes au même endroit.",
+        "Salela bouton <strong>Télécharger l&rsquo;APK</strong> na page oyo mpo na kozua fichier. Botia directe na APK na biso elengisami mpo na <strong>expérience ya app moko</strong> : accès noki na demo Ice Fish mpe ba mises à jour ya ntina na esika moko."
+      ],
+      ["Télécharger l’APK", "Télécharger l&rsquo;APK"],
+      [
+        "Appuyez sur <strong>Télécharger l’APK</strong> et enregistrez le fichier. Une fois le téléchargement terminé, ouvrez-le depuis la notification ou depuis <strong>Téléchargements</strong> / <strong>Fichiers</strong>.",
+        "Bɛta <strong>Télécharger l&rsquo;APK</strong> mpe enregistrer fichier. Soki téléchargement esili, fungola yango na notification to na <strong>Téléchargements</strong> / <strong>Fichiers</strong>."
+      ],
+      [
+        "Android n’installe le fichier que si votre appareil autorise l’application qui ouvre l’APK à installer des apps. Ouvrez <strong>Réglages</strong> → <strong>Applications</strong> → <strong>Accès spécial aux applications</strong> → <strong>Installer des applications inconnues</strong>, choisissez l’app utilisée pour ouvrir le fichier, souvent <strong>Chrome</strong> ou <strong>Fichiers</strong>, puis activez l’autorisation. Si ce chemin n’apparaît pas tel quel, cherchez sous <strong>Réglages</strong> → <strong>Sécurité</strong> une option équivalente pour cette même appli.",
+        "Android eboti fichier kaka soki appareil na yo epesaka ndingisa na app oyo efungoli APK. Kende <strong>Réglages</strong> → <strong>Applications</strong> → <strong>Accès spécial</strong> → <strong>Installer des applications inconnues</strong>, pona app oyo efungoli fichier (<strong>Chrome</strong> to <strong>Fichiers</strong>), activé autorisation. Soki nzela oyo ezali te, tala <strong>Réglages</strong> → <strong>Sécurité</strong> mpo na option ya ndenge moko."
+      ],
+      [
+        "Revenez au fichier téléchargé, lancez l’installation et confirmez. Quand le système le demande, <strong>autorisez les notifications</strong> pour recevoir les informations les plus récentes sur les <strong>bonus et promotions</strong>. Quand l’installation est terminée, ouvrez <strong>Ice Fish</strong> depuis le tiroir d’apps ou l’écran d’accueil.",
+        "Zonga na fichier oyo e téléchargé, banda botia mpe ndimi. Soki système esengi, <strong>autoriser ba notifications</strong> mpo na ba infos ya sika na <strong>bonus mpe promotions</strong>. Soki botia esili, fungola <strong>Ice Fish</strong> na tiroir ya apps to ecran d&rsquo;accueil."
+      ]
+    ]
+  }
+}

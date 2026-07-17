@@ -1,0 +1,505 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Mwongozo wa Uchambuzi wa Mchezo wa Spribe Aviator",
+      "title": "Uchambuzi wa Aviator: RTP, Multipliers, Historia",
+      "description": "Aviator na RTP 97% (~3% faida ya nyumba): historia, variance, kwa nini raundi za zamani hazibashiri crash ijayo, na jinsi ya kusoma zana kwa uwazi."
+    },
+    "ln": {
+      "name": "Guide ya analyse ya lisano Spribe Aviator",
+      "title": "Analyse ya Aviator: RTP, multipliers, historique",
+      "description": "Aviator na RTP 97% (~3% na ndako): historique e banda variété, mpo nini ba round ya kala e prévoir te crash oyo ekoya, mpe ndenge ya kotánga ba outil na solo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Aviator analysis: how multipliers, RTP and round history really work",
+        "Uchambuzi wa Aviator: jinsi multipliers, RTP na historia ya raundi zinavyofanya kazi kweli"
+      ],
+      [
+        "Outcome Comparison: Hitting the Target, Missing It and Chasing History",
+        "Ulinganisho wa matokeo: kufikia lengo, kukosa na kufuatilia historia"
+      ],
+      [
+        "Mathematical and Data Perspective",
+        "Mtazamo wa kihesabu na data"
+      ],
+      [
+        "Aviator vs Other Casino Games",
+        "Aviator dhidi ya michezo mingine ya kasino"
+      ],
+      [
+        "Conclusion and FAQ",
+        "Hitimisho na Maswali Yanayoulizwa Mara kwa Mara"
+      ],
+      [
+        "Aviator analysis and multiplier behaviour",
+        "Uchambuzi wa Aviator na tabia ya multiplier"
+      ],
+      [
+        "Aviator round history and multiplier data",
+        "Historia ya raundi za Aviator na data ya multiplier"
+      ],
+      [
+        "Reading Aviator analysis tools sensibly",
+        "Kusoma zana za uchambuzi wa Aviator kwa busara"
+      ],
+      [
+        "Aviator sounds simple. It is also easy to read wrong.",
+        "Aviator inaonekana rahisi. Pia ni rahisi kuisoma vibaya."
+      ],
+      [
+        "Every round opens at 1.00x. The multiplier climbs. The plane vanishes at a crash point you cannot call in advance. So people stare at the ticker and hunt for shapes in the noise.",
+        "Kila raundi huanza kwa 1.00x. Multiplier inapanda. Ndege hutoweka kwenye crash point ambayo huwezi kutabiri mapema. Kwa hiyo watu hutazama ticker na kutafuta miundo kwenye kelele."
+      ],
+      [
+        "Useful analysis starts elsewhere: learn what the maths can show, and stop asking history for a prophecy it will never give.",
+        "Uchambuzi unaofaa huanza mahali pengine: jifunze hesabu inaweza kuonyesha nini, na acha kuomba historia utabiri ambacho haitatoa kamwe."
+      ],
+      [
+        "Scroll back a few dozen rounds and you will spot clumps of lows, a few long flat stretches, and the occasional spike that hijacks attention. None of that makes a tall multiplier “due”. Past rounds help you feel variance, pace, and your own habits. They are not a forecast engine for the next crash.",
+        "Rudi nyuma raundi kadhaa na utaona makundi ya thamani za chini, vipande ndefu vya mstari wa kawaida, na spike mara chache inayovuta umakini. Hakuna hiyo inayofanya multiplier ya juu iwe «inastahili». Raundi za zamani hukusaidia kuhisi variance, kasi na tabia zako. Si injini ya utabiri kwa crash ijayo."
+      ],
+      [
+        "The table is for thinking, not for crystal balls. Same random shell each time — different player choices inside it.",
+        "Jedwali ni kwa kufikiria, si kwa kubashiri. Kila wakati ganda la nasibu lile lile — chaguo tofauti za wachezaji ndani yake."
+      ],
+      [
+        "Scenario",
+        "Scenario"
+      ],
+      [
+        "Your plan",
+        "Mpango wako"
+      ],
+      [
+        "What it shows",
+        "Inaonyesha nini"
+      ],
+      [
+        "Target hit",
+        "Lengo limefikiwa"
+      ],
+      [
+        "You set auto cash-out at 1.60x",
+        "Unaweka auto cash-out kwa 1.60x"
+      ],
+      [
+        "Round reaches 2.10x",
+        "Raundi inafikia 2.10x"
+      ],
+      [
+        "Your plan was reached, so the round becomes a controlled win",
+        "Mpango wako ulifikiwa, kwa hiyo raundi inakuwa ushindi uliodhibitiwa"
+      ],
+      [
+        "Target missed",
+        "Lengo halikufikiwa"
+      ],
+      [
+        "You aim for 2.50x",
+        "Unalenga 2.50x"
+      ],
+      [
+        "Round crashes at 1.23x",
+        "Raundi ina-crash kwa 1.23x"
+      ],
+      [
+        "The round never reached your target, so the stake is lost",
+        "Raundi haikufikia lengo lako, kwa hiyo dau linapotea"
+      ],
+      [
+        "History chase",
+        "Kufuatilia historia"
+      ],
+      [
+        "You raise the target after a streak of low rounds",
+        "Unaongeza lengo baada ya mfululizo wa raundi za chini"
+      ],
+      [
+        "Round crashes at 1.50x",
+        "Raundi ina-crash kwa 1.50x"
+      ],
+      [
+        "Recent history did not make a bigger multiplier any more likely",
+        "Historia ya hivi karibuni haikufanya multiplier kubwa iwe ya uwezekano zaidi"
+      ],
+      [
+        "In the usual Aviator setup, RTP sits at 97%. The house keeps roughly three cents of every theoretical dollar over a giant pile of bets. One short session can land anywhere; the percentage describes the long slope, not tonight’s graph.",
+        "Katika usanidi wa kawaida wa Aviator, RTP iko karibu na 97%. Nyumba huhifadhi takriban senti tatu kwa kila dola ya nadharia kwenye dau nyingi sana. Kikao kifupi kinaweza kuishia popote; asilimia inaelezea mteremko wa muda mrefu, si grafu ya leo usiku."
+      ],
+      [
+        "Lower cash-out targets hit more often; stretch targets hit less. The baked-in edge does not move. What swings is variance — how gentle or violent the ride feels.",
+        "Malengo ya chini ya cash-out yanafikiwa mara nyingi zaidi; malengo ya juu yanafikiwa mara chache. Faida iliyojengwa ndani haisogei. Kinachobadilika ni variance — jinsi safari inavyohisi laini au kali."
+      ],
+      [
+        "Aviator (crash)",
+        "Aviator (crash)"
+      ],
+      [
+        "Roulette",
+        "Roulette"
+      ],
+      [
+        "Typical RTP / house edge",
+        "RTP ya kawaida / faida ya nyumba"
+      ],
+      [
+        "97% RTP / 3% edge",
+        "RTP 97% / faida 3%"
+      ],
+      [
+        "Usually 95-98% RTP",
+        "Kwa kawaida RTP 95-98%"
+      ],
+      [
+        "About 97.3% RTP on European roulette",
+        "Takriban RTP 97.3% kwenye roulette ya Ulaya"
+      ],
+      [
+        "Round speed",
+        "Kasi ya raundi"
+      ],
+      [
+        "Very fast (seconds)",
+        "Haraka sana (sekunde)"
+      ],
+      [
+        "Player control",
+        "Udhibiti wa mchezaji"
+      ],
+      [
+        "Cash-out timing and optional auto cash-out",
+        "Muda wa cash-out na auto cash-out hiari"
+      ],
+      [
+        "None after spin",
+        "Hakuna baada ya spin"
+      ],
+      [
+        "Bet placement only",
+        "Kuweka dau tu"
+      ],
+      [
+        "What history is useful for",
+        "Historia inafaa kwa nini"
+      ],
+      [
+        "Variance and target review",
+        "Variance na ukaguzi wa lengo"
+      ],
+      [
+        "Mostly session tracking",
+        "Kimsingi ufuatiliaji wa kikao"
+      ],
+      [
+        "Mostly result logging",
+        "Kimsingi uandikishaji wa matokeo"
+      ],
+      [
+        "Honest trackers and “Aviator analysis” panels still earn their keep. They map multiplier bands, show how often your chosen exit would have cleared inside a sample, and stack your guesses against reality. They will never print the next crash in advance. Licensed venues, readable RTP notes, and provably fair or audited math beat every secret-pattern sales page.",
+        "Vifuatiliaji vya uwazi na paneli za «uchambuzi wa Aviator» bado vina thamani. Vinachora bendi za multiplier, vinaonyesha mara ngapi utoaji uliouchagua ungepita ndani ya sampuli, na vinalinganisha makisio yako na ukweli. Hawatachapisha crash ijayo mapema. Maeneo yenye leseni, maelezo ya RTP yanayosomeka, na hesabu iliyokaguliwa au provably fair huzishinda kurasa za mifumo ya siri."
+      ],
+      [
+        "Strong Aviator analysis skips the hunt for a magic signal. It locks onto probability, treats history as context, and picks limits that match a game measured in seconds.",
+        "Uchambuzi thabiti wa Aviator unaacha kuwinda ishara ya kichawi. Unaangazia uwezekano, unachukulia historia kama muktadha, na unachagua mipaka inayofaa mchezo unaopimwa kwa sekunde."
+      ],
+      [
+        "Keep the feed in that frame and the “hidden cycle” ads get very boring, very fast.",
+        "Weka mtiririko katika fremu hiyo na matangazo ya «mzunguko wa siri» yanakuwa ya kuchosha haraka sana."
+      ],
+      [
+        "What does 97% RTP mean in Aviator? It means that over a very large number of bets, the theoretical return to players is 97%, while the built-in house edge is 3%. It does not guarantee what happens in a short session.",
+        "RTP ya 97% inamaanisha nini katika Aviator? Inamaanisha kwamba kwenye idadi kubwa sana ya dau, kurudi kwa nadharia kwa wachezaji ni 97%, huku faida ya nyumba iliyojengwa ndani ikiwa 3%. Haikuhakikishi kinachotokea katika kikao kifupi."
+      ],
+      [
+        "How should I read Aviator round history? Use it to study variance, streaks, and how often certain targets were reached across a sample. Do not use it as proof that the next round is predictable or that a high multiplier is overdue.",
+        "Je, nisome historia ya raundi za Aviator vipi? Itumie kuchunguza variance, mfululizo na mara ngapi malengo fulani yalifikiwa katika sampuli. Usiitumie kama ushahidi kwamba raundi ijayo inaweza kutabiriwa au kwamba multiplier ya juu imechelewa."
+      ],
+      [
+        "Can analysis tools predict the next multiplier? No. Helpful tools can visualise past outcomes, but past rounds remain independent. Any tool that claims to know the next crash point should be treated with caution.",
+        "Je, zana za uchambuzi zinaweza kutabiri multiplier ijayo? Hapana. Zana zenye msaada zinaweza kuonyesha matokeo ya zamani, lakini raundi za zamani hubaki huru. Zana yoyote inayodai kujua crash point ijayo inapaswa kuchukuliwa kwa tahadhari."
+      ],
+      [
+        "Result",
+        "Matokeo"
+      ],
+      [
+        "Factor",
+        "Kipengele"
+      ],
+      [
+        "Slots",
+        "Slots"
+      ],
+      [
+        "Medium",
+        "Wastani"
+      ],
+      [
+        "Slower",
+        "Polepole"
+      ],
+      [
+        "What does 97% RTP mean in Aviator?",
+        "RTP ya 97% inamaanisha nini katika Aviator?"
+      ],
+      [
+        "It means that over a very large number of bets, the theoretical return to players is 97%, while the built-in house edge is 3%. It does not guarantee what happens in a short session.",
+        "Inamaanisha kwamba kwenye idadi kubwa sana ya dau, kurudi kwa nadharia kwa wachezaji ni 97%, huku faida ya nyumba iliyojengwa ndani ikiwa 3%. Haikuhakikishi kinachotokea katika kikao kifupi."
+      ],
+      [
+        "How should I read Aviator round history?",
+        "Je, nisome historia ya raundi za Aviator vipi?"
+      ],
+      [
+        "Use it to study variance, streaks, and how often certain targets were reached across a sample. Do not use it as proof that the next round is predictable or that a high multiplier is overdue.",
+        "Itumie kuchunguza variance, mfululizo na mara ngapi malengo fulani yalifikiwa katika sampuli. Usiitumie kama ushahidi kwamba raundi ijayo inaweza kutabiriwa au kwamba multiplier ya juu imechelewa."
+      ],
+      [
+        "Can analysis tools predict the next multiplier?",
+        "Je, zana za uchambuzi zinaweza kutabiri multiplier ijayo?"
+      ],
+      [
+        "No. Helpful tools can visualise past outcomes, but past rounds remain independent. Any tool that claims to know the next crash point should be treated with caution.",
+        "Hapana. Zana zenye msaada zinaweza kuonyesha matokeo ya zamani, lakini raundi za zamani hubaki huru. Zana yoyote inayodai kujua crash point ijayo inapaswa kuchukuliwa kwa tahadhari."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Analyse Aviator : comment multiplicateurs, RTP et historique des tours fonctionnent vraiment",
+        "Analyse ya Aviator : ndenge multiplicateurs, RTP mpe historique ya ba tours esalaka solo"
+      ],
+      [
+        "Comparaison des issues : atteindre la cible, la manquer et poursuivre l’historique",
+        "Bokokanisi ya ba résultats : kokóma na cible, kozanga yango mpe kolanda historique"
+      ],
+      [
+        "Perspective mathématique et lecture des données",
+        "Lolenge ya matematique mpe kotánga ba données"
+      ],
+      [
+        "Aviator face aux autres jeux de casino",
+        "Aviator liboso ya ba lisano ya casino mosusu"
+      ],
+      [
+        "Conclusion et FAQ",
+        "Conclusion mpe FAQ"
+      ],
+      [
+        "Analyse Aviator et comportement des multiplicateurs",
+        "Analyse ya Aviator mpe comportement ya ba multiplicateurs"
+      ],
+      [
+        "Historique des tours Aviator et données de multiplicateurs",
+        "Historique ya ba tours Aviator mpe ba données ya multiplicateurs"
+      ],
+      [
+        "Lire les outils d’analyse Aviator avec recul",
+        "Kotánga ba outils ya analyse Aviator na bokabi"
+      ],
+      [
+        "Aviator paraît simple. On le lit aussi très facilement à l’envers.",
+        "Aviator e zala pépé. E possible mpe kotánga yango mabe."
+      ],
+      [
+        "Chaque tour démarre à 1,00x. Le multiplicateur monte. L’avion disparaît à un point de crash qu’on ne peut pas annoncer à l’avance. Alors on fixe le bandeau et on cherche des formes dans le bruit.",
+        "Round nionso e banda na 1,00x. Multiplicateur ekobaka. Avion ekobima na point ya crash oyo okoki kolobela liboso te. Bato basalaka fixer bandeau mpe koluka ba forme na bruit."
+      ],
+      [
+        "Une analyse utile commence ailleurs : comprendre ce que les maths peuvent montrer, et cesser de demander à l’historique une prophétie qu’il ne fera jamais.",
+        "Analyse ya malamu e banda esika mosusu : koyeba oyo maths ekoki kolakisa, mpe tika koloba na historique prophétie oyo ekosala jamais."
+      ],
+      [
+        "Remontez quelques dizaines de tours : paquets de bas, longs plateaux, et parfois un pic qui accapare tout le regard. Rien de tout cela ne rend un gros multiplicateur « dû ». Les tours passés aident à sentir la variance, le rythme et vos habitudes. Ce n’est pas un moteur de prévision pour le prochain crash.",
+        "Zonga ba dizaine ya ba tours : ba paquets ya bas, ba plateaux ya molai, mpe parfois pic oyo e zua regard nionso. Eloko moko te esalaka gros multiplicateur « dû ». Ba tours ya kala esalisaka koyoka variance, rythme mpe ba habitudes na yo. Ezali te moteur ya prévision mpo na crash oyo ekoya."
+      ],
+      [
+        "Le tableau sert à réfléchir, pas à lire l’avenir. Même enveloppe aléatoire à chaque fois — des choix de joueur différents à l’intérieur.",
+        "Tableau ezali mpo na kokanisa, te mpo na kolánga l’avenir. Meme enveloppe aléatoire chaque fois — ba choix ya joueur différents na kati."
+      ],
+      [
+        "Scénario",
+        "Scénario"
+      ],
+      [
+        "Votre plan",
+        "Plan na yo"
+      ],
+      [
+        "Résultat",
+        "Résultat"
+      ],
+      [
+        "Ce que cela montre",
+        "Oyo elakisaka"
+      ],
+      [
+        "Cible atteinte",
+        "Cible e atteinte"
+      ],
+      [
+        "Vous réglez l’encaissement auto sur 1,60x",
+        "O régler auto cash-out na 1,60x"
+      ],
+      [
+        "Le tour monte jusqu’à 2,10x",
+        "Tour ekobaka tii na 2,10x"
+      ],
+      [
+        "Votre plan a été atteint, donc le tour devient un gain maîtrisé",
+        "Plan na yo e atteint, donc tour e vanda gain oyo e contrôler"
+      ],
+      [
+        "Cible manquée",
+        "Cible e manquée"
+      ],
+      [
+        "Vous visez 2,50x",
+        "O vise 2,50x"
+      ],
+      [
+        "Le tour crash à 1,23x",
+        "Tour e crash na 1,23x"
+      ],
+      [
+        "Le tour n’a jamais atteint votre objectif, donc la mise est perdue",
+        "Tour e atteint jamais objectif na yo, donc mise e perdue"
+      ],
+      [
+        "Chasse à l’historique",
+        "Chasse na historique"
+      ],
+      [
+        "Vous relevez la cible après une série de faibles tours",
+        "O relever cible nsima ya série ya ba tours ya bas"
+      ],
+      [
+        "Le tour crash à 1,50x",
+        "Tour e crash na 1,50x"
+      ],
+      [
+        "L’historique récent n’a pas rendu un plus gros multiplicateur plus probable",
+        "Historique ya sika e salaki te gros multiplicateur ya probable koleka"
+      ],
+      [
+        "Dans la configuration habituelle d’Aviator, le RTP est de 97 %. La maison retient environ trois centimes sur chaque dollar théorique sur une masse énorme de mises. Une courte session peut finir n’importe où ; le pourcentage décrit la longue pente, pas le graphique du soir.",
+        "Na configuration habituelle ya Aviator, RTP ezali 97 %. Ndako e gardaka près de trois centimes na dollar théorique na masse ya mise. Session ya mokuse ekoki kosilisa esika nionso ; pourcentage elobaka longue pente, te graphique ya soir."
+      ],
+      [
+        "Des cibles de cash-out plus basses passent plus souvent ; des objectifs plus hauts, moins. L’avantage intégré ne bouge pas. Ce qui varie, c’est la variance — la douceur ou la violence de la courbe.",
+        "Ba cibles ya cash-out ya bas e passaka mingi ; ba objectifs ya likolo, moins. Avantage intégré e bouger te. Oyo e changer, ezali variance — douceur to violence ya courbe."
+      ],
+      [
+        "Aviator (crash)",
+        "Aviator (crash)"
+      ],
+      [
+        "Machines à sous",
+        "Machines à sous"
+      ],
+      [
+        "Roulette",
+        "Roulette"
+      ],
+      [
+        "RTP typique / avantage maison",
+        "RTP typique / avantage maison"
+      ],
+      [
+        "RTP 97 % / avantage 3 %",
+        "RTP 97 % / avantage 3 %"
+      ],
+      [
+        "Généralement 95 à 98 % de RTP",
+        "Généralement 95 à 98 % de RTP"
+      ],
+      [
+        "Environ 97,3 % de RTP à la roulette européenne",
+        "Environ 97,3 % de RTP na roulette européenne"
+      ],
+      [
+        "Vitesse des tours",
+        "Vitesse ya ba tours"
+      ],
+      [
+        "Très rapide (quelques secondes)",
+        "Très rapide (quelques secondes)"
+      ],
+      [
+        "Plus lente",
+        "Plus lente"
+      ],
+      [
+        "Contrôle du joueur",
+        "Contrôle ya joueur"
+      ],
+      [
+        "Moment du cash-out et cash-out auto facultatif",
+        "Moment ya cash-out mpe auto cash-out facultatif"
+      ],
+      [
+        "Aucun après le spin",
+        "Aucun après spin"
+      ],
+      [
+        "Placement des mises uniquement",
+        "Placement ya ba mises kaka"
+      ],
+      [
+        "Ce que l’historique permet d’analyser",
+        "Oyo historique epesaka analyser"
+      ],
+      [
+        "Variance et revue des objectifs",
+        "Variance mpe revue ya ba objectifs"
+      ],
+      [
+        "Surtout le suivi de session",
+        "Surtout suivi ya session"
+      ],
+      [
+        "Surtout l’historique des résultats",
+        "Surtout historique ya ba résultats"
+      ],
+      [
+        "Les trackers honnêtes et les tableaux « analyse Aviator » gardent leur utilité. Ils cartographient les bandes de multiplicateurs, montrent combien de fois votre sortie choisie aurait été atteinte sur un échantillon, et confrontent vos intuitions à la réalité. Ils n’imprimeront jamais le prochain crash à l’avance. Sites agréés, RTP lisible, mathématiques auditées ou provably fair : tout cela devance les pages qui vendent des cycles cachés.",
+        "Ba trackers ya solo mpe ba tableaux « analyse Aviator » e gardaka utilité. E cartographient ba bandes ya multiplicateurs, e lakisa mbala mingi sortie oyo oponi ekokaki atteindre na échantillon, mpe e konfronter ba intuitions na réalité. E imprimer jamais crash oyo ekoya liboso. Ba sites agréés, RTP ya polele, maths auditées to provably fair : eloko nionso eleki ba pages oyo e teka ba cycles cachés."
+      ],
+      [
+        "Une solide analyse Aviator laisse tomber la chasse au signal magique. Elle s’ancre dans la probabilité, traite l’historique comme un contexte, et fixe des limites adaptées à un jeu qui se joue en secondes.",
+        "Analyse ya solo Aviator etikaka chasse na signal magique. E s’ancre na probabilité, e traiter historique lokola contexte, mpe e fixer ba limites adaptées na lisano oyo esalama na ba secondes."
+      ],
+      [
+        "Tenez le flux dans ce cadre, et les pubs au « cycle secret » deviennent vite très ennuyeuses.",
+        "Tika flux na cadre oyo, mpe ba pubs « cycle secret » e vanda vite très ennuyeuses."
+      ],
+      [
+        "Que signifie un RTP de 97 % dans Aviator ? Cela signifie que, sur un très grand nombre de mises, le retour théorique aux joueurs est de 97 %, tandis que l’avantage maison intégré est de 3 %. Cela ne garantit pas le résultat d’une courte session.",
+        "RTP ya 97 % elakisi nini na Aviator ? Elakisi ete, na nombre ya mise ya monene, retour théorique na ba joueurs ezali 97 %, pendant que avantage maison intégré ezali 3 %. E garantir te résultat ya session ya mokuse."
+      ],
+      [
+        "Comment faut-il lire l’historique des tours Aviator ? Utilisez-le pour étudier la variance, les séries et la fréquence à laquelle certains objectifs ont été atteints sur un échantillon. Ne l’utilisez pas comme preuve que le prochain tour est prévisible ou qu’un gros multiplicateur est en retard.",
+        "Ndenge nini nalinga kotánga historique ya ba tours Aviator ? Sala yango mpo na koyekola variance, ba séries mpe mbala mingi ba objectifs e atteint na échantillon. Sala yango te lokola preuve ete tour oyo ekoya e prévisible to ete gros multiplicateur e retardé."
+      ],
+      [
+        "Les outils d’analyse peuvent-ils prévoir le prochain multiplicateur ? Non. Les bons outils peuvent visualiser les résultats passés, mais les tours précédents restent indépendants. Tout outil qui prétend connaître à l’avance le prochain point de crash doit être abordé avec prudence.",
+        "Ba outils ya analyse ekoki kobosana multiplicateur oyo ekoya ? Te. Ba bons outils ekoki visualiser ba résultats ya kala, kasi ba tours ya liboso e reste indépendants. Outil nionso oyo e prétendre koyeba point ya crash oyo ekoya esengeli aborder na prudence."
+      ],
+      [
+        "Facteur",
+        "Facteur"
+      ],
+      [
+        "Machines à sous",
+        "Ba machines à sous"
+      ],
+      [
+        "Moyenne",
+        "Moyenne"
+      ]
+    ]
+  }
+}

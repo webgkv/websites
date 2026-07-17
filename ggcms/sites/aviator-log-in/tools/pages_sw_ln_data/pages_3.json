@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Casinos",
+      "title": "Kasino za Aviator: Orodha na Mapitio",
+      "description": "Kasino bora za kucheza Aviator kwa pesa halisi: bonasi, simu, uondoaji na usalama."
+    },
+    "ln": {
+      "name": "Casinos",
+      "title": "Ba casino ya Aviator: Liste mpe ba tala",
+      "description": "Ba casino ya malamu mpo na Aviator na mbongo ya solo: bonus, mobile, retrait mpe sécurité."
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Sakinisha kwenye iPhone",
+      "title": "Sakinisha demo ya Ice Fishing kwenye iPhone",
+      "description": "Ongeza Ice Fishing kwenye Skrini ya Nyumbani ya iPhone kwa dakika moja — demo kamili, gusa mara moja, uzoefu sawa na programu."
+    },
+    "ln": {
+      "name": "Botia na iPhone",
+      "title": "Botia demo Ice Fishing na iPhone",
+      "description": "Bakisa Ice Fishing na ecran ya liboso ya iPhone na miniti moko — demo mobimba, kobɛta moko, ndenge moko na app."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Install the Ice Fishing demo on your iPhone",
+        "Sakinisha demo ya Ice Fishing kwenye iPhone yako"
+      ],
+      ["Fastest path", "Njia ya haraka zaidi"],
+      ["Step by step", "Hatua kwa hatua"],
+      ["Step 1 — Share", "Hatua 1 — Share"],
+      ["Step 2 — Add to Home Screen", "Hatua 2 — Add to Home Screen"],
+      ["Step 3 — Open as Web App", "Hatua 3 — Open as Web App"],
+      [
+        "Safari share sheet on the Ice Fishing demo page",
+        "Laha ya kushiriki ya Safari kwenye ukurasa wa demo ya Ice Fishing"
+      ],
+      [
+        "Add to Home Screen selected in the share menu",
+        "Add to Home Screen imechaguliwa kwenye menyu ya kushiriki"
+      ],
+      [
+        "Add to Home Screen sheet with Open as Web App on",
+        "Laha ya Add to Home Screen na Open as Web App imewashwa"
+      ],
+      [
+        "In about a minute, Ice Fishing will sit on your Home Screen — full screen, one tap, the same daily flow you already know from your favorite apps. The icon stays where you expect it, opens in its own window, and feels familiar from the very first launch. Apple built this official iPhone shortcut into Safari; the three steps below are the same path millions of people use — and the result matches a regular installed app.",
+        "Kwa takriban dakika moja, Ice Fishing itakaa kwenye Skrini ya Nyumbani yako — skrini kamili, gusa mara moja, mtiririko wa kila siku unayojua tayari kutoka kwa programu unazopenda. Aikoni inabaki mahali unapotarajia, inafunguka kwenye dirisha lake, na inahisi kama ya kawaida tangu uzinduzi wa kwanza. Apple iliunda njia hii rasmi ya iPhone ndani ya Safari; hatua tatu hapa chini ni njia ile ile watu milioni wanayotumia — na matokeo yanafanana na programu iliyosakinishwa kawaida."
+      ],
+      [
+        "Open the fullscreen demo in Safari — <a href=\"https://ice-fish.run/en/demo/app/\">https://ice-fish.run/en/demo/app/</a>. Then follow the steps below, starting with Share.",
+        "Fungua demo ya skrini kamili katika Safari — <a href=\"https://ice-fish.run/sw/demo/app/\">https://ice-fish.run/sw/demo/app/</a>. Kisha fuata hatua hapa chini, ukianza na Share."
+      ],
+      [
+        "First tap <strong>Share</strong>. In Safari this is usually the square with an up arrow; on some iOS layouts you may see a <strong>⋯</strong> (three dots) or an overflow menu that leads to the same actions.",
+        "Kwanza gusa <strong>Share</strong>. Katika Safari hii kwa kawaida ni mraba wenye mshale wa juu; kwenye baadhi ya mipangilio ya iOS unaweza kuona <strong>⋯</strong> (nukta tatu) au menyu ya ziada inayoelekea kwa vitendo vile vile."
+      ],
+      [
+        "Scroll the list of actions and choose <strong>Add to Home Screen</strong>. If it is not listed, use Edit Actions at the bottom and switch it on.",
+        "Sogeza orodha ya vitendo na uchague <strong>Add to Home Screen</strong>. Ikiwa haipo kwenye orodha, tumia Edit Actions chini na uiwashe."
+      ],
+      [
+        "In the add sheet, if iOS offers <strong>Open as Web App</strong>, turn it on, then tap <strong>Add</strong>.",
+        "Katika laha ya kuongeza, ikiwa iOS inatoa <strong>Open as Web App</strong>, iwashe, kisha gusa <strong>Add</strong>."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Ajouter la démo Ice Fishing sur l’écran d’accueil",
+        "Bakisa demo Ice Fishing na ecran d&rsquo;accueil"
+      ],
+      ["Raccourci le plus clair", "Raccourci ya noki"],
+      ["Procédure détaillée", "Procédure na ba étapes"],
+      ["Partager dans Safari", "Partager na Safari"],
+      ["Sur l’écran d’accueil", "Na ecran d&rsquo;accueil"],
+      ["Ouvrir comme application web", "Fungola lokola application web"],
+      [
+        "Feuille Partager sur la page démo Ice Fishing",
+        "Feuille Partager na page demo Ice Fishing"
+      ],
+      [
+        "L’action Sur l’écran d’accueil mise en avant",
+        "Action Sur l&rsquo;écran d&rsquo;accueil oyo emonisami"
+      ],
+      [
+        "Feuille Sur l’écran d’accueil avec l’option web app actif",
+        "Feuille Sur l&rsquo;écran d&rsquo;accueil na option web app activé"
+      ],
+      [
+        "En une minute environ, Ice Fishing sera sur votre écran d’accueil — plein écran, un tap, le même rituel que vos applis habituelles. L’icône reste à sa place, s’ouvre dans sa propre fenêtre et paraît familière dès le premier lancement. Apple a intégré ce raccourci officiel dans Safari ; les trois étapes ci-dessous mènent au même résultat qu’une application installée.",
+        "Na miniti moko, Ice Fishing ekobanda na ecran d&rsquo;accueil na yo — plein écran, kobɛta moko, ritual moko na ba apps na yo. Icône ekobanda esika olini, efungwaka na fenêtre na yango mpe ezali familier tango ya liboso. Apple eteyi raccourci oyo ya officiel na Safari ; ba étapes misato oyo elekaka na résultat moko na app oyo e boti."
+      ],
+      [
+        "Ouvrez la démo plein écran dans Safari — <a href=\"https://ice-fish.run/fr/demo/app/\">https://ice-fish.run/fr/demo/app/</a>. Puis suivez les étapes, en commençant par Partager.",
+        "Fungola demo plein écran na Safari — <a href=\"https://ice-fish.run/ln/demo/app/\">https://ice-fish.run/ln/demo/app/</a>. Na nsima landa ba étapes, en commençant na Partager."
+      ],
+      [
+        "Depuis la page que vous voulez figer, touchez Partager, le carré avec la flèche sortante.",
+        "Na page oyo olingi kotya, bɛta Partager, carré na flèche oyo ebandi."
+      ],
+      [
+        "Faites défiler les actions, choisissez Sur l’écran d’accueil. Absent de la liste ? Touchez Modifier les actions, puis réactivez la commande.",
+        "Parcourir ba actions mpe pona Sur l&rsquo;écran d&rsquo;accueil. Ezali te na liste ? Bɛta Modifier les actions mpe réactivé commande."
+      ],
+      [
+        "Lorsqu’iOS affiche l’option, activez Ouvrir comme application web, puis validez avec Ajouter. L’ouverture se fait souvent en fenêtre propre, pas en mini-onglet figé.",
+        "Soki iOS emonisi Ouvrir comme application web, activé yango, na nsima bɛta Ajouter. Fungolama ekomaka mingi na fenêtre propre, te na mini-onglet."
+      ]
+    ]
+  }
+}

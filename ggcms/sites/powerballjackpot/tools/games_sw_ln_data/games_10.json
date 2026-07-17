@@ -1,0 +1,620 @@
+{
+  "meta": {
+    "sw": {
+      "name": "Chicken Banana",
+      "title": "Mchezo wa Chicken Banana: Sheria, RTP na Mahali pa Kucheza",
+      "description": "Mapitio ya Chicken Banana: sheria, RTP na kasino bora za kucheza Chicken Banana mtandaoni leo."
+    },
+    "ln": {
+      "name": "Chicken Banana",
+      "title": "Lisano Chicken Banana: Mibeko, RTP mpe Esika ya Kobeta",
+      "description": "Tala ya Chicken Banana: mibeko, RTP mpe ba casino ya malamu mpo na kobeta Chicken Banana na internet lelo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      [
+        "Chicken Banana",
+        "Chicken Banana"
+      ],
+      [
+        "Chicken Banana Features",
+        "Vipengele vya Chicken Banana"
+      ],
+      [
+        "Chicken Banana Max Win &amp; Bet Range",
+        "Ushindi wa Juu na Mzigo wa Chicken Banana"
+      ],
+      [
+        "Core Chicken Banana Game Mechanics",
+        "Mbinu za Msingi za Mchezo wa Chicken Banana"
+      ],
+      [
+        "Symbols and Value",
+        "Alama na Thamani"
+      ],
+      [
+        "Bonus Activation &amp; Jackpot",
+        "Uanzishaji wa Bonus na Jackpot"
+      ],
+      [
+        "Free Spins &mdash; 3 FS Symbols",
+        "Free Spins &mdash; Alama 3 za FS"
+      ],
+      [
+        "Bonus Game &mdash; 3 Chest Symbols",
+        "Mchezo wa Bonus &mdash; Alama 3 za Chest"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Banana instant-win game screenshot",
+        "Picha ya skrini ya mchezo wa Chicken Banana wa instant-win"
+      ],
+      [
+        "Chicken Banana is one of the lighter games in the Chicken Road series. Even by the name, it feels less serious than the original. A chicken, bananas, fast rounds &mdash; the game clearly leans into a funny arcade mood rather than a classic casino style.",
+        "Chicken Banana ni mojawapo ya michezo nyepesi zaidi katika msururu wa Chicken Road. Hata kwa jina tu, inahisi si ya kiseriousi kama ya asili. Kuku, ndizi, raundi za haraka &mdash; mchezo unaelekea wazi kwenye hali ya arcade ya kuchekesha badala ya mtindo wa kawaida wa kasino."
+      ],
+      [
+        "This version may suit players who like simple games without too much pressure on the screen. No heavy slot layout, no long rules, no complicated symbols. The idea is closer to a quick mini-game: open it, understand the basics, and play a short round.",
+        "Toleo hili linaweza kuwafaa wachezaji wanaopenda michezo rahisi bila msukumo mkubwa kwenye skrini. Hakuna mpangilio mzito wa slot, hakuna sheria ndefu, hakuna alama ngumu. Wazo ni karibu na mini-mchezo wa haraka: ufungue, uelewe misingi, na ucheze raundi fupi."
+      ],
+      [
+        "We have outlined the complete technical breakdown and all core mechanics engineered into the game in the specification table below.",
+        "Tumeainisha muhtasari kamili wa kiufundi na mbinu zote kuu zilizojengwa ndani ya mchezo katika jedwali la maelezo hapa chini."
+      ],
+      [
+        "Game title",
+        "Jina la mchezo"
+      ],
+      [
+        "Provider",
+        "Mtoa huduma"
+      ],
+      [
+        "InOut Games",
+        "InOut Games"
+      ],
+      [
+        "Release date",
+        "Tarehe ya kutolewa"
+      ],
+      [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      [
+        "Category",
+        "Kategoria"
+      ],
+      [
+        "Instant win / card-pick game",
+        "Instant win / mchezo wa kuchagua kadi"
+      ],
+      [
+        "Max multiplier",
+        "Multiplier ya juu"
+      ],
+      [
+        "1,000x bet",
+        "1,000x bet"
+      ],
+      [
+        "Max cash win",
+        "Ushindi wa juu wa pesa"
+      ],
+      [
+        "5&times;4, 20 cards",
+        "5&times;4, 20 cards"
+      ],
+      [
+        "Technology",
+        "Teknolojia"
+      ],
+      [
+        "HTML5, JS",
+        "HTML5, JS"
+      ],
+      [
+        "Features",
+        "Vipengele"
+      ],
+      [
+        "Guaranteed payout each round, bonus chests, fixed jackpots, free spins, provably fair verification",
+        "Malipo yaliyohakikishwa kila raundi, sanduku za bonus, jackpot zilizowekwa, free spins, uthibitisho wa provably fair"
+      ],
+      [
+        "Chicken Banana keeps the same general spirit of the series. It is bright, easy to start, and built for players who enjoy fast decisions. The game does not try to look premium or serious. It works because it feels casual and a bit silly, but still keeps the casino risk underneath.",
+        "Chicken Banana inabaki na roho ile ile ya jumla ya msururu. Ni angavu, rahisi kuanza, na imejengwa kwa wachezaji wanaofurahia maamuzi ya haraka. Mchezo haujaribu kuonekana premium au wa kiseriousi. Unafanya kazi kwa sababu unahisi wa kawaida na wa kuchekesha kidogo, lakini bado una hatari ya kasino chini."
+      ],
+      [
+        "For players who already like Chicken Road, Chicken Banana can be a fun side version. The same character and arcade feeling, but with a softer, more playful theme.",
+        "Kwa wachezaji ambao tayari wanapenda Chicken Road, Chicken Banana inaweza kuwa toleo la kufurahisha upande. Mhusika na hisia ile ile ya arcade, lakini na mada laini na ya kucheza zaidi."
+      ],
+      [
+        "Still, it is a good game for Chicken fans. If real money is involved, the risk is real too. Start with demo mode, check the mechanics, and only play with real balance if you understand what you are doing.",
+        "Bado, ni mchezo mzuri kwa mashabiki wa Chicken. Ikiwa pesa halisi inahusika, hatari ni ya kweli pia. Anza na demo, angalia mbinu, na ucheze na salio halisi tu ukiwa unaelewa unachofanya."
+      ],
+      [
+        "Chicken Banana lets you play from very small stakes or go much higher. The bet range starts at $0.01 and goes up to $200 per round.",
+        "Chicken Banana inakuwezesha kucheza kutoka dau dogo sana au kwenda juu zaidi. Mzigo wa dau unaanza $0.01 na unapanda hadi $200 kwa kila raundi."
+      ],
+      [
+        "That is why big bets are not always better in Chicken Banana. You can risk more money, but the top payout is still locked by the cap.",
+        "Hii ndiyo sababu dau kubwa si daima bora katika Chicken Banana. Unaweza kuhatarisha pesa zaidi, lakini malipo ya juu bado yamefungwa na kikomo."
+      ],
+      [
+        "For players who care about clean multiplier value, bets up to $20 make more sense. Above that, the max win limit starts cutting the top result.",
+        "Kwa wachezaji wanaojali thamani safi ya multiplier, dau hadi $20 huwa na maana zaidi. Juu ya hapo, kikomo cha ushindi wa juu huanza kukata matokeo ya juu."
+      ],
+      [
+        "Simple idea:",
+        "Wazo rahisi:"
+      ],
+      [
+        "small bets let the full 1,000x work;",
+        "dau dogo huruhusu 1,000x kamili kufanya kazi;"
+      ],
+      [
+        "$20 fits the cap perfectly;",
+        "$20 inafaa kikomo kikamilifu;"
+      ],
+      [
+        "bigger bets hit the ceiling too early.",
+        "dau kubwa zinapiga dari mapema sana."
+      ],
+      [
+        "Chicken Banana does not play like a classic reel slot. There is no long spinning sequence where you just wait for the symbols to stop. The game is built around a faster pick-and-match style, so the result comes quickly and the round does not drag.",
+        "Chicken Banana haichezi kama slot ya reel ya kawaida. Hakuna mlolongo mrefu wa kuzungusha ambapo unasubiri tu alama ziache. Mchezo umejengwa karibu na mtindo wa haraka wa kuchagua na kulinganisha, hivyo matokeo yanakuja haraka na raundi haichelewi."
+      ],
+      [
+        "The idea is more direct: choose your stake, start the round, and let the game resolve the outcome almost instantly. This makes Chicken Banana feel closer to an instant casino game than an old-school slot.",
+        "Wazo ni wa moja kwa moja zaidi: chagua dau lako, anza raundi, na uache mchezo utatue matokeo karibu papo hapo. Hii inafanya Chicken Banana ihisi karibu na mchezo wa kasino wa instant kuliko slot ya zamani."
+      ],
+      [
+        "The math behind the game is still important. Outcomes are not based on guessing or reading the screen. The result is handled by the game engine, and each round carries its own risk. The fast format simply makes the process quicker.",
+        "Hisabati nyuma ya mchezo bado ni muhimu. Matokeo hayategemei kukisia au kusoma skrini. Matokeo yanashughulikiwa na injini ya mchezo, na kila raundi ina hatari yake. Muundo wa haraka unafanya mchakato uwe wa haraka tu."
+      ],
+      [
+        "That is why bankroll control matters here. Chicken Banana can feel light and easy, but fast rounds also mean the balance can move quickly. Set your stake before you start, avoid emotional clicks, and do not treat the game like something you can predict.",
+        "Hii ndiyo sababu udhibiti wa bankroll unahitaji hapa. Chicken Banana inaweza kuhisi nyepesi na rahisi, lakini raundi za haraka pia zinamaanisha salio linaweza kusogea haraka. Weka dau lako kabla ya kuanza, epuka kubofya kwa hisia, na usichukulie mchezo kama kitu unachoweza kutabiri."
+      ],
+      [
+        "Multiplier Payout",
+        "Malipo ya Multiplier"
+      ],
+      [
+        "Net Result on a $10 Bet",
+        "Matokeo Halisi kwa Dau la $10"
+      ],
+      [
+        "Peeled Banana",
+        "Peeled Banana"
+      ],
+      [
+        "$1 Return (-$9.00)",
+        "$1 Return (-$9.00)"
+      ],
+      [
+        "Fried Chicken",
+        "Fried Chicken"
+      ],
+      [
+        "$2 Return (-$8.00)",
+        "$2 Return (-$8.00)"
+      ],
+      [
+        "Two Bananas",
+        "Two Bananas"
+      ],
+      [
+        "$5 Return (-$5.00)",
+        "$5 Return (-$5.00)"
+      ],
+      [
+        "Small Chicken Bucket",
+        "Small Chicken Bucket"
+      ],
+      [
+        "$10 Return (Break Even)",
+        "$10 Return (Break Even)"
+      ],
+      [
+        "Three Bananas",
+        "Three Bananas"
+      ],
+      [
+        "$15 Return (+$5.00)",
+        "$15 Return (+$5.00)"
+      ],
+      [
+        "Large Chicken Bucket",
+        "Large Chicken Bucket"
+      ],
+      [
+        "$20 Return (+$10.00)",
+        "$20 Return (+$10.00)"
+      ],
+      [
+        "Banana Cluster",
+        "Banana Cluster"
+      ],
+      [
+        "$40 Return (+$30.00)",
+        "$40 Return (+$30.00)"
+      ],
+      [
+        "$100 Return (+$90.00)",
+        "$100 Return (+$90.00)"
+      ],
+      [
+        "Chicken Banana has two main bonus triggers, and both work through scatter symbols. The idea is simple: find three matching scatters and the game moves into one of its bonus paths.",
+        "Chicken Banana ina vichocheo viwili vikuu vya bonus, na vyote hufanya kazi kupitia alama za scatter. Wazo ni rahisi: pata scatter tatu zinazolingana na mchezo unaingia kwenye mojawapo ya njia za bonus."
+      ],
+      [
+        "If you reveal 3 FS symbols, the game awards a random number of free rounds &mdash; from 1 to 10.",
+        "Ukifunua alama 3 za FS, mchezo hutoa idadi ya nasibu ya raundi za bure &mdash; kutoka 1 hadi 10."
+      ],
+      [
+        "The nice part is that free spins can be extended. If 3 more FS symbols appear during an active free round, extra spins are added to the queue. So the feature does not always end after the first batch. Sometimes it can keep going, which makes the round more interesting.",
+        "Sehemu nzuri ni kwamba free spins zinaweza kuongezwa. Alama 3 zaidi za FS zikionekana wakati wa raundi ya bure inayoendelea, spins za ziada huongezwa kwenye foleni. Hivyo feature haiishi kila wakati baada ya kundi la kwanza. Wakati mwingine inaweza kuendelea, jambo linalofanya raundi iwe ya kuvutia zaidi."
+      ],
+      [
+        "The Chest symbols open the jackpot-style bonus game. This is not a regular line-pay feature. Once the bonus starts, the game moves into a separate branch where the payout is based on fixed jackpot multipliers.",
+        "Alama za Chest hufungua mchezo wa bonus wa mtindo wa jackpot. Hii si feature ya kawaida ya malipo ya mstari. Bonus ikianza, mchezo unaingia kwenye tawi tofauti ambapo malipo yanategemea multiplier za jackpot zilizowekwa."
+      ],
+      [
+        "The Mega Jackpot is the top result here. If it lands, the round pays the full 1,000x multiplier, unless the game&rsquo;s max win cap cuts the payout.",
+        "Mega Jackpot ndiyo matokeo ya juu hapa. Ikishuka, raundi hulipa multiplier kamili ya 1,000x, isipokuwa kikomo cha ushindi wa juu cha mchezo&rsquo; kikate malipo."
+      ],
+      [
+        "This bonus setup makes Chicken Banana feel less like a normal spin-and-wait game. You are not only watching for small wins. You are looking for the right scatter setup that can open free spins or send the round straight into the jackpot feature. Keep the stake under control, especially if you are chasing bonus triggers.",
+        "Mpangilio huu wa bonus unafanya Chicken Banana ihisi si kama mchezo wa kawaida wa spin-and-wait. Huchagui tu kuangalia ushindi mdogo. Unatafuta mpangilio sahihi wa scatter unaoweza kufungua free spins au kutuma raundi moja kwa moja kwenye feature ya jackpot. Weka dau chini ya udhibiti, hasa ukiwa unafuatilia vichocheo vya bonus."
+      ],
+      [
+        "Jackpot Tier",
+        "Kiwango cha Jackpot"
+      ],
+      [
+        "Guaranteed Multiplier",
+        "Multiplier Iliyohakikishwa"
+      ],
+      [
+        "Payout on $10 Bet",
+        "Malipo kwa Dau la $10"
+      ],
+      [
+        "What is Chicken Banana? Chicken Banana is a fast 5&times;4 instant-win game from InOut Games. It does not feel like a normal reel slot. Instead of waiting for reels to spin, you play on a 20-card grid and look for 3 matching symbols. The important detail: a match does not always mean profit. Some symbols can pay less than your stake, so the round can technically win and still leave you down.",
+        "Chicken Banana ni nini? Chicken Banana ni mchezo wa haraka wa instant-win wa 5&times;4 kutoka InOut Games. Hauhisi kama slot ya reel ya kawaida. Badala ya kusubiri reels zizunguke, unacheza kwenye gridi ya kadi 20 na kutafuta alama 3 zinazolingana. Maelezo muhimu: mechi haimaanishi kila wakati faida. Baadhi ya alama zinaweza kulipa chini ya dau lako, hivyo raundi inaweza kushinda kiufundi na bado kukuacha chini."
+      ],
+      [
+        "What RTP does Chicken Banana have? The game runs on 96% RTP. That is a long-term number, not a promise for one session. You can have a good run, a dry run, or something in between. RTP only starts making sense over a large number of rounds.",
+        "Chicken Banana ina RTP gani? Mchezo unafanya kazi kwa RTP ya 96%. Hiyo ni nambari ya muda mrefu, si ahadi kwa kikao kimoja. Unaweza kuwa na mfululizo mzuri, mkavu, au kati ya hizo. RTP huanza kuwa na maana tu baada ya idadi kubwa ya raundi."
+      ],
+      [
+        "Are there bonuses in Chicken Banana? Yes. There are two main bonus triggers: Free Spins through 3 FS symbols, and the chest bonus game through 3 Chest symbols.",
+        "Je, kuna bonus katika Chicken Banana? Ndiyo. Kuna vichocheo viwili vikuu vya bonus: Free Spins kupitia alama 3 za FS, na mchezo wa bonus wa chest kupitia alama 3 za Chest."
+      ],
+      [
+        "How many free spins can I get? The feature starts with a random amount from 1 to 10 free rounds. It can also retrigger. If more FS symbols appear while free rounds are already active, the game adds extra spins instead of ending the feature too quickly.",
+        "Naweza kupata free spins ngapi? Feature huanza na kiasi cha nasibu kutoka raundi 1 hadi 10 za bure. Inaweza pia kujirudia. Alama zaidi za FS zikionekana wakati raundi za bure tayari zinaendelea, mchezo huongeza spins za ziada badala ya kumaliza feature haraka sana."
+      ],
+      [
+        "Is there a demo version? Yes. Chicken Banana has a demo mode with a large virtual balance, usually 1,000,000 credits. Use it before real money. The game has a different structure from classic slots, so it is worth testing the card grid, payouts, bonus triggers, and jackpot feature first.",
+        "Je, kuna toleo la demo? Ndiyo. Chicken Banana ina hali ya demo na salio kubwa la kawaida, kwa kawaida mikopo 1,000,000. Tumia kabla ya pesa halisi. Mchezo una muundo tofauti kutoka slot za kawaida, hivyo inafaa kujaribu gridi ya kadi, malipo, vichocheo vya bonus, na feature ya jackpot kwanza."
+      ],
+      [
+        "How is Chicken Banana different from a slot? The biggest difference is the format. There are no traditional spinning reels or paylines. Chicken Banana uses a 20-card instant-win grid. Every round is built around finding a 3-symbol match.",
+        "Chicken Banana inatofautianaje na slot? Tofauti kubwa ni muundo. Hakuna reels za kawaida zinazozunguka au paylines. Chicken Banana hutumia gridi ya instant-win ya kadi 20. Kila raundi imejengwa karibu na kutafuta mechi ya alama 3."
+      ]
+    ],
+    "ln": [
+      [
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      [
+        "Chicken Banana",
+        "Chicken Banana"
+      ],
+      [
+        "Chicken Banana Features",
+        "Ba eloko ya Chicken Banana"
+      ],
+      [
+        "Chicken Banana Max Win &amp; Bet Range",
+        "Gain ya likolo mpe interval ya pari ya Chicken Banana"
+      ],
+      [
+        "Core Chicken Banana Game Mechanics",
+        "Mekaniki ya liboso ya lisano Chicken Banana"
+      ],
+      [
+        "Symbols and Value",
+        "Ba symbole mpe valeur"
+      ],
+      [
+        "Bonus Activation &amp; Jackpot",
+        "Activation ya bonus mpe Jackpot"
+      ],
+      [
+        "Free Spins &mdash; 3 FS Symbols",
+        "Free Spins &mdash; 3 symbole FS"
+      ],
+      [
+        "Bonus Game &mdash; 3 Chest Symbols",
+        "Lisano ya bonus &mdash; 3 symbole Chest"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Banana instant-win game screenshot",
+        "Capture ya ecran ya lisano Chicken Banana instant-win"
+      ],
+      [
+        "Chicken Banana is one of the lighter games in the Chicken Road series. Even by the name, it feels less serious than the original. A chicken, bananas, fast rounds &mdash; the game clearly leans into a funny arcade mood rather than a classic casino style.",
+        "Chicken Banana ezali moko ya ba lisano ya pete na series ya Chicken Road. Na nkombo moko, ezali pete koleka original. Nkoko, banane, ba round ya mbangu &mdash; lisano etambola na mood ya arcade ya esengo koleka style ya casino ya classique."
+      ],
+      [
+        "This version may suit players who like simple games without too much pressure on the screen. No heavy slot layout, no long rules, no complicated symbols. The idea is closer to a quick mini-game: open it, understand the basics, and play a short round.",
+        "Version oyo ekoki kolonga basali oyo balingi ba lisano ya pépé na tention ya moke na ecran. Slot ya makasi te, mibeko ya molai te, ba symbole ya compliqué te. Idea ezali pene na mini-lisano ya mbangu: fungola, yeba base, mpe beta round moke."
+      ],
+      [
+        "We have outlined the complete technical breakdown and all core mechanics engineered into the game in the specification table below.",
+        "Tosalaki breakdown ya technique mobimba mpe mekaniki nionso ya lisano na tableau ya specification na nse."
+      ],
+      [
+        "Game title",
+        "Nkombo ya lisano"
+      ],
+      [
+        "Provider",
+        "Provider"
+      ],
+      [
+        "InOut Games",
+        "InOut Games"
+      ],
+      [
+        "Release date",
+        "Date ya publication"
+      ],
+      [
+        "2026-03-26",
+        "2026-03-26"
+      ],
+      [
+        "Category",
+        "Category"
+      ],
+      [
+        "Instant win / card-pick game",
+        "Instant win / lisano ya kozua carte"
+      ],
+      [
+        "Max multiplier",
+        "Multiplier ya likolo"
+      ],
+      [
+        "1,000x bet",
+        "1,000x bet"
+      ],
+      [
+        "Max cash win",
+        "Gain ya mbongo ya likolo"
+      ],
+      [
+        "5&times;4, 20 cards",
+        "5&times;4, 20 cards"
+      ],
+      [
+        "Technology",
+        "Technology"
+      ],
+      [
+        "HTML5, JS",
+        "HTML5, JS"
+      ],
+      [
+        "Features",
+        "Ba eloko"
+      ],
+      [
+        "Guaranteed payout each round, bonus chests, fixed jackpots, free spins, provably fair verification",
+        "Payout garanti round nionso, ba chest ya bonus, jackpot fixe, free spins, verification provably fair"
+      ],
+      [
+        "Chicken Banana keeps the same general spirit of the series. It is bright, easy to start, and built for players who enjoy fast decisions. The game does not try to look premium or serious. It works because it feels casual and a bit silly, but still keeps the casino risk underneath.",
+        "Chicken Banana ebatelaka spirit ya liboso ya series. Ezali pole, pépé mpo na kobanda, mpe esalemi mpo na basali oyo balingi ba decision ya mbangu. Lisano e lingi te kolook premium to sérieux. Esalaka mpo na ete ezali casual mpe moke ya esengo, kasi riski ya casino ezali awa na nse."
+      ],
+      [
+        "For players who already like Chicken Road, Chicken Banana can be a fun side version. The same character and arcade feeling, but with a softer, more playful theme.",
+        "Mpo na basali oyo bazali koyeba Chicken Road, Chicken Banana ekoki kozala version ya side ya esengo. Personnage moko mpe feeling ya arcade, kasi na theme ya pete mpe ya koseka."
+      ],
+      [
+        "Still, it is a good game for Chicken fans. If real money is involved, the risk is real too. Start with demo mode, check the mechanics, and only play with real balance if you understand what you are doing.",
+        "Kasi ezali lisusu lisano ya malamu mpo na ba fan ya Chicken. Soki mbongo ya solo ezali, riski ezali solo mpe. Banda na demo, talá mekaniki, mpe beta na solde ya solo kaka soki oyebi oyo ozali kosala."
+      ],
+      [
+        "Chicken Banana lets you play from very small stakes or go much higher. The bet range starts at $0.01 and goes up to $200 per round.",
+        "Chicken Banana epesi yo kobeta na pari ya moke mingi to kende likolo. Interval ya pari ebandi na $0.01 mpe ekomi $200 na round."
+      ],
+      [
+        "That is why big bets are not always better in Chicken Banana. You can risk more money, but the top payout is still locked by the cap.",
+        "Yango wana pari ya monene ezali malamu te ntango nyonso na Chicken Banana. Okoki kobeta riski ya mbongo mingi, kasi payout ya likolo ezali nase na cap."
+      ],
+      [
+        "For players who care about clean multiplier value, bets up to $20 make more sense. Above that, the max win limit starts cutting the top result.",
+        "Mpo na basali oyo balingi valeur ya multiplier ya pete, pari tii $20 ezali malamu mingi. Likolo ya yango, limit ya gain ya likolo ebandi kokata resultat ya likolo."
+      ],
+      [
+        "Simple idea:",
+        "Idea ya pépé:"
+      ],
+      [
+        "small bets let the full 1,000x work;",
+        "pari ya moke epesi 1,000x mobimba kosala;"
+      ],
+      [
+        "$20 fits the cap perfectly;",
+        "$20 ekokani na cap;"
+      ],
+      [
+        "bigger bets hit the ceiling too early.",
+        "pari ya monene ekouta plafond liboso."
+      ],
+      [
+        "Chicken Banana does not play like a classic reel slot. There is no long spinning sequence where you just wait for the symbols to stop. The game is built around a faster pick-and-match style, so the result comes quickly and the round does not drag.",
+        "Chicken Banana e beta te lokola slot ya reel ya classique. Sequence ya spin ya molai te oyo ozali kaka kozela ba symbole. Lisano esalemi na style ya pick-and-match ya mbangu, resultat ezali mbangu mpe round e lingi te."
+      ],
+      [
+        "The idea is more direct: choose your stake, start the round, and let the game resolve the outcome almost instantly. This makes Chicken Banana feel closer to an instant casino game than an old-school slot.",
+        "Idea ezali direct: pona pari na yo, banda round, mpe tika lisano etatola resultat mbala moko. Yango esalelaka Chicken Banana ezala pene na lisano ya casino instant koleka slot ya kala."
+      ],
+      [
+        "The math behind the game is still important. Outcomes are not based on guessing or reading the screen. The result is handled by the game engine, and each round carries its own risk. The fast format simply makes the process quicker.",
+        "Math na nsima ya lisano ezali ntina. Resultat ezali te na guess to na kotanga ecran. Resultat esalemi na engine ya lisano, mpe round nionso ezali na riski na yango. Format ya mbangu esalelaka processus mbangu."
+      ],
+      [
+        "That is why bankroll control matters here. Chicken Banana can feel light and easy, but fast rounds also mean the balance can move quickly. Set your stake before you start, avoid emotional clicks, and do not treat the game like something you can predict.",
+        "Yango wana contrôle ya bankroll ezali na ntina awa. Chicken Banana ekoki kozala pete, kasi ba round ya mbangu elingi kolinga solde ekobaluka mbangu. Botia pari liboso ya kobanda, koboya ba click ya emotion, mpe kotala lisano lokola eloko oyo okoki kotya te."
+      ],
+      [
+        "Multiplier Payout",
+        "Payout ya multiplier"
+      ],
+      [
+        "Net Result on a $10 Bet",
+        "Resultat net na pari ya $10"
+      ],
+      [
+        "Peeled Banana",
+        "Peeled Banana"
+      ],
+      [
+        "$1 Return (-$9.00)",
+        "$1 Return (-$9.00)"
+      ],
+      [
+        "Fried Chicken",
+        "Fried Chicken"
+      ],
+      [
+        "$2 Return (-$8.00)",
+        "$2 Return (-$8.00)"
+      ],
+      [
+        "Two Bananas",
+        "Two Bananas"
+      ],
+      [
+        "$5 Return (-$5.00)",
+        "$5 Return (-$5.00)"
+      ],
+      [
+        "Small Chicken Bucket",
+        "Small Chicken Bucket"
+      ],
+      [
+        "$10 Return (Break Even)",
+        "$10 Return (Break Even)"
+      ],
+      [
+        "Three Bananas",
+        "Three Bananas"
+      ],
+      [
+        "$15 Return (+$5.00)",
+        "$15 Return (+$5.00)"
+      ],
+      [
+        "Large Chicken Bucket",
+        "Large Chicken Bucket"
+      ],
+      [
+        "$20 Return (+$10.00)",
+        "$20 Return (+$10.00)"
+      ],
+      [
+        "Banana Cluster",
+        "Banana Cluster"
+      ],
+      [
+        "$40 Return (+$30.00)",
+        "$40 Return (+$30.00)"
+      ],
+      [
+        "$100 Return (+$90.00)",
+        "$100 Return (+$90.00)"
+      ],
+      [
+        "Chicken Banana has two main bonus triggers, and both work through scatter symbols. The idea is simple: find three matching scatters and the game moves into one of its bonus paths.",
+        "Chicken Banana ezali na ba trigger ya bonus mibale ya liboso, mibale esalaka na ba symbole scatter. Idea ezali pépé: zua ba scatter misato oyo ezali ndenge moko mpe lisano ekota na moko ya ba chemin ya bonus."
+      ],
+      [
+        "If you reveal 3 FS symbols, the game awards a random number of free rounds &mdash; from 1 to 10.",
+        "Soki ofungoli 3 symbole FS, lisano epesi motango ya hasard ya ba round ya liboso &mdash; kowuta 1 tii 10."
+      ],
+      [
+        "The nice part is that free spins can be extended. If 3 more FS symbols appear during an active free round, extra spins are added to the queue. So the feature does not always end after the first batch. Sometimes it can keep going, which makes the round more interesting.",
+        "Part ya malamu ezali ete free spins ekoki kobakisama. Soki 3 symbole FS mosusu ebimaka na round ya liboso oyo ezali actif, ba spin ya sika ebakisami na queue. Feature e suka te ntango nyonso na batch ya liboso. Parfois ekoki kokende, oyo esalelaka round ezala interesting."
+      ],
+      [
+        "The Chest symbols open the jackpot-style bonus game. This is not a regular line-pay feature. Once the bonus starts, the game moves into a separate branch where the payout is based on fixed jackpot multipliers.",
+        "Ba symbole Chest efungolaka lisano ya bonus ya style jackpot. Ezali feature ya line-pay ya solo te. Bonus ekobanda, lisano ekota na branche ya kati oyo payout ezali na ba multiplier ya jackpot fixe."
+      ],
+      [
+        "The Mega Jackpot is the top result here. If it lands, the round pays the full 1,000x multiplier, unless the game&rsquo;s max win cap cuts the payout.",
+        "Mega Jackpot ezali resultat ya likolo awa. Soki ekiti, round efuta multiplier mobimba ya 1,000x, longola soki cap ya gain ya likolo ya lisano&rsquo; ekata payout."
+      ],
+      [
+        "This bonus setup makes Chicken Banana feel less like a normal spin-and-wait game. You are not only watching for small wins. You are looking for the right scatter setup that can open free spins or send the round straight into the jackpot feature. Keep the stake under control, especially if you are chasing bonus triggers.",
+        "Setup oyo ya bonus esalelaka Chicken Banana ezala pete koleka lisano ya spin-and-wait ya solo. Ozali kotala kaka ba gain ya moke te. Ozali koluka setup ya scatter oyo ekoki kofungola free spins to kotinda round mbala moko na feature ya jackpot. Batela pari na contrôle, mingi soki ozali kolanda ba trigger ya bonus."
+      ],
+      [
+        "Jackpot Tier",
+        "Niveau ya Jackpot"
+      ],
+      [
+        "Guaranteed Multiplier",
+        "Multiplier garanti"
+      ],
+      [
+        "Payout on $10 Bet",
+        "Payout na pari ya $10"
+      ],
+      [
+        "What is Chicken Banana? Chicken Banana is a fast 5&times;4 instant-win game from InOut Games. It does not feel like a normal reel slot. Instead of waiting for reels to spin, you play on a 20-card grid and look for 3 matching symbols. The important detail: a match does not always mean profit. Some symbols can pay less than your stake, so the round can technically win and still leave you down.",
+        "Chicken Banana ezali nini? Chicken Banana ezali lisano ya instant-win ya mbangu 5&times;4 ya InOut Games. Ezali lokola slot ya reel ya solo te. Na esika ya kozela ba reel, obeta na grid ya carte 20 mpe otala ba symbole 3 oyo ezali ndenge moko. Detail ya ntina: match elingi kolonga mbongo te ntango nyonso. Ba symbole mosusu ekoki kofuta na nse ya pari na yo, yango wana round ekoki kogagner na technique mpe kozela yo na nse."
+      ],
+      [
+        "What RTP does Chicken Banana have? The game runs on 96% RTP. That is a long-term number, not a promise for one session. You can have a good run, a dry run, or something in between. RTP only starts making sense over a large number of rounds.",
+        "RTP ya Chicken Banana ezali boni? Lisano esalaka na RTP 96%. Ezali nombre ya long terme, promise mpo na session moko te. Okoki kozala bon run, dry run, to eloko na kati. RTP ebandi kozala na sensi kaka na motango monene ya ba round."
+      ],
+      [
+        "Are there bonuses in Chicken Banana? Yes. There are two main bonus triggers: Free Spins through 3 FS symbols, and the chest bonus game through 3 Chest symbols.",
+        "Ezali na bonus na Chicken Banana? Ee. Ezali na ba trigger ya bonus mibale ya liboso: Free Spins na 3 symbole FS, mpe lisano ya bonus ya chest na 3 symbole Chest."
+      ],
+      [
+        "How many free spins can I get? The feature starts with a random amount from 1 to 10 free rounds. It can also retrigger. If more FS symbols appear while free rounds are already active, the game adds extra spins instead of ending the feature too quickly.",
+        "Nakoki kozua ba free spins boni? Feature ebandi na motango ya hasard kowuta 1 tii 10 round ya liboso. Ekoki retrigger mpe. Soki ba symbole FS mosusu ebimaka na round ya liboso oyo ezali actif, lisano ebakisa ba spin ya sika na esika ya kosilisa feature mbangu."
+      ],
+      [
+        "Is there a demo version? Yes. Chicken Banana has a demo mode with a large virtual balance, usually 1,000,000 credits. Use it before real money. The game has a different structure from classic slots, so it is worth testing the card grid, payouts, bonus triggers, and jackpot feature first.",
+        "Ezali na version demo? Ee. Chicken Banana ezali na mode demo na solde ya virtual ya monene, mingi ntango 1,000,000 credits. Sala yango liboso ya mbongo ya solo. Lisano ezali na structure ya different na ba slot ya classique, yango wana esengeli komeka grid ya carte, payout, trigger ya bonus, mpe feature ya jackpot liboso."
+      ],
+      [
+        "How is Chicken Banana different from a slot? The biggest difference is the format. There are no traditional spinning reels or paylines. Chicken Banana uses a 20-card instant-win grid. Every round is built around finding a 3-symbol match.",
+        "Chicken Banana e different na slot ndenge nini? Difference ya likolo ezali format. Ba reel ya spin to payline ya classique ezali te. Chicken Banana esalelaka grid instant-win ya carte 20. Round nionso esalemi na koluka match ya symbole 3."
+      ]
+    ]
+  }
+}

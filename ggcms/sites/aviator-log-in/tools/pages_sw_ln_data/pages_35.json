@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Authors",
+      "title": "Waandishi wa Aviator Log In",
+      "description": "Timu ya waandishi wetu wa Aviator: uzoefu wa iGaming, crash games na mapitio ya kasino."
+    },
+    "ln": {
+      "name": "Authors",
+      "title": "Ba auteur ya Aviator Log In",
+      "description": "Équipe na biso ya Aviator: expérience iGaming, ba crash game mpe ba tala ya casino."
+    }
+  }
+}

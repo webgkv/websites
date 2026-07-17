@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Bonus",
+      "title": "Bonus za Aviator: Aina na Masharti",
+      "description": "Bonus za kasino kwa Aviator: welcome, free bets na masharti ya wagering."
+    },
+    "ln": {
+      "name": "Bonus",
+      "title": "Ba bonus ya Aviator: Ba type mpe ba condition",
+      "description": "Ba bonus ya casino mpo na Aviator: welcome, free bet mpe ba condition ya wagering."
+    }
+  }
+}

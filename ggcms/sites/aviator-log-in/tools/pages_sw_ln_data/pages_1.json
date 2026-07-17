@@ -1,0 +1,629 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Nyumbani",
+      "title": "Aviator Mtandaoni: Jinsi Inavyofanya Kazi, Demo na Pesa Halisi",
+      "description": "Jifunze jinsi Aviator inavyofanya kazi, kwa nini demo ni muhimu, na jinsi ya kuchagua tovuti yenye leseni kwa pesa halisi bila kurudia kurasa bandia za «rasmi»."
+    },
+    "ln": {
+      "name": "Liboso",
+      "title": "Aviator na Internet: Ndenge, Démo mpe Mbongo ya Solo",
+      "description": "Yebisa ndenge Aviator esalaka, mpo nini démo ezali important mpe ndenge ya kopona site na licence mpo na kobeta na mbongo ya solo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Aviator Game: how it works, where to play, and why demo matters",
+        "Mchezo wa Aviator: jinsi unavyofanya kazi, wapi kucheza, na kwa nini demo ni muhimu"
+      ],
+      [
+        "How Aviator Game Works",
+        "Jinsi Mchezo wa Aviator Unavyofanya Kazi"
+      ],
+      [
+        "Return to Player (RTP) and About Spribe",
+        "Return to Player (RTP) na Kuhusu Spribe"
+      ],
+      [
+        "Aviator Betting in Three Steps",
+        "Kuweka Dau kwenye Aviator kwa Hatua Tatu"
+      ],
+      [
+        "1. BET",
+        "1. DAU"
+      ],
+      [
+        "2. WATCH",
+        "2. ANGALIA"
+      ],
+      [
+        "3. CASH OUT",
+        "3. CASH OUT"
+      ],
+      [
+        "How to Start Playing Aviator",
+        "Jinsi ya Kuanza Kucheza Aviator"
+      ],
+      [
+        "Aviator Game Features",
+        "Vipengele vya Mchezo wa Aviator"
+      ],
+      [
+        "Aviator Tips and Responsible Gambling",
+        "Vidokezo vya Aviator na Uchezaji Wenye Uwajibikaji"
+      ],
+      [
+        "Aviator game specs",
+        "Maelezo ya mchezo wa Aviator"
+      ],
+      [
+        "Where can I play Aviator?",
+        "Ninaweza kucheza Aviator wapi?"
+      ],
+      [
+        "How to choose a casino for Aviator",
+        "Jinsi ya kuchagua kasino kwa Aviator"
+      ],
+      [
+        "Aviator demo vs real money",
+        "Aviator demo dhidi ya pesa halisi"
+      ],
+      [
+        "Frequently asked questions",
+        "Maswali yanayoulizwa mara kwa mara"
+      ],
+      [
+        "What players tend to notice in Aviator",
+        "Wachezaji kwa kawaida hugundua nini kwenye Aviator"
+      ],
+      [
+        "Aviator game multiplier climbing during a live round",
+        "Multiplier ya Aviator inapanda wakati wa raundi ya moja kwa moja"
+      ],
+      [
+        "Set your stake before an Aviator round starts",
+        "Weka dau lako kabla raundi ya Aviator haijaanza"
+      ],
+      [
+        "Watch the Aviator multiplier rise during the round",
+        "Angalia multiplier ya Aviator ikikua wakati wa raundi"
+      ],
+      [
+        "Cash out before the Aviator plane disappears",
+        "Fanya Cash Out kabla ndege ya Aviator kutoweka"
+      ],
+      [
+        "Opening Aviator at a casino and starting a session",
+        "Kufungua Aviator kwenye kasino na kuanza kikao"
+      ],
+      [
+        "Player impression about Aviator game speed",
+        "Hisia ya mchezaji kuhusu kasi ya mchezo wa Aviator"
+      ],
+      [
+        "Player impression about Aviator fairness tools",
+        "Hisia ya mchezaji kuhusu zana za haki za Aviator"
+      ],
+      [
+        "Player impression about using Aviator on mobile",
+        "Hisia ya mchezaji kuhusu kutumia Aviator kwenye simu"
+      ],
+      [
+        "Player impression about starting with Aviator demo",
+        "Hisia ya mchezaji kuhusu kuanza na demo ya Aviator"
+      ],
+      [
+        "The plane lifts off. A number starts to climb. Somewhere between 1.00x and the moment it flies away, you either cash out or lose the bet. That is the whole game. The surprise for most new players is not the rule, it is the pace. Rounds are short, the decision window feels even shorter, and that is usually why people open the demo before they even think about real-money play.",
+        "Ndege inachomoza. Nambari inaanza kupanda. Mahali kati ya 1.00x na wakati unapoondoka, ama unafanya Cash Out au unapoteza dau. Hiyo ndiyo mchezo mzima. Mshangao kwa wachezaji wengi wapya si sheria, ni kasi. Raundi ni fupi, dirisha la uamuzi linaonekana fupi zaidi, na ndio maana watu wengi hufungua demo kabla ya kufikiria kucheza kwa pesa halisi."
+      ],
+      [
+        "Core facts: Aviator was released by Spribe in 2019. The current page data lists 97% RTP, with stakes from USD 0.10 up to USD 100.",
+        "Ukweli wa msingi: Aviator ilitolewa na Spribe mwaka 2019. Data ya sasa ya ukurasa inaonyesha RTP ya 97%, na dau kutoka USD 0.10 hadi USD 100."
+      ],
+      [
+        "Dual bets: Two positions can run together in one round, so players often use one as an early exit and keep the other open longer.",
+        "Dau mbili: Nafasi mbili zinaweza kukimbia pamoja katika raundi moja, hivyo wachezaji mara nyingi hutumia moja kama kutoka mapema na kuacha nyingine wazi kwa muda mrefu."
+      ],
+      [
+        "Provably Fair logic: You cannot predict the result, but the way it is generated is open to verification through the seed system shown in-game.",
+        "Mantiki ya Provably Fair: Huwezi kutabiri matokeo, lakini jinsi yanavyotolewa ni wazi kwa uthibitisho kupitia mfumo wa seed unaonyeshwa ndani ya mchezo."
+      ],
+      [
+        "Live atmosphere: Chat, visible wins, and quick turnover give Aviator a more social feel than a regular slot session.",
+        "Hali ya moja kwa moja: Gumzo, ushindi unaonekana, na mzunguko wa haraka huipa Aviator hisia ya kijamii zaidi kuliko kikao cha kawaida cha slot."
+      ],
+      [
+        "A round starts around 1.00x. The multiplier rises. At some random point, the plane disappears. Cash out before that moment and the multiplier on screen becomes your payout. Stay in too long and the bet is gone. On paper it is a one-sentence rule. In the moment, the part that actually trips people up is timing.",
+        "Raundi huanza karibu 1.00x. Multiplier inapanda. Kwa hatua fulani ya nasibu, ndege hutoweka. Fanya Cash Out kabla ya wakati huo na multiplier kwenye skrini inakuwa malipo yako. Kaa ndani kwa muda mrefu sana na dau linaenda. Kwenye karatasi ni sheria ya sentensi moja. Wakati halisi, sehemu inayowagonga watu ni timing."
+      ],
+      [
+        "The round ends when the game's outcome logic says so, which means there is no reliable way to guess the crash point ahead of time.",
+        "Raundi inaisha wakati mantiki ya matokeo ya mchezo inapoamua, ambayo inamaanisha hakuna njia ya kuaminika ya kukisia pointi ya crash mapema."
+      ],
+      [
+        "Some players prefer short, early exits and smaller wins; others wait longer and accept that many rounds will end before they get there.",
+        "Baadhi ya wachezaji wanapendelea kutoka mapema na ushindi mdogo; wengine husubiri zaidi na wanakubali kwamba raundi nyingi zitaisha kabla ya kufika huko."
+      ],
+      [
+        "Seed verification is there if fairness is important to you, but it does not turn the next round into something readable.",
+        "Uthibitisho wa seed uko pale ikiwa haki ni muhimu kwako, lakini haufanyi raundi inayofuata iweze kusomeka."
+      ],
+      [
+        "If you are new, a few rounds watched from the side plus a short demo run is usually enough to settle into the rhythm.",
+        "Ukiwa mpya, raundi chache zilizotazamwa upande na jaribio fupi la demo kwa kawaida hutosha kuzoea mwendo."
+      ],
+      [
+        "Page data shows 97% RTP and Spribe as the provider. Useful to know, but the real decision for a player is rarely about the RTP number. It is about who you open the game with. Aviator is the same game across sites; the operator around it is what changes.",
+        "Data ya ukurasa inaonyesha RTP ya 97% na Spribe kama mtoa huduma. Ni vizuri kujua, lakini uamuzi halisi wa mchezaji mara chache ni kuhusu nambari ya RTP. Ni kuhusu unayefungua naye mchezo. Aviator ni mchezo ule ule kwenye tovuti zote; mtoa huduma unaouzunguka ndiyo anayobadilika."
+      ],
+      [
+        "Search results make this confusing on purpose. There is no universal real-money “official Aviator website” for everyone. The game reaches players through casinos and sportsbooks that partner with Spribe. So the question worth asking is pretty simple: which licensed site carries Aviator, supports your payments, and lets you test it before you decide anything?",
+        "Matokeo ya utafutaji hufanya hili kuchanganyikiwa kwa makusudi. Hakuna tovuti ya «rasmi ya Aviator» ya pesa halisi kwa kila mtu. Mchezo unawafikia wachezaji kupitia kasino na vitabu vya michezo vinavyofanya kazi na Spribe. Kwa hivyo swali lenye thamani ni rahisi: ni tovuti gani yenye leseni ina Aviator, inaunga mkono malipo yako, na inakuacha uijaribu kabla ya kuamua chochote?"
+      ],
+      [
+        "The flow is short: place a stake, watch the multiplier, then decide when to leave the round.",
+        "Mtiririko ni mfupi: weka dau, angalia multiplier, kisha uamue lini kuondoka kwenye raundi."
+      ],
+      [
+        "Choose one or two stakes before the countdown ends and keep the amount inside the limit you set for the session.",
+        "Chagua dau moja au mbili kabla hesabu ya nyuma haijaisha na uweke kiasi ndani ya kikomo ulichoweka kwa kikao."
+      ],
+      [
+        "Follow the live multiplier and decide whether the round fits an early exit or whether you are comfortable staying in longer.",
+        "Fuata multiplier ya moja kwa moja na uamue kama raundi inafaa kutoka mapema au uko tayari kukaa ndani kwa muda mrefu."
+      ],
+      [
+        "Take the multiplier before the plane leaves. If you miss the moment, that position is gone.",
+        "Chukua multiplier kabla ndege kuondoka. Ukikosa wakati huo, nafasi hiyo imekwisha."
+      ],
+      [
+        "If you want to move from curiosity to actual play, the safest path is straightforward: try the demo first, then compare licensed operators before you deposit anything.",
+        "Ukitaka kuhamia kutoka udadisi hadi kucheza kweli, njia salama zaidi ni wazi: jaribu demo kwanza, kisha linganisha waendeshaji wenye leseni kabla ya kuweka chochote."
+      ],
+      [
+        "Choose a regulated casino or betting site that actually carries Aviator from Spribe.",
+        "Chagua kasino au tovuti ya kamari iliyodhibitiwa ambayo kweli ina Aviator kutoka Spribe."
+      ],
+      [
+        "Open the demo first if it is available and use it to learn the layout, pace, and cash-out timing without pressure.",
+        "Fungua demo kwanza ikiwa inapatikana na uitumie kujifunza mpangilio, kasi, na timing ya Cash Out bila shinikizo."
+      ],
+      [
+        "If you switch to real play, fund the account with a payment method you trust and decide on a session limit before the first stake.",
+        "Ukihamia kwenye mchezo halisi, jaza akaunti kwa njia ya malipo unayoamini na uamue kikomo cha kikao kabla ya dau la kwanza."
+      ],
+      [
+        "Keep withdrawals, verification, and support quality in mind, because the operator can shape the whole experience just as much as the game.",
+        "Weka akilini uondoaji, uthibitisho, na ubora wa msaada, kwa sababu mtoa huduma anaweza kuunda uzoefu mzima kama vile mchezo."
+      ],
+      [
+        "Aviator's strongest features are practical ones: short rounds, visible fairness tools, and several ways to control how you exit.",
+        "Vipengele vya nguvu zaidi vya Aviator ni vya vitendo: raundi fupi, zana za haki zinazoonekana, na njia kadhaa za kudhibiti jinsi unavyotoka."
+      ],
+      [
+        "Two active bets: Useful if you want one safer exit and one more aggressive position inside the same round.",
+        "Dau mbili hai: Inafaa ikiwa unataka kutoka salama moja na nafasi ya ujasiri zaidi ndani ya raundi ile ile."
+      ],
+      [
+        "Auto cash-out and autoplay: Helpful for players who prefer fixed rules instead of improvising every few seconds.",
+        "Auto cash-out na autoplay: Inasaidia wachezaji wanaopendelea sheria thabiti badala ya kubuni kila sekunde chache."
+      ],
+      [
+        "Chat and live feed: These make the room feel active, though they can also distract players who already feel tempted to chase multipliers.",
+        "Gumzo na mlisho wa moja kwa moja: Hizi hufanya chumba lihisi hai, ingawa pia zinaweza kuwatawanya wachezaji wanaotamani kufuatilia multipliers."
+      ],
+      [
+        "Aviator looks simple on the surface, which is exactly why bankroll discipline matters. Quick rounds can make one extra attempt feel harmless even when a session is already going in the wrong direction.",
+        "Aviator inaonekana rahisi juu ya uso, ndio maana nidhamu ya benki ina umuhimu. Raundi za haraka zinaweza kufanya jaribio moja la ziada lionekane lisilo na madhara hata wakati kikao tayari kinaenda vibaya."
+      ],
+      [
+        "Set a stop point before you begin: Decide what loss feels acceptable and what profit would already count as enough for that session.",
+        "Weka hatua ya kusimama kabla ya kuanza: Amua hasara gani inahisi inakubalika na faida gani tayari ingekutosha kwa kikao hicho."
+      ],
+      [
+        "Use demo to learn rhythm, not to prove a system: Demo is useful for pacing and layout, not for discovering a guaranteed pattern.",
+        "Tumia demo kujifunza mwendo, si kuthibitisha mfumo: Demo ni muhimu kwa kasi na mpangilio, si kugundua muundo unaohakikishwa."
+      ],
+      [
+        "Ignore predictors and hacks: Anything claiming to forecast the plane or beat the result logic should be treated as a scam, not an edge.",
+        "Puuzia vitabiri na hacks: Chochote kinachodai kutabiri ndege au kushinda mantiki ya matokeo kinapaswa kuchukuliwa kama ulaghai, si faida."
+      ],
+      [
+        "Take the operator seriously: Fairness tools inside the game do not replace the need for a licensed site, clear withdrawal terms, and reliable support.",
+        "Chukua mtoa huduma kwa uzito: Zana za haki ndani ya mchezo hazibadilishi haja ya tovuti yenye leseni, masharti wazi ya uondoaji, na msaada wa kuaminika."
+      ],
+      [
+        "USD 0.10",
+        "USD 0.10"
+      ],
+      [
+        "Released",
+        "Iliotolewa"
+      ],
+      [
+        "Platforms",
+        "Mifumo"
+      ],
+      [
+        "Desktop, iOS, Android",
+        "Desktop, iOS, Android"
+      ],
+      [
+        "Provider",
+        "Mtoa huduma"
+      ],
+      [
+        "You access Aviator through operators that carry Spribe's game, not through one universal real-money homepage. That makes it more useful to compare available casinos than to chase lookalike “official” pages in search results. Check our casinos page for operators that offer the game.",
+        "Unaweza kufikia Aviator kupitia waendeshaji wanaobeba mchezo wa Spribe, si kupitia ukurasa mmoja wa pesa halisi. Hii inafanya iwe na manufaa zaidi kulinganisha kasino zinazopatikana kuliko kufuatilia kurasa zinazofanana na «rasmi» kwenye matokeo ya utafutaji. Angalia ukurasa wetu wa kasino kwa waendeshaji wanaotoa mchezo."
+      ],
+      [
+        "License and reputation: Prefer operators that are properly regulated and easy to verify.",
+        "Leseni na sifa: Pendelea waendeshaji waliodhibitiwa vizuri na rahisi kuthibitisha."
+      ],
+      [
+        "Payments and withdrawals: Check deposit methods, withdrawal speed, and whether the terms are clear before you sign up.",
+        "Malipo na uondoaji: Angalia njia za amana, kasi ya uondoaji, na kama masharti ni wazi kabla ya kujiandikisha."
+      ],
+      [
+        "Demo access: A site that lets you test Aviator first is often more useful than one that pushes straight to deposit.",
+        "Ufikiaji wa demo: Tovuti inayokuacha ujaribu Aviator kwanza mara nyingi ni muhimu zaidi kuliko ile inayokusukuma moja kwa moja kuweka amana."
+      ],
+      [
+        "Mobile usability: Because rounds are quick, lag, awkward buttons, or crowded layouts matter more than many players first expect.",
+        "Matumizi ya simu: Kwa sababu raundi ni za haraka, kuchelewa, vitufe visivyorahisisha, au mpangilio uliojaa vitu ni muhimu zaidi kuliko wachezaji wengi wanavyotarajia mwanzoni."
+      ],
+      [
+        "The demo is where you learn the interface, the round speed, and your own cash-out habits without financial pressure. Real-money play uses the same core game, but it feels different as soon as every missed exit touches your balance. If you are new to Aviator, the demo is the most sensible place to begin.",
+        "Demo ndipo unapojifunza kiolesura, kasi ya raundi, na tabia zako za Cash Out bila shinikizo la kifedha. Mchezo wa pesa halisi unatumia mchezo ule ule wa msingi, lakini unahisi tofauti mara tu kila kutoka kukosa kugusa salio lako. Ukiwa mpya kwenye Aviator, demo ndiyo mahali pa busara zaidi pa kuanza."
+      ],
+      [
+        "Is Aviator a real game from Spribe? Yes. Aviator is a real crash game from Spribe, but players usually reach it through partner operators rather than one central betting site.",
+        "Je, Aviator ni mchezo halisi kutoka Spribe? Ndiyo. Aviator ni crash game halisi kutoka Spribe, lakini wachezaji kwa kawaida huufikia kupitia waendeshaji washirika badala ya tovuti moja ya kamari."
+      ],
+      [
+        "Can I play Aviator for free? Yes. Many operators offer a demo mode with virtual balance, and that is usually the right place to start if you are still learning the game.",
+        "Je, ninaweza kucheza Aviator bure? Ndiyo. Waendeshaji wengi hutoa hali ya demo na salio la kawaida, na hiyo kwa kawaida ndiyo mahali sahihi pa kuanza ukiwa bado unajifunza mchezo."
+      ],
+      [
+        "Is there an official Aviator website for real-money play? Not in the simple way many search results suggest. Most players access Aviator through licensed casino or sportsbook partners.",
+        "Je, kuna tovuti rasmi ya Aviator kwa mchezo wa pesa halisi? Si kwa njia rahisi ambayo matokeo mengi ya utafutaji yanaonyesha. Wachezaji wengi hufikia Aviator kupitia washirika wa kasino au vitabu vya michezo wenye leseni."
+      ],
+      [
+        "Can I predict when the plane will leave? No. You can learn the pace and verify fairness, but there is no reliable predictor that tells you when to cash out.",
+        "Je, ninaweza kutabiri ndege itaondoka lini? Hapana. Unaweza kujifunza mwendo na kuthibitisha haki, lakini hakuna kitabiri cha kuaminika kinachokuambia lini ufanye Cash Out."
+      ],
+      [
+        "Is Aviator available on mobile? Yes. Aviator is widely played in mobile browsers, and for many users that remains the easiest way to access it.",
+        "Je, Aviator inapatikana kwenye simu? Ndiyo. Aviator huchezwa sana kwenye vivinjari vya simu, na kwa watumiaji wengi hiyo ndiyo njia rahisi zaidi ya kuifikia."
+      ],
+      [
+        "Many first-time players notice the same thing immediately: the rules are easy, but the pressure shows up faster than expected.",
+        "Wachezaji wengi wa mara ya kwanza hugundua kitu kimoja mara moja: sheria ni rahisi, lakini shinikizo linaonekana haraka kuliko walivyotarajia."
+      ],
+      [
+        "Players who care about fairness usually look past the plane animation and pay more attention to the Provably Fair check and the operator behind it.",
+        "Wachezaji wanaojali haki kwa kawaida huangalia zaidi ya uhuishaji wa ndege na kuzingatia zaidi ukaguzi wa Provably Fair na mtoa huduma nyuma yake."
+      ],
+      [
+        "Since so many people play on phones, layout and button spacing matter here more than they do in slower casino games.",
+        "Kwa kuwa watu wengi huchezwa kwenye simu, mpangilio na nafasi ya vitufe ni muhimu hapa zaidi kuliko katika michezo ya kasino ya polepole."
+      ],
+      [
+        "A lot of players feel more comfortable after trying the demo first and only then deciding whether real play suits them.",
+        "Wachezaji wengi huhisi vizuri zaidi baada ya kujaribu demo kwanza na kisha kuamua tu kama mchezo halisi unawafaa."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Aviator : fonctionnement, où y jouer et pourquoi la démo compte",
+        "Aviator : ndenge ya kosala, esika ya kobeta mpe mpo nini démo ezali important"
+      ],
+      [
+        "Comment fonctionne le jeu Aviator",
+        "Ndenge lisano Aviator esalaka"
+      ],
+      [
+        "Retour au joueur (RTP) et à propos de Spribe",
+        "Retour au joueur (RTP) mpe na tina na Spribe"
+      ],
+      [
+        "Parier sur Aviator en trois étapes",
+        "Kobeta na Aviator na mitano misato"
+      ],
+      [
+        "1. MISE",
+        "1. MISE"
+      ],
+      [
+        "2. SUIVRE",
+        "2. KOLANDA"
+      ],
+      [
+        "3. ENCAISSER",
+        "3. CASH OUT"
+      ],
+      [
+        "Comment commencer à jouer à Aviator",
+        "Ndenge ya kobanda kobeta Aviator"
+      ],
+      [
+        "Les fonctionnalités du jeu Aviator",
+        "Ba fonctionnalité ya lisano Aviator"
+      ],
+      [
+        "Conseils Aviator et jeu responsable",
+        "Ba conseil Aviator mpe kobeta na responsabilité"
+      ],
+      [
+        "Caractéristiques du jeu Aviator",
+        "Ba caractéristique ya lisano Aviator"
+      ],
+      [
+        "Où puis-je jouer à Aviator ?",
+        "Nakoki kobeta Aviator wapi ?"
+      ],
+      [
+        "Comment choisir un casino pour Aviator",
+        "Ndenge ya kopona casino mpo na Aviator"
+      ],
+      [
+        "Démo Aviator vs argent réel",
+        "Démo Aviator vs mbongo ya solo"
+      ],
+      [
+        "Questions fréquentes",
+        "Ba question oyo batunaka mingi"
+      ],
+      [
+        "Ce que les joueurs remarquent le plus dans Aviator",
+        "Oyo ba joueur remarquent mingi na Aviator"
+      ],
+      [
+        "Aviator game multiplier climbing during a live round",
+        "Aviator game multiplier climbing during a live round"
+      ],
+      [
+        "Set your stake before an Aviator round starts",
+        "Set your stake before an Aviator round starts"
+      ],
+      [
+        "Watch the Aviator multiplier rise during the round",
+        "Watch the Aviator multiplier rise during the round"
+      ],
+      [
+        "Cash out before the Aviator plane disappears",
+        "Cash out before the Aviator plane disappears"
+      ],
+      [
+        "Opening Aviator at a casino and starting a session",
+        "Opening Aviator at a casino and starting a session"
+      ],
+      [
+        "Player impression about Aviator game speed",
+        "Player impression about Aviator game speed"
+      ],
+      [
+        "Player impression about Aviator fairness tools",
+        "Player impression about Aviator fairness tools"
+      ],
+      [
+        "Player impression about using Aviator on mobile",
+        "Player impression about using Aviator on mobile"
+      ],
+      [
+        "Player impression about starting with Aviator demo",
+        "Player impression about starting with Aviator demo"
+      ],
+      [
+        "L’avion décolle. Un chiffre commence à grimper. Quelque part entre 1.00x et l’instant où il s’envole, vous encaissez ou vous perdez la mise. Voilà tout le jeu. Ce qui surprend la plupart des nouveaux joueurs, ce n’est pas la règle, c’est le tempo. Les manches sont courtes, la fenêtre de décision paraît encore plus courte, et c’est généralement pour ça que les gens ouvrent la démo avant même d’envisager le jeu en argent réel.",
+        "Ekipi ebandi kopumbwa. Motá ebandi kokita. Na kati ya 1.00x mpe tango epumbwaka, ozali kosala cash out to olembi mise. Yango nde lisano mobimba. Oyo esilisaka ba joueur ya sika, ezali mibeko te, ezali tempo. Ba manche ezali mokuse, esika ya décision ezali lokola mokuse mingi, mpe yango nde ntina mingi bato babongisi démo liboso ya kokanisa kobeta na mbongo ya solo."
+      ],
+      [
+        "L’essentiel : Aviator est sorti chez Spribe en 2019. Les données actuelles de la page indiquent un RTP de 97%, avec des mises comprises entre USD 0.10 et USD 100.",
+        "L’essentiel : Aviator ebandi na Spribe na 2019. Ba donnée ya page ya lelo emonisi RTP ya 97%, na ba mise kobanda na USD 0.10 tii na USD 100."
+      ],
+      [
+        "Double mise : Deux positions peuvent tourner ensemble sur une même manche ; beaucoup de joueurs utilisent l’une comme sortie rapide et laissent la seconde courir plus longtemps.",
+        "Double mise : Positions mibale ekoki kosala elongo na manche moko ; ba joueur mingi basalaka moko lokola sortie ya mbangu mpe batikaka ya mibale koleka ntango."
+      ],
+      [
+        "Logique Provably Fair : Impossible de prédire le résultat, en revanche la façon dont il est généré peut être vérifiée via le système de seeds affiché dans le jeu.",
+        "Logique Provably Fair : Okoki te koyebisa resultat, kasi ndenge ezali produite ekoki kotalama na système ya seeds oyo emonisami na lisano."
+      ],
+      [
+        "Ambiance live : Tchat, gains visibles et rotations rapides donnent à Aviator un côté social qu’une session classique de machine à sous n’a pas.",
+        "Ambiance live : Chat, ba gain oyo emonisami mpe ba rotation ya mbangu epesaka Aviator ndenge ya sociali oyo session ya slot ya classique ezali na yango te."
+      ],
+      [
+        "Une manche démarre autour de 1.00x. Le multiplicateur monte. À un moment aléatoire, l’avion disparaît. Si vous encaissez avant, le multiplicateur affiché devient votre gain. Si vous restez trop longtemps, la mise est perdue. Sur le papier, la règle tient en une phrase. Une fois à la manette, c’est le timing qui fait tomber presque tout le monde.",
+        "Manche moko ebandi pene na 1.00x. Multiplicateur ekomi. Na moment ya hasard, ekipi epumbwaka. Soki osala cash out liboso, multiplicateur oyo emonisami ezali gain na yo. Soki ozali kozela mingi, mise elembi. Na papier, mibeko ezali na phrase moko. Na lisano, timing nde ebebisaka bato mingi."
+      ],
+      [
+        "La manche se termine quand la logique de résultats du jeu le décide : aucun moyen fiable de deviner le point de crash à l’avance.",
+        "Manche esukaka tango logique ya resultat ya lisano esengi : ezali na ndenge ya kotya confiance te ya kokanisa point ya crash liboso."
+      ],
+      [
+        "Certains joueurs préfèrent des sorties courtes et des gains modestes ; d’autres attendent plus longtemps et acceptent qu’un bon nombre de manches se terminent avant même qu’ils aient réagi.",
+        "Ba joueur mosusu balingaka ba sortie mokuse mpe ba gain moke ; basusu bazela mingi mpe bakokani ete ba manche mingi ekosukaka liboso ete bato basala."
+      ],
+      [
+        "La vérification des seeds est là si l’équité vous importe, mais elle ne rend pas pour autant la prochaine manche plus lisible.",
+        "Vérification ya seeds ezali soki équité ezali important mpo na yo, kasi esalaka te manche elandi ezala ya polele."
+      ],
+      [
+        "Si vous débutez, quelques manches observées depuis la touche et un court essai en démo suffisent généralement à attraper le rythme.",
+        "Soki ozali kobanda, ba manche moke oyo otalaki mpe test ya démo ya mokuse ekoki kopesa yo tempo."
+      ],
+      [
+        "Les données de la page annoncent un RTP de 97% et Spribe comme fournisseur. Bon à savoir, mais la vraie décision d’un joueur tient rarement au chiffre du RTP. Elle tient plutôt à la maison avec laquelle on ouvre le jeu. Aviator reste identique d’un site à l’autre ; c’est l’opérateur qui l’entoure qui change.",
+        "Ba donnée ya page emonisaka RTP ya 97% mpe Spribe lokola fournisseur. Malamu koyeba, kasi décision ya solo ya joueur ezali moke mpenza na chiffre ya RTP. Ezali plutôt na ndako oyo ofungolaka lisano. Aviator ezali lisano moko na ba site nionso ; opérateur oyo ezali zungu na yango nde ebongwanaka."
+      ],
+      [
+        "Les résultats de recherche brouillent les cartes à dessein. Il n’existe pas de « site officiel Aviator » universel en argent réel valable pour tout le monde. Le jeu atteint les joueurs via des casinos et des bookmakers partenaires de Spribe. La question à se poser est donc assez simple : quel site licencié propose Aviator, accepte vos moyens de paiement et vous laisse l’essayer avant de vous engager ?",
+        "Ba résultat ya recherche ebongisaka biloko na ntina. Ezali na « site officiel Aviator » ya mbongo ya solo mpo na bato nionso te. Lisano ekomi na ba joueur na ba casino mpe bookmaker partenaire ya Spribe. Question ya kolobela ezali simple : site oyo ezali na licence, oyo epesaka Aviator, oyo endimaka ba paiement na yo mpe oyo etikaka yo komeka liboso ya kokanga yo ?"
+      ],
+      [
+        "Le principe est simple : saisir une mise, suivre le multiplicateur et décider quand sécuriser le résultat.",
+        "Principe ezali simple : kotia mise, kolanda multiplicateur mpe koyebisa tango ya kobatela resultat."
+      ],
+      [
+        "Choisissez une ou deux mises avant la fin du compte à rebours et vérifiez que le montant correspond à votre budget de session.",
+        "Pona mise moko to mibale liboso ya fin ya compte à rebours mpe talá ete montant ezali na budget ya session na yo."
+      ],
+      [
+        "Suivez le multiplicateur en direct et décidez si la manche se prête à une sortie rapide ou si vous êtes à l'aise pour rester plus longtemps.",
+        "Landá multiplicateur na direct mpe yebisa soki manche esengeli sortie ya mbangu to soki ozali na confiance kozela mingi."
+      ],
+      [
+        "Prenez le multiplicateur avant que l'avion ne disparaisse. Si vous manquez ce moment, cette position est perdue.",
+        "Zua multiplicateur liboso ete ekipi epumbwaka. Soki ofi moment wana, position wana elembi."
+      ],
+      [
+        "Si vous voulez passer de la curiosité au jeu réel, la voie la plus sûre reste simple : essayez d'abord la démo, puis comparez les opérateurs licenciés avant de déposer quoi que ce soit.",
+        "Soki olingi kobanda na curiosité tii na jeu réel, nzela ya malamu ezali simple : meka démo liboso, sima comparer ba opérateur oyo ezali na licence liboso ya kotia eloko moko."
+      ],
+      [
+        "Choisissez un casino ou un site de paris régulé qui propose bien Aviator de Spribe.",
+        "Pona casino to site ya pari oyo ezali régulé mpe oyo epesaka Aviator ya Spribe."
+      ],
+      [
+        "Ouvrez d'abord la démo si elle est disponible et servez-vous-en pour comprendre l'interface, le rythme et le bon moment pour encaisser.",
+        "Fungola démo liboso soki ezali mpe basalela yango mpo na koyeba interface, tempo mpe moment ya cash out."
+      ],
+      [
+        "Si vous passez au jeu réel, approvisionnez votre compte avec un moyen de paiement fiable et fixez une limite de session avant la première mise.",
+        "Soki obongisi na jeu réel, tia mbongo na compte na moyen ya paiement oyo ozali na confiance mpe botia limite ya session liboso ya mise ya liboso."
+      ],
+      [
+        "Gardez aussi à l'esprit les retraits, la vérification et la qualité du support, car l'opérateur peut façonner toute l'expérience autant que le jeu.",
+        "Kanisa mpe ba retrait, vérification mpe qualité ya support, mpo opérateur ekoki kobongisa expérience mobimba lokola lisano."
+      ],
+      [
+        "Les meilleurs atouts d'Aviator sont très concrets : des manches courtes, des outils de transparence visibles et plusieurs façons de contrôler votre sortie.",
+        "Ba atout ya malamu ya Aviator ezali ya solo : ba manche mokuse, ba outil ya transparence oyo emonisami mpe ba ndenge mingi ya kozala na contrôle ya sortie na yo."
+      ],
+      [
+        "Deux mises actives :Pratique si vous voulez une sortie plus sûre et une position plus agressive dans le même tour.",
+        "Deux mises actives :Pratique soki olingi sortie ya sécurité mpe position ya aggressif mingi na tour moko."
+      ],
+      [
+        "Encaissement automatique et lecture auto :Pratique pour les joueurs qui préfèrent s'en tenir à des règles fixes plutôt que d'improviser toutes les quelques secondes.",
+        "Encaissement automatique et lecture auto :Pratique mpo na ba joueur oyo balingaka ba règle fixes na kobimisa ba seconde nionso."
+      ],
+      [
+        "Chat et fil en direct :Ces éléments rendent la salle vivante, même s’ils peuvent aussi distraire les joueurs déjà tentés de courir après les multiplicateurs.",
+        "Chat et fil en direct :Ces éléments esalisaka salle vivante, ata soki ekoki pe kotela ba joueur oyo bandelaki kolanda ba multiplicateur."
+      ],
+      [
+        "Aviator paraît simple au premier abord, et c'est précisément pour cela que la discipline de bankroll compte. Les manches rapides peuvent faire croire qu'une tentative de plus est sans importance alors que la session tourne déjà mal.",
+        "Aviator ezali lokola simple na liboso, mpe yango wana discipline ya bankroll ezali important. Ba manche ya mbangu ekoki kosala ete tentative moko ya lisusu ezala lokola eloko ya moke ata soki session esili kozala mabe."
+      ],
+      [
+        "Fixez une limite avant de commencer :Décidez quelle perte vous semble acceptable et quel gain vous suffirait déjà pour cette session.",
+        "Botia limite liboso ya kobanda :Yebisa perte oyo okoki kondima mpe gain oyo ekosala déjà mpo na session oyo."
+      ],
+      [
+        "Utilisez la démo pour travailler le timing, pas pour prouver une méthode :La démo aide à comprendre l'interface et le rythme, pas à découvrir un schéma garanti.",
+        "Basalela démo mpo na timing, mpe te mpo na kopesa preuve ya méthode :Démo esalisaka koyeba interface mpe tempo, mpe te kozua schéma garanti."
+      ],
+      [
+        "Ignorez les « predictors » et les hacks :Tout ce qui prétend prévoir le départ de l'avion ou battre la logique du résultat doit être considéré comme une arnaque, pas comme un avantage.",
+        "Boya ba « predictors » mpe ba hacks :Nyonso oyo elobi koyebisa départ ya ekipi to kobunda logique ya resultat ezali arnaque, mpe te avantage."
+      ],
+      [
+        "Prenez l'opérateur au sérieux :Les outils d'équité intégrés au jeu ne remplacent pas un site licencié, des règles de retrait claires et un support fiable.",
+        "Benda opérateur na sérieux :Ba outil ya équité na lisano ebandi site na licence, ba règle ya retrait ya polele mpe support ya confiance te."
+      ],
+      [
+        "Caractéristique",
+        "Caractéristique"
+      ],
+      [
+        "Mise min.",
+        "Mise min."
+      ],
+      [
+        "USD 0.10",
+        "USD 0.10"
+      ],
+      [
+        "Mise max.",
+        "Mise max."
+      ],
+      [
+        "Plateformes",
+        "Plateformes"
+      ],
+      [
+        "Ordinateur, iOS, Android",
+        "Ordinateur, iOS, Android"
+      ],
+      [
+        "Fournisseur",
+        "Fournisseur"
+      ],
+      [
+        "Vous accédez à Aviator via des opérateurs qui proposent le jeu de Spribe, et non via une page universelle unique pour l'argent réel. Il est donc plus utile de comparer les casinos disponibles que de courir après des pages « officielles » qui s'y apparentent dans les résultats de recherche. Consultez notrecasinosdisponibles que de courir après de faux sites « officiels » dans les résultats de recherche. Consultez notre page casinos pour trouver des opérateurs qui proposent le jeu.",
+        "Ozali kofikisa Aviator na ba opérateur oyo epesaka lisano ya Spribe, mpe te na page moko ya mbongo ya solo. Ezali malamu mingi kokokanisa ba casino oyo ezali pene na koluka ba page « officielles » na ba résultat ya recherche. Talá page na biso ya casinos mpo na ba opérateur oyo epesaka lisano."
+      ],
+      [
+        "Licence et réputation :Privilégiez des opérateurs correctement régulés et faciles à vérifier.",
+        "Licence et réputation :Privilégiez des opérateurs correctement régulés et faciles à vérifier."
+      ],
+      [
+        "Paiements et retraits :Vérifiez les méthodes de dépôt, la vitesse des retraits et la clarté des conditions avant de vous inscrire.",
+        "Paiements et retraits :Vérifiez les méthodes de dépôt, la vitesse des retraits et la clarté des conditions avant de vous inscrire."
+      ],
+      [
+        "Accès à la démo :Un site qui permet de tester Aviator d'abord est souvent plus utile qu'un site qui pousse directement au dépôt.",
+        "Accès à la démo :Un site qui permet de tester Aviator d'abord est souvent plus utile qu'un site qui pousse directement au dépôt."
+      ],
+      [
+        "Confort mobile :Comme les manches sont rapides, le lag, des boutons maladroits ou une interface surchargée posent plus de problèmes que beaucoup de joueurs ne l'imaginent au début.",
+        "Confort mobile :Comme les manches sont rapides, le lag, des boutons maladroits ou une interface surchargée posent plus de problèmes que beaucoup de joueurs ne l'imaginent au début."
+      ],
+      [
+        "La démo est l'endroit où vous apprenez l'interface, la vitesse des manches et vos propres habitudes d'encaissement sans pression financière. Le jeu en argent réel repose sur le même jeu de base, mais il se vit différemment dès qu'une sortie ratée touche votre solde. Si vous débutez sur Aviator, ladémoreste la première étape la plus logique.",
+        "Démo ezali esika oyo oyekaka interface, vitesse ya ba manche mpe ba habitude na yo ya cash out sans pression financière. Jeu na mbongo ya solo ezali lisano moko, kasi ezali différent soki sortie oyo ofi ekotya solde na yo. Soki obandi na Aviator, démo ezali liboso ya malamu."
+      ],
+      [
+        "Aviator est-il un vrai jeu de Spribe ?Oui. Aviator est bien un vrai crash game de Spribe, mais on y accède le plus souvent via des opérateurs partenaires plutôt que sur un site de paris central unique.",
+        "Aviator est-il un vrai jeu de Spribe ?Oui. Aviator ezali vrai crash game ya Spribe, kasi bato bakofikisa yango mingi na ba opérateur partenaire na site ya pari central moko te."
+      ],
+      [
+        "Puis-je jouer à Aviator gratuitement ?Oui. De nombreux opérateurs proposent un mode démo avec un solde virtuel, et c'est généralement le bon point de départ si vous êtes encore en train d'apprendre le jeu.",
+        "Puis-je jouer à Aviator gratuitement ?Oui. Ba opérateur mingi epesaka mode démo na solde virtuel, mpe yango nde esika malamu soki ozali naba koyekola lisano."
+      ],
+      [
+        "Existe-t-il un site officiel Aviator pour jouer en argent réel ?Pas de la manière simple que laissent entendre beaucoup de résultats de recherche. En pratique, les joueurs accèdent généralement à Aviator via des partenaires casinos ou paris sportifs licenciés.",
+        "Existe-t-il un site officiel Aviator pour jouer en argent réel ?Pas de la manière simple que laissent entendre beaucoup de résultats de recherche. Na pratique, ba joueur bakofikisa Aviator na ba partenaires casino to paris sportifs oyo ezali na licence."
+      ],
+      [
+        "Puis-je prévoir quand l'avion va partir ?Non. Vous pouvez apprendre le rythme et vérifier l'équité, mais il n'existe aucun indicateur fiable qui vous dise quand encaisser.",
+        "Puis-je prévoir quand l'avion va partir ?Non. Okoki koyekola tempo mpe kotya équité, kasi ezali na indicateur ya confiance te oyo ekobisa yo tango ya cash out."
+      ],
+      [
+        "Aviator est-il disponible sur mobile ?Oui. Aviator se joue largement sur navigateur mobile et, pour beaucoup de joueurs, c'est même la façon la plus simple d'y accéder.",
+        "Aviator est-il disponible sur mobile ?Oui. Aviator esalelami mingi na navigateur mobile mpe, mpo na ba joueur mingi, yango nde nzela ya pete."
+      ],
+      [
+        "Beaucoup de nouveaux joueurs remarquent tout de suite la même chose : les règles sont simples, mais la pression monte plus vite qu’ils ne l’imaginent.",
+        "Ba joueur ya sika remarquent mbala moko eloko moko : ba règle ezali simple, kasi pression ekomi nokinoki koleka ndenge basalaki kanisa."
+      ],
+      [
+        "Les joueurs attentifs à l'équité regardent souvent au-delà de l'animation de l'avion et prêtent plus d'attention à la vérification Provably Fair et à l'opérateur derrière.",
+        "Ba joueur oyo balingi équité batalaka mingi vérification Provably Fair mpe opérateur oyo ezali na nsima."
+      ],
+      [
+        "Comme beaucoup de gens jouent sur mobile, la disposition de l'écran et l'espacement des boutons comptent ici plus que dans des jeux de casino plus lents.",
+        "Mpo bato mingi babetaka na mobile, disposition ya écran mpe espacement ya ba bouton ezali important awa koleka na ba jeux ya casino ya polele."
+      ],
+      [
+        "Beaucoup de joueurs se sentent plus à l’aise après avoir essayé la démo d’abord et ne décident qu’ensuite si le jeu réel leur convient.",
+        "Ba joueur mingi bazali na confiance mingi sima ya komeka démo liboso mpe bakamaka kaka sima soki jeu réel esili kopasana na bango."
+      ]
+    ]
+  }
+}

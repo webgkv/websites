@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Signals",
+      "title": "Signals za Aviator: Ukweli na Hatari",
+      "description": "Je, signals za Aviator zinafanya kazi? Telegram, bots na ukweli kuhusu «utabiri»."
+    },
+    "ln": {
+      "name": "Signals",
+      "title": "Ba signal ya Aviator: Solo mpe riski",
+      "description": "Ba signal ya Aviator esalaka? Telegram, ba bot mpe solo na «prédiction»."
+    }
+  }
+}

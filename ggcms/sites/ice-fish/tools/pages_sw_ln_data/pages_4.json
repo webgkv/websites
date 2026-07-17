@@ -1,0 +1,473 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Demo",
+      "title": "Ice Fish Demo Bure | Jaribu Mchezo Mtandaoni",
+      "description": "Cheza Ice Fish demo bure na salio la kawaida. Jifunze mwendo, jaribu demo na uone tofauti na mchezo wa pesa halisi."
+    },
+    "ln": {
+      "name": "Demo",
+      "title": "Ice Fish Demo ya Ofele | Kobeta na Internet",
+      "description": "Betta Ice Fish demo na solde virtuel. Yekola tempo, meka demo mpe bona ndenge ezali différent na mbongo ya solo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Ice Fish Demo - Play Free",
+        "Ice Fish Demo — Cheza Bure"
+      ],
+      [
+        "Ice Fish Demo - Quick Overview",
+        "Ice Fish Demo — Muhtasari wa Haraka"
+      ],
+      [
+        "What Is the Ice Fish Demo Version?",
+        "Toleo la Demo la Ice Fish ni Nini?"
+      ],
+      [
+        "What Makes Ice Fish Different From Traditional Slot Demos?",
+        "Nini Kinafanya Ice Fish Kutofautiana na Demo za Slot za Kawaida?"
+      ],
+      [
+        "How Ice Fish Demo Actually Works",
+        "Jinsi Ice Fish Demo Inavyofanya Kazi Halisi"
+      ],
+      [
+        "Starting Your First Demo Session",
+        "Kuanza Kikao Chako cha Kwanza cha Demo"
+      ],
+      [
+        "Understanding the Gameplay Flow",
+        "Kuelewa Mtiririko wa Mchezo"
+      ],
+      [
+        "Following the Catch Through Several Stages",
+        "Kufuatilia Uvuvi Kupitia Hatua Kadhaa"
+      ],
+      [
+        "How Rounds Move From Start to Finish",
+        "Jinsi Raundi Zinavyosonga Kuanzia Mwanzo hadi Mwisho"
+      ],
+      [
+        "Demo Mode vs Real-Money Experience",
+        "Hali ya Demo dhidi ya Uzoefu wa Pesa Halisi"
+      ],
+      [
+        "Why Demo Results Are Not Predictions",
+        "Kwa Nini Matokeo ya Demo Si Tabiri"
+      ],
+      [
+        "Emotional Difference Between Demo and Real Play",
+        "Tofauti ya Kihisia Kati ya Demo na Mchezo Halisi"
+      ],
+      [
+        "Why Most Players Try Demo Mode First",
+        "Kwa Nini Wachezaji Wengi Hujaribu Demo Kwanza"
+      ],
+      [
+        "Understanding the Game Mechanics",
+        "Kuelewa Mechanics za Mchezo"
+      ],
+      [
+        "Common Mistakes Players Make in Demo Mode",
+        "Makosa ya Kawaida Wachezaji Wanayofanya katika Demo"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Ice Fish demo game screen",
+        "Skrini ya mchezo wa Ice Fish demo"
+      ],
+      [
+        "Ice Fish demo wheel interface",
+        "Kiolesura cha gurudumu la Ice Fish demo"
+      ],
+      [
+        "Blue fish animation in Ice Fish demo",
+        "Uhuishaji wa samaki wa bluu katika Ice Fish demo"
+      ],
+      [
+        "Ice Fish demo on mobile phone",
+        "Ice Fish demo kwenye simu ya mkononi"
+      ],
+      [
+        "Ice Fish round progress wheel",
+        "Gurudumu la maendeleo ya raundi ya Ice Fish"
+      ],
+      [
+        "Ice Fish bonus reveal screen",
+        "Skrini ya kufichua bonasi ya Ice Fish"
+      ],
+      [
+        "Red fish outcome in Ice Fish demo",
+        "Matokeo ya samaki mwekundu katika Ice Fish demo"
+      ],
+      [
+        "Testing Ice Fish in demo mode is the easiest way to understand the game before using real money. You can open the demo, follow the catch, watch how the result builds and see whether the pace suits you.",
+        "Kujaribu Ice Fish katika hali ya demo ni njia rahisi zaidi ya kuelewa mchezo kabla ya kutumia pesa halisi. Unaweza kufungua demo, kufuatilia uvuvi, kuona jinsi matokeo yanavyojengwa na kuona kama mwendo unakufaa."
+      ],
+      [
+        "The Ice Fish demo uses virtual credits, so you can test the interface, the fishing round and the result reveal without touching your balance.",
+        "Demo ya Ice Fish inatumia mikopo ya kawaida, hivyo unaweza kujaribu kiolesura, raundi ya uvuvi na kufichuliwa kwa matokeo bila kugusa salio lako."
+      ],
+      [
+        "Unlike a classic slot demo, Ice Fish does not rely on reels and paylines. The result appears through a short fishing scene, and that rhythm is the main thing to test.",
+        "Tofauti na demo ya slot ya kawaida, Ice Fish haiategemei reels na paylines. Matokeo yanaonekana kupitia tukio fupi la uvuvi, na mwendo huo ndio jambo kuu la kujaribu."
+      ],
+      [
+        "The flow is short: choose a stake, start the round, watch the reveal, read the result and see the balance update.",
+        "Mtiririko ni mfupi: chagua dau, anza raundi, angalia kufichuliwa, soma matokeo na uone salio linavyosasishwa."
+      ],
+      [
+        "Start slowly and watch several rounds before making conclusions. The goal is to understand pace, readability and comfort.",
+        "Anza polepole na uangalie raundi kadhaa kabla ya kufanya hitimisho. Lengo ni kuelewa mwendo, usomaji na faraja."
+      ],
+      [
+        "The catch reveal creates the main tension of the round. Demo mode lets you watch that sequence without financial pressure.",
+        "Kufichuliwa kwa uvuvi huunda mvutano mkuu wa raundi. Hali ya demo hukuruhusu kuangalia mlolongo huo bila shinikizo la kifedha."
+      ],
+      [
+        "Demo and real-money play can look similar, but they feel different because the demo balance is virtual.",
+        "Demo na mchezo wa pesa halisi vinaweza kuonekana sawa, lakini vinahisi tofauti kwa sababu salio la demo ni la kawaida."
+      ],
+      [
+        "Demo outcomes are not predictions. They teach the format, not future results or a guaranteed pattern.",
+        "Matokeo ya demo si tabiri. Yanafundisha muundo, si matokeo ya baadaye au muundo unaohakikishwa."
+      ],
+      [
+        "The mechanics are simple, but the pace defines the experience. A clean first session means understanding stake, reveal, result and balance.",
+        "Mechanics ni rahisi, lakini mwendo unafafanua uzoefu. Kikao cha kwanza safi kunamaanisha kuelewa dau, kufichuliwa, matokeo na salio."
+      ],
+      [
+        "Common mistakes are treating demo wins as a strategy, installing random files or rushing through rounds before learning the interface.",
+        "Makosa ya kawaida ni kutazama ushindi wa demo kama mkakati, kusakinisha faili za nasibu au kukimbia kupitia raundi kabla ya kujifunza kiolesura."
+      ],
+      [
+        "What to Check in Demo",
+        "Nini cha Kuangalia katika Demo"
+      ],
+      [
+        "Why It Matters",
+        "Kwa Nini Ni Muhimu"
+      ],
+      [
+        "Stake choice",
+        "Chaguo la dau"
+      ],
+      [
+        "Try different virtual bet sizes",
+        "Jaribu ukubwa tofauti wa dau la kawaida"
+      ],
+      [
+        "Shows how balance changes across rounds",
+        "Inaonyesha jinsi salio linavyobadilika katika raundi"
+      ],
+      [
+        "Round pace",
+        "Mwendo wa raundi"
+      ],
+      [
+        "Watch several rounds in a row",
+        "Angalia raundi kadhaa mfululizo"
+      ],
+      [
+        "Helps decide whether the speed feels comfortable",
+        "Husaidia kuamua kama kasi inahisi raha"
+      ],
+      [
+        "Follow the catch sequence",
+        "Fuata mlolongo wa uvuvi"
+      ],
+      [
+        "Shows how tension is built before the outcome",
+        "Inaonyesha jinsi mvutano unavyojengwa kabla ya matokeo"
+      ],
+      [
+        "Mobile view",
+        "Mwonekano wa simu"
+      ],
+      [
+        "Open the demo on phone",
+        "Fungua demo kwenye simu"
+      ],
+      [
+        "Checks readability and connection quality",
+        "Huangalia usomaji na ubora wa muunganisho"
+      ],
+      [
+        "Is Ice Fish Demo free?",
+        "Je, Ice Fish Demo ni bure?"
+      ],
+      [
+        "Yes. The demo uses virtual credits and does not require a deposit.",
+        "Ndiyo. Demo inatumia mikopo ya kawaida na haihitaji amana."
+      ],
+      [
+        "Do demo results predict real-money play?",
+        "Je, matokeo ya demo yanatabiri mchezo wa pesa halisi?"
+      ],
+      [
+        "No. Demo mode teaches the format, but it does not predict future results.",
+        "Hapana. Hali ya demo inafundisha muundo, lakini haitabiri matokeo ya baadaye."
+      ],
+      [
+        "Can I play Ice Fish Demo on mobile?",
+        "Je, ninaweza kucheza Ice Fish Demo kwenye simu?"
+      ],
+      [
+        "Yes. The demo can be tested on mobile, and it helps you check screen comfort and connection quality.",
+        "Ndiyo. Demo inaweza kujaribiwa kwenye simu, na husaidia kuangalia faraja ya skrini na ubora wa muunganisho."
+      ],
+      [
+        "Is registration required for demo mode?",
+        "Je, usajili unahitajika kwa hali ya demo?"
+      ],
+      [
+        "Usually no, where free mode is available.",
+        "Kwa kawaida hapana, pale ambapo hali ya bure inapatikana."
+      ],
+      [
+        "What should I check first?",
+        "Nini ninapaswa kuangalia kwanza?"
+      ],
+      [
+        "Watch the pace, the reveal, the balance changes and whether the interface feels clear.",
+        "Angalia mwendo, kufichuliwa, mabadiliko ya salio na kama kiolesura kinahisi wazi."
+      ],
+      [
+        "When should I move to real-money play?",
+        "Ni lini ninapaswa kuhamia kwenye mchezo wa pesa halisi?"
+      ],
+      [
+        "Only after you understand the game and choose a trusted casino with clear limits and rules.",
+        "Tu baada ya kuelewa mchezo na kuchagua kasino inayoaminika na mipaka na sheria wazi."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Démo Ice Fish — jouer gratuitement",
+        "Demo Ice Fish — kobeta ofele"
+      ],
+      [
+        "Ice Fish Demo — aperçu rapide",
+        "Ice Fish Demo — aperçu ya mbangu"
+      ],
+      [
+        "Qu’est-ce que la version démo Ice Fish ?",
+        "Demo Ice Fish ezali nini ?"
+      ],
+      [
+        "Différence avec une démo de slot traditionnelle",
+        "Nini ekesaka Ice Fish na demo ya slot ya classique ?"
+      ],
+      [
+        "Comment fonctionne Ice Fish Demo",
+        "Ndenge Ice Fish Demo esalaka"
+      ],
+      [
+        "Première session de démo",
+        "Session ya demo ya liboso"
+      ],
+      [
+        "Comprendre le flow du jeu",
+        "Koyeba flow ya lisano"
+      ],
+      [
+        "Suivre le catch en plusieurs étapes",
+        "Kolanda catch na ba étape"
+      ],
+      [
+        "Du départ au résultat",
+        "Kobanda tii na résultat"
+      ],
+      [
+        "Mode démo et argent réel",
+        "Mode demo mpe mbongo ya solo"
+      ],
+      [
+        "Pourquoi la démo ne prédit rien",
+        "Mpo nini demo ezali prédiction te"
+      ],
+      [
+        "Différence émotionnelle entre démo et réel",
+        "Différence ya émotion entre demo mpe solo"
+      ],
+      [
+        "Pourquoi essayer la démo d’abord",
+        "Mpo nini meka demo liboso"
+      ],
+      [
+        "Comprendre les mécaniques",
+        "Koyeba ba ndenge"
+      ],
+      [
+        "Erreurs courantes en mode démo",
+        "Ba erreur ya courant na mode demo"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement screen",
+        "Demo Ice Fish — ecran ya lisano"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement interface",
+        "Demo Ice Fish — interface ya roue"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement animation",
+        "Demo Ice Fish — animation ya mbisi ya blue"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement mobile",
+        "Demo Ice Fish — na mobile"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement progress",
+        "Demo Ice Fish — roue ya progression"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement bonus",
+        "Demo Ice Fish — bonus reveal"
+      ],
+      [
+        "Démo Ice Fish — jouer gratuitement result",
+        "Demo Ice Fish — résultat ya mbisi ya moto"
+      ],
+      [
+        "La démo Ice Fish permet de comprendre le jeu avant tout risque réel. Vous ouvrez un round, suivez le catch et voyez si le rythme vous convient.",
+        "Demo Ice Fish epesaka nzela ya koyeba lisano liboso ya riski ya solo. Ofungola round moko, olanda catch mpe omoni soki tempo esengeli yo."
+      ],
+      [
+        "La démo utilise un solde virtuel : vous pouvez tester les mises, l’interface et le reveal sans dépôt.",
+        "Demo esalelaka solde virtuel : okoki komeka ba mise, interface mpe reveal sans dépôt."
+      ],
+      [
+        "Contrairement à une démo de slot classique, Ice Fish montre le résultat par une courte scène de pêche, pas par des rouleaux et des lignes.",
+        "Na différence na demo ya slot classique, Ice Fish emonisaka résultat na scène ya pêche ya mokuse, mpe te na ba rouleau mpe ba ligne."
+      ],
+      [
+        "Le flow est court : choisir la mise, lancer le round, suivre le reveal, lire le résultat et voir le solde.",
+        "Flow ezali mokuse : pona mise, bota round, landa reveal, tanga résultat mpe talá solde."
+      ],
+      [
+        "Începe încet și urmărește câteva runde pentru a evalua viteza, lizibilitatea și confortul.",
+        "Bandá malamu mpe landa ba round mingi mpo na kotala vitesse, lisibilité mpe confort."
+      ],
+      [
+        "Le reveal du catch crée la tension principale du round et peut être observé sans pression financière.",
+        "Reveal ya catch ezali tension ya round mpe ekoki kotalama sans ngombi ya mbongo."
+      ],
+      [
+        "Demo-ul și jocul pe bani reali pot arăta similar, dar emoția este diferită deoarece soldul este virtual.",
+        "Demo mpe solo ekoki komonisa ndenge moko, kasi émotion ezali différent mpo solde ezali virtuel."
+      ],
+      [
+        "Rezultatele demo nu sunt predicții. Ele arată formatul, nu rezultatele viitoare.",
+        "Ba résultat ya demo ezali prédiction te. Emonisaka format, mpe te ba résultat ya sima."
+      ],
+      [
+        "Les mécaniques sont simples, mais le rythme définit l’expérience.",
+        "Ba ndenge ezali simple, kasi tempo ezali oyo ekaboli ndenge ya kosalela."
+      ],
+      [
+        "Les erreurs courantes sont les fausses prédictions, les fichiers inconnus et les sessions jouées trop vite.",
+        "Ba erreur ya courant ezali ba fausses prédictions, ba fisyé ya inconnu mpe ba session ya mbangu mingi."
+      ],
+      [
+        "À vérifier en démo",
+        "Oyo ekosala vérification na demo"
+      ],
+      [
+        "Pourquoi c’est important",
+        "Mpo nini ezali important"
+      ],
+      [
+        "Différentes mises virtuelles",
+        "Ba mise virtuel différentes"
+      ],
+      [
+        "Montre les changements de solde",
+        "Emonisi ba changement ya solde"
+      ],
+      [
+        "Plusieurs rounds de suite",
+        "Ba round mingi mfululizo"
+      ],
+      [
+        "Teste le confort de vitesse",
+        "Emeza confort ya vitesse"
+      ],
+      [
+        "Séquence de catch",
+        "Séquence ya catch"
+      ],
+      [
+        "Montre la tension avant résultat",
+        "Emonisi tension liboso ya résultat"
+      ],
+      [
+        "Ouvrir sur téléphone",
+        "Kofungola na telefone"
+      ],
+      [
+        "Vérifie lisibilité et connexion",
+        "Emeza lisibilité mpe connexion"
+      ],
+      [
+        "La démo Ice Fish est-elle gratuite ?",
+        "Demo Ice Fish ezali ofele ?"
+      ],
+      [
+        "Oui. Elle utilise des crédits virtuels et ne demande pas de dépôt.",
+        "Ee. Esalelaka crédit virtuel mpe esengeli dépôt te."
+      ],
+      [
+        "La démo prédit-elle l’argent réel ?",
+        "Demo ezali prédiction ya solo ?"
+      ],
+      [
+        "Non. Elle montre le format, pas les futurs résultats.",
+        "Te. Emonisaka format, mpe te ba résultat ya sima."
+      ],
+      [
+        "Puis-je jouer sur mobile ?",
+        "Nakoki kobeta na mobile ?"
+      ],
+      [
+        "Oui. Elle aide à vérifier écran et connexion.",
+        "Ee. Esalisaka komeka ecran mpe connexion."
+      ],
+      [
+        "Faut-il s’inscrire ?",
+        "Esengeli inscription ?"
+      ],
+      [
+        "Généralement non si le mode gratuit est disponible.",
+        "Mbala mingi te soki mode gratuit ezali."
+      ],
+      [
+        "Que vérifier d’abord ?",
+        "Nini ya kotala liboso ?"
+      ],
+      [
+        "Le rythme, le reveal, le solde et la clarté de l’interface.",
+        "Tempo, reveal, solde mpe clarté ya interface."
+      ],
+      [
+        "Quand passer à l’argent réel ?",
+        "Tango nini ya kobanda solo ?"
+      ],
+      [
+        "Seulement après avoir compris le jeu et choisi un casino fiable.",
+        "Kaka sima ya koyeba lisano mpe kopona casino ya kondima."
+      ]
+    ]
+  }
+}

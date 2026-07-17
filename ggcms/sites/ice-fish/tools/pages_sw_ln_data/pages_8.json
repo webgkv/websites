@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Guides",
+      "title": "Mwongozo wa Ice Fish: Jinsi ya Kucheza",
+      "description": "Miongozo ya Ice Fish: sheria, Cash Out, mikakati na uchezaji wenye uwajibikaji."
+    },
+    "ln": {
+      "name": "Guides",
+      "title": "Ba mwongozo ya Ice Fish: Ndenge ya kobeta",
+      "description": "Ba guide ya Ice Fish: mibeko, Cash Out, ba strategy mpe kobeta na responsabilité."
+    }
+  }
+}

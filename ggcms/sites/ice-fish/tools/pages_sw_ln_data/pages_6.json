@@ -1,0 +1,1257 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Mikakati",
+      "title": "Mikakati ya Ice Fish: Jinsi ya Kucheza kwa Akili",
+      "description": "Mikakati ya Ice Fish: jaribu demo, msingi wa RTP, uangalifu wa mwendo, makosa ya kawaida na uchezaji wenye uwajibikaji bila hadithi za ushindi."
+    },
+    "ln": {
+      "name": "Ba Strategy",
+      "title": "Ba Strategy ya Ice Fish: Kobeta na Lobo Malamu",
+      "description": "Strategy ya Ice Fish: test na Demo, base ya RTP, tempo ya lisano, ba erreur ya courant mpe kobeta na responsabilité, sans ba mythe ya gain."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Ice Fish Strategy: How to Play Smarter Without Chasing Myths",
+        "Mkakati wa Ice Fish: Jinsi ya Kucheza kwa Akili Bila Kufuatilia Hadithi"
+      ],
+      [
+        "Strategy Starts With the Right Expectation",
+        "Mkakati Unaanzia na Matarajio Sahihi"
+      ],
+      [
+        "Can You Really Win With a Strategy?",
+        "Je, Unaweza Kweli Kushinda kwa Mkakati?"
+      ],
+      [
+        "Learn the Game Before Looking for Tactics",
+        "Jifunze Mchezo Kabla ya Kutafuta Mbinu"
+      ],
+      [
+        "Why Demo Mode Is the Best First Step",
+        "Kwa Nini Hali ya Demo ni Hatua Bora ya Kwanza"
+      ],
+      [
+        "How Long Should You Test Ice Fish?",
+        "Unapaswa Kujaribu Ice Fish kwa Muda Gani?"
+      ],
+      [
+        "Understanding RTP in Ice Fish",
+        "Kuelewa RTP katika Ice Fish"
+      ],
+      [
+        "Why Fast Games Need More Attention",
+        "Kwa Nini Michezo ya Haraka Inahitaji Umakini Zaidi"
+      ],
+      [
+        "Signs You Should Take a Break",
+        "Dalili Unapaswa Kupumzika"
+      ],
+      [
+        "Mobile Play: Why It Feels Faster",
+        "Mchezo wa Simu: Kwa Nini Unahisi Haraka Zaidi"
+      ],
+      [
+        "Where Ice Fish Players Usually Go Wrong",
+        "Wapi Wachezaji wa Ice Fish Kawaida Hukosea"
+      ],
+      [
+        "Practical Advice for a First Session",
+        "Ushauri wa Vitendo kwa Kikao cha Kwanza"
+      ],
+      [
+        "Ice Fish vs Traditional Slot Strategy",
+        "Ice Fish dhidi ya Mkakati wa Slot wa Jadi"
+      ],
+      [
+        "Responsible Ice Fish Play",
+        "Mchezo Wenye Uwajibikaji wa Ice Fish"
+      ],
+      [
+        "Final Verdict: What Is the Best Ice Fish Strategy?",
+        "Hitimisho la Mwisho: Mkakati Bora wa Ice Fish ni Nini?"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Ice Fish round flow and catch reveal example",
+        "Mtiririko wa raundi ya Ice Fish na mfano wa kufichuliwa kwa uvuvi"
+      ],
+      [
+        "Ice Fish demo mode and catch progression",
+        "Hali ya demo ya Ice Fish na maendeleo ya uvuvi"
+      ],
+      [
+        "Ice Fish demo and app access on Android",
+        "Ice Fish demo na ufikiaji wa app kwenye Android"
+      ],
+      [
+        "Ice Fish on mobile: compact game UI",
+        "Ice Fish kwenye simu: UI ya mchezo iliyofupishwa"
+      ],
+      [
+        "Many players search for an Ice Fish strategy hoping to find a hidden system, a pattern, or a way to predict the next result. That is the wrong place to start.",
+        "Wachezaji wengi hutafuta mkakati wa Ice Fish wakitumaini kupata mfumo uliofichwa, muundo, au njia ya kutabiri matokeo yajayo. Hiyo si mahali sahihi pa kuanza."
+      ],
+      [
+        "Ice Fish by InOut Games is an instant game built around an ice-fishing theme and staged result reveal. Player follows the fish catch and waits for the outcome. The game is simple, but that does not mean it can be abused.",
+        "Ice Fish kutoka InOut Games ni mchezo wa papo hapo uliojengwa kuzunguka mandhari ya uvuvi kwenye barafu na kufichuliwa kwa matokeo kwa hatua. Mchezaji hufuata uvuvi wa samaki na husubiri matokeo. Mchezo ni rahisi, lakini hiyo haimaanishi unaweza kudhuruwa."
+      ],
+      [
+        "There is no public strategy that can guarantee wins in Ice Fish. The result is random and past outcomes do not predict the next outcome.",
+        "Hakuna mkakati wa umma unaoweza kuhakikisha ushindi katika Ice Fish. Matokeo ni ya nasibu na matokeo ya zamani hayatabiri yajayo."
+      ],
+      [
+        "A real strategy for Ice Fish is different. It is not about beating the game. It is about understanding how the game works, how fast it moves, how the demo version helps, and how to avoid the most common mistakes players make in fast instant games.",
+        "Mkakati halisi wa Ice Fish ni tofauti. Si kuhusu kushinda mchezo. Ni kuhusu kuelewa jinsi mchezo unavyofanya kazi, jinsi unavyosonga haraka, jinsi toleo la demo linavyosaidia, na jinsi ya kuepuka makosa ya kawaida wachezaji wanayofanya katika michezo ya papo hapo ya haraka."
+      ],
+      [
+        "That kind of approach is more useful than any \"winning trick\" article.",
+        "Aina hiyo ya mbinu ni muhimu zaidi kuliko makala yoyote ya \"mbinu ya kushinda\"."
+      ],
+      [
+        "The honest answer is no - not in the way many players imagine it.",
+        "Jibu la kweli ni hapana — si kwa njia wachezaji wengi wanavyofikiria."
+      ],
+      [
+        "Ice Fish does not give players information that can be used to predict future outcomes. You cannot read the catch animation, track previous rounds, or use a pattern to know what comes next.",
+        "Ice Fish haiwapi wachezaji taarifa inayoweza kutumika kutabiri matokeo ya baadaye. Huwezi kusoma uhuishaji wa uvuvi, kufuatilia raundi za zamani, au kutumia muundo kujua kinachofuata."
+      ],
+      [
+        "What you can do is play with more awareness.",
+        "Unachoweza kufanya ni kucheza kwa ufahamu zaidi."
+      ],
+      [
+        "That means:",
+        "Hiyo inamaanisha:"
+      ],
+      [
+        "understanding the game flow;",
+        "kuelewa mtiririko wa mchezo;"
+      ],
+      [
+        "testing demo mode before real play;",
+        "kujaribu hali ya demo kabla ya mchezo halisi;"
+      ],
+      [
+        "learning the pace of the rounds;",
+        "kujifunza mwendo wa raundi;"
+      ],
+      [
+        "knowing what RTP actually means;",
+        "kujua RTP inamaanisha nini hasa;"
+      ],
+      [
+        "avoiding automatic decisions;",
+        "kuepuka maamuzi ya moja kwa moja;"
+      ],
+      [
+        "stopping before the session becomes too long.",
+        "kusimama kabla kikao hakijakuwa kirefu sana."
+      ],
+      [
+        "This will not change the math of the game. But it can change how you interact with it.",
+        "Hii haitabadilisha hesabu za mchezo. Lakini inaweza kubadilisha jinsi unavyoingiliana nao."
+      ],
+      [
+        "Ice Fish is not a traditional slot. No reels and paylines or wild symbols. The game is built on three steps: the round begins, the catch develops and the result appears after a short time.",
+        "Ice Fish si slot ya jadi. Hakuna reels na paylines au alama za wild. Mchezo umejengwa kwa hatua tatu: raundi huanza, uvuvi unakua na matokeo yanaonekana baada ya muda mfupi."
+      ],
+      [
+        "That structure matters.",
+        "Muundo huo ni muhimu."
+      ],
+      [
+        "Some players open the game and focus only on whether they win or lose in the first few rounds. That is too narrow. The better first step is to understand the rhythm of the game.",
+        "Wachezaji wengine hufungua mchezo na kuzingatia tu kama wanashinda au kupoteza katika raundi za kwanza. Hiyo ni nyembamba sana. Hatua bora ya kwanza ni kuelewa mwendo wa mchezo."
+      ],
+      [
+        "Watch how the round starts. Notice how the catch is revealed. See how quickly the next round becomes available.",
+        "Angalia jinsi raundi inavyoanza. Tambua jinsi uvuvi unavyofichuliwa. Ona jinsi haraka raundi inayofuata inakuwa inapatikana."
+      ],
+      [
+        "Ice Fish is easy to learn, but it still needs a few rounds before the experience feels clear.",
+        "Ice Fish ni rahisi kujifunza, lakini bado inahitaji raundi chache kabla uzoefu uhisi wazi."
+      ],
+      [
+        "The smartest Ice Fish strategy begins in demo mode.",
+        "Mkakati wa busara zaidi wa Ice Fish huanza katika hali ya demo."
+      ],
+      [
+        "Demo play gives you time to understand the game without financial pressure. You can test the interface, follow the catch progression, and see whether the game's speed suits your style.",
+        "Mchezo wa demo hukupa muda wa kuelewa mchezo bila shinikizo la kifedha. Unaweza kujaribu kiolesura, kufuatilia maendeleo ya uvuvi, na kuona kama kasi ya mchezo inafaa mtindo wako."
+      ],
+      [
+        "The point of demo mode is not to check if the game is \"hot\" or \"cold.\" Demo results do not predict real-money results. A good demo run does not mean the next real session will win. A bad demo run does not mean the game is against you.",
+        "Lengo la hali ya demo si kuangalia kama mchezo ni \"mot\" au \"baridi.\" Matokeo ya demo hayatabiri matokeo ya pesa halisi. Mzunguko mzuri wa demo haimaanishi kikao cha halisi kinachofuata kitashinda. Mzunguko mbaya wa demo haimaanishi mchezo uko dhidi yako."
+      ],
+      [
+        "Demo mode is useful because it shows how the game feels.",
+        "Hali ya demo ni muhimu kwa sababu inaonyesha mchezo unahisi vipi."
+      ],
+      [
+        "During demo play, focus on:",
+        "Wakati wa mchezo wa demo, zingatia:"
+      ],
+      [
+        "how fast the rounds move;",
+        "jinsi haraka raundi zinavyosonga;"
+      ],
+      [
+        "whether the interface is clear;",
+        "kama kiolesura ni wazi;"
+      ],
+      [
+        "how the reveal builds anticipation;",
+        "jinsi kufichuliwa kunavyojenga matarajio;"
+      ],
+      [
+        "how the game looks on your device;",
+        "jinsi mchezo unavyoonekana kwenye kifaa chako;"
+      ],
+      [
+        "whether you still enjoy the format after several rounds.",
+        "kama bado unafurahia muundo baada ya raundi kadhaa."
+      ],
+      [
+        "A few screenshots cannot show that. A demo session can.",
+        "Picha chache za skrini haziwezi kuonyesha hilo. Kikao cha demo kinaweza."
+      ],
+      [
+        "Two or three rounds are usually not enough. At that point, you are only seeing the surface.",
+        "Raundi mbili au tatu kwa kawaida hazitoshi. Wakati huo, unaona uso tu."
+      ],
+      [
+        "A better test is a longer demo session. After several rounds, you start to notice the real pace of the game. You see how quickly rounds repeat, how the progression feels over time, and whether the format keeps your attention.",
+        "Jaribio bora ni kikao cha demo cha muda mrefu. Baada ya raundi kadhaa, unaanza kugundua mwendo halisi wa mchezo. Unaona jinsi haraka raundi zinavyojirudia, jinsi maendeleo yanavyohisi kwa muda, na kama muundo unashikilia umakini wako."
+      ],
+      [
+        "You do not need to play for hours. But giving the demo a proper test is better than judging the game after one lucky or unlucky outcome.",
+        "Huhitaji kucheza kwa masaa. Lakini kujaribu demo vizuri ni bora kuliko kuhukumu mchezo baada ya matokeo moja ya bahati au mbaya."
+      ],
+      [
+        "Demo Can Show You",
+        "Demo Inaweza Kuonyesha"
+      ],
+      [
+        "Demo Cannot Show You",
+        "Demo Haiwezi Kuonyesha"
+      ],
+      [
+        "Game pace",
+        "Mwendo wa mchezo"
+      ],
+      [
+        "Future results",
+        "Matokeo ya baadaye"
+      ],
+      [
+        "Catch progression",
+        "Maendeleo ya uvuvi"
+      ],
+      [
+        "Guaranteed wins",
+        "Ushindi uliohakikishwa"
+      ],
+      [
+        "Interface comfort",
+        "Faraja ya kiolesura"
+      ],
+      [
+        "Real-money emotions",
+        "Hisia za pesa halisi"
+      ],
+      [
+        "Mobile usability",
+        "Utumiaji wa simu"
+      ],
+      [
+        "A secret pattern",
+        "Muundo wa siri"
+      ],
+      [
+        "Overall game feel",
+        "Hisia ya jumla ya mchezo"
+      ],
+      [
+        "Long-term performance",
+        "Utendaji wa muda mrefu"
+      ],
+      [
+        "The biggest mistake is treating demo mode like a prediction tool. It is not. It is a test environment.",
+        "Kosa kubwa ni kutazama hali ya demo kama zana ya utabiri. Sivyo. Ni mazingira ya majaribio."
+      ],
+      [
+        "Use it to understand Ice Fish, not to guess what the next round will do.",
+        "Itumie kuelewa Ice Fish, si kukisia raundi inayofuata itafanya nini."
+      ],
+      [
+        "Ice Fish has an RTP of 95.5%. Many players see this number and immediately try to turn it into a strategy. That is not how RTP works.",
+        "Ice Fish ina RTP ya 95.5%. Wachezaji wengi huona nambari hii na mara moja hujaribu kuigeuza kuwa mkakati. Hivyo ndivyo RTP inavyofanya kazi."
+      ],
+      [
+        "RTP stands for Return to Player. It is a theoretical long-term percentage calculated over a very large number of rounds. It gives players a general idea of the game's mathematical structure, but it does not describe what will happen in one session.",
+        "RTP inasimama kwa Return to Player. Ni asilimia ya nadharia ya muda mrefu iliyohesabiwa kwa idadi kubwa sana ya raundi. Inawapa wachezaji wazo la jumla la muundo wa hesabu wa mchezo, lakini hai elezei kitakachotokea katika kikao kimoja."
+      ],
+      [
+        "RTP does not tell you:",
+        "RTP haikuambii:"
+      ],
+      [
+        "when a win will happen;",
+        "ushindi utatokea lini;"
+      ],
+      [
+        "what the next result will be;",
+        "matokeo yajayo yatakuwa nini;"
+      ],
+      [
+        "whether your session will end positive;",
+        "kama kikao chako kitamalizika chanya;"
+      ],
+      [
+        "how long winning streak will last.",
+        "mfululizo wa ushindi utadumu kwa muda gani."
+      ],
+      [
+        "RTP is useful information, but it is not a tool for predicting.",
+        "RTP ni taarifa muhimu, lakini si zana ya kutabiri."
+      ],
+      [
+        "Ice Fish moves quickly. That is part of its appeal, but it can also create a problem.",
+        "Ice Fish husonga haraka. Hiyo ni sehemu ya mvuto wake, lakini pia inaweza kuunda tatizo."
+      ],
+      [
+        "Fast rounds make it easy to continue without thinking. One round ends, the next one starts, and after a while the player may stop noticing how much time has passed.",
+        "Raundi za haraka hurahisisha kuendelea bila kufikiria. Raundi moja inaisha, inayofuata inaanza, na baada ya muda mchezaji anaweza kuacha kugundua muda uliopita."
+      ],
+      [
+        "This is common in instant games. The speed removes friction. You do not wait long, so you also get fewer natural pauses.",
+        "Hii ni ya kawaida katika michezo ya papo hapo. Kasi huondoa msuguano. Husubiri muda mrefu, hivyo pia unapata mapumziko machache ya asili."
+      ],
+      [
+        "That is why awareness matters more in Ice Fish than complicated tactics.",
+        "Ndio maana ufahamu ni muhimu zaidi katika Ice Fish kuliko mbinu ngumu."
+      ],
+      [
+        "If you notice that you are clicking through rounds automatically, it is probably time to pause. The game should feel like entertainment, not a habit running on autopilot.",
+        "Ukigundua unabofya kupitia raundi kiotomatiki, labda ni wakati wa kusimama. Mchezo unapaswa kuhisi kama burudani, si tabia inayoendesha autopilot."
+      ],
+      [
+        "You do not need a complicated rulebook to know when a session is going wrong. Usually, the signs are simple.",
+        "Huhitaji kitabu cha sheria ngumu kujua kikao kinakwenda vibaya. Kwa kawaida, dalili ni rahisi."
+      ],
+      [
+        "Take a break if you notice that:",
+        "Pumzika ukigundua kwamba:"
+      ],
+      [
+        "you are rushing into the next round;",
+        "unaharakisha kwenda kwenye raundi inayofuata;"
+      ],
+      [
+        "you stopped paying attention to the game itself;",
+        "umeacha kuzingatia mchezo wenyewe;"
+      ],
+      [
+        "you lost track of time;",
+        "umepoteza ufuatiliaji wa muda;"
+      ],
+      [
+        "you are playing only to recover a previous result;",
+        "unacheza tu kurejesha matokeo ya awali;"
+      ],
+      [
+        "you no longer enjoy the session.",
+        "huufurahii tena kikao."
+      ],
+      [
+        "A short pause can reset the way you look at the game. It also prevents fast gameplay from turning into automatic repetition.",
+        "Mapumziko mafupi yanaweza kuweka upya jinsi unavyoangalia mchezo. Pia huzuia mchezo wa haraka kuwa urudiaji wa moja kwa moja."
+      ],
+      [
+        "Many players will try Ice Fish on mobile first. The game works well on a phone because the interface is compact and the rounds are short.",
+        "Wachezaji wengi watajaribu Ice Fish kwenye simu kwanza. Mchezo unafanya kazi vizuri kwenye simu kwa sababu kiolesura ni kidogo na raundi ni fupi."
+      ],
+      [
+        "But mobile play can feel faster than desktop play. The phone is always nearby, and one tap is enough to continue. That makes sessions easier to start and harder to notice once they stretch longer than planned.",
+        "Lakini mchezo wa simu unaweza kuhisi haraka zaidi kuliko desktop. Simu iko karibu kila wakati, na mguso mmoja unatosha kuendelea. Hiyo hufanya vikao iwe rahisi kuanza na ngumu kugundua vinapovuka muda uliopangwa."
+      ],
+      [
+        "On mobile, pay attention to:",
+        "Kwenye simu, zingatia:"
+      ],
+      [
+        "screen readability;",
+        "usomaji wa skrini;"
+      ],
+      [
+        "bet controls;",
+        "vidhibiti vya dau;"
+      ],
+      [
+        "round speed;",
+        "kasi ya raundi;"
+      ],
+      [
+        "connection stability;",
+        "utulivu wa muunganisho;"
+      ],
+      [
+        "how long you have been playing.",
+        "muda uliokwisha kucheza."
+      ],
+      [
+        "The mechanics are the same as desktop, but the behavior can feel different because mobile access is so easy.",
+        "Mechanics ni sawa na desktop, lakini tabia inaweza kuhisi tofauti kwa sababu ufikiaji wa simu ni rahisi sana."
+      ],
+      [
+        "A practical mobile tip is to decide before starting how long you want to play. That small decision can help keep the session controlled.",
+        "Kidokezo cha vitendo cha simu ni kuamua kabla ya kuanza muda gani unataka kucheza. Uamuzi mdogo huo unaweza kusaidia kudhibiti kikao."
+      ],
+      [
+        "The first mistake is trying to turn a few rounds into a pattern. In a fast game this happens easily: you see a result repeat, or you notice a certain outcome has not appeared for a while, and the mind starts building a story around it. Ice Fish does not give that story any real value. The next round is not waiting for the previous one to \"balance out\".",
+        "Kosa la kwanza ni kujaribu kugeuza raundi chache kuwa muundo. Katika mchezo wa haraka hii hutokea kwa urahisi: unaona matokeo yanarudia, au matokeo fulani hayajaonekana kwa muda, na akili huanza kujenga hadithi kuzunguka hilo. Ice Fish haipai hadithi hiyo thamani ya kweli. Raundi inayofuata haisubiri ile iliyotangulia \"kusawazisha\"."
+      ],
+      [
+        "Demo mode creates another trap. Some players open it, play two or three rounds, and already decide that they understand the game. That is too early. A short test only shows the surface. The demo becomes used to show how the catch reveal works and whether the game still feels interesting after the first impression.",
+        "Hali ya demo huunda mtego mwingine. Wachezaji wengine hufungua, huchea raundi mbili au tatu, na tayari wanaamua wameelewa mchezo. Hiyo ni mapema sana. Jaribio fupi linaonyesha uso tu. Demo inatumika kuonyesha jinsi kufichuliwa kwa uvuvi kunavyofanya kazi na kama mchezo bado unahisi kuvutia baada ya hisia ya kwanza."
+      ],
+      [
+        "RTP is also easy to read the wrong way. The number can help you understand the long-term model of the game, but it does not speak about your next round. It is not a timer, not a signal, and not a promise that something is \"due\".",
+        "RTP pia ni rahisi kusoma vibaya. Nambari inaweza kukusaidia kuelewa muundo wa muda mrefu wa mchezo, lakini haizungumzi kuhusu raundi yako inayofuata. Si kipima muda, si ishara, wala ahadi kwamba kitu \"kinastahili\"."
+      ],
+      [
+        "Start with demo mode, but do not rush through it. Watch enough rounds to understand the tempo, not just the result screen.",
+        "Anza na hali ya demo, lakini usikimbie kupitia. Angalia raundi za kutosha kuelewa tempo, si skrini ya matokeo tu."
+      ],
+      [
+        "Pay attention to the catch reveal. That is where Ice Fish gets its identity. The game is not about the final multiplier; it is also about how the outcome is built.",
+        "Zingatia kufichuliwa kwa uvuvi. Hapo ndipo Ice Fish inapata utambulisho wake. Mchezo si kuhusu multiplier ya mwisho tu; pia ni kuhusu jinsi matokeo yanavyojengwa."
+      ],
+      [
+        "Keep the first session short and calm. You are not trying to \"solve\" the game. You are checking whether the format suits you.",
+        "Weka kikao cha kwanza kifupi na tulivu. Hujaribu \"kusuluhisha\" mchezo. Unaangalia kama muundo unakufaa."
+      ],
+      [
+        "Use RTP as background information only. It can describe the game's long-term structure, but it cannot tell you what will happen next.",
+        "Tumia RTP kama taarifa ya msingi tu. Inaweza kuelezea muundo wa muda mrefu wa mchezo, lakini haiwezi kukuambia kitakachotokea baadaye."
+      ],
+      [
+        "And be careful with any \"guaranteed Ice Fish strategy\". If someone promises a system that removes randomness, they are selling confidence, not a real method.",
+        "Na uwe mwangalifu na \"mkakati wa Ice Fish uliohakikishwa\" wowote. Ikiwa mtu anaahidi mfumo unaondoa nasibu, anauza ujasiri, si njia halisi."
+      ],
+      [
+        "Many casino strategy guides are written for slots. Ice Fish needs a different approach.",
+        "Miongozo mingi ya mkakati wa kasino imeandikwa kwa slots. Ice Fish inahitaji mbinu tofauti."
+      ],
+      [
+        "Traditional slots are built on reels, symbols, paylines, buy bonus and feature triggers. Ice Fish is a single progression-based flow.",
+        "Slots za jadi zimejengwa kwenye reels, alama, paylines, nunua bonasi na vichocheo vya vipengele. Ice Fish ni mtiririko mmoja unaotegemea maendeleo."
+      ],
+      [
+        "Ice Fish",
+        "Ice Fish"
+      ],
+      [
+        "Traditional Slots",
+        "Slots za Jadi"
+      ],
+      [
+        "Main Format",
+        "Muundo Mkuu"
+      ],
+      [
+        "Instant progression game",
+        "Mchezo wa maendeleo wa papo hapo"
+      ],
+      [
+        "Reel-based game",
+        "Mchezo unaotegemea reels"
+      ],
+      [
+        "Main Focus",
+        "Lengo Kuu"
+      ],
+      [
+        "Catch reveal and pacing",
+        "Kufichuliwa kwa uvuvi na mwendo"
+      ],
+      [
+        "Symbols and paylines",
+        "Alama na paylines"
+      ],
+      [
+        "Learning Curve",
+        "Mteremko wa Kujifunza"
+      ],
+      [
+        "Depends on the slot",
+        "Inategemea slot"
+      ],
+      [
+        "Demo Value",
+        "Thamani ya Demo"
+      ],
+      [
+        "Strategy Focus",
+        "Lengo la Mkakati"
+      ],
+      [
+        "Pace and session control",
+        "Mwendo na udhibiti wa kikao"
+      ],
+      [
+        "Features, volatility, paytable",
+        "Vipengele, volatility, paytable"
+      ],
+      [
+        "This is why slot habits do not always fit Ice Fish. You are not waiting for symbols to line up. You are following a fast round with a staged outcome.",
+        "Hii ndio sababu tabia za slot haziendani kila wakati na Ice Fish. Hausubiri alama zilingane. Unafuata raundi ya haraka na matokeo yaliyopangwa."
+      ],
+      [
+        "The better approach is to understand the experience itself, not copy slot strategies into a different game type.",
+        "Mbinu bora ni kuelewa uzoefu wenyewe, si kunakili mikakati ya slot katika aina tofauti ya mchezo."
+      ],
+      [
+        "The most useful strategy is staying in control.",
+        "Mkakati muhimu zaidi ni kudumisha udhibiti."
+      ],
+      [
+        "Before playing, decide what kind of session you want. Are you just testing the game? Playing a few rounds? Comparing it with other instant games? Knowing this before you start helps prevent the session from drifting.",
+        "Kabla ya kucheza, amua aina gani ya kikao unataka. Unajaribu tu mchezo? Unacheza raundi chache? Unaulinganisha na michezo mingine ya papo hapo? Kujua hili kabla ya kuanza husaidia kuzuia kikao kisonge."
+      ],
+      [
+        "Ice Fish moves quickly, so a session can stretch without you noticing.",
+        "Ice Fish husonga haraka, hivyo kikao kinaweza kunyooshwa bila kugundua."
+      ],
+      [
+        "A result may look close, surprising, lucky, or badly timed, but it should not be treated as a message from the game. One round ends, and the next one begins on its own terms.",
+        "Matokeo yanaweza kuonekana karibu, ya kushangaza, ya bahati, au yaliyopangwa vibaya, lakini hayapaswi kutazamwa kama ujumbe kutoka kwa mchezo. Raundi moja inaisha, na inayofuata inaanza kwa masharti yake mwenyewe."
+      ],
+      [
+        "The healthiest way to approach Ice Fish is to see it as a short entertainment game, not as a tool for making money.",
+        "Njia yenye afya zaidi ya kukaribia Ice Fish ni kuiona kama mchezo mfupi wa burudani, si kama zana ya kupata pesa."
+      ],
+      [
+        "There is no hidden system that guarantees results in Ice Fish.",
+        "Hakuna mfumo uliofichwa unaohakikisha matokeo katika Ice Fish."
+      ],
+      [
+        "The best strategy is much simpler: understand the game before you play seriously.",
+        "Mkakati bora ni rahisi zaidi: elewa mchezo kabla ya kucheza kwa uzito."
+      ],
+      [
+        "Use demo mode. Learn the pace. Watch the catch progression. Understand RTP correctly. Keep sessions controlled. Do not chase patterns.",
+        "Tumia hali ya demo. Jifunze mwendo. Angalia maendeleo ya uvuvi. Elewa RTP kwa usahihi. Weka vikao vikiwa vime dhibitiwa. Usifuate muundo."
+      ],
+      [
+        "This will not help you control the result, because every round is random. But it can help you play more calmly and understand when to start, stop, or skip the game.",
+        "Hii haitakusaidia kudhibiti matokeo, kwa sababu kila raundi ni ya nasibu. Lakini inaweza kukusaidia kucheza kwa utulivu zaidi na kuelewa lini kuanza, kusimama, au kuruka mchezo."
+      ],
+      [
+        "In Ice Fish, smart strategy is not about forcing a win. It is about staying in control of your session. It is about knowing the game well enough to stay in control of your own session.",
+        "Katika Ice Fish, mkakati wa busara si kuhusu kulazimisha ushindi. Ni kuhusu kudumisha udhibiti wa kikao chako. Ni kuhusu kujua mchezo vizuri vya kutosha kudumisha udhibiti wa kikao chako mwenyewe."
+      ],
+      [
+        "Is there a real Ice Fish strategy?",
+        "Je, kuna mkakati halisi wa Ice Fish?"
+      ],
+      [
+        "Not a winning system. Ice Fish is random. Strategy here means playing with a clearer head: test the demo, understand the pace, and stop before the game turns into automatic clicks.",
+        "Si mfumo wa kushinda. Ice Fish ni ya nasibu. Mkakati hapa unamaanisha kucheza kwa akili zaidi: jaribu demo, elewa mwendo, na simama kabla mchezo haujawa mibofyo ya moja kwa moja."
+      ],
+      [
+        "Can I win more often with a special trick?",
+        "Je, ninaweza kushinda mara nyingi zaidi kwa mbinu maalum?"
+      ],
+      [
+        "No. There is no known trick that changes the result. Be careful with any guide that promises exact timing, secret patterns, or \"safe\" wins.",
+        "Hapana. Hakuna mbinu inayojulikana inayobadilisha matokeo. Kuwa mwangalifu na mwongozo wowote unaowaahidi timing halisi, muundo wa siri, au ushindi \"salama\"."
+      ],
+      [
+        "Should I try Ice Fish Demo first?",
+        "Je, ninapaswa kujaribu Ice Fish Demo kwanza?"
+      ],
+      [
+        "Yes. Demo mode is useful because you can see how the game moves before using real money. You get the same basic feel, but without pressure.",
+        "Ndiyo. Hali ya demo ni muhimu kwa sababu unaweza kuona jinsi mchezo unavyosonga kabla ya kutumia pesa halisi. Unapata hisia ile ile ya msingi, lakini bila shinikizo."
+      ],
+      [
+        "How long should I play in demo mode?",
+        "Je, ninapaswa kucheza muda gani katika hali ya demo?"
+      ],
+      [
+        "Long enough to understand the rhythm. One round can tell you almost nothing. After several rounds, it becomes easier to say whether the game feels comfortable or too fast.",
+        "Muda wa kutosha kuelewa mwendo. Raundi moja inaweza kukuambia karibu hakuna kitu. Baada ya raundi kadhaa, inakuwa rahisi kusema kama mchezo unahisi raha au haraka sana."
+      ],
+      [
+        "Does RTP mean I will get 95.5% back?",
+        "Je, RTP inamaanisha nitapata 95.5% nyuma?"
+      ],
+      [
+        "No. RTP is not about your next session.",
+        "Hapana. RTP si kuhusu kikao chako kinachofuata."
+      ],
+      [
+        "Why should I take breaks?",
+        "Kwa nini ninapaswa kuchukua mapumziko?"
+      ],
+      [
+        "Ice Fish is quick. Without breaks, it is easy to keep playing just because the next round starts fast.",
+        "Ice Fish ni haraka. Bila mapumziko, ni rahisi kuendelea kucheza tu kwa sababu raundi inayofuata inaanza haraka."
+      ],
+      [
+        "What else should I watch besides the result?",
+        "Nini kingine ninapaswa kuangalia zaidi ya matokeo?"
+      ],
+      [
+        "Look at how the game feels. Is the screen clear? Is the pace comfortable? Do you still pay attention after a few rounds? These things matter too.",
+        "Angalia mchezo unahisi vipi. Je, skrini ni wazi? Je, mwendo ni raha? Je, bado unazingatia baada ya raundi chache? Mambo haya pia ni muhimu."
+      ],
+      [
+        "Can I use slot strategy here?",
+        "Je, ninaweza kutumia mkakati wa slot hapa?"
+      ],
+      [
+        "Not really. Ice Fish is not built like a normal slot.",
+        "Si kweli. Ice Fish haijengwa kama slot ya kawaida."
+      ],
+      [
+        "What is the best tip for a beginner?",
+        "Kidokezo bora kwa mwanzo ni nini?"
+      ],
+      [
+        "Start with the demo and keep the first session short. Do not try to solve the game from the first minutes. Just see how it works and whether you actually like the format.",
+        "Anza na demo na uweke kikao cha kwanza kifupi. Usijaribu kusuluhisha mchezo kutoka dakika za kwanza. Angalia tu jinsi unavyofanya kazi na kama unapenda muundo."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Stratégie Ice Fish : jouer plus intelligemment sans croire aux mythes",
+        "Strategy Ice Fish : kobeta na lobo malamu sans kolanda ba mythe"
+      ],
+      [
+        "La stratégie commence par la bonne attente",
+        "Strategy ebandi na attente ya malamu"
+      ],
+      [
+        "Peut-on vraiment gagner avec une stratégie ?",
+        "Nakoki vraiment gagner na strategy ?"
+      ],
+      [
+        "Apprenez le jeu avant de chercher des tactiques",
+        "Yekola lisano liboso ya koluka ba tactique"
+      ],
+      [
+        "Pourquoi le mode Demo est la meilleure première étape",
+        "Mpo nini mode Demo ezali étape ya liboso ya malamu"
+      ],
+      [
+        "Combien de temps tester Ice Fish ?",
+        "Mokolo nini tester Ice Fish ?"
+      ],
+      [
+        "Comprendre le RTP dans Ice Fish",
+        "Koyeba RTP na Ice Fish"
+      ],
+      [
+        "Pourquoi les jeux rapides demandent plus d'attention",
+        "Mpo nini ba lisano ya mbangu esengi attention mingi"
+      ],
+      [
+        "Signes qu'il faut faire une pause",
+        "Ba signe oyo esengeli kosala pause"
+      ],
+      [
+        "Jeu mobile : pourquoi cela semble plus rapide",
+        "Lisolo mobile : mpo nini ezali lokola ya mbangu"
+      ],
+      [
+        "Où les joueurs d'Ice Fish se trompent le plus souvent",
+        "Esika wapi mosali Ice Fish bakosala erreur mingi"
+      ],
+      [
+        "Conseils pratiques pour une première session",
+        "Ba likanisi pratique mpo na session ya liboso"
+      ],
+      [
+        "Ice Fish vs stratégie de machine à sous traditionnelle",
+        "Ice Fish vs strategy ya machine à sous traditionnelle"
+      ],
+      [
+        "Jeu responsable à Ice Fish",
+        "Lisano responsable na Ice Fish"
+      ],
+      [
+        "Verdict final : quelle est la meilleure stratégie Ice Fish ?",
+        "Verdict ya nsuka : nini strategy Ice Fish ya malamu ?"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Ice Fish : interface de jeu et multiplicateurs",
+        "Ice Fish : interface ya lisano mpe ba multiplicateur"
+      ],
+      [
+        "Ice Fish : déroulement du round et révélation de la prise",
+        "Ice Fish : déroulement ya round mpe révélation ya prise"
+      ],
+      [
+        "Ice Fish : progression de la pêche sous la glace",
+        "Ice Fish : progression ya pêche sous la glace"
+      ],
+      [
+        "Ice Fish Demo et accès à l'application sur Android",
+        "Ice Fish Demo mpe accès na application na Android"
+      ],
+      [
+        "Ice Fish sur mobile : interface de jeu compacte",
+        "Ice Fish na mobile : interface ya lisano compacte"
+      ],
+      [
+        "Beaucoup de joueurs cherchent une stratégie Ice Fish en espérant trouver un système caché, un schéma ou un moyen de prédire le prochain résultat. Ce n'est pas le bon point de départ.",
+        "Ba mosali mingi balukaka strategy Ice Fish na espoir ya kozua système caché, schéma to moyen ya prédire résultat elandi. Yango ezali point ya départ ya malamu te."
+      ],
+      [
+        "Ice Fish d'InOut Games est un instant game construit autour d'un thème de pêche sous la glace et d'une révélation progressive du résultat. Le joueur suit la prise et attend l'issue. Le jeu est simple, mais cela ne signifie pas qu'il peut être exploité.",
+        "Ice Fish ya InOut Games ezali instant game oyo eteyi thème ya pêche sous la glace mpe révélation progressive ya résultat. Mosali alandaka prise mpe azela issue. Lisano ezali simple, kasi yango elobaka te ete ekoki kozala exploité."
+      ],
+      [
+        "Il n'existe aucune stratégie publique capable de garantir des gains à Ice Fish. Le résultat est aléatoire et les issues passées ne prédisent pas la suivante.",
+        "Ezali na strategy ya public oyo ekoki kopesa gain ya surete na Ice Fish te. Résultat ezali ya hasard mpe ba issue ya passé epredicti te oyo elandi."
+      ],
+      [
+        "Une vraie stratégie pour Ice Fish est différente. Il ne s'agit pas de battre le jeu. Il s'agit de comprendre comment il fonctionne, à quelle vitesse il avance, en quoi la version Demo aide, et comment éviter les erreurs les plus courantes dans les instant games rapides.",
+        "Strategy ya solo mpo na Ice Fish ezali différente. Ezali te mpo na kobunda lisano. Ezali mpo na koyeba ndenge esalaka, vitesse na yango, mpo na nini version Demo esalisaka, mpe ndenge ya koboya ba erreur ya courant na ba instant game ya mbangu."
+      ],
+      [
+        "Cette approche est plus utile que n'importe quel article sur des « astuces gagnantes ».",
+        "Ndenge oyo ezali utili koleka article nyonso ya « astuce gagnante »."
+      ],
+      [
+        "La réponse honnête est non — pas de la manière dont beaucoup de joueurs l'imaginent.",
+        "Réponse honnête ezali te — mpe te na ndenge mingi ya mosali balingi yango."
+      ],
+      [
+        "Ice Fish ne donne pas aux joueurs d'informations exploitables pour prédire les résultats futurs. Vous ne pouvez pas lire l'animation de la prise, suivre les rounds précédents ou utiliser un schéma pour savoir ce qui vient ensuite.",
+        "Ice Fish epesaka mosali ba information exploitable mpo na prédire ba résultat ya sima te. Okoki kotanga animation ya prise, kolanda ba round ya passé to kosalela schéma mpo na koyeba oyo ekoya te."
+      ],
+      [
+        "Ce que vous pouvez faire, c'est jouer avec plus de lucidité.",
+        "Oyo okoki kosala, ezali kobeta na lucidité mingi."
+      ],
+      [
+        "Cela signifie :",
+        "Yango elobaka :"
+      ],
+      [
+        "comprendre le déroulement du jeu ;",
+        "koyeba déroulement ya lisano ;"
+      ],
+      [
+        "tester le mode Demo avant de jouer en argent réel ;",
+        "komeka mode Demo liboso ya solo ;"
+      ],
+      [
+        "apprendre le rythme des rounds ;",
+        "koyekola tempo ya ba round ;"
+      ],
+      [
+        "savoir ce que signifie réellement le RTP ;",
+        "koyeba oyo RTP elobaka vraiment ;"
+      ],
+      [
+        "éviter les décisions automatiques ;",
+        "koboya ba likambo ya kopona automatique ;"
+      ],
+      [
+        "s'arrêter avant que la session ne devienne trop longue.",
+        "kosimba liboso ete session ekoma molai mingi."
+      ],
+      [
+        "Cela ne changera pas les mathématiques du jeu. Mais cela peut changer votre façon de l'aborder.",
+        "Yango ekobongola mathématique ya lisano te. Kaso ekoki kobongola ndenge ozali kolanda yango."
+      ],
+      [
+        "Ice Fish n'est pas une machine à sous traditionnelle. Pas de rouleaux, de lignes de paiement ou de symboles wild. Le jeu repose sur trois étapes : le round commence, la prise se développe et le résultat apparaît après un court délai.",
+        "Ice Fish ezali machine à sous traditionnelle te. Rouleau, ligne ya paiement to symbole wild ezali te. Lisano ezali na étape misato : round ebandi, prise ekomaka mpe résultat ebimaka sima ya mokuse."
+      ],
+      [
+        "Cette structure compte.",
+        "Structure oyo ezali important."
+      ],
+      [
+        "Certains joueurs ouvrent le jeu et ne regardent que s'ils gagnent ou perdent dans les premiers rounds. C'est trop étroit. La meilleure première étape est de comprendre le rythme du jeu.",
+        "Ba mosali mosusu bafungolaka lisano mpe batalaka kaka soki bagagnent to bapertinent na ba premier round. Yango ezali étroit mingi. Étape ya liboso ya malamu ezali koyeba tempo ya lisano."
+      ],
+      [
+        "Observez comment le round démarre. Remarquez comment la prise est révélée. Voyez à quelle vitesse le round suivant devient disponible.",
+        "Talá ndenge round ebandi. Remarque ndenge prise ezali révélée. Talá vitesse oyo round elandi ezali disponible."
+      ],
+      [
+        "Ice Fish est facile à apprendre, mais il faut quand même quelques rounds avant que l'expérience paraisse claire.",
+        "Ice Fish ezali facile ya koyekola, kasi esengeli ba round moke liboso ete ndenge ya kosalela ezala claire."
+      ],
+      [
+        "La stratégie Ice Fish la plus intelligente commence en mode Demo.",
+        "Strategy Ice Fish ya malamu ebandi na mode Demo."
+      ],
+      [
+        "Le Demo vous laisse comprendre le jeu sans pression financière. Vous pouvez tester l'interface, suivre la progression de la prise et voir si la vitesse du jeu correspond à votre style.",
+        "Demo epesaka yo temps ya koyeba lisano sans ngombi financière. Okoki komeka interface, kolanda progression ya prise mpe kotala soki vitesse ya lisano ekokani na style na yo."
+      ],
+      [
+        "Le but du mode Demo n'est pas de vérifier si le jeu est « chaud » ou « froid ». Les résultats en Demo ne prédisent pas ceux en argent réel. Une bonne session Demo ne garantit pas que la prochaine session réelle sera gagnante. Une mauvaise session Demo ne signifie pas que le jeu est contre vous.",
+        "But ya mode Demo ezali te kotala soki lisano ezali « chaud » to « froid ». Ba résultat ya Demo epredicti te oyo ya solo. Session Demo ya malamu eya surete te ete session solo elandi ekogagner. Session Demo ya mabe elobaka te ete lisano ezali contre yo."
+      ],
+      [
+        "Le mode Demo est utile parce qu'il montre ce que le jeu donne comme sensation.",
+        "Mode Demo ezali util mpo ezali kolakisa sensation ya lisano."
+      ],
+      [
+        "Pendant le Demo, concentrez-vous sur :",
+        "Na Demo, focus na :"
+      ],
+      [
+        "la vitesse à laquelle avancent les rounds ;",
+        "vitesse oyo ba round esalemi ;"
+      ],
+      [
+        "la clarté de l'interface ;",
+        "clarté ya interface ;"
+      ],
+      [
+        "la façon dont la révélation crée l'anticipation ;",
+        "ndenge révélation ebimisa anticipation ;"
+      ],
+      [
+        "le rendu du jeu sur votre appareil ;",
+        "rendu ya lisano na appareil na yo ;"
+      ],
+      [
+        "si vous appréciez encore le format après plusieurs rounds.",
+        "soki olingi format na sima ya ba round mingi."
+      ],
+      [
+        "Quelques captures d'écran ne peuvent pas montrer cela. Une session Demo, si.",
+        "Ba capture ya ecran ekoki kolakisa yango te. Session Demo, ee."
+      ],
+      [
+        "Deux ou trois rounds ne suffisent généralement pas. À ce stade, vous ne voyez que la surface.",
+        "Ba round mibale to misato ekoki kozala te. Na stage wana, omoni surface kaka."
+      ],
+      [
+        "Un meilleur test, c'est une session Demo plus longue. Après plusieurs rounds, vous commencez à percevoir le vrai rythme du jeu. Vous voyez à quelle vitesse les rounds se répètent, comment la progression se ressent dans le temps, et si le format retient votre attention.",
+        "Test ya malamu ezali session Demo ya molai. Sima ya ba round mingi, obanda kopercevoir tempo ya solo ya lisano. Omoni vitesse oyo ba round ezali kozongela, ndenge progression esili mpe soki format ezali kobomba attention na yo."
+      ],
+      [
+        "Inutile de jouer des heures. Mais tester le Demo correctement vaut mieux que juger le jeu après un seul résultat chanceux ou malchanceux.",
+        "Esengeli te kobeta ba heure. Kasi komeka Demo malamu ezali malamu koleka kokanisa lisano sima ya résultat moko ya chance to malchance."
+      ],
+      [
+        "Ce que le Demo peut montrer",
+        "Oyo Demo ekoki kolakisa"
+      ],
+      [
+        "Ce que le Demo ne peut pas montrer",
+        "Oyo Demo ekoki kolakisa te"
+      ],
+      [
+        "Rythme du jeu",
+        "Tempo ya lisano"
+      ],
+      [
+        "Résultats futurs",
+        "Ba résultat ya sima"
+      ],
+      [
+        "Progression de la prise",
+        "Progression ya prise"
+      ],
+      [
+        "Gains garantis",
+        "Ba gain ya suretes"
+      ],
+      [
+        "Confort de l'interface",
+        "Confort ya interface"
+      ],
+      [
+        "Émotions en argent réel",
+        "Ba émotion ya solo"
+      ],
+      [
+        "Utilisation sur mobile",
+        "Utilisation na mobile"
+      ],
+      [
+        "Schéma secret",
+        "Schéma secret"
+      ],
+      [
+        "Ressenti global du jeu",
+        "Sensation globale ya lisano"
+      ],
+      [
+        "Performance à long terme",
+        "Performance ya long terme"
+      ],
+      [
+        "La plus grande erreur est de traiter le mode Demo comme un outil de prédiction. Ce n'en est pas un. C'est un environnement de test.",
+        "Erreur ya monene ezali kotya mode Demo lokola outil ya prédiction. Ezali yango te. Ezali environnement ya test."
+      ],
+      [
+        "Servez-vous-en pour comprendre Ice Fish, pas pour deviner ce que fera le prochain round.",
+        "Salela yango mpo na koyeba Ice Fish, mpe te mpo na kokanisa oyo round elandi ekosala."
+      ],
+      [
+        "Ice Fish affiche un RTP de 95,5 %. Beaucoup de joueurs voient ce chiffre et tentent aussitôt d'en faire une stratégie. Ce n'est pas ainsi que fonctionne le RTP.",
+        "Ice Fish emonisaka RTP ya 95,5 %. Ba mosali mingi batalaka chiffre oyo mpe banda kosala strategy. RTP esalaka ndenge wana te."
+      ],
+      [
+        "RTP signifie Return to Player. C'est un pourcentage théorique à long terme calculé sur un très grand nombre de rounds. Il donne une idée générale de la structure mathématique du jeu, mais ne décrit pas ce qui se passera dans une session.",
+        "RTP elobaka Return to Player. Ezali pourcentage théorique ya long terme oyo e calculé na nombre ya round ya monene. Epesaka idée ya structure mathématique ya lisano, kasi elobaka te oyo ekosala na session moko."
+      ],
+      [
+        "Le RTP ne vous dit pas :",
+        "RTP elobaka te :"
+      ],
+      [
+        "quand un gain arrivera ;",
+        "tango gain ekoya ;"
+      ],
+      [
+        "quel sera le prochain résultat ;",
+        "nini résultat elandi ekozala ;"
+      ],
+      [
+        "si votre session se terminera en positif ;",
+        "soki session na yo ekosukisa positive ;"
+      ],
+      [
+        "combien de temps durera une série gagnante.",
+        "ba série ya gain ekosala tango nini."
+      ],
+      [
+        "Le RTP est une information utile, mais ce n'est pas un outil de prédiction.",
+        "RTP ezali information util, kasi ezali outil ya prédiction te."
+      ],
+      [
+        "Ice Fish avance vite. C'est une partie de son attrait, mais cela peut aussi poser problème.",
+        "Ice Fish esalemi na mbangu. Yango ezali partie ya attrait na yango, kasi ekoki mpe kobimisa mokakatano."
+      ],
+      [
+        "Des rounds rapides facilitent la continuation sans réfléchir. Un round se termine, le suivant commence, et au bout d'un moment le joueur peut ne plus remarquer le temps passé.",
+        "Ba round ya mbangu esalaka ete o continuer sans kotala. Round moko esukaka, elandi ebandi, mpe sima ya mwa ntango mosali akoki kozala na temps te."
+      ],
+      [
+        "C'est fréquent dans les instant games. La vitesse supprime les frictions. On n'attend pas longtemps, donc on a aussi moins de pauses naturelles.",
+        "Yango ezali courant na ba instant game. Vitesse elongolaka friction. Ozali kozela te molai, mpo ozali na ba pause naturelle moke."
+      ],
+      [
+        "C'est pourquoi la lucidité compte plus à Ice Fish que des tactiques compliquées.",
+        "Yango wana lucidité ezali important mingi na Ice Fish koleka ba tactique mpimbaes."
+      ],
+      [
+        "Si vous remarquez que vous enchaînez les rounds automatiquement, il est probablement temps de faire une pause. Le jeu doit rester un divertissement, pas une habitude en pilotage automatique.",
+        "Soki omoni ete ozali kolanda ba round automatiquement, ezali probablement temps ya pause. Lisano esengeli kozala divertissement, mpe te ndenge na autopilot."
+      ],
+      [
+        "Pas besoin d'un règlement compliqué pour savoir qu'une session dérape. En général, les signes sont simples.",
+        "Esengeli te règlement mpimba mpo na koyeba ete session ezali kozala mabe. Ba signe ezali simple."
+      ],
+      [
+        "Faites une pause si vous remarquez que :",
+        "Sala pause soki omoni ete :"
+      ],
+      [
+        "vous vous précipitez vers le round suivant ;",
+        "ozali kokanga na round elandi ;"
+      ],
+      [
+        "vous ne prêtez plus attention au jeu lui-même ;",
+        "otali lisano moko te ;"
+      ],
+      [
+        "vous avez perdu la notion du temps ;",
+        "ofili temps ;"
+      ],
+      [
+        "vous jouez uniquement pour rattraper un résultat précédent ;",
+        "obetaka kaka mpo na rattraper résultat ya passé ;"
+      ],
+      [
+        "vous ne prenez plus de plaisir à la session.",
+        "ozali na plaisir te na session."
+      ],
+      [
+        "Une courte pause peut remettre le jeu en perspective. Elle empêche aussi que le rythme rapide ne devienne une répétition automatique.",
+        "Pause ya mokuse ekoki kobongisa regard na yo na lisano. Epeleka mpe ete tempo ya mbangu ekoma répétition automatique."
+      ],
+      [
+        "Beaucoup de joueurs essaieront Ice Fish d'abord sur mobile. Le jeu fonctionne bien sur téléphone car l'interface est compacte et les rounds sont courts.",
+        "Ba mosali mingi bakomeka Ice Fish liboso na mobile. Lisano esalaka malamu na telefone mpo interface ezali compacte mpe ba round ezali mokuse."
+      ],
+      [
+        "Mais le mobile peut sembler plus rapide que le desktop. Le téléphone est toujours à portée de main, et un tap suffit pour continuer. Les sessions sont plus faciles à lancer et plus difficiles à repérer quand elles dépassent le temps prévu.",
+        "Kaso mobile ekoki komonisa lokola ya mbangu koleka desktop. Telefone ezali pene ntango nionso, mpe tap moko esili mpo na continuer. Ba session ezali facile ya kobanda mpe difficile ya koyeba soki eleki temps oyo obongisaki."
+      ],
+      [
+        "Sur mobile, faites attention à :",
+        "Na mobile, attention na :"
+      ],
+      [
+        "la lisibilité de l'écran ;",
+        "lisibilité ya ecran ;"
+      ],
+      [
+        "les contrôles de mise ;",
+        "ba libateli ya mise ;"
+      ],
+      [
+        "la vitesse des rounds ;",
+        "vitesse ya ba round ;"
+      ],
+      [
+        "la stabilité de la connexion ;",
+        "stabilité ya connexion ;"
+      ],
+      [
+        "depuis combien de temps vous jouez.",
+        "tango nini obetaka."
+      ],
+      [
+        "Les mécaniques sont les mêmes qu'en desktop, mais le comportement peut sembler différent parce que l'accès mobile est si facile.",
+        "Ba ndenge ezali ndenge moko na desktop, kasi ndenge ya kosala ekoki komonisa différent mpo accès mobile ezali facile mingi."
+      ],
+      [
+        "Un conseil pratique sur mobile : décidez avant de commencer combien de temps vous voulez jouer. Ce petit choix peut aider à garder la session sous contrôle.",
+        "Likanisi pratique na mobile : pona liboso ya kobanda tango nini olingi kobeta. Kopona ya moke ekoki kosalisa kobomba session na libateli."
+      ],
+      [
+        "La première erreur est de transformer quelques rounds en schéma. Dans un jeu rapide, cela arrive facilement : un résultat se répète, ou une certaine issue n'est pas apparue depuis un moment, et l'esprit commence à construire une histoire autour. Ice Fish ne donne aucune valeur réelle à cette histoire. Le round suivant n'attend pas que le précédent « se rééquilibre ».",
+        "Erreur ya liboso ezali kobongisa ba round moke na schéma. Na lisano ya mbangu, yango ekomi facile : résultat ezongi, to issue moko ebandi te na mwa ntango, mpe lobo ebandi kotonga story. Ice Fish epesaka story wana valeur ya solo te. Round elandi ezali kozela te ete ya passé « equilibre »."
+      ],
+      [
+        "Le mode Demo crée un autre piège. Certains joueurs l'ouvrent, jouent deux ou trois rounds, et décident déjà qu'ils comprennent le jeu. C'est trop tôt. Un test court ne montre que la surface. Le Demo sert à voir comment fonctionne la révélation de la prise et si le jeu reste intéressant après la première impression.",
+        "Mode Demo ebimisa piège mosusu. Ba mosali mosusu bafungolaka yango, babeta ba round mibale to misato, mpe banda kanisa ete bayebi lisano. Yango ezali nokinoki mingi. Test ya mokuse emonisaka surface kaka. Demo esalela mpo na kotala ndenge révélation ya prise esalaka mpe soki lisano ezali nokinoki interesting sima ya première imngombi."
+      ],
+      [
+        "Le RTP se lit aussi facilement à l'envers. Le chiffre aide à comprendre le modèle à long terme du jeu, mais il ne parle pas de votre prochain round. Ce n'est ni un minuteur, ni un signal, ni une promesse que quelque chose est « dû ».",
+        "RTP ekoki mpe kotanga na sens inverse. Chiffre esalisaka koyeba modèle ya long terme ya lisano, kasi elobaka te na round na yo elandi. Ezali timer te, signal te, to promesse ete eloko ezali « dû »."
+      ],
+      [
+        "Commencez en mode Demo, mais ne le parcourez pas à la hâte. Regardez assez de rounds pour comprendre le tempo, pas seulement l'écran de résultat.",
+        "Banda na mode Demo, kaso kozanga kobaluka nokinoki. Talá ba round ya malamu mpo na koyeba tempo, mpe te ecran ya résultat kaka."
+      ],
+      [
+        "Faites attention à la révélation de la prise. C'est là qu'Ice Fish prend son identité. Le jeu ne se résume pas au multiplicateur final ; il s'agit aussi de la façon dont le résultat se construit.",
+        "Attention na révélation ya prise. Yango wana Ice Fish azali na identité na yango. Lisano ezali te kaka na multiplicateur ya nsuka ; ezali mpe na ndenge résultat ezali kotongama."
+      ],
+      [
+        "Gardez la première session courte et calme. Vous n'essayez pas de « résoudre » le jeu. Vous vérifiez si le format vous convient.",
+        "Bika session ya liboso mokuse mpe calme. Ozali kozala « résoudre » lisano te. Ozali kotala soki format esengeli yo."
+      ],
+      [
+        "Utilisez le RTP comme information de fond uniquement. Il peut décrire la structure à long terme du jeu, mais il ne peut pas dire ce qui arrivera ensuite.",
+        "Salela RTP lokola information ya fond kaka. Ekoki kolakisa structure ya long terme ya lisano, kaso ekoki kolobela oyo ekoya te."
+      ],
+      [
+        "Méfiez-vous de toute « stratégie Ice Fish garantie ». Si quelqu'un promet un système qui supprime le hasard, il vend de la confiance, pas une vraie méthode.",
+        "Boya strategy Ice Fish « ya suretee » nyonso. Soki moto alobaka système oyo elongolaka hasard, azali koteka kondima, mpe te méthode ya solo."
+      ],
+      [
+        "Beaucoup de guides de stratégie casino sont écrits pour les slots. Ice Fish demande une approche différente.",
+        "Ba guide ya strategy casino mingi ezali mpo na ba slot. Ice Fish esengi ndenge différente."
+      ],
+      [
+        "Les slots traditionnelles reposent sur des rouleaux, des symboles, des lignes de paiement, l'achat de bonus et des déclencheurs de features. Ice Fish est un flux unique basé sur une progression.",
+        "Ba slot traditionnelle eteyi ba rouleau, symbole, ligne ya paiement, achat bonus mpe déclencheur ya feature. Ice Fish ezali flux moko oyo eteyi progression."
+      ],
+      [
+        "Ice Fish",
+        "Ice Fish"
+      ],
+      [
+        "Machines à sous traditionnelles",
+        "Ba machine à sous traditionnelle"
+      ],
+      [
+        "Format principal",
+        "Format principal"
+      ],
+      [
+        "Jeu instantané à progression",
+        "Lisano instantané na progression"
+      ],
+      [
+        "Jeu à rouleaux",
+        "Lisano na ba rouleau"
+      ],
+      [
+        "Focus principal",
+        "Focus principal"
+      ],
+      [
+        "Révélation de la prise et rythme",
+        "Révélation ya prise mpe tempo"
+      ],
+      [
+        "Symboles et lignes de paiement",
+        "Ba symbole mpe ligne ya paiement"
+      ],
+      [
+        "Courbe d'apprentissage",
+        "Courbe d'apprentissage"
+      ],
+      [
+        "Dépend de la slot",
+        "Ezali na dépendance ya slot"
+      ],
+      [
+        "Valeur du Demo",
+        "Valeur ya Demo"
+      ],
+      [
+        "Focus stratégique",
+        "Focus ya strategy"
+      ],
+      [
+        "Rythme et contrôle de session",
+        "Tempo mpe libateli ya session"
+      ],
+      [
+        "Features, volatilité, table de paiement",
+        "Ba feature, volatilité, table ya paiement"
+      ],
+      [
+        "C'est pourquoi les habitudes de slot ne s'appliquent pas toujours à Ice Fish. Vous n'attendez pas que des symboles s'alignent. Vous suivez un round rapide avec un résultat progressif.",
+        "Yango wana ba ndenge ya slot esalelami ntango nyonso te na Ice Fish. Ozali kozela te ete ba symbole ezala alignés. Olandaka round ya mbangu na résultat progressif."
+      ],
+      [
+        "La meilleure approche est de comprendre l'expérience elle-même, pas de copier des stratégies de slot dans un autre type de jeu.",
+        "Ndenge ya malamu ezali koyeba ndenge ya kosalela moko, mpe te kokopya ba strategy ya slot na type ya lisano mosusu."
+      ],
+      [
+        "La stratégie la plus utile, c'est de rester maître de la situation.",
+        "Strategy ya utili mingi ezali kozala na libateli."
+      ],
+      [
+        "Avant de jouer, décidez quel type de session vous voulez. Vous testez simplement le jeu ? Vous jouez quelques rounds ? Vous le comparez à d'autres instant games ? Le savoir avant de commencer évite que la session dérive.",
+        "Liboso ya kobeta, pona type ya session oyo olingi. Ozali komeka lisano kaka ? Ozali kobeta ba round moke ? Ozali kokokanisa yango na ba instant game mosusu ? Koyeba yango liboso ya kobanda epesaka session kozanga kobaluka."
+      ],
+      [
+        "Ice Fish avance vite, donc une session peut s'allonger sans que vous le remarquiez.",
+        "Ice Fish esalemi na mbangu, mpo session ekoki kozala molai sans omoni yango."
+      ],
+      [
+        "Un résultat peut sembler proche, surprenant, chanceux ou mal timé, mais il ne doit pas être traité comme un message du jeu. Un round se termine, et le suivant commence selon ses propres règles.",
+        "Résultat ekoki komonisa pene, surprenant, chanceux to mal timé, kaso esengeli kotya yango lokola message ya lisano te. Round moko esukaka, mpe elandi ebandi na ba règle na yango."
+      ],
+      [
+        "La façon la plus saine d'aborder Ice Fish est de le voir comme un jeu de divertissement court, pas comme un outil pour gagner de l'argent.",
+        "Ndenge ya plus saine ya kolanda Ice Fish ezali komona yango lokola lisano ya divertissement ya mokuse, mpe te outil mpo na kozua mbongo."
+      ],
+      [
+        "Il n'existe aucun système caché qui garantisse des résultats à Ice Fish.",
+        "Ezali na système caché oyo eya surete ba résultat na Ice Fish te."
+      ],
+      [
+        "La meilleure stratégie est bien plus simple : comprendre le jeu avant de jouer sérieusement.",
+        "Strategy ya malamu ezali simple mingi : koyeba lisano liboso ya kobeta na makasi."
+      ],
+      [
+        "Utilisez le mode Demo. Apprenez le rythme. Suivez la progression de la prise. Comprenez le RTP correctement. Gardez les sessions sous contrôle. Ne courez pas après les schémas.",
+        "Salela mode Demo. Yekola tempo. Landá progression ya prise. Yebisa RTP malamu. Bomba ba session na libateli. Kolanda ba schéma te."
+      ],
+      [
+        "Cela ne vous aidera pas à contrôler le résultat, car chaque round est aléatoire. Mais cela peut vous aider à jouer plus calmement et à savoir quand commencer, s'arrêter ou passer le jeu.",
+        "Yango ekosalisa te kozala na libateli ya résultat, mpo round nionso ezali ya hasard. Kaso ekoki kosalisa kobeta na calme mingi mpe koyeba tango ya kobanda, kosimba to koboya lisano."
+      ],
+      [
+        "À Ice Fish, une stratégie intelligente ne consiste pas à forcer un gain. Il s'agit de garder le contrôle de votre session. Il s'agit de connaître le jeu assez bien pour rester maître de votre propre session.",
+        "Na Ice Fish, strategy ya malamu ezali te mpo na koforce gain. Ezali mpo na kobomba libateli ya session na yo. Ezali mpo na koyeba lisano malamu mpo na kozala na libateli ya session na yo moko."
+      ],
+      [
+        "Existe-t-il une vraie stratégie Ice Fish ?",
+        "Ezali na strategy Ice Fish ya solo ?"
+      ],
+      [
+        "Pas un système gagnant. Ice Fish est aléatoire. Ici, la stratégie signifie jouer avec la tête plus claire : tester le Demo, comprendre le rythme et s'arrêter avant que le jeu ne devienne des clics automatiques.",
+        "Ezali système gagnant te. Ice Fish ezali ya hasard. Awa strategy elobaka kobeta na tête ya polele : meka Demo, yebisa tempo mpe simba liboso ete lisano ekoma ba clic automatique."
+      ],
+      [
+        "Puis-je gagner plus souvent avec une astuce spéciale ?",
+        "Nakoki gagner mingi na astuce spéciale ?"
+      ],
+      [
+        "Non. Aucune astuce connue ne change le résultat. Méfiez-vous de tout guide qui promet un timing exact, des schémas secrets ou des gains « sûrs ».",
+        "Te. Ezali na astuce connue oyo ebongolaka résultat te. Boya guide nyonso oyo elobaka timing exact, ba schéma secret to ba gain « sûrs »."
+      ],
+      [
+        "Dois-je essayer Ice Fish Demo d'abord ?",
+        "Esengeli komeka Ice Fish Demo liboso ?"
+      ],
+      [
+        "Oui. Le mode Demo est utile parce que vous voyez comment le jeu avance avant d'utiliser de l'argent réel. Vous ressentez la même base, mais sans pression.",
+        "Ee. Mode Demo ezali util mpo omoni ndenge lisano esalemi liboso ya kosalela mbongo ya solo. Ozali na même sensation ya base, kasi sans ngombi."
+      ],
+      [
+        "Combien de temps jouer en mode Demo ?",
+        "Mokolo nini kobeta na mode Demo ?"
+      ],
+      [
+        "Assez longtemps pour comprendre le rythme. Un seul round ne dit presque rien. Après plusieurs rounds, il devient plus facile de dire si le jeu semble confortable ou trop rapide.",
+        "Molai mpo na koyeba tempo. Round moko elobaka almost te. Sima ya ba round mingi, ezali facile koloba soki lisano ezali confortable to ya mbangu mingi."
+      ],
+      [
+        "Le RTP signifie-t-il que je récupérerai 95,5 % ?",
+        "RTP elobaka ete nakozua 95,5 % ?"
+      ],
+      [
+        "Non. Le RTP ne concerne pas votre prochaine session.",
+        "Te. RTP ezali te na session na yo elandi."
+      ],
+      [
+        "Pourquoi faire des pauses ?",
+        "Mpo nini kosala ba pause ?"
+      ],
+      [
+        "Ice Fish est rapide. Sans pauses, il est facile de continuer simplement parce que le round suivant démarre vite.",
+        "Ice Fish ezali ya mbangu. Sans pause, ezali facile ya continuer kaka mpo round elandi ebandi nokinoki."
+      ],
+      [
+        "Que faut-il observer en dehors du résultat ?",
+        "Nini ya kotala libela ya résultat ?"
+      ],
+      [
+        "Regardez ce que le jeu donne comme sensation. L'écran est-il clair ? Le rythme est-il confortable ? Prêtez-vous encore attention après quelques rounds ? Ces éléments comptent aussi.",
+        "Talá sensation ya lisano. Ecran ezali clair ? Tempo ezali confortable ? Olandi lisusu attention sima ya ba round moke ? Ba élément oyo ezali important mpe."
+      ],
+      [
+        "Puis-je appliquer une stratégie de slot ici ?",
+        "Nakoki kosalela strategy ya slot awa ?"
+      ],
+      [
+        "Pas vraiment. Ice Fish n'est pas construit comme une slot classique.",
+        "Te vraiment. Ice Fish ezali construit lokola slot classique te."
+      ],
+      [
+        "Quel est le meilleur conseil pour un débutant ?",
+        "Nini likanisi ya malamu mpo na débutant ?"
+      ],
+      [
+        "Commencez par le Demo et gardez la première session courte. N'essayez pas de résoudre le jeu dès les premières minutes. Voyez simplement comment il fonctionne et si le format vous plaît vraiment.",
+        "Banda na Demo mpe bika session ya liboso mokuse. Kozala kozala « résoudre » lisano te na ba première minute. Talá kaka ndenge esalaka mpe soki format olingi yo vraiment."
+      ]
+    ]
+  }
+}

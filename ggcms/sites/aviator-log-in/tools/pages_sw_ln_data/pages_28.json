@@ -1,0 +1,237 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Sera ya Faragha",
+      "title": "Sera ya Faragha | Aviator Log In",
+      "description": "Jinsi Aviator Log In inavyoshughulikia data ya kibinafsi, vidakuzi na chaguo zako za faragha."
+    },
+    "ln": {
+      "name": "Politique ya biso",
+      "title": "Politique ya biso | Aviator Log In",
+      "description": "Ndenge Aviator Log In esalela ba données, ba cookies mpe ba choix na yo ya vie privée."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "1. Overview",
+        "1. Muhtasari"
+      ],
+      [
+        "2. Data we may collect",
+        "2. Data tunayoweza kukusanya"
+      ],
+      [
+        "3. Purposes",
+        "3. Madhumuni"
+      ],
+      [
+        "4. Legal bases (where applicable)",
+        "4. Msingi wa kisheria (inapohusika)"
+      ],
+      [
+        "5. Sharing",
+        "5. Kushiriki"
+      ],
+      [
+        "6. Retention",
+        "6. Uhifadhi"
+      ],
+      [
+        "7. Your rights",
+        "7. Haki zako"
+      ],
+      [
+        "8. International transfers",
+        "8. Uhamisho wa kimataifa"
+      ],
+      [
+        "9. Children",
+        "9. Watoto"
+      ],
+      [
+        "10. Changes",
+        "10. Mabadiliko"
+      ],
+      [
+        "11. Contact",
+        "11. Mawasiliano"
+      ],
+      [
+        "This Privacy Policy explains how Aviator Log In (the &ldquo;Site&rdquo;) collects and uses information when you visit or interact with our pages.",
+        "Sera hii ya Faragha inaeleza jinsi <strong>Aviator Log In</strong> (&ldquo;Tovuti&rdquo;) inavyokusanya na kutumia taarifa unapozitembelea au kuingiliana na kurasa zetu."
+      ],
+      [
+        "Technical data: IP address, browser type, device type, approximate location, pages viewed, and timestamps (often via logs or analytics).",
+        "Data ya kiufundi: anwani ya IP, aina ya kivinjari, aina ya kifaa, eneo la takriban, kurasa zilizotazamwa, na mihuri ya muda (mara nyingi kupitia kumbukumbu au uchambuzi)."
+      ],
+      [
+        "Cookies and similar technologies: small files or identifiers used for functionality, analytics, or advertising partners.",
+        "Vidakuzi na teknolojia zinazofanana: faili ndogo au vitambulisho vinavyotumika kwa utendaji, uchambuzi, au washirika wa matangazo."
+      ],
+      [
+        "Information you send us: if you email or message us, we process the content you provide.",
+        "Taarifa unazotutumia: ukitutumia barua pepe au ujumbe, tunachakata maudhui unayotoa."
+      ],
+      [
+        "Operate and secure the Site;",
+        "Kuendesha na kulinda Tovuti;"
+      ],
+      [
+        "Measure traffic and improve content;",
+        "Kupima trafiki na kuboresha maudhui;"
+      ],
+      [
+        "Show relevant ads where we use advertising partners;",
+        "Kuonyesha matangazo yanayofaa tunapotumia washirika wa matangazo;"
+      ],
+      [
+        "Respond to enquiries and legal requests.",
+        "Kujibu maswali na maombi ya kisheria."
+      ],
+      [
+        "If EU/UK GDPR-style rules apply, we rely on legitimate interests (running the Site, security, analytics), consent (where required for non-essential cookies or marketing), and legal obligation where applicable.",
+        "Ikiwa sheria za aina ya GDPR za EU/UK zinatumika, tunategemea maslahi halali (kuendesha Tovuti, usalama, uchambuzi), idhini (inapohitajika kwa vidakuzi visivyo muhimu au uhamasishaji), na wajibu wa kisheria inapohusika."
+      ],
+      [
+        "We may share data with hosting providers, analytics tools, and advertising networks subject to their policies. We do not sell your personal data in the sense of &ldquo;sale&rdquo; under some US state laws if we do not engage in such sales&mdash;adjust this sentence after legal review.",
+        "Tunaweza kushiriki data na watoa huduma wa kukaribisha, zana za uchambuzi, na mitandao ya matangazo kulingana na sera zao. Hatuuzi data yako ya kibinafsi kwa maana ya &ldquo;uuzaji&rdquo; chini ya baadhi ya sheria za majimbo ya Marekani ikiwa hatuhusiki na mauzo hayo&mdash;rekebisha sentensi hii baada ya ukaguzi wa kisheria."
+      ],
+      [
+        "We keep information only as long as needed for the purposes above or as required by law.",
+        "Tunahifadhi taarifa tu kwa muda unaohitajika kwa madhumuni hapo juu au kama inavyotakiwa na sheria."
+      ],
+      [
+        "Depending on your location, you may have rights to access, correct, delete, restrict, or object to processing, and to withdraw consent. Contact us to exercise these rights.",
+        "Kulingana na eneo lako, unaweza kuwa na haki ya kufikia, kusahihisha, kufuta, kuzuia, au kupinga uchakataji, na kuondoa idhini. Wasiliana nasi ili kutumia haki hizi."
+      ],
+      [
+        "If servers or partners are outside your country, data may be transferred with appropriate safeguards where required.",
+        "Ikiwa seva au washirika wako nje ya nchi yako, data inaweza kuhamishwa na ulinzi unaofaa inapohitajika."
+      ],
+      [
+        "The Site is not directed at children. We do not knowingly collect data from anyone under the legal gambling age.",
+        "Tovuti hailengi watoto. Hatukusanyi data kwa makusudi kutoka kwa mtu yeyote chini ya umri wa kisheria wa kamari."
+      ],
+      [
+        "We may update this Policy. Material changes will be reflected on this page.",
+        "Tunaweza kusasisha Sera hii. Mabadiliko muhimu yataonyeshwa kwenye ukurasa huu."
+      ],
+      [
+        "For privacy requests, use the contact method published on the Site.",
+        "Kwa maombi ya faragha, tumia njia ya mawasiliano iliyochapishwa kwenye Tovuti."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "1. Introduction",
+        "1. Introduction"
+      ],
+      [
+        "2. Donn&eacute;es susceptibles d&rsquo;&ecirc;tre collect&eacute;es",
+        "2. Donn&eacute;es susceptibles d&rsquo;&ecirc;tre collect&eacute;es"
+      ],
+      [
+        "3. Finalit&eacute;s",
+        "3. Finalit&eacute;s"
+      ],
+      [
+        "4. Bases l&eacute;gales (le cas &eacute;ch&eacute;ant)",
+        "4. Bases l&eacute;gales (le cas &eacute;ch&eacute;ant)"
+      ],
+      [
+        "5. Partage",
+        "5. Partage"
+      ],
+      [
+        "6. Conservation",
+        "6. Conservation"
+      ],
+      [
+        "7. Vos droits",
+        "7. Vos droits"
+      ],
+      [
+        "8. Transferts internationaux",
+        "8. Transferts internationaux"
+      ],
+      [
+        "9. Mineurs",
+        "9. Mineurs"
+      ],
+      [
+        "10. Modifications",
+        "10. Modifications"
+      ],
+      [
+        "11. Contact",
+        "11. Contact"
+      ],
+      [
+        "La pr&eacute;sente politique d&eacute;crit comment Aviator Log In (&laquo; le Site &raquo;) collecte et utilise des informations lorsque vous consultez ou interagissez avec nos pages.",
+        "Politique oyo elobaka ndenge <strong>Aviator Log In</strong> (&laquo; Site &raquo;) ezali kokanga mpe kosalela ba informations soki otala to osalela na ba pages na biso."
+      ],
+      [
+        "Donn&eacute;es techniques : adresse IP, type de navigateur, appareil, localisation approximative, pages vues et horodatages (souvent via journaux ou outils d&rsquo;analyse).",
+        "Donn&eacute;es techniques : adresse IP, type de navigateur, appareil, localisation approximative, pages vues et horodatages (souvent via journaux ou outils d&rsquo;analyse)."
+      ],
+      [
+        "Cookies et technologies similaires : petits fichiers ou identifiants pour le fonctionnement, l&rsquo;analyse ou la publicit&eacute;.",
+        "Cookies et technologies similaires : petits fichiers ou identifiants pour le fonctionnement, l&rsquo;analyse ou la publicit&eacute;."
+      ],
+      [
+        "Donn&eacute;es que vous nous envoyez : si vous nous &eacute;crivez, nous traitons le contenu de votre message.",
+        "Donn&eacute;es que vous nous envoyez : si vous nous &eacute;crivez, nous traitons le contenu de votre message."
+      ],
+      [
+        "Assurer le fonctionnement et la s&eacute;curit&eacute; du Site ;",
+        "Assurer le fonctionnement et la s&eacute;curit&eacute; du Site ;"
+      ],
+      [
+        "Mesurer l&rsquo;audience et am&eacute;liorer le contenu ;",
+        "Mesurer l&rsquo;audience et am&eacute;liorer le contenu ;"
+      ],
+      [
+        "Afficher des publicit&eacute;s pertinentes lorsque des partenaires publicitaires sont utilis&eacute;s ;",
+        "Afficher des publicit&eacute;s pertinentes lorsque des partenaires publicitaires sont utilis&eacute;s ;"
+      ],
+      [
+        "R&eacute;pondre aux demandes et aux obligations l&eacute;gales.",
+        "R&eacute;pondre aux demandes et aux obligations l&eacute;gales."
+      ],
+      [
+        "Si le RGPD ou des r&egrave;gles &eacute;quivalentes s&rsquo;appliquent, nous nous appuyons sur l&rsquo;int&eacute;r&ecirc;t l&eacute;gitime (exploitation du Site, s&eacute;curit&eacute;, mesure d&rsquo;audience), le consentement (cookies non essentiels ou marketing lorsque requis) et l&rsquo;obligation l&eacute;gale le cas &eacute;ch&eacute;ant.",
+        "Soki RGPD to mibeko ya ndenge moko esalemi, tosalela intérêt légitime (exploitation ya Site, sécurité, mesure d&rsquo;audience), consentement (cookies non essentiels to marketing soki esengeli) mpe obligation légale soki esengeli."
+      ],
+      [
+        "Nous pouvons transmettre des donn&eacute;es &agrave; des h&eacute;bergeurs, outils d&rsquo;analyse et r&eacute;seaux publicitaires conform&eacute;ment &agrave; leurs politiques. Adaptez cette phrase apr&egrave;s reprise juridique concernant la &laquo; vente &raquo; de donn&eacute;es dans certains &Eacute;tats des &Eacute;tats-Unis.",
+        "Tokoki kopesa ba données na ba hébergeurs, outils d&rsquo;analyse mpe ba réseaux publicitaires selon ba politiques na bango. Kobongisa phrase oyo sima ya reprise juridique mpo na &laquo; vente &raquo; ya données na ba États ya Amerika."
+      ],
+      [
+        "Les donn&eacute;es sont conserv&eacute;es le temps n&eacute;cessaire aux finalit&eacute;s ci-dessus ou impos&eacute; par la loi.",
+        "Ba données ebomami kaka ntango esengeli mpo na ba finalités oyo to mibeko epesaka."
+      ],
+      [
+        "Selon votre lieu de r&eacute;sidence, vous pouvez disposer d&rsquo;un droit d&rsquo;acc&egrave;s, de rectification, d&rsquo;effacement, de limitation, d&rsquo;opposition et de retirer votre consentement. Contactez-nous pour les exercer.",
+        "Selon esika ozali, okoki kozala na droit ya accès, rectification, effacement, limitation, opposition mpe koboya consentement. Benga biso mpo na kosalela ba droits oyo."
+      ],
+      [
+        "Si des serveurs ou partenaires sont situ&eacute;s hors de votre pays, des transferts peuvent avoir lieu avec les garanties requises.",
+        "Soki ba serveurs to partenaires bazali libanda ya mboka na yo, ba transferts ekoki kozala na ba garanties esengeli."
+      ],
+      [
+        "Le Site ne s&rsquo;adresse pas aux mineurs. Nous ne collectons pas sciemment de donn&eacute;es aupr&egrave;s de personnes sous l&rsquo;&acirc;ge l&eacute;gal du jeu.",
+        "Site ezali te mpo na ba mineurs. Tokanga ba données na bato oyo bazali na nse ya &acirc;ge ya mibeko ya pari te."
+      ],
+      [
+        "Nous pouvons mettre &agrave; jour cette politique ; les changements importants seront refl&eacute;t&eacute;s sur cette page.",
+        "Tokoki kobongola politique oyo ; ba changements ya ntina ekomonana na page oyo."
+      ],
+      [
+        "Pour toute demande relative &agrave; la vie priv&eacute;e, utilisez le contact publi&eacute; sur le Site.",
+        "Mpo na demande ya vie privée, salela contact oyo e publier na Site."
+      ]
+    ]
+  }
+}

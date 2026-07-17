@@ -1,0 +1,905 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Demo",
+      "title": "Aviator Demo Bure | Bila Usajili au Amana",
+      "description": "Cheza Aviator demo kwa mikopo ya kawaida, jaribu Cash Out, dau mbili, vipengele vya auto na kufungua kwenye simu kabla ya kuhatarisha pesa halisi."
+    },
+    "ln": {
+      "name": "Démo",
+      "title": "Aviator Demo ya Ofele | Sans Inscription to Dépôt",
+      "description": "Betta Aviator demo na crédit virtuel, teste cash out, ba mise mibale, auto mpe mobile liboso ya kotiya mbongo ya solo na riski."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Aviator demo — play without registration or deposit",
+        "Aviator demo — cheza bila usajili au amana"
+      ],
+      [
+        "What demo mode means",
+        "Hali ya demo inamaanisha nini"
+      ],
+      [
+        "Do you need registration?",
+        "Je, unahitaji usajili?"
+      ],
+      [
+        "How demo differs from real play",
+        "Jinsi demo inavyotofautiana na mchezo halisi"
+      ],
+      [
+        "Why Aviator engages players so quickly",
+        "Kwa nini Aviator huwavutia wachezaji haraka"
+      ],
+      [
+        "How to launch Aviator demo on a phone",
+        "Jinsi ya kufungua demo ya Aviator kwenye simu"
+      ],
+      [
+        "Common demo launch errors",
+        "Makosa ya kawaida ya kufungua demo"
+      ],
+      [
+        "How to spot a fake demo site",
+        "Jinsi ya kutambua tovuti bandia ya demo"
+      ],
+      [
+        "Aviator RTP and rules: what matters",
+        "RTP na sheria za Aviator: kinachohitaji kuwa muhimu"
+      ],
+      [
+        "Responsible gambling: play consciously",
+        "Kamari yenye uwajibikaji: cheza kwa ufahamu"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Bottom line",
+        "Hitimisho"
+      ],
+      [
+        "Aviator demo welcome screen with virtual balance and controls",
+        "Skrini ya kukaribisha demo ya Aviator na salio la kawaida na vidhibiti"
+      ],
+      [
+        "Aviator demo multiplier rising during a round",
+        "Multiplier ya demo ya Aviator inapanda wakati wa raundi"
+      ],
+      [
+        "Successful cash-out in the Aviator demo",
+        "Cash Out uliofanikiwa katika demo ya Aviator"
+      ],
+      [
+        "High multiplier example in Aviator",
+        "Mfano wa multiplier ya juu katika Aviator"
+      ],
+      [
+        "My Bets panel in Aviator demo",
+        "Paneli ya My Bets katika demo ya Aviator"
+      ],
+      [
+        "Aviator bets panel",
+        "Paneli ya dau za Aviator"
+      ],
+      [
+        "Aviator chat beside the game",
+        "Gumzo la Aviator karibu na mchezo"
+      ],
+      [
+        "Aviator wins feed",
+        "Mlisho wa ushindi wa Aviator"
+      ],
+      [
+        "Aviator demo on phone, tablet, and desktop",
+        "Demo ya Aviator kwenye simu, kibao, na desktop"
+      ],
+      [
+        "Aviator demo with a practice balance",
+        "Demo ya Aviator na salio la mazoezi"
+      ],
+      [
+        "Aviator demo is the mode where you can look inside the game without registration, deposit, or risk to your own money. You get a virtual balance, place practice bets, watch the multiplier, and try to cash out before the plane flies away.",
+        "Demo ya Aviator ni hali ambapo unaweza kuangalia ndani ya mchezo bila usajili, amana, au hatari kwa pesa yako. Unapata salio la kawaida, unaweka dau za mazoezi, unaangalia multiplier, na unajaribu kufanya Cash Out kabla ndege kuondoka."
+      ],
+      [
+        "Aviator belongs to crash games: rounds are short, the result appears almost immediately, and the main decision is always the same — take it now or wait a little longer. That is why the game can pull people in even when the credits on screen are only fictional.",
+        "Aviator ni miongoni mwa michezo ya crash: raundi ni fupi, matokeo yanaonekana karibu mara moja, na uamuzi mkuu daima ni ule ule — chukua sasa au subiri kidogo zaidi. Ndio maana mchezo unaweza kuwavutia watu hata wakati mikopo kwenye skrini ni ya kubuni tu."
+      ],
+      [
+        "The demo is not a way to find a secret strategy. Use it to understand the mechanics: the interface, dual bets, auto bet, auto cash-out, and mobile play before you even think about a real balance.",
+        "Demo si njia ya kupata mkakati wa siri. Itumie kuelewa mechanics: kiolesura, dau mbili, auto bet, auto cash-out, na mchezo wa simu kabla hata ya kufikiria salio halisi."
+      ],
+      [
+        "Demo is the free version of the game where virtual credits replace real money. You choose a stake, watch the multiplier grow, and decide when to take the practice win. If you miss the plane, only the demo stake disappears.",
+        "Demo ni toleo la bure la mchezo ambapo mikopo ya kawaida inachukua nafasi ya pesa halisi. Unachagua dau, unaangalia multiplier ikikua, na unaamua lini kuchukua ushindi wa mazoezi. Ukikosa ndege, dau la demo tu ndilo linalotoweka."
+      ],
+      [
+        "Demo mode is useful if you want to:",
+        "Hali ya demo ni muhimu ikiwa unataka:"
+      ],
+      [
+        "learn Aviator rules without risking money;",
+        "kujifunza sheria za Aviator bila kuhatarisha pesa;"
+      ],
+      [
+        "test the interface and buttons yourself;",
+        "kujaribu kiolesura na vitufe mwenyewe;"
+      ],
+      [
+        "understand how cash out works;",
+        "kuelewa jinsi Cash Out inavyofanya kazi;"
+      ],
+      [
+        "learn auto bet and auto cash-out;",
+        "kujifunza auto bet na auto cash-out;"
+      ],
+      [
+        "try two bets at the same time;",
+        "kujaribu dau mbili kwa wakati mmoja;"
+      ],
+      [
+        "check whether mobile play feels comfortable;",
+        "kuangalia kama mchezo wa simu unahisi raha;"
+      ],
+      [
+        "see why crash games become engaging so quickly.",
+        "kuona kwa nini michezo ya crash inakuwa ya kuvutia haraka."
+      ],
+      [
+        "The demo version does not guarantee success in real play. It shows the mechanics and helps you understand the flow, but it does not give you a way to beat the system. The key difference from money play is the absence of real financial risk.",
+        "Toleo la demo halihakikishii mafanikio katika mchezo halisi. Linaonyesha mechanics na linakusaidia kuelewa mtiririko, lakini halikupi njia ya kushinda mfumo. Tofauti kuu na mchezo wa pesa ni kutokuwepo kwa hatari ya kifedha halisi."
+      ],
+      [
+        "Aviator is a gambling game. Real-money mode always carries financial risk. Play only if you are 18 or older and only with money you can afford to lose.",
+        "Aviator ni mchezo wa kamari. Hali ya pesa halisi daima ina hatari ya kifedha. Cheza tu ikiwa una miaka 18 au zaidi na kwa pesa unayoweza kumudu kupoteza."
+      ],
+      [
+        "Usually, Aviator demo does not require registration. If you choose to move to a casino operator and play for real money, that is when the platform may ask for an account, verification, and a deposit.",
+        "Kwa kawaida, demo ya Aviator haihitaji usajili. Ukichagua kwenda kwa mtoa huduma wa kasino na kucheza kwa pesa halisi, ndipo jukwaa linaweza kuomba akaunti, uthibitisho, na amana."
+      ],
+      [
+        "Demo should not require:",
+        "Demo haipaswi kuomba:"
+      ],
+      [
+        "passport details;",
+        "maelezo ya pasipoti;"
+      ],
+      [
+        "a bank card number;",
+        "nambari ya kadi ya benki;"
+      ],
+      [
+        "a CVV code;",
+        "msimbo wa CVV;"
+      ],
+      [
+        "a payment-service password;",
+        "nenosiri la huduma ya malipo;"
+      ],
+      [
+        "an SMS code;",
+        "msimbo wa SMS;"
+      ],
+      [
+        "access to email or messengers;",
+        "ufikiaji wa barua pepe au messengers;"
+      ],
+      [
+        "a mandatory deposit;",
+        "amana ya lazima;"
+      ],
+      [
+        "installation of an unknown app.",
+        "usakinishaji wa programu isiyojulikana."
+      ],
+      [
+        "If a site asks for that before launching the demo, treat it as a warning sign. A free version is meant for learning the game, not collecting personal or payment data.",
+        "Ikiwa tovuti inaomba hivyo kabla ya kufungua demo, ichukulie kama ishara ya onyo. Toleo la bure limekusudiwa kujifunza mchezo, si kukusanya data ya kibinafsi au malipo."
+      ],
+      [
+        "Aviator demo feels close to the regular game: the same plane, the same multiplier, the same cash-out buttons, and the same round history. But once real money is involved, player behavior changes: fear of loss, the urge to win back, and emotional stake increases become part of the session.",
+        "Demo ya Aviator inahisi karibu na mchezo wa kawaida: ndege ile ile, multiplier ule ule, vitufe vile vile vya Cash Out, na historia ile ile ya raundi. Lakini pesa halisi inapoingia, tabia ya mchezaji hubadilika: hofu ya hasara, hamu ya kujirejeshea, na kuongezeka kwa dau kwa hisia huwa sehemu ya kikao."
+      ],
+      [
+        "Criterion",
+        "Kigezo"
+      ],
+      [
+        "Aviator demo",
+        "Aviator demo"
+      ],
+      [
+        "Real play",
+        "Mchezo halisi"
+      ],
+      [
+        "Virtual, no top-up",
+        "Kawaida, hakuna ongezeko"
+      ],
+      [
+        "Real gaming balance",
+        "Salio halisi la mchezo"
+      ],
+      [
+        "Practice bets",
+        "Dau za mazoezi"
+      ],
+      [
+        "Real-money bets",
+        "Dau za pesa halisi"
+      ],
+      [
+        "Risk of losing money",
+        "Hatari ya kupoteza pesa"
+      ],
+      [
+        "Registration",
+        "Usajili"
+      ],
+      [
+        "Usually not required",
+        "Kwa kawaida haihitajiki"
+      ],
+      [
+        "Usually required by the operator",
+        "Kwa kawaida inahitajika na mtoa huduma"
+      ],
+      [
+        "Withdrawals",
+        "Uondoaji"
+      ],
+      [
+        "Not available",
+        "Haupatikani"
+      ],
+      [
+        "Possible under operator rules",
+        "Inawezekana chini ya sheria za mtoa huduma"
+      ],
+      [
+        "Main goal",
+        "Lengo kuu"
+      ],
+      [
+        "Learn the game mechanics",
+        "Kujifunza mechanics za mchezo"
+      ],
+      [
+        "Play with a financial outcome",
+        "Kucheza na matokeo ya kifedha"
+      ],
+      [
+        "Emotional pressure",
+        "Shinikizo la kihisia"
+      ],
+      [
+        "Lower because no money is used",
+        "Chini kwa sababu hakuna pesa inayotumika"
+      ],
+      [
+        "Higher because losses are real",
+        "Juu kwa sababu hasara ni halisi"
+      ],
+      [
+        "Two bets",
+        "Dau mbili"
+      ],
+      [
+        "You can test the mechanic",
+        "Unaweza kujaribu mechanic"
+      ],
+      [
+        "You can use it in real play",
+        "Unaweza kuitumia katika mchezo halisi"
+      ],
+      [
+        "Cash out",
+        "Cash Out"
+      ],
+      [
+        "Works for training",
+        "Inafanya kazi kwa mafunzo"
+      ],
+      [
+        "Affects the real result",
+        "Inaathiri matokeo halisi"
+      ],
+      [
+        "Auto bet and auto cash-out",
+        "Auto bet na auto cash-out"
+      ],
+      [
+        "Can be studied without risk",
+        "Inaweza kujifunzwa bila hatari"
+      ],
+      [
+        "Need careful use",
+        "Inahitaji matumizi ya makini"
+      ],
+      [
+        "Aviator is deliberately simple: the plane takes off, the coefficient grows, the potential win gets larger, and the player decides when to press cash out. The longer you wait, the higher the result can be, but the bigger the chance that the round ends first.",
+        "Aviator imeundwa kwa urahisi kwa makusudi: ndege inachomoza, coefficient inakua, ushindi unaowezekana unakua, na mchezaji anaamua lini kubonyeza Cash Out. Kadri unavyosubiri, ndivyo matokeo yanavyoweza kuwa juu, lakini pia ndivyo nafasi ya raundi kuisha kwanza inavyokua."
+      ],
+      [
+        "Fast rounds, simple visuals, clear plane animation, sound, a live player table, visible wins from other players, two simultaneous bets, auto bet, and auto cash-out all add to that pull.",
+        "Raundi za haraka, visuals rahisi, uhuishaji wazi wa ndege, sauti, jedwali la wachezaji wa moja kwa moja, ushindi unaonekana kutoka kwa wachezaji wengine, dau mbili kwa wakati mmoja, auto bet, na auto cash-out vyote huongeza mvuto huo."
+      ],
+      [
+        "You can open Aviator demo directly in a mobile browser. A separate app is not required: open the demo page, tap “Open demo,” choose a virtual stake, place it before the round begins, and cash out before the plane leaves.",
+        "Unaweza kufungua demo ya Aviator moja kwa moja kwenye kivinjari cha simu. Programu tofauti haihitajiki: fungua ukurasa wa demo, gusa «Fungua demo», chagua dau la kawaida, liweke kabla raundi haijaanza, na fanya Cash Out kabla ndege kuondoka."
+      ],
+      [
+        "Use the session to test auto bet, auto cash-out, and two bets. If you need an install route, go to the download section and choose the mobile option for your device.",
+        "Tumia kikao kujaribu auto bet, auto cash-out, na dau mbili. Ukihitaji njia ya kusakinisha, nenda kwenye sehemu ya download na uchague chaguo la simu kwa kifaa chako."
+      ],
+      [
+        "Sometimes Aviator demo may not open or may run unstably. Usually the issue is not the game itself, but the browser, connection, or device settings.",
+        "Wakati mwingine demo ya Aviator inaweza kutofunguka au kukimbia kwa utulivu. Kawaida tatizo si mchezo wenyewe, bali kivinjari, muunganisho, au mipangilio ya kifaa."
+      ],
+      [
+        "Aviator freezes on the phone: close extra apps and tabs, disable power-saving mode, and update your browser.",
+        "Aviator inagandaa kwenye simu: funga programu na vichupo vya ziada, zima hali ya kuokoa nishati, na sasisha kivinjari chako."
+      ],
+      [
+        "The frame stays blank: check ad blockers, private mode, and iframe-protection settings.",
+        "Fremu inabaki tupu: angalia vizuizi vya matangazo, hali ya faragha, na mipangilio ya ulinzi wa iframe."
+      ],
+      [
+        "The game lags: switch to stable Wi-Fi or restart mobile data.",
+        "Mchezo unachelewa: badilisha kwenye Wi-Fi thabiti au anzisha upya data ya simu."
+      ],
+      [
+        "The demo asks for too much data: do not enter a bank card, CVV, SMS codes, or payment-service passwords.",
+        "Demo inaomba data nyingi sana: usiweke kadi ya benki, CVV, misimbo ya SMS, au nenosiri za huduma za malipo."
+      ],
+      [
+        "Fake sites often use the Aviator name, a similar design, familiar colors, and promises of easy winnings. A normal demo mode does not ask for confidential information and does not promise a guaranteed result.",
+        "Tovuti bandia mara nyingi hutumia jina la Aviator, muundo unaofanana, rangi zinazojulikana, na ahadi za ushindi rahisi. Hali ya kawaida ya demo haiombi taarifa za siri na haiahidi matokeo yaliyohakikishwa."
+      ],
+      [
+        "A suspicious site often advertises an “exact prediction,” a “secret algorithm,” a predictor, a deposit to unlock demo, an unknown APK, a card number, or an SMS code. A reliable information page says plainly that Aviator is gambling and that a round result cannot be predicted.",
+        "Tovuti ya shaka mara nyingi inatangaza «utabiri halisi,» «algorithm ya siri,» predictor, amana kufungua demo, APK isiyojulikana, nambari ya kadi, au msimbo wa SMS. Ukurasa wa taarifa wa kuaminika unasema wazi kwamba Aviator ni kamari na kwamba matokeo ya raundi hayawezi kutabiriwa."
+      ],
+      [
+        "RTP is the theoretical return-to-player figure over a long distance. It is not a promise of a win to a particular person, and it does not mean that one short session will return part of your money.",
+        "RTP ni kiwango cha nadharia cha kurudi kwa mchezaji kwa umbali mrefu. Si ahadi ya ushindi kwa mtu fulani, na haimaanishi kwamba kikao kimoja kifupi kitarudisha sehemu ya pesa yako."
+      ],
+      [
+        "In demo mode, RTP and rules help you understand the mechanics, but they do not help predict the next round. Multiplier history may be interesting to watch, but it is not a reliable forecast.",
+        "Katika hali ya demo, RTP na sheria husaidia kuelewa mechanics, lakini husaidii kutabiri raundi inayofuata. Historia ya multiplier inaweza kuwa ya kuvutia kutazama, lakini si utabiri wa kuaminika."
+      ],
+      [
+        "Aviator demo is a format for testing and learning. Even a free game can create the desire to move to real-money bets, so it is better to assess the risks early.",
+        "Demo ya Aviator ni muundo wa kujaribu na kujifunza. Hata mchezo wa bure unaweza kuunda hamu ya kuhamia kwenye dau za pesa halisi, hivyo ni bora kutathmini hatari mapema."
+      ],
+      [
+        "play only if you are 18 or older;",
+        "cheza tu ikiwa una miaka 18 au zaidi;"
+      ],
+      [
+        "set time and budget limits in advance;",
+        "weka mipaka ya muda na bajeti mapema;"
+      ],
+      [
+        "do not play with borrowed or last money;",
+        "usicheze kwa pesa iliyokopwa au pesa ya mwisho;"
+      ],
+      [
+        "do not chase losses;",
+        "usifuate hasara;"
+      ],
+      [
+        "do not raise stakes on emotion;",
+        "usiongeze dau kwa hisia;"
+      ],
+      [
+        "do not treat the game as income;",
+        "usichukulie mchezo kama kipato;"
+      ],
+      [
+        "step away if the game creates negative emotions.",
+        "jitenge ikiwa mchezo unaleta hisia hasi."
+      ],
+      [
+        "If you notice signs of addiction, contact specialists or responsible-gambling support services.",
+        "Ukigundua dalili za uraibu, wasiliana na wataalamu au huduma za msaada wa kamari yenye uwajibikaji."
+      ],
+      [
+        "Can you play Aviator demo for free?Yes. Demo uses a virtual balance. You do not need a deposit or real money to launch it.",
+        "Je, unaweza kucheza demo ya Aviator bure? Ndiyo. Demo hutumia salio la kawaida. Huhitaji amana au pesa halisi kuifungua."
+      ],
+      [
+        "Do you need to register for Aviator demo?Usually no. Demo can be opened without an account. If a site requires registration, check the terms and do not enter unnecessary data.",
+        "Je, unahitaji kujiandikisha kwa demo ya Aviator? Kwa kawaida hapana. Demo inaweza kufunguliwa bila akaunti. Ikiwa tovuti inahitaji usajili, angalia masharti na usiweke data isiyo ya lazima."
+      ],
+      [
+        "Can you withdraw winnings from Aviator demo?No. Demo uses practice funds. Those winnings cannot be withdrawn to a card, wallet, or gaming account.",
+        "Je, unaweza kutoa ushindi kutoka demo ya Aviator? Hapana. Demo hutumia fedha za mazoezi. Ushindi huo hauwezi kutolewa kwenye kadi, pochi, au akaunti ya mchezo."
+      ],
+      [
+        "Is the demo version different from the real game?The mechanics are similar, but the main difference is the absence of real bets and payouts. Real-money play adds financial risk.",
+        "Je, toleo la demo linatofautiana na mchezo halisi? Mechanics ni sawa, lakini tofauti kuu ni kutokuwepo kwa dau na malipo halisi. Mchezo wa pesa halisi unaongeza hatari ya kifedha."
+      ],
+      [
+        "Can you play Aviator demo on a phone?Yes. Demo usually works in a mobile browser. Installing an app is usually not necessary.",
+        "Je, unaweza kucheza demo ya Aviator kwenye simu? Ndiyo. Demo kwa kawaida hufanya kazi kwenye kivinjari cha simu. Kusakinisha programu kwa kawaida si lazima."
+      ],
+      [
+        "Do you need to download Aviator demo?No. It is safer to launch demo online in a browser. Downloading unknown APK files can be dangerous.",
+        "Je, unahitaji kupakua demo ya Aviator? Hapana. Ni salama zaidi kufungua demo mtandaoni kwenye kivinjari. Kupakua faili za APK zisizojulikana kunaweza kuwa hatari."
+      ],
+      [
+        "Is there a working strategy for Aviator demo?In demo, you can test different approaches to stakes and cash out. But no strategy guarantees a result in real play.",
+        "Je, kuna mkakati unaofanya kazi kwa demo ya Aviator? Katika demo, unaweza kujaribu mbinu tofauti za dau na Cash Out. Lakini hakuna mkakati unaohakikisha matokeo katika mchezo halisi."
+      ],
+      [
+        "Can you predict the Aviator multiplier?No. There is no reliable way to know the exact multiplier of the next round in advance. Treat services with “exact signals” critically.",
+        "Je, unaweza kutabiri multiplier ya Aviator? Hapana. Hakuna njia ya kuaminika ya kujua multiplier halisi ya raundi inayofuata mapema. Chukulia huduma zenye «ishara halisi» kwa ukaribu."
+      ],
+      [
+        "Why is Aviator so engaging?Because the game combines a fast outcome, a rising multiplier, simple mechanics, visual anticipation, and a feeling of control. The player constantly makes a short decision: take it now or wait longer.",
+        "Kwa nini Aviator inavutia sana? Kwa sababu mchezo unachanganya matokeo ya haraka, multiplier inayopanda, mechanics rahisi, matarajio ya kuona, na hisia ya udhibiti. Mchezaji daima anafanya uamuzi mfupi: chukua sasa au subiri zaidi."
+      ],
+      [
+        "Is this the official Spribe site?No. This site is not the official Spribe website and does not represent the game developer. The page is created as an informational introduction to Aviator demo.",
+        "Je, hii ni tovuti rasmi ya Spribe? Hapana. Tovuti hii si tovuti rasmi ya Spribe na haawakilishi msanidi wa mchezo. Ukurasa umeundwa kama utambulisho wa taarifa wa demo ya Aviator."
+      ],
+      [
+        "Aviator demo is a simple way to learn the game for free without registration or deposit. You can test bets, cash out, automatic features, two simultaneous bets, and mobile play without risking your own money.",
+        "Demo ya Aviator ni njia rahisi ya kujifunza mchezo bure bila usajili au amana. Unaweza kujaribu dau, Cash Out, vipengele vya kiotomatiki, dau mbili kwa wakati mmoja, na mchezo wa simu bila kuhatarisha pesa yako."
+      ],
+      [
+        "Use demo as an introduction. Do not enter personal or payment data on suspicious sites, do not download unknown files, and remember: real-money gambling always carries a risk of financial loss.",
+        "Tumia demo kama utambulisho. Usiweke data ya kibinafsi au malipo kwenye tovuti za shaka, usipakue faili zisizojulikana, na kumbuka: kamari ya pesa halisi daima ina hatari ya hasara ya kifedha."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Aviator demo — jouer sans inscription ni dépôt",
+        "Aviator demo — kobeta sans inscription to pe dépôt"
+      ],
+      [
+        "Ce que signifie le mode démo",
+        "Oyo mode démo elobaka"
+      ],
+      [
+        "Faut-il s'inscrire ?",
+        "Esengeli kokoma na site ?"
+      ],
+      [
+        "En quoi la démo diffère du jeu réel",
+        "Ndenge démo ezali différente na jeu réel"
+      ],
+      [
+        "Pourquoi Aviator captive si vite les joueurs",
+        "Mpo nini Aviator ebandi kobenda ba joueur nokinoki"
+      ],
+      [
+        "Comment lancer Aviator demo sur téléphone",
+        "Ndenge ya kofungola Aviator demo na téléphone"
+      ],
+      [
+        "Erreurs courantes au lancement de la démo",
+        "Ba erreur ya mbala na mbala na kofungola démo"
+      ],
+      [
+        "Comment reconnaître un faux site de démo",
+        "Ndenge ya koyeba site ya démo ya faux"
+      ],
+      [
+        "RTP et règles d'Aviator : ce qui compte",
+        "RTP mpe ba règle ya Aviator : oyo ezali important"
+      ],
+      [
+        "Jeu responsable : jouer consciemment",
+        "Jeu responsable : kobeta na conscience"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "En résumé",
+        "Na mokuse"
+      ],
+      [
+        "Écran d'accueil Aviator demo avec solde virtuel et commandes",
+        "Écran d'accueil Aviator demo avec solde virtuel et commandes"
+      ],
+      [
+        "Multiplicateur Aviator demo en hausse pendant une manche",
+        "Multiplicateur Aviator demo en hausse pendant une manche"
+      ],
+      [
+        "Cash-out réussi dans la démo Aviator",
+        "Cash-out réussi dans la démo Aviator"
+      ],
+      [
+        "Exemple de multiplicateur élevé dans Aviator",
+        "Exemple de multiplicateur élevé dans Aviator"
+      ],
+      [
+        "Panneau Mes mises dans Aviator demo",
+        "Panneau Mes mises dans Aviator demo"
+      ],
+      [
+        "Panneau des mises Aviator",
+        "Panneau des mises Aviator"
+      ],
+      [
+        "Chat Aviator à côté du jeu",
+        "Chat Aviator à côté du jeu"
+      ],
+      [
+        "Fil des gains Aviator",
+        "Fil des gains Aviator"
+      ],
+      [
+        "Aviator demo sur téléphone, tablette et ordinateur",
+        "Aviator demo sur téléphone, tablette et ordinateur"
+      ],
+      [
+        "Aviator demo avec un solde d'entraînement",
+        "Aviator demo avec un solde d'entraînement"
+      ],
+      [
+        "Aviator demo est le mode qui vous permet de découvrir le jeu de l'intérieur sans inscription, sans dépôt et sans risque pour votre argent. Vous recevez un solde virtuel, placez des mises d'entraînement, suivez le multiplicateur et essayez de faire cash out avant que l'avion ne s'envole.",
+        "Aviator demo ezali mode oyo epesaka yo kotala lisano na kati sans inscription, sans dépôt mpe sans riski mpo na mbongo na yo. Ozali na solde virtuel, otia ba mise ya formation, olanda multiplicateur mpe oeseyi cash out liboso ete ekipi epumbwaka."
+      ],
+      [
+        "Aviator appartient aux jeux crash : les manches sont courtes, le résultat apparaît presque immédiatement, et la décision principale reste toujours la même — encaisser maintenant ou attendre encore un peu. C'est pourquoi le jeu peut vite captiver, même lorsque les crédits affichés ne sont que fictifs.",
+        "Aviator ezali na ba jeux crash : ba manche ezali mokuse, resultat emonisami nokinoki, mpe décision ya liboso ezali ntango nyonso moko — cash out sikoyo to zela moke."
+      ],
+      [
+        "La démo ne sert pas à trouver une stratégie secrète. Utilisez-la pour comprendre les mécaniques : l'interface, les doubles mises, la mise automatique, le cash-out automatique et le jeu mobile avant même de penser à un solde réel.",
+        "Démo esalaka te mpo na kozua stratégie ya secret. Basalela yango mpo na koyeba mécanique : interface, ba double mise, mise automatique, cash-out automatique mpe mobile liboso ya kokanisa solde ya solo."
+      ],
+      [
+        "Demo est la version gratuite du jeu, où des crédits virtuels remplacent l'argent réel. Vous choisissez une mise, regardez le multiplicateur augmenter et décidez quand prendre le gain d'entraînement. Si vous manquez l'avion, seule la mise de démo disparaît.",
+        "Demo ezali version ya ofele ya lisano, epai wapi ba crédit virtuel ebongisaka mbongo ya solo. Oponi mise, otala multiplicateur ekoma mpe oyebisa tango ya kozua gain ya formation. Soki ofi ekipi, kaka mise ya démo epumbwaka."
+      ],
+      [
+        "Le mode démo est utile si vous voulez :",
+        "Mode démo ezali malamu soki olingi :"
+      ],
+      [
+        "apprendre les règles d'Aviator sans risquer d'argent ;",
+        "koyekola ba règle ya Aviator sans kotiya mbongo na riski ;"
+      ],
+      [
+        "tester vous-même l'interface et les boutons ;",
+        "komeka yo moko interface mpe ba bouton ;"
+      ],
+      [
+        "comprendre le fonctionnement du cash out ;",
+        "koyeba ndenge cash out esalaka ;"
+      ],
+      [
+        "découvrir la mise automatique et le cash-out automatique ;",
+        "koyekola mise automatique mpe cash-out automatique ;"
+      ],
+      [
+        "essayer deux mises en même temps ;",
+        "komeka ba mise mibale na tango moko ;"
+      ],
+      [
+        "vérifier si le jeu sur mobile est confortable ;",
+        "kotya soki kobeta na mobile ezali confortable ;"
+      ],
+      [
+        "voir pourquoi les jeux crash deviennent si vite prenants.",
+        "komona mpo nini ba jeux crash ebandi kozala captivants nokinoki."
+      ],
+      [
+        "La version démo ne garantit pas le succès en jeu réel. Elle montre les mécaniques et vous aide à comprendre le déroulement, mais elle ne donne aucun moyen de battre le système. La différence essentielle avec le jeu d'argent est l'absence de risque financier réel.",
+        "Version démo egaranti te succès na jeu réel. Emonisaka mécanique mpe esalisaka yo koyeba flow, kasi epesi yo ndenge te ya kobunda système. Différence ya solo na jeu na mbongo ezali absence ya riski financier ya solo."
+      ],
+      [
+        "Aviator est un jeu d'argent. Le mode argent réel comporte toujours un risque financier. Jouez uniquement si vous avez 18 ans ou plus et seulement avec de l'argent que vous pouvez vous permettre de perdre.",
+        "Aviator ezali jeu d'argent. Mode mbongo ya solo ezali ntango nyonso na riski financier. Beta kaka soki ozali na mbula 18 to koleka mpe na mbongo oyo okoki kolimwisa."
+      ],
+      [
+        "En général, Aviator demo ne demande pas d'inscription. Si vous décidez d'aller chez un opérateur de casino et de jouer avec de l'argent réel, la plateforme peut alors demander un compte, une vérification et un dépôt.",
+        "Na ndenge ya général, Aviator demo esengeli inscription te. Soki opona kokende na opérateur ya casino mpe kobeta na mbongo ya solo, platforme ekoki kosenga compte, vérification mpe dépôt."
+      ],
+      [
+        "Demo ne devrait pas demander :",
+        "Demo esengeli te :"
+      ],
+      [
+        "des informations de passeport ;",
+        "ba information ya passeport ;"
+      ],
+      [
+        "un numéro de carte bancaire ;",
+        "numéro ya carte bancaire ;"
+      ],
+      [
+        "un code CVV ;",
+        "code CVV ;"
+      ],
+      [
+        "un mot de passe de service de paiement ;",
+        "mot de passe ya service ya paiement ;"
+      ],
+      [
+        "un code SMS ;",
+        "code SMS ;"
+      ],
+      [
+        "un accès à votre e-mail ou à vos messageries ;",
+        "accès na email to messagerie ;"
+      ],
+      [
+        "un dépôt obligatoire ;",
+        "dépôt obligatoire ;"
+      ],
+      [
+        "l'installation d'une application inconnue.",
+        "installation ya application oyo oyebi te."
+      ],
+      [
+        "Si un site demande cela avant de lancer la démo, considérez-le comme un signal d'alerte. Une version gratuite sert à apprendre le jeu, pas à collecter des données personnelles ou de paiement.",
+        "Soki site esengi yango liboso ya kofungola démo, benga yango lokola signal ya alerte. Version ya ofele ezali mpo na koyekola lisano, mpe te mpo na kokanga ba donnée ya solo to ya paiement."
+      ],
+      [
+        "Aviator demo donne une impression proche du jeu habituel : le même avion, le même multiplicateur, les mêmes boutons de cash out et le même historique des manches. Mais dès que de l'argent réel entre en jeu, le comportement du joueur change : peur de perdre, envie de se refaire et augmentation des mises sous l'effet de l'émotion peuvent apparaître.",
+        "Aviator demo ezali pene na jeu ya habituel : ekipi moko, multiplicateur moko, ba bouton cash out moko mpe historique ya ba manche moko. Kasi tango mbongo ya solo ekoti, comportement ya joueur ebongwanaka : libota ya kozua, envie ya kozongisa mpe ba mise na émotion ekoki kobima."
+      ],
+      [
+        "Aviator demo",
+        "Aviator demo"
+      ],
+      [
+        "Jeu réel",
+        "Jeu réel"
+      ],
+      [
+        "Virtuel, sans recharge",
+        "Virtuel, sans recharge"
+      ],
+      [
+        "Solde de jeu réel",
+        "Solde de jeu réel"
+      ],
+      [
+        "Mises d'entraînement",
+        "Mises d'entraînement"
+      ],
+      [
+        "Mises en argent réel",
+        "Mises en argent réel"
+      ],
+      [
+        "Risque de perdre de l'argent",
+        "Risque de perdre de l'argent"
+      ],
+      [
+        "Inscription",
+        "Inscription"
+      ],
+      [
+        "Généralement non requise",
+        "Généralement non requise"
+      ],
+      [
+        "Généralement requise par l'opérateur",
+        "Généralement requise par l'opérateur"
+      ],
+      [
+        "Retraits",
+        "Retraits"
+      ],
+      [
+        "Non disponibles",
+        "Non disponibles"
+      ],
+      [
+        "Possibles selon les règles de l'opérateur",
+        "Possibles selon les règles de l'opérateur"
+      ],
+      [
+        "Objectif principal",
+        "Objectif principal"
+      ],
+      [
+        "Apprendre les mécaniques du jeu",
+        "Apprendre les mécaniques du jeu"
+      ],
+      [
+        "Jouer avec un résultat financier",
+        "Jouer avec un résultat financier"
+      ],
+      [
+        "Pression émotionnelle",
+        "Pression émotionnelle"
+      ],
+      [
+        "Plus faible, car aucun argent n'est utilisé",
+        "Plus faible, car aucun argent n'est utilisé"
+      ],
+      [
+        "Plus forte, car les pertes sont réelles",
+        "Plus forte, car les pertes sont réelles"
+      ],
+      [
+        "Deux mises",
+        "Deux mises"
+      ],
+      [
+        "Vous pouvez tester la mécanique",
+        "Vous pouvez tester la mécanique"
+      ],
+      [
+        "Vous pouvez l'utiliser en jeu réel",
+        "Vous pouvez l'utiliser en jeu réel"
+      ],
+      [
+        "Cash out",
+        "Cash out"
+      ],
+      [
+        "Fonctionne pour l'entraînement",
+        "Fonctionne pour l'entraînement"
+      ],
+      [
+        "Influe sur le résultat réel",
+        "Influe sur le résultat réel"
+      ],
+      [
+        "Mise automatique et cash-out automatique",
+        "Mise automatique et cash-out automatique"
+      ],
+      [
+        "Peuvent être étudiés sans risque",
+        "Peuvent être étudiés sans risque"
+      ],
+      [
+        "Nécessitent une utilisation prudente",
+        "Nécessitent une utilisation prudente"
+      ],
+      [
+        "Aviator est volontairement simple : l'avion décolle, le coefficient augmente, le gain potentiel devient plus important, et le joueur décide quand appuyer sur cash out. Plus vous attendez, plus le résultat peut être élevé, mais plus le risque que la manche se termine d'abord augmente.",
+        "Aviator ezali simple na ntina : ekipi epumbwaka, coefficient ekoma, gain possible ekomaka monene mpe joueur ayebisi tango ya cash out. Koleka ozela, resultat ekoki kozala monene, kasi riski ete manche esukaka liboso ekomaka monene."
+      ],
+      [
+        "Les manches rapides, les visuels simples, l'animation claire de l'avion, le son, le tableau des joueurs en direct, les gains visibles des autres joueurs, deux mises simultanées, la mise automatique et le cash-out automatique renforcent tous cette attraction.",
+        "Ba manche ya mbangu, ba visuel simple, animation ya ekipi, son, tableau ya ba joueur na direct, ba gain ya bato mosusu, ba mise mibale na tango moko, mise automatique mpe cash-out automatique nyonso ebakisi attraction."
+      ],
+      [
+        "Vous pouvez ouvrir Aviator demo directement dans un navigateur mobile. Aucune application séparée n'est nécessaire : ouvrez la page de démo, touchez « Ouvrir la démo », choisissez une mise virtuelle, placez-la avant le début de la manche et faites cash out avant le départ de l'avion.",
+        "Okoki kofungola Aviator demo na navigateur mobile. Application ya kobongola esengeli te : fungola page démo, fina « Ouvrir la démo », pona mise virtuelle, tia yango liboso ya manche mpe cash out liboso ete ekipi epumbwaka."
+      ],
+      [
+        "Profitez de la session pour tester la mise automatique, le cash-out automatique et deux mises. Si vous avez besoin d'une option d'installation, allez dans la section téléchargement et choisissez l'option mobile adaptée à votre appareil.",
+        "Basalela session mpo na komeka mise automatique, cash-out automatique mpe ba mise mibale. Soki ozali na besoin ya installation, kende na section téléchargement mpe pona option mobile mpo na appareil na yo."
+      ],
+      [
+        "Il arrive qu'Aviator demo ne s'ouvre pas ou fonctionne de manière instable. Le problème vient généralement non pas du jeu lui-même, mais du navigateur, de la connexion ou des paramètres de l'appareil.",
+        "Ntango mosusu Aviator demo ekofungola te to esalaka malamu te. Problème ebandi mingi na navigateur, connexion to paramètre ya appareil."
+      ],
+      [
+        "Aviator se bloque sur le téléphone : fermez les applications et onglets inutiles, désactivez le mode économie d'énergie et mettez votre navigateur à jour.",
+        "Aviator eko bloquer na téléphone : funga ba application mpe onglet oyo esengeli te, boma mode économie d'énergie mpe metà navigateur na yo à jour."
+      ],
+      [
+        "Le cadre reste vide : vérifiez les bloqueurs de publicité, le mode privé et les paramètres de protection contre les iframe.",
+        "Cadre etikaka mpamba : talá ba bloqueur ya publicité, mode privé mpe ba paramètre ya protection contre ba iframe."
+      ],
+      [
+        "Le jeu ralentit : passez à un Wi-Fi stable ou redémarrez les données mobiles.",
+        "Lisano esalaka malamu te : kende na Wi-Fi stable to restart ba données mobiles."
+      ],
+      [
+        "La démo demande trop de données : ne saisissez pas de carte bancaire, de CVV, de codes SMS ni de mots de passe de services de paiement.",
+        "Démo esengi ba donnée mingi : kotia carte bancaire, CVV, ba code SMS to mot de passe ya service ya paiement te."
+      ],
+      [
+        "Les faux sites utilisent souvent le nom Aviator, un design similaire, des couleurs familières et des promesses de gains faciles. Un mode démo normal ne demande pas d'informations confidentielles et ne promet pas de résultat garanti.",
+        "Ba site ya faux basalaka mingi nkombo Aviator, design ya ndenge moko, ba couleur oyo oyebi mpe ba promesse ya gain ya pete. Mode démo ya normal esengi ba information confidentielle te mpe epromise resultat garanti te."
+      ],
+      [
+        "Un site suspect met souvent en avant une « prédiction exacte », un « algorithme secret », un predictor, un dépôt pour débloquer la démo, un APK inconnu, un numéro de carte ou un code SMS. Une page d'information fiable dit clairement qu'Aviator est un jeu d'argent et que le résultat d'une manche ne peut pas être prédit.",
+        "Site ya doutou ebandi mingi koloba « prédiction exacte », « algorithme secret », predictor, dépôt mpo na débloquer démo, APK oyo oyebi te, numéro ya carte to code SMS. Page ya information ya confiance elobaka polele ete Aviator ezali jeu d'argent mpe resultat ya manche ekoki koyebisama liboso te."
+      ],
+      [
+        "Le RTP est le taux théorique de retour au joueur sur le long terme. Ce n'est pas une promesse de gain pour une personne précise, et cela ne signifie pas qu'une courte session vous rendra une partie de votre argent.",
+        "RTP ezali taux théorique ya retour au joueur na distance molai. Ezali promesse ya gain mpo na moto moko te mpe elobaka te ete session mokuse ekozongisa yo part ya mbongo."
+      ],
+      [
+        "En mode démo, le RTP et les règles aident à comprendre les mécaniques, mais ils ne permettent pas de prédire la prochaine manche. L'historique des multiplicateurs peut être intéressant à observer, mais ce n'est pas une prévision fiable.",
+        "Na mode démo, RTP mpe ba règle esalisaka koyeba mécanique, kasi esalisaka te koyebisa manche elandi. Historique ya multiplicateur ekoki kozala ya kotala, kasi ezali prévision ya confiance te."
+      ],
+      [
+        "Aviator demo est un format de test et d'apprentissage. Même un jeu gratuit peut donner envie de passer aux mises en argent réel, il vaut donc mieux évaluer les risques dès le départ.",
+        "Aviator demo ezali format ya test mpe ya koyekola. Ata jeu ya ofele ekoki kopesa envie ya kokende na ba mise na mbongo ya solo, yango wana malamu kotya ba riski liboso."
+      ],
+      [
+        "jouez uniquement si vous avez 18 ans ou plus ;",
+        "beta kaka soki ozali na mbula 18 to koleka ;"
+      ],
+      [
+        "fixez à l'avance des limites de temps et de budget ;",
+        "botia ba limite ya temps mpe budget liboso ;"
+      ],
+      [
+        "ne jouez pas avec de l'argent emprunté ou votre dernier argent ;",
+        "kobeta te na mbongo ya kobola to ya suka ;"
+      ],
+      [
+        "ne cherchez pas à récupérer vos pertes ;",
+        "kolanda ba perte te ;"
+      ],
+      [
+        "n'augmentez pas les mises sous le coup de l'émotion ;",
+        "kobakisa ba mise na émotion te ;"
+      ],
+      [
+        "ne considérez pas le jeu comme un revenu ;",
+        "koyebisa jeu lokola revenu te ;"
+      ],
+      [
+        "faites une pause si le jeu provoque des émotions négatives.",
+        "tika soki jeu epesaka ba émotion négative."
+      ],
+      [
+        "Si vous remarquez des signes d'addiction, contactez des spécialistes ou des services d'aide au jeu responsable.",
+        "Soki omoni ba signe ya addiction, benga ba spécialiste to ba service ya aide au jeu responsable."
+      ],
+      [
+        "Peut-on jouer gratuitement à Aviator demo ?Oui. La démo utilise un solde virtuel. Vous n'avez pas besoin de dépôt ni d'argent réel pour la lancer.",
+        "Peut-on jouer gratuitement à Aviator demo ?Oui. Démo esalela solde virtuel. Ozali na dépôt to mbongo ya solo te mpo na kofungola yango."
+      ],
+      [
+        "Faut-il s'inscrire pour Aviator demo ?Généralement non. La démo peut s'ouvrir sans compte. Si un site exige une inscription, vérifiez les conditions et ne saisissez pas de données inutiles.",
+        "Faut-il s'inscrire pour Aviator demo ?Généralement non. Démo ekoki kofungola sans compte. Soki site esengi inscription, talá ba condition mpe kotia ba donnée oyo esengeli te te."
+      ],
+      [
+        "Peut-on retirer les gains d'Aviator demo ?Non. La démo utilise des fonds d'entraînement. Ces gains ne peuvent pas être retirés vers une carte, un portefeuille ou un compte de jeu.",
+        "Peut-on retirer les gains d'Aviator demo ?Non. Démo esalela ba fonds ya formation. Ba gain wana ekoki kobimisama na carte, portefeuille to compte ya jeu te."
+      ],
+      [
+        "La version démo est-elle différente du jeu réel ?Les mécaniques sont similaires, mais la principale différence est l'absence de mises et de paiements réels. Le jeu en argent réel ajoute un risque financier.",
+        "Version démo ezali différente na jeu réel ?Mécanique ezali pene, kasi différence ya liboso ezali absence ya ba mise mpe ba paiement ya solo. Jeu na mbongo ya solo ebakisi riski financier."
+      ],
+      [
+        "Peut-on jouer à Aviator demo sur un téléphone ?Oui. La démo fonctionne généralement dans un navigateur mobile. L'installation d'une application n'est habituellement pas nécessaire.",
+        "Peut-on jouer à Aviator demo sur un téléphone ?Oui. Démo esalelami mingi na navigateur mobile. Installation ya application esengeli mingi te."
+      ],
+      [
+        "Faut-il télécharger Aviator demo ?Non. Il est plus sûr de lancer la démo en ligne dans un navigateur. Télécharger des fichiers APK inconnus peut être dangereux.",
+        "Faut-il télécharger Aviator demo ?Non. Ezali malamu mingi kofungola démo na navigateur. Ko télécharger ba APK oyo oyebi te ekoki kozala danger."
+      ],
+      [
+        "Existe-t-il une stratégie efficace pour Aviator demo ?Dans la démo, vous pouvez tester différentes approches des mises et du cash out. Mais aucune stratégie ne garantit un résultat en jeu réel.",
+        "Existe-t-il une stratégie efficace pour Aviator demo ?Dans la démo, okoki komeka ba approche ya mise mpe cash out. Kasu stratégie moko egaranti resultat na jeu réel te."
+      ],
+      [
+        "Peut-on prédire le multiplicateur Aviator ?Non. Il n'existe aucun moyen fiable de connaître à l'avance le multiplicateur exact de la prochaine manche. Traitez avec prudence les services aux « signaux exacts ».",
+        "Peut-on prédire le multiplicateur Aviator ?Non. Ezali na ndenge ya confiance te ya koyeba multiplicateur exact ya manche elandi liboso. Banda ba service ya « signaux exacts » na prudence."
+      ],
+      [
+        "Pourquoi Aviator est-il si captivant ?Parce que le jeu combine un résultat rapide, un multiplicateur qui monte, des mécaniques simples, une attente visuelle et une sensation de contrôle. Le joueur prend sans cesse une décision courte : encaisser maintenant ou attendre encore.",
+        "Pourquoi Aviator est-il si captivant ?Parce que jeu ecombines resultat ya mbangu, multiplicateur oyo ekomi, mécanique simple, attente visuelle mpe sensation ya contrôle. Joueur azali ntango nyonso na décision mokuse : cash out sikoyo to zela lisusu."
+      ],
+      [
+        "Est-ce le site officiel de Spribe ?Non. Ce site n'est pas le site officiel de Spribe et ne représente pas le développeur du jeu. La page est créée comme une présentation informative d'Aviator demo.",
+        "Est-ce le site officiel de Spribe ?Non. Site oyo ezali site officiel ya Spribe te mpe erepresente développeur ya jeu te. Page ezali présentation informative ya Aviator demo."
+      ],
+      [
+        "Aviator demo est une façon simple de découvrir gratuitement le jeu sans inscription ni dépôt. Vous pouvez tester les mises, le cash out, les fonctions automatiques, deux mises simultanées et le jeu mobile sans risquer votre propre argent.",
+        "Aviator demo ezali ndenge ya pete ya koyekola lisano ofele sans inscription to dépôt. Okoki komeka ba mise, cash out, ba fonction automatique, ba mise mibale na tango moko mpe mobile sans kotiya mbongo na yo na riski."
+      ],
+      [
+        "Utilisez la démo comme une introduction. Ne saisissez pas de données personnelles ou de paiement sur des sites suspects, ne téléchargez pas de fichiers inconnus et souvenez-vous : le jeu d'argent réel comporte toujours un risque de perte financière.",
+        "Basalela démo lokola introduction. Kotia ba donnée ya solo to ya paiement na ba site ya doutou te, ko télécharger ba fichier oyo oyebi te te mpe kanisa : jeu na mbongo ya solo ezali ntango nyonso na riski ya perte financière."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Analysis",
+      "title": "Uchambuzi wa Mchezo wa Aviator",
+      "description": "Uchambuzi wa Aviator: RTP, mechanics, hatari na jinsi Spribe Aviator inavyofanya kazi."
+    },
+    "ln": {
+      "name": "Analysis",
+      "title": "Analyse ya lisano Aviator",
+      "description": "Analyse ya Aviator: RTP, mécanique, riski mpe ndenge Spribe Aviator esalaka."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Bonus",
+      "title": "Bonus za Ice Fish: Aina na Masharti",
+      "description": "Bonus za kasino kwa Ice Fish: welcome, free bets na masharti ya wagering."
+    },
+    "ln": {
+      "name": "Bonus",
+      "title": "Ba bonus ya Ice Fish: Ba type mpe ba condition",
+      "description": "Ba bonus ya casino mpo na Ice Fish: welcome, free bet mpe ba condition ya wagering."
+    }
+  }
+}

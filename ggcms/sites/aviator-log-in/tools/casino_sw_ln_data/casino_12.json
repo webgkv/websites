@@ -1,0 +1,529 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "4rabet Aviator",
+      "title": "4rabet Aviator: Cheza kwenye 4rabet | Aviator Log In",
+      "description": "Mwongozo wa 4rabet Aviator: muhtasari, bonasi, app na jinsi ya kucheza."
+    },
+    "ln": {
+      "name": "4rabet Aviator",
+      "title": "4rabet Aviator: Bina na 4rabet | Aviator Log In",
+      "description": "Guide 4rabet Aviator: aperçu, bonus, app mpe ndenge ya kobeta."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "4rabet Aviator Game",
+        "Mchezo wa 4rabet Aviator"
+      ],
+      [
+        "About 4rabet Online Casino",
+        "Kuhusu Kasino ya Mtandaoni ya 4rabet"
+      ],
+      [
+        "4rabet Aviator Bonus",
+        "Bonasi ya 4rabet Aviator"
+      ],
+      [
+        "How to Play 4rabet Aviator",
+        "Jinsi ya Kucheza 4rabet Aviator"
+      ],
+      [
+        "4rabet Aviator App (APK and iOS)",
+        "App ya 4rabet Aviator (APK na iOS)"
+      ],
+      [
+        "Android",
+        "Android"
+      ],
+      [
+        "iOS",
+        "iOS"
+      ],
+      [
+        "Licence and Security",
+        "Leseni na Usalama"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "How do I start playing Aviator on 4rabet?",
+        "Ninawezaje kuanza kucheza Aviator kwenye 4rabet?"
+      ],
+      [
+        "What is the minimum deposit?",
+        "Amana ya chini ni kiasi gani?"
+      ],
+      [
+        "Is 4rabet Aviator fair?",
+        "Je, 4rabet Aviator ni ya haki?"
+      ],
+      [
+        "4rabet Aviator",
+        "4rabet Aviator"
+      ],
+      [
+        "4rabet Casino",
+        "4rabet Casino"
+      ],
+      [
+        "4rabet bonus",
+        "bonasi ya 4rabet"
+      ],
+      [
+        "4rabet Aviator game",
+        "mchezo wa 4rabet Aviator"
+      ],
+      [
+        "4rabet app",
+        "app ya 4rabet"
+      ],
+      [
+        "4rabet Aviator for Android",
+        "4rabet Aviator kwa Android"
+      ],
+      [
+        "4rabet Aviator is Spribe's crash game: a plane takes off, the multiplier rises, and you decide when to cash out. Simple rules and short rounds have made it popular with players who want fast sessions and straightforward gameplay. At 4rabet, you get the same Aviator experience plus local payment options and several strong welcome offers.",
+        "4rabet Aviator ni mchezo wa crash wa Spribe: ndege huondoka, multiplier inapanda, na wewe unaamua lini kufanya Cash Out. Sheria rahisi na raundi fupi zimeifanya iwe maarufu kwa wachezaji wanaotaka vikao vya haraka na uchezaji wa moja kwa moja. Kwenye 4rabet, unapata uzoefu ule ule wa Aviator pamoja na njia za malipo za ndani na ofa thabiti za kukaribisha."
+      ],
+      [
+        "Play 4rabet Aviator",
+        "Cheza 4rabet Aviator"
+      ],
+      [
+        "700% up to $90,000",
+        "700% hadi $90,000"
+      ],
+      [
+        "Claim bonus",
+        "Dai bonasi"
+      ],
+      [
+        "4rabet is a betting and casino site with sports, slots, live games, and Aviator. The brand works under a Curacao eGaming licence and supports UPI, Paytm, PhonePe, and crypto, making it easy to move between sports betting and casino play from one account.",
+        "4rabet ni tovuti ya dau na kasino yenye michezo, slots, michezo ya live, na Aviator. Chapa inafanya kazi chini ya leseni ya Curacao eGaming na inasaidia UPI, Paytm, PhonePe, na crypto, na kuifanya iwe rahisi kubadilisha kati ya dau za michezo na kasino kutoka akaunti moja."
+      ],
+      [
+        "Category",
+        "Kategoria"
+      ],
+      [
+        "Operator",
+        "Mwendeshaji"
+      ],
+      [
+        "Umbrella Development B.V.",
+        "Umbrella Development B.V."
+      ],
+      [
+        "Curacao eGaming",
+        "Curacao eGaming"
+      ],
+      [
+        "Languages",
+        "Lugha"
+      ],
+      [
+        "English, Hindi",
+        "Kiingereza, Hindi"
+      ],
+      [
+        "24/7 live chat, email",
+        "Live chat 24/7, barua pepe"
+      ],
+      [
+        "4rabet runs several promotions that suit Aviator players. Check the promotions page for current terms and wagering before you activate any offer.",
+        "4rabet inaendesha promosheni kadhaa zinazofaa kwa wachezaji wa Aviator. Angalia ukurasa wa promosheni kwa masharti ya sasa na wagering kabla ya kuamsha ofa yoyote."
+      ],
+      [
+        "Wagering",
+        "Wagering"
+      ],
+      [
+        "Key Terms",
+        "Masharti muhimu"
+      ],
+      [
+        "Welcome Pack",
+        "Paketi ya Kukaribisha"
+      ],
+      [
+        "Standard",
+        "Kawaida"
+      ],
+      [
+        "First deposit, minimum $100",
+        "Amana ya kwanza, kiwango cha chini $100"
+      ],
+      [
+        "Crypto Bonus",
+        "Bonasi ya Crypto"
+      ],
+      [
+        "250% up to $50,000",
+        "250% hadi $50,000"
+      ],
+      [
+        "Crypto deposits only",
+        "Amana za crypto pekee"
+      ],
+      [
+        "VIP Bonus",
+        "Bonasi ya VIP"
+      ],
+      [
+        "120% up to $60,000",
+        "120% hadi $60,000"
+      ],
+      [
+        "Deposit $10,000+, activate before deposit",
+        "Amana $10,000+, amsha kabla ya amana"
+      ],
+      [
+        "Monthly Cashback",
+        "Cashback ya Kila Mwezi"
+      ],
+      [
+        "No wagering",
+        "Bila wagering"
+      ],
+      [
+        "By loyalty level",
+        "Kulingana na kiwango cha uaminifu"
+      ],
+      [
+        "See the current promotions page for active offers",
+        "Angalia ukurasa wa promosheni wa sasa kwa ofa hai"
+      ],
+      [
+        "Get offer",
+        "Pata ofa"
+      ],
+      [
+        "Getting started is straightforward:",
+        "Kuanza ni rahisi:"
+      ],
+      [
+        "Create an account - open the 4rabet site or app and complete registration.",
+        "Unda akaunti - fungua tovuti au app ya 4rabet na ukamilishe usajili."
+      ],
+      [
+        "Deposit - use UPI, Paytm, crypto, or another supported method. The welcome pack usually starts from a $100 first deposit.",
+        "Deposit - tumia UPI, Paytm, crypto, au njia nyingine inayotegemezwa. Paketi ya kukaribisha kwa kawaida huanza kutoka amana ya kwanza ya $100."
+      ],
+      [
+        "Open the casino section and find Aviator through search or the featured games area.",
+        "Fungua sehemu ya kasino na pata Aviator kupitia utafutaji au eneo la michezo iliyoangaziwa."
+      ],
+      [
+        "Set your stake, place a bet, and cash out before the plane flies away.",
+        "Weka dau lako, weka bet, na fanya Cash Out kabla ndege haijaondoka."
+      ],
+      [
+        "Play Aviator at 4rabet",
+        "Cheza Aviator kwenye 4rabet"
+      ],
+      [
+        "4rabet has apps for Android and iOS, so you can play Aviator on the go with the same account and balance.",
+        "4rabet ina app za Android na iOS, kwa hiyo unaweza kucheza Aviator ukiwa safarini na akaunti na salio lile lile."
+      ],
+      [
+        "Open the 4rabet website on your Android device and tap the Android app icon.",
+        "Fungua tovuti ya 4rabet kwenye kifaa chako cha Android na gusa ikoni ya app ya Android."
+      ],
+      [
+        "Download the APK and allow installation from unknown sources if asked.",
+        "Pakua APK na ruhusu usakinishaji kutoka vyanzo visivyojulikana ikiwa umeombwa."
+      ],
+      [
+        "Install the app, log in, and open Aviator from the casino menu.",
+        "Sakinisha app, ingia, na ufungue Aviator kutoka menyu ya kasino."
+      ],
+      [
+        "Use the link from the 4rabet site to the App Store, or change region if needed.",
+        "Tumia kiungo kutoka tovuti ya 4rabet kwenda App Store, au badilisha eneo ikiwa inahitajika."
+      ],
+      [
+        "Tap Get to download and install, then open the app and sign in.",
+        "Gusa Pakua kupakua na kusakinisha, kisha fungua app na uingie."
+      ],
+      [
+        "4rabet holds a Curacao eGaming licence and uses encryption for data and payments. Aviator runs on certified RNG software, so results are random and cannot be predicted. Always play within your limits and only where online gambling is legal.",
+        "4rabet inashikilia leseni ya Curacao eGaming na inatumia usimbaji fiche kwa data na malipo. Aviator inaendeshwa kwa programu ya RNG iliyothibitishwa, kwa hiyo matokeo ni nasibu na hayawezi kutabiriwa. Cheza kila wakati ndani ya mipaka yako na tu pale ambapo kamari ya mtandaoni ni halali."
+      ],
+      [
+        "Register, make a first deposit that meets the current offer terms, go to the casino section, and open Aviator. Set your bet and cash out before the plane disappears.",
+        "Jisajili, weka amana ya kwanza inayokidhi masharti ya ofa ya sasa, nenda kwenye sehemu ya kasino, na ufungue Aviator. Weka dau lako na ufanye Cash Out kabla ndege haitoweki."
+      ],
+      [
+        "The minimum deposit for the welcome pack is usually $100; check the cashier for your chosen payment method.",
+        "Amana ya chini kwa paketi ya kukaribisha kwa kawaida ni $100; angalia cashier kwa njia ya malipo uliyochagua."
+      ],
+      [
+        "Yes. Aviator uses certified RNG software, and 4rabet operates under a Curacao eGaming licence.",
+        "Ndiyo. Aviator inatumia programu ya RNG iliyothibitishwa, na 4rabet inafanya kazi chini ya leseni ya Curacao eGaming."
+      ],
+      [
+        "Responsible gaming: Independent platform. Play only where legal.",
+        "Kubeti kwa uwajibikaji: Jukwaa huru. Cheza tu pale halali."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Jeu 4rabet Aviator",
+        "Lisano 4rabet Aviator"
+      ],
+      [
+        "À propos du casino en ligne 4rabet",
+        "Na casino en ligne 4rabet"
+      ],
+      [
+        "Bonus 4rabet Aviator",
+        "Bonus 4rabet Aviator"
+      ],
+      [
+        "Comment jouer à 4rabet Aviator",
+        "Ndenge ya kobeta 4rabet Aviator"
+      ],
+      [
+        "Application 4rabet Aviator (APK et iOS)",
+        "Application 4rabet Aviator (APK mpe iOS)"
+      ],
+      [
+        "Android",
+        "Android"
+      ],
+      [
+        "iOS",
+        "iOS"
+      ],
+      [
+        "Licence et sécurité",
+        "Licence mpe libateli"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Comment commencer à jouer à Aviator sur 4rabet ?",
+        "Ndenge nini nakobanda kobeta Aviator na 4rabet ?"
+      ],
+      [
+        "Quel est le dépôt minimum ?",
+        "Dépôt minimum ezali boni ?"
+      ],
+      [
+        "4rabet Aviator est-il équitable ?",
+        "4rabet Aviator ezali équitable ?"
+      ],
+      [
+        "4rabet Aviator",
+        "4rabet Aviator"
+      ],
+      [
+        "4rabet Casino",
+        "4rabet Casino"
+      ],
+      [
+        "bonus 4rabet",
+        "bonus 4rabet"
+      ],
+      [
+        "jeu 4rabet Aviator",
+        "lisano 4rabet Aviator"
+      ],
+      [
+        "app 4rabet",
+        "app 4rabet"
+      ],
+      [
+        "4rabet Aviator pour Android",
+        "4rabet Aviator mpo na Android"
+      ],
+      [
+        "4rabet Aviator est le crash game de Spribe : un avion décolle, le multiplicateur monte et vous décidez quand encaisser. Des règles simples et des manches courtes ont séduit les joueurs qui veulent des sessions rapides et un gameplay direct. Sur 4rabet, vous retrouvez la même expérience Aviator, avec des moyens de paiement locaux et plusieurs offres de bienvenue attractives.",
+        "4rabet Aviator ezali crash game ya Spribe : avion e décoler, multiplier ekobaka mpe ozui kobongisa tango ya Cash Out. Mibeko simples mpe ba round ya mokuse e salaki yango populaire na mosali oyo balingi ba session ya pété mpe gameplay ya polele. Na 4rabet, ozui même ndenge ya kosalela Aviator, na ba moyens ya paiement locaux mpe ba offres ya bienvenue ya makasi."
+      ],
+      [
+        "Jouer à 4rabet Aviator",
+        "Kobeta 4rabet Aviator"
+      ],
+      [
+        "700 % jusqu'à $90,000",
+        "700% tii na $90,000"
+      ],
+      [
+        "Réclamer le bonus",
+        "Réclamer bonus"
+      ],
+      [
+        "4rabet est un site de paris et de casino avec sports, machines à sous, jeux en direct et Aviator. La marque opère sous une licence Curacao eGaming et prend en charge UPI, Paytm, PhonePe et les cryptomonnaies, ce qui facilite le passage des paris sportifs au casino avec un seul compte.",
+        "4rabet ezali site ya paris mpe casino na sports, ba slots, ba lisano en direct mpe Aviator. Marque esalaka na licence Curacao eGaming mpe e soutenir UPI, Paytm, PhonePe mpe crypto, oyo e faciliter ko passer na paris sportifs mpe casino na compte moko."
+      ],
+      [
+        "Catégorie",
+        "Catégorie"
+      ],
+      [
+        "Opérateur",
+        "Opérateur"
+      ],
+      [
+        "Umbrella Development B.V.",
+        "Umbrella Development B.V."
+      ],
+      [
+        "Curacao eGaming",
+        "Curacao eGaming"
+      ],
+      [
+        "English, Hindi",
+        "English, Hindi"
+      ],
+      [
+        "Assistance",
+        "Assistance"
+      ],
+      [
+        "24/7 live chat, email",
+        "24/7 live chat, email"
+      ],
+      [
+        "4rabet propose plusieurs promotions adaptées aux joueurs d'Aviator. Consultez la page des promotions pour les conditions et exigences de mise en vigueur avant d'activer une offre.",
+        "4rabet e proposer ba promotion mingi oyo e convient na mosali ya Aviator. Tala page ya promotion mpo na ba mibekos mpe exigences ya mise ya lelo liboso ya ko activer offre."
+      ],
+      [
+        "Conditions clés",
+        "Mibekos clés"
+      ],
+      [
+        "Pack de bienvenue",
+        "Pack ya bienvenue"
+      ],
+      [
+        "Standard",
+        "Standard"
+      ],
+      [
+        "Premier dépôt, minimum $100",
+        "Premier dépôt, minimum $100"
+      ],
+      [
+        "Bonus crypto",
+        "Bonus crypto"
+      ],
+      [
+        "250 % jusqu'à $50,000",
+        "250% tii na $50,000"
+      ],
+      [
+        "Dépôts en crypto uniquement",
+        "Ba dépôts crypto kaka"
+      ],
+      [
+        "Bonus VIP",
+        "Bonus VIP"
+      ],
+      [
+        "120 % jusqu'à $60,000",
+        "120% tii na $60,000"
+      ],
+      [
+        "Dépôt de $10,000+, à activer avant le dépôt",
+        "Dépôt $10,000+, ko activer liboso ya dépôt"
+      ],
+      [
+        "Cashback mensuel",
+        "Cashback ya sanza"
+      ],
+      [
+        "Sans mise",
+        "Sans mise"
+      ],
+      [
+        "Selon le niveau de fidélité",
+        "Selon niveau ya fidélité"
+      ],
+      [
+        "Consultez la page des promotions pour les offres en cours",
+        "Tala page ya promotion mpo na ba offres ya lelo"
+      ],
+      [
+        "Obtenir l'offre",
+        "Obtenir offre"
+      ],
+      [
+        "Commencer est simple :",
+        "Kobanda ezali simple :"
+      ],
+      [
+        "Créer un compte – ouvrez le site ou l'app 4rabet et terminez l'inscription.",
+        "Créer compte – fungola site to app 4rabet mpe finir inscription."
+      ],
+      [
+        "Déposer – utilisez UPI, Paytm, la crypto ou une autre méthode acceptée. Le pack de bienvenue démarre en général à partir d'un premier dépôt de 100 $.",
+        "Déposer – salisa UPI, Paytm, crypto to moyen mosusu oyo e accepté. Pack ya bienvenue e banda généralement na premier dépôt ya $100."
+      ],
+      [
+        "Ouvrez la section casino et trouvez Aviator via la recherche ou les jeux mis en avant.",
+        "Fungola section casino mpe mona Aviator na recherche to ba lisano oyo e mis en avant."
+      ],
+      [
+        "Réglez votre mise, placez un pari et encaissez avant que l'avion ne parte.",
+        "Régler mise na yo, tia pari mpe Cash Out liboso ete avion e bima."
+      ],
+      [
+        "Jouer à Aviator sur 4rabet",
+        "Kobeta Aviator na 4rabet"
+      ],
+      [
+        "4rabet propose des applications Android et iOS pour jouer à Aviator en déplacement avec le même compte et le même solde.",
+        "4rabet e proposer ba applications Android mpe iOS mpo na kobeta Aviator na déplacement na compte mpe solde moko."
+      ],
+      [
+        "Ouvrez le site 4rabet sur votre appareil Android et appuyez sur l'icône de l'app Android.",
+        "Fungola site 4rabet na apereil Android mpe finá icone app Android."
+      ],
+      [
+        "Téléchargez l'APK et autorisez l'installation depuis des sources inconnues si demandé.",
+        "Kozua APK mpe autoriser botia na ba sources inconnues soki e demander."
+      ],
+      [
+        "Installez l'app, connectez-vous et ouvrez Aviator depuis le menu casino.",
+        "Botia app, connectez-vous mpe fungola Aviator na menu casino."
+      ],
+      [
+        "Utilisez le lien du site 4rabet vers l'App Store, ou changez de région si nécessaire.",
+        "Salisa lien ya site 4rabet vers App Store, to changer région soki esengeli."
+      ],
+      [
+        "Appuyez sur Obtenir pour télécharger et installer, puis ouvrez l'app et connectez-vous.",
+        "Finá Obtenir mpo na ko kozua mpe installer, nsima fungola app mpe connectez-vous."
+      ],
+      [
+        "4rabet détient une licence Curacao eGaming et utilise le chiffrement pour les données et les paiements. Aviator repose sur un RNG certifié : les résultats sont aléatoires et imprévisibles. Ne jouez qu'aux jeux qui vous conviennent et uniquement là où les jeux en ligne sont légaux.",
+        "4rabet e detenir licence Curacao eGaming mpe esalela chiffrement mpo na ba données mpe ba paiements. Aviator e reposa na RNG certifié : ba résultats ezali ya hasards mpe e prévoir te. Bina kaka na limites na yo mpe kaka epayi oyo ba lisano en ligne ezali mbala na mibeko."
+      ],
+      [
+        "Inscrivez-vous, effectuez un premier dépôt conforme aux conditions de l'offre en cours, allez dans la section casino et ouvrez Aviator. Réglez votre mise et encaissez avant que l'avion ne disparaisse.",
+        "Inscrivez-vous, salá premier dépôt oyo e conforme na ba mibekos ya offre ya lelo, kende na section casino mpe fungola Aviator. Régler mise mpe Cash Out liboso ete avion e disparaitre."
+      ],
+      [
+        "Le dépôt minimum pour le pack de bienvenue est en général de $100 ; vérifiez la caisse pour votre moyen de paiement.",
+        "Dépôt minimum mpo na pack ya bienvenue ezali généralement $100 ; tala caisse mpo na moyen ya paiement oyo oponi."
+      ],
+      [
+        "Oui. Aviator utilise un logiciel RNG certifié et 4rabet opère sous une licence Curacao eGaming.",
+        "Ee. Aviator esalela logiciel RNG certifié mpe 4rabet esalaka na licence Curacao eGaming."
+      ],
+      [
+        "Jeu responsable : Plateforme indépendante. Ne jouez que là où c'est légal.",
+        "Kobeta na libateli: plateforme indépendante. Bina kaka epayi ezali mbala na mibeko."
+      ]
+    ]
+  }
+}

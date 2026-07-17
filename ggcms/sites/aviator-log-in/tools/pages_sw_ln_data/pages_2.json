@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Blog",
+      "title": "Blogu ya Aviator: Mwongozo na Vidokezo",
+      "description": "Soma makala kuhusu Aviator: jinsi ya kucheza, mikakati, uondoaji na vidokezo vya Spribe Aviator."
+    },
+    "ln": {
+      "name": "Blog",
+      "title": "Blog ya Aviator: Ba mwongozo mpe ba conseil",
+      "description": "Tanga ba article na Aviator: ndenge ya kobeta, ba strategy, kobimisa mpe ba conseil ya Spribe Aviator."
+    }
+  }
+}

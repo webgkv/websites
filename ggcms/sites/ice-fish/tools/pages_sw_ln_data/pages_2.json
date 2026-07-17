@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Blog",
+      "title": "Blogu ya Ice Fish: Mwongozo na Habari",
+      "description": "Makala kuhusu Ice Fish na Ice Fishing: jinsi ya kucheza, mikakati, demo na habari za InOut Games."
+    },
+    "ln": {
+      "name": "Blog",
+      "title": "Blog ya Ice Fish: Ba mwongozo mpe ba sango",
+      "description": "Ba article na Ice Fish mpe Ice Fishing: ndenge ya kobeta, ba strategy, demo mpe ba sango ya InOut Games."
+    }
+  }
+}

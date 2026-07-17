@@ -1,0 +1,493 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Chicken vs Zombies",
+      "title": "Chicken vs Zombies: Mchezo, Demo na Kasino",
+      "description": "Mapitio ya Chicken vs Zombies: mchezo, hali ya demo, RTP na kasino bora za kucheza Chicken vs Zombies mtandaoni."
+    },
+    "ln": {
+      "name": "Chicken vs Zombies",
+      "title": "Chicken vs Zombies: Lisano, Demo mpe Ba Casino",
+      "description": "Tala ya Chicken vs Zombies: gameplay, demo, RTP mpe ba casino ya malamu mpo na kobeta Chicken vs Zombies na internet."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "&nbsp;",
+        "&nbsp;"
+      ],
+      [
+        "Chicken vs Zombies",
+        "Chicken vs Zombies"
+      ],
+      [
+        "Official Chicken vs Zombies",
+        "Chicken vs Zombies Rasmi"
+      ],
+      [
+        "Level Difficulty - 4 Types of Zombies",
+        "Ugumu wa Kiwango - Aina 4 za Zombies"
+      ],
+      [
+        "Medium - Pot-Headed Zombie",
+        "Medium - Pot-Headed Zombie"
+      ],
+      [
+        "Hard - Football Player Zombie",
+        "Hard - Football Player Zombie"
+      ],
+      [
+        "Hardcore - Soldier Zombie",
+        "Hardcore - Soldier Zombie"
+      ],
+      [
+        "Reach Chicken Boss - Maximum Jackpot",
+        "Fikia Chicken Boss - Jackpot ya Juu"
+      ],
+      [
+        "Current in-game limits:",
+        "Vikomo vya sasa ndani ya mchezo:"
+      ],
+      [
+        "At a glance:",
+        "Kwa muhtasari:"
+      ],
+      [
+        "Chicken vs Zombies Fairness",
+        "Uadilifu wa Chicken vs Zombies"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken vs Zombies provably fair step-by-step gameplay",
+        "Mchezo wa Chicken vs Zombies hatua kwa hatua wa provably fair"
+      ],
+      [
+        "Chicken vs Zombies is another fast single-player game from the INOUT team. Every safe step increases the potential payout, but one zombie bite ends the run. The game works around the same pressure that makes these arcade-style casino games so catchy. You can stop and cash out, or keep moving and risk the whole bet for a better result. Nothing overloaded, no long rules - just short rounds, quick decisions, and that constant question: go further or take what you already have?",
+        "Chicken vs Zombies ni mchezo mwingine wa haraka wa mchezaji mmoja kutoka timu ya INOUT. Kila hatua salama huongeza malipo yanayowezekana, lakini kuumwa mara moja na zombie huisha mfululizo. Mchezo unafanya kazi karibu na msukumo ule ule unaofanya michezo hii ya kasino ya mtindo wa arcade iwe ya kuvutia. Unaweza kusimama na cash out, au kuendelea kusogea na kuhatarisha dau lote kwa matokeo bora. Hakuna mzigo wa ziada, hakuna sheria ndefu - raundi fupi tu, maamuzi ya haraka, na swali hilo la kudumu: endelea zaidi au chukua ulichonacho tayari?"
+      ],
+      [
+        "Game Type",
+        "Aina ya Mchezo"
+      ],
+      [
+        "Single-player cash-out game",
+        "Mchezo wa cash-out wa mchezaji mmoja"
+      ],
+      [
+        "Difficulty Modes",
+        "Hali za Ugumu"
+      ],
+      [
+        "Easy, Medium, Hard, Hardcore",
+        "Easy, Medium, Hard, Hardcore"
+      ],
+      [
+        "Main Mechanic",
+        "Mbinu Kuu"
+      ],
+      [
+        "Safe steps increase payout",
+        "Hatua salama huongeza malipo"
+      ],
+      [
+        "One zombie bite ends the round",
+        "Kuumwa mara moja na zombie huisha raundi"
+      ],
+      [
+        "Release Date",
+        "Tarehe ya Kutolewa"
+      ],
+      [
+        "23.10.2025",
+        "23.10.2025"
+      ],
+      [
+        "Developer",
+        "Msanidi"
+      ],
+      [
+        "You can try Chicken vs Zombies demo without touching real money. The demo gives you a virtual balance of $1,000,000, so there is enough room to test the game properly instead of playing one or two careful rounds.",
+        "Unaweza kujaribu demo ya Chicken vs Zombies bila kugusa pesa halisi. Demo inakupa salio la kawaida la $1,000,000, hivyo kuna nafasi ya kutosha kujaribu mchezo vizuri badala ya kucheza raundi moja au mbili za makini."
+      ],
+      [
+        "It is the same game logic, just with play-money. You can choose any difficulty - Easy, Medium, Hard, or Hardcore - change the stake, test step-by-step cash outs, and try the \"Space to spin &amp; go\" option if you want a more active feel.",
+        "Ni mantiki ile ile ya mchezo, tu na pesa ya kucheza. Unaweza kuchagua ugumu wowote - Easy, Medium, Hard, au Hardcore - kubadilisha dau, kujaribu cash out hatua kwa hatua, na kujaribu chaguo la \"Space to spin &amp; go\" ukitaka hisia ya shughuli zaidi."
+      ],
+      [
+        "This is exactly what demo mode is useful for. You can push the chicken further than you normally would, check how fast the risk grows, and understand when it feels better to cash out. No real funds are on the line, so mistakes do not cost anything.",
+        "Hii ndiyo hasa demo inafaa. Unaweza kusukuma kuku mbali zaidi kuliko unavyofanya kawaida, kuangalia kasi hatari inavyokua, na kuelewa lini inahisi bora cash out. Hakuna fedha halisi ziko hatarini, hivyo makosa hayagharami chochote."
+      ],
+      [
+        "Before starting, choose the zombie lane and set your stake. The easier modes feel calmer and give more space to test the game. The harder modes grow faster, but one mistake can end the run very quickly.",
+        "Kabla ya kuanza, chagua njia ya zombie na weka dau lako. Hali rahisi zinahisi tulivu zaidi na zinatoa nafasi zaidi kujaribu mchezo. Hali ngumu zinakua haraka, lakini kosa moja linaweza kuisha mfululizo haraka sana."
+      ],
+      [
+        "Tier Zombie Type Zombies Count Risk Profile Payout Growth",
+        "Kiwango Aina ya Zombie Idadi ya Zombies Wasifu wa Hatari Ukuaji wa Malipo"
+      ],
+      [
+        "Easy Citizen Zombie 30 Low risk, more forgiving Smooth and gradual",
+        "Easy Citizen Zombie 30 Hatari ya chini, msamaha zaidi Tulivu na taratibu"
+      ],
+      [
+        "Medium Pot-Headed Zombie 25 Moderate risk, earlier pressure Faster build",
+        "Medium Pot-Headed Zombie 25 Hatari ya wastani, msukumo wa mapema Ujenzi wa haraka"
+      ],
+      [
+        "Hard Football Player Zombie 22 High risk, tighter run Fast ramp",
+        "Hard Football Player Zombie 22 Hatari ya juu, mfululizo mgumu Ongezeko la haraka"
+      ],
+      [
+        "Hardcore Soldier Zombie 18 Very high risk, punishing mode Sharp surge",
+        "Hardcore Soldier Zombie 18 Hatari ya juu sana, hali kali Mshindo mkali"
+      ],
+      [
+        "Medium already feels more tense. The path is tighter, the risk appears earlier, but the payout also builds faster.",
+        "Medium tayari inahisi msukumo zaidi. Njia ni nyembamba zaidi, hatari inaonekana mapema, lakini malipo pia yanajengwa haraka."
+      ],
+      [
+        "$2 stakу the possible progression: 2 &rarr; 2.40 &rarr; 2.88 &rarr; 3.46. That is roughly +73% after 3 safe steps. Many players prefer to leave around 2-3 steps here instead of pushing too far.",
+        "Kwa dau la $2, maendeleo yanayowezekana ni: 2 &rarr; 2.40 &rarr; 2.88 &rarr; 3.46. Hiyo ni takriban +73% baada ya hatua 3 salama. Wachezaji wengi wanapendelea kuondoka karibu na hatua 2-3 hapa badala ya kusukuma mbali sana."
+      ],
+      [
+        "Hard mode is where the game stops being relaxed. The multiplier grows quickly, but the margin for error is much smaller. It is better to decide your exit point before the round starts.",
+        "Hali ya Hard ndipo mchezo unaacha kuwa tulivu. Multiplier inakua haraka, lakini nafasi ya kosa ni ndogo zaidi. Ni bora kuamua mahali pa kutoka kabla raundi haijaanza."
+      ],
+      [
+        "Example: with a $2 stake, the payout can go 2 &rarr; 2.56 &rarr; 3.28 &rarr; 4.20 after 3 safe steps. That is about +110%, but one wrong move means the run ends with $0.",
+        "Mfano: kwa dau la $2, malipo yanaweza kwenda 2 &rarr; 2.56 &rarr; 3.28 &rarr; 4.20 baada ya hatua 3 salama. Hiyo ni takriban +110%, lakini hatua moja mbaya inamaanisha mfululizo unaisha na $0."
+      ],
+      [
+        "Hardcore is the hottest mode. Short runs, high pressure, quick exits. This is not the level to test casually unless you understand how fast the balance can disappear.",
+        "Hardcore ndiyo hali ya juu zaidi. Mfululizo mifupi, msukumo mkubwa, kutoka haraka. Hii si kiwango cha kujaribu kwa urahisi isipokuwa unaelewa kasi salio linaweza kutoweka."
+      ],
+      [
+        "Example: with a $2 stake, the payout can move 2 &rarr; 2.70 &rarr; 3.64 after only 2-3 safe steps. The growth is sharp, but staying too long is dangerous. Grab the surge and do not linger.",
+        "Mfano: kwa dau la $2, malipo yanaweza kusogea 2 &rarr; 2.70 &rarr; 3.64 baada ya hatua 2-3 salama tu. Ukuaji ni mkali, lakini kukaa muda mrefu ni hatari. Chukua mshindo na usikae sana."
+      ],
+      [
+        "The Chicken Boss is the final pressure point in Chicken vs Zombies. If you pass the lane cleanly and reach the end, the run upgrades to the Boss stage. One correct step clears it. One bite ends everything.",
+        "Chicken Boss ni sehemu ya mwisho ya msukumo katika Chicken vs Zombies. Ukivuka njia kwa usafi na kufikia mwisho, mfululizo unapanda hadi hatua ya Boss. Hatua moja sahihi inaikamilisha. Kuumwa mara moja huisha kila kitu."
+      ],
+      [
+        "You do not have to face the Boss if you do not want to. The game lets you cash out before that moment, and for many players that will be the safer choice. The Boss is there for people who want to push the run all the way and accept the extra risk.",
+        "Huhitaji kukabiliana na Boss ukishindwa. Mchezo unakuacha cash out kabla ya wakati huo, na kwa wachezaji wengi hiyo itakuwa chaguo salama zaidi. Boss iko kwa watu wanaotaka kusukuma mfululizo hadi mwisho na kukubali hatari ya ziada."
+      ],
+      [
+        "Limit Value",
+        "Thamani ya Kikomo"
+      ],
+      [
+        "Max Win Cap",
+        "Kikomo cha Ushindi wa Juu"
+      ],
+      [
+        "the Boss appears after a streak of safe steps;",
+        "Boss anaonekana baada ya mfululizo wa hatua salama;"
+      ],
+      [
+        "the exact point depends on the selected difficulty;",
+        "mahali halisi hutegemea ugumu uliochaguliwa;"
+      ],
+      [
+        "clearing the Boss tile puts the run on the top payout path;",
+        "kukamilisha tile ya Boss huweka mfululizo kwenye njia ya malipo ya juu;"
+      ],
+      [
+        "the maximum win is capped at $20,000 in this build;",
+        "ushindi wa juu umefungwa kwa $20,000 katika build hii;"
+      ],
+      [
+        "you can still cash out before facing the Boss.",
+        "bado unaweza cash out kabla ya kukabiliana na Boss."
+      ],
+      [
+        "Chicken vs Zombies uses an independent step-by-step RNG. In simple words, every move is calculated separately, and the game does not work with \"hot\" or \"cold\" memory.",
+        "Chicken vs Zombies inatumia RNG huru hatua kwa hatua. Kwa maneno rahisi, kila hatua huhesabiwa tofauti, na mchezo haufanyi kazi na kumbukumbu ya \"hot\" au \"cold\"."
+      ],
+      [
+        "A few good steps do not make the next one safe. A few bad rounds do not mean the game owes you a better result. Each step is still a fresh risk.",
+        "Hatua chache nzuri hazifanyi inayofuata iwe salama. Raundi chache mbaya hazimaanishi mchezo unakudai matokeo bora. Kila hatua bado ni hatari mpya."
+      ],
+      [
+        "The game runs on a 95.5% RTP model over long volume. That does not mean every player gets 95.5% back in one session. RTP is a long-term number, not a promise for your next run.",
+        "Mchezo unafanya kazi kwa mfano wa RTP wa 95.5% kwa muda mrefu. Hiyo haimaanishi kila mchezaji anarudishiwa 95.5% katika kikao kimoja. RTP ni nambari ya muda mrefu, si ahadi kwa mfululizo wako unaofuata."
+      ],
+      [
+        "Difficulty changes the shape of the game. Easy gives more breathing room. Medium adds pressure. Hard and Hardcore make the payout grow faster, but the risk becomes much sharper. The Space-to-step option changes how you control the game, not the probability behind the step.",
+        "Ugumu hubadilisha umbo la mchezo. Easy inatoa nafasi zaidi ya kupumua. Medium huongeza msukumo. Hard na Hardcore hufanya malipo yakue haraka, lakini hatari inakuwa mkali zaidi. Chaguo la Space-to-step hubadilisha jinsi unavyodhibiti mchezo, si uwezekano nyuma ya hatua."
+      ],
+      [
+        "What is the RTP of Chicken vs Zombies? Chicken vs Zombies runs on 95.5% RTP in the current build. Just remember, RTP is a long-term number. It does not mean one short session will return exactly 95.5%. One player can win fast, another can lose fast - that is normal for this type of game.",
+        "RTP ya Chicken vs Zombies ni nini? Chicken vs Zombies inafanya kazi kwa RTP ya 95.5% katika build ya sasa. Kumbuka tu, RTP ni nambari ya muda mrefu. Haimaanishi kikao kifupi kitarudisha haswa 95.5%. Mchezaji mmoja anaweza kushinda haraka, mwingine kupoteza haraka - hiyo ni kawaida kwa aina hii ya mchezo."
+      ],
+      [
+        "Does Chicken vs Zombies have autoplay? Not in the usual casino sense. The game is built around manual play: press Play, move step by step, and decide when to cash out. There is also a \"Space to step\" option for faster input, but it does not turn the game into automatic autoplay. You still control the run yourself.",
+        "Je, Chicken vs Zombies ina autoplay? Si kwa maana ya kawaida ya kasino. Mchezo umejengwa karibu na kucheza kwa mkono: bonyeza Play, songa hatua kwa hatua, na uamue lini cash out. Pia kuna chaguo la \"Space to step\" kwa ingizo la haraka, lakini haligeuzi mchezo kuwa autoplay kiotomatiki. Bado unadhibiti mfululizo wewe mwenyewe."
+      ],
+      [
+        "Languages and currencies? Chicken vs Zombies is built in HTML5, so it can be localized for different markets. The language and currency depend on the casino where you open the game. Partner casinos can adjust the game to their own wallet settings, local currencies, and supported languages.",
+        "Lugha na sarafu? Chicken vs Zombies imejengwa kwa HTML5, hivyo inaweza kufanyiwa localization kwa masoko tofauti. Lugha na sarafu hutegemea kasino unapofungua mchezo. Kasino zinazoshirikiana zinaweza kurekebisha mchezo kwa mipangilio yao ya pochi, sarafu za ndani, na lugha zinazotumika."
+      ],
+      [
+        "How does Chicken vs Zombies make outcomes random? Each step is handled by an independent RNG. In simple words, the game does not remember \"hot\" or \"cold\" rounds. A safe step now does not make the next one safer. A bad run does not mean the game owes you a better result. Every move is a fresh risk. The only difference is that demo uses virtual money.",
+        "Chicken vs Zombies inafanya matokeo kuwa ya nasibu vipi? Kila hatua inashughulikiwa na RNG huru. Kwa maneno rahisi, mchezo haukumbuki raundi za \"hot\" au \"cold\". Hatua salama sasa haifanyi inayofuata iwe salama zaidi. Mfululizo mbaya haimaanishi mchezo unakudai matokeo bora. Kila hatua ni hatari mpya. Tofauti pekee ni kwamba demo inatumia pesa ya kawaida."
+      ],
+      [
+        "Is there an app, or does it work in the browser? You usually do not need a separate download. Play in the browser or through a trusted casino app. Be careful with random APK files, especially if they promise hacks, predictors, or special versions.",
+        "Je, kuna programu, au inafanya kazi kwenye kivinjari? Kwa kawaida huhitaji pakua tofauti. Cheza kwenye kivinjari au kupitia programu ya kasino inayoaminika. Kuwa makini na faili za APK za nasibu, hasa zikiahidi hacks, predictors, au matoleo maalum."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Chicken vs Zombies",
+        "Chicken vs Zombies"
+      ],
+      [
+        "Chicken vs Zombies officiel",
+        "Chicken vs Zombies officiel"
+      ],
+      [
+        "Niveau de difficulté — 4 types de zombies",
+        "Niveau ya difficulty — 4 type ya zombie"
+      ],
+      [
+        "Medium — Zombie avec pot sur la tête",
+        "Medium — Zombie na pot na moto"
+      ],
+      [
+        "Hard — Zombie joueur de football",
+        "Hard — Zombie joueur ya football"
+      ],
+      [
+        "Hardcore — Zombie soldat",
+        "Hardcore — Zombie soldat"
+      ],
+      [
+        "Atteindre le Chicken Boss — jackpot maximal",
+        "Kokóta na Chicken Boss — jackpot ya likolo"
+      ],
+      [
+        "Limites actuelles en jeu :",
+        "Ba limit ya sika na lisano:"
+      ],
+      [
+        "En bref :",
+        "Na mokuse:"
+      ],
+      [
+        "Équité de Chicken vs Zombies",
+        "Fairness ya Chicken vs Zombies"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Capture d'écran du jeu en ligne Chicken vs Zombies",
+        "Capture ya ecran ya lisano Chicken vs Zombies online"
+      ],
+      [
+        "Modes de difficulté et couloirs de zombies dans Chicken vs Zombies",
+        "Ba mode ya difficulty mpe ba couloir ya zombie na Chicken vs Zombies"
+      ],
+      [
+        "Gameplay pas à pas provably fair de Chicken vs Zombies",
+        "Gameplay ya Chicken vs Zombies step-by-step provably fair"
+      ],
+      [
+        "Chicken vs Zombies est un autre jeu solo rapide de l’équipe INOUT. Chaque pas sûr augmente le gain potentiel, mais une seule morsure de zombie met fin à la partie. Le jeu repose sur la même tension qui rend ces jeux de casino au style arcade si accrocheurs. Vous pouvez vous arrêter et encaisser vos gains, ou continuer à avancer en risquant toute votre mise pour un meilleur résultat. Rien de surchargé, pas de longues règles — seulement des manches courtes, des décisions rapides et cette question constante : aller plus loin ou prendre ce que vous avez déjà ?",
+        "Chicken vs Zombies ezali lisano solo ya mbangu mosusu ya équipe INOUT. Step ya solo oyo ezali safe ebakisa gain oyo ekoki, kasi mordre moko ya zombie esukisa run. Lisano esalemi na tension moko oyo esalelaka ba lisano ya casino ya style arcade ezala addictive. Okoki kozela mpe cash out, to kokende liboso na kobeta riski pari mobimba mpo na resultat ya malamu. Eloko ya overload te, mibeko ya molai te — kaka ba round ya moke, ba decision ya mbangu, mpe question oyo ezali ntango nyonso: kokende liboso to zua oyo ozali nanu?"
+      ],
+      [
+        "Caractéristique",
+        "Caractéristique"
+      ],
+      [
+        "Type de jeu",
+        "Type ya lisano"
+      ],
+      [
+        "Jeu solo avec mécanique de cash-out",
+        "Lisano solo na mécanique ya cash-out"
+      ],
+      [
+        "Modes de difficulté",
+        "Ba mode ya difficulty"
+      ],
+      [
+        "Easy, Medium, Hard, Hardcore",
+        "Easy, Medium, Hard, Hardcore"
+      ],
+      [
+        "Mécanique principale",
+        "Mécanique ya liboso"
+      ],
+      [
+        "Les pas sûrs augmentent le gain",
+        "Ba step ya safe ebakisa gain"
+      ],
+      [
+        "Une seule morsure de zombie met fin à la manche",
+        "Mordre moko ya zombie esukisa round"
+      ],
+      [
+        "Date de sortie",
+        "Date ya publication"
+      ],
+      [
+        "23.10.2025",
+        "23.10.2025"
+      ],
+      [
+        "Développeur",
+        "Développeur"
+      ],
+      [
+        "Vous pouvez essayer la démo de Chicken vs Zombies sans utiliser d’argent réel. La démo vous donne un solde virtuel de $1,000,000, ce qui laisse assez de marge pour tester correctement le jeu au lieu de jouer seulement une ou deux manches prudentes.",
+        "Okoki komeka demo ya Chicken vs Zombies na kozanga kosalela mbongo ya solo. Demo epesi yo solde ya virtual ya $1,000,000, oyo epesi espace ya malamu mpo na komeka lisano malamu na esika ya kobeta round moko to mibale ya prudence."
+      ],
+      [
+        "C’est la même logique de jeu, simplement avec de l’argent fictif. Vous pouvez choisir n’importe quel niveau de difficulté — Easy, Medium, Hard ou Hardcore — modifier la mise, tester les cash-outs étape par étape et essayer l’option \"Space to spin &amp; go\" si vous voulez une sensation plus active.",
+        "Ezali logic ya lisano moko, kaka na mbongo ya jeu. Okoki kopona difficulty nionso — Easy, Medium, Hard to Hardcore — kobongola pari, komeka ba cash-out na step, mpe komeka option \"Space to spin &amp; go\" soki olingi feeling ya active."
+      ],
+      [
+        "C’est exactement à cela que sert le mode démo. Vous pouvez pousser le poulet plus loin que vous ne le feriez normalement, vérifier à quelle vitesse le risque augmente et comprendre à quel moment il vaut mieux encaisser. Aucun argent réel n’est en jeu, donc les erreurs ne coûtent rien.",
+        "Yango wana mode demo ezali na ntina. Okoki kobenda nkoko liboso koleka oyo okosala na solo, kotya vitesse oyo riski ekobaluka, mpe koyeba tango oyo cash out ezali malamu. Mbongo ya solo ezali te na riski, yango wana ba erreur e costi eloko te."
+      ],
+      [
+        "Avant de commencer, choisissez la voie des zombies et définissez votre mise. Les modes plus faciles sont plus calmes et donnent plus de temps pour tester le jeu. Les modes plus difficiles progressent plus vite, mais une seule erreur peut mettre fin à la manche très rapidement.",
+        "Liboso ya kobanda, pona couloir ya zombie mpe botia pari na yo. Ba mode ya pépé ezali calme mpe epesi espace mingi mpo na komeka lisano. Ba mode ya makasi ekobaluka mbangu, kasi erreur moko ekoki kosukisa run mbangu mingi."
+      ],
+      [
+        "Niveau Type de zombie Nombre de zombies Profil de risque Croissance du gain",
+        "Niveau Type ya zombie Motango ya zombie Profil ya riski Croissance ya gain"
+      ],
+      [
+        "Easy Zombie citoyen 30 Risque faible, plus indulgent Fluide et progressif",
+        "Easy Zombie citoyen 30 Riski ya moke, plus indulgent Fluide mpe progressif"
+      ],
+      [
+        "Medium Zombie avec pot sur la tête 25 Risque modéré, pression plus précoce Progression plus rapide",
+        "Medium Zombie na pot na moto 25 Riski modéré, pression liboso Progression ya mbangu"
+      ],
+      [
+        "Hard Zombie joueur de football 22 Risque élevé, parcours plus serré Montée rapide",
+        "Hard Zombie joueur ya football 22 Riski ya likolo, run ya serré Montée ya mbangu"
+      ],
+      [
+        "Hardcore Zombie soldat 18 Risque très élevé, mode impitoyable Forte accélération",
+        "Hardcore Zombie soldat 18 Riski ya likolo mingi, mode impitoyable Accélération ya makasi"
+      ],
+      [
+        "Le mode Medium devient déjà plus tendu. Le chemin est plus serré, le risque apparaît plus tôt, mais le gain augmente aussi plus rapidement.",
+        "Mode Medium ezali déjà plus tendu. Chemin ezali serré, riski ebimaka liboso, kasi gain ebakisa mpe mbangu."
+      ],
+      [
+        "Avec une mise de $2, la progression possible ressemble à ceci : 2 → 2.40 → 2.88 → 3.46. Cela fait environ +73% après 3 pas sûrs. Beaucoup de joueurs préfèrent sortir autour de 2 à 3 pas ici, au lieu de pousser trop loin.",
+        "Na pari ya $2, progression oyo ekoki ezali boye: 2 → 2.40 → 2.88 → 3.46. Ezali pene na +73% nsima ya 3 step ya safe. Basali ebele balingi kobima na 2 tii 3 step awa na esika ya kobenda liboso mingi."
+      ],
+      [
+        "Le mode Hard est le moment où le jeu cesse d’être détendu. Le multiplicateur augmente rapidement, mais la marge d’erreur devient beaucoup plus faible. Il vaut mieux décider de votre point de sortie avant le début de la manche.",
+        "Mode Hard ezali esika oyo lisano e suka kozala détendu. Multiplier ebakisa mbangu, kasi marge ya erreur ezali moke mingi. Esengeli kozwa point ya sortie liboso ya kobanda round."
+      ],
+      [
+        "Exemple : avec une mise de $2, le gain peut suivre cette progression : 2 → 2.56 → 3.28 → 4.20 après 3 pas sûrs. C’est environ +110%, mais un seul mauvais mouvement signifie que la manche se termine avec $0.",
+        "Exemple: na pari ya $2, gain ekoki kolanda progression oyo: 2 → 2.56 → 3.28 → 4.20 nsima ya 3 step ya safe. Ezali pene na +110%, kasi mauvais mouvement moko elingi koloba round esuka na $0."
+      ],
+      [
+        "Hardcore est le mode le plus intense. Parties courtes, forte pression, sorties rapides. Ce n’est pas le niveau à tester à la légère, sauf si vous comprenez à quelle vitesse le solde peut disparaître.",
+        "Hardcore ezali mode ya solo ya intense. Ba run ya moke, pression ya makasi, ba sortie ya mbangu. Ezali niveau te mpo na komeka na légèreté, longola soki oyebi mbangu oyo solde ekoki kobunga."
+      ],
+      [
+        "Exemple : avec une mise de $2, le gain peut évoluer de 2 → 2.70 → 3.64 après seulement 2 à 3 pas sûrs. La progression est forte, mais rester trop longtemps est dangereux. Profitez de la montée et ne vous attardez pas.",
+        "Exemple: na pari ya $2, gain ekoki kobaluka 2 → 2.70 → 3.64 nsima ya 2 tii 3 step ya safe kaka. Progression ezali makasi, kasi kozala liboso mingi ezali dangerous. Zua montée mpe kozanga kozela."
+      ],
+      [
+        "Le Chicken Boss est le point de pression final dans Chicken vs Zombies. Si vous traversez la voie sans erreur et atteignez la fin, la manche passe à l’étape Boss. Un bon pas suffit à la terminer. Une morsure met fin à tout.",
+        "Chicken Boss ezali point ya pression ya suka na Chicken vs Zombies. Soki o passé couloir na pete mpe okóti na suka, run e upgrade na étape Boss. Step moko ya malamu esukisa yango. Mordre moko esukisa eloko nionso."
+      ],
+      [
+        "Vous n’êtes pas obligé d’affronter le Boss si vous ne le souhaitez pas. Le jeu vous permet d’encaisser avant ce moment, et pour beaucoup de joueurs, ce sera le choix le plus sûr. Le Boss est là pour ceux qui veulent pousser la manche jusqu’au bout et accepter un risque supplémentaire.",
+        "Osengeli ko affronter Boss te soki olingi te. Lisano epesi yo cash out liboso ya moment wana, mpe mpo na basali ebele yango ekozala choix ya solo ya safe. Boss ezali mpo na ba oyo balingi kobenda run tii na suka mpe kozwa riski ya sika."
+      ],
+      [
+        "de mise Valeur",
+        "de pari Valeur"
+      ],
+      [
+        "Mise minimale",
+        "Pari ya moke"
+      ],
+      [
+        "Mise maximale",
+        "Pari ya likolo"
+      ],
+      [
+        "Gain maximal plafonné",
+        "Gain ya likolo plafonné"
+      ],
+      [
+        "le Boss apparaît après une série de pas sûrs ;",
+        "Boss ebimaka nsima ya série ya ba step ya safe;"
+      ],
+      [
+        "le moment exact dépend de la difficulté choisie ;",
+        "moment ya solo etalelaka difficulty oyo eponami;"
+      ],
+      [
+        "réussir la case Boss place la manche sur le chemin du gain maximal ;",
+        "ko réussir case Boss etia run na chemin ya gain ya likolo;"
+      ],
+      [
+        "le gain maximal est plafonné à $20,000 dans cette version ;",
+        "gain ya likolo ezali plafonné na $20,000 na version oyo;"
+      ],
+      [
+        "vous pouvez toujours encaisser avant d’affronter le Boss.",
+        "okoki ntango nyonso cash out liboso ya ko affronter Boss."
+      ],
+      [
+        "Chicken vs Zombies utilise un RNG indépendant étape par étape. En termes simples, chaque mouvement est calculé séparément, et le jeu ne fonctionne pas avec une mémoire \"chaude\" ou \"froide\".",
+        "Chicken vs Zombies esalelaka RNG indépendant step-by-step. Na maloba ya pépé, movement nionso e calculé séparément, mpe lisano esalaka te na mémoire \"chaude\" to \"froide\"."
+      ],
+      [
+        "Quelques bons pas ne rendent pas le suivant sûr. Quelques mauvaises manches ne signifient pas que le jeu vous doit un meilleur résultat. Chaque pas reste un nouveau risque.",
+        "Ba step ya malamu moke esalelaka te step oyo elandi ezala safe. Ba round ya mabe moke elingi koloba te ete lisano edev mbongo resultat ya malamu. Step nionso ezali riski ya sika."
+      ],
+      [
+        "Le jeu fonctionne sur un modèle RTP de 95.5% sur le long terme. Cela ne signifie pas que chaque joueur récupère 95.5% en une seule session. Le RTP est un indicateur à long terme, pas une promesse pour votre prochaine manche.",
+        "Lisano esalaka na modèle RTP 95.5% na long terme. Yango elingi koloba te ete mosali nionso azua 95.5% na session moko. RTP ezali chiffre ya long terme, promise te mpo na round oyo elandi."
+      ],
+      [
+        "La difficulté change la forme du jeu. Easy laisse plus de marge. Medium ajoute de la pression. Hard et Hardcore font augmenter le gain plus rapidement, mais le risque devient beaucoup plus marqué. L’option Space-to-step change votre façon de contrôler le jeu, pas la probabilité derrière chaque pas.",
+        "Difficulty e change forme ya lisano. Easy epesi marge mingi. Medium ebakisa pression. Hard mpe Hardcore esalelaka gain ekobaluka mbangu, kasi riski ezali makasi mingi. Option Space-to-step e change ndenge o contrôler lisano, te probabilité na nsima ya step."
+      ],
+      [
+        "Quel est le RTP de Chicken vs Zombies ? Chicken vs Zombies fonctionne avec un RTP de 95.5% dans la version actuelle. Gardez simplement en tête que le RTP est un chiffre à long terme. Cela ne veut pas dire qu’une courte session rendra exactement 95.5%. Un joueur peut gagner rapidement, un autre peut perdre rapidement — c’est normal pour ce type de jeu.",
+        "RTP ya Chicken vs Zombies ezali boni? Chicken vs Zombies esalaka na RTP 95.5% na version ya sika. Kundika kaka ete RTP ezali chiffre ya long terme. Ezali koloba te ete session ya moke ekozongisa exactly 95.5%. Mosali moko akoki kogagner mbangu, mosusu akoki kolonga mbangu — ezali normal mpo na type oyo ya lisano."
+      ],
+      [
+        "Chicken vs Zombies propose-t-il l’autoplay ? Pas au sens habituel des jeux de casino. Le jeu est construit autour du jeu manuel : appuyez sur Play, avancez pas à pas et décidez quand encaisser. Il existe aussi une option \"Space to step\" pour une saisie plus rapide, mais elle ne transforme pas le jeu en autoplay automatique. Vous contrôlez toujours la manche vous-même.",
+        "Chicken vs Zombies epesi autoplay? Te na sensi ya solo ya ba jeux ya casino. Lisano esalemi na kobeta na maboko: press Play, advance na step, mpe decide tango ya cash out. Ezali mpe option \"Space to step\" mpo na input ya mbangu, kasi e transforme lisano te na autoplay automatique. O contrôler run na yo moko."
+      ],
+      [
+        "Langues et devises ? Chicken vs Zombies est développé en HTML5, il peut donc être localisé pour différents marchés. La langue et la devise dépendent du casino où vous ouvrez le jeu. Les casinos partenaires peuvent adapter le jeu à leurs propres paramètres de portefeuille, devises locales et langues prises en charge.",
+        "Ba langue mpe ba devise? Chicken vs Zombies esalemi na HTML5, yango wana ekoki kozala localized mpo na ba marché ya different. Langue mpe devise etalelaka casino oyo ofungolaka lisano. Ba casino partenaire bakoki kobongola lisano na ba paramètre ya wallet na bango, ba devise locale, mpe ba langue oyo esungami."
+      ],
+      [
+        "Comment Chicken vs Zombies rend-il les résultats aléatoires ? Chaque pas est géré par un RNG indépendant. En termes simples, le jeu ne se souvient pas des manches \"chaudes\" ou \"froides\". Un pas sûr maintenant ne rend pas le suivant plus sûr. Une mauvaise série ne signifie pas que le jeu vous doit un meilleur résultat. Chaque mouvement est un nouveau risque. La seule différence est que la démo utilise de l’argent virtuel.",
+        "Chicken vs Zombies esalelaka ndenge nini ba resultat random? Step nionso esalemi na RNG indépendant. Na maloba ya pépé, lisano e remember te ba round \"chaud\" to \"froid\". Step ya safe sikoyo esalelaka te step oyo elandi ezala safe mingi. Mauvaise série elingi koloba te ete lisano edev resultat ya malamu. Movement nionso ezali riski ya sika. Difference ya solo ezali ete demo esalelaka mbongo ya virtual."
+      ],
+      [
+        "Existe-t-il une application ou le jeu fonctionne-t-il dans le navigateur ? En général, aucun téléchargement séparé n’est nécessaire. Jouez dans le navigateur ou via une app casino de confiance. Méfiez-vous des APK aléatoires, surtout s’ils promettent hacks, prédicteurs ou versions spéciales.",
+        "Ezali na app, to esalaka na navigateur? Mingi ntango download ya solo esengeli te. Beta na navigateur to na app ya casino oyo etalemi. Zala careful na ba APK ya hasard, mingi soki epesi hacks, predictors, to ba version spéciale."
+      ]
+    ]
+  }
+}

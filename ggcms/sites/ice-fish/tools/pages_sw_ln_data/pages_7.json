@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Games",
+      "title": "Michezo ya Ice Fish na Ice Fishing",
+      "description": "Ice Fish na Ice Fishing kutoka InOut Games na Evolution — mapitio na mahali pa kucheza."
+    },
+    "ln": {
+      "name": "Games",
+      "title": "Ba lisano ya Ice Fish mpe Ice Fishing",
+      "description": "Ice Fish mpe Ice Fishing na InOut Games mpe Evolution — ba tala mpe esika ya kobeta."
+    }
+  }
+}

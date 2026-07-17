@@ -1,0 +1,133 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Rocketman",
+      "title": "Rocketman Crash: Cheza kwa Pesa Halisi | Aviator Log In",
+      "description": "Mchezo wa crash Rocketman: jinsi ya kucheza, sheria, vipengele na mahali pa kucheza mtandaoni."
+    },
+    "ln": {
+      "name": "Rocketman",
+      "title": "Rocketman Crash: Kobeta na Mbongo ya Solo",
+      "description": "Lisano ya crash Rocketman: ndenge ya kobeta, mibeko, ba fonction mpe esika ya kobeta na internet."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Rocketman",
+        "Rocketman"
+      ],
+      [
+        "Rocketman crash game",
+        "Mchezo wa crash Rocketman"
+      ],
+      [
+        "Rocketman is a crash game where a rocket climbs and the multiplier increases. You place a bet and decide when to cash out. If you cash out before the rocket crashes, you win your stake multiplied by the current value; if it crashes first, you lose the bet.",
+        "Rocketman ni mchezo wa crash ambapo roketi inapanda na multiplier inaongezeka. Unaweka dau na kuamua lini utafanya Cash Out. Ukifanya Cash Out kabla roketi iharibike, unashinda dau lako kuzidishwa na thamani ya sasa; ikiharibika kwanza, unapoteza dau."
+      ],
+      [
+        "How to play",
+        "Jinsi ya kucheza"
+      ],
+      [
+        "Set your stake before the round. The rocket launches and the multiplier (starting at 1.00x) goes up. Cash out manually or set an auto cash-out multiplier. Anyone who cashes out in time gets stake × multiplier; those who do not lose the bet. The crash point is random (RNG or provably fair).",
+        "Weka dau lako kabla ya raundi. Roketi inazinduliwa na multiplier (ikianza 1.00x) inaongezeka. Fanya Cash Out kwa mkono au weka multiplier ya auto Cash Out. Yeyote anayefanya Cash Out kwa wakati anapata dau × multiplier; wasiofanya hivyo wanapoteza dau. Hatua ya crash ni nasibu (RNG au provably fair)."
+      ],
+      [
+        "Rocketman features",
+        "Vipengele vya Rocketman"
+      ],
+      [
+        "Features and where to play",
+        "Vipengele na mahali pa kucheza"
+      ],
+      [
+        "Typical features include a betting panel, balance, bet history and multiplier history. Many online casinos offer Rocketman or similar rocket crash games. Choose a licensed site with secure payments and clear terms. Demo versions are often available.",
+        "Vipengele vya kawaida ni paneli ya dau, salio, historia ya dau na historia ya multiplier. Kasino nyingi mtandaoni hutoa Rocketman au michezo ya rocket crash inayofanana. Chagua tovuti yenye leseni, malipo salama na masharti wazi. Matoleo ya demo mara nyingi yanapatikana."
+      ],
+      [
+        "Strategies",
+        "Mikakati"
+      ],
+      [
+        "Set a budget and stick to it. Use low multipliers for frequent small wins or higher ones for bigger payouts and higher risk. Auto cash-out can remove emotion from the decision. Past results do not predict the next crash.",
+        "Weka bajeti na ushirikiane nayo. Tumia multiplier za chini kwa ushindi mdogo wa mara kwa mara au za juu kwa malipo makubwa na hatari zaidi. Auto Cash Out inaweza kuondoa hisia kwenye uamuzi. Matokeo ya zamani hayatabiri crash ijayo."
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "What is Rocketman? A crash game where you bet on a climbing rocket and cash out before it crashes.",
+        "Rocketman ni nini? Mchezo wa crash ambapo unadau kwenye roketi inayopanda na kufanya Cash Out kabla iharibike."
+      ],
+      [
+        "Is it fair? Reputable versions use RNG or provably fair technology.",
+        "Je, ni haki? Matoleo ya kuaminika hutumia RNG au teknolojia ya provably fair."
+      ],
+      [
+        "Responsible gaming: Independent platform. Play only where legal.",
+        "Kamari yenye uwajibikaji: Jukwaa huru. Cheza tu mahali ambapo ni halali."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Rocketman",
+        "Rocketman"
+      ],
+      [
+        "Jeu crash Rocketman",
+        "Lisano ya crash Rocketman"
+      ],
+      [
+        "Rocketman est un jeu crash dans lequel une fusée monte pendant que le multiplicateur augmente. Vous placez une mise puis choisissez le bon moment pour encaisser avant le crash.",
+        "Rocketman ezali lisano ya crash oyo fusée ekomaka pendant multiplicateur ezali komata. Otia pari mpe oponaka tango ya cash-out liboso ya crash."
+      ],
+      [
+        "Comment jouer",
+        "Ndenge ya kobeta"
+      ],
+      [
+        "Définissez votre mise avant le début du round. La fusée décolle et le multiplicateur part de 1,00x puis grimpe en temps réel. Vous pouvez encaisser manuellement ou définir un cash-out automatique. Si vous sortez à temps, votre gain correspond à mise × multiplicateur ; sinon, la mise est perdue. Le point de crash est déterminé de façon aléatoire via RNG ou système provably fair.",
+        "Poná pari na yo liboso ya round. Fusée ebimaka mpe multiplicateur ebandaka na 1,00x mpe ekomaka na tango ya solo. Okoki cash-out na manual to cash-out auto. Soki ozui na tango, gain = pari × multiplicateur; soki te, pari ebungami. Point ya crash ezali hasard via RNG to système provably fair."
+      ],
+      [
+        "Fonctionnalités de Rocketman",
+        "Ba fonction ya Rocketman"
+      ],
+      [
+        "Fonctionnalités et où jouer",
+        "Ba fonction mpe esika ya kobeta"
+      ],
+      [
+        "On retrouve en général un panneau de mise, le solde, l’historique des mises et l’historique des multiplicateurs. De nombreux casinos en ligne proposent Rocketman ou des jeux crash similaires. Privilégiez une plateforme licenciée, avec des paiements sécurisés et des conditions claires. Une version démo est souvent disponible.",
+        "Mingi tango bazali panel ya pari, solde, historique ya ba pari mpe historique ya multiplicateur. Ba casino ya internet mingi epesi Rocketman to ba crash game ya fusée. Priorise site ya licence, ba paiement ya sécurité mpe condition ya polele. Version demo ezali mbala na mbala."
+      ],
+      [
+        "Stratégies",
+        "Ba strategy"
+      ],
+      [
+        "Fixez un budget et respectez-le. Les faibles multiplicateurs conviennent aux gains modestes mais plus fréquents, tandis que les multiplicateurs élevés offrent des paiements plus importants avec davantage de risque. Le cash-out automatique aide à limiter les décisions émotionnelles. Les résultats précédents ne permettent pas de prédire le prochain crash.",
+        "Poná budget mpe respecte yango. Ba multiplicateur ya moke ezali malamu mpo na ba gain ya moto kasi ya mbala na mbala; ba multiplicateur ya likolo epesi ba paiement ya monene na riski mingi. Cash-out auto esalisaka kokitisa ba décision ya emotion. Ba resultat ya liboso e prévoir te crash elandi."
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Qu’est-ce que Rocketman ? Un jeu crash où vous misez sur une fusée en montée et encaissez avant sa chute.",
+        "Rocketman ezali nini? Lisano ya crash wapi obeti na fusée oyo ekomaka mpe ozui cash-out liboso ya chute."
+      ],
+      [
+        "Le jeu est-il équitable ? Les versions fiables utilisent un RNG ou une technologie provably fair.",
+        "Lisano ezali fair? Ba version ya confiance basalaka RNG to technologie provably fair."
+      ],
+      [
+        "Jeu responsable : Plateforme indépendante. Jouez uniquement là où c’est légal.",
+        "Jeu responsable: Plateforme indépendante. Beta kaka esika ezali legal."
+      ]
+    ]
+  }
+}

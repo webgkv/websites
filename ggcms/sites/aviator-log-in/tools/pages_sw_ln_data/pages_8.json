@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Guides",
+      "title": "Mwongozo wa Aviator: Sheria na Mikakati",
+      "description": "Miongozo ya Aviator: jinsi ya kucheza, Cash Out, mikakati na uchezaji wenye uwajibikaji."
+    },
+    "ln": {
+      "name": "Guides",
+      "title": "Ba mwongozo ya Aviator: Mibeko mpe strategy",
+      "description": "Ba guide ya Aviator: ndenge ya kobeta, Cash Out, ba strategy mpe kobeta na responsabilité."
+    }
+  }
+}

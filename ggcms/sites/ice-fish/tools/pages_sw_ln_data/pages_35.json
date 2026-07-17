@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Authors",
+      "title": "Waandishi wa Ice Fish",
+      "description": "Timu ya waandishi wetu: uzoefu wa iGaming, Ice Fish na mapitio ya kasino."
+    },
+    "ln": {
+      "name": "Authors",
+      "title": "Ba auteur ya Ice Fish",
+      "description": "Équipe na biso: expérience iGaming, Ice Fish mpe ba tala ya casino."
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Lottery 7 Aviator",
+      "title": "Lottery 7 Aviator: Bahati Mtandaoni, Viwango vya Tuzo",
+      "description": "Mwongozo wa Lottery 7 Aviator: jinsi ya kucheza, viwango vya tuzo, mpira wa bonasi, sheria za droo na uchezaji salama mtandaoni."
+    },
+    "ln": {
+      "name": "Lottery 7 Aviator",
+      "title": "Lottery 7 Aviator: Loterie en Ligne, Ba Niveaux ya Gain",
+      "description": "Guide ya Lottery 7 Aviator: ndenge ya kosala, ba niveaux ya gain, boule bonus, ba règles ya tirage mpe kosala en ligne na sécurité."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Lottery 7 Aviator",
+        "Lottery 7 Aviator"
+      ],
+      [
+        "Start playing Lottery 7",
+        "Anza kucheza Lottery 7"
+      ],
+      [
+        "Prize structure",
+        "Muundo wa tuzo"
+      ],
+      [
+        "Bonus ball and second-chance draw",
+        "Mpira wa bonasi na droo ya nafasi ya pili"
+      ],
+      [
+        "Draw rules",
+        "Sheria za droo"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Lottery 7 numbers",
+        "Nambari za Lottery 7"
+      ],
+      [
+        "Winning in Aviator-style games leads players to try different strategies: some look for timing formulas, others rely on luck. The truth is a mix of chance and careful decisions. Here we look at how Lottery 7 works, probability and what might improve your experience.",
+        "Kushinda katika michezo ya mtindo wa Aviator huwafanya wachezaji kujaribu mikakati tofauti: wengine hutafuta fomula za timing, wengine hutegemea bahati. Ukweli ni mchanganyiko wa bahati na maamuzi ya makini. Hapa tunaangalia jinsi Lottery 7 inavyofanya kazi, uwezekano na kinachoweza kuboresha uzoefu wako."
+      ],
+      [
+        "Lottery 7 Aviator combines number-picking with fast action. You choose numbers, place a bet and watch the draw. Log in, check your balance, pick a game format, enter your stake in the slip, choose your numbers and confirm.",
+        "Lottery 7 Aviator inachanganya kuchagua nambari na hatua za haraka. Unachagua nambari, unaweka dau na kuangalia droo. Ingia, angalia salio, chagua muundo wa mchezo, weka dau kwenye slip, chagua nambari na uthibitishe."
+      ],
+      [
+        "Winnings are split into tiers by how many numbers you match. The jackpot goes to all seven; partial matches pay less. Amounts depend on ticket sales and the prize pool. The table below is a rough guide.",
+        "Ushindi hugawanywa kwa viwango kulingana na nambari unazolingana. Jackpot huenda kwa zote saba; mechi za sehemu hulipa kidogo. Kiasi hutegemea mauzo ya tiketi na prize pool. Jedwali hapa chini ni mwongozo wa takriban."
+      ],
+      [
+        "Prize tier",
+        "Kiwango cha tuzo"
+      ],
+      [
+        "Matching numbers",
+        "Nambari zinazolingana"
+      ],
+      [
+        "Estimated prize",
+        "Tuzo inayokadiriwa"
+      ],
+      [
+        "$1,000,000+",
+        "$1,000,000+"
+      ],
+      [
+        "May roll over if no winner",
+        "Inaweza kuendelea ikiwa hakuna mshindi"
+      ],
+      [
+        "$50,000&ndash;$100,000",
+        "$50,000&ndash;$100,000"
+      ],
+      [
+        "Depends on number of winners",
+        "Inategemea idadi ya washindi"
+      ],
+      [
+        "$5,000&ndash;$10,000",
+        "$5,000&ndash;$10,000"
+      ],
+      [
+        "Often shared",
+        "Mara nyingi hugawanywa"
+      ],
+      [
+        "$100&ndash;$500",
+        "$100&ndash;$500"
+      ],
+      [
+        "$10&ndash;$50",
+        "$10&ndash;$50"
+      ],
+      [
+        "After the main draw a bonus ball can be drawn; matching it can pay a separate prize even if your main numbers did not win. Not every round has this. Second-chance draws give non-winning tickets another shot; entry is from the original ticket, no extra cost. Prizes vary; check the rules per draw.",
+        "Baada ya droo kuu mpira wa bonasi unaweza kuchorwa; kuulingana kunaweza kulipa tuzo tofauti hata nambari zako kuu hazikushindi. Sio kila raundi ina hii. Droo za nafasi ya pili huwapa tiketi zisizoshinda nafasi nyingine; kuingia ni kutoka tiketi ya awali, bila gharama ya ziada. Tuzo hutofautiana; angalia sheria kwa kila droo."
+      ],
+      [
+        "Each round uses 42 balls; seven are drawn at random. If fewer than seven are selected (e.g. technical fault), the draw is void and stakes are refunded. If nine or more balls enter the tube, only the first seven count. Confirm your ticket to enter; once confirmed, it cannot be changed.",
+        "Kila raundi hutumia mipira 42; saba huchorwa kwa nasibu. Ikiwa chini ya saba zimechaguliwa (mf. hitilafu ya kiufundi), droo haifanyi kazi na dau hurudishwa. Ikiwa mipira tisa au zaidi inaingia kwenye tube, saba za kwanza tu huhesabiwa. Thibitisha tiketi yako kuingia; ukishathibitishwa, haiwezi kubadilishwa."
+      ],
+      [
+        "Description",
+        "Maelezo"
+      ],
+      [
+        "Number pool",
+        "Kundi la nambari"
+      ],
+      [
+        "42 balls; seven drawn at random",
+        "Mipira 42; saba huchorwa kwa nasibu"
+      ],
+      [
+        "Valid draw",
+        "Droo halali"
+      ],
+      [
+        "At least 7 balls; otherwise annulled and refunded",
+        "Angalau mipira 7; vinginevyo inafutwa na dau hurudishwa"
+      ],
+      [
+        "Excess balls",
+        "Mipira ya ziada"
+      ],
+      [
+        "Only first 7 count; rest ignored",
+        "Saba za kwanza tu huhesabiwa; zingine hupuuzwa"
+      ],
+      [
+        "How do I play? Buy a ticket, choose numbers from 1&ndash;42, wait for the draw. Match more numbers for higher tiers.",
+        "Ninachezaje? Nunua tiketi, chagua nambari kutoka 1&ndash;42, subiri droo. Lingana nambari zaidi kwa viwango vya juu."
+      ],
+      [
+        "What if more than 7 balls are drawn? Only the first 7 count.",
+        "Je, ikiwa mipira zaidi ya 7 imechorwa? Saba za kwanza tu huhesabiwa."
+      ],
+      [
+        "Responsible gaming: Independent platform. Play only where legal. Links may lead to third-party sites.",
+        "Uchezaji wenye uwajibikaji: Jukwaa huru. Cheza tu mahali halali. Viungo vinaweza kupeleka kwenye tovuti za wahusika wengine."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Lottery 7 Aviator",
+        "Lottery 7 Aviator"
+      ],
+      [
+        "Comment jouer à Lottery 7 Aviator",
+        "Ndenge ya kosala Lottery 7 Aviator"
+      ],
+      [
+        "Structure des gains",
+        "Structure ya ba gains"
+      ],
+      [
+        "Boule bonus et règles du tirage",
+        "Boule bonus mpe ba règles ya tirage"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Numéros de Lottery 7 Aviator",
+        "Ba numéros ya Lottery 7 Aviator"
+      ],
+      [
+        "Lottery 7 Aviator est un jeu de loterie rapide : vous choisissez vos numéros, validez votre billet et attendez le tirage. Le résultat repose sur le hasard, mais connaître les niveaux de gain, la boule bonus et les règles du tirage permet de jouer de façon plus sereine.",
+        "Lottery 7 Aviator ezali lisano ya loterie ya noki : oponi ba numéros na yo, o confirmer billet mpe ozela tirage. Résultat etongi na hasard, kasi koyeba ba niveaux ya gain, boule bonus mpe ba règles ya tirage epesaka yo kosala na sérénité."
+      ],
+      [
+        "Connectez-vous, vérifiez votre solde, choisissez le format disponible, indiquez votre mise sur le billet puis sélectionnez vos numéros. Une fois le ticket confirmé, il participe au tirage correspondant et ne peut plus être modifié.",
+        "Kota, talá solde na yo, pona format oyo ezali, tyá mise na billet mpe pona ba numéros na yo. Soki ticket e confirmer, e participer na tirage oyo ekokani mpe ekoki kobongisama lisusu te."
+      ],
+      [
+        "Les gains sont répartis par paliers selon le nombre de numéros corrects. Les montants exacts varient selon les ventes et le fonds de lots, mais le tableau ci-dessous résume le fonctionnement habituel.",
+        "Ba gains e répartir na ba paliers selon nombre ya numéros corrects. Ba montants exacts e vary selon ba ventes mpe fonds ya lots, kasi tableau oyo ezali na nsé e résumer fonctionnement habituel."
+      ],
+      [
+        "Palier de gain",
+        "Palier ya gain"
+      ],
+      [
+        "Numéros corrects",
+        "Ba numéros corrects"
+      ],
+      [
+        "Gain estimé",
+        "Gain estimé"
+      ],
+      [
+        "Remarques",
+        "Remarques"
+      ],
+      [
+        "$1,000,000+",
+        "$1,000,000+"
+      ],
+      [
+        "Report si aucun gagnant",
+        "Report soki gagnant ezali te"
+      ],
+      [
+        "Niveau 2",
+        "Niveau 2"
+      ],
+      [
+        "$50,000-$100,000",
+        "$50,000-$100,000"
+      ],
+      [
+        "Varie selon le nombre de gagnants",
+        "E vary selon nombre ya ba gagnants"
+      ],
+      [
+        "Niveau 3",
+        "Niveau 3"
+      ],
+      [
+        "$5,000-$10,000",
+        "$5,000-$10,000"
+      ],
+      [
+        "Souvent partagé",
+        "Mbala mingi e partager"
+      ],
+      [
+        "Niveau 4",
+        "Niveau 4"
+      ],
+      [
+        "$100-$500",
+        "$100-$500"
+      ],
+      [
+        "Gain fixe",
+        "Gain fixe"
+      ],
+      [
+        "Niveau 5",
+        "Niveau 5"
+      ],
+      [
+        "Après le tirage principal, une boule bonus peut parfois être ajoutée et ouvrir un gain séparé. Le tirage utilise 42 boules et sept numéros sont retenus. Si un incident technique empêche un tirage valable, la manche est annulée et les mises sont remboursées. Si plus de sept boules entrent dans le tube, seules les sept premières comptent.",
+        "Na nsima ya tirage principal, boule bonus ekoki kobakama mpe kofungola gain séparé. Tirage esalelaka 42 boules mpe numéros motoba e retenir. Soki incident technique e empêcher tirage valable, manche e annuler mpe ba mises e rembourser. Soki boules e surpasser motoba e kota na tube, kaka motoba ya liboso e compter."
+      ],
+      [
+        "Comment jouer ? Choisissez des numéros de 1 à 42, validez votre mise et attendez le tirage.",
+        "Ndenge nini nakosala ? Pona ba numéros ya 1 kino 42, confirmer mise na yo mpe ozela tirage."
+      ],
+      [
+        "Que se passe-t-il si plus de 7 boules sortent ? Seules les sept premières boules sont prises en compte pour le résultat.",
+        "Nini ekosala soki boules e surpasser 7 e bima ? Kaka motoba ya liboso e compter mpo na résultat."
+      ],
+      [
+        "Jeu responsable : Plateforme indépendante. Jouez uniquement là où c'est légal. Les liens peuvent mener vers des sites tiers.",
+        "Jeu responsable : Plateforme indépendante. Sala kaka esika ezali légal. Ba liens ekoki komema na ba sites tiers."
+      ]
+    ]
+  }
+}

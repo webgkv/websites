@@ -1,0 +1,112 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Kamari ya Uwajibikaji",
+      "title": "Kamari ya Uwajibikaji | Ice Fish",
+      "description": "Cheza kwa usalama: vikomo, kujiondoa na mashirika ya msaada kwa tatizo la kamari."
+    },
+    "ln": {
+      "name": "Kobeta na responsabilité",
+      "title": "Kobeta na responsabilité | Ice Fish",
+      "description": "Kobeta na libateli: ba limites, auto-exclusion mpe ba organismes ya lisalisi mpo na problème ya pari."
+    }
+  },
+  "pairs": {
+    "sw": [
+      ["Play for entertainment, not income", "Cheza kwa burudani, si kipato"],
+      ["Tools many operators offer", "Zana nyingi waendeshaji hutoa"],
+      ["Underage gambling", "Kamari ya watoto chini ya umri"],
+      ["Help organisations (examples)", "Mashirika ya msaada (mifano)"],
+      ["Our role", "Jukumu letu"],
+      [
+        "Gambling should be fun. Never bet money you need for rent, bills, or savings. If you feel stressed, anxious, or chase losses, it is time to stop and seek help.",
+        "Kamari inapaswa kuwa ya kufurahisha. Kamwe usibeti pesa unayohitaji kwa kodi, bili, au akiba. Ukihisi msongo, wasiwasi, au unafuatilia hasara, ni wakati wa kusimama na kutafuta msaada."
+      ],
+      ["Deposit, loss, and time limits", "Vikomo vya amana, hasara, na muda"],
+      ["Reality checks", "Ukaguzi wa ukweli"],
+      ["and session reminders", "na vikumbusho vya kikao"],
+      ["Self-exclusion", "Kujiondoa"],
+      ["(temporary or permanent blocks)", "(kuzuia kwa muda au kabisa)"],
+      ["Account closure", "Kufunga akaunti"],
+      [
+        "Exact tools depend on the casino you use&mdash;check their responsible gambling or &ldquo;safer gambling&rdquo; section.",
+        "Zana halisi hutegemea kasino unayotumia&mdash;angalia sehemu yao ya kamari ya uwajibikaji au &ldquo;safer gambling&rdquo;."
+      ],
+      [
+        "Gambling is only for adults who meet the legal age in their country. Never allow minors to use your account.",
+        "Kamari ni kwa watu wazima tu wanaokidhi umri wa kisheria nchini mwao. Usiruhusu watoto chini ya umri kutumia akaunti yako."
+      ],
+      [
+        "Support services vary by country. Examples include:",
+        "Huduma za msaada hutofautiana kulingana na nchi. Mifano ni pamoja na:"
+      ],
+      [
+        "BeGambleAware &mdash; <a href=\"https://www.begambleaware.org\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">begambleaware.org</a>",
+        "BeGambleAware &mdash; <a href=\"https://www.begambleaware.org\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">begambleaware.org</a>"
+      ],
+      [
+        "GamCare (UK) &mdash; <a href=\"https://www.gamcare.org.uk\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">gamcare.org.uk</a>",
+        "GamCare (UK) &mdash; <a href=\"https://www.gamcare.org.uk\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">gamcare.org.uk</a>"
+      ],
+      [
+        "Gamblers Anonymous &mdash; local chapters worldwide",
+        "Gamblers Anonymous &mdash; matawi ya ndani duniani kote"
+      ],
+      [
+        "Add or replace with organisations relevant to your audience after review.",
+        "Ongeza au badilisha na mashirika yanayofaa kwa hadhira yako baada ya ukaguzi."
+      ],
+      [
+        "<strong>Ice Fish</strong> is an information site, not a casino. We encourage responsible play and compliance with local law. If you believe you have a gambling problem, please contact a professional helpline today.",
+        "<strong>Ice Fish</strong> ni tovuti ya habari, si kasino. Tunahimiza uchezaji wenye uwajibikaji na utii wa sheria za ndani. Ukiwa unaamini una tatizo la kamari, tafadhali wasiliana na simu ya msaada ya kitaalamu leo."
+      ]
+    ],
+    "fr_ln": [
+      ["Jouer pour le plaisir, pas pour gagner sa vie", "Kobeta mpo na esengo, te mpo na kozua mbongo"],
+      ["Outils propos&eacute;s par de nombreux op&eacute;rateurs", "Ba outils oyo ba opérateurs mingi epesaka"],
+      ["Jeux des mineurs", "Kobeta ya ba mineurs"],
+      ["Organismes d&rsquo;aide (exemples)", "Ba organismes ya lisalisi (misolo)"],
+      ["Notre r&ocirc;le", "Rôle na biso"],
+      [
+        "Le jeu doit rester un divertissement. Ne pariez jamais l&rsquo;argent n&eacute;cessaire au logement, aux factures ou &agrave; l&rsquo;&eacute;pargne. Si vous vous sentez stress&eacute;, anxieux ou si vous &laquo; poursuivez vos pertes &raquo;, arr&ecirc;tez et demandez de l&rsquo;aide.",
+        "Pari esengeli kozala esengo. Kobeta mbongo oyo osengeli mpo na ndako, factures to epargne te. Soki ozali na stress, anxiety to ozali &laquo; kolanda ba pertes &raquo;, tekisa mpe luka lisalisi."
+      ],
+      ["Limites de d&eacute;p&ocirc;t, de pertes et de temps", "Ba limites ya dépôt, pertes mpe temps"],
+      ["Rappels de r&eacute;alit&eacute;", "Ba rappels ya réalité"],
+      ["et temps de session", "mpe temps ya session"],
+      ["Auto-exclusion", "Auto-exclusion"],
+      ["(blocage temporaire ou d&eacute;finitif)", "(blocage temporaire to définitif)"],
+      ["Fermeture de compte", "Fermeture ya compte"],
+      [
+        "Les outils exacts d&eacute;pendent du casino que vous utilisez : consultez sa rubrique &laquo; jeu responsable &raquo; ou &eacute;quivalent.",
+        "Ba outils ya solo depend ya casino oyo osaleli : tala rubrique &laquo; jeu responsable &raquo; to équivalent."
+      ],
+      [
+        "Les jeux d&rsquo;argent sont r&eacute;serv&eacute;s aux adultes ayant l&rsquo;&acirc;ge l&eacute;gal dans leur pays. Ne laissez jamais un mineur utiliser votre compte.",
+        "Ba jeux d&rsquo;argent ezali mpo na ba adultes oyo bazali na &acirc;ge ya mibeko na mboka na bango. Kobakisa mineur kosalela compte na yo te."
+      ],
+      ["Les services varient selon les pays. Exemples :", "Ba services ebongwanaka selon mboka. Misolo :"],
+      [
+        "Joueurs Info Service (France) &mdash; ligne d&rsquo;&eacute;coute d&eacute;di&eacute;e au jeu excessif",
+        "Joueurs Info Service (France) &mdash; ligne d&rsquo;&eacute;coute d&eacute;di&eacute;e au jeu excessif"
+      ],
+      [
+        "BeGambleAware &mdash; <a href=\"https://www.begambleaware.org\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">begambleaware.org</a>",
+        "BeGambleAware &mdash; <a href=\"https://www.begambleaware.org\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">begambleaware.org</a>"
+      ],
+      [
+        "GamCare (Royaume-Uni) &mdash; <a href=\"https://www.gamcare.org.uk\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">gamcare.org.uk</a>",
+        "GamCare (Royaume-Uni) &mdash; <a href=\"https://www.gamcare.org.uk\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">gamcare.org.uk</a>"
+      ],
+      [
+        "Compl&eacute;tez la liste avec les organismes pertinents pour votre audience apr&egrave;s validation.",
+        "Kobakisa to kobongola na ba organismes oyo esengeli mpo na audience na yo sima ya validation."
+      ],
+      [
+        "<strong>Ice Fish</strong> est un site d&rsquo;information, pas un casino. Nous encourageons un jeu responsable et le respect de la loi locale. Si vous pensez avoir un probl&egrave;me avec le jeu, contactez d&egrave;s maintenant un service d&rsquo;aide sp&eacute;cialis&eacute;.",
+        "<strong>Ice Fish</strong> ezali site ya information, casino te. Tolendisa kobeta na responsabilité mpe kobatela mibeko ya esika. Soki omoni ozali na problème ya pari, benga service ya lisalisi spécialisé lelo."
+      ]
+    ]
+  }
+}

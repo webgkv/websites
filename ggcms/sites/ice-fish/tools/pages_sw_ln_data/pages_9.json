@@ -1,0 +1,15 @@
+{
+  "hub_only": true,
+  "meta": {
+    "sw": {
+      "name": "Analysis",
+      "title": "Uchambuzi wa Ice Fish na Ice Fishing",
+      "description": "Uchambuzi wa Ice Fish: RTP, mechanics, hatari na tofauti na michezo mingine ya kasino."
+    },
+    "ln": {
+      "name": "Analysis",
+      "title": "Analyse ya Ice Fish mpe Ice Fishing",
+      "description": "Analyse ya Ice Fish: RTP, mécanique, riski mpe ndenge ezali different na ba lisano mosusu."
+    }
+  }
+}
