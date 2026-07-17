@@ -1,0 +1,604 @@
+{
+  "meta": {
+    "sw": {
+      "name": "Chicken Shoot",
+      "title": "Mchezo wa Chicken Shoot: Cheza kwa Pesa Halisi",
+      "description": "Mapitio ya Chicken Shoot: jinsi ya kucheza, RTP na kasino bora zinazotoa Chicken Shoot kwa pesa halisi."
+    },
+    "ln": {
+      "name": "Chicken Shoot",
+      "title": "Lisano Chicken Shoot: Bina na Mbongo ya Solo",
+      "description": "Tala ya Chicken Shoot: ndenge ya kobeta, RTP mpe ba casino ya malamu oyo epesi Chicken Shoot na mbongo ya solo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Chicken Shoot",
+        "Chicken Shoot"
+      ],
+      [
+        "Chicken Shoot Max Win",
+        "Ushindi wa Juu wa Chicken Shoot"
+      ],
+      [
+        "Select the Bet Before Each Round",
+        "Chagua Dau Kabla ya Kila Raundi"
+      ],
+      [
+        "Select Target",
+        "Chagua Lengo"
+      ],
+      [
+        "Target Types",
+        "Aina za Malengo"
+      ],
+      [
+        "Chicken Shoot Online — Shooting and Rounds",
+        "Chicken Shoot Mtandaoni — Kupiga Risasi na Raundi"
+      ],
+      [
+        "Manual Mode",
+        "Hali ya Mkono"
+      ],
+      [
+        "Auto Game",
+        "Auto Game"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Shoot online arcade game screenshot",
+        "Picha ya skrini ya mchezo wa arcade wa Chicken Shoot mtandaoni"
+      ],
+      [
+        "Chicken Shoot gameplay with moving chicken targets",
+        "Mchezo wa Chicken Shoot na malengo ya kuku yanayosogea"
+      ],
+      [
+        "Chicken Shoot shooting action on the farm screen",
+        "Hatua ya kupiga risasi ya Chicken Shoot kwenye skrini ya shamba"
+      ],
+      [
+        "Chicken Shoot is one of the more action-based games in the Chicken Road universe. It keeps the same funny chicken style, but the feeling is different from the original road-crossing game. Here the name already tells you what to expect: faster movement, shooting mechanics, and a more active arcade mood.",
+        "Chicken Shoot ni mojawapo ya michezo yenye vitendo zaidi katika ulimwengu wa Chicken Road. Inabaki na mtindo ule ule wa kuku wa kuchekesha, lakini hisia ni tofauti na mchezo wa asili wa kuvuka barabara. Hapa jina tayari linakuambia unachotarajia: harakati za haraka, mbinu za kupiga risasi, na hali ya arcade yenye shughuli zaidi."
+      ],
+      [
+        "This version is likely to suit players who want something more dynamic. Not just moving step by step, not just waiting for the right cash out moment, but a game that feels closer to a small arcade shooter. The chicken theme stays, but the rhythm becomes sharper.",
+        "Toleo hili linaweza kuwafaa wachezaji wanaotaka kitu chenye nguvu zaidi. Si kusogea hatua kwa hatua tu, si kusubiri tu wakati sahihi wa cash out, bali mchezo unaohisi karibu na shooter mdogo wa arcade. Mada ya kuku inabaki, lakini mpangilio unakuwa mkali zaidi."
+      ],
+      [
+        "Chicken Shoot feels like the noisy cousin of the Chicken Road series. Same chicken world, but the mood is not about calmly crossing the road anymore. Here everything sounds more active from the name alone — shooting, movement, faster reactions.",
+        "Chicken Shoot inahisi kama ndugu wa kelele wa msururu wa Chicken Road. Ulimwengu ule ule wa kuku, lakini hali si tena kuhusu kuvuka barabara kwa utulivu. Hapa kila kitu kinasikika hai zaidi kutoka jina pekee — kupiga risasi, harakati, majibu ya haraka."
+      ],
+      [
+        "This version is for players who want more action on the screen. Not just step, wait, cash out. The game is a small arcade shooter — it feels quicker and a bit more chaotic.",
+        "Toleo hili ni kwa wachezaji wanaotaka vitendo zaidi kwenye skrini. Si hatua, subiri, cash out tu. Mchezo ni shooter mdogo wa arcade — unahisi wa haraka na wa fujo kidogo."
+      ],
+      [
+        "The rhythm is different — it is less about slow pressure and more about reaction. That makes it a good side game for players who already know Chicken Road and want something with a different tempo.",
+        "Mpangilio ni tofauti — si sana kuhusu msukumo wa polepole bali kuhusu majibu. Hii inafanya iwe mchezo mzuri wa upande kwa wachezaji ambao tayari wanajua Chicken Road na wanataka kitu chenye tempo tofauti."
+      ],
+      [
+        "What works here is the same thing that works across the whole series: the game does not look like a classic slot. No reels, no heavy symbol grid, no long explanation before you start. You open it and understand the idea pretty fast.",
+        "Kinachofanya kazi hapa ni kitu kile kile kinachofanya kazi katika msururu mzima: mchezo hauonekani kama slot ya kawaida. Hakuna reels, hakuna gridi nzito ya alama, hakuna maelezo marefu kabla ya kuanza. Unafungua na unaelewa wazo haraka."
+      ],
+      [
+        "Try the shooter-style game to see how it works in practice — it is a completely different experience from the road-crossing format.",
+        "Jaribu mchezo wa mtindo wa shooter uone jinsi unavyofanya kazi kwa vitendo — ni uzoefu tofauti kabisa kutoka muundo wa kuvuka barabara."
+      ],
+      [
+        "Chicken Shoot can pay up to $20,000 in this build. Here one round is one shot. You pick the stake, choose a target, fire, and get the result almost immediately.",
+        "Chicken Shoot inaweza kulipa hadi $20,000 katika build hii. Hapa raundi moja ni risasi moja. Unachagua dau, unachagua lengo, unapiga, na unapata matokeo karibu papo hapo."
+      ],
+      [
+        "That speed is what makes the game fun, but also risky. A few shots can happen very quickly, and if you do not watch the bet size, the total amount wagered grows faster than it seems.",
+        "Kasi hiyo ndiyo inayofanya mchezo uwe wa kufurahisha, lakini pia wa hatari. Risasi chache zinaweza kutokea haraka sana, na ukishindwa kuangalia ukubwa wa dau, jumla ya kiasi kilichowekwa dau inakua haraka kuliko inavyoonekana."
+      ],
+      [
+        "Before every shot, you choose how much you want to risk. In Chicken Shoot, 1 round = 1 shot, so the stake applies only to the next action.",
+        "Kabla ya kila risasi, unachagua kiasi unachotaka kuhatarisha. Katika Chicken Shoot, raundi 1 = risasi 1, hivyo dau linatumika tu kwa hatua inayofuata."
+      ],
+      [
+        "The flow is simple:",
+        "Mtiririko ni rahisi:"
+      ],
+      [
+        "set the bet;",
+        "weka dau;"
+      ],
+      [
+        "choose a chicken target;",
+        "chagua lengo la kuku;"
+      ],
+      [
+        "take the shot;",
+        "piga risasi;"
+      ],
+      [
+        "if the shot is successful, the payout uses that target's multiplier;",
+        "risasi ikifanikiwa, malipo hutumia multiplier ya lengo hilo;"
+      ],
+      [
+        "if the shot fails, the round ends with no payout.",
+        "risasi ikishindwa, raundi inaisha bila malipo."
+      ],
+      [
+        "This makes the game easy to read. You always know how much is on the line before pressing the button. No hidden sequence, no long spin cycle, no waiting for several stages to finish.",
+        "Hii inafanya mchezo uwe rahisi kusoma. Unajua kila wakati kiasi kilicho hatarini kabla ya kubofya kitufe. Hakuna mlolongo uliofichwa, hakuna mzunguko mrefu wa spin, hakuna kusubiri hatua kadhaa zimalizike."
+      ],
+      [
+        "Still, that does not mean the game is safe. The rounds are short, and short rounds can make players click faster than they planned. Set the stake carefully before every shot.",
+        "Bado, hiyo haimaanishi mchezo ni salama. Raundi ni fupi, na raundi fupi zinaweza kuwafanya wachezaji kubofya haraka kuliko walivyopanga. Weka dau kwa makini kabla ya kila risasi."
+      ],
+      [
+        "After setting the bet, you choose what to shoot. Chickens move around the screen, and each target can have its own multiplier.",
+        "Baada ya kuweka dau, unachagua unachopiga risasi. Kuku husogea kwenye skrini, na kila lengo linaweza kuwa na multiplier yake."
+      ],
+      [
+        "There are two ways to play:",
+        "Kuna njia mbili za kucheza:"
+      ],
+      [
+        "Manual selection — tap the chicken you want to shoot.",
+        "Uchaguzi wa mkono — gusa kuku unayotaka kupiga risasi."
+      ],
+      [
+        "Automatic selection — use the SPIN button or auto settings to shoot without picking every target yourself.",
+        "Uchaguzi wa kiotomatiki — tumia kitufe cha SPIN au mipangilio ya auto kupiga risasi bila kuchagua kila lengo mwenyewe."
+      ],
+      [
+        "Manual play gives more control over the rhythm. You can wait for a better target, ignore lower multipliers, or stop between shots. Auto mode is faster, but it can also make the balance move quickly if you are not careful.",
+        "Kucheza kwa mkono hutoa udhibiti zaidi wa mpangilio. Unaweza kusubiri lengo bora, kupuuza multiplier za chini, au kusimama kati ya risasi. Hali ya auto ni ya haraka zaidi, lakini pia inaweza kusogeza salio haraka ukishindwa kuwa makini."
+      ],
+      [
+        "The target you choose matters because the multiplier changes the possible return. Lower multipliers feel calmer. Higher multipliers look better, but usually come with a more volatile experience.",
+        "Lengo unalochagua linahitaji kwa sababu multiplier inabadilisha kurudi inayowezekana. Multiplier za chini zinahisi tulivu zaidi. Multiplier za juu zinaonekana bora, lakini kwa kawaida huja na uzoefu wa kutokuwa thabiti zaidi."
+      ],
+      [
+        "Chicken Shoot has different chickens flying around the farm, and each one can carry a different multiplier.",
+        "Chicken Shoot ina kuku tofauti warukao kwenye shamba, na kila mmoja anaweza kubeba multiplier tofauti."
+      ],
+      [
+        "The base multiplier range goes from 1.1x to 48x. With the progressive growth mechanic, a target value can rise even higher, up to 120x.",
+        "Masafa ya msingi ya multiplier huenda kutoka 1.1x hadi 48x. Kwa mbinu ya ukuaji wa kuendelea, thamani ya lengo inaweza kupanda zaidi, hadi 120x."
+      ],
+      [
+        "Characteristic",
+        "Sifa"
+      ],
+      [
+        "Base Multiplier Range",
+        "Masafa ya Msingi ya Multiplier"
+      ],
+      [
+        "1.1x to 48x",
+        "1.1x to 48x"
+      ],
+      [
+        "Maximum Growth Potential",
+        "Uwezo wa Juu wa Ukuaji"
+      ],
+      [
+        "Up to 120x",
+        "Hadi 120x"
+      ],
+      [
+        "Screen Behavior",
+        "Tabia ya Skrini"
+      ],
+      [
+        "Chickens move randomly",
+        "Kuku husogea kwa nasibu"
+      ],
+      [
+        "Selection Method",
+        "Njia ya Uchaguzi"
+      ],
+      [
+        "Manual tap or automatic targeting",
+        "Gusa kwa mkono au kulenga kiotomatiki"
+      ],
+      [
+        "The player sees targets moving around the screen, but the payout depends on the chicken selected and the shot result. That is the core of the game: pick the target, take the risk, and see if the shot pays.",
+        "Mchezaji anaona malengo yanayosogea kwenye skrini, lakini malipo yanategemea kuku uliochaguliwa na matokeo ya risasi. Hiyo ndiyo kiini cha mchezo: chagua lengo, chukua hatari, na uone kama risasi inalipa."
+      ],
+      [
+        "The basic Chicken Shoot loop is very short: set a bet, wait for the targets, shoot, and get the result.",
+        "Mzunguko wa msingi wa Chicken Shoot ni mfupi sana: weka dau, subiri malengo, piga risasi, na upate matokeo."
+      ],
+      [
+        "If the shot is successful, the chicken explodes and the bet is multiplied by the target coefficient. If the shot fails, the round ends without a payout.",
+        "Risasi ikifanikiwa, kuku hulipuka na dau linazidishwa na mgawo wa lengo. Risasi ikishindwa, raundi inaisha bila malipo."
+      ],
+      [
+        "Because every round is so quick, Chicken Shoot feels fast on casino platforms.",
+        "Kwa sababu kila raundi ni ya haraka sana, Chicken Shoot inahisi haraka kwenye majukwaa ya kasino."
+      ],
+      [
+        "Manual mode gives you control over each shot. One tap means one round. You choose the target, the timing, and when to stop.",
+        "Hali ya mkono inakupa udhibiti wa kila risasi. Gusa moja linamaanisha raundi moja. Unachagua lengo, wakati, na lini uache."
+      ],
+      [
+        "This mode is better for players who want to think between shots instead of letting the game run too fast.",
+        "Hali hii ni bora kwa wachezaji wanaotaka kufikiria kati ya risasi badala ya kuacha mchezo uendelee haraka sana."
+      ],
+      [
+        "Manual mode gives you space to:",
+        "Hali ya mkono inakupa nafasi ya:"
+      ],
+      [
+        "pick the exact chicken on the screen;",
+        "kuchagua kuku halisi kwenye skrini;"
+      ],
+      [
+        "wait for a preferred multiplier;",
+        "kusubiri multiplier unayopendelea;"
+      ],
+      [
+        "change the stake between rounds;",
+        "kubadilisha dau kati ya raundi;"
+      ],
+      [
+        "pause after a loss;",
+        "kusimama baada ya hasara;"
+      ],
+      [
+        "avoid automatic rapid-fire play.",
+        "kuepuka kucheza kwa rapid-fire kiotomatiki."
+      ],
+      [
+        "Auto Game is the faster option. After the settings are prepared, the game can keep firing automatically until the sequence ends or the player stops it.",
+        "Auto Game ni chaguo la haraka zaidi. Mipangilio ikishajiandaa, mchezo unaweza kuendelea kupiga risasi kiotomatiki hadi mlolongo uishe au mchezaji auisitishe."
+      ],
+      [
+        "This mode is convenient, but it needs more control. Since Chicken Shoot rounds are already short, autoplay can run through many shots very quickly.",
+        "Hali hii ni rahisi, lakini inahitaji udhibiti zaidi. Kwa kuwa raundi za Chicken Shoot tayari ni fupi, autoplay inaweza kupitia risasi nyingi haraka sana."
+      ],
+      [
+        "Before using Auto Game, check the stake, target settings, and any available limits. Do not turn it on just to see what happens. That is usually how players lose track of the session.",
+        "Kabla ya kutumia Auto Game, angalia dau, mipangilio ya lengo, na vikomo vyovyote vinavyopatikana. Usiifungue tu uone kinachotokea. Hiyo ndiyo kawaida jinsi wachezaji wanavyopoteza mfuatilio wa kikao."
+      ],
+      [
+        "Auto mode is best used with small bets and clear limits. If the balance starts moving too fast, stop it manually and return to slower play.",
+        "Hali ya auto ni bora kutumia na dau ndogo na vikomo wazi. Salio likianza kusogea haraka sana, isitishe kwa mkono na urudi kwenye kucheza polepole."
+      ],
+      [
+        "Is Chicken Shoot a slot? Not really. Chicken Shoot feels more like an arcade instant game. There are no spinning reels or paylines. You set a bet, choose a chicken, shoot, and get the result right away.",
+        "Je, Chicken Shoot ni slot? Si sana. Chicken Shoot inahisi zaidi kama mchezo wa instant wa arcade. Hakuna reels zinazozunguka au paylines. Unaweka dau, unachagua kuku, unapiga risasi, na unapata matokeo mara moja."
+      ],
+      [
+        "How much can I bet? One shot is one round, so every time you fire, that exact stake amount is at risk. After the round ends, you can change the bet again.",
+        "Kiasi gani naweza kuweka dau? Risasi moja ni raundi moja, hivyo kila unapopiga, kiasi hicho cha dau kiko hatarini. Raundi ikimalizika, unaweza kubadilisha dau tena."
+      ],
+      [
+        "Is Chicken Shoot multiplayer? No. Chicken Shoot is a single-player instant game.",
+        "Je, Chicken Shoot ni multiplayer? Hapana. Chicken Shoot ni mchezo wa instant wa mchezaji mmoja."
+      ],
+      [
+        "Can I check if the round was fair? Yes. Chicken Shoot has Provably Fair tools inside the game. After a round, players can check the result through the verification system.",
+        "Naweza kuangalia kama raundi ilikuwa ya haki? Ndiyo. Chicken Shoot ina zana za Provably Fair ndani ya mchezo. Baada ya raundi, wachezaji wanaweza kuangalia matokeo kupitia mfumo wa uthibitisho."
+      ],
+      [
+        "Are there bonuses or jackpots? Chicken Shoot does not use classic slot bonuses or jackpot rounds. The game is built around shooting, target multipliers, Auto Game mode, and Progressive Win Growth.",
+        "Je, kuna bonus au jackpot? Chicken Shoot haitumii bonus za slot za kawaida au raundi za jackpot. Mchezo umejengwa karibu na kupiga risasi, multiplier za lengo, hali ya Auto Game, na Progressive Win Growth."
+      ],
+      [
+        "How does Auto Game work? In Auto Game, you can select from 1 to 8 target types. After that, the game keeps shooting at the selected chickens until the preset number of shots is finished or you stop it manually.",
+        "Auto Game inafanya kazi vipi? Katika Auto Game, unaweza kuchagua kutoka aina 1 hadi 8 za malengo. Baada ya hapo, mchezo unaendelea kupiga risasi kwenye kuku waliochaguliwa hadi idadi iliyowekwa ya risasi imalizike au uisitishe kwa mkono."
+      ],
+      [
+        "Does Chicken Shoot work on mobile? Yes. Chicken Shoot runs through HTML5 in modern mobile browsers and inside partnered casino apps.",
+        "Je, Chicken Shoot inafanya kazi kwenye simu? Ndiyo. Chicken Shoot inafanya kazi kupitia HTML5 kwenye vivinjari vya simu vya kisasa na ndani ya programu za kasino zinazoshirikiana."
+      ],
+      [
+        "Is Chicken Shoot good for long sessions? It is not really a long-session game. It is fast — one shot, instant result, next shot. That is good if you like quick gameplay, but it also means you should watch your balance carefully.",
+        "Je, Chicken Shoot ni nzuri kwa vikao virefu? Si mchezo wa kikao kirefu kweli. Ni wa haraka — risasi moja, matokeo papo hapo, risasi inayofuata. Hiyo ni nzuri ukipenda mchezo wa haraka, lakini pia inamaanisha unapaswa kuangalia salio lako kwa makini."
+      ],
+      [
+        "What does adjusted variance mean? It means the game is not locked into one flat risk model. Chicken Shoot is built to give a flexible risk-and-reward feel, depending on target choice, multiplier, and play mode.",
+        "Adjusted variance inamaanisha nini? Inamaanisha mchezo haujafungwa kwenye mfano mmoja wa hatari. Chicken Shoot imejengwa kutoa hisia ya hatari-na-zawadi inayobadilika, kulingana na uchaguzi wa lengo, multiplier, na hali ya kucheza."
+      ],
+      [
+        "Is Chicken Shoot connected to Chicken Road? Yes. Chicken Shoot is part of the Chicken Road universe from InOut Games, but uses shooter mechanics instead of the step-by-step road format.",
+        "Je, Chicken Shoot imeunganishwa na Chicken Road? Ndiyo. Chicken Shoot ni sehemu ya ulimwengu wa Chicken Road kutoka InOut Games, lakini inatumia mbinu za shooter badala ya muundo wa barabara hatua kwa hatua."
+      ]
+    ],
+    "ln": [
+      [
+        "Chicken Shoot",
+        "Chicken Shoot"
+      ],
+      [
+        "Chicken Shoot Max Win",
+        "Gain ya likolo ya Chicken Shoot"
+      ],
+      [
+        "Select the Bet Before Each Round",
+        "Pona pari liboso ya round nionso"
+      ],
+      [
+        "Select Target",
+        "Pona cible"
+      ],
+      [
+        "Target Types",
+        "Ba type ya cible"
+      ],
+      [
+        "Chicken Shoot Online — Shooting and Rounds",
+        "Chicken Shoot Online — Tir mpe ba round"
+      ],
+      [
+        "Manual Mode",
+        "Mode manuel"
+      ],
+      [
+        "Auto Game",
+        "Auto Game"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Shoot online arcade game screenshot",
+        "Capture ya ecran ya lisano Chicken Shoot arcade online"
+      ],
+      [
+        "Chicken Shoot gameplay with moving chicken targets",
+        "Gameplay ya Chicken Shoot na ba cible ya nkoko oyo ezali kotambola"
+      ],
+      [
+        "Chicken Shoot shooting action on the farm screen",
+        "Action ya tir ya Chicken Shoot na ecran ya farm"
+      ],
+      [
+        "Chicken Shoot is one of the more action-based games in the Chicken Road universe. It keeps the same funny chicken style, but the feeling is different from the original road-crossing game. Here the name already tells you what to expect: faster movement, shooting mechanics, and a more active arcade mood.",
+        "Chicken Shoot ezali moko ya ba lisano ya action mingi na mokili ya Chicken Road. Ebatelaka style ya nkoko ya esengo moko, kasi feeling ezali different na lisano ya liboso ya kovuka nzela. Awa nkombo epesi kolobela oyo o zela: movement ya mbangu, mekaniki ya tir, mpe mood ya arcade ya active."
+      ],
+      [
+        "This version is likely to suit players who want something more dynamic. Not just moving step by step, not just waiting for the right cash out moment, but a game that feels closer to a small arcade shooter. The chicken theme stays, but the rhythm becomes sharper.",
+        "Version oyo ekoki kolonga basali oyo balingi eloko ya dynamic. Kozala kaka kotambola na step te, kozela moment ya cash out te, kasi lisano oyo ezali pene na shooter ya moke ya arcade. Theme ya nkoko ezali, kasi rhythm ezali makasi."
+      ],
+      [
+        "Chicken Shoot feels like the noisy cousin of the Chicken Road series. Same chicken world, but the mood is not about calmly crossing the road anymore. Here everything sounds more active from the name alone — shooting, movement, faster reactions.",
+        "Chicken Shoot ezali lokola cousin ya bruit na series ya Chicken Road. Mokili ya nkoko moko, kasi mood ezali te kovuka nzela na calme. Awa eloko nionso ezali active banda na nkombo moko — tir, movement, reaction ya mbangu."
+      ],
+      [
+        "This version is for players who want more action on the screen. Not just step, wait, cash out. The game is a small arcade shooter — it feels quicker and a bit more chaotic.",
+        "Version oyo ezali mpo na basali oyo balingi action mingi na ecran. Step, kozela, cash out kaka te. Lisano ezali shooter ya moke ya arcade — ezali mbangu mpe moke ya chaos."
+      ],
+      [
+        "The rhythm is different — it is less about slow pressure and more about reaction. That makes it a good side game for players who already know Chicken Road and want something with a different tempo.",
+        "Rhythm ezali different — ezali moke na pression ya molai mpe mingi na reaction. Yango esalelaka yango lisano ya side ya malamu mpo na basali oyo bazali koyeba Chicken Road mpe balingi eloko na tempo ya different."
+      ],
+      [
+        "What works here is the same thing that works across the whole series: the game does not look like a classic slot. No reels, no heavy symbol grid, no long explanation before you start. You open it and understand the idea pretty fast.",
+        "Oyo esalaka awa ezali eloko moko oyo esalaka na series mobimba: lisano e look te lokola slot ya classique. Ba reel te, grid ya symbole ya makasi te, explication ya molai liboso ya kobanda te. Ofungola mpe oyebi idea mbangu."
+      ],
+      [
+        "Try the shooter-style game to see how it works in practice — it is a completely different experience from the road-crossing format.",
+        "Leka lisano ya style shooter mpo na kotala ndenge esalaka na pratique — ezali experience ya solo different na format ya kovuka nzela."
+      ],
+      [
+        "Chicken Shoot can pay up to $20,000 in this build. Here one round is one shot. You pick the stake, choose a target, fire, and get the result almost immediately.",
+        "Chicken Shoot ekoki kofuta tii $20,000 na build oyo. Awa round moko ezali tir moko. Pona pari, pona cible, tire, mpe zua resultat mbala moko."
+      ],
+      [
+        "That speed is what makes the game fun, but also risky. A few shots can happen very quickly, and if you do not watch the bet size, the total amount wagered grows faster than it seems.",
+        "Vitesse yango wana esalelaka lisano ezala esengo, kasi riski mpe. Ba tir moke ekoki kosala mbangu, mpe soki otala te taille ya pari, motango ya pari total ekobaluka mbangu koleka oyo ezali komonana."
+      ],
+      [
+        "Before every shot, you choose how much you want to risk. In Chicken Shoot, 1 round = 1 shot, so the stake applies only to the next action.",
+        "Liboso ya tir nionso, pona motango oyo olingi kobeta riski. Na Chicken Shoot, 1 round = 1 tir, yango wana pari esalelaka kaka action oyo ekolanda."
+      ],
+      [
+        "The flow is simple:",
+        "Flow ezali pépé:"
+      ],
+      [
+        "set the bet;",
+        "botia pari;"
+      ],
+      [
+        "choose a chicken target;",
+        "pona cible ya nkoko;"
+      ],
+      [
+        "take the shot;",
+        "tire;"
+      ],
+      [
+        "if the shot is successful, the payout uses that target's multiplier;",
+        "soki tir elongi, payout esalelaka multiplier ya cible wana;"
+      ],
+      [
+        "if the shot fails, the round ends with no payout.",
+        "soki tir e echoue, round esuka na payout te."
+      ],
+      [
+        "This makes the game easy to read. You always know how much is on the line before pressing the button. No hidden sequence, no long spin cycle, no waiting for several stages to finish.",
+        "Yango esalelaka lisano pépé mpo na kotanga. Oyebi ntango nyonso motango oyo ezali na riski liboso ya kopresser bouton. Sequence ya caché te, cycle ya spin ya molai te, kozela ba étape ebele te."
+      ],
+      [
+        "Still, that does not mean the game is safe. The rounds are short, and short rounds can make players click faster than they planned. Set the stake carefully before every shot.",
+        "Kasi yango elingi koloba te ete lisano ezali safe. Ba round ezali moke, mpe ba round ya moke ekoki kosala basali click mbangu koleka oyo baplanifie. Botia pari na attention liboso ya tir nionso."
+      ],
+      [
+        "After setting the bet, you choose what to shoot. Chickens move around the screen, and each target can have its own multiplier.",
+        "Na nsima ya pari, pona oyo okotaka tir. Ba nkoko batambolaka na ecran, mpe cible nionso ekoki kozala na multiplier na yango."
+      ],
+      [
+        "There are two ways to play:",
+        "Ezali na ndenge mibale ya kobeta:"
+      ],
+      [
+        "Manual selection — tap the chicken you want to shoot.",
+        "Selection manuelle — tap nkoko oyo olingi kotira."
+      ],
+      [
+        "Automatic selection — use the SPIN button or auto settings to shoot without picking every target yourself.",
+        "Selection automatique — sala na bouton SPIN to ba setting ya auto mpo na kotira na kozanga kopona cible nionso."
+      ],
+      [
+        "Manual play gives more control over the rhythm. You can wait for a better target, ignore lower multipliers, or stop between shots. Auto mode is faster, but it can also make the balance move quickly if you are not careful.",
+        "Kobeta na maboko epesi contrôle mingi na rhythm. Okoki kozela cible ya malamu, koboya multiplier ya moke, to kozela kati ya ba tir. Mode auto ezali mbangu, kasi ekoki kosala solde ekobaluka mbangu soki ozali careful te."
+      ],
+      [
+        "The target you choose matters because the multiplier changes the possible return. Lower multipliers feel calmer. Higher multipliers look better, but usually come with a more volatile experience.",
+        "Cible oyo oponi ezali na ntina mpo na ete multiplier e change retour oyo ekoki. Multiplier ya moke ezali calme. Multiplier ya likolo e look malamu, kasi mingi ntango ezali na experience ya volatile."
+      ],
+      [
+        "Chicken Shoot has different chickens flying around the farm, and each one can carry a different multiplier.",
+        "Chicken Shoot ezali na ba nkoko ya different oyo batambolaka na farm, mpe nionso ekoki kozala na multiplier ya different."
+      ],
+      [
+        "The base multiplier range goes from 1.1x to 48x. With the progressive growth mechanic, a target value can rise even higher, up to 120x.",
+        "Range ya multiplier ya base ekomi kowuta 1.1x tii 48x. Na mekaniki ya progressive growth, valeur ya cible ekoki kobanda likolo, tii 120x."
+      ],
+      [
+        "Characteristic",
+        "Caractéristique"
+      ],
+      [
+        "Base Multiplier Range",
+        "Range ya multiplier ya base"
+      ],
+      [
+        "1.1x to 48x",
+        "1.1x to 48x"
+      ],
+      [
+        "Maximum Growth Potential",
+        "Potentiel ya likolo ya croissance"
+      ],
+      [
+        "Up to 120x",
+        "Tii 120x"
+      ],
+      [
+        "Screen Behavior",
+        "Comportement ya ecran"
+      ],
+      [
+        "Chickens move randomly",
+        "Ba nkoko batambolaka na hasard"
+      ],
+      [
+        "Selection Method",
+        "Méthode ya sélection"
+      ],
+      [
+        "Manual tap or automatic targeting",
+        "Tap manuel to ciblage automatique"
+      ],
+      [
+        "The player sees targets moving around the screen, but the payout depends on the chicken selected and the shot result. That is the core of the game: pick the target, take the risk, and see if the shot pays.",
+        "Mosali atali ba cible oyo batambolaka na ecran, kasi payout etalelaka nkoko oyo eponami mpe resultat ya tir. Yango wana core ya lisano: pona cible, beta riski, mpe tala soki tir efuti."
+      ],
+      [
+        "The basic Chicken Shoot loop is very short: set a bet, wait for the targets, shoot, and get the result.",
+        "Loop ya liboso ya Chicken Shoot ezali moke mingi: botia pari, zela ba cible, tire, mpe zua resultat."
+      ],
+      [
+        "If the shot is successful, the chicken explodes and the bet is multiplied by the target coefficient. If the shot fails, the round ends without a payout.",
+        "Soki tir elongi, nkoko e explose mpe pari e multiply na coefficient ya cible. Soki tir e echoue, round esuka na payout te."
+      ],
+      [
+        "Because every round is so quick, Chicken Shoot feels fast on casino platforms.",
+        "Mpo na ete round nionso ezali mbangu, Chicken Shoot ezali mbangu na ba plateforme ya casino."
+      ],
+      [
+        "Manual mode gives you control over each shot. One tap means one round. You choose the target, the timing, and when to stop.",
+        "Mode manuel epesi yo contrôle na tir nionso. Tap moko elingi koloba round moko. Pona cible, timing, mpe tango ya kozela."
+      ],
+      [
+        "This mode is better for players who want to think between shots instead of letting the game run too fast.",
+        "Mode oyo ezali malamu mpo na basali oyo balingi kofikiri kati ya ba tir na esika ya kotala lisano ekobeta mbangu mingi."
+      ],
+      [
+        "Manual mode gives you space to:",
+        "Mode manuel epesi yo espace mpo na:"
+      ],
+      [
+        "pick the exact chicken on the screen;",
+        "kopona nkoko ya solo na ecran;"
+      ],
+      [
+        "wait for a preferred multiplier;",
+        "kozela multiplier oyo olingi;"
+      ],
+      [
+        "change the stake between rounds;",
+        "kobongola pari kati ya ba round;"
+      ],
+      [
+        "pause after a loss;",
+        "kozela nsima ya perte;"
+      ],
+      [
+        "avoid automatic rapid-fire play.",
+        "koboya rapid-fire automatique."
+      ],
+      [
+        "Auto Game is the faster option. After the settings are prepared, the game can keep firing automatically until the sequence ends or the player stops it.",
+        "Auto Game ezali option ya mbangu. Soki ba setting esili, lisano ekoki kotira automatiquement tii sequence esuka to mosali a stop."
+      ],
+      [
+        "This mode is convenient, but it needs more control. Since Chicken Shoot rounds are already short, autoplay can run through many shots very quickly.",
+        "Mode oyo ezali pratique, kasi esengeli contrôle mingi. Mpo na ete ba round ya Chicken Shoot ezali moke, autoplay ekoki kobeta ba tir ebele mbangu."
+      ],
+      [
+        "Before using Auto Game, check the stake, target settings, and any available limits. Do not turn it on just to see what happens. That is usually how players lose track of the session.",
+        "Liboso ya kosalela Auto Game, talá pari, ba setting ya cible, mpe ba limit oyo ezali. Kobanda yango kaka mpo na kotala oyo ekobima te. Yango ndenge basali babungaka track ya session."
+      ],
+      [
+        "Auto mode is best used with small bets and clear limits. If the balance starts moving too fast, stop it manually and return to slower play.",
+        "Mode auto ezali malamu na pari ya moke mpe limit ya polele. Soki solde ebandi kobaluka mbangu, stop yango na maboko mpe zonga na kobeta ya molai."
+      ],
+      [
+        "Is Chicken Shoot a slot? Not really. Chicken Shoot feels more like an arcade instant game. There are no spinning reels or paylines. You set a bet, choose a chicken, shoot, and get the result right away.",
+        "Chicken Shoot ezali slot? Te vraiment. Chicken Shoot ezali pene na lisano instant ya arcade. Ba reel to payline ezali te. Botia pari, pona nkoko, tire, mpe zua resultat mbala moko."
+      ],
+      [
+        "How much can I bet? One shot is one round, so every time you fire, that exact stake amount is at risk. After the round ends, you can change the bet again.",
+        "Nakoki kobeta boni? Tir moko ezali round moko, yango wana chaque fois o tire, pari wana ezali na riski. Round esuka, okoki kobongola pari lisusu."
+      ],
+      [
+        "Is Chicken Shoot multiplayer? No. Chicken Shoot is a single-player instant game.",
+        "Chicken Shoot ezali multijoueur? Te. Chicken Shoot ezali lisano instant ya mosali moko."
+      ],
+      [
+        "Can I check if the round was fair? Yes. Chicken Shoot has Provably Fair tools inside the game. After a round, players can check the result through the verification system.",
+        "Nakoki kotya soki round ezalaki fair? Ee. Chicken Shoot ezali na ba outil Provably Fair na kati ya lisano. Nsima ya round, basali bakoki kotya resultat na système ya verification."
+      ],
+      [
+        "Are there bonuses or jackpots? Chicken Shoot does not use classic slot bonuses or jackpot rounds. The game is built around shooting, target multipliers, Auto Game mode, and Progressive Win Growth.",
+        "Ezali na bonus to jackpot? Chicken Shoot esalelaka te bonus ya slot ya classique to round ya jackpot. Lisano esalemi na tir, multiplier ya cible, mode Auto Game, mpe Progressive Win Growth."
+      ],
+      [
+        "How does Auto Game work? In Auto Game, you can select from 1 to 8 target types. After that, the game keeps shooting at the selected chickens until the preset number of shots is finished or you stop it manually.",
+        "Auto Game esalaka ndenge nini? Na Auto Game, okoki kopona kowuta 1 tii 8 type ya cible. Na nsima, lisano e continuer kotira ba nkoko oyo eponami tii motango ya tir esili to o stop na maboko."
+      ],
+      [
+        "Does Chicken Shoot work on mobile? Yes. Chicken Shoot runs through HTML5 in modern mobile browsers and inside partnered casino apps.",
+        "Chicken Shoot esalaka na mobile? Ee. Chicken Shoot esalaka na HTML5 na ba navigateur mobile ya sika mpe na ba app ya casino partenaire."
+      ],
+      [
+        "Is Chicken Shoot good for long sessions? It is not really a long-session game. It is fast — one shot, instant result, next shot. That is good if you like quick gameplay, but it also means you should watch your balance carefully.",
+        "Chicken Shoot ezali malamu mpo na ba session ya molai? Ezali lisusu te lisano ya session ya molai. Ezali mbangu — tir moko, resultat instant, tir oyo elandi. Ezali malamu soki olingi gameplay ya mbangu, kasi esengeli kotala solde na yo na attention."
+      ],
+      [
+        "What does adjusted variance mean? It means the game is not locked into one flat risk model. Chicken Shoot is built to give a flexible risk-and-reward feel, depending on target choice, multiplier, and play mode.",
+        "Adjusted variance elingi koloba nini? Elingi koloba lisano e lock te na modèle ya riski moko. Chicken Shoot esalemi mpo na kopesa feeling ya riski-et-reward flexible, kotalela choix ya cible, multiplier, mpe mode ya kobeta."
+      ],
+      [
+        "Is Chicken Shoot connected to Chicken Road? Yes. Chicken Shoot is part of the Chicken Road universe from InOut Games, but uses shooter mechanics instead of the step-by-step road format.",
+        "Chicken Shoot ezali connecté na Chicken Road? Ee. Chicken Shoot ezali na mokili ya Chicken Road ya InOut Games, kasi esalelaka mekaniki ya shooter na esika ya format ya nzela na step."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,901 @@
+{
+  "ln_from_fr": true,
+  "meta": {
+    "sw": {
+      "name": "Original Chicken Road",
+      "title": "Chicken Road: Mchezo wa Crash wa Asili — Mapitio",
+      "description": "Mapitio kamili ya Chicken Road asili: sheria, RTP, InOut Games na tofauti na Chicken Road 2.0 kabla ya kucheza kwa pesa halisi."
+    },
+    "ln": {
+      "name": "Original Chicken Road",
+      "title": "Chicken Road: Lisano ya Crash ya Liboso — Tala",
+      "description": "Tala mobimba ya Chicken Road ya liboso: mibeko, RTP, InOut Games mpe ndenge ezali different na Chicken Road 2.0 liboso ya kobeta na mbongo ya solo."
+    }
+  },
+  "pairs": {
+    "sw": [
+      [
+        "Chicken Road Game",
+        "Mchezo wa Chicken Road"
+      ],
+      [
+        "Basic Info",
+        "Taarifa za Msingi"
+      ],
+      [
+        "Free Chicken Road Demo",
+        "Demo ya Bure ya Chicken Road"
+      ],
+      [
+        "Reach $20,000 in Max Winnings",
+        "Fikia $20,000 katika Ushindi wa Juu"
+      ],
+      [
+        "Chicken Road Difficulty Levels",
+        "Viwango vya Ugumu vya Chicken Road"
+      ],
+      [
+        "Easy",
+        "Easy"
+      ],
+      [
+        "Medium",
+        "Medium"
+      ],
+      [
+        "Hard",
+        "Hard"
+      ],
+      [
+        "Hardcore",
+        "Hardcore"
+      ],
+      [
+        "Provably Fair Technology",
+        "Teknolojia ya Provably Fair"
+      ],
+      [
+        "Chicken Road Bonus Game",
+        "Bonus Game ya Chicken Road"
+      ],
+      [
+        "Chicken Road vs Chicken Road Bonus",
+        "Chicken Road dhidi ya Chicken Road Bonus"
+      ],
+      [
+        "Chicken Road Awards and Recognition",
+        "Tuzo na Utambuzi wa Chicken Road"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Chicken Road multiplier climbing during a round",
+        "Multiplier ya Chicken Road inapanda wakati wa raundi"
+      ],
+      [
+        "Chicken Road max win screen with high multiplier",
+        "Skrini ya ushindi wa juu wa Chicken Road na multiplier ya juu"
+      ],
+      [
+        "Chicken Road round ending after a failed step",
+        "Raundi ya Chicken Road inaisha baada ya hatua iliyoshindwa"
+      ],
+      [
+        "Chicken Road was made for players who like fast crash-style games with simple rules and quick decisions.",
+        "Chicken Road iliundwa kwa wachezaji wanaopenda michezo ya crash ya haraka yenye sheria rahisi na maamuzi ya papo hapo."
+      ],
+      [
+        "Chicken Road does not try to look like a classic slot. No reels, no overloaded screen, no long bonus rules. Every safe step increases the potential payout. The more you move forward, the better the multiplier looks. But that is also where the risk starts to grow. One bad step can end the round, so the whole game comes down to timing and discipline.",
+        "Chicken Road haijaribu kuonekana kama slot ya kawaida. Hakuna reels, hakuna skrini iliyojaa vitu, hakuna sheria ndefu za bonus. Kila hatua salama huongeza malipo yanayowezekana. Kadri unavyosonga mbele, ndivyo multiplier inavyoonekana bora. Lakini hapo ndipo hatari inapoanza kukua. Hatua moja mbaya inaweza kumaliza raundi, hivyo mchezo mzima unategemea timing na nidhamu."
+      ],
+      [
+        "Game Type",
+        "Aina ya Mchezo"
+      ],
+      [
+        "Single-player crash game",
+        "Mchezo wa crash wa mchezaji mmoja"
+      ],
+      [
+        "Release Date",
+        "Tarehe ya Kutolewa"
+      ],
+      [
+        "04.04.2024",
+        "04.04.2024"
+      ],
+      [
+        "Main Mechanic",
+        "Mfumo Mkuu"
+      ],
+      [
+        "Move forward, grow the multiplier, cash out before losing",
+        "Songa mbele, ongeza multiplier, fanya Cash Out kabla ya kupoteza"
+      ],
+      [
+        "Want to see how far your chicken can go without risking real money? On our site, you can open the Free Chicken Road Demo instantly.",
+        "Unataka kuona kuku wako anaweza kwenda mbali kiasi gani bila kuhatarisha pesa halisi? Kwenye tovuti yetu, unaweza kufungua Demo ya Bure ya Chicken Road mara moja."
+      ],
+      [
+        "In demo, you play with virtual credits. In real mode, every mistake touches your own money.",
+        "Katika demo, unacheza na mikopo ya kawaida. Katika hali halisi, kila kosa hugusa pesa yako mwenyewe."
+      ],
+      [
+        "Use demo mode as a test lab. Try safe runs, push for higher multipliers, lose a few rounds, restart, and see what kind of strategy feels natural for you. It is the easiest way to understand Chicken Road before making real bets.",
+        "Tumia demo kama maabara ya majaribio. Jaribu raundi salama, shinikiza multipliers za juu, poteza raundi chache, anza upya, na uone ni strategy gani inakuhisi ya asili. Hii ndiyo njia rahisi zaidi ya kuelewa Chicken Road kabla ya kuweka dau halisi."
+      ],
+      [
+        "Use demo mode before moving to real wagers. That says a lot about how players approach this game: first test, then decide if real-money play makes sense.",
+        "Tumia demo kabla ya kuhamia kwenye dau halisi. Hii inaelezea sana jinsi wachezaji wanavyokaribia mchezo huu: kwanza jaribu, kisha uamue kama kucheza kwa pesa halisi kuna maana."
+      ],
+      [
+        "Chicken Road has a $20,000 max win cap. This is the biggest payout available in the current build. No bonus wheel, no jackpot screen, no extra mini-game. Just the chicken, the road, the multiplier, and your decision to stop or keep moving.",
+        "Chicken Road ina kikomo cha ushindi wa juu cha $20,000. Hii ndiyo malipo makubwa zaidi yanayopatikana katika toleo la sasa. Hakuna gurudumu la bonus, hakuna skrini ya jackpot, hakuna mini-game ya ziada. Kuku, barabara, multiplier, na uamuzi wako wa kusimama au kuendelea."
+      ],
+      [
+        "In theory, the cap can be reached in different ways. Looks simple on paper. In the game, it is not that easy.",
+        "Kwa nadharia, kikomo kinaweza kufikiwa kwa njia tofauti. Inaonekana rahisi kwenye karatasi. Katika mchezo, si rahisi hivyo."
+      ],
+      [
+        "The bigger multipliers usually come from higher-risk modes, especially Hard and Hardcore. These modes can look attractive because the payout grows faster, but the balance can disappear just as fast. One wrong step, and the round is over.",
+        "Multipliers kubwa kwa kawaida hutoka kwenye hali za hatari zaidi, hasa Hard na Hardcore. Hali hizi zinaweza kuonekana kuvutia kwa sababu malipo yanakua haraka, lakini salio linaweza kutoweka kwa kasi ile ile. Hatua moja mbaya, na raundi inaisha."
+      ],
+      [
+        "So chasing the $20,000 cap from the first session is not the smartest idea. Better start small. Try $1–$5 bets, play the demo first, and see how each difficulty feels. Medium and Hard make more sense only after you understand how quickly the game can turn against you.",
+        "Kwa hivyo kufuatilia kikomo cha $20,000 tangu kikao cha kwanza si wazo bora. Anza kidogo. Jaribu dau la $1–$5, cheza demo kwanza, na uone kila ugumu unahisi vipi. Medium na Hard zina maana zaidi tu baada ya kuelewa jinsi haraka mchezo unaweza kugeuka dhidi yako."
+      ],
+      [
+        "The max win is not a normal target for every round. It is the ceiling. Most players should think more about when to cash out, not how to reach the biggest number on the screen.",
+        "Ushindi wa juu si lengo la kawaida kwa kila raundi. Ni dari. Wachezaji wengi wanapaswa kufikiria zaidi lini wa-Cash Out, si jinsi ya kufikia nambari kubwa zaidi kwenye skrini."
+      ],
+      [
+        "Chicken Road gives you choices: bet size, difficulty, steps, cash out timing. But it does not give you control over the next result. A plan can help you play cleaner, but it will not guarantee a max win.",
+        "Chicken Road inakupa chaguo: ukubwa wa dau, ugumu, hatua, na timing ya Cash Out. Lakini haikupi udhibiti wa matokeo yanayofuata. Mpango unaweza kukusaidia kucheza kwa usafi, lakini hautohakikishi ushindi wa juu."
+      ],
+      [
+        "If you go for bigger multipliers, keep the risk in your head. Small bets give more attempts. Demo mode gives space to test. And sometimes taking a smaller win is better than pushing the run until it breaks.",
+        "Ukienda kwa multipliers kubwa, weka hatari akilini. Dau ndogo hutoa majaribio zaidi. Demo inatoa nafasi ya kujaribu. Na wakati mwingine kuchukua ushindi mdogo ni bora kuliko kusukuma raundi hadi ivunjike."
+      ],
+      [
+        "Chicken Road has four difficulty levels, and each one changes the whole feeling of the game. The bet range stays the same — from $0.01 to $200 — but the risk, pace, and payout growth are different.",
+        "Chicken Road ina viwango vinne vya ugumu, na kila kimoja hubadilisha hisia nzima ya mchezo. Masafa ya dau yanasalia yale yale — kutoka $0.01 hadi $200 — lakini hatari, kasi, na ukuaji wa malipo ni tofauti."
+      ],
+      [
+        "Do not think of these modes as player skill levels. Easy does not mean you are bad, and Hardcore does not mean you are a pro. It is more about how much risk you are ready to take in one run.",
+        "Usifikirie hali hizi kama viwango vya ujuzi wa mchezaji. Easy haimaanishi kuwa mbaya, na Hardcore haimaanishi kuwa pro. Ni zaidi kuhusu kiasi cha hatari uko tayari kuchukua katika raundi moja."
+      ],
+      [
+        "Best For",
+        "Bora kwa"
+      ],
+      [
+        "Payout Feel",
+        "Hisia ya Malipo"
+      ],
+      [
+        "Beginners, demo testing, calm play",
+        "Wanaoanza, majaribio ya demo, mchezo wa utulivu"
+      ],
+      [
+        "Slow and steady",
+        "Polepole na thabiti"
+      ],
+      [
+        "Regular players",
+        "Wachezaji wa kawaida"
+      ],
+      [
+        "Moderate",
+        "Wastani"
+      ],
+      [
+        "Better growth, more pressure",
+        "Ukuaji bora, msukumo zaidi"
+      ],
+      [
+        "Riskier play",
+        "Mchezo wa hatari zaidi"
+      ],
+      [
+        "Fast multiplier jumps",
+        "Miruko ya haraka ya multiplier"
+      ],
+      [
+        "High-risk players",
+        "Wachezaji wa hatari kubwa"
+      ],
+      [
+        "Very high",
+        "Juu sana"
+      ],
+      [
+        "Sharp growth, low room for error",
+        "Ukuaji mkali, nafasi ndogo ya kosa"
+      ],
+      [
+        "Easy mode is the best place to start. The multiplier does not grow as aggressively, but that is the trade-off. You get a smoother game and more room to cash out before things go wrong.",
+        "Hali ya Easy ndiyo mahali bora pa kuanza. Multiplier haikui kwa ukali, lakini hiyo ndiyo badiliko. Unapata mchezo laini na nafasi zaidi ya Cash Out kabla ya mambo kuharibika."
+      ],
+      [
+        "Medium is where Chicken Road starts to feel more active. The multiplier grows faster than on Easy, but the game also becomes less forgiving.",
+        "Medium ndipo Chicken Road inapoanza kuhisi hai zaidi. Multiplier inakua haraka kuliko Easy, lakini mchezo pia unakuwa mgumu kusamehe makosa."
+      ],
+      [
+        "This is the most balanced mode, but still, you need a plan. Decide your exit point before the round starts, not when emotions are already involved.",
+        "Hii ndiyo hali iliyo na usawa zaidi, lakini bado unahitaji mpango. Amua hatua yako ya kutoka kabla raundi haijaanza, si wakati hisia tayari zimeshajihusisha."
+      ],
+      [
+        "Hard mode is already a serious jump. The payouts look better, but the risk grows fast.",
+        "Hali ya Hard tayari ni kuruka kubwa. Malipo yanaonekana bora, lakini hatari inakua haraka."
+      ],
+      [
+        "This mode is not for random clicking. If you play Hard, it makes sense to use smaller stakes and choose your cash out point in advance. One extra step can look tempting, but this is exactly where the round can turn against you.",
+        "Hali hii si kwa kubofya bila mpango. Ukicheza Hard, ni busara kutumia dau ndogo na kuchagua hatua yako ya Cash Out mapema. Hatua moja ya ziada inaweza kuonekana ya kuvutia, lakini hapa hasa ndipo raundi inaweza kugeuka dhidi yako."
+      ],
+      [
+        "Hardcore is the most volatile mode. The multiplier can grow widely. It can look attractive because of the payout potential, but it can also drain a balance very quickly. Try it in demo first and keep the stakes low.",
+        "Hardcore ndiyo hali yenye mshtuko mkubwa zaidi. Multiplier inaweza kukua sana. Inaweza kuonekana kuvutia kwa sababu ya uwezo wa malipo, lakini pia inaweza kumaliza salio haraka sana. Jaribu kwenye demo kwanza na weka dau chini."
+      ],
+      [
+        "The difficulty does not make you a better player. It only changes the risk curve. Easy gives more control over the session. Hardcore gives bigger numbers, but much less breathing room.",
+        "Ugumu haukufanyi mchezaji bora. Hubadilisha tu mkondo wa hatari. Easy inatoa udhibiti zaidi wa kikao. Hardcore inatoa nambari kubwa, lakini nafasi ndogo sana ya kupumua."
+      ],
+      [
+        "Chicken Road uses Provably Fair technology, so the result of a round is not just hidden somewhere on the casino side. Each run can be checked and verified after the game is finished.",
+        "Chicken Road inatumia teknolojia ya Provably Fair, hivyo matokeo ya raundi hayafichwi tu upande wa kasino. Kila raundi inaweza kukaguliwa na kuthibitishwa baada ya mchezo kumalizika."
+      ],
+      [
+        "Here is the simple idea. Before the round starts, the game locks the result with a cryptographic hash. After the round ends, the server seed, client seed, and final hash can be checked. This lets players confirm that the outcome was created before the round and was not changed after pressing Play.",
+        "Wazo rahisi ni hili. Kabla raundi haijaanza, mchezo hufunga matokeo kwa hash ya cryptographic. Baada ya raundi kuisha, server seed, client seed, na hash ya mwisho vinaweza kukaguliwa. Hii inawawezesha wachezaji kuthibitisha kuwa matokeo yaliundwa kabla ya raundi na hayakubadilishwa baada ya kubonyeza Play."
+      ],
+      [
+        "How it works:",
+        "Inavyofanya kazi:"
+      ],
+      [
+        "SHA-256 encryption is used to protect the round result before the game starts",
+        "Usimbaji wa SHA-256 hutumika kulinda matokeo ya raundi kabla mchezo haujaanza"
+      ],
+      [
+        "client seed + server seed logic helps prevent manipulation from either side",
+        "Mantiki ya client seed + server seed husaidia kuzuia udanganyifu kutoka upande wowote"
+      ],
+      [
+        "after the run, players can check the seed data and final hash",
+        "baada ya raundi, wachezaji wanaweza kukagua data ya seed na hash ya mwisho"
+      ],
+      [
+        "every jump, multiplier, and losing step is part of the pre-generated result",
+        "kila ruko, multiplier, na hatua ya kupoteza ni sehemu ya matokeo yaliyotengenezwa mapema"
+      ],
+      [
+        "Why does this matter? Because in games like Chicken Road, trust is important. Provably Fair does not mean you will win more often.",
+        "Kwa nini hii ina umuhimu? Kwa sababu katika michezo kama Chicken Road, uaminifu ni muhimu. Provably Fair haimaanishi utashinda mara nyingi zaidi."
+      ],
+      [
+        "There are no hot rounds, no hidden safe path, and no secret script that starts working after you raise the bet. Each round is based on math, RNG, and the seed system behind the game. If you want the real Chicken Road experience, check that the game comes from InOut Games and that the fairness tools are available inside the game panel.",
+        "Hakuna raundi za moto, hakuna njia salama iliyofichwa, na hakuna script ya siri inayoanza kufanya kazi baada ya kuongeza dau. Kila raundi inategemea hesabu, RNG, na mfumo wa seed nyuma ya mchezo. Ukitaka uzoefu halisi wa Chicken Road, hakikisha mchezo unatoka InOut Games na zana za haki zinapatikana ndani ya paneli ya mchezo."
+      ],
+      [
+        "Chicken Road Bonus is a separate version for players who want the same chicken mechanic, but with more action around the bonus round.",
+        "Chicken Road Bonus ni toleo tofauti kwa wachezaji wanaotaka mfumo ule ule wa kuku, lakini na action zaidi karibu na raundi ya bonus."
+      ],
+      [
+        "The base game still feels familiar: the chicken moves forward, the risk grows, and the player decides when to stop. But in the Bonus version, there is an extra feature — the Bonus Game.",
+        "Mchezo wa msingi bado unajulikana: kuku husonga mbele, hatari inakua, na mchezaji anaamua lini kusimama. Lakini katika toleo la Bonus, kuna kipengele cha ziada — Bonus Game."
+      ],
+      [
+        "Chicken Road",
+        "Chicken Road"
+      ],
+      [
+        "Chicken Road Bonus",
+        "Chicken Road Bonus"
+      ],
+      [
+        "Bonus Game",
+        "Bonus Game"
+      ],
+      [
+        "Yes, 10 Free Runs",
+        "Yes, 10 Free Runs"
+      ],
+      [
+        "How Bonus Starts",
+        "Jinsi Bonus Inavyoanzia"
+      ],
+      [
+        "Not available",
+        "Haipatikani"
+      ],
+      [
+        "3 coin symbols or bonus buy",
+        "Alama 3 za sarafu au ununuzi wa bonus"
+      ],
+      [
+        "Free Runs",
+        "Free Runs"
+      ],
+      [
+        "Chicken moves automatically",
+        "Kuku husonga kiotomatiki"
+      ],
+      [
+        "Multiplier Logic",
+        "Mantiki ya Multiplier"
+      ],
+      [
+        "One round, one result",
+        "Raundi moja, matokeo moja"
+      ],
+      [
+        "Multipliers are collected together",
+        "Multipliers hukusanywa pamoja"
+      ],
+      [
+        "Controls",
+        "Vidhibiti"
+      ],
+      [
+        "Manual clicks",
+        "Mibofyo ya mkono"
+      ],
+      [
+        "Manual + Space quick-play",
+        "Mkono + Space quick-play"
+      ],
+      [
+        "Game Pace",
+        "Kasi ya Mchezo"
+      ],
+      [
+        "Slower and more tactical",
+        "Polepole na ya kimkakati zaidi"
+      ],
+      [
+        "Faster and more dynamic",
+        "Haraka na yenye nguvu zaidi"
+      ],
+      [
+        "Main Feeling",
+        "Hisia Kuu"
+      ],
+      [
+        "Step-by-step risk",
+        "Hatari hatua kwa hatua"
+      ],
+      [
+        "Bonus-focused action",
+        "Action inayolenga bonus"
+      ],
+      [
+        "To activate it, you need to collect three coin symbols during regular play. Some operators may also offer a direct bonus buy, where you can open the bonus round without waiting for the symbols to appear.",
+        "Kuianzisha, unahitaji kukusanya alama tatu za sarafu wakati wa mchezo wa kawaida. Waendeshaji wengine wanaweza pia kutoa ununuzi wa bonus wa moja kwa moja, ambapo unaweza kufungua raundi ya bonus bila kusubiri alama zionekane."
+      ],
+      [
+        "Once the Bonus Game starts, the player gets 10 Free Runs. During these runs, the chicken moves automatically and stops before the burn. The multipliers collected during the bonus are not lost after each run. They are added together and paid as one final result.",
+        "Bonus Game ikianza, mchezaji hupata 10 Free Runs. Wakati wa raundi hizi, kuku husonga kiotomatiki na kusimama kabla ya kuchomeka. Multipliers zilizokusanywa wakati wa bonus hazipotei baada ya kila raundi. Zinaongezwa pamoja na kulipwa kama matokeo moja ya mwisho."
+      ],
+      [
+        "That is the main difference from the standard Chicken Road. In the regular version, each round stands alone. You move, cash out, or lose. In Chicken Road Bonus, the bonus round builds a combined payout from several free runs, which makes the game feel faster and more event-driven.",
+        "Hiyo ndiyo tofauti kuu na Chicken Road ya kawaida. Katika toleo la kawaida, kila raundi husimama peke yake. Unasonga, Cash Out, au kupoteza. Katika Chicken Road Bonus, raundi ya bonus hujenga malipo ya pamoja kutoka Free Runs kadhaa, jambo linalofanya mchezo uhisi haraka na unaotegemea matukio."
+      ],
+      [
+        "There is also a Space quick-play option in the menu. The Bonus version feels quicker, louder, and more focused on building one bigger result through free runs. Start in demo if possible, understand how the bonus works and do not treat the feature as free money.",
+        "Pia kuna chaguo la Space quick-play kwenye menyu. Toleo la Bonus linahisi haraka, kubwa zaidi, na linalolenga kujenga matokeo makubwa moja kupitia Free Runs. Anza kwenye demo ikiwezekana, elewa jinsi bonus inavyofanya kazi na usichukulie kipengele kama pesa bure."
+      ],
+      [
+        "In 2025, Chicken Road was no longer just a new release from InOut Games. The game had already made enough noise to get noticed at industry level, including a nomination for Best Crash Game of the Year at the SiGMA Awards Africa.",
+        "Mwaka 2025, Chicken Road haikuwa tena toleo jipya tu kutoka InOut Games. Mchezo tayari ulikuwa umesikika vya kutosha kugunduliwa katika kiwango cha tasnia, ikiwa ni pamoja na uteuzi wa Best Crash Game of the Year katika SiGMA Awards Africa."
+      ],
+      [
+        "Chicken Road caught attention because it feels different from the usual click-and-wait crash games. It has a real arcade mood, animated movement, clear difficulty levels, and a format where the player feels involved in every step.",
+        "Chicken Road ilivutia umakini kwa sababu inahisi tofauti na michezo ya crash ya kawaida ya bofya-na-subiri. Ina hali halisi ya arcade, mwendo wa animation, viwango wazi vya ugumu, na muundo ambapo mchezaji anahusika katika kila hatua."
+      ],
+      [
+        "A few things helped the game stand out:",
+        "Mambo machache yalisaidia mchezo kutofautiana:"
+      ],
+      [
+        "strong player activity after launch",
+        "shughuli kubwa ya wachezaji baada ya kutolewa"
+      ],
+      [
+        "simple but memorable chicken-road mechanic",
+        "mfumo rahisi lakini unaokumbukwa wa kuku-barabara"
+      ],
+      [
+        "fast rounds that work well on mobile",
+        "raundi za haraka zinazofanya kazi vizuri kwenye simu"
+      ],
+      [
+        "clean visuals and responsive gameplay",
+        "muonekano safi na gameplay inayojibu haraka"
+      ],
+      [
+        "positive feedback from players who wanted crash games to feel more like actual games",
+        "maoni chanya kutoka kwa wachezaji waliotaka michezo ya crash ihisi zaidi kama michezo halisi"
+      ],
+      [
+        "The main strength of Chicken Road is that it does not feel like a reskinned slot. There are no reels, no symbol chaos, no long bonus screens. The game gives one clear situation: move forward, increase the multiplier, or stop before the round goes wrong.",
+        "Nguvu kuu ya Chicken Road ni kwamba haionekani kama slot iliyobadilishwa nje tu. Hakuna reels, hakuna fujo ya alama, hakuna skrini ndefu za bonus. Mchezo unatoa hali moja wazi: songa mbele, ongeza multiplier, au simama kabla raundi haijaenda vibaya."
+      ],
+      [
+        "For InOut Games, Chicken Road became more than a single release. After the first version became popular, InOut Games started building more titles around the same chicken character.",
+        "Kwa InOut Games, Chicken Road ilikuwa zaidi ya toleo moja. Baada ya toleo la kwanza kuwa maarufu, InOut Games ilianza kujenga majina zaidi karibu na mhusika huyo huyo wa kuku."
+      ],
+      [
+        "The 2025 recognition only made it more obvious: players liked the formula. Simple arcade look, short decisions, growing risk, and that constant feeling that one more step might be worth it.",
+        "Utambuzi wa 2025 ulifanya iwe wazi zaidi: wachezaji walipenda fomula. Muonekano rahisi wa arcade, maamuzi mafupi, hatari inayokua, na hisia ya mara kwa mara kwamba hatua moja zaidi inaweza kuwa na thamani."
+      ],
+      [
+        "But awards do not make the game safer. Chicken Road is still gambling when real money is involved. Start with demo mode, understand the mechanics, and play only with limits.",
+        "Lakini tuzo hazifanyi mchezo kuwa salama zaidi. Chicken Road bado ni kamari wakati pesa halisi inahusika. Anza na demo, elewa mfumo, na cheza tu na mipaka."
+      ],
+      [
+        "Can I try Chicken Road for free? Yes. You can open the Chicken Road demo and test the game without real money. No deposit is needed. Just open the demo and play with virtual credits.",
+        "Naweza kujaribu Chicken Road bure? Ndiyo. Unaweza kufungua demo ya Chicken Road na kujaribu mchezo bila pesa halisi. Hakuna amana inayohitajika. Fungua demo tu na ucheze na mikopo ya kawaida."
+      ],
+      [
+        "What devices does Chicken Road work on? The game works on every device, including desktop and mobile browsers.",
+        "Chicken Road inafanya kazi kwenye vifaa gani? Mchezo unafanya kazi kwenye kila kifaa, ikiwa ni pamoja na vivinjari vya desktop na simu."
+      ],
+      [
+        "Can casinos add Chicken Road to their platform? Yes. Chicken Road can be added through InOut Games integration — provider API, wallet connection, and lobby setup.",
+        "Je, kasino zinaweza kuongeza Chicken Road kwenye jukwaa lao? Ndiyo. Chicken Road inaweza kuongezwa kupitia ujumuishaji wa InOut Games — provider API, muunganisho wa wallet, na usanidi wa lobby."
+      ],
+      [
+        "Languages and currencies? Chicken Road is built for international use. Casinos can offer different languages; balances may show USD or crypto such as BTC, ETH, and USDT.",
+        "Lugha na sarafu? Chicken Road imejengwa kwa matumizi ya kimataifa. Kasino zinaweza kutoa lugha tofauti; salio linaweza kuonyesha USD au crypto kama BTC, ETH, na USDT."
+      ],
+      [
+        "Can I play for real money? Yes. Chicken Road is built for real-money casino play and should be offered through licensed operators.",
+        "Naweza kucheza kwa pesa halisi? Ndiyo. Chicken Road imejengwa kwa mchezo wa kasino wa pesa halisi na inapaswa kutolewa kupitia waendeshaji wenye leseni."
+      ]
+    ],
+    "fr_ln": [
+      [
+        "Jeu Chicken Road",
+        "Lisano ya Chicken Road"
+      ],
+      [
+        "Informations de base",
+        "Ba info ya liboso"
+      ],
+      [
+        "Démo gratuite Chicken Road",
+        "Demo ya ofele ya Chicken Road"
+      ],
+      [
+        "Atteindre $20,000 de gains maximum",
+        "Kokóma na $20,000 ya gain ya likolo"
+      ],
+      [
+        "Niveaux de difficulté Chicken Road",
+        "Ba niveau ya difficulty ya Chicken Road"
+      ],
+      [
+        "Easy",
+        "Easy"
+      ],
+      [
+        "Medium",
+        "Medium"
+      ],
+      [
+        "Hard",
+        "Hard"
+      ],
+      [
+        "Hardcore",
+        "Hardcore"
+      ],
+      [
+        "Technologie Provably Fair",
+        "Technologie ya Provably Fair"
+      ],
+      [
+        "Chicken Road Bonus Game",
+        "Bonus Game ya Chicken Road"
+      ],
+      [
+        "Chicken Road vs Chicken Road Bonus",
+        "Chicken Road vs Chicken Road Bonus"
+      ],
+      [
+        "Récompenses et reconnaissance",
+        "Ba prix mpe reconnaissance"
+      ],
+      [
+        "FAQ",
+        "FAQ"
+      ],
+      [
+        "Multiplicateur Chicken Road qui monte pendant une manche",
+        "Multiplier ya Chicken Road oyo ezali kokóma likolo na round"
+      ],
+      [
+        "Écran de gain maximum Chicken Road avec multiplicateur élevé",
+        "Ecran ya gain ya likolo ya Chicken Road na multiplier ya likolo"
+      ],
+      [
+        "Fin de manche Chicken Road après un pas raté",
+        "Fin ya round ya Chicken Road nsima ya step oyo elongi te"
+      ],
+      [
+        "Chicken Road s'adresse aux joueurs qui aiment les jeux crash rapides, avec des règles simples et des décisions immédiates.",
+        "Chicken Road ezali mpo na basali oyo balingi ba lisano ya crash ya mbangu, na mibeko ya pépé mpe ba likambo ya kopona ya mbala moko."
+      ],
+      [
+        "Chicken Road ne cherche pas à ressembler à une machine à sous classique. Pas de rouleaux, pas d'écran surchargé, pas de règles bonus interminables. Chaque pas sûr augmente le gain potentiel. Plus vous avancez, plus le multiplicateur est attractif — mais c'est aussi là que le risque grimpe. Un mauvais pas peut tout arrêter : le jeu repose sur le timing et la discipline.",
+        "Chicken Road e seeki te kolonga lokola slot ya liboso. Reel te, ecran ya overload te, mibeko ya bonus ya molai te. Step moko ya solo elongi augmenter gain ya possible. Koyoka liboso, multiplier ezali attractive — kasi yango wana riski ezali kokóma. Step moko ya mabe ekoki kotika nyonso : lisano etalelaka timing mpe libateli."
+      ],
+      [
+        "Caractéristique",
+        "Caractéristique"
+      ],
+      [
+        "Type de jeu",
+        "Type ya lisano"
+      ],
+      [
+        "Jeu crash solo",
+        "Lisano ya crash solo"
+      ],
+      [
+        "Date de sortie",
+        "Date ya sortie"
+      ],
+      [
+        "04.04.2024",
+        "04.04.2024"
+      ],
+      [
+        "Mise minimale",
+        "Mise ya moke"
+      ],
+      [
+        "Mécanique principale",
+        "Ndenge ya liboso"
+      ],
+      [
+        "Avancer, faire monter le multiplicateur, encaisser avant de perdre",
+        "Koyoka liboso, kosalisa multiplier kokóma, Cash Out liboso ya kobungisa"
+      ],
+      [
+        "Vous voulez voir jusqu'où votre poulet peut aller sans risquer d'argent réel ? Sur notre site, ouvrez la démo Chicken Road en un clic.",
+        "Olingi kotala nkoko na yo ekoki kokóma liboso boni na mbongo ya solo te ? Na site na biso, fungola demo Chicken Road na clic moko."
+      ],
+      [
+        "En démo, vous jouez avec des crédits virtuels. En mode réel, chaque erreur touche votre propre argent.",
+        "Na demo, obeti na ba crédit ya virtual. Na mode ya solo, libunga nionso e toucher mbongo na yo."
+      ],
+      [
+        "Utilisez la démo comme laboratoire : manches prudentes, multiplicateurs plus hauts, quelques défaites, puis recommencez pour trouver le rythme qui vous convient. C'est le moyen le plus simple de comprendre Chicken Road avant de miser.",
+        "Salela demo lokola laboratoire : ba round ya prudent, ba multiplier ya likolo, ba défaite moke, sima banda lisusu mpo na kozua rhythm oyo ekoki na yo. Yango ndenge ya pépé mpo na koyeba Chicken Road liboso ya pari."
+      ],
+      [
+        "Testez la démo avant les mises réelles — c'est l'approche la plus saine : d'abord essayer, ensuite décider si le jeu en argent réel a du sens pour vous.",
+        "Mezela demo liboso ya ba mise ya solo — yango approach ya malamu : liboso meka, sima ponar soki lisano na mbongo ya solo ezali na sens mpo na yo."
+      ],
+      [
+        "Chicken Road affiche un plafond de gain de $20,000 — le plus gros paiement possible dans la version actuelle. Pas de roue bonus, pas d'écran jackpot, pas de mini-jeu en plus : le poulet, la route, le multiplicateur et votre choix de continuer ou vous arrêter.",
+        "Chicken Road e monisa plafond ya gain ya $20,000 — paiement ya monene oyo ekoki na version ya lelo. Roue ya bonus te, ecran ya jackpot te, mini-lisano te : nkoko, nzela, multiplier mpe kopona na yo ya continuer to kotelema."
+      ],
+      [
+        "En théorie, le plafond peut être atteint de plusieurs façons. Sur le papier, c'est simple ; en jeu, beaucoup moins.",
+        "Na théorie, plafond ekoki kofikama na ba ndenge ebele. Na papier ezali pépé ; na lisano, e pépé mingi te."
+      ],
+      [
+        "Les plus gros multiplicateurs viennent surtout des modes à haut risque, notamment Hard et Hardcore. L'attrait est réel, mais la balance peut fondre tout aussi vite. Un faux pas, et la manche est finie.",
+        "Ba multiplier ya monene e bimi mingi na ba mode ya riski ya likolo, mingi Hard mpe Hardcore. Attraction ezali solo, kasi solde ekoki koyela mbangu moko. Step moko ya faux, round esili."
+      ],
+      [
+        "Viser $20,000 dès la première session n'est pas raisonnable. Commencez petit : mises de $1 à $5, démo d'abord, puis testez chaque difficulté. Medium et Hard n'ont de sens qu'une fois que vous savez à quelle vitesse le jeu peut se retourner.",
+        "Koluka $20,000 banda session ya liboso ezali raisonnable te. Banda moke : ba mise ya $1 to $5, demo liboso, sima meka difficulty nionso. Medium mpe Hard ezali na sens kaka soki oyebi mbangu nini lisano ekoki kobaluka."
+      ],
+      [
+        "Le gain max n'est pas un objectif pour chaque manche — c'est un plafond. La plupart des joueurs devraient penser au moment du Cash Out, pas au plus gros chiffre à l'écran.",
+        "Gain ya likolo ezali objectif te mpo na round nionso — ezali plafond. Basali ebele basengeli kanisa moment ya Cash Out, te chiffre ya monene na ecran."
+      ],
+      [
+        "Chicken Road laisse choisir mise, difficulté, nombre de pas et moment du Cash Out, mais pas le résultat du prochain pas. Un plan aide à jouer plus proprement ; il ne garantit pas le max.",
+        "Chicken Road epesi yo kopona mise, difficulty, motango ya step mpe moment ya Cash Out, kasi resultat ya step oyo ekoya te. Plan esalisaka kobeta malamu ; e ya surete te max."
+      ],
+      [
+        "Si vous visez de gros multiplicateurs, gardez le risque en tête. Les petites mises offrent plus de tentatives, la démo permet d'essayer, et parfois un petit gain vaut mieux qu'une manche poussée trop loin.",
+        "Soki oluki ba multiplier ya monene, batela riski na moto. Ba mise ya moke epesi ba tentative mingi, demo epesi espace ya komeka, mpe parfois gain ya moke ezali malamu koleka round oyo obimisi liboso."
+      ],
+      [
+        "Chicken Road propose quatre niveaux de difficulté ; chacun change la sensation de jeu. La plage de mise reste la même — de $0.01 à $200 — mais risque, rythme et croissance du multiplicateur diffèrent.",
+        "Chicken Road epesi ba niveau mine na difficulty ; nionso e change ndenge ya lisano. Range ya mise ezali moko — kowuta $0.01 kino $200 — kasi riski, rhythm mpe croissance ya multiplier ezali different."
+      ],
+      [
+        "Ne confondez pas ces modes avec un niveau de joueur. Easy ne signifie pas débutant incompétent, et Hardcore ne fait pas de vous un pro : tout est question de risque accepté sur une manche.",
+        "Koboya kobundisa ba mode oyo na niveau ya mosali. Easy elobaka te débutant ya mabe, Hardcore esaleli yo pro te : nyonso ezali riski oyo okondima na round moko."
+      ],
+      [
+        "Idéal pour",
+        "Malamu mpo na"
+      ],
+      [
+        "Ressenti du gain",
+        "Ndenge ya gain"
+      ],
+      [
+        "Débutants, tests en démo, jeu calme",
+        "Basali ya sika, ba test na demo, lisano ya calme"
+      ],
+      [
+        "Lent et régulier",
+        "Polepole mpe régulier"
+      ],
+      [
+        "Joueurs réguliers",
+        "Basali ya minene"
+      ],
+      [
+        "Meilleure croissance, plus de pression",
+        "Croissance ya malamu, ngombi mingi"
+      ],
+      [
+        "Jeu plus risqué",
+        "Lisano ya riski mingi"
+      ],
+      [
+        "Sauts rapides du multiplicateur",
+        "Ba saut ya mbangu ya multiplier"
+      ],
+      [
+        "Joueurs très risqués",
+        "Basali ya riski mingi"
+      ],
+      [
+        "Très élevé",
+        "Likolo mingi"
+      ],
+      [
+        "Forte croissance, peu de marge",
+        "Croissance ya makasi, espace ya moke"
+      ],
+      [
+        "Easy est le meilleur point de départ. Le multiplicateur monte moins vite, mais la manche est plus fluide et vous avez plus de marge pour encaisser avant que tout dérape.",
+        "Easy ezali point ya malamu mpo na kobanda. Multiplier ekóma polepole, kasi round ezali fluide mpe ozali na espace mingi mpo na Cash Out liboso ya ete nyonso e dérape."
+      ],
+      [
+        "Medium rend Chicken Road plus nerveux : le multiplicateur grimpe plus vite qu'en Easy, et le jeu pardonne moins.",
+        "Medium esalela Chicken Road plus nerveux : multiplier ekóma mbangu koleka Easy, mpe lisano e pardonner moke."
+      ],
+      [
+        "C'est le mode le plus équilibré, mais il faut un plan. Fixez votre point de sortie avant la manche, pas quand l'émotion prend le dessus.",
+        "Yango mode ya équilibre, kasi osengeli plan. Botia point na yo ya sortie liboso ya round, te soki emotion e déjà pris le dessus."
+      ],
+      [
+        "Hard est un vrai saut. Les gains affichés sont plus séduisants, mais le risque explose tout aussi vite.",
+        "Hard ezali saut ya solo. Ba gain oyo e monisaka ezali seduisant, kasi riski e explose mbangu moko."
+      ],
+      [
+        "Ce n'est pas un mode pour cliquer au hasard. Mises plus basses, Cash Out choisi à l'avance — un pas de trop peut coûter toute la mise.",
+        "Ezali mode te mpo na koclick na hasard. Ba mise ya nse, Cash Out oyo obotaki liboso — step moko ya trop ekoki kobebisa mise nionso."
+      ],
+      [
+        "Hardcore est le mode le plus volatil : multiplicateurs impressionnants, balance qui peut s'évaporer en quelques pas. Testez en démo et gardez des mises modestes.",
+        "Hardcore ezali mode ya volatile mingi : ba multiplier ya imngombi, solde ekoki koyela na ba step moke. Meza na demo mpe batela ba mise ya modeste."
+      ],
+      [
+        "La difficulté ne fait pas de vous un meilleur joueur — elle change seulement la courbe de risque. Easy donne plus de contrôle ; Hardcore offre de gros chiffres avec très peu de marge.",
+        "Difficulty esaleli yo mosali ya malamu te — e change kaka courbe ya riski. Easy epesi libateli mingi ; Hardcore epesi ba chiffre monene na espace ya moke mingi."
+      ],
+      [
+        "Chicken Road utilise Provably Fair : le résultat d'une manche n'est pas caché côté casino. Chaque partie peut être vérifiée une fois terminée.",
+        "Chicken Road esalelaka Provably Fair : resultat ya round ezali caché te côté casino. Partie nionso ekoki koverifier nsima ya kosilisa."
+      ],
+      [
+        "Avant le début, le jeu verrouille le résultat via un hash cryptographique. Après la manche, server seed, client seed et hash final sont consultables — preuve que l'issue était fixée avant Play.",
+        "Liboso ya ebandeli, lisano e lock resultat na hash cryptographique. Nsima ya round, server seed, client seed mpe hash ya nsuka ekoki kotalama — preuve ete issue etiamaki liboso ya Play."
+      ],
+      [
+        "Comment ça marche :",
+        "Ndenge ezali kosala :"
+      ],
+      [
+        "chiffrement SHA-256 du résultat avant le début de la manche",
+        "chiffrement SHA-256 ya resultat liboso ya kobanda round"
+      ],
+      [
+        "logique client seed + server seed pour limiter la manipulation des deux côtés",
+        "logique client seed + server seed mpo na kopekisa manipulation na ba côté mibale"
+      ],
+      [
+        "après la manche, vérification des seeds et du hash final",
+        "nsima ya round, verification ya ba seed mpe hash ya nsuka"
+      ],
+      [
+        "chaque saut, multiplicateur et pas perdant fait partie du résultat prégénéré",
+        "saut nionso, multiplier mpe step ya kobungisa ezali part ya resultat oyo etiamaki liboso"
+      ],
+      [
+        "Pourquoi c'est important ? Dans un jeu comme Chicken Road, la confiance compte. Provably Fair ne signifie pas que vous gagnerez plus souvent.",
+        "Mpo na nini ezali important ? Na lisano lokola Chicken Road, kondima ezali na ntina. Provably Fair elobaka te ete okogagner mingi."
+      ],
+      [
+        "Pas de manches « chaudes », pas de chemin secret, pas de script caché après une mise plus haute. Chaque manche repose sur les maths, le RNG et le système de seeds. Pour l'expérience authentique, vérifiez qu'il s'agit bien d'InOut Games et que les outils de vérification sont dans le panneau du jeu.",
+        "Round ya moto te, nzela ya secret te, script ya caché te nsima ya mise ya likolo. Round nionso etalelaka maths, RNG mpe système ya seed. Mpo na experience ya solo, verifier ete ezali InOut Games mpe ba outil ya verification ezali na panel ya lisano."
+      ],
+      [
+        "Chicken Road Bonus est une version à part pour ceux qui veulent la même mécanique du poulet, avec plus d'action autour du tour bonus.",
+        "Chicken Road Bonus ezali version ya pépé mpo na oyo balingi ndenge moko ya nkoko, na action mingi na tour ya bonus."
+      ],
+      [
+        "Le jeu de base reste familier : le poulet avance, le risque monte, vous décidez quand vous arrêter. La version Bonus ajoute le Bonus Game.",
+        "Lisano ya base ezali nayo eyebani : nkoko akataka, riski ekóma, ozali k ponar tango ya kotelema. Version Bonus abakisa Bonus Game."
+      ],
+      [
+        "Chicken Road",
+        "Chicken Road"
+      ],
+      [
+        "Chicken Road Bonus",
+        "Chicken Road Bonus"
+      ],
+      [
+        "Bonus Game",
+        "Bonus Game"
+      ],
+      [
+        "Oui, 10 Free Runs",
+        "Oui, 10 Free Runs"
+      ],
+      [
+        "Déclenchement bonus",
+        "Déclenchement ya bonus"
+      ],
+      [
+        "Non disponible",
+        "Ezali te"
+      ],
+      [
+        "3 symboles pièce ou achat bonus",
+        "Ba symbole 3 ya pièce to achat ya bonus"
+      ],
+      [
+        "Free Runs",
+        "Free Runs"
+      ],
+      [
+        "Le poulet avance automatiquement",
+        "Nkoko akataka yango moko"
+      ],
+      [
+        "Logique multiplicateur",
+        "Logique ya multiplier"
+      ],
+      [
+        "Une manche, un résultat",
+        "Round moko, resultat moko"
+      ],
+      [
+        "Multiplicateurs cumulés",
+        "Ba multiplier oyo e cumuler"
+      ],
+      [
+        "Contrôles",
+        "Ba libateli"
+      ],
+      [
+        "Clics manuels",
+        "Ba clic ya maboko"
+      ],
+      [
+        "Manuel + Space quick-play",
+        "Manuel + Space quick-play"
+      ],
+      [
+        "Plus lent, plus tactique",
+        "Plus lent, plus tactique"
+      ],
+      [
+        "Plus rapide et dynamique",
+        "Plus rapide mpe dynamique"
+      ],
+      [
+        "Sensation",
+        "Sensation"
+      ],
+      [
+        "Risque pas à pas",
+        "Riski step na step"
+      ],
+      [
+        "Action centrée sur le bonus",
+        "Action oyo ezali na bonus"
+      ],
+      [
+        "Il faut réunir trois symboles pièce en jeu normal. Certains opérateurs proposent un achat bonus direct pour lancer le tour sans attendre les symboles.",
+        "Osengeli kokanga ba symbole misato ya pièce na lisano ya solo. Ba opérateur mosusu epesi achat ya bonus direct mpo na kobanda tour na kozela ba symbole te."
+      ],
+      [
+        "Au lancement du Bonus Game, le joueur reçoit 10 Free Runs. Le poulet avance seul et s'arrête avant la perte. Les multiplicateurs du bonus s'additionnent pour un paiement final unique.",
+        "Na lancement ya Bonus Game, mosali azua 10 Free Runs. Nkoko akataka yango moko mpe akoma liboso ya pété. Ba multiplier ya bonus e additionner mpo na paiement ya nsuka moko."
+      ],
+      [
+        "C'est la différence majeure avec Chicken Road classique : chaque manche est isolée (avancer, Cash Out ou perdre). En Bonus, plusieurs free runs construisent un gain combiné — plus rapide et plus spectaculaire.",
+        "Yango difference ya monene na Chicken Road ya classique : round nionso ezali isolé (koyoka, Cash Out to kobungisa). Na Bonus, ba free run ebele esalela gain oyo e combiner — plus rapide mpe plus spectaculaire."
+      ],
+      [
+        "Un raccourci Space quick-play est aussi disponible. Testez en démo, comprenez le bonus et ne le traitez pas comme de l'argent gratuit.",
+        "Raccourci Space quick-play ezali mpe. Meza na demo, yebisa bonus mpe koboya koyebisa yango lokola mbongo ya ofele."
+      ],
+      [
+        "En 2025, Chicken Road n'était plus une simple nouveauté InOut Games : le titre avait déjà marqué l'industrie, avec une nomination Best Crash Game of the Year aux SiGMA Awards Africa.",
+        "Na 2025, Chicken Road ezali lisusu te nouveauté ya pépé InOut Games : titre e déjà marquer industrie, na nomination Best Crash Game of the Year na SiGMA Awards Africa."
+      ],
+      [
+        "Le jeu se démarque des crash games « clic et attente » : ambiance arcade, animation, niveaux de difficulté clairs et implication à chaque pas.",
+        "Lisano e différent na ba crash game ya clic mpe attente : ambiance ya arcade, animation, ba niveau ya difficulty ya clair mpe implication na step nionso."
+      ],
+      [
+        "Quelques éléments ont aidé à se démarquer :",
+        "Ba élément moke esalisaki kozala different :"
+      ],
+      [
+        "forte activité des joueurs après le lancement",
+        "activité ya makasi ya basali nsima ya lancement"
+      ],
+      [
+        "mécanique poulet-route simple mais mémorable",
+        "ndenge nkoko-nzela ya pépé kasi oyo e kobosana te"
+      ],
+      [
+        "manches courtes adaptées au mobile",
+        "ba round ya mokuse oyo ekoki na mobile"
+      ],
+      [
+        "visuels propres et gameplay réactif",
+        "ba visuel ya propre mpe gameplay oyo e respondre"
+      ],
+      [
+        "retours positifs de joueurs voulant des crash games plus « jeu » que slot",
+        "ba retour ya positif ya basali oyo balingi ba crash game plus lokola lisano que slot"
+      ],
+      [
+        "La force de Chicken Road : ce n'est pas un slot déguisé. Pas de rouleaux ni d'écrans bonus interminables — une situation claire : avancer, monter le multiplicateur ou s'arrêter à temps.",
+        "Force ya Chicken Road : ezali slot oyo e déguiser te. Reel te mpe ba ecran ya bonus ya molai te — situation ya claire : koyoka, multiplier kokóma to kotelema na tango."
+      ],
+      [
+        "Pour InOut Games, Chicken Road est devenu plus qu'un seul titre ; d'autres jeux autour du même personnage ont suivi.",
+        "Mpo na InOut Games, Chicken Road e kóma plus que titre moko ; ba lisano mosusu na personnage moko e suivre."
+      ],
+      [
+        "La reconnaissance 2025 confirme que la formule plaît : look arcade, décisions courtes, risque croissant et ce « encore un pas » tentant.",
+        "Reconnaissance ya 2025 e confirmer ete formule e plaire : look ya arcade, ba likambo ya kopona ya mokuse, riski oyo ekóma mpe yango « step moko lisusu » oyo e tent."
+      ],
+      [
+        "Les prix ne rendent pas le jeu plus sûr. Avec de l'argent réel, c'est toujours du jeu d'argent : démo d'abord, mécanique comprise, limites fixées.",
+        "Ba prix esaleli lisano plus sûr te. Na mbongo ya solo, ezali lisusu gambling : demo liboso, ndenge oyo oyebi, ba limite oyo obotaki."
+      ],
+      [
+        "Puis-je essayer Chicken Road gratuitement ? Oui. Ouvrez la démo Chicken Road sans argent réel — pas de dépôt, crédits virtuels uniquement.",
+        "Nakoki komeka Chicken Road ofele ? Ee. Fungola demo Chicken Road na mbongo ya solo te — dépôt te, ba crédit ya virtual kaka."
+      ],
+      [
+        "Sur quels appareils fonctionne Chicken Road ? Sur tous les appareils, navigateur desktop et mobile inclus.",
+        "Chicken Road esalaka na ba appareil nini ? Na ba appareil nionso, navigateur desktop mpe mobile."
+      ],
+      [
+        "Les casinos peuvent-ils ajouter Chicken Road ? Oui, via l'intégration InOut Games : API fournisseur, portefeuille et mise en lobby.",
+        "Ba casino ekoki kobakisa Chicken Road ? Ee, na intégration InOut Games : API provider, portefeuille mpe lobby."
+      ],
+      [
+        "Langues et devises ? Chicken Road vise un public international. Les soldes peuvent s'afficher en USD ou en crypto (BTC, ETH, USDT).",
+        "Ba langue mpe devise ? Chicken Road etalela public ya international. Ba solde ekoki komonisa USD to crypto (BTC, ETH, USDT)."
+      ],
+      [
+        "Puis-je jouer en argent réel ? Oui, via des opérateurs agréés.",
+        "Nakoki kobeta na mbongo ya solo ? Ee, na ba opérateur oyo ezali agréés."
+      ]
+    ]
+  }
+}

@@ -19,8 +19,8 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
             "name": "Blog",
             "title": "Chicken Road Blog: Bansango, Mwongozo mpe Ba Sika",
             "description": (
-                "Blog ya Chicken Road: ba sika ya lisano, bansango ya ba providers, "
-                "ba conseil ya strategy mpe makambo nionso na monde ya Chicken Road."
+                "Blog ya Chicken Road: ba sika ya lisano, bansango ya ba provider, "
+                "ba likanisi ya strategy mpe makambo nionso na mokili ya Chicken Road."
             ),
         },
     },
@@ -35,9 +35,9 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
         },
         "ln": {
             "name": "Casinos",
-            "title": "Ba Providers ya Casino Chicken Road — Esika ya Kobeta",
+            "title": "Ba Provider ya Casino Chicken Road — Esika ya Kobeta",
             "description": (
-                "Linganisa ba providers mpe ba casinos ya Chicken Road. "
+                "Linganisa ba provider mpe ba casinos ya Chicken Road. "
                 "Luka ba sites ya malamu mpo na kobeta Chicken Road na ba bonus ya solo."
             ),
         },
@@ -53,10 +53,10 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
         },
         "ln": {
             "name": "Ba Lisano",
-            "title": "Ba Lisano Chicken Road — Catalogue Mobimba mpe Ba Review",
+            "title": "Ba Lisano Chicken Road — Lisi Mobimba mpe Ba Review",
             "description": (
-                "Tala catalogue mobimba ya ba lisano Chicken Road: ba titres crash, "
-                "ba variantes mpe ba providers — nionso na esika moko."
+                "Tala lisi mobimba ya ba lisano Chicken Road: ba titres crash, "
+                "ba variantes mpe ba provider — nionso na esika moko."
             ),
         },
     },
@@ -71,10 +71,10 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
         },
         "ln": {
             "name": "Ba Mwongozo",
-            "title": "Ba Mwongozo Chicken Road: Strategy, Mibeko mpe Ba Conseil",
+            "title": "Ba Mwongozo Chicken Road: Strategy, Mibeko mpe Ba Likanisi",
             "description": (
                 "Ba mwongozo nionso ya Chicken Road na esika moko: ndenge ya kobeta, strategy, "
-                "ba signaux, libateli mpe ba conseil ya bonus."
+                "ba elembo, libateli mpe ba likanisi ya bonus."
             ),
         },
     },
@@ -88,10 +88,10 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
             ),
         },
         "ln": {
-            "name": "Analyse",
-            "title": "Analyse Chicken Road: Mibeko, Difficulty mpe Libateli",
+            "name": "Tala",
+            "title": "Tala Chicken Road: Mibeko, Difficulty mpe Libateli",
             "description": (
-                "Ba mwongozo ya analyse ya Chicken Road: ndenge ya kobeta, ba niveau ya difficulty "
+                "Ba mwongozo ya tala ya Chicken Road: ndenge ya kobeta, ba niveau ya difficulty "
                 "mpe libateli elimbolami na ndenge ya pépé."
             ),
         },
@@ -107,10 +107,10 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
         },
         "ln": {
             "name": "Ndenge ya Kolonga",
-            "title": "Ndenge ya Kolonga na Chicken Road: Mwongozo mpe Ba Conseil",
+            "title": "Ndenge ya Kolonga na Chicken Road: Mwongozo mpe Ba Likanisi",
             "description": (
                 "Ba mwongozo mpo na kolonga na Chicken Road: strategy, mabunga ya minene "
-                "mpe ba conseil ya solo oyo esalaka solo na solo."
+                "mpe ba likanisi ya solo oyo esalaka solo na solo."
             ),
         },
     },
@@ -124,11 +124,11 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
             ),
         },
         "ln": {
-            "name": "Ba Signaux",
-            "title": "Ba Signaux Chicken Road: Cash Out mpe Demo",
+            "name": "Ba Elembo",
+            "title": "Ba Elembo Chicken Road: Cash Out mpe Demo",
             "description": (
-                "Ba mwongozo ya signaux Chicken Road: tango ya Cash Out mpe koyekola na demo "
-                "mpo na kobongisa ba décision na yo."
+                "Ba mwongozo ya elembo Chicken Road: tango ya Cash Out mpe koyekola na demo "
+                "mpo na kobongisa ba likambo ya kopona na yo."
             ),
         },
     },
@@ -146,7 +146,7 @@ HUB_META: dict[int, dict[str, dict[str, str]]] = {
             "title": "Ba Mwongozo Bonus Chicken Road: Ba Offre Elimbolami",
             "description": (
                 "Ba mwongozo nionso ya bonus Chicken Road: ndenge ba offre esalelaka, "
-                "ba condition ya wagering mpe ndenge ya kozua yango."
+                "ba mibeko ya wagering mpe ndenge ya kozua yango."
             ),
         },
     },
