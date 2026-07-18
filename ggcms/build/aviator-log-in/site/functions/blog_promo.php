@@ -19,14 +19,14 @@ function blog_promo_random(int $instance = 1) {
 
 	$cta_play_label = i18n('common|cta_play_now');
 	$cta_try_label = i18n('common|cta_try_bonus');
-	$brand = function_exists('site_brand_name') ? site_brand_name() : 'Chicken Road';
-	$hero = function_exists('site_brand_hero_image_path') ? site_brand_hero_image_path() : '/assets/images/chickenroad-hero.webp';
+	$brand = function_exists('site_brand_name') ? site_brand_name() : 'Aviator Log In';
+	$hero = function_exists('site_brand_hero_image_path') ? site_brand_hero_image_path() : '/assets/images/aviator-main.webp';
 
 	$images = array(
 		array('src' => $hero, 'alt' => $brand . ' game preview'),
 		array('src' => $hero, 'alt' => $brand . ' games'),
-		array('src' => '/assets/images/chickenroad-gameplay.webp', 'alt' => $brand . ' gameplay'),
-		array('src' => '/assets/images/chickenroad-app-desktop-mobile.webp', 'alt' => $brand . ' app download'),
+		array('src' => '/assets/images/aviatorplay.webp', 'alt' => $brand . ' gameplay'),
+		array('src' => '/assets/images/aviator-app-and-mobile-version.webp', 'alt' => $brand . ' app download'),
 	);
 
 	$buttons = array(
