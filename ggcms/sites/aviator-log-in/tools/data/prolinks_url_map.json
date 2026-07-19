@@ -1,0 +1,202 @@
+{
+  "": {
+    "entity": "pages",
+    "entity_id": 1
+  },
+  "blog": {
+    "entity": "pages",
+    "entity_id": 2
+  },
+  "casinos": {
+    "entity": "pages",
+    "entity_id": 3
+  },
+  "demo": {
+    "entity": "pages",
+    "entity_id": 4
+  },
+  "download": {
+    "entity": "pages",
+    "entity_id": 5
+  },
+  "predictor": {
+    "entity": "pages",
+    "entity_id": 6
+  },
+  "games": {
+    "entity": "pages",
+    "entity_id": 7
+  },
+  "guides": {
+    "entity": "pages",
+    "entity_id": 8
+  },
+  "aviator-game-analysis": {
+    "entity": "pages",
+    "entity_id": 9
+  },
+  "how-to-win": {
+    "entity": "pages",
+    "entity_id": 10
+  },
+  "aviator-signals": {
+    "entity": "pages",
+    "entity_id": 11
+  },
+  "casino-bonus-aviator": {
+    "entity": "pages",
+    "entity_id": 12
+  },
+  "about-us": {
+    "entity": "pages",
+    "entity_id": 26
+  },
+  "terms-and-conditions": {
+    "entity": "pages",
+    "entity_id": 27
+  },
+  "privacy-policy": {
+    "entity": "pages",
+    "entity_id": 28
+  },
+  "responsible-gambling": {
+    "entity": "pages",
+    "entity_id": 29
+  },
+  "install-pwa": {
+    "entity": "pages",
+    "entity_id": 33
+  },
+  "install-apk": {
+    "entity": "pages",
+    "entity_id": 34
+  },
+  "authors": {
+    "entity": "pages",
+    "entity_id": 35
+  },
+  "casinos/battery-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 1
+  },
+  "casinos/aviator-bet365": {
+    "entity": "casino_articles",
+    "entity_id": 2
+  },
+  "casinos/bet9ja-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 3
+  },
+  "casinos/aviator-betplay": {
+    "entity": "casino_articles",
+    "entity_id": 4
+  },
+  "casinos/betway-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 5
+  },
+  "casinos/bluechip-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 6
+  },
+  "casinos/dafabet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 7
+  },
+  "casinos/bolabet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 8
+  },
+  "casinos/elephant-bet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 9
+  },
+  "casinos/1win-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 10
+  },
+  "casinos/1xbet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 11
+  },
+  "casinos/4rabet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 12
+  },
+  "casinos/888bets-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 13
+  },
+  "casinos/aviator-golden-crown": {
+    "entity": "casino_articles",
+    "entity_id": 14
+  },
+  "casinos/parimatch-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 15
+  },
+  "casinos/pin-up-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 16
+  },
+  "casinos/premier-bet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 17
+  },
+  "casinos/mostbet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 18
+  },
+  "casinos/msport-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 19
+  },
+  "casinos/sportybet-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 20
+  },
+  "casinos/betika-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 21
+  },
+  "casinos/betpawa-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 22
+  },
+  "casinos/pepeta-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 23
+  },
+  "casinos/jack-pot-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 24
+  },
+  "casinos/fan-sport-aviator": {
+    "entity": "casino_articles",
+    "entity_id": 25
+  },
+  "games/aviatrix": {
+    "entity": "games",
+    "entity_id": 1
+  },
+  "games/jetx": {
+    "entity": "games",
+    "entity_id": 2
+  },
+  "games/lottery-7": {
+    "entity": "games",
+    "entity_id": 3
+  },
+  "games/navigator": {
+    "entity": "games",
+    "entity_id": 4
+  },
+  "games/rocketman": {
+    "entity": "games",
+    "entity_id": 5
+  },
+  "games/rocket-gambling-game": {
+    "entity": "games",
+    "entity_id": 6
+  }
+}
