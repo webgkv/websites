@@ -19,4 +19,8 @@ scp -i ~/.ssh/webgkv -P 20203 "$JSON" "dikodo@38.133.213.49:${REMOTE_JSON}"
 echo "== Import promo#${ENTITY_ID} =="
 $SSH "$REMOTE && php scripts/import_seo_cluster_cli.php ${REMOTE_JSON} promo ${ENTITY_ID} full"
 
+echo "== Slug redirects (fansport-15-free-spins -> fansport-free-spins) =="
+scp -i ~/.ssh/webgkv -P 20203 "$ROOT/site/scripts/promo_fansport_slug_redirect.php" "dikodo@38.133.213.49:/home/dikodo/web/chickenroad.run/public_html/scripts/promo_fansport_slug_redirect.php"
+$SSH "$REMOTE && php scripts/promo_fansport_slug_redirect.php"
+
 echo "== Done =="

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""FanSport promo#1 (fansport-15-free-spins) — body + meta for all cluster locales."""
+"""FanSport promo#1 (fansport-free-spins) — body + meta for all cluster locales."""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ LANG_CODES: dict[int, str] = {
 }
 
 ENTITY_ID = 1
-SLUG = "fansport-15-free-spins"
+SLUG = "fansport-free-spins"
 
 # Shared keys per locale body dict
 BODY_KEYS = (
@@ -50,11 +50,11 @@ BODY_KEYS = (
 
 LOCALES: dict[int, dict] = {
     1: {
-        "name": "15 Free Spins — FanSport × Chicken Road",
+        "name": "Free Spins — FanSport × Chicken Road",
         "title": "Your Free Spins Are Ready | FanSport × Chicken Road",
         "description": "A new free spins gift is waiting in your FanSport account. Log in or register to claim it and enjoy extra Chicken Road rounds.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 Free Spins",
+            "eyebrow": "FanSport × Chicken Road · Free Spins",
             "headline": "Your free spins are ready",
             "lead": "A new free spins gift has been added for you.",
             "cta": "Get bonus",
@@ -73,11 +73,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     3: {
-        "name": "15 tours gratuits — FanSport × Chicken Road",
+        "name": "Tours gratuits — FanSport × Chicken Road",
         "title": "Vos tours gratuits sont prêts | FanSport × Chicken Road",
         "description": "Un nouveau cadeau de tours gratuits vous attend sur FanSport. Connectez-vous ou inscrivez-vous pour le réclamer et profiter de Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 tours gratuits",
+            "eyebrow": "FanSport × Chicken Road · Tours gratuits",
             "headline": "Vos tours gratuits sont prêts",
             "lead": "Un nouveau cadeau de tours gratuits vient d’être ajouté pour vous.",
             "cta": "Obtenir le bonus",
@@ -96,11 +96,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     4: {
-        "name": "15 Freispiele — FanSport × Chicken Road",
+        "name": "Freispiele — FanSport × Chicken Road",
         "title": "Ihre Freispiele sind bereit | FanSport × Chicken Road",
         "description": "Ein neues Freispiel-Geschenk wartet in Ihrem FanSport-Konto. Einloggen oder registrieren, bonus sichern und Chicken Road spielen.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 Freispiele",
+            "eyebrow": "FanSport × Chicken Road · Freispiele",
             "headline": "Ihre Freispiele sind bereit",
             "lead": "Ein neues Freispiel-Geschenk wurde für Sie hinzugefügt.",
             "cta": "Bonus holen",
@@ -119,11 +119,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     6: {
-        "name": "15 giros gratis — FanSport × Chicken Road",
+        "name": "Giros gratis — FanSport × Chicken Road",
         "title": "Tus giros gratis están listos | FanSport × Chicken Road",
         "description": "Un nuevo regalo de giros gratis te espera en FanSport. Inicia sesión o regístrate para reclamarlo y disfrutar de Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 giros gratis",
+            "eyebrow": "FanSport × Chicken Road · Giros gratis",
             "headline": "Tus giros gratis están listos",
             "lead": "Se ha añadido un nuevo regalo de giros gratis para ti.",
             "cta": "Obtener bono",
@@ -142,11 +142,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     7: {
-        "name": "15 फ्री स्पिन — FanSport × Chicken Road",
+        "name": "फ्री स्पिन — FanSport × Chicken Road",
         "title": "आपके फ्री स्पिन तैयार हैं | FanSport × Chicken Road",
         "description": "FanSport अकाउंट में नया फ्री स्पिन गिफ्ट इंतज़ार कर रहा है। लॉग इन या रजिस्टर करें, बोनस लें और Chicken Road खेलें।",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 फ्री स्पिन",
+            "eyebrow": "FanSport × Chicken Road · फ्री स्पिन",
             "headline": "आपके फ्री स्पिन तैयार हैं",
             "lead": "आपके लिए एक नया फ्री स्पिन गिफ्ट जोड़ा गया है।",
             "cta": "बोनस पाएं",
@@ -165,11 +165,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     8: {
-        "name": "15 rodadas grátis — FanSport × Chicken Road",
+        "name": "Rodadas grátis — FanSport × Chicken Road",
         "title": "Suas rodadas grátis estão prontas | FanSport × Chicken Road",
         "description": "Um novo presente de rodadas grátis espera na sua conta FanSport. Entre ou cadastre-se para resgatar e jogar Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 rodadas grátis",
+            "eyebrow": "FanSport × Chicken Road · Rodadas grátis",
             "headline": "Suas rodadas grátis estão prontas",
             "lead": "Um novo presente de rodadas grátis foi adicionado para você.",
             "cta": "Obter bônus",
@@ -188,11 +188,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     9: {
-        "name": "15 фриспинов — FanSport × Chicken Road",
+        "name": "Фриспины — FanSport × Chicken Road",
         "title": "Ваши фриспины готовы | FanSport × Chicken Road",
         "description": "Новый подарок фриспинов ждёт в аккаунте FanSport. Войдите или зарегистрируйтесь, чтобы забрать бонус и играть в Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 фриспинов",
+            "eyebrow": "FanSport × Chicken Road · Фриспины",
             "headline": "Ваши фриспины готовы",
             "lead": "Для вас добавлен новый подарок — фриспины.",
             "cta": "Получить бонус",
@@ -211,11 +211,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     11: {
-        "name": "15 لفة مجانية — FanSport × Chicken Road",
+        "name": "لفات مجانية — FanSport × Chicken Road",
         "title": "لفاتك المجانية جاهزة | FanSport × Chicken Road",
         "description": "هدية لفات مجانية جديدة بانتظارك في FanSport. سجّل الدخول أو أنشئ حساباً لاستلامها واللعب على Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 لفة مجانية",
+            "eyebrow": "FanSport × Chicken Road · لفات مجانية",
             "headline": "لفاتك المجانية جاهزة",
             "lead": "تمت إضافة هدية لفات مجانية جديدة لك.",
             "cta": "احصل على البونص",
@@ -234,11 +234,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     12: {
-        "name": "15 pulsuz fırlanma — FanSport × Chicken Road",
+        "name": "Pulsuz fırlanma — FanSport × Chicken Road",
         "title": "Pulsuz fırlanmalarınız hazırdır | FanSport × Chicken Road",
         "description": "FanSport hesabınızda yeni pulsuz fırlanma hədiyyəsi gözləyir. Daxil olun və ya qeydiyyatdan keçin, bonusu götürün və Chicken Road oynayın.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 pulsuz fırlanma",
+            "eyebrow": "FanSport × Chicken Road · Pulsuz fırlanma",
             "headline": "Pulsuz fırlanmalarınız hazırdır",
             "lead": "Sizin üçün yeni pulsuz fırlanma hədiyyəsi əlavə olundu.",
             "cta": "Bonusu götür",
@@ -257,11 +257,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     13: {
-        "name": "১৫ ফ্রি স্পিন — FanSport × Chicken Road",
+        "name": "ফ্রি স্পিন — FanSport × Chicken Road",
         "title": "আপনার ফ্রি স্পিন প্রস্তুত | FanSport × Chicken Road",
         "description": "FanSport অ্যাকাউন্টে নতুন ফ্রি স্পিন উপহার অপেক্ষা করছে। লগ ইন বা রেজিস্টার করে বোনাস নিন এবং Chicken Road খেলুন।",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · ১৫ ফ্রি স্পিন",
+            "eyebrow": "FanSport × Chicken Road · ফ্রি স্পিন",
             "headline": "আপনার ফ্রি স্পিন প্রস্তুত",
             "lead": "আপনার জন্য একটি নতুন ফ্রি স্পিন উপহার যোগ করা হয়েছে।",
             "cta": "বোনাস নিন",
@@ -280,11 +280,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     14: {
-        "name": "15 giri gratis — FanSport × Chicken Road",
+        "name": "Giri gratis — FanSport × Chicken Road",
         "title": "I tuoi giri gratis sono pronti | FanSport × Chicken Road",
         "description": "Un nuovo regalo di giri gratis ti aspetta su FanSport. Accedi o registrati per riscattarlo e giocare a Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 giri gratis",
+            "eyebrow": "FanSport × Chicken Road · Giri gratis",
             "headline": "I tuoi giri gratis sono pronti",
             "lead": "È stato aggiunto un nuovo regalo di giri gratis per te.",
             "cta": "Ottieni il bonus",
@@ -303,11 +303,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     15: {
-        "name": "15 gratis spins — FanSport × Chicken Road",
+        "name": "Gratis spins — FanSport × Chicken Road",
         "title": "Je gratis spins staan klaar | FanSport × Chicken Road",
         "description": "Een nieuw gratis-spins cadeau wacht in je FanSport-account. Log in of registreer om het te claimen en Chicken Road te spelen.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 gratis spins",
+            "eyebrow": "FanSport × Chicken Road · Gratis spins",
             "headline": "Je gratis spins staan klaar",
             "lead": "Er is een nieuw gratis-spins cadeau voor je toegevoegd.",
             "cta": "Bonus pakken",
@@ -326,11 +326,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     16: {
-        "name": "15 darmowych spinów — FanSport × Chicken Road",
+        "name": "Darmowe spiny — FanSport × Chicken Road",
         "title": "Twoje darmowe spiny są gotowe | FanSport × Chicken Road",
         "description": "Nowy prezent darmowych spinów czeka na Twoim koncie FanSport. Zaloguj się lub zarejestruj, odbierz bonus i graj w Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 darmowych spinów",
+            "eyebrow": "FanSport × Chicken Road · Darmowe spiny",
             "headline": "Twoje darmowe spiny są gotowe",
             "lead": "Dodano dla Ciebie nowy prezent — darmowe spiny.",
             "cta": "Odbierz bonus",
@@ -349,11 +349,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     17: {
-        "name": "15 vòng quay miễn phí — FanSport × Chicken Road",
+        "name": "Vòng quay miễn phí — FanSport × Chicken Road",
         "title": "Vòng quay miễn phí của bạn đã sẵn sàng | FanSport × Chicken Road",
         "description": "Quà tặng vòng quay miễn phí mới đang chờ trong tài khoản FanSport. Đăng nhập hoặc đăng ký để nhận và chơi Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 vòng quay miễn phí",
+            "eyebrow": "FanSport × Chicken Road · Vòng quay miễn phí",
             "headline": "Vòng quay miễn phí của bạn đã sẵn sàng",
             "lead": "Một món quà vòng quay miễn phí mới đã được thêm cho bạn.",
             "cta": "Nhận bonus",
@@ -372,11 +372,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     18: {
-        "name": "15 безкоштовних спінів — FanSport × Chicken Road",
+        "name": "Безкоштовні спіни — FanSport × Chicken Road",
         "title": "Ваші безкоштовні спіни готові | FanSport × Chicken Road",
         "description": "Новий подарунок безкоштовних спінів чекає у вашому акаунті FanSport. Увійдіть або зареєструйтесь, щоб забрати бонус і грати в Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 безкоштовних спінів",
+            "eyebrow": "FanSport × Chicken Road · Безкоштовні спіни",
             "headline": "Ваші безкоштовні спіни готові",
             "lead": "Для вас додано новий подарунок — безкоштовні спіни.",
             "cta": "Отримати бонус",
@@ -395,11 +395,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     19: {
-        "name": "15 rotiri gratuite — FanSport × Chicken Road",
+        "name": "Rotiri gratuite — FanSport × Chicken Road",
         "title": "Rotirile tale gratuite sunt gata | FanSport × Chicken Road",
         "description": "Un nou cadou de rotiri gratuite te așteaptă în contul FanSport. Conectează-te sau înregistrează-te pentru a-l revendica și a juca Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 rotiri gratuite",
+            "eyebrow": "FanSport × Chicken Road · Rotiri gratuite",
             "headline": "Rotirile tale gratuite sunt gata",
             "lead": "A fost adăugat un nou cadou de rotiri gratuite pentru tine.",
             "cta": "Obține bonusul",
@@ -418,11 +418,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     20: {
-        "name": "15 Free Spins — FanSport × Chicken Road",
+        "name": "Free Spins — FanSport × Chicken Road",
         "title": "Free spins zako tayari | FanSport × Chicken Road",
         "description": "Zawadi mpya ya free spins inakungoja kwenye akaunti yako ya FanSport. Ingia au jisajili, chukua bonus na ucheze Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 Free Spins",
+            "eyebrow": "FanSport × Chicken Road · Free Spins",
             "headline": "Free spins zako tayari",
             "lead": "Zawadi mpya ya free spins imeongezwa kwa ajili yako.",
             "cta": "Pata bonus",
@@ -441,11 +441,11 @@ LOCALES: dict[int, dict] = {
         },
     },
     21: {
-        "name": "15 Free Spins — FanSport × Chicken Road",
+        "name": "Free Spins — FanSport × Chicken Road",
         "title": "Ba free spins na yo ezali kobongisama | FanSport × Chicken Road",
         "description": "Likabo ya sika ya free spins ezali kozela na compte na yo ya FanSport. Kota to komisa compte, zua bonus mpe bɛtá Chicken Road.",
         "body": {
-            "eyebrow": "FanSport × Chicken Road · 15 Free Spins",
+            "eyebrow": "FanSport × Chicken Road · Free Spins",
             "headline": "Ba free spins na yo ezali kobongisama",
             "lead": "Likabo ya sika ya free spins ebandi mpo na yo.",
             "cta": "Zua bonus",
