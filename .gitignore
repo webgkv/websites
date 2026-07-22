@@ -21,6 +21,9 @@ ggcms/docs/CLOUDFLARE_ACCESS.local.md
 # Node
 **/node_modules/
 
+# Local scratch / export staging (not canonical reference JSON)
+ggcms/sites/**/tmp/
+
 # OS / editor
 .DS_Store
 *.swp
