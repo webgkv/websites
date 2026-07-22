@@ -97,6 +97,10 @@ function site_should_show_author_block($abc) {
 	if ($layout !== '' && ($layout === 'demo' || strpos($layout, 'demo_') === 0)) {
 		return false;
 	}
+	$module = isset($abc['module']) ? (string) $abc['module'] : '';
+	if ($layout === 'promo' || $module === 'promo' || !empty($abc['promo_single'])) {
+		return false;
+	}
 	return true;
 }
 
