@@ -65,21 +65,7 @@ if (function_exists('site_seo_public_origin')) {
 		.demo-app-bar-start { display: flex; align-items: center; gap: 4px; flex: 1 1 auto; min-width: 0; overflow: hidden; }
 		.demo-app-portal { flex-shrink: 0; }
 		.demo-app-brand { display: flex; align-items: center; flex: 0 0 auto; opacity: .95; }
-		.demo-app-logo-icon {
-			display: block;
-			flex-shrink: 0;
-			width: 28px;
-			height: 28px;
-			background-color: #fdb614;
-			-webkit-mask-image: var(--demo-egg-mask);
-			mask-image: var(--demo-egg-mask);
-			-webkit-mask-repeat: no-repeat;
-			mask-repeat: no-repeat;
-			-webkit-mask-position: center;
-			mask-position: center;
-			-webkit-mask-size: contain;
-			mask-size: contain;
-		}
+		.demo-app-logo-icon { display: block; height: 22px; width: auto; max-width: 56px; object-fit: contain; object-position: left center; }
 		.demo-app-actions { display: flex; align-items: center; gap: 5px; flex: 0 0 auto; flex-shrink: 0; margin-left: 6px; }
 		/* CTA: never shrink in flex row; wrap to 2 lines only when label exceeds max-width */
 		.demo-app-cta-btn.main_btn {
