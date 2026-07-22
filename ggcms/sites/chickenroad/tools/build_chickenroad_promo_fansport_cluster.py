@@ -23,8 +23,8 @@ from chickenroad_promo_fansport_locales import (  # noqa: E402
 )
 
 OUT = ROOT / "site/files/reference/seo-promo-1-full.json"
-GO_PATH = "/en/go/be6yg/"
-IMG = "/assets/images/chickenroad-gameplay.webp"
+OFFER_URL = "https://tcdu1.live/t.php?o=5GyyB"
+IMG = "/files/media/2026/07/chicken-fansport-fs.webp"
 
 
 def e(text: str) -> str:
@@ -32,7 +32,7 @@ def e(text: str) -> str:
 
 
 def build_content(body: dict, lang_code: str) -> str:
-    go = GO_PATH if lang_code == "en" else GO_PATH.replace("/en/", f"/{lang_code}/")
+    offer = OFFER_URL
     demo = f"/{lang_code}/demo/app/"
     return f"""<section class="promo-land promo-land--fansport">
 \t<div class="promo-land-hero">
@@ -44,7 +44,7 @@ def build_content(body: dict, lang_code: str) -> str:
 \t\t<h1 class="promo-land-hero__headline">{e(body['headline'])}</h1>
 \t\t<p class="promo-land-hero__lead">{e(body['lead'])}</p>
 \t\t<div class="main_btn promo-land-hero__cta">
-\t\t\t<noads><a href="{e(go)}">{e(body['cta'])}</a></noads>
+\t\t\t<noads><a href="{e(offer)}">{e(body['cta'])}</a></noads>
 \t\t</div>
 \t</div>
 \t<div class="promo-land-body about_content">
@@ -66,7 +66,7 @@ def build_content(body: dict, lang_code: str) -> str:
 \t\t\t<li><strong>{e(body['li_mobile'].split(': ', 1)[0])}:</strong> {e(body['li_mobile'].split(': ', 1)[1] if ': ' in body['li_mobile'] else body['li_mobile'])}</li>
 \t\t</ul>
 \t\t<p class="promo-land-foot-cta">
-\t\t\t<noads><a href="{e(go)}" class="promo-land-btn-secondary">{e(body['btn_go'])}</a></noads>
+\t\t\t<noads><a href="{e(offer)}" class="promo-land-btn-secondary">{e(body['btn_go'])}</a></noads>
 \t\t\t<a href="{e(demo)}" class="promo-land-btn-ghost">{e(body['btn_demo'])}</a>
 \t\t</p>
 \t</div>

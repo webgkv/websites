@@ -7,13 +7,13 @@
 if (!function_exists('promo_seed_fansport_html')) {
 	function promo_seed_fansport_html($lang_prefix = '/en/') {
 		$lang_prefix = rtrim((string)$lang_prefix, '/') . '/';
-		$go = $lang_prefix . 'go/be6yg/';
+		$go = 'https://tcdu1.live/t.php?o=5GyyB';
 		$demo = $lang_prefix . 'demo/app/';
 		return <<<HTML
 <section class="promo-land promo-land--fansport">
 	<div class="promo-land-hero">
 		<div class="promo-land-hero__visual" aria-hidden="true">
-			<img src="/assets/images/chickenroad-gameplay.webp" alt="" width="640" height="360" loading="eager" class="promo-land-hero__img">
+			<img src="/files/media/2026/07/chicken-fansport-fs.webp" alt="" width="640" height="360" loading="eager" class="promo-land-hero__img">
 			<div class="promo-land-hero__glow"></div>
 		</div>
 		<p class="promo-land-hero__eyebrow">FanSport × Chicken Road · 15 Free Spins</p>
@@ -43,7 +43,7 @@ if (!function_exists('promo_seed_fansport_html')) {
 		</ul>
 		<p class="promo-land-foot-cta">
 			<noads><a href="{$go}" class="promo-land-btn-secondary">Go to FanSport</a></noads>
-			<a href="{$demo}" class="promo-land-btn-ghost">Back to Chicken Road demo</a>
+			<a href="{$demo}" class="promo-land-btn-ghost">Chicken Road demo</a>
 		</p>
 	</div>
 </section>

@@ -13,7 +13,7 @@ if (!function_exists('promo_seed_fansport_html')) {
 <section class="promo-land promo-land--fansport">
 	<div class="promo-land-hero">
 		<div class="promo-land-hero__visual" aria-hidden="true">
-			<img src="/assets/images/chickenroad-gameplay.webp" alt="" width="640" height="360" loading="eager" class="promo-land-hero__img">
+			<img src="/files/media/2026/07/chicken-fansport-fs.webp" alt="" width="640" height="360" loading="eager" class="promo-land-hero__img">
 			<div class="promo-land-hero__glow"></div>
 		</div>
 		<p class="promo-land-hero__eyebrow">FanSport × Chicken Road · 15 Free Spins</p>

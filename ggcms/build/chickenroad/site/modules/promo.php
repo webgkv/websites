@@ -138,6 +138,35 @@ if (!empty($u[3])) {
 	}
 
 	if ($article) {
+		$article_id_for_links = (int)$article['id'];
+		$promo_slug_map = array();
+		if ($article_id_for_links > 0) {
+			$canonical_row = mysql_select("SELECT url FROM promo WHERE id=" . $article_id_for_links . " LIMIT 1", 'row');
+			if ($canonical_row) {
+				$canonical_slug = promo_i18n_slug($canonical_row['url'] ?? '');
+				if ($canonical_slug !== '') {
+					$promo_slug_map[1] = $canonical_slug;
+				}
+			}
+			if ($content_i18n_ok) {
+				$slug_rows = mysql_select("
+					SELECT lang_id, url
+					FROM content_i18n
+					WHERE entity='promo'
+					  AND entity_id=" . $article_id_for_links . "
+					  AND IFNULL(url,'') != ''
+				", 'rows', 0);
+				if ($slug_rows) {
+					foreach ($slug_rows as $sr) {
+						$slug2 = promo_i18n_slug($sr['url'] ?? '');
+						if ($slug2 !== '') {
+							$promo_slug_map[(int)$sr['lang_id']] = $slug2;
+						}
+					}
+				}
+			}
+		}
+
 		promo_apply_i18n_row($article, $current_lang_id, $content_i18n_ok);
 		$article_id = (int)$article['id'];
 		if ($article_id > 0) {
@@ -152,8 +181,20 @@ if (!empty($u[3])) {
 		$abc['promo_single'] = $article;
 		$abc['promo_single']['ended'] = promo_is_expired($article) || (isset($article['category']) && (string)$article['category'] === 'archive');
 
+		$promo_section_seg = function_exists('site_section_link_segment')
+			? site_section_link_segment('promo')
+			: 'promo';
 		foreach ($abc['languages'] as $i => $v) {
-			$abc['links'][$abc['languages'][$i]['url']][] = $article['url'];
+			$lang_url = trim((string)($abc['languages'][$i]['url'] ?? ''), '/');
+			$lang_row_id = isset($abc['languages'][$i]['id']) ? (int)$abc['languages'][$i]['id'] : 0;
+			if ($lang_url === '') {
+				continue;
+			}
+			if (!empty($promo_slug_map[$lang_row_id])) {
+				$abc['links'][$lang_url] = array($lang_url, $promo_section_seg, $promo_slug_map[$lang_row_id]);
+			} else {
+				$abc['links'][$lang_url] = array($lang_url, $promo_section_seg);
+			}
 		}
 	} else {
 		$error++;
@@ -198,6 +239,16 @@ if (!empty($u[3])) {
 	$abc['promo_list_data'] = mysql_data($list_sql, false, 9, isset($_GET['n']) ? (int)$_GET['n'] : 1);
 	$abc['promo_list'] = isset($abc['promo_list_data']['list']) ? $abc['promo_list_data']['list'] : array();
 	$abc['promo_pagination'] = $abc['promo_list_data'];
+
+	$promo_section_seg = function_exists('site_section_link_segment')
+		? site_section_link_segment('promo')
+		: 'promo';
+	foreach ($abc['languages'] as $i => $_v) {
+		$lang_url = trim((string)($abc['languages'][$i]['url'] ?? ''), '/');
+		if ($lang_url !== '') {
+			$abc['links'][$lang_url] = array($lang_url, $promo_section_seg);
+		}
+	}
 
 	if (!empty($abc['promo_list']) && $content_i18n_ok && $current_lang_id > 1) {
 		foreach ($abc['promo_list'] as $idx => $item) {
