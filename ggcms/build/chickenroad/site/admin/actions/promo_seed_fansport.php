@@ -1,13 +1,13 @@
 <?php
 /**
- * Seed: FanSport 15 free spins promo landing (chickenroad).
+ * Seed: FanSport free spins promo landing (chickenroad).
  * Included from migrate_BD_run.php — idempotent on url slug (insert + content refresh).
  */
 
 if (!function_exists('promo_seed_fansport_html')) {
 	function promo_seed_fansport_html($lang_prefix = '/en/') {
 		$lang_prefix = rtrim((string)$lang_prefix, '/') . '/';
-		$go = $lang_prefix . 'go/be6yg/';
+		$go = 'https://tcdu1.live/t.php?o=5GyyB';
 		$demo = $lang_prefix . 'demo/app/';
 		return <<<HTML
 <section class="promo-land promo-land--fansport">
@@ -16,7 +16,7 @@ if (!function_exists('promo_seed_fansport_html')) {
 			<img src="/files/media/2026/07/chicken-fansport-fs.webp" alt="" width="640" height="360" loading="eager" class="promo-land-hero__img">
 			<div class="promo-land-hero__glow"></div>
 		</div>
-		<p class="promo-land-hero__eyebrow">FanSport × Chicken Road · 15 Free Spins</p>
+		<p class="promo-land-hero__eyebrow">FanSport × Chicken Road · Free Spins</p>
 		<h1 class="promo-land-hero__headline">Your free spins are ready</h1>
 		<p class="promo-land-hero__lead">A new free spins gift has been added for you.</p>
 		<div class="main_btn promo-land-hero__cta">
@@ -43,7 +43,7 @@ if (!function_exists('promo_seed_fansport_html')) {
 		</ul>
 		<p class="promo-land-foot-cta">
 			<noads><a href="{$go}" class="promo-land-btn-secondary">Go to FanSport</a></noads>
-			<a href="{$demo}" class="promo-land-btn-ghost">Back to Chicken Road demo</a>
+			<a href="{$demo}" class="promo-land-btn-ghost">Chicken Road demo</a>
 		</p>
 	</div>
 </section>
@@ -52,11 +52,11 @@ HTML;
 }
 
 if (@mysql_select("SHOW TABLES LIKE 'promo'", 'num_rows') > 0) {
-	$seed_slug = 'fansport-15-free-spins';
-	$exists = mysql_select("SELECT id FROM promo WHERE url='" . mysql_res($seed_slug) . "' LIMIT 1", 'row');
+	$seed_slug = 'fansport-free-spins';
+	$exists = mysql_select("SELECT id FROM promo WHERE url IN ('" . mysql_res($seed_slug) . "','fansport-15-free-spins') ORDER BY id ASC LIMIT 1", 'row');
 	$now = date('Y-m-d H:i:s');
 	$seed_row = array(
-		'name' => '15 Free Spins — FanSport × Chicken Road',
+		'name' => 'Free Spins — FanSport × Chicken Road',
 		'name_2' => 'Your free spins are ready — log in or register to claim at FanSport.',
 		'url' => $seed_slug,
 		'text' => promo_seed_fansport_html(),
@@ -75,10 +75,10 @@ if (@mysql_select("SHOW TABLES LIKE 'promo'", 'num_rows') > 0) {
 		$seed_row['author_id'] = 1;
 		$seed_row['created_at'] = $now;
 		mysql_fn('insert', 'promo', $seed_row);
-		$done[] = 'promo seed fansport-15-free-spins';
+		$done[] = 'promo seed fansport-free-spins';
 	} else {
 		$seed_row['id'] = (int)$exists['id'];
 		mysql_fn('update', 'promo', $seed_row);
-		$done[] = 'promo seed fansport-15-free-spins (updated id=' . (int)$exists['id'] . ')';
+		$done[] = 'promo seed fansport-free-spins (updated id=' . (int)$exists['id'] . ')';
 	}
 }

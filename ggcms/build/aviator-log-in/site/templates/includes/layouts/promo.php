@@ -31,9 +31,6 @@ $active_href = $promo_base;
 			<?php if ($is_ended && $promo_ended !== '') : ?>
 				<p class="promo-badge-ended mb-3"><?= htmlspecialchars($promo_ended) ?></p>
 			<?php endif; ?>
-			<?php if (function_exists('site_render_author_byline')) {
-				echo site_render_author_byline($abc, array('date' => $article['date'] ?? ($article['updated_at'] ?? '')));
-			} ?>
 			<div class="text page-content-from-db about_content promo-article-content">
 				<?php
 				$article_html = isset($article['text']) ? (string)$article['text'] : '';
