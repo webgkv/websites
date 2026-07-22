@@ -35,6 +35,12 @@ switch ($tab) {
 			$content = '';
 		}
 		break;
+	case 'promo':
+		require_once(ROOT_DIR . 'admin/modules/promo.php');
+		if (!isset($content)) {
+			$content = '';
+		}
+		break;
 	case 'download':
 		// Find page with URL "download" (schema has url, url2, url3 — no url1)
 		$download_page = mysql_select("

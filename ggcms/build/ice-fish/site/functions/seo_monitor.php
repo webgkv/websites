@@ -12,6 +12,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			'guides' => array('table' => 'guides', 'label' => 'Guides', 'src_content_col' => 'text'),
 			'games' => array('table' => 'games', 'label' => 'Games', 'src_content_col' => 'text'),
 			'casino_articles' => array('table' => 'casino_articles', 'label' => 'Casino articles', 'src_content_col' => 'text'),
+			'promo' => array('table' => 'promo', 'label' => 'Promo', 'src_content_col' => 'text'),
 			'blog' => array('table' => 'blog', 'label' => 'Blog', 'src_content_col' => 'text'),
 			// E-E-A-T author cards: name / job_title / bio only — no URL slug, meta description, H1, or image audits.
 			'authors' => array(
@@ -94,7 +95,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			return $cached;
 		}
 		$defaults = array(
-			'page_slugs' => array('casinos', 'games', 'guides'),
+			'page_slugs' => array('casinos', 'games', 'guides', 'promo'),
 			'blog_listing_module' => true,
 			'page_ids_extra' => array(),
 		);
@@ -139,7 +140,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			return false;
 		}
 		$cur = array(
-			'page_slugs' => array('casinos', 'games', 'guides'),
+			'page_slugs' => array('casinos', 'games', 'guides', 'promo'),
 			'blog_listing_module' => true,
 			'page_ids_extra' => array(),
 		);
@@ -186,7 +187,7 @@ if (!function_exists('seo_monitor_entity_map')) {
 			return true;
 		}
 		// Section rows may use module=casinos|games|guides|authors (see bd_pages_upgrade / admin) while runtime switches layout in index.php.
-		if (in_array($mod, array('casinos', 'games', 'guides', 'authors'), true)) {
+		if (in_array($mod, array('casinos', 'games', 'guides', 'authors', 'promo'), true)) {
 			return true;
 		}
 		if ($mod === 'pages' && $url !== '' && in_array($url, $cfg['page_slugs'], true)) {

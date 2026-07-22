@@ -210,5 +210,12 @@ $lang['common'] = array(
 	'quick_access_demo_alt2'=>'Aperçu d’une manche avec multiplicateur Aviator',
 	'quick_access_demo_alt3'=>'Aperçu d’un cash-out Aviator réussi',
 	'msg_no_results'=>'Aucun contenu',
+	'promo_title' => 'Promo',
+	'promo_cat_active' => 'Actifs',
+	'promo_cat_archive' => 'Archive',
+	'promo_ended' => 'Terminé',
+	'demo_app_promo_gift' => 'Promo & bonus',
+	'promo_get_bonus' => 'Obtenir le bonus',
+	'promo_active_until' => 'Actif jusqu\'au',
 	'authors_title'=>'Auteurs',
 );?>

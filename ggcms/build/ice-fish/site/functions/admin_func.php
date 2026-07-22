@@ -45,6 +45,7 @@ function admin_edit_form_url($module, $id) {
 		'guides'          => 'guides',
 		'games'           => 'games',
 		'casino_articles' => 'casinos',
+		'promo'           => 'promo',
 		'blog'            => 'blog',
 	);
 	if (!isset($tab_map[$module])) {

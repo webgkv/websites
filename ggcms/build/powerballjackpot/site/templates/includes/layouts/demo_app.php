@@ -64,6 +64,7 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 			aria-label="<?= htmlspecialchars($portal_aria, ENT_QUOTES, 'UTF-8') ?>">
 			<i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
 		</a>
+<?php require ROOT_DIR . 'templates/includes/common/demo_app_promo_gift.php'; ?>
 <?php if (!empty($_demo_install['enabled'])): ?>
 		<span class="demo-app-install-wrap">
 		<a class="demo-app-icon-btn demo-app-install" id="demoAppInstallBtn"
@@ -98,6 +99,7 @@ $pbj_games_defaults = $pbj_games_cfg['defaults'];
 		<?= site_lottery_sim_render($pbj_slides, $pbj_games, $pbj_games_defaults) ?>
 	</div>
 </div>
+<?php require ROOT_DIR . 'templates/includes/common/demo_app_promo_gift_script.php'; ?>
 <?php if (!empty($_demo_install['enabled']) && (($_demo_install['platform'] ?? '') === 'ios') && function_exists('demo_app_push_affordance_modal')): ?>
 <?= demo_app_push_affordance_modal(demo_app_push_ui_strings()) ?>
 <?php endif; ?>

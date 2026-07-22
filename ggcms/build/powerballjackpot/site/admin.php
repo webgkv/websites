@@ -115,6 +115,7 @@ if ($get['m'] === 'content') {
 		'demo' => 'Demo',
 		'games' => 'Games',
 		'casinos' => 'Casinos',
+		'promo' => 'Promo',
 		'blog' => site_section_admin_label('blog', 'Blog'),
 	);
 	$ct = isset($get['tab']) ? $get['tab'] : 'guides';
@@ -140,6 +141,8 @@ if ($get['m'] === 'content') {
 		$module['table'] = $gstab;
 	} elseif ($ct === 'casinos') {
 		$module['table'] = 'casino_articles';
+	} elseif ($ct === 'promo') {
+		$module['table'] = 'promo';
 	}
 }
 

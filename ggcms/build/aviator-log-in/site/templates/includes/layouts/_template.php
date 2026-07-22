@@ -625,6 +625,8 @@ $_site_cur_switch = ($_site_cur_lu !== '' && isset($site_lang_switcher_items[$_s
                     <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>terms-and-conditions/"><?=i18n('common|footer_terms')?></a>
                     <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>privacy-policy/"><?=i18n('common|footer_privacy')?></a>
                     <a href="<?= htmlspecialchars($_site_lang_base, ENT_QUOTES, 'UTF-8') ?>responsible-gambling/"><?=i18n('common|footer_responsible')?></a>
+                    <?php $_promo_footer_href = function_exists('site_section_public_base') ? site_section_public_base('promo', $abc) : rtrim($_site_lang_base, '/') . '/promo/'; ?>
+                    <a href="<?= htmlspecialchars($_promo_footer_href, ENT_QUOTES, 'UTF-8') ?>"><?=i18n('common|promo_title')?></a>
                     <a href="<?= htmlspecialchars(rtrim($_site_lang_base, '/') . '/authors/', ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars(function_exists('author_list_title') ? author_list_title() : 'Authors', ENT_QUOTES, 'UTF-8') ?></a>
                 </nav>
                 <div class="footer-responsible">

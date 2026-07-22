@@ -1126,6 +1126,182 @@ h1 {
     letter-spacing: 0.02em;
     margin-bottom: 0.35rem;
 }
+.promo-card--ended {
+    opacity: 0.72;
+}
+.promo-card--ended .card-title,
+.promo-card--ended .guide-card-desc {
+    color: #6c757d;
+}
+.promo-badge-ended {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #6c757d;
+    border-radius: 4px;
+    padding: 0.15rem 0.45rem;
+    margin-bottom: 0.45rem;
+}
+.promo-badge-until {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--cr-accent);
+    margin-bottom: 0.35rem;
+}
+/* FanSport-style promo landing (mobile-first hero) */
+.promo-land--fansport { margin: -1rem 0 0; }
+.promo-land-hero {
+    text-align: center;
+    padding: 1.25rem 1rem 1.5rem;
+    margin: 0 -0.5rem 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(165deg, #1a1520 0%, #2c2438 45%, #3d2f1a 100%);
+    color: #fff;
+    box-shadow: 0 12px 40px rgba(0,0,0,.25);
+}
+.promo-land-hero__visual {
+    position: relative;
+    max-width: 280px;
+    margin: 0 auto 1rem;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.promo-land-hero__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.promo-land-hero__glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 80%, rgba(253,182,20,.35), transparent 60%);
+    pointer-events: none;
+}
+.promo-land-hero__eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fdb614;
+    margin-bottom: 0.35rem;
+}
+.promo-land-hero__headline {
+    font-size: clamp(1.75rem, 7vw, 2.35rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 0.65rem;
+    color: #fff;
+}
+.promo-land-hero__offer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+.promo-land-hero__num {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1;
+    color: #fdb614;
+    text-shadow: 0 4px 24px rgba(253,182,20,.45);
+}
+.promo-land-hero__label {
+    font-size: clamp(1.35rem, 5vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+.promo-land-hero__lead {
+    font-size: 1rem;
+    line-height: 1.45;
+    color: rgba(255,255,255,.88);
+    max-width: 22rem;
+    margin: 0 auto 1.1rem;
+}
+.promo-land-hero__cta.main_btn {
+    max-width: 16rem;
+    margin: 0 auto;
+}
+.promo-land-hero__cta.main_btn a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    border-radius: 999px;
+}
+.promo-land-body h2 { margin-top: 1.5rem; font-size: 1.25rem; }
+.promo-land-steps { display: grid; gap: 1rem; margin: 1rem 0; }
+@media (min-width: 768px) {
+    .promo-land-steps { grid-template-columns: 1fr 1fr; }
+}
+.promo-land-step {
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
+    background: rgba(253,182,20,.08);
+    border: 1px solid rgba(253,182,20,.2);
+}
+.promo-land-step h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.promo-land-step h2 { font-size: 1.1rem; margin-bottom: 0.45rem; }
+.promo-land-closing {
+    margin: 1.25rem 0 1.5rem;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: inherit;
+}
+.promo-land-code {
+    margin: 0.75rem 0;
+    text-align: center;
+}
+.promo-land-code code {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    background: #2c2a33;
+    color: #fdb614;
+    border-radius: 8px;
+}
+.promo-land-note {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #6c757d;
+    font-size: 0.95rem;
+}
+.promo-land-foot-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+.promo-land-btn-secondary,
+.promo-land-btn-ghost {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.promo-land-btn-secondary {
+    background: var(--cr-accent, #fdb614);
+    color: #1a1520;
+}
+.promo-land-btn-ghost {
+    border: 2px solid #dee2e6;
+    color: inherit;
+}
+@media (max-width: 767px) {
+    .promo-section .container { padding-top: 0; }
+    .promo-land-hero { min-height: calc(100svh - 120px); display: flex; flex-direction: column; justify-content: center; }
+}
 /* Single guide: wrapper injected in PHP — guarantees centered images */
 .guide-img-center {
     width: 100%;

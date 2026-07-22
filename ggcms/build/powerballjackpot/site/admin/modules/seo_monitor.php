@@ -312,13 +312,13 @@ if ($seo_u === '' || $seo_u === 'overview') {
 	$content .= '<h6 class="tstats-section-label mb-3">Content types</h6>';
 	$content .= '<div class="row">';
 	foreach ($entity_map as $ent => $info) {
-		$table = $info['table'];
-		$exists = @mysql_select("SHOW TABLES LIKE '" . mysql_res($table) . "'", 'num_rows');
+		$_tbl = $info['table'];
+		$exists = @mysql_select("SHOW TABLES LIKE '" . mysql_res($_tbl) . "'", 'num_rows');
 		if ((int)$exists <= 0) {
 			continue;
 		}
-		$where = seo_monitor_display_where($table);
-		$r = mysql_select("SELECT COUNT(*) AS c FROM `" . mysql_res($table) . "` WHERE 1 " . $where, 'row');
+		$where = seo_monitor_display_where($_tbl);
+		$r = mysql_select("SELECT COUNT(*) AS c FROM `" . mysql_res($_tbl) . "` WHERE 1 " . $where, 'row');
 		$cnt = $r && isset($r['c']) ? (int)$r['c'] : 0;
 		$href = '/admin.php?m=seo_monitor&u=list&entity=' . rawurlencode($ent);
 		$content .= '<div class="col-xl-4 col-md-6 mb-4">';
@@ -946,3 +946,7 @@ elseif ($seo_u === 'list' && isset($entity_map[$entity_cur])) {
 else {
 	$content = '<div class="alert alert-warning">Unknown view. <a href="/admin.php?m=seo_monitor">Overview</a></div>';
 }
+
+unset($_tbl);
+$table = array();
+$filter = array();

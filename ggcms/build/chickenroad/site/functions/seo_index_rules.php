@@ -295,6 +295,9 @@ if (!function_exists('seo_index_rules_ensure_table')) {
 		} elseif ($mod === 'guides') {
 			$ctx['entity'] = 'guides';
 			$ctx['entity_id'] = $page_id;
+		} elseif ($mod === 'promo') {
+			$ctx['entity'] = 'promo';
+			$ctx['entity_id'] = $page_id;
 		} elseif ($mod === 'games') {
 			$ctx['entity'] = 'games';
 			$ctx['entity_id'] = $page_id;

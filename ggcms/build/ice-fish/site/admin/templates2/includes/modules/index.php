@@ -7,6 +7,7 @@ $q['site']['blog']    = (int) @mysql_select("SELECT COUNT(*) FROM blog WHERE dis
 $q['site']['guides']  = (int) @mysql_select("SELECT COUNT(*) FROM guides WHERE display=1", 'string');
 $q['site']['games']   = (int) @mysql_select("SELECT COUNT(*) FROM games WHERE display=1", 'string');
 $q['site']['casinos'] = (int) @mysql_select("SELECT COUNT(*) FROM casino_articles WHERE display=1", 'string');
+$q['site']['promo'] = (int) @mysql_select("SELECT COUNT(*) FROM promo WHERE display=1", 'string');
 $q['site']['langs']   = (int) @mysql_select("SELECT COUNT(*) FROM languages WHERE display=1", 'string');
 
 $q['seo_monitor_ajax'] = false;
@@ -27,6 +28,7 @@ $dash_content_kpis = array(
 	array('href' => 'admin.php?m=content&tab=guides', 'label' => 'Guides', 'v' => (int)@$q['site']['guides'], 'accent' => '#17a2b8'),
 	array('href' => 'admin.php?m=content&tab=games', 'label' => 'Games', 'v' => (int)@$q['site']['games'], 'accent' => '#ffc107'),
 	array('href' => 'admin.php?m=content&tab=casinos', 'label' => 'Casinos', 'v' => (int)@$q['site']['casinos'], 'accent' => '#6c757d'),
+	array('href' => 'admin.php?m=content&tab=promo', 'label' => 'Promo', 'v' => (int)@$q['site']['promo'], 'accent' => '#e83e8c'),
 	array('href' => 'admin.php?m=languages', 'label' => 'Languages', 'v' => (int)@$q['site']['langs'], 'accent' => '#343a40'),
 );
 ?>

@@ -415,7 +415,7 @@ if (!empty($module['table']) && !empty($form) && function_exists('admin_deferred
 }
 
 // Same SEO limits on main table rows (English/source is audited from `pages` / `blog` / etc., not only content_i18n).
-if (!empty($module['table']) && in_array((string)$module['table'], array('pages', 'guides', 'games', 'casino_articles', 'blog'), true)) {
+if (!empty($module['table']) && in_array((string)$module['table'], array('pages', 'guides', 'games', 'casino_articles', 'promo', 'blog'), true)) {
 	if (!function_exists('translation_cluster_trim_seo_text')) {
 		require_once ROOT_DIR . 'functions/translation_cluster.php';
 	}
@@ -452,7 +452,7 @@ if ($get['id'] > 0) {
 
 		// HARD verification for Common tab edits (guides/games/casino_articles/blog):
 		// ensure DB content equals POSTed values (TinyMCE issues can send stale content).
-		if (in_array($module_table, array('guides','games','casino_articles','blog'), true) && !empty($post['text'])) {
+		if (in_array($module_table, array('guides','games','casino_articles','promo','blog'), true) && !empty($post['text'])) {
 			$after = mysql_select("
 				SELECT url,name,title,description,text
 				FROM `" . mysql_res($module_table) . "`
@@ -483,7 +483,7 @@ if ($get['id'] > 0) {
 		// Sync canonical content_i18n with Common tab edits.
 		// Frontend for guides/games/casinos/blog prefers content_i18n when it exists.
 		// So when you edit Common (canonical) we mirror it into content_i18n for source_lang_id.
-		$sync_entities = array('guides', 'games', 'casino_articles', 'blog');
+		$sync_entities = array('guides', 'games', 'casino_articles', 'promo', 'blog');
 		$sync_authors = ((string)($get['m'] ?? '') === 'authors' || (string)$module['table'] === 'site_authors');
 		if (($sync_authors || in_array((string)$module['table'], $sync_entities, true))
 			&& @mysql_select("SHOW TABLES LIKE 'content_i18n'", 'num_rows') > 0

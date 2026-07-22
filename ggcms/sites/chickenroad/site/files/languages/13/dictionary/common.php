@@ -68,5 +68,12 @@ $lang['common'] = array(
 	'blog_next_post' => 'পরের নিবন্ধ',
 	'author_byline_prefix' => 'দ্বারা',
 	'author_references_title' => 'তথ্যসূত্র',
+	'promo_title' => 'Promo',
+	'promo_cat_active' => 'Active',
+	'promo_cat_archive' => 'Archive',
+	'promo_ended' => 'Ended',
+	'demo_app_promo_gift' => 'Promo & bonuses',
+	'promo_get_bonus' => 'Get bonus',
+	'promo_active_until' => 'Active until',
 	'authors_title' => 'লেখক',
 );?>

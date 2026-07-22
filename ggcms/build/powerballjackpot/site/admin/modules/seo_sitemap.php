@@ -30,6 +30,7 @@ $opts = array(
 	'guides'  => 1,
 	'games'   => 1,
 	'casinos' => 1,
+	'promo' => 1,
 );
 if ($variables_exists) {
 	$row = mysql_select("SELECT value FROM `variables` WHERE `key` = 'sitemap_include' LIMIT 1", 'row');
@@ -103,6 +104,7 @@ $stats['blog']    = (int) @mysql_select("SELECT COUNT(*) FROM blog WHERE display
 $stats['guides']  = (int) @mysql_select("SELECT COUNT(*) FROM guides WHERE display=1", 'string');
 $stats['games']   = (int) @mysql_select("SELECT COUNT(*) FROM games WHERE display=1", 'string');
 $stats['casinos'] = (int) @mysql_select("SELECT COUNT(*) FROM casino_articles WHERE display=1", 'string');
+$stats['promo'] = (int) @mysql_select("SELECT COUNT(*) FROM promo WHERE display=1", 'string');
 $stats['langs']   = (int) @mysql_select("SELECT COUNT(*) FROM languages WHERE display=1", 'string');
 
 $base = rtrim($config['http_domain'], '/');
@@ -167,6 +169,7 @@ $kpi = array(
 	array('key' => 'guides', 'label' => 'Guides'),
 	array('key' => 'games', 'label' => 'Games'),
 	array('key' => 'casinos', 'label' => 'Casinos'),
+	array('key' => 'promo', 'label' => 'Promo'),
 	array('key' => 'langs', 'label' => 'Languages'),
 );
 foreach ($kpi as $item) {
@@ -187,6 +190,7 @@ if ($variables_exists) {
 		'guides' => 'Guides',
 		'games' => 'Games',
 		'casinos' => 'Casinos',
+		'promo' => 'Promo',
 	);
 	foreach ($sections as $sk => $slab) {
 		$cid = 'inc_' . $sk;

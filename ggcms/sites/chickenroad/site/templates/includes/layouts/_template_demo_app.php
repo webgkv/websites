@@ -106,6 +106,20 @@ if (function_exists('site_seo_public_origin')) {
 		}
 		.demo-app-icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color: #e8eef5; text-decoration: none; cursor: pointer; transition: background .15s ease; }
 		.demo-app-icon-btn:hover { background: rgba(255,255,255,.12); color: #fff; }
+		.demo-app-promo-gift { flex-shrink: 0; position: relative; color: #fdb614; border-color: color-mix(in srgb, #fdb614 45%, transparent); }
+		.demo-app-promo-gift:hover { color: #ffc94d; }
+		.demo-app-promo-gift--unseen::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #ff4d4f;
+			box-shadow: 0 0 0 2px #2c2a33;
+			pointer-events: none;
+		}
 		.demo-app-close { }
 		/* DEMO_INSTALL_AFFORDANCE start — rollback: DEMO_INSTALL_AFFORDANCE_ROLLBACK.md */
 		.demo-app-install-wrap {

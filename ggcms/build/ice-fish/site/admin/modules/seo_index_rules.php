@@ -354,12 +354,12 @@ $content .= '<div class="tstats-overview">';
 $content .= '<h6 class="tstats-section-label mb-3">Content types</h6>';
 $content .= '<div class="row">';
 foreach ($entity_map as $ent => $info) {
-	$table = $info['table'];
-	$exists = @mysql_select("SHOW TABLES LIKE '" . mysql_res($table) . "'", 'num_rows');
+	$_tbl = $info['table'];
+	$exists = @mysql_select("SHOW TABLES LIKE '" . mysql_res($_tbl) . "'", 'num_rows');
 	if ((int) $exists <= 0) {
 		continue;
 	}
-	$cnt = (int) @mysql_select("SELECT COUNT(*) FROM `" . mysql_res($table) . "` WHERE display=1", 'string');
+	$cnt = (int) @mysql_select("SELECT COUNT(*) FROM `" . mysql_res($_tbl) . "` WHERE display=1", 'string');
 	$ent_row = seo_index_rules_get('entity', $ent, 0);
 	$status = 'Open';
 	$status_cls = 'text-success';
@@ -387,5 +387,7 @@ foreach ($entity_map as $ent => $info) {
 $content .= '</div></div>';
 $content .= '</div></div>';
 $content .= $seo_index_rules_engine_js;
+unset($_tbl);
+$table = array();
 
 require_once ROOT_DIR . $config['style'] . '/includes/layouts/_template.php';

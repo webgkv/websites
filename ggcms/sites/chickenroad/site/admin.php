@@ -108,7 +108,7 @@ $module = array(
 
 // Content section: tabs = site sections; sub-tabs for Blog (Articles, Categories, Tags) and Casinos (Casinos, Tags)
 if ($get['m'] === 'content') {
-	$content_tabs = array('guides'=>'Guides', 'download'=>'Download', 'predictor'=>'Predictor', 'demo'=>'Demo', 'games'=>'Games', 'casinos'=>'Casinos', 'blog'=>'Blog');
+	$content_tabs = array('guides'=>'Guides', 'download'=>'Download', 'predictor'=>'Predictor', 'demo'=>'Demo', 'games'=>'Games', 'casinos'=>'Casinos', 'promo'=>'Promo', 'blog'=>'Blog');
 	$ct = isset($get['tab']) ? $get['tab'] : 'guides';
 	if (!isset($content_tabs[$ct])) $ct = 'guides';
 	$get['tab'] = $ct;
@@ -132,6 +132,8 @@ if ($get['m'] === 'content') {
 		$module['table'] = $gstab;
 	} elseif ($ct === 'casinos') {
 		$module['table'] = 'casino_articles';
+	} elseif ($ct === 'promo') {
+		$module['table'] = 'promo';
 	}
 }
 

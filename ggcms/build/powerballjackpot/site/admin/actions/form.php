@@ -33,7 +33,7 @@ multilingual();
 // This avoids drift between base tables (guides/games/...) and content_i18n for EN.
 if (!empty($get['u']) && (string)$get['u'] === 'form' && (int)($get['id'] ?? 0) > 0) {
 	$activeProfileTab = !isset($get['ftab']) || (int)$get['ftab'] === 1;
-	$preload_tables = array('guides', 'games', 'casino_articles', 'blog');
+	$preload_tables = array('guides', 'games', 'casino_articles', 'promo', 'blog');
 	$is_author_form = ((string)($get['m'] ?? '') === 'authors' || (string)($module['table'] ?? '') === 'site_authors');
 	// Authors: site_authors.bio is canonical; content_i18n must not overwrite the form from a stale short row.
 	if ($activeProfileTab && !empty($module['table']) && !$is_author_form && in_array((string)$module['table'], $preload_tables, true)) {

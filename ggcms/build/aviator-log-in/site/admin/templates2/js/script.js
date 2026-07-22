@@ -329,7 +329,7 @@ $(document).ready(function(){
 		} catch (e) {}
 
 		// For pages + Content modules, open editor as a normal page (not modal).
-		if (m === 'pages' || m === 'guides' || m === 'games' || m === 'casino_articles' || m === 'blog') {
+		if (m === 'pages' || m === 'guides' || m === 'games' || m === 'casino_articles' || m === 'promo' || m === 'blog') {
 			var params = new URLSearchParams(window.location.search || '');
 			var i18n_lang_id = params.get('i18n_lang_id');
 			if (m === 'pages') {

@@ -305,7 +305,7 @@ if (mysql_select("SHOW TABLES LIKE 'pages'", 'num_rows') > 0) {
 }
 
 // --- Add author_id to content tables ---
-$content_tables = array('blog', 'guides', 'games', 'casino_articles', 'pages');
+$content_tables = array('blog', 'guides', 'games', 'casino_articles', 'promo', 'pages');
 foreach ($content_tables as $tbl) {
 	if (mysql_select("SHOW TABLES LIKE '$tbl'", 'num_rows') > 0) {
 		if (mysql_select("SHOW COLUMNS FROM `$tbl` LIKE 'author_id'", 'num_rows') === 0) {
@@ -398,4 +398,9 @@ if (is_file(ROOT_DIR . 'functions/seo_index_rules.php')) {
 			$done[] = 'seo_index_rules table';
 		}
 	}
+}
+
+// --- Promo table + hub page (/promo/) ---
+if (is_file(ROOT_DIR . 'admin/actions/promo_migrate_hub.php')) {
+	require_once ROOT_DIR . 'admin/actions/promo_migrate_hub.php';
 }

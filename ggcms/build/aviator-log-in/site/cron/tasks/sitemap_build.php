@@ -48,6 +48,7 @@ $include = array(
 	'guides'  => 1,
 	'games'   => 1,
 	'casinos' => 1,
+	'promo' => 1,
 	'authors' => 1,
 );
 if (@mysql_select("SHOW TABLES LIKE 'variables'", 'num_rows') > 0) {
@@ -174,6 +175,7 @@ $authors_page = mysql_select("SELECT * FROM pages WHERE display=1 AND module='au
 $guides_page = mysql_select("SELECT * FROM pages WHERE display=1 AND module='pages' AND " . sm_pages_slug_where('guides') . " LIMIT 1", 'row');
 $games_page = mysql_select("SELECT * FROM pages WHERE display=1 AND module='pages' AND " . sm_pages_slug_where('games') . " LIMIT 1", 'row');
 $casinos_page = mysql_select("SELECT * FROM pages WHERE display=1 AND module='pages' AND " . sm_pages_slug_where('casinos') . " LIMIT 1", 'row');
+$promo_page = mysql_select("SELECT * FROM pages WHERE display=1 AND (module='promo' OR (module='pages' AND " . sm_pages_slug_where('promo') . ")) LIMIT 1", 'row');
 
 $pages = null;
 if (!empty($include['pages'])) {
@@ -191,7 +193,7 @@ foreach ($languages as $lang) {
 	$langSlug = trim((string)$lang['url']);
 	$fileLangSlug = sm_file_lang_slug($lang);
 	$entries = array();
-	$cnt_pages = $cnt_blog = $cnt_guides = $cnt_games = $cnt_casinos = $cnt_authors = 0;
+	$cnt_pages = $cnt_blog = $cnt_guides = $cnt_games = $cnt_casinos = $cnt_promo = $cnt_authors = 0;
 	$blog_rows_with_slug = 0;
 	$blog_rows_empty_slug = 0;
 	$blog_rows_same_as_source = 0;
@@ -438,6 +440,40 @@ foreach ($languages as $lang) {
 		}
 	}
 
+	// 5b) Promo
+	if (!empty($include['promo']) && @mysql_select("SHOW TABLES LIKE 'promo'", 'num_rows') > 0) {
+		$promo_slug = $promo_page ? sm_slug($promo_page, $langId, $default_lang_id) : '';
+		if ($promo_slug === '') {
+			$promo_slug = 'promo';
+		}
+		$prefix = ($langSlug !== '' ? '/' . $langSlug : '') . '/' . $promo_slug . '/';
+		$entries[] = array('loc' => $base . $prefix, 'lastmod' => null);
+		$cnt_promo++;
+		$rows = mysql_select("SELECT * FROM promo WHERE display=1 ORDER BY position DESC, date DESC, id DESC", 'rows');
+		if ($rows) {
+			foreach ($rows as $a) {
+				$slug = sm_slug($a, $langId, $default_lang_id);
+				if ($slug === '') {
+					foreach (array('url', 'url1', 'url2', 'url3') as $uf) {
+						if (isset($a[$uf]) && trim((string)$a[$uf]) !== '') {
+							$slug = trim((string)$a[$uf], '/');
+							break;
+						}
+					}
+					if ($slug === '' && isset($a['id'])) {
+						$slug = 'promo-' . (int)$a['id'];
+					}
+				}
+				if ($slug === '') {
+					continue;
+				}
+				$dt = !empty($a['updated_at']) && $a['updated_at'] !== '0000-00-00 00:00:00' ? $a['updated_at'] : (isset($a['date']) ? $a['date'] : null);
+				$entries[] = array('loc' => $base . $prefix . $slug . '/', 'lastmod' => $dt);
+				$cnt_promo++;
+			}
+		}
+	}
+
 	// 6) Authors
 	if (!empty($include['authors']) && @mysql_select("SHOW TABLES LIKE 'site_authors'", 'num_rows') > 0) {
 		require_once ROOT_DIR . 'functions/author_profiles.php';
@@ -479,7 +515,7 @@ foreach ($languages as $lang) {
 
 	$report[] = array(
 		'lang' => $fileLangSlug,
-		'urls' => $cnt_pages + $cnt_blog + $cnt_guides + $cnt_games + $cnt_casinos + $cnt_authors,
+		'urls' => $cnt_pages + $cnt_blog + $cnt_guides + $cnt_games + $cnt_casinos + $cnt_promo + $cnt_authors,
 		'parts' => count(array_filter($writtenFiles, function ($f) use ($fileLangSlug) {
 			return strpos($f, 'sitemap_' . $fileLangSlug . '_') === 0;
 		})),
@@ -489,6 +525,7 @@ foreach ($languages as $lang) {
 		'guides' => $cnt_guides,
 		'games' => $cnt_games,
 		'casinos' => $cnt_casinos,
+		'promo' => $cnt_promo,
 		'authors' => $cnt_authors,
 		'blog_db' => $blog_total_in_db,
 		'blog_slug_ok' => $blog_rows_with_slug,

@@ -15,6 +15,7 @@ function site_section_slug_map()
 		'blog' => 'blog',
 		'guides' => 'guides',
 		'casinos' => 'casinos',
+		'promo' => 'promo',
 	);
 	global $config;
 	if (!empty($config['section_slugs']) && is_array($config['section_slugs'])) {
@@ -54,6 +55,16 @@ function site_section_slug_map()
 		", 'row', 0);
 		if ($casinos_row && trim((string) ($casinos_row['url'] ?? ''), '/') !== '') {
 			$map['casinos'] = trim((string) $casinos_row['url'], '/');
+		}
+		$promo_row = mysql_select("
+			SELECT url FROM pages
+			WHERE display=1 AND level=1
+			  AND (module='promo' OR (module='pages' AND url='promo'))
+			ORDER BY left_key ASC
+			LIMIT 1
+		", 'row', 0);
+		if ($promo_row && trim((string) ($promo_row['url'] ?? ''), '/') !== '') {
+			$map['promo'] = trim((string) $promo_row['url'], '/');
 		}
 	}
 	return $map;
@@ -188,6 +199,9 @@ function site_section_module_for_slug($slug)
 	if ($slug === 'casinos') {
 		return 'casinos';
 	}
+	if ($slug === 'promo') {
+		return 'promo';
+	}
 	return null;
 }
 
@@ -244,6 +258,15 @@ function site_page_is_section(array $page, $section_module, $langid = '')
 			return in_array($slug, array(site_section_public_slug('casinos'), 'casinos', 'lotteries'), true);
 		}
 	}
+	if ($section_module === 'promo') {
+		if ($module === 'promo') {
+			return true;
+		}
+		if ($module === 'pages') {
+			$slug = site_page_menu_url_slug($page, $langid);
+			return in_array($slug, array(site_section_public_slug('promo'), 'promo'), true);
+		}
+	}
 	return false;
 }
 
@@ -271,6 +294,7 @@ function site_content_section_url_slugs()
 		'games',
 		'casinos',
 		'lotteries',
+		'promo',
 		'demo',
 		'predictor',
 		'download',

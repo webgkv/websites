@@ -545,7 +545,7 @@ function admin_i18n_sync_canonical_row_to_base_table($entity, $entity_id, $lang_
 		return mysql_fn('update', 'site_authors', $author_update, ' AND id=' . (int)$entity_id . ' ') !== false;
 	}
 
-	if (!in_array($entity, array('guides', 'games', 'casino_articles', 'blog'), true)) {
+	if (!in_array($entity, array('guides', 'games', 'casino_articles', 'blog', 'promo'), true)) {
 		return false;
 	}
 
@@ -561,7 +561,7 @@ function admin_i18n_sync_canonical_row_to_base_table($entity, $entity_id, $lang_
 	}
 	if (isset($row['description']) && trim((string)$row['description']) !== '') {
 		$update_base['description'] = (string)$row['description'];
-		if ($entity === 'blog') {
+		if ($entity === 'blog' || $entity === 'promo') {
 			$update_base['name_2'] = (string)$row['description'];
 		}
 	}

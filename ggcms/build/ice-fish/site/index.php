@@ -1233,6 +1233,11 @@ function page_i18n_fields_current($page, $lang_id) {
 			$abc['module'] = 'casinos';
 			$abc['layout'] = 'casinos_fixed';
 		}
+		// Promo hub: module=promo or legacy pages row url=promo
+		if ($abc['page']['module'] === 'promo'
+			|| ($abc['page']['module'] === 'pages' && (isset($abc['page']['url']) && $abc['page']['url'] === 'promo' || isset($abc['page']["url$langid"]) && $abc['page']["url$langid"] === 'promo'))) {
+			$abc['module'] = $abc['layout'] = 'promo';
+		}
 		// Demo page: use demo layout (interactive game block + content)
 		if ((int)$abc['page']['id'] === 4 || ($abc['page']['module'] === 'pages' && (isset($abc['page']['url']) && $abc['page']['url'] === 'demo' || isset($abc['page']["url$langid"]) && $abc['page']["url$langid"] === 'demo'))) {
 			$abc['layout'] = 'demo';

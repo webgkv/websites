@@ -62,6 +62,7 @@ function media_library_entity_tables() {
 		'games',
 		'blog',
 		'casino_articles',
+		'promo',
 		'casinos',
 		'news',
 		'advices',
@@ -165,7 +166,7 @@ function media_library_upload_dir($entity = '', $entity_id = 0, $folder = '') {
  */
 function media_library_upload($tmp_path, $original_name, $entity = '', $entity_id = 0, $folder = '') {
 	require_once ROOT_DIR . 'functions/media_image.php';
-	$profile = ($entity === 'games' || $entity === 'guides' || $entity === 'casino_articles') ? 'card' : 'content';
+	$profile = ($entity === 'games' || $entity === 'guides' || $entity === 'casino_articles' || $entity === 'promo') ? 'card' : 'content';
 	$res = media_library_store_uploaded_file($tmp_path, $original_name, $profile);
 	if (empty($res['ok'])) {
 		return array('ok' => false, 'message' => isset($res['message']) ? $res['message'] : 'Upload failed');
@@ -545,7 +546,7 @@ function media_library_user_can_access() {
 	if (access('admin module', 'media')) {
 		return true;
 	}
-	$gates = array('pages', 'content', 'guides', 'games', 'blog', 'casino_articles', 'casinos', 'news', 'settings');
+	$gates = array('pages', 'content', 'guides', 'games', 'blog', 'casino_articles', 'promo', 'casinos', 'news', 'settings');
 	foreach ($gates as $g) {
 		if (access('admin module', $g)) {
 			return true;

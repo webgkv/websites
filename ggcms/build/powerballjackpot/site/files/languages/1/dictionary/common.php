@@ -200,5 +200,12 @@ $lang['common'] = array(
 	'sim_col_match' => 'Match',
 	'sim_col_prize' => 'Prize',
 	'sim_col_hits' => 'Hits',
+	'promo_title' => 'Promo',
+	'promo_cat_active' => 'Active',
+	'promo_cat_archive' => 'Archive',
+	'promo_ended' => 'Ended',
+	'demo_app_promo_gift' => 'Promo & bonuses',
+	'promo_get_bonus' => 'Get bonus',
+	'promo_active_until' => 'Active until',
 	'authors_title' => 'Authors',
 );?>
