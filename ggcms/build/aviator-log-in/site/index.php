@@ -1340,6 +1340,9 @@ for($i=1;$i<=count($abc['languages']);$i++) {
 					$slug = isset($abc['page']['url']) ? (string)$abc['page']['url'] : '';
 					if ($slug === 'games') return (string)i18n('common|games_title');
 					if ($slug === 'guides') return (string)i18n('common|guides_title');
+					if ($slug === 'promo' || (function_exists('site_section_public_slug') && $slug === site_section_public_slug('promo'))) {
+						return (string)i18n('common|promo_title');
+					}
 					if ($slug === 'authors') return (string)author_list_title();
 
 					$nm = trim((string)($abc['page']["name".$langid] ?? ''));

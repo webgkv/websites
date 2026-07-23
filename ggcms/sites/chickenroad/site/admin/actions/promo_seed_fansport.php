@@ -19,6 +19,7 @@ if (!function_exists('promo_seed_fansport_html')) {
 		<p class="promo-land-hero__eyebrow">FanSport × Chicken Road · Free Spins</p>
 		<h1 class="promo-land-hero__headline">Your free spins are ready</h1>
 		<p class="promo-land-hero__lead">A new free spins gift has been added for you.</p>
+		<p class="promo-land-hero__note">The bonus will be credited within 24 hours.</p>
 		<div class="main_btn promo-land-hero__cta">
 			<noads><a href="{$go}">Get bonus</a></noads>
 		</div>

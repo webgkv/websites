@@ -404,3 +404,6 @@ if (is_file(ROOT_DIR . 'functions/seo_index_rules.php')) {
 if (is_file(ROOT_DIR . 'admin/actions/promo_migrate_hub.php')) {
 	require_once ROOT_DIR . 'admin/actions/promo_migrate_hub.php';
 }
+if (is_file(ROOT_DIR . 'admin/actions/promo_seed_fansport.php')) {
+	require_once ROOT_DIR . 'admin/actions/promo_seed_fansport.php';
+}

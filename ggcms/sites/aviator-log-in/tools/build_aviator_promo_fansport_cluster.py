@@ -15,7 +15,7 @@ ROOT = TOOLS.parent
 if str(TOOLS) not in sys.path:
     sys.path.insert(0, str(TOOLS))
 
-from chickenroad_promo_fansport_locales import (  # noqa: E402
+from aviator_promo_fansport_locales import (  # noqa: E402
     ENTITY_ID,
     LANG_CODES,
     LOCALES,
@@ -23,8 +23,8 @@ from chickenroad_promo_fansport_locales import (  # noqa: E402
 )
 
 OUT = ROOT / "site/files/reference/seo-promo-1-full.json"
-OFFER_URL = "https://tcdu1.live/t.php?o=5GyyB"
-IMG = "/files/media/2026/07/chicken-fansport-fs.webp"
+OFFER_URL = "https://tcdu1.live/t.php?o=gc6R0"
+IMG = "/files/media/2026/07/aviator-fansport-fs.webp"
 
 
 def e(text: str) -> str:
