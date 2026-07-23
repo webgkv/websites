@@ -269,6 +269,162 @@ function pwa_install_bust_ios_image_cache($html) {
 	return $html;
 }
 
+/**
+ * CTA label from quick_lead — text before the demo/app link.
+ *
+ * @param string $lead_html
+ * @return string
+ */
+function pwa_install_quick_path_cta_label($lead_html) {
+	$html = (string) $lead_html;
+	if ($html !== '' && preg_match('#^(.+?)<a\b#is', $html, $m)) {
+		$t = trim(strip_tags($m[1]));
+		$t = rtrim($t, " \t\n\r\0\x0B—–-.,;");
+		if ($t !== '') {
+			return $t;
+		}
+	}
+	$text = trim(strip_tags($html));
+	if ($text !== '' && preg_match('/^(.+?)\s+[—–\-]\s+/u', $text, $m)) {
+		return trim($m[1]);
+	}
+	return 'Open demo in Safari';
+}
+
+/**
+ * Short hint after the demo link (e.g. "Then follow the steps below…").
+ *
+ * @param string $lead_html
+ * @return string
+ */
+function pwa_install_quick_path_hint($lead_html) {
+	if (preg_match('#</a>(.+)$#is', (string) $lead_html, $m)) {
+		$t = trim(strip_tags($m[1]));
+		$t = ltrim($t, '. ');
+		return $t;
+	}
+	return '';
+}
+
+/**
+ * Demo shell URL from quick_lead anchor or runtime helpers.
+ *
+ * @param string $lead_html
+ * @param array $abc
+ * @param array $lang
+ * @return string
+ */
+function pwa_install_extract_demo_url_from_lead($lead_html, $abc, $lang) {
+	if (preg_match('#href=["\']([^"\']*demo/app/?[^"\']*)["\']#i', (string) $lead_html, $m)) {
+		return $m[1];
+	}
+	return pwa_install_demo_app_absolute_url($abc, $lang);
+}
+
+/**
+ * Localized copy-link button labels for the PWA quick-path hero.
+ *
+ * @param array $lang
+ * @return array{copy:string,copied:string}
+ */
+function pwa_install_copy_button_labels($lang) {
+	$key = pwa_install_lang_key($lang);
+	$map = array(
+		'en' => array('copy' => 'Copy link', 'copied' => 'Copied!'),
+		'fr' => array('copy' => 'Copier le lien', 'copied' => 'Copié !'),
+		'de' => array('copy' => 'Link kopieren', 'copied' => 'Kopiert!'),
+		'es' => array('copy' => 'Copiar enlace', 'copied' => '¡Copiado!'),
+		'pt' => array('copy' => 'Copiar link', 'copied' => 'Copiado!'),
+		'ru' => array('copy' => 'Копировать ссылку', 'copied' => 'Скопировано!'),
+		'it' => array('copy' => 'Copia link', 'copied' => 'Copiato!'),
+		'pl' => array('copy' => 'Kopiuj link', 'copied' => 'Skopiowano!'),
+		'uk' => array('copy' => 'Копіювати посилання', 'copied' => 'Скопійовано!'),
+		'nl' => array('copy' => 'Link kopiëren', 'copied' => 'Gekopieerd!'),
+		'ro' => array('copy' => 'Copiază linkul', 'copied' => 'Copiat!'),
+		'hi' => array('copy' => 'लिंक कॉपी करें', 'copied' => 'कॉपी हो गया!'),
+		'ar' => array('copy' => 'نسخ الرابط', 'copied' => 'تم النسخ!'),
+		'bn' => array('copy' => 'লিংক কপি করুন', 'copied' => 'কপি হয়েছে!'),
+		'vi' => array('copy' => 'Sao chép liên kết', 'copied' => 'Đã sao chép!'),
+		'az' => array('copy' => 'Linki kopyala', 'copied' => 'Kopyalandı!'),
+	);
+	return isset($map[$key]) ? $map[$key] : $map['en'];
+}
+
+/**
+ * Prominent quick-path card — injected right after H1.
+ *
+ * @param string $title
+ * @param string $hint
+ * @param string $demo_url
+ * @param array|null $copy_labels
+ * @return string
+ */
+function pwa_install_quick_path_hero_markup($title, $hint, $demo_url, $copy_labels = null) {
+	$title = trim((string) $title);
+	$hint = trim((string) $hint);
+	$demo_url = trim((string) $demo_url);
+	if (!is_array($copy_labels)) {
+		$copy_labels = array('copy' => 'Copy link', 'copied' => 'Copied!');
+	}
+	$out = '<div class="pwa-ios-quick pwa-ios-quick--hero">';
+	if ($title !== '') {
+		$out .= '<h2 class="pwa-ios-quick__title">' . htmlspecialchars($title, ENT_QUOTES, 'UTF-8') . '</h2>';
+	}
+	if ($hint !== '') {
+		$out .= '<p class="pwa-ios-quick__hint">' . htmlspecialchars($hint, ENT_QUOTES, 'UTF-8') . '</p>';
+	}
+	if ($demo_url !== '') {
+		$esc_url = htmlspecialchars($demo_url, ENT_QUOTES, 'UTF-8');
+		$copy_l = htmlspecialchars((string) $copy_labels['copy'], ENT_QUOTES, 'UTF-8');
+		$copied_l = htmlspecialchars((string) $copy_labels['copied'], ENT_QUOTES, 'UTF-8');
+		$out .= '<div class="pwa-ios-quick__url-block">';
+		$out .= '<a class="pwa-ios-quick__url" href="' . $esc_url . '">' . $esc_url . '</a>';
+		$out .= '<button type="button" class="pwa-ios-quick__copy" data-copy-url="' . $esc_url . '"'
+			. ' data-copy-label="' . $copy_l . '" data-copied-label="' . $copied_l . '"'
+			. ' aria-label="' . $copy_l . '">';
+		$out .= '<span class="pwa-ios-quick__copy-icon" aria-hidden="true"></span>';
+		$out .= '<span class="pwa-ios-quick__copy-label">' . $copy_l . '</span>';
+		$out .= '</button></div>';
+	}
+	$out .= '</div>';
+	return $out;
+}
+
+/**
+ * Move "Fastest path" (quick_h2 + quick_lead) to a hero card right after H1.
+ *
+ * @param string $html
+ * @param array $abc
+ * @param array $lang
+ * @return string
+ */
+function pwa_install_enhance_quick_path($html, $abc, $lang) {
+	$html = (string) $html;
+	if ($html === '' || stripos($html, 'pwa-ios-quick--hero') !== false) {
+		return $html;
+	}
+	if (!preg_match('#<h1\b[^>]*>.*?</h1>#is', $html, $h1m, PREG_OFFSET_CAPTURE)) {
+		return $html;
+	}
+	$quick_pattern = '#<h2\b[^>]*>(.*?)</h2>\s*<p\b[^>]*>((?:(?!</p>).)*demo/app(?:(?!</p>).)*)</p>#is';
+	$title = 'Fastest path';
+	$hint = '';
+	$demo_url = pwa_install_demo_app_absolute_url($abc, $lang);
+	if (preg_match($quick_pattern, $html, $qm)) {
+		$title = trim(strip_tags($qm[1]));
+		if ($title === '') {
+			$title = 'Fastest path';
+		}
+		$lead = $qm[2];
+		$hint = pwa_install_quick_path_hint($lead);
+		$demo_url = pwa_install_extract_demo_url_from_lead($lead, $abc, $lang);
+		$html = preg_replace($quick_pattern, '', $html, 1);
+	}
+	$hero = pwa_install_quick_path_hero_markup($title, $hint, $demo_url, pwa_install_copy_button_labels($lang));
+	$pos = $h1m[0][1] + strlen($h1m[0][0]);
+	return substr($html, 0, $pos) . $hero . substr($html, $pos);
+}
+
 function pwa_install_normalize_demo_links_in_content($html, $abc, $lang) {
 	if ($html === '' || stripos($html, 'demo/app') === false) {
 		return $html;
@@ -373,10 +529,17 @@ function pwa_install_seo_cluster_content_html(array $b) {
 	$a1 = isset($b['step1_img_alt']) ? $b['step1_img_alt'] : '';
 	$a2 = isset($b['step2_img_alt']) ? $b['step2_img_alt'] : '';
 	$a3 = isset($b['step3_img_alt']) ? $b['step3_img_alt'] : '';
+	$quick_lead = isset($b['quick_lead']) ? (string) $b['quick_lead'] : '';
+	$quick_h2 = isset($b['quick_h2']) ? (string) $b['quick_h2'] : 'Fastest path';
+	$demo_url = pwa_install_extract_demo_url_from_lead($quick_lead, array(), array('url' => 'en'));
+	$hero = pwa_install_quick_path_hero_markup(
+		$quick_h2,
+		pwa_install_quick_path_hint($quick_lead),
+		$demo_url
+	);
 	return '<h1>' . $b['h1'] . '</h1>' . $sep
+		. $hero . $sep
 		. '<p class="pwa-ios-trust-intro">' . $b['intro'] . '</p>' . $sep
-		. '<h2>' . $b['quick_h2'] . '</h2>' . $sep
-		. '<p>' . $b['quick_lead'] . '</p>' . $sep
 		. '<h2>' . $sbs . '</h2>' . $sep
 		. '<h3>' . $b['step1_title'] . '</h3>' . $sep
 		. '<p>' . $b['step1_body'] . '</p>' . $sep

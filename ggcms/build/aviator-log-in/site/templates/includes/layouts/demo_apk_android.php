@@ -11,13 +11,19 @@ if ($page_html !== '' && function_exists('apk_install_normalize_apk_link_in_cont
 if ($page_html !== '' && function_exists('apk_install_replace_placeholder_step_images')) {
 	$page_html = apk_install_replace_placeholder_step_images($page_html);
 }
+if ($page_html !== '' && function_exists('apk_install_bust_android_image_cache')) {
+	$page_html = apk_install_bust_android_image_cache($page_html);
+}
+if ($page_html !== '' && function_exists('apk_install_enhance_download_ctas')) {
+	$page_html = apk_install_enhance_download_ctas($page_html);
+}
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5 demo-pwa-ios-page">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-10 col-xl-9">
-				<div class="text page-content-from-db pwa-install-from-db about_content">
+				<div class="text page-content-from-db pwa-install-from-db apk-install-from-db about_content">
 					<?= $page_html ?>
 				</div>
 			</div>

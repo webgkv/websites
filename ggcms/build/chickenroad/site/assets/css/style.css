@@ -1695,6 +1695,96 @@ h1 {
 .demo-pwa-ios-page .pwa-ios-quick__back:hover {
     color: #fff;
 }
+.demo-pwa-ios-page .pwa-install-from-db > .pwa-ios-quick--hero {
+    margin: 0.15rem 0 1.35rem;
+    border-radius: 12px;
+    padding: 1.35rem 1.25rem 1.5rem;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-ios-quick--hero .pwa-ios-quick__title {
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
+}
+.demo-pwa-ios-page .pwa-ios-quick--hero .pwa-ios-quick__hint {
+    margin: 0 0 1rem;
+    color: #c5ced8;
+    line-height: 1.55;
+    font-size: 0.98rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick__url-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 28rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick__url {
+    display: block;
+    flex: 1 1 auto;
+    padding: 0.82rem 0.95rem;
+    border: 1px solid var(--pwa-trust-border);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.28);
+    color: #eef3f8;
+    font-size: clamp(0.82rem, 3.6vw, 0.95rem);
+    line-height: 1.45;
+    word-break: break-all;
+    text-align: left;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+.demo-pwa-ios-page .pwa-ios-quick__url:hover {
+    color: #fff;
+    border-color: var(--pwa-trust-accent);
+}
+.demo-pwa-ios-page .pwa-ios-quick__copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--pwa-trust-accent);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.demo-pwa-ios-page .pwa-ios-quick__copy:hover {
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0 16px var(--pwa-trust-intro-glow);
+}
+.demo-pwa-ios-page .pwa-ios-quick__copy.is-copied {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--pwa-trust-accent);
+}
+.demo-pwa-ios-page .pwa-ios-quick__copy-icon {
+    flex: 0 0 1.15rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+@media (min-width: 520px) {
+    .demo-pwa-ios-page .pwa-ios-quick__url-block {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .demo-pwa-ios-page .pwa-ios-quick__copy {
+        width: auto;
+        flex: 0 0 auto;
+        min-width: 9.5rem;
+        padding-left: 1.15rem;
+        padding-right: 1.15rem;
+    }
+}
 .demo-pwa-ios-page .pwa-ios-steps {
     counter-reset: pwa-ios;
 }
@@ -1750,41 +1840,17 @@ h1 {
     line-height: 1.7;
     font-size: 1.02rem;
 }
-/* Quick section: 2nd heading + following paragraph in the canonical import template */
-.demo-pwa-ios-page .pwa-install-from-db > h1 + p + h2,
-.demo-pwa-ios-page .pwa-install-from-db > p:first-of-type + h2 {
-    /* selector duplicated for safety across minor markup differences */
-    margin: 0;
-    font-size: 1.35rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    color: #fff;
-    border: 1px solid var(--pwa-trust-border);
-    border-bottom: 0;
-    border-radius: 6px 6px 0 0;
-    padding: 1.4rem 1.5rem 0.9rem;
-    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-}
-.demo-pwa-ios-page .pwa-install-from-db > h1 + p + h2 + p,
-.demo-pwa-ios-page .pwa-install-from-db > p:first-of-type + h2 + p {
-    margin: 0 0 2.25rem;
-    color: #c5ced8;
-    line-height: 1.65;
-    font-size: 1rem;
-    border: 1px solid var(--pwa-trust-border);
-    border-top: 0;
-    border-radius: 0 0 6px 6px;
-    padding: 0.25rem 1.5rem 1.5rem;
-    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
-    box-shadow: none;
-}
 .demo-pwa-ios-page .pwa-install-from-db {
     counter-reset: pwa-ios;
 }
 /* Steps: canonical import template = h2 ("Step by step") + repeating (h3 + p + figure) */
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(2) {
-    margin: 0 0 1.1rem;
+.demo-pwa-ios-page .pwa-install-from-db > h2:first-of-type {
+    margin: 0 0 1.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
     font-size: 1.55rem;
     line-height: 1.2;
     font-weight: 800;
@@ -1911,16 +1977,16 @@ h1 {
     }
 }
 /* Tips section (two h2 blocks after steps) */
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3),
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) {
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(2),
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) {
     margin: 1.75rem 0 0.75rem;
     font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 800;
     color: #fff;
 }
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) + p,
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) + p {
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(2) + p,
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) + p {
     margin: 0 0 0.2rem;
     line-height: 1.65;
     color: #b7c2cf;
@@ -1935,7 +2001,51 @@ h1 {
     color: #dbe4ee;
     font-weight: 700;
 }
-.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(4) + p + p {
+/* APK install — prominent download CTA right under H1 */
+.demo-pwa-ios-page .apk-install-from-db .apk-install-hero-cta,
+.demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta {
+    display: block;
+    width: 100%;
+    max-width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-hero-cta.main_btn,
+.demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta.main_btn {
+    width: 100%;
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-hero-cta {
+    margin-top: 1.15rem;
+    margin-bottom: 1.35rem;
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta {
+    max-width: 18rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-hero-cta a,
+.demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta a {
+    display: block;
+    width: 100%;
+    padding: 16px 28px;
+    font-size: 1.12rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.2;
+    text-align: center;
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-hero-cta a {
+    padding: 18px 32px;
+    font-size: clamp(1.05rem, 4.5vw, 1.25rem);
+}
+.demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta a {
+    padding: 14px 22px;
+    font-size: 1rem;
+}
+.demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) + p + p {
     /* if there is no `.mt-3` class, the last line is the paragraph after the final tip */
     margin-top: 0.9rem;
     color: #dbe4ee;

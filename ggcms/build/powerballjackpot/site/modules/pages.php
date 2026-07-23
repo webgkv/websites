@@ -53,6 +53,9 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 		if (function_exists('apk_install_bust_android_image_cache')) {
 			$abc['content'] = apk_install_bust_android_image_cache($abc['content']);
 		}
+		if (function_exists('apk_install_enhance_download_ctas')) {
+			$abc['content'] = apk_install_enhance_download_ctas($abc['content']);
+		}
 	}
 	if ($demo_pwa_ios_route) {
 		if (function_exists('pwa_install_normalize_demo_links_in_content')) {
@@ -60,6 +63,9 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 		}
 		if (function_exists('pwa_install_bust_ios_image_cache')) {
 			$abc['content'] = pwa_install_bust_ios_image_cache($abc['content']);
+		}
+		if (function_exists('pwa_install_enhance_quick_path')) {
+			$abc['content'] = pwa_install_enhance_quick_path($abc['content'], $abc, $lang);
 		}
 	}
 	if (function_exists('site_brand_rebrand_text') && !empty($abc['content'])) {

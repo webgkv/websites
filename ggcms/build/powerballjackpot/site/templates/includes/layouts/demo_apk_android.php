@@ -14,6 +14,9 @@ if ($page_html !== '' && function_exists('apk_install_replace_placeholder_step_i
 if ($page_html !== '' && function_exists('apk_install_bust_android_image_cache')) {
 	$page_html = apk_install_bust_android_image_cache($page_html);
 }
+if ($page_html !== '' && function_exists('apk_install_enhance_download_ctas')) {
+	$page_html = apk_install_enhance_download_ctas($page_html);
+}
 ?>
 <?= html_render('common/breadcrumb', $abc['breadcrumb']) ?>
 <section class="py-5 demo-pwa-ios-page">

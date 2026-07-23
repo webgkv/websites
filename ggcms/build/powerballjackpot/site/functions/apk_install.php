@@ -298,6 +298,87 @@ function apk_install_guide_url($abc, $lang) {
 }
 
 /**
+ * Branded APK download CTA (uses site `.main_btn` styles).
+ *
+ * @param string $label
+ * @param string $modifier extra class, e.g. apk-install-inline-cta
+ * @return string
+ */
+function apk_install_hero_cta_markup($label, $modifier = '') {
+	$label = trim((string) $label);
+	if ($label === '') {
+		$label = 'Download APK';
+	}
+	$href = apk_install_file_href();
+	$name = apk_install_file_basename();
+	$cls = 'apk-install-hero-cta main_btn';
+	if ($modifier === 'apk-install-inline-cta') {
+		$cls = 'apk-install-inline-cta main_btn';
+	} elseif ($modifier !== '') {
+		$cls .= ' ' . trim((string) $modifier);
+	}
+	return '<div class="' . htmlspecialchars($cls, ENT_QUOTES, 'UTF-8') . '">'
+		. '<a href="' . htmlspecialchars($href, ENT_QUOTES, 'UTF-8') . '" download="'
+		. htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">'
+		. htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</a></div>';
+}
+
+/**
+ * Extract localized download label from page HTML (first APK link).
+ *
+ * @param string $html
+ * @return string
+ */
+function apk_install_download_button_label($html) {
+	$href = preg_quote(apk_install_file_href(), '#');
+	if (preg_match('#<a[^>]+href=["\']' . $href . '["\'][^>]*>(.*?)</a>#is', (string) $html, $m)) {
+		$t = trim(strip_tags($m[1]));
+		if ($t !== '') {
+			return $t;
+		}
+	}
+	return 'Download APK';
+}
+
+/**
+ * Inject prominent download CTA right after H1; restyle legacy Bootstrap buttons.
+ *
+ * @param string $html
+ * @return string
+ */
+function apk_install_enhance_download_ctas($html) {
+	$html = (string) $html;
+	if ($html === '') {
+		return $html;
+	}
+	$html = apk_install_style_legacy_download_buttons($html);
+	if (stripos($html, 'apk-install-hero-cta') === false && preg_match('#<h1\b[^>]*>.*?</h1>#is', $html, $m, PREG_OFFSET_CAPTURE)) {
+		$cta = apk_install_hero_cta_markup(apk_install_download_button_label($html));
+		$pos = $m[0][1] + strlen($m[0][0]);
+		$html = substr($html, 0, $pos) . $cta . substr($html, $pos);
+	}
+	return $html;
+}
+
+/**
+ * Replace small Bootstrap `.btn-primary` APK links with branded `.main_btn` blocks.
+ *
+ * @param string $html
+ * @return string
+ */
+function apk_install_style_legacy_download_buttons($html) {
+	$href = preg_quote(apk_install_file_href(), '#');
+	$name = preg_quote(apk_install_file_basename(), '#');
+	return preg_replace_callback(
+		'#<p class="mt-3">\s*<a class="btn btn-primary" href="(' . $href . ')" download="(' . $name . ')">([^<]+)</a>\s*</p>#i',
+		function ($m) {
+			return apk_install_hero_cta_markup(trim($m[3]), 'apk-install-inline-cta');
+		},
+		$html
+	);
+}
+
+/**
  * Long-form HTML for SEO Monitor `content` (seo_cluster_v1) — same section pattern as PWA install.
  *
  * @param array $b merged bundle
@@ -321,11 +402,11 @@ function apk_install_seo_cluster_content_html(array $b) {
 	$im2 = $bs . 'step-2-unknown-sources.webp';
 	$im3 = $bs . 'step-3-install-open.webp';
 	$out = '<h1>' . $b['h1'] . '</h1>' . $sep
+		. apk_install_hero_cta_markup($dl) . $sep
 		. '<p>' . $b['intro'] . '</p>' . $sep
 		. '<h2>' . $b['quick_h2'] . '</h2>' . $sep
 		. '<p>' . $b['quick_lead'] . '</p>' . $sep
-		. '<p class="mt-3"><a class="btn btn-primary" href="' . htmlspecialchars($apk, ENT_QUOTES, 'UTF-8') . '" download="' . htmlspecialchars(apk_install_file_basename(), ENT_QUOTES, 'UTF-8') . '">'
-		. htmlspecialchars($dl, ENT_QUOTES, 'UTF-8') . '</a></p>' . $sep
+		. apk_install_hero_cta_markup($dl, 'apk-install-inline-cta') . $sep
 		. '<h2>' . $sbs . '</h2>' . $sep
 		. '<h3>' . $b['step1_title'] . '</h3>' . $sep
 		. '<p>' . $b['step1_body'] . '</p>' . $sep
