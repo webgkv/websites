@@ -24,6 +24,9 @@ if (!is_file($i18n)) {
 }
 
 $bundles = require $i18n;
+if (!defined('ROOT_DIR')) {
+	define('ROOT_DIR', $site . '/');
+}
 require_once $site . '/functions/pwa_install.php';
 
 $en = isset($bundles['en']) && is_array($bundles['en']) ? $bundles['en'] : array();
@@ -61,7 +64,7 @@ foreach ($map as $row) {
 	$lurl = (string) $row[1];
 	$key = (string) $row[2];
 	$b = $merge($key);
-	$content = function_exists('pwa_install_seo_cluster_content_html') ? pwa_install_seo_cluster_content_html($b) : '';
+	$content = function_exists('pwa_install_seo_cluster_content_html') ? pwa_install_seo_cluster_content_html($b, $key) : '';
 	$is_en = ($key === 'en');
 	$locales[] = array(
 		'lang_id' => $lid,

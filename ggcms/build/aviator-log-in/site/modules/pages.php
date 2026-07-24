@@ -53,7 +53,9 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 		if (function_exists('apk_install_bust_android_image_cache')) {
 			$abc['content'] = apk_install_bust_android_image_cache($abc['content']);
 		}
-		if (function_exists('apk_install_enhance_download_ctas')) {
+		if (function_exists('apk_install_enhance_page')) {
+			$abc['content'] = apk_install_enhance_page($abc['content'], $abc, $lang);
+		} elseif (function_exists('apk_install_enhance_download_ctas')) {
 			$abc['content'] = apk_install_enhance_download_ctas($abc['content']);
 		}
 	}

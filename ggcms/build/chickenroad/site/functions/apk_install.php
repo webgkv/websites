@@ -130,6 +130,9 @@ function apk_install_bust_android_image_cache($html) {
  */
 function apk_install_lang_key($lang) {
 	$u = isset($lang['url']) ? trim((string) $lang['url'], '/') : 'en';
+	if ($u === 'ua') {
+		return 'uk';
+	}
 	return $u === '' ? 'en' : $u;
 }
 
@@ -304,7 +307,7 @@ function apk_install_guide_url($abc, $lang) {
  * @param string $modifier extra class, e.g. apk-install-inline-cta
  * @return string
  */
-function apk_install_hero_cta_markup($label, $modifier = '') {
+function apk_install_hero_cta_markup($label, $modifier = '', $id = '') {
 	$label = trim((string) $label);
 	if ($label === '') {
 		$label = 'Download APK';
@@ -317,7 +320,10 @@ function apk_install_hero_cta_markup($label, $modifier = '') {
 	} elseif ($modifier !== '') {
 		$cls .= ' ' . trim((string) $modifier);
 	}
-	return '<div class="' . htmlspecialchars($cls, ENT_QUOTES, 'UTF-8') . '">'
+	$id_attr = trim((string) $id) !== ''
+		? (' id="' . htmlspecialchars(trim((string) $id), ENT_QUOTES, 'UTF-8') . '"')
+		: '';
+	return '<div class="' . htmlspecialchars($cls, ENT_QUOTES, 'UTF-8') . '"' . $id_attr . '>'
 		. '<a href="' . htmlspecialchars($href, ENT_QUOTES, 'UTF-8') . '" download="'
 		. htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '">'
 		. htmlspecialchars($label, ENT_QUOTES, 'UTF-8') . '</a></div>';
@@ -353,9 +359,16 @@ function apk_install_enhance_download_ctas($html) {
 	}
 	$html = apk_install_style_legacy_download_buttons($html);
 	if (stripos($html, 'apk-install-hero-cta') === false && preg_match('#<h1\b[^>]*>.*?</h1>#is', $html, $m, PREG_OFFSET_CAPTURE)) {
-		$cta = apk_install_hero_cta_markup(apk_install_download_button_label($html));
+		$cta = apk_install_hero_cta_markup(apk_install_download_button_label($html), '', 'apk-download-hero');
 		$pos = $m[0][1] + strlen($m[0][0]);
 		$html = substr($html, 0, $pos) . $cta . substr($html, $pos);
+	} elseif (stripos($html, 'id="apk-download-hero"') === false && preg_match('#<div class="apk-install-hero-cta\b#', $html)) {
+		$html = preg_replace(
+			'#(<div class="apk-install-hero-cta\b[^"]*")#',
+			'$1 id="apk-download-hero"',
+			$html,
+			1
+		);
 	}
 	return $html;
 }
@@ -424,4 +437,359 @@ function apk_install_seo_cluster_content_html(array $b) {
 		. '<figcaption class="small text-muted mt-1">' . $fc3 . '</figcaption>' . $sep
 		. '</figure>' . $sep;
 	return $out;
+}
+
+/**
+ * Default guided-tour UI strings for install-apk pages (runtime fallback).
+ *
+ * @param string $key
+ * @return array
+ */
+function apk_install_ui_defaults($key) {
+	$nav = function_exists('pwa_install_ui_defaults') ? pwa_install_ui_defaults($key) : array();
+	$maps = array(
+		'en' => array(
+			'tour_cta' => 'How to install APK?',
+			'tour_sub' => '3 steps · about 1 minute',
+			'tour_finish_title' => 'Ready — download the APK',
+			'tour_finish_lead' => 'Use the Download APK button at the top of this page to save the file.',
+			'tour_finish_locked_hint' => 'Complete the 3-step tour — then download the APK above',
+		),
+		'ru' => array(
+			'tour_cta' => 'Как установить APK?',
+			'tour_sub' => '3 шага · около 1 минуты',
+			'tour_finish_title' => 'Готово — скачайте APK',
+			'tour_finish_lead' => 'Нажмите «Скачать APK» вверху страницы, чтобы сохранить файл.',
+			'tour_finish_locked_hint' => 'Пройдите тур из 3 шагов — затем скачайте APK выше',
+		),
+		'fr' => array(
+			'tour_cta' => 'Comment installer l\'APK ?',
+			'tour_sub' => '3 étapes · environ 1 minute',
+			'tour_finish_title' => 'Prêt — téléchargez l\'APK',
+			'tour_finish_lead' => 'Utilisez le bouton Télécharger l\'APK en haut de cette page.',
+			'tour_finish_locked_hint' => 'Terminez le tour en 3 étapes — puis téléchargez l\'APK ci-dessus',
+		),
+		'de' => array(
+			'tour_cta' => 'APK installieren?',
+			'tour_sub' => '3 Schritte · etwa 1 Minute',
+			'tour_finish_title' => 'Bereit — APK herunterladen',
+			'tour_finish_lead' => 'Nutzen Sie oben auf der Seite die Schaltfläche APK herunterladen.',
+			'tour_finish_locked_hint' => 'Schließen Sie die 3-Schritte-Tour ab — dann APK oben laden',
+		),
+		'es' => array(
+			'tour_cta' => '¿Cómo instalar el APK?',
+			'tour_sub' => '3 pasos · alrededor de 1 minuto',
+			'tour_finish_title' => 'Listo — descarga el APK',
+			'tour_finish_lead' => 'Usa el botón Descargar APK en la parte superior de esta página.',
+			'tour_finish_locked_hint' => 'Completa el tour de 3 pasos — luego descarga el APK arriba',
+		),
+		'pt' => array(
+			'tour_cta' => 'Como instalar o APK?',
+			'tour_sub' => '3 passos · cerca de 1 minuto',
+			'tour_finish_title' => 'Pronto — baixe o APK',
+			'tour_finish_lead' => 'Use o botão Baixar APK no topo desta página.',
+			'tour_finish_locked_hint' => 'Conclua o tour de 3 passos — depois baixe o APK acima',
+		),
+		'it' => array(
+			'tour_cta' => 'Come installare l\'APK?',
+			'tour_sub' => '3 passaggi · circa 1 minuto',
+			'tour_finish_title' => 'Pronto — scarica l\'APK',
+			'tour_finish_lead' => 'Usa il pulsante Scarica APK in cima a questa pagina.',
+			'tour_finish_locked_hint' => 'Completa il tour in 3 passaggi — poi scarica l\'APK sopra',
+		),
+		'pl' => array(
+			'tour_cta' => 'Jak zainstalować APK?',
+			'tour_sub' => '3 kroki · około 1 minuty',
+			'tour_finish_title' => 'Gotowe — pobierz APK',
+			'tour_finish_lead' => 'Użyj przycisku Pobierz APK u góry tej strony.',
+			'tour_finish_locked_hint' => 'Ukończ 3-krokową trasę — potem pobierz APK powyżej',
+		),
+		'uk' => array(
+			'tour_cta' => 'Як установити APK?',
+			'tour_sub' => '3 кроки · близько 1 хвилини',
+			'tour_finish_title' => 'Готово — завантажте APK',
+			'tour_finish_lead' => 'Натисніть «Завантажити APK» у верхній частині сторінки.',
+			'tour_finish_locked_hint' => 'Пройдіть тур із 3 кроків — потім завантажте APK вище',
+		),
+		'nl' => array(
+			'tour_cta' => 'APK installeren?',
+			'tour_sub' => '3 stappen · ongeveer 1 minuut',
+			'tour_finish_title' => 'Klaar — download de APK',
+			'tour_finish_lead' => 'Gebruik de knop APK downloaden bovenaan deze pagina.',
+			'tour_finish_locked_hint' => 'Voltooi de tour van 3 stappen — download daarna de APK hierboven',
+		),
+		'ro' => array(
+			'tour_cta' => 'Cum instalez APK-ul?',
+			'tour_sub' => '3 pași · circa 1 minut',
+			'tour_finish_title' => 'Gata — descarcă APK-ul',
+			'tour_finish_lead' => 'Folosește butonul Descarcă APK de sus pe această pagină.',
+			'tour_finish_locked_hint' => 'Finalizează turul în 3 pași — apoi descarcă APK-ul de mai sus',
+		),
+		'hi' => array(
+			'tour_cta' => 'APK कैसे इंस्टॉल करें?',
+			'tour_sub' => '3 स्टेप · लगभग 1 मिनट',
+			'tour_finish_title' => 'तैयार — APK डाउनलोड करें',
+			'tour_finish_lead' => 'फ़ाइल सेव करने के लिए पेज के ऊपर Download APK बटन दबाएँ।',
+			'tour_finish_locked_hint' => '3-स्टेप टूर पूरा करें — फिर ऊपर APK डाउनलोड करें',
+		),
+		'ar' => array(
+			'tour_cta' => 'كيف أثبّت APK؟',
+			'tour_sub' => '3 خطوات · حوالي دقيقة',
+			'tour_finish_title' => 'جاهز — حمّل APK',
+			'tour_finish_lead' => 'استخدم زر تنزيل APK في أعلى هذه الصفحة.',
+			'tour_finish_locked_hint' => 'أكمل الجولة من 3 خطوات — ثم حمّل APK أعلاه',
+		),
+		'bn' => array(
+			'tour_cta' => 'APK কীভাবে ইনস্টল করবেন?',
+			'tour_sub' => '3 ধাপ · প্রায় 1 মিনিট',
+			'tour_finish_title' => 'প্রস্তুত — APK ডাউনলোড করুন',
+			'tour_finish_lead' => 'ফাইল সেভ করতে পেজের উপরে Download APK বোতামে ট্যাপ করুন।',
+			'tour_finish_locked_hint' => '3-ধাপের ট্যুর শেষ করুন — তারপর উপরে APK ডাউনলোড করুন',
+		),
+		'vi' => array(
+			'tour_cta' => 'Cách cài APK?',
+			'tour_sub' => '3 bước · khoảng 1 phút',
+			'tour_finish_title' => 'Sẵn sàng — tải APK',
+			'tour_finish_lead' => 'Dùng nút Tải APK ở đầu trang để lưu tệp.',
+			'tour_finish_locked_hint' => 'Hoàn thành tour 3 bước — rồi tải APK phía trên',
+		),
+		'az' => array(
+			'tour_cta' => 'APK necə quraşdırım?',
+			'tour_sub' => '3 addım · təxminən 1 dəqiqə',
+			'tour_finish_title' => 'Hazırsınız — APK endirin',
+			'tour_finish_lead' => 'Faylı saxlamaq üçün səhifənin yuxarısındakı APK endir düyməsindən istifadə edin.',
+			'tour_finish_locked_hint' => '3 addımlı turu bitirin — sonra yuxarıdakı APK-nı endirin',
+		),
+	);
+	$over = isset($maps[$key]) ? $maps[$key] : $maps['en'];
+	return array_merge($nav, $over);
+}
+
+/**
+ * Runtime UI strings for install-apk guided tour.
+ *
+ * @param array $lang
+ * @return array
+ */
+function apk_install_ui_strings($lang) {
+	$lk = apk_install_lang_key($lang);
+	$defaults = apk_install_ui_defaults($lk);
+	$from_file = array();
+	if (defined('ROOT_DIR')) {
+		$file = ROOT_DIR . 'files/i18n/apk-android-install.php';
+		if (@is_file($file)) {
+			$all = include $file;
+			if (is_array($all)) {
+				if ($lk === 'en' && isset($all['en']) && is_array($all['en'])) {
+					$from_file = $all['en'];
+				} elseif (isset($all[$lk]) && is_array($all[$lk])) {
+					$from_file = $all[$lk];
+				}
+			}
+		}
+	}
+	$keys = array(
+		'tour_cta', 'tour_sub', 'tour_next', 'tour_back', 'tour_done', 'tour_step_of',
+		'tour_finish_title', 'tour_finish_lead', 'tour_finish_locked_hint',
+	);
+	$en_defaults = apk_install_ui_defaults('en');
+	$out = array();
+	foreach ($keys as $k) {
+		if (!empty($from_file[$k])) {
+			$out[$k] = (string) $from_file[$k];
+		} elseif (isset($defaults[$k]) && (string) $defaults[$k] !== '') {
+			$out[$k] = (string) $defaults[$k];
+		} elseif (isset($en_defaults[$k])) {
+			$out[$k] = (string) $en_defaults[$k];
+		} else {
+			$out[$k] = '';
+		}
+	}
+	return $out;
+}
+
+/**
+ * Inline tour-start block (replaces the smaller Download APK button in the quick section).
+ *
+ * @param array $ui
+ * @return string
+ */
+function apk_install_inline_tour_markup(array $ui) {
+	if (!function_exists('pwa_install_tour_start_button_markup')) {
+		return '';
+	}
+	$sub = trim((string) $ui['tour_sub']);
+	$out = '<div class="apk-install-inline-cta pwa-ios-quick pwa-ios-quick--inline-tour">';
+	$out .= pwa_install_tour_start_button_markup($ui);
+	if ($sub !== '') {
+		$out .= '<p class="pwa-ios-quick__sub">' . htmlspecialchars($sub, ENT_QUOTES, 'UTF-8') . '</p>';
+	}
+	$out .= '</div>';
+	return $out;
+}
+
+/**
+ * Finish block — download CTA after the guided tour (mirrors PWA finish layout).
+ *
+ * @param array $ui
+ * @param string $download_label
+ * @return string
+ */
+function apk_install_finish_markup(array $ui, $download_label) {
+	$title = trim((string) $ui['tour_finish_title']);
+	$lead = trim((string) $ui['tour_finish_lead']);
+	$out = '<div class="pwa-ios-quick pwa-ios-quick--finish apk-android-finish--open" id="apk-android-finish">';
+	$out .= '<div class="pwa-ios-quick__finish-body">';
+	if ($title !== '') {
+		$out .= '<h2 class="pwa-ios-quick__title">' . htmlspecialchars($title, ENT_QUOTES, 'UTF-8') . '</h2>';
+	}
+	if ($lead !== '') {
+		$out .= '<p class="pwa-ios-quick__hint">' . htmlspecialchars($lead, ENT_QUOTES, 'UTF-8') . '</p>';
+	}
+	$out .= apk_install_hero_cta_markup($download_label);
+	if (function_exists('pwa_install_tour_start_button_markup')) {
+		$out .= pwa_install_tour_start_button_markup($ui, 'pwa-ios-tour-start--finish');
+		$sub = trim((string) $ui['tour_sub']);
+		if ($sub !== '') {
+			$out .= '<p class="pwa-ios-quick__sub">' . htmlspecialchars($sub, ENT_QUOTES, 'UTF-8') . '</p>';
+		}
+	}
+	$out .= '</div></div>';
+	return $out;
+}
+
+/**
+ * Replace inline download CTA with the guided-tour start button.
+ *
+ * @param string $html
+ * @param string $inline
+ * @return string
+ */
+function apk_install_apply_inline_tour($html, $inline) {
+	$html = (string) $html;
+	$inline = (string) $inline;
+	if ($inline === '') {
+		return $html;
+	}
+	if (strpos($html, 'pwa-ios-quick--inline-tour') !== false) {
+		return function_exists('pwa_install_replace_div_block')
+			? pwa_install_replace_div_block($html, '<div class="apk-install-inline-cta pwa-ios-quick pwa-ios-quick--inline-tour"', $inline)
+			: $html;
+	}
+	if (strpos($html, 'apk-install-inline-cta') !== false && function_exists('pwa_install_replace_div_block')) {
+		return pwa_install_replace_div_block($html, '<div class="apk-install-inline-cta', $inline);
+	}
+	return preg_replace(
+		'#(<h2\b[^>]*>.*?</h2>\s*<p\b[^>]*>.*?</p>)#is',
+		'$1' . $inline,
+		$html,
+		1
+	);
+}
+
+/**
+ * Inject tour bar after the step-by-step H2 (the one immediately before step H3s).
+ *
+ * @param string $html
+ * @param string $bar
+ * @return string
+ */
+function apk_install_apply_tour_bar($html, $bar) {
+	$html = (string) $html;
+	$bar = (string) $bar;
+	if ($bar === '' || !function_exists('pwa_install_replace_div_block')) {
+		return $html;
+	}
+	while (strpos($html, '<div class="pwa-ios-tour-bar"') !== false) {
+		$html = pwa_install_replace_div_block($html, '<div class="pwa-ios-tour-bar"', '');
+	}
+	return preg_replace('#(<h2\b[^>]*>.*?</h2>)(?=\s*<h3\b)#is', '$1' . $bar, (string) $html, 1);
+}
+
+/**
+ * Remove one finish block by id="apk-android-finish".
+ *
+ * @param string $html
+ * @return string
+ */
+function apk_install_remove_finish_block($html) {
+	$html = (string) $html;
+	$id_pos = strpos($html, 'id="apk-android-finish"');
+	if ($id_pos === false) {
+		return $html;
+	}
+	$start = strrpos(substr($html, 0, $id_pos), '<div');
+	if ($start === false) {
+		return $html;
+	}
+	$depth = 0;
+	$i = $start;
+	$len = strlen($html);
+	while ($i < $len) {
+		if ($i + 4 <= $len && substr($html, $i, 4) === '<div') {
+			$depth++;
+			$i += 4;
+			continue;
+		}
+		if ($i + 6 <= $len && substr($html, $i, 6) === '</div>') {
+			$depth--;
+			$i += 6;
+			if ($depth === 0) {
+				return substr($html, 0, $start) . substr($html, $i);
+			}
+			continue;
+		}
+		$i++;
+	}
+	return $html;
+}
+
+/**
+ * Replace or append the APK finish block.
+ *
+ * @param string $html
+ * @param string $finish
+ * @return string
+ */
+function apk_install_apply_finish_block($html, $finish) {
+	$html = (string) $html;
+	$finish = (string) $finish;
+	if ($finish === '') {
+		return $html;
+	}
+	while (strpos($html, 'id="apk-android-finish"') !== false) {
+		$next = apk_install_remove_finish_block($html);
+		if ($next === $html) {
+			break;
+		}
+		$html = $next;
+	}
+	return rtrim($html) . $finish;
+}
+
+/**
+ * Enhance install-apk page: download CTAs, inline tour start, step markers, finish block.
+ *
+ * @param string $html
+ * @param array $abc
+ * @param array $lang
+ * @return string
+ */
+function apk_install_enhance_page($html, $abc, $lang) {
+	$html = (string) $html;
+	if ($html === '') {
+		return $html;
+	}
+	$html = apk_install_enhance_download_ctas($html);
+	$ui = apk_install_ui_strings($lang);
+	$download_label = apk_install_download_button_label($html);
+	$html = apk_install_apply_inline_tour($html, apk_install_inline_tour_markup($ui));
+	if (function_exists('pwa_install_mark_tour_steps')) {
+		$html = pwa_install_mark_tour_steps($html);
+	}
+	if (function_exists('pwa_install_tour_bar_markup')) {
+		$html = apk_install_apply_tour_bar($html, pwa_install_tour_bar_markup($ui));
+	}
+	$html = apk_install_apply_finish_block($html, apk_install_finish_markup($ui, $download_label));
+	return $html;
 }

@@ -2014,6 +2014,39 @@ body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-fig--active {
     line-height: 1.45;
     text-align: center;
 }
+/* PWA step screenshots — portrait Safari captures; robust selectors (not only h3+p+figure) */
+.demo-pwa-ios-page .pwa-install-from-db figure.pwa-ios-tour-fig,
+.demo-pwa-ios-page .apk-install-from-db figure.pwa-ios-tour-fig,
+.demo-pwa-ios-page .pwa-install-from-db figure.text-center.my-3,
+.demo-pwa-ios-page .apk-install-from-db figure.text-center.my-3 {
+    margin: 0.85rem auto 1.5rem;
+    max-width: 100%;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-install-from-db figure.pwa-ios-tour-fig img,
+.demo-pwa-ios-page .apk-install-from-db figure.pwa-ios-tour-fig img,
+.demo-pwa-ios-page .pwa-install-from-db figure.text-center.my-3 img,
+.demo-pwa-ios-page .apk-install-from-db figure.text-center.my-3 img {
+    display: block !important;
+    width: auto !important;
+    max-width: min(100%, 18.5rem) !important;
+    max-height: min(56vh, 480px) !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    object-fit: contain;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+@media (max-width: 767px) {
+    .demo-pwa-ios-page .pwa-install-from-db figure.pwa-ios-tour-fig img,
+    .demo-pwa-ios-page .apk-install-from-db figure.pwa-ios-tour-fig img,
+    .demo-pwa-ios-page .pwa-install-from-db figure.text-center.my-3 img,
+    .demo-pwa-ios-page .apk-install-from-db figure.text-center.my-3 img {
+        max-width: min(100%, 16.5rem) !important;
+        max-height: min(48vh, 400px) !important;
+    }
+}
 /* /download/install-apk/ — step screenshots: varied width like Aviator (not one uniform size) */
 .demo-pwa-ios-page .apk-install-from-db figure {
     margin: 0.85rem auto 1.35rem;
@@ -2115,6 +2148,64 @@ body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-fig--active {
 .demo-pwa-ios-page .apk-install-from-db .apk-install-inline-cta a {
     padding: 14px 22px;
     font-size: 1rem;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--inline-tour {
+    border: 1px solid var(--pwa-trust-border);
+    border-radius: 10px;
+    padding: 1rem 1.1rem 1.15rem;
+    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--inline-tour .pwa-ios-tour-start.main_btn {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 14px 22px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    border: 0;
+    cursor: pointer;
+    color: inherit;
+    line-height: 1.2;
+    text-align: center;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--inline-tour .pwa-ios-quick__sub {
+    margin: 0.75rem 0 0;
+    color: #c5ced8;
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--finish {
+    margin: 1.75rem 0 0;
+    border: 1px solid var(--pwa-trust-border);
+    border-radius: 12px;
+    padding: 1.35rem 1.25rem 1.5rem;
+    background: linear-gradient(145deg, rgba(21, 27, 36, 0.98) 0%, rgba(15, 20, 25, 0.95) 100%);
+    text-align: center;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--finish .pwa-ios-quick__finish-body {
+    opacity: 1;
+    pointer-events: auto;
+    filter: none;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--finish .apk-install-hero-cta {
+    margin: 1rem auto 0;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--finish .pwa-ios-tour-start--finish {
+    display: block;
+    width: 100%;
+    max-width: 18rem;
+    margin: 1.15rem auto 0;
+    padding: 14px 22px;
+    font-size: 1rem;
+}
+.demo-pwa-ios-page .apk-install-from-db .pwa-ios-quick--finish .pwa-ios-quick__sub {
+    margin: 0.75rem auto 0;
+    max-width: 22rem;
+    color: #c5ced8;
+    font-size: 0.92rem;
+    line-height: 1.5;
 }
 .demo-pwa-ios-page .pwa-install-from-db > h2:nth-of-type(3) + p + p {
     /* if there is no `.mt-3` class, the last line is the paragraph after the final tip */

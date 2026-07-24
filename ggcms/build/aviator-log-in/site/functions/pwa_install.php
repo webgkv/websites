@@ -35,6 +35,9 @@ function pwa_install_manifest_href($getV, $r) {
 
 function pwa_install_lang_key($lang) {
 	$u = isset($lang['url']) ? trim((string) $lang['url'], '/') : 'en';
+	if ($u === 'ua') {
+		return 'uk';
+	}
 	return $u === '' ? 'en' : $u;
 }
 
@@ -822,6 +825,85 @@ function pwa_install_inject_tour_bar($html, array $ui) {
 }
 
 /**
+ * Replace or inject the hero tour CTA block after H1.
+ *
+ * @param string $html
+ * @param string $hero
+ * @return string
+ */
+function pwa_install_apply_hero_block($html, $hero) {
+	$html = (string) $html;
+	$hero = (string) $hero;
+	if ($hero === '') {
+		return $html;
+	}
+	if (stripos($html, 'pwa-ios-quick--hero') !== false) {
+		return pwa_install_replace_div_block($html, '<div class="pwa-ios-quick pwa-ios-quick--hero"', $hero);
+	}
+	if (preg_match('#<h1\b[^>]*>.*?</h1>#is', $html, $h1m, PREG_OFFSET_CAPTURE)) {
+		$pos = $h1m[0][1] + strlen($h1m[0][0]);
+		return substr($html, 0, $pos) . $hero . substr($html, $pos);
+	}
+	return $html;
+}
+
+/**
+ * Replace the outermost div block that starts with $open_needle (supports nested divs).
+ *
+ * @param string $html
+ * @param string $open_needle Literal opening fragment, e.g. '<div class="pwa-ios-tour-bar"'
+ * @param string $replacement
+ * @return string
+ */
+function pwa_install_replace_div_block($html, $open_needle, $replacement) {
+	$html = (string) $html;
+	$replacement = (string) $replacement;
+	$start = strpos($html, $open_needle);
+	if ($start === false) {
+		return $html;
+	}
+	$depth = 0;
+	$i = $start;
+	$len = strlen($html);
+	while ($i < $len) {
+		if ($i + 4 <= $len && substr($html, $i, 4) === '<div') {
+			$depth++;
+			$i += 4;
+			continue;
+		}
+		if ($i + 6 <= $len && substr($html, $i, 6) === '</div>') {
+			$depth--;
+			$i += 6;
+			if ($depth === 0) {
+				return substr($html, 0, $start) . $replacement . substr($html, $i);
+			}
+			continue;
+		}
+		$i++;
+	}
+	return $html;
+}
+
+/**
+ * Replace or inject the guided-tour control bar after the first H2.
+ *
+ * @param string $html
+ * @param string $bar
+ * @return string
+ */
+function pwa_install_apply_tour_bar($html, $bar) {
+	$html = (string) $html;
+	$bar = (string) $bar;
+	if ($bar === '') {
+		return $html;
+	}
+	while (strpos($html, '<div class="pwa-ios-tour-bar"') !== false) {
+		$html = pwa_install_replace_div_block($html, '<div class="pwa-ios-tour-bar"', '');
+	}
+	return preg_replace('#(<h2\b[^>]*>.*?</h2>)#is', '$1' . $bar, (string) $html, 1);
+}
+
+/**
  * Replace or append the finish link block on install-pwa pages.
  *
  * @param string $html
@@ -882,20 +964,9 @@ function pwa_install_enhance_page($html, $abc, $lang) {
 		$html,
 		1
 	);
-	if (stripos($html, 'pwa-ios-quick--hero') === false && preg_match('#<h1\b[^>]*>.*?</h1>#is', $html, $h1m, PREG_OFFSET_CAPTURE)) {
-		$hero = pwa_install_hero_markup($ui);
-		$pos = $h1m[0][1] + strlen($h1m[0][0]);
-		$html = substr($html, 0, $pos) . $hero . substr($html, $pos);
-	} elseif (stripos($html, 'pwa-ios-tour-start') === false && stripos($html, 'pwa-ios-quick--hero') !== false) {
-		$html = preg_replace(
-			'#<div class="pwa-ios-quick pwa-ios-quick--hero">.*?</div>#is',
-			pwa_install_hero_markup($ui),
-			$html,
-			1
-		);
-	}
+	$html = pwa_install_apply_hero_block($html, pwa_install_hero_markup($ui));
 	$html = pwa_install_mark_tour_steps($html);
-	$html = pwa_install_inject_tour_bar($html, $ui);
+	$html = pwa_install_apply_tour_bar($html, pwa_install_tour_bar_markup($ui));
 	$finish = pwa_install_finish_markup($demo_url, $ui, pwa_install_copy_button_labels($lang));
 	$html = pwa_install_apply_finish_block($html, $finish);
 	return $html;
@@ -997,9 +1068,10 @@ function pwa_install_guide_url($abc, $lang) {
  * $b = merged bundle (en + locale overrides) including section_steps_h2, stepN_img_alt, cta_*, h1, intro, etc.
  *
  * @param array $b
+ * @param string $lang_key Locale bundle key (en, ru, uk, …)
  * @return string
  */
-function pwa_install_seo_cluster_content_html(array $b) {
+function pwa_install_seo_cluster_content_html(array $b, $lang_key = 'en') {
 	$imgV = 0;
 	$names = array('step-1-share-sheet.webp', 'step-2-add-to-home-screen.webp', 'step-3-open-as-web-app.webp');
 	if (defined('ROOT_DIR')) {
@@ -1025,20 +1097,12 @@ function pwa_install_seo_cluster_content_html(array $b) {
 	$a3 = isset($b['step3_img_alt']) ? $b['step3_img_alt'] : '';
 	$quick_lead = isset($b['quick_lead']) ? (string) $b['quick_lead'] : '';
 	$quick_h2 = isset($b['quick_h2']) ? (string) $b['quick_h2'] : 'Fastest path';
-	$demo_url = pwa_install_extract_demo_url_from_lead($quick_lead, array(), array('url' => 'en'));
-	$ui = pwa_install_ui_defaults('en');
-	if (!empty($b['tour_cta'])) {
-		$ui['tour_cta'] = (string) $b['tour_cta'];
-	}
-	if (!empty($b['tour_sub'])) {
-		$ui['tour_sub'] = (string) $b['tour_sub'];
-	}
+	$lang_url = ($lang_key === 'uk') ? 'ua' : $lang_key;
+	$demo_url = pwa_install_extract_demo_url_from_lead($quick_lead, array(), array('url' => $lang_url));
+	$ui = pwa_install_ui_strings(array('url' => $lang_url));
+	$copy_labels = pwa_install_copy_button_labels(array('url' => $lang_url));
 	$hero = pwa_install_hero_markup($ui);
-	$finish = pwa_install_finish_markup($demo_url, array_merge($ui, pwa_install_ui_defaults('en')), array(
-		'copy' => isset($b['copy_link']) ? (string) $b['copy_link'] : 'Copy link for Safari',
-		'copied' => isset($b['copied']) ? (string) $b['copied'] : 'Copied!',
-		'copied_hint' => isset($b['copied_hint']) ? (string) $b['copied_hint'] : 'Open Safari and paste in the address bar',
-	));
+	$finish = pwa_install_finish_markup($demo_url, $ui, $copy_labels);
 	return '<h1>' . $b['h1'] . '</h1>' . $sep
 		. $hero . $sep
 		. '<p class="pwa-ios-trust-intro">' . $b['intro'] . '</p>' . $sep
