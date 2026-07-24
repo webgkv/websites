@@ -1617,6 +1617,152 @@ h1 {
     padding: 1.35rem 1.25rem 1.5rem;
     text-align: center;
 }
+.demo-pwa-ios-page .pwa-ios-tour-start.main_btn {
+    display: block;
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+    padding: 18px 32px;
+    font-size: clamp(1.05rem, 4.5vw, 1.25rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    border: 0;
+    cursor: pointer;
+    color: inherit;
+    line-height: 1.2;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-ios-quick__sub {
+    margin: 0.85rem 0 0;
+    color: #c5ced8;
+    line-height: 1.55;
+    font-size: 0.98rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick--finish {
+    margin: 1.75rem 0 0;
+    border-radius: 12px;
+    padding: 1.35rem 1.25rem 1.5rem;
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-ios-quick__finish-start {
+    margin-bottom: 1.15rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick--finish .pwa-ios-quick__finish-body {
+    opacity: 0.42;
+    pointer-events: none;
+    filter: grayscale(0.15);
+    transition: opacity 0.35s ease, filter 0.35s ease;
+}
+body.pwa-ios-tour-finished .demo-pwa-ios-page .pwa-ios-quick--finish .pwa-ios-quick__finish-body,
+.demo-pwa-ios-page .pwa-ios-quick--finish.is-revealed .pwa-ios-quick__finish-body {
+    opacity: 1;
+    pointer-events: auto;
+    filter: none;
+}
+body.pwa-ios-tour-finished .demo-pwa-ios-page .pwa-ios-quick__finish-start,
+.demo-pwa-ios-page .pwa-ios-quick--finish.is-revealed .pwa-ios-quick__finish-start,
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-quick__finish-start {
+    display: none;
+}
+.demo-pwa-ios-page .pwa-ios-quick__finish-locked-hint {
+    max-width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.demo-pwa-ios-page .pwa-ios-quick--finish .pwa-ios-quick__title {
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
+}
+.demo-pwa-ios-page .pwa-ios-quick--finish .pwa-ios-quick__hint {
+    margin: 0 0 1rem;
+}
+.demo-pwa-ios-page .pwa-ios-quick__copied-hint {
+    margin: 0.65rem 0 0;
+    color: var(--pwa-trust-accent);
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
+.demo-pwa-ios-page .pwa-ios-quick__open-demo {
+    margin: 0.75rem 0 0;
+}
+.demo-pwa-ios-page .pwa-ios-quick__open-link {
+    color: #eef3f8;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.demo-pwa-ios-page .pwa-ios-tour-bar {
+    margin: 1rem 0 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--pwa-trust-border);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+.demo-pwa-ios-page .pwa-ios-tour-bar__progress {
+    margin: 0 0 0.75rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+.demo-pwa-ios-page .pwa-ios-tour-bar__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    justify-content: center;
+    align-items: center;
+}
+.demo-pwa-ios-page .pwa-ios-tour-back {
+    min-height: 2.75rem;
+    padding: 0.65rem 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #dce4ee;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.demo-pwa-ios-page .pwa-ios-tour-back:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.demo-pwa-ios-page .pwa-ios-tour-next.main_btn,
+.demo-pwa-ios-page .pwa-ios-tour-done.main_btn {
+    min-width: 8.5rem;
+    min-height: 2.75rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.98rem;
+    font-weight: 800;
+    border: 0;
+    cursor: pointer;
+    color: inherit;
+}
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-step,
+body.pwa-ios-tour-running .demo-pwa-ios-page [data-pwa-tour-text],
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-fig {
+    opacity: 0.34;
+    transition: opacity 0.25s ease;
+}
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-step--active,
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-text--active,
+body.pwa-ios-tour-running .demo-pwa-ios-page .pwa-ios-tour-fig--active {
+    opacity: 1;
+}
+.demo-pwa-ios-page .pwa-ios-tour-fig--active img {
+    border-radius: 14px;
+    animation: pwa-ios-tour-ring 1.15s ease-in-out infinite;
+}
+@keyframes pwa-ios-tour-ring {
+    0%, 100% {
+        box-shadow: 0 0 0 3px var(--pwa-tour-ring-color, var(--pwa-trust-accent)), 0 0 18px var(--pwa-tour-ring-glow, var(--pwa-trust-intro-glow));
+    }
+    50% {
+        box-shadow: 0 0 0 5px var(--pwa-tour-ring-color, var(--pwa-trust-accent)), 0 0 30px var(--pwa-tour-ring-glow, var(--pwa-trust-intro-glow));
+    }
+}
 .demo-pwa-ios-page .pwa-ios-quick--hero .pwa-ios-quick__title {
     margin-bottom: 0.55rem;
     font-size: clamp(1.15rem, 4vw, 1.35rem);

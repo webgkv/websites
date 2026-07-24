@@ -24,6 +24,19 @@ $en = array(
 	'step3_img_alt' => 'Add to Home Screen sheet with Open as Web App on',
 	'h1' => 'Install the Chicken Road demo on your iPhone',
 	'intro' => 'In about a minute, Chicken Road will sit on your Home Screen — full screen, one tap, the same daily flow you already know from your favorite apps. The icon stays where you expect it, opens in its own window, and feels familiar from the very first launch. Apple built this official iPhone shortcut into Safari; the three steps below are the same path millions of people use — and the result matches a regular installed app.',
+	'tour_cta' => 'How to install?',
+	'tour_sub' => '3 taps in Safari · about 1 minute',
+	'tour_next' => 'Next',
+	'tour_back' => 'Back',
+	'tour_done' => 'Done',
+	'tour_step_of' => 'Step %d of 3',
+	'tour_finish_title' => 'You\'re ready — open the demo in Safari',
+	'tour_finish_lead' => 'Paste the link in Safari\'s address bar, then repeat the 3 steps above on the demo page.',
+	'tour_finish_locked_hint' => 'Complete the 3-step tour — then copy the Safari link below',
+	'copy_link' => 'Copy link for Safari',
+	'copied' => 'Copied!',
+	'copied_hint' => 'Open Safari and paste in the address bar',
+	'open_demo' => 'Open demo',
 );
 
 return array(

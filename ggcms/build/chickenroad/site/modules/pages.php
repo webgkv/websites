@@ -64,7 +64,9 @@ if ($u2 !== '' && !$demo_app_route && !$demo_pwa_ios_route && !$demo_apk_route) 
 		if (function_exists('pwa_install_bust_ios_image_cache')) {
 			$abc['content'] = pwa_install_bust_ios_image_cache($abc['content']);
 		}
-		if (function_exists('pwa_install_enhance_quick_path')) {
+		if (function_exists('pwa_install_enhance_page')) {
+			$abc['content'] = pwa_install_enhance_page($abc['content'], $abc, $lang);
+		} elseif (function_exists('pwa_install_enhance_quick_path')) {
 			$abc['content'] = pwa_install_enhance_quick_path($abc['content'], $abc, $lang);
 		}
 	}
