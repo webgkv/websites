@@ -1730,6 +1730,7 @@ h1 {
     font-size: clamp(0.82rem, 3.6vw, 0.95rem);
     line-height: 1.45;
     word-break: break-all;
+    overflow-wrap: anywhere;
     text-align: left;
     text-decoration: none;
     transition: border-color 0.15s ease, color 0.15s ease;
@@ -1776,6 +1777,14 @@ h1 {
     .demo-pwa-ios-page .pwa-ios-quick__url-block {
         flex-direction: row;
         align-items: stretch;
+        max-width: 100%;
+    }
+    .demo-pwa-ios-page .pwa-ios-quick__url {
+        word-break: normal;
+        overflow-wrap: normal;
+        white-space: nowrap;
+        min-width: 0;
+        font-size: 0.9rem;
     }
     .demo-pwa-ios-page .pwa-ios-quick__copy {
         width: auto;
